@@ -15,11 +15,11 @@ The repository now contains enough verified material to generate:
 A specific JD is **not** required to generate the master resume. It is only required for final tailoring.
 
 ### Personal homepage / portfolio
-**CONTENT READY — VISUAL ASSETS PARTIAL**
+**CONTENT READY — SPPS RAW VISUAL PROOF RECEIVED**
 
 The story, projects and evidence are sufficient to build the information architecture and implementation.
 
-The main missing high-value asset is visual proof for SPPS.
+SPPS raw photos and operating videos have been received and archived privately. Remaining work is curation / sanitization / web compression, not further user upload.
 
 ## Experience coverage
 
@@ -62,17 +62,17 @@ Optional only:
 
 ## Inputs useful for personal homepage
 
-### High-value missing asset
+### SPPS visual proof
 
-**SPPS visual proof**
-Recommended minimum:
-- 1 clean hero photo of the completed instrument;
-- 1 short operating video (10–30 s is enough);
-- optionally 1 system / flow diagram safe to publish.
+**Received and archived privately.**
 
-Before public use:
-- remove confidential labels / documents / screens;
-- do not expose grant-sensitive or unpublished technical information.
+Available:
+- 4 instrument photos;
+- 2 operating videos.
+
+See `site/SPPS_ASSETS.md`.
+
+No further SPPS upload is required unless the user later discovers a clearly better asset.
 
 ### Nice-to-have, not blocking
 
