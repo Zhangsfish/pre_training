@@ -21,12 +21,12 @@
     },
     {
       "id": "R02",
-      "status": "ready",
+      "status": "needs_user",
       "prompt": "delivery/prompts/R02_VISUAL.md",
       "branch": "codex/R02",
       "report_path": "delivery/audits/R02/REPORT.md",
-      "review_path": null,
-      "pr_number": null,
+      "review_path": "delivery/reviews/R02-a01.md",
+      "pr_number": 2,
       "accepted_commit": null
     },
     {
@@ -75,5 +75,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R01 attempt 02 accepted and PR #1 merged. R02 is the only authorized round. Codex must build three small visual directions and stop for reviewer/user selection; later rounds remain locked."
+  "note": "R02 attempt 01 passed factual, engineering, privacy and production-isolation review. User must choose A/B/C before R02 can be accepted; PR #2 stays open and R03 remains locked."
 }
