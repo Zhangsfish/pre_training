@@ -1,0 +1,13 @@
+command: npm.cmd --prefix site run preview -- --port 4322
+cwd: .
+started_at: 2026-09-19T18:14:51.1480386Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Log handling: local repository/user paths redacted; ANSI removed; trailing whitespace trimmed; LF line endings.
+
+
+> pre-training-site@0.1.0 preview
+> astro preview --host 127.0.0.1 --port 4322
+
+{"message":"Preview server running at http://127.0.0.1:4322 (pid 15724)\n  Stop:   astro preview stop\n  Status: astro preview status\n  Logs:   astro preview logs","label":"SKIP_FORMAT","level":"info"}
+
+exit_code: 0

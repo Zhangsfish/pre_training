@@ -1,0 +1,22 @@
+command: npm.cmd --prefix site run check
+cwd: .
+started_at: 2026-09-19T18:13:58.0343403Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Log handling: local repository/user paths redacted; ANSI removed; trailing whitespace trimmed; LF line endings.
+
+
+> pre-training-site@0.1.0 check
+> node scripts/validate-content.mjs && astro check
+
+PASS: content contract, source references, public fields and required links
+02:14:03 [content] Syncing content
+02:14:03 [content] Synced content
+02:14:03 [types] Generated 1.65s
+02:14:03 [check] Getting diagnostics for Astro files in <repo>\site...
+Result (11 files):
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+exit_code: 0

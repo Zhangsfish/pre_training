@@ -1,0 +1,9 @@
+command: node node_modules/astro/bin/astro.mjs preview stop
+cwd: site
+started_at: 2026-09-19T18:14:39.1439532Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Log handling: local repository/user paths redacted; ANSI removed; trailing whitespace trimmed; LF line endings.
+
+{"message":"Stopped preview server (pid 26284).","label":"SKIP_FORMAT","level":"info"}
+
+exit_code: 0

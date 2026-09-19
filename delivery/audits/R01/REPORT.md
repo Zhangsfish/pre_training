@@ -1,51 +1,55 @@
-# R01 报告：内容待审
+# R01 返工报告 — attempt 02
 
-- round / attempt: R01 / 01
-- branch: codex/R01；PR：[审查入口](https://github.com/Zhangsfish/pre_training/compare/main...codex/R01)
-- base_commit: bd25d1d62d13b1624d9f99be05bd3b6f7b7517e2
-- tested_commit: 99967ad16527f0d67a2e52cdfbf937c8fe3bfdb9
-- prompt_path: delivery/prompts/R01_FOUNDATION.md
+- branch / PR: codex/R01 / [PR #1](https://github.com/Zhangsfish/pre_training/pull/1)
+- base_commit: f8fda5ab317207986d890413aec3c0742b0d6006
+- tested_commit: 7475be5f4961c41be8e9d0e9f1307c11a1f2c3d7
+- prompt: delivery/prompts/R01_FOUNDATION.md
 - prompt_sha256: bafd50e9fb1084e018d5f4508410c7e356ac790b3e658175d131df001fc46bc5
+- addressed_review: [R01-a01](../../reviews/R01-a01.md) / blob b2ef459fc66457b5e69338c8a97470c46d482dd7
 - implementation_status: completed
 - reviewer_decision: pending
 
-## 完成与实测
+## 修正与授权
 
-建立32条公开claim、身份/首页与四案例+教学草稿；全部draft。实现Astro内容集合、显式公开字段投影及独立本地审阅构建。
+出生年月、电话补入profile，仅在resume白名单；site白名单未改。qq.prototype改artifact_observed，kin.research改analysis，claim正文未改。KIN结果明确为下一步验证计划。
 
-| 实际检查 | 结果 | 日志 |
+依据R01-a01第5项，指定修正后的profile/home/五篇稿/32条claim改approved；不等于实施者自签轮次验收。素材仍pending，原片未用。
+
+## 实际验收
+
+| 检查 | 结果 | 证据 |
 |---|---|---|
-| npm ci | 通过；首次文件占用后恢复 | [ci](attempt-01/ci.log)、[初次记录](attempt-01/ci-initial.log) |
-| check | 0错误/警告 | [check](attempt-01/check.log) |
-| test | 21/21通过，含合同负例 | [test](attempt-01/test.log) |
-| review:build | 通过 | [构建](attempt-01/review-build.log) |
-| build | 退出1，按设计拒绝未批准内容 | [生产门禁](attempt-01/production-build.log) |
-| 浏览器 | 1440/768/375/320px通过 | [检查](attempt-01/browser.log) |
-| 匿名外链 | QQ仓库、双Notion有真实内容 | [记录](attempt-01/external-links.json) |
+| check | 0错误/警告 | [log](attempt-02/check.log) |
+| test | 21/21通过，draft负例用隔离副本 | [log](attempt-02/test.log) |
+| review:build | 通过 | [log](attempt-02/review-build.log) |
+| production build | 真实构建成功，退出0 | [log](attempt-02/production-build.log) |
+| 双模式浏览器 | 各1440/768/375/320px通过 | [审阅](attempt-02/browser-review.log) / [生产](attempt-02/browser-production.log) |
 
-桌面和手机实拍见下方证据。本次在本机Windows网络检查外链（北京时间2026-09-20），未登录、无已有cookie；没有把HTTP200当作内容可用。
+审阅与生产各留桌面/手机截图；全部输出扫描均未含电话、出生年月或内部元数据。LINKS未变，按审查单复用上次匿名核验。预览进程已停止。
 
-## 边界与交接
+## 交接
 
-KIN按合同保留H2核心与待验证边界；同伴/AI贡献分开。SPPS四图两视频仅登记private_archive/pending，path=null，未上传原片。原始材料已提供，公开许可与桥接由策划者处理，不阻塞R01。
+仍仅R01，待策划者复审。未部署，未修改STATE授权。旧日志/截图保留，旧索引见attempt-01/evidence.json。实测提交后仅追加报告和证据。PR #1继续承接，不开新PR。
 
-策划者请审查事实及公开稿。实现后只追加本证据包；STATE未改，不自签验收。运行review:preview可本地看稿；案例详情、简历及部署未做。PR后停止。
+## SHA256
 
-## 证据校验
-
-命令、环境、退出码、截图尺寸见 [evidence.json](evidence.json)。下表SHA256按仓库LF内容/原始PNG字节计算。
+详细命令、环境与证据关系见 [evidence.json](evidence.json)；文本按仓库LF字节计。
 
 | 文件 | SHA256 |
 |---|---|
-| [attempt-01/ci-initial.log](attempt-01/ci-initial.log) | 168853cdd31708d5ede645be6c00ebb3604e03076a5819b02ccfe5dd5b12a05c |
-| [attempt-01/ci.log](attempt-01/ci.log) | e4007bb5d29a6d70653addedc5fbc6f5fd5976438175c69cc510685f6c3602b0 |
-| [attempt-01/check.log](attempt-01/check.log) | 3379bef2c557cb61f2bc09ce631c4c49117580985e21eff59ffa5105fca4e360 |
-| [attempt-01/test.log](attempt-01/test.log) | 1d783236cf856ec941549811d0ef2716e70aa99aa3b15d885713c4d4b32b3d63 |
-| [attempt-01/review-build.log](attempt-01/review-build.log) | a945178965a210b6550a5d6939db6cbf1a97b8811983a0bced7a7ef08cda7aa0 |
-| [attempt-01/production-build.log](attempt-01/production-build.log) | 7e8748aa4aa3451b331f812d3fc3a1dc523766559edd896c2a14fe6be92a535d |
-| [attempt-01/review-preview.log](attempt-01/review-preview.log) | 90334fbddfcc654d294172630dfe06586ca18522f6a36546663220a0a255dfd0 |
-| [attempt-01/browser.log](attempt-01/browser.log) | fc5441f3b71c9d7042e3415523bc4e6dd70603223583857b945c5453ac1ba800 |
-| [attempt-01/links.log](attempt-01/links.log) | c78eaa64e0a2f18e6630193802ae990b987fdd9d4313031d540b7c7555fcd5d8 |
-| [attempt-01/home-1440.png](attempt-01/home-1440.png) | dadc1ab832f4d742c9126fba170ca18b311785edd7f9d92ceb614a9356e2d8b7 |
-| [attempt-01/home-375.png](attempt-01/home-375.png) | 57368fd3adc06da75c416aaffabb00d182e952adb7f4aa103dc58d4189a8de1f |
+| [attempt-02/check.log](attempt-02/check.log) | 5fb007c7f14721d4ceb35e0c33c654abb71a310eab43d74bfffbacf6459a6868 |
+| [attempt-02/test.log](attempt-02/test.log) | 5577a628f60df7877e5ba804cb139c78bbdc755d706478c25a088c0d3e93a6ef |
+| [attempt-02/review-build.log](attempt-02/review-build.log) | 0dfea780af39b02500ec2774653aa796d97cfc5ee364bed00fc8c429c78493f7 |
+| [attempt-02/production-build.log](attempt-02/production-build.log) | ec90c12704e8e143cd25b9d593c146a0992da61bb5a4d08597a690f012de8b3d |
+| [attempt-02/review-preview.log](attempt-02/review-preview.log) | 918e18e0fbba992b6c75501aae011f851578b483cdfc93a4becf540438a20d8c |
+| [attempt-02/browser-review.log](attempt-02/browser-review.log) | 3a18673ad38df8ae7b373c9c23b897a8bfefdc523bb720e5bd7e6c1d9c884cd9 |
+| [attempt-02/review-preview-stop.log](attempt-02/review-preview-stop.log) | 847f04db5de15bd686d57f52d92f7939b316f8c6908e0b2d91f4c04ae54643ad |
+| [attempt-02/production-preview.log](attempt-02/production-preview.log) | 5f7a584a68a130519db0cf4b63d92e464896d9049090b31362092e66ba4bdcdb |
+| [attempt-02/browser-production.log](attempt-02/browser-production.log) | 835dcf3a8339ede7b7713c4fc348194569c50c11675d55dd615c3a3d3d4d5eb7 |
+| [attempt-02/production-preview-stop.log](attempt-02/production-preview-stop.log) | c5d48fc0a07d3df8691cc53b737e2ce857ddf3289e08436c8a6c1bdd1a59290c |
+| [attempt-02/home-1440.png](attempt-02/home-1440.png) | 39bb3173a2505c8d94cc975a928b27386afef96c2b6ee384cb772be365c9d66d |
+| [attempt-02/home-375.png](attempt-02/home-375.png) | c9347714f0ad0210bfb0dede80b205a1d73ac268978b9e47a6342713aa1876c4 |
+| [attempt-02/production-home-1440.png](attempt-02/production-home-1440.png) | 527707eb7ea0e9e7f21dad988768642aec6818cff40cebf2135381b3467aea4f |
+| [attempt-02/production-home-375.png](attempt-02/production-home-375.png) | 53610861832b261e3ae15dd6c8765c9ecd009ec7e414401656f4630a5b64b687 |
+| [attempt-01/evidence.json](attempt-01/evidence.json) | f7ee41de741390e5c551145824209f053de07cade060daa24b43a4e57863a280 |
 | [attempt-01/external-links.json](attempt-01/external-links.json) | 148dcf573887720710363760adf32ee5722e55cbeead65b5a5dd45dc05eb10d2 |

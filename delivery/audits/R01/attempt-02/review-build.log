@@ -1,0 +1,32 @@
+command: npm.cmd --prefix site run review:build
+cwd: .
+started_at: 2026-09-19T18:14:14.2357380Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Log handling: local repository/user paths redacted; ANSI removed; trailing whitespace trimmed; LF line endings.
+
+
+> pre-training-site@0.1.0 review:build
+> node scripts/build.mjs review
+
+02:14:18 [content] Syncing content
+02:14:18 [content] Synced content
+02:14:18 [types] Generated 1.22s
+02:14:18 [build] output: "static"
+02:14:18 [build] mode: "static"
+02:14:18 [build] directory: <repo>\site\.review-dist\
+02:14:18 [build] Collecting build info...
+02:14:18 [build] ✓ Completed in 1.29s.
+02:14:18 [build] Building static entrypoints...
+02:14:19 [vite] ✓ built in 569ms
+02:14:19 [vite] ✓ built in 50ms
+02:14:19 [build] Rearranging server assets...
+
+ generating static routes
+02:14:19   ├─ /index.html (+66ms)
+02:14:19 ✓ Completed in 118ms.
+
+02:14:19 [build] ✓ Completed in 876ms.
+02:14:19 [build] 1 page(s) built in 2.17s
+02:14:19 [build] Complete!
+
+exit_code: 0

@@ -1,0 +1,32 @@
+command: npm.cmd --prefix site run build
+cwd: .
+started_at: 2026-09-19T18:14:19.5463176Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Log handling: local repository/user paths redacted; ANSI removed; trailing whitespace trimmed; LF line endings.
+
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+02:14:23 [content] Syncing content
+02:14:23 [content] Synced content
+02:14:23 [types] Generated 1.01s
+02:14:23 [build] output: "static"
+02:14:23 [build] mode: "static"
+02:14:23 [build] directory: <repo>\site\dist\
+02:14:23 [build] Collecting build info...
+02:14:23 [build] ✓ Completed in 1.08s.
+02:14:23 [build] Building static entrypoints...
+02:14:23 [vite] ✓ built in 445ms
+02:14:24 [vite] ✓ built in 50ms
+02:14:24 [build] Rearranging server assets...
+
+ generating static routes
+02:14:24   ├─ /index.html (+63ms)
+02:14:24 ✓ Completed in 114ms.
+
+02:14:24 [build] ✓ Completed in 716ms.
+02:14:24 [build] 1 page(s) built in 1.80s
+02:14:24 [build] Complete!
+
+exit_code: 0
