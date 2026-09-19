@@ -53,9 +53,10 @@ Always separate:
 - Primary market: China
 - LinkedIn: none
 - Generic location: omitted by default
-- Phone and email: required in actual resume but kept outside this public repository
+- Phone and email: stored in the public repository by explicit user choice for the recruiting period
 - Project links: embedded directly in relevant project entries
+- Cleanup: remove contact information after recruiting
 
 ## Current status
 
-Repository initialized. Basic profile is being filled through Q&A before experience ingestion starts.
+Header and education basics are recorded. Next: languages / skills / recruiting constraints, then experience ingestion.
