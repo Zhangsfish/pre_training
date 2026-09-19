@@ -6,7 +6,7 @@ import { createRequire } from 'node:module';
 import { loadContent, root } from './content.mjs';
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
-const output = path.resolve(process.argv[3] || path.join(root,'delivery/audits/R01/attempt-01'));
+const output = path.resolve(process.argv[3] || path.join(root,'delivery/audits/R01/attempt-02'));
 fs.mkdirSync(output,{recursive:true});
 const browser = await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE,headless:true});
 console.log(`Browser: ${browser.version()}; anonymous fresh contexts; checked_at=${new Date().toISOString()}`);
@@ -38,7 +38,12 @@ try {
     }
     fs.writeFileSync(path.join(output,'external-links.json'),JSON.stringify({network:'Local Windows network; unauthenticated browser, no stored cookies',browser:browser.version(),results},null,2)+'\n');
   } else {
-    const base='http://127.0.0.1:4321/';
+    const production=process.argv[2]==='production';
+    const base=production?'http://127.0.0.1:4322/':'http://127.0.0.1:4321/';
+    const outputDir=production?'dist':'.review-dist';
+    const prefix=production?'production-home':'home';
+    const forbidden=['source_path','source_blob_sha','claim_ids','permission_note','private_archive','birth_year_month','phone',loadContent().profile.fields.birth_year_month,loadContent().profile.fields.phone];
+    console.log(`Target: ${outputDir}; local_url=${base}`);
     for (const width of [1440,768,375,320]) {
       const context=await browser.newContext({viewport:{width,height:width===1440?1000:812},deviceScaleFactor:1,reducedMotion:'reduce'});
       const page=await context.newPage();
@@ -47,7 +52,9 @@ try {
       assert.equal(response.status(),200);
       await page.evaluate(()=>document.fonts.ready);
       assert.equal(await page.locator('h1').count(),1);
-      assert.match(await page.locator('body').innerText(),/内容待审/);
+      assert.equal(await page.locator('.review-note').count(),production?0:1);
+      if(!production) assert.match(await page.locator('.review-note').innerText(),/本地审阅稿/);
+      for(const value of forbidden) assert.ok(!(await page.content()).includes(value),`Unexpected rendered field at ${width}px`);
       assert.deepEqual(await page.locator('#work article').evaluateAll(nodes=>nodes.map(n=>n.id)),['kin','spps','qq-lingxi','pet']);
       assert.equal(await page.locator('script').count(),0,'No client runtime is required');
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow at ${width}`);
@@ -69,13 +76,19 @@ try {
       assert.equal(await page.locator(':focus').innerText(),'跳到正文');
       await page.keyboard.press('Tab');
       await page.evaluate(()=>{document.activeElement.blur();scrollTo(0,0);});
-      if([1440,375].includes(width)) await page.screenshot({path:path.join(output,`home-${width}.png`),fullPage:true});
+      if([1440,375].includes(width)) await page.screenshot({path:path.join(output,`${prefix}-${width}.png`),fullPage:true});
       assert.deepEqual(errors,[]);
       console.log(`PASS ${width}px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors`);
       await context.close();
     }
-    const html=fs.readFileSync(path.join(root,'site/.review-dist/index.html'),'utf8');
-    for(const forbidden of ['source_path','source_blob_sha','claim_ids','permission_note','private_archive','2002-01-13','18604097805']) assert.ok(!html.includes(forbidden),`Unexpected output: ${forbidden}`);
-    console.log('PASS output excludes source/claim metadata, private fields and raw media registry');
+    const buildRoot=path.join(root,'site',outputDir);
+    const files=fs.readdirSync(buildRoot,{recursive:true}).filter(file=>fs.statSync(path.join(buildRoot,file)).isFile());
+    assert.ok(files.includes('index.html'));
+    for(const file of files){
+      assert.ok(!/(^|[\\/])(publication|experience|delivery)([\\/]|$)/.test(file),'Internal directory leaked');
+      const bytes=fs.readFileSync(path.join(buildRoot,file));
+      for(const value of forbidden) assert.ok(!bytes.includes(Buffer.from(value)),`Unexpected field in ${file}`);
+    }
+    console.log(`PASS ${outputDir}: ${files.length} output files exclude resume field names/values, source/claim metadata and raw media registry`);
   }
 } finally { await browser.close(); }

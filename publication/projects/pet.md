@@ -4,7 +4,7 @@
   "title": "在新方向里，把学习、实验与证据接起来。",
   "status_label": "一作稿件完成，准备投稿",
   "period": null,
-  "publication": "draft",
+  "publication": "approved",
   "summary": "围绕新研究方向补齐日常操作条件，在正式实验前拆解验证，连接学习与现实反馈。",
   "ownership": "我与 AI 从问题形成起共推方案，判断可行性并开展实验；同伴各有负责工作。",
   "result": "第一作者稿件已交导师，处于准备投稿阶段。",

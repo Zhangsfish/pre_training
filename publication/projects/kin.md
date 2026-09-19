@@ -4,10 +4,10 @@
   "title": "父母的普通一天，也值得被看见。",
   "status_label": "独立产品与商业方案 · 未上市",
   "period": null,
-  "publication": "draft",
+  "publication": "approved",
   "summary": "KIN 从普通日常的关系价值出发，探索独立生活的父母与子女之间的连接。",
   "ownership": "我提出 H1/H2/H3，负责产品定义与商业取舍；AI 辅助研究与计算，Codex 承担实施。",
-  "result": "形成腕表 + Family App 的产品与商业方案，先用成熟硬件检验自主查看与参与。",
+  "result": "形成腕表 + Family App 的产品与商业方案，并确定下一步先用成熟硬件检验自主查看与参与；该验证尚未开展。",
   "boundary": "核心需求仍待现实验证；价格、渠道和成本均为方案，不是经营业绩。",
   "claim_ids": [
     "kin.h1",

@@ -22,7 +22,7 @@ const email = view.links.find(l => l.id === 'email')!;
   </head>
   <body>
     <a class="skip" href="#main">跳到正文</a>
-    {review && <aside class="review-note">内容待审 · 本地审阅稿</aside>}
+    {review && <aside class="review-note">本地审阅稿 · 本轮待验收</aside>}
     <header class="wrap">
       <a class="name" href="#main">{view.profile.name} <span>{view.profile.romanized_name}</span></a>
       <nav aria-label="主导航"><a href="#work">项目</a><a href="#teaching">教学</a><a href={email.url}>邮件联系</a></nav>

@@ -2,7 +2,7 @@
 
 唯一网站工程目录，不为每个 JD 复制网站。请从根 START_HERE.md 启动；本目录 WEBSITE_BRIEF、CONTENT_ARCHITECTURE、CONTENT_CONTRACT、TECH_DECISION 为策划合同，LINKS 与媒体登记按需读取。
 
-内容待审。仅实现固定身份、四案例摘要、教学链接与联系入口；详情和简历位置有明确说明，没有虚假下载或 Demo。所有 publication 文件保持 draft，等待策划审查。
+R01 返工待验收。仅实现固定身份、四案例摘要、教学链接与联系入口；详情和简历位置有明确说明，没有虚假下载或 Demo。依据 `delivery/reviews/R01-a01.md` 第5项授权，指定修正后的这批 publication 内容已改为 approved；这不代表轮次验收或部署获准。
 
 ## 环境与命令
 
@@ -18,11 +18,18 @@ npm --prefix site run review:build
 npm --prefix site run review:preview
 ```
 
+生产构建与本地查看（先停掉审阅预览）：
+
+```sh
+npm --prefix site run build
+npm --prefix site run preview -- --port 4322
+```
+
 依次执行检查和构建（两者会写同一 `.astro` 内容缓存，不能并行运行）。审阅结束在 site 目录执行 `node node_modules/astro/bin/astro.mjs preview stop` 停止本机服务。
 
 预览只监听 `http://127.0.0.1:4321/`，输出在 gitignored `site/.review-dist/`。不要上传该目录。
 
-`npm --prefix site run build` 是生产命令。在必要内容及引用 claim 尚未全部批准时，**预期退出非零**。即使父进程带有 review 环境变量，这条命令仍显式验证 production；直接 Astro build 也有 integration hook 门禁。生产目标是 `site/dist/`。不通过 noindex 隐藏不应输出的内容。
+`npm --prefix site run build` 是生产命令。本批内容获授权后应成功；任何必要内容或引用 claim 被改为 draft 时仍拒绝构建。负例测试在隔离临时副本中验证拒绝行为，不修改真实公开稿。即使父进程带有 review 环境变量，这条命令仍显式验证 production；直接 Astro build 也有 integration hook 门禁。生产目标是 `site/dist/`，出生年月和手机号不得进入输出。不通过 noindex 隐藏不应输出的内容。
 
 ## 数据与检查范围
 
@@ -35,11 +42,11 @@ Astro 当前 `glob` 内容集合读取 `publication/projects/*.md`，使用 `ast
 复用已有 Playwright 库和 Chrome，无需新的浏览器下载。设 `PLAYWRIGHT_MODULE` 为已安装模块目录、`CHROME_EXECUTABLE` 为 Chrome 可执行文件，然后在仓库根执行：
 
 ```sh
-node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-01
-node site/scripts/browser-evidence.mjs links delivery/audits/R01/attempt-01
+node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-02
+node site/scripts/browser-evidence.mjs production delivery/audits/R01/attempt-02
 ```
 
-home 需先启动本地审阅预览，检查 1440/768/375/320px、锚点、键盘访问、必需链接和泄漏，生成桌面/手机真实截图。links 用无登录新上下文核对渲染后的仓库/课程内容，只记录内容标记与状态，不复制课程全文或第三方联系方式。
+home 需先启动4321端口的本地审阅预览；production 需启动4322端口的生产预览。两种模式均检查1440/768/375/320px、锚点、键盘访问、必需链接与全部输出文件泄漏，并分别生成桌面/手机真实截图。链接未变化，按审查单复用 attempt-01 匿名核验；需要重查时脚本 links 模式只记录内容标记与状态，不复制课程全文或第三方联系方式。
 
 这两个脚本不是正式后续轮次的 test:e2e / audit:dist。R02–R06 工作、媒体公开桥接、简历与部署尚未实施。
 

@@ -4,7 +4,7 @@
   "title": "把知识变成别人能用的流程。",
   "status_label": "历史课程资料 · 教材尚未出版",
   "period": null,
-  "publication": "draft",
+  "publication": "approved",
   "summary": "两个学期的实验教学中，我面向至少 19 名核心学生，重构从基本操作到开放实验的课程顺序，约 8 个实验为新设计或实质重构。",
   "ownership": "逐课记录学生错误，反馈到教学与考核；重写教材框架并整合学生协作内容。",
   "result": "完成教材终稿修订整合，并建立两个 Notion 课程主页。",

@@ -4,7 +4,7 @@
   "title": "先理解一个人，再帮他找到合适的人和群。",
   "status_label": "AI 产品原型 · 腾讯 PCG 校园 AI 产品创意大赛复赛",
   "period": null,
-  "publication": "draft",
+  "publication": "approved",
   "summary": "以长期画像和当前需求理解连接意图，探索人与群、内容匹配及 Agent 间协商。",
   "ownership": "我负责产品问题、定义、系统逻辑、需求迭代与验收；ChatGPT/Codex 承担大量工程实施。",
   "result": "已形成包含画像提取、匹配和协商等模块的原型，并进入大赛复赛。",

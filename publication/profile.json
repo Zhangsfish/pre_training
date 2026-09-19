@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "publication": "draft",
+  "publication": "approved",
   "source_path": "PROFILE.md",
   "fields": {
     "name": "张朔",
@@ -24,7 +24,9 @@
           "profile.jlu"
         ]
       }
-    ]
+    ],
+    "birth_year_month": "2002.01",
+    "phone": "18604097805"
   },
   "allowlists": {
     "site": [
@@ -39,7 +41,9 @@
       "romanized_name",
       "email",
       "github",
-      "education"
+      "education",
+      "birth_year_month",
+      "phone"
     ]
   },
   "claim_ids": [

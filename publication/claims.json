@@ -9,7 +9,7 @@
       "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -24,7 +24,7 @@
       "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -39,7 +39,7 @@
       "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -54,7 +54,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -69,7 +69,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -84,7 +84,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -99,7 +99,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -114,7 +114,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -129,7 +129,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -144,7 +144,7 @@
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -157,9 +157,9 @@
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "What competitive research changed",
       "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
-      "basis": "user_confirmed",
+      "basis": "analysis",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -174,7 +174,7 @@
       "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -189,7 +189,7 @@
       "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -204,7 +204,7 @@
       "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -219,7 +219,7 @@
       "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -234,7 +234,7 @@
       "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -249,7 +249,7 @@
       "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -264,7 +264,7 @@
       "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -279,7 +279,7 @@
       "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -292,9 +292,9 @@
       "source_path": "experience/qq-lingxi-competition.md",
       "source_heading": "Implemented demo visible in repository",
       "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
-      "basis": "user_confirmed",
+      "basis": "artifact_observed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -309,7 +309,7 @@
       "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -324,7 +324,7 @@
       "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -339,7 +339,7 @@
       "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -354,7 +354,7 @@
       "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -369,7 +369,7 @@
       "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -384,7 +384,7 @@
       "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -399,7 +399,7 @@
       "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -414,7 +414,7 @@
       "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -429,7 +429,7 @@
       "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
       "basis": "user_confirmed",
       "certainty": "approximate",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -444,7 +444,7 @@
       "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -459,7 +459,7 @@
       "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
@@ -474,7 +474,7 @@
       "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
       "basis": "user_confirmed",
       "certainty": "confirmed",
-      "publication": "draft",
+      "publication": "approved",
       "allowed_contexts": [
         "site",
         "resume"
