@@ -32,7 +32,19 @@ Every experience record preserves raw facts before polishing:
 
 Resume bullets are generated downstream.
 
-## 3. Ownership must be explicit
+## 3. Persist after every interview round
+
+This repository is the source of truth, not the chat history.
+
+After each Q&A round:
+1. separate stable facts from open questions;
+2. write stable facts into PROFILE.md or the relevant experience record;
+3. mark uncertain / approximate facts explicitly;
+4. only then move on to the next experience.
+
+Do not leave important career evidence only in conversation context.
+
+## 4. Ownership must be explicit
 
 Never convert:
 - AI research into "I researched" without qualification;
@@ -43,7 +55,7 @@ Never convert:
 
 The system should favor strong honest claims over inflated claims.
 
-## 4. Evidence hierarchy
+## 5. Evidence hierarchy
 
 1. Real external outcome — revenue, adoption, publication, release, measured performance, accepted work.
 2. Operational artifact — working product, model, prototype, reproducible analysis.
@@ -51,7 +63,7 @@ The system should favor strong honest claims over inflated claims.
 4. Structured analysis — useful but weaker alone.
 5. Assertion — never sufficient by itself.
 
-## 5. Tailor by selection, not fabrication
+## 6. Tailor by selection, not fabrication
 
 A JD-specific resume may:
 - reorder sections;
@@ -62,6 +74,6 @@ A JD-specific resume may:
 
 It may not create experience that did not happen.
 
-## 6. One page is the default
+## 7. One page is the default
 
 For campus / early-career commercial roles, target one page unless a specific employer or context clearly benefits from more.
