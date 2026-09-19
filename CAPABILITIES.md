@@ -5,15 +5,15 @@ A living taxonomy. Capabilities enter this file only when at least one experienc
 ## Commercial / Product
 
 - **Problem framing**
-  - Evidence: KIN opportunity framing; SPPS translating an external benchmark into an implementable system.
+  - Evidence: KIN opportunity framing; SPPS translating an external benchmark into an implementable system; QQ Lingxi social-connection product framing.
 - **User / market judgment**
-  - Evidence: KIN; further experience ingestion pending.
+  - Evidence: KIN; QQ Lingxi user / community matching thesis; further experience ingestion pending.
 - **Product definition & trade-offs**
-  - Evidence: SPPS system architecture / component decisions; KIN product definition.
+  - Evidence: SPPS system architecture / component decisions; KIN product definition; QQ Lingxi agent workflow.
 - **GTM / commercialization**
   - Evidence: KIN operating design; realized market outcome still pending.
 - **Positioning / value translation**
-  - Evidence: KIN; further real-market evidence pending.
+  - Evidence: KIN; QQ Lingxi competition framing.
 - **Quantitative feedback / experimentation**
   - Evidence: chemistry research iteration; organic-lab teaching feedback loop; SPPS reaction / stability screening.
 - **Economics / resource allocation**
@@ -24,6 +24,8 @@ A living taxonomy. Capabilities enter this file only when at least one experienc
   - Evidence: SPPS changing requirement and reimbursement paths under conflicting stakeholder urgency.
 - **0→1 physical-product delivery**
   - Evidence: SPPS from literature / requirements through procurement, integration, scripts, testing, and working instrument.
+- **0→1 AI-native product delivery**
+  - Evidence: QQ Lingxi from product thesis to working full-stack demo using ChatGPT Plus / Codex as execution partner.
 
 ## Operations / Leadership
 
@@ -34,9 +36,9 @@ A living taxonomy. Capabilities enter this file only when at least one experienc
 - **Bottleneck diagnosis & replanning**
   - Evidence: natural-product route redesign after scale-up failure; SPPS coordination-path redesign.
 - **Delegation / specialist coordination**
-  - Evidence: natural-product synthesis; textbook revision; SPPS engineering contributors.
+  - Evidence: natural-product synthesis; textbook revision; SPPS engineering contributors; QQ Lingxi AI delegation.
 - **Final quality / integration ownership**
-  - Evidence: course-material audit; SPPS system integration.
+  - Evidence: course-material audit; SPPS system integration; QQ Lingxi acceptance / iteration.
 
 ## Research / Analytical
 
@@ -48,14 +50,22 @@ A living taxonomy. Capabilities enter this file only when at least one experienc
 - Technical literature synthesis
 - Iteration under uncertainty
 - Rapid learning of unfamiliar technical systems
+- Cross-domain self-education
 
 ## AI-native execution
 
-- Problem decomposition for AI agents
-- Delegation / orchestration
-- Output evaluation and QA
-- Human judgment retention
-- Rapid cross-domain learning
+- **Problem decomposition for AI agents**
+  - Evidence: QQ Lingxi; Selection Dictionary / KIN to ingest later.
+- **Delegation / orchestration**
+  - Evidence: QQ Lingxi solo human + Codex workflow.
+- **Output evaluation and QA**
+  - Evidence: QQ Lingxi stepwise acceptance / audit workflow.
+- **Prompt / specification debugging**
+  - User habit: first inspect task definition, constraints, context, and acceptance criteria when model output is poor.
+- **Human judgment retention**
+  - Evidence: QQ Lingxi product decisions retained by user while code execution delegated.
+- **Rapid cross-domain learning**
+  - Evidence: PKU cross-disciplinary retraining + AI-assisted learning workflow.
 
 ## Rule
 
