@@ -1,176 +1,79 @@
-# Technical Decision — Personal Homepage
+# Technical decision — architecture-v1
 
-## Decision
+## 1. 固定选择
 
-Build a **static Astro site** with minimal client-side JavaScript.
+Astro静态构建 + TypeScript严格模式 +普通CSS token +少量必要JavaScript。网站只有公开内容、图片/视频、外链和简历；不使用Next/React运行时、数据库、CMS、登录、SSR、支付、聊天窗口、第三方分析或外部字体。
 
-Primary deployment target for China recruiting:
-**Tencent EdgeOne Pages / equivalent EdgeOne static hosting with Git integration**, subject to deployment-time account / region / domain confirmation.
+框架只负责显示，生成简历是离线作者流程。无需在服务器运行大模型。浏览器不读GitHub/Notion API。
 
-Do not deploy externally without explicit user confirmation.
+官方依据（2026-09-20检查）：
+- Astro静态输出与内容集合：https://docs.astro.build/en/guides/content-collections/
+- 安装前提：https://docs.astro.build/en/install-and-setup/ （本次文档要求Node22.12+且不支持奇数版本）
+- Playwright截图/页面PDF：https://playwright.dev/docs/api/class-page
+- 可视对比：https://playwright.dev/docs/test-snapshots
 
-## Why static
+R01选择官方支持的Node偶数LTS与Astro稳定版本，锁定实际版本/lockfile并记录；后面不无理由升大版本。采用当前官方内容集合API，不混搭旧教程。无需追逐最新版本号。
 
-Requirements are:
-- public content;
-- mostly stable project cases;
-- local images / video;
-- outbound links;
-- resume download;
-- email contact.
-
-There is no current requirement for:
-- accounts;
-- database;
-- personalized content;
-- authenticated workflow;
-- server-side business logic.
-
-Dynamic application complexity is not earned.
-
-## Why Astro instead of one giant HTML file
-
-A single-file site is excellent for a tiny resume page, but this site has:
-- four substantive cases;
-- reusable project-card structure;
-- project detail pages;
-- media;
-- future resume / status updates.
-
-Astro gives static output while preserving a clean content / component boundary.
-
-Recommended structure:
+## 2. 工程边界
 
 ```text
+publication/                 # 审核后的内容，唯一网页/简历输入
 site/
-  src/
-    components/
-    layouts/
-    pages/
-      index.astro
-      work/
-        spps.astro
-        kin.astro
-        qq-lingxi.astro
-        pap-pet.astro
-    content/
-      work/
-  public/
-    media/
-    resume/
-  astro.config.mjs
-  package.json
+  src/content.config.ts      # 按锁定Astro API读取publication/projects
+  src/components/            # Header/ProjectCard/EvidenceLink/Media/Ownership/Footer
+  src/layouts/               # BaseLayout/CaseLayout
+  src/pages/index.astro
+  src/pages/work/[slug].astro # getStaticPaths，四个固定slug
+  src/pages/resume/index.astro
+  src/pages/404.astro
+  src/styles/tokens.css
+  src/styles/global.css
+  public/media/              # 只放通过公开审核的衍生物
+  public/downloads/          # 只放发布manifest允许的通用简历
+  assets-manifest.json
+  package.json + package-lock.json
+  tests/
+  scripts/
+resume/
+  templates/                 # 打印模板
+  variants/                  # 可公开的版本选材输入
+  exports/                   # 本地生成，默认gitignored
+applications/                # 按JD维护已获准公开的输入；私有内容留generated_private
 ```
 
-Use content collections only if repeated case metadata benefits from schema validation; do not add a CMS.
+仅部署 `site/dist/`，不能部署仓库根。public下面每个字节都能被访问，不可放“隐藏”的候选简历/原片。
 
-## Runtime policy
+## 3. 命令接口（由对应轮次实现）
 
-Default target:
-- pre-rendered HTML;
-- CSS;
-- minimal JS only for genuinely useful interaction;
-- no React unless a specific interactive module earns it.
+从根目录：
+- `npm --prefix site ci`
+- `npm --prefix site run check`：Astro/TS+内容合同校验
+- `npm --prefix site run build`：只构建可发布站
+- `npm --prefix site run preview -- --host 127.0.0.1`
+- `npm --prefix site run test`：本地确定性合同/组件测试
+- `npm --prefix site run test:e2e`：Playwright实际页面操作
+- `npm --prefix site run audit:dist`：公开输出、broken local links、资源预算
+- `npm --prefix site run resume:build -- --variant general-zh`（R04）
+- `npm --prefix site run resume:check -- --variant general-zh`（R04）
 
-Avoid:
-- heavy animation libraries;
-- client-side routing for static pages;
-- third-party analytics in v1;
-- external runtime APIs;
-- chat widget;
-- remote font dependency.
+外链活性另报，不让网络偶发问题破坏本地可复现测试。R01先实现check/build/test；R02起e2e，R04后resume。未实现命令不可写测试通过。
 
-## China-first delivery
+## 4. 视觉与浏览器
 
-Reasoning:
-- target recruiting market is primarily China;
-- candidate sites must load reliably when a recruiter clicks once;
-- Vercel itself documents possible degraded performance / connectivity from mainland China;
-- EdgeOne supports static sites / static generators and Git-based deployment.
+桌面1440、平板768、手机375px；额外320px不溢出。语义HTML、单一h1、可见键盘焦点、图片alt、视频controls、prefers-reduced-motion。不用滚动劫持、默认自动播放、cursor特效、轮播藏证据。
 
-Deployment-time decisions still required:
-- China vs global acceleration region;
-- custom domain;
-- whether ICP filing is needed for the chosen region / domain path.
+主页正文16–18px，合理中文行长；每屏一个主要问题。CSS变量控制字级/间距/色彩，不堆多个UI库。
 
-For local / review builds, deployment is not required.
+工程预算（我们的验收目标，不是外部标准）：首屏不预载视频；普通首页初始资源尽量≤1MB；自写客户端JS gzip≤30KB；主图约≤350KB。超预算说明原因并得到审查裁决。性能工具分数不冒充中国真实网络体验。
 
-## Typography
+## 5. 简历导出
 
-Prefer high-quality system / locally available CJK stacks rather than Google Fonts.
+以结构化选材JSON为共同输入，先生成单栏print HTML，通过Playwright Chromium导出可选中文本PDF；A4单页，固定字体/纸张/边距，等待fonts.ready。逐页渲染并肉眼检查，不把浏览器PDF成功当排版合格。
 
-Goal:
-- no blocked font dependency;
-- fast first render;
-- predictable Chinese typography.
+Markdown保留可编辑内容源。DOCX为雇主确需时的可选导出，不阻塞首版；需要时由同一JSON生成，不另写一套事实。不要将PDF变成截图，不能靠缩到无法阅读塞下一页。工具/字体只写环境安装前提，不提交未经许可的字体二进制。
 
-Use typography, spacing, images and editorial composition—not external font novelty—as the visual signature.
+## 6. 部署
 
-## Media
+保持host-neutral静态dist。先沿用EdgeOne Pages作为候选，不承诺免备案、永久免费或中国必定可达。R06才核对官方当前方案、账号、地区、域名、费用和访问条件，获得授权再部署。不自动接上生产分支自动发布。
 
-### SPPS
-- compress hero image to responsive WebP / AVIF where practical;
-- create a video poster;
-- transcode operating video to web-friendly MP4 (H.264/AAC) and optionally WebM;
-- do not autoplay with sound;
-- provide controls / reduced-motion-safe fallback.
-
-### KIN
-Prefer linking / embedding static screenshots from the finished case rather than duplicating its entire interactive app inside this site.
-
-### QQ Lingxi
-Use one or two screenshots + link to public repository / demo.
-
-### PAP/PET
-Use a safe schematic / generic high-level visual only if publication / patent constraints allow it.
-
-## SEO / sharing
-
-v1 should include:
-- semantic HTML;
-- title / description;
-- canonical URL after domain exists;
-- Open Graph metadata;
-- favicon;
-- sitemap;
-- robots.txt;
-- JSON-LD Person + WebSite schema.
-
-`llms.txt` may be added as an experimental discoverability aid, but should not be treated as a guaranteed AI-search ranking mechanism.
-
-## Privacy / security
-
-- no API keys;
-- no private repo tokens;
-- no unpublished confidential documents in `public/`;
-- no hidden personal identifiers beyond intentionally public resume contact info;
-- inspect all media metadata / visible labels before publishing.
-
-## Accessibility / QA
-
-Required viewport checks:
-- ~375 px mobile
-- ~768 px tablet
-- ~1440 px desktop
-
-Required checks:
-- no horizontal overflow;
-- visible focus;
-- keyboard navigation;
-- reduced-motion support;
-- semantic headings;
-- alt text;
-- video controls;
-- link correctness;
-- readable Chinese line length;
-- image / video lazy loading where appropriate.
-
-## Build gate
-
-Before deployment:
-1. content review;
-2. ownership / confidentiality audit;
-3. rendered screenshots at three viewport classes;
-4. link / media checks;
-5. local production build;
-6. only then ask user for deployment approval.
+开发/验收本地即可；如需要在线预览，单独取得该预览的公开许可。生产发布后独立打开确认，不把域名绑定成功等同线上全部功能可用。

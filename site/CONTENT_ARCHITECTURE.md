@@ -1,207 +1,99 @@
-# Content Architecture
+# Content architecture — architecture-v1
 
-## Core principle
+## 0. 网站阅读层级
 
-The homepage is an **evidence compressor**, not an online CV.
+30秒：身份 + 四个案例各证明什么。3分钟：选读一个案例和本人贡献。深入：打开真实仪器素材、QQ 仓库、KIN 原始方案、Notion 课程资料。
 
-A recruiter may never click it. If they do, the site must reward the click immediately.
+不要把经历库全文塞进网站。首页正文目标约800–1200中文字（不含展开案例）；详情约600–1200字/篇。这是密度预算，不能为了凑字删掉事实边界。
 
-Therefore:
-- first screen = positioning + strongest proof;
-- project cards = evidence, not descriptions;
-- detail pages = context / ownership / constraint / result / proof;
-- generic skill lists are secondary or absent.
+## 1. 页面与路由
 
-## Homepage
+| 路由 | 唯一职责 |
+|---|---|
+| `/` | 稳定个人主页、项目索引、教学作品、方法、教育与联系 |
+| `/work/kin/` | 原创家庭关系洞察如何成为产品定义与商业方案 |
+| `/work/spps/` | 实体仪器从参考系统到可运行交付，本人/协作者边界 |
+| `/work/qq-lingxi/` | AI社交产品定义、可运行原型和复赛经历 |
+| `/work/pet/` | 新方向学习、操作准备和高成本实验闭环 |
+| `/resume/` | 一份公开通用简历的可读网页版与PDF下载 |
+| `/404.html` | 简洁返回主页 |
 
-### 1. Hero
+不创建默认博客、学术论文下载页、账户、后台、岗位切换主页或公开求职申请列表。
 
-Must contain:
-- 张朔 / Zhang Shuo
-- one-line working identity
-- 1–2 sentence evidence-backed summary
-- Resume CTA
-- Email CTA
+## 2. 首页，从上到下
 
-Visual:
-- no required portrait;
-- use a strong project / systems motif or clean editorial composition;
-- if SPPS visual quality is high, a cropped instrument detail may become the hero proof.
+### S1 首屏：人，而不是职位口号
 
-Working hero-content direction, **not final copy**:
+姓名“张朔 / Zhang Shuo”；小标签“北京大学硕士在读 · 2027届”。
 
-> 从化学实验、实体仪器到 AI 产品与商业问题，我更擅长的不是某个固定工具，而是进入陌生环境、看见一个值得解决的问题，再把它推到真实证据和可运行系统。
+候选标题：**从人的问题出发，把方案做到现实里。**
 
-### 2. Selected Work — four proof cards
+候选引言：我有化学与医学研究背景，做过自动化仪器，也在探索家庭连接与 AI 社交产品。我关心人为什么需要一个东西，以及怎样把想法变成可检验、可运行的方案。
 
-#### SPPS
-Headline idea:
-**从论文和参考机型开始，把一台自动流动多肽合成仪真正做出来。**
+两个CTA：查看项目 → #work；通用简历 → /resume/。邮件是轻量辅助入口。不放GPA大数字、未经核实的采购金额、技能进度条或三屏自我介绍。首屏必须露出项目入口，不靠动画解锁。
 
-Surface immediately:
-- 0→1 physical system;
-- sourcing / component substitution;
-- mechanical / electrical / chemistry integration;
-- real operating video;
-- delivery.
+### S2 项目：四个不同类型的证明
 
-CTA: View case.
+固定顺序 KIN、SPPS、QQ 灵犀、PET。每个项目显示：标题、真实状态、本人职责一句、结果一句、详情入口。KIN/SPPS可以大卡或编辑式横排；QQ/PET较紧凑。不要四张视觉相同、全写“0→1”的卡片。
 
-#### KIN
-Primary headline direction:
-**老人不只是一个需要被监控的风险对象，他也有值得被看见的普通一天。**
+- KIN 标题：**父母的普通一天，也值得被看见。** 状态“独立产品与商业方案 · 未上市”。先讲H2人的需求，再讲H1/H3、产品；不以爱牵挂或“推翻自己”开场。
+- SPPS 标题：**从参考论文到一台真正运行的仪器。** 状态“研究仪器原型 · 已完成交接”。用审核后的实拍；无图时开发态给明确占位，不能生成假实物照片。正文不推断现址、商业销售或正式验收证书。
+- QQ 灵犀 标题：**先理解一个人，再帮他找到合适的人和群。** 状态“AI产品原型 · 腾讯PCG校园AI产品创意大赛复赛”。本人产品定义与Codex实施分别写清。
+- PET 标题：**在新方向里，把学习、实验与证据接起来。** 状态“一作稿件完成，准备投稿”。不要大字“JMC论文”让人误以为已发表。
 
-Do **not** lead the card with competitor research or mature-platform reframe.
+### S3 教学与协作：两个Notion必须在这里
 
-Surface immediately:
-- original observation: missed call creates an unknown-state gap;
-- H1 / H2 / H3;
-- especially H2: ordinary life / presence / participation versus risk-only elder tech;
-- user's idea of state consumption for emotionally important people;
-- then: strongest counterevidence and what survived.
+标题“把知识变成别人能用的流程”。约100–160字讲：两个学期实验教学、约19名核心学生、约8个新设计/重构实验，逐课记录错误并反哺教学/考试；教材框架和终稿修订，尚未出版。数字可精简，均不可变成无依据教学提升率。
 
-Case narrative:
-```text
-Original insight
-→ H1 / H2 / H3
-→ try to falsify them
-→ features/state were less novel than expected
-→ core relationship-consumption insight survived
-→ product scope changed
-```
+显示两个带名字的按钮：
+1. “有机合成实验课程主页” → `notion-organic-synthesis`。
+2. “有机化学课程主页” → `notion-organic-chemistry`。
 
-The competitive-research result is proof of judgment quality, **not the source of the idea**.
+链接取自 LINKS.json。标为历史课程资料，不承诺仍被学校使用。只链接，不抓取全文重新发布、不iframe嵌套。如果匿名访问不成功，保留诚实说明和原始地址；本地简介仍可阅读。
 
-Clearly label as portfolio case.
+### S4 我怎样工作：只留三个有项目例子的句子
 
-#### QQ Lingxi
-Headline idea:
-**一个人 + Codex，把产品 thesis 推到可运行 Demo 和腾讯 PCG 复赛。**
+1. 先看清人的问题：KIN把普通生活/参与感置于风险看护之外。
+2. 与AI一起形成方案：QQ灵犀的实施、PET的学习与实验讨论，从开始就嵌入工作。
+3. 把现实约束提前放进方案：SPPS组件/接口、PET正式实验前的小规模验证。
 
-Surface:
-- product ownership;
-- AI-native architecture;
-- working artifact;
-- competition result.
+每项链接一个案例，不写抽象十项能力清单，不把“AI从不犯错/错都在prompt”当方法。
 
-#### PAP / ACP3 PET
-Headline idea:
-**进入几乎没有本地传承的新方向，用 AI 共同推理，把多阶段实验链跑到一作论文。**
+### S5 关于与教育
 
-Surface:
-- new-domain acquisition;
-- hard-window / high-cost planning;
-- real-world validation;
-- first-author manuscript in preparation.
+一个短段落说明从化学训练延伸到产品、组织与人类需求；跨学科旁听最多一句背景，不写“重新读了MBA”。
 
-Keep high level.
+教育两行：北京大学基础医学院，放射医学系，硕士研究生，2024.09–预计2027.07；吉林大学理科实验班（化学，唐敖庆班），2020.09–2024.06，GPA3.85/4.00、排名4/27。学校学位名称不自行补全。
 
-### 3. How I Work
+### S6 联系
 
-Not a "skills" cloud.
+邮箱、GitHub、通用简历。首页不展示完整生日/电话；简历按PROFILE既定选择显示年月/电话/邮箱。不要把缺LinkedIn做成空图标。所有公开导出字段必须在允许清单中。
 
-Use three recurring operating patterns proven across projects:
+## 3. KIN详情特殊结构（不要套科研模板）
 
-#### A. Define the real job before building
-Examples:
-- KIN: ordinary-life participation versus safety monitoring;
-- SPPS: system behavior before subsystem work;
-- TA kinetics: one-shot workflow designed before execution.
+A. 我的观察：子女与独立生活的父母之间，普通日常值得理解与参与。
+B. 三个原始判断：H1未接电话留下状态未知；H2老人不只是风险对象，普通一天有关系价值；H3孩子/宠物的状态查看行为提供相邻机制参照，迁移到成年人仍需验证。
+C. 我如何把洞察变成产品：对象/购买者/佩戴者、极简腕表+Family App、Now/Today/Data、日常查看与可选通话、父母自主授权。
+D. 产品与商业取舍：安全是底座；查看本身可有价值；可用成熟硬件验证；价格/渠道/成本是方案假设，不是业绩。
+E. 研究检查了什么：说明部分原子功能和state已有供给；这些事实不自动证明H2对或错，也不证明用户会留存。爱牵挂仅在此出现。
+F. 我的贡献 / AI贡献 / 当前边界；链接原始KIN仓库及已验证可访问的正式案例（无正式URL则只链仓库）。
 
-#### B. Work AI-native, keep reality as the judge
-Examples:
-- QQ Lingxi: AI as implementation workforce;
-- PAP/PET: AI as co-reasoning / tutor;
-- KIN: AI as research / evidence engine.
+**不使用旧叙事：发现竞品→核心洞察才诞生；也不使用：H2已被证伪但靠话术活下来。** 核心价值命题仍是待检验的产品洞察，非唯一发明或已验证市场。
 
-#### C. Let evidence kill assumptions
-Examples:
-- KIN H1/H2 narrowed by strongest counterexamples;
-- natural-product route redesign after scale-up failure;
-- physical experiments / operating results used as feedback, not decoration.
+## 4. 其他详情，统一骨架但不强行同质化
 
-### 4. Trajectory
+开场结果 → 所处约束 → 本人具体行动/决定 → 1个关键推进过程 → 结果与证据 → 他人/AI贡献与局限。
 
-Short visual timeline, not autobiography:
+SPPS：本人学习、需求/选型/采购协调、跨专业接口、高层时序、测试、交接。导师/机电协作者贡献保留。成本与资源规模不核实则不进宣传数字。
 
-```text
-Chemistry olympiad / Tang Aoqing class
-→ real experimental execution
-→ team / process design
-→ SPPS physical-system ownership
-→ PKU cross-disciplinary retraining
-→ AI-native research + product work
-→ current target: product / commercial roles close to real user and business feedback
-```
+QQ：当前需求/长期画像的产品构想、匹配人与群/内容、降低连接前沟通成本；仓库已实现部分与愿景分开。公开仓库入口必有。Demo未验证匿名可用时不要显示“立即体验”。模拟数据量不是用户数；复赛不是获奖冠军。
 
-Do not list every course.
+PET：已有大件和导师提供外部合作；本人补齐耗材操作体系、和AI学习共创方案、团队协作、正式生物分布前验证；一作稿件准备投稿。不得说整个实验室/外部关系由本人建设，不公开化合物和未公开图谱。
 
-### 5. Education
+## 5. 视觉方向在R02只比较首屏+同一项目模块
 
-Compact:
-- 北京大学基础医学院 · 放射医学系 · 硕士研究生 · 2024.09–2027.07
-- 吉林大学 · 理科实验班（化学，唐敖庆班） · 2020.09–2024.06 · GPA 3.85/4.00 · 4/27
+A 编辑式作品档案（推荐）：浅底、深字、强排版、真实设备图与短标题，可靠且有人味。
+B 产品案例展厅：大图主导、留白更强、项目叙事突出。
+C 简洁个人研究札记：文字更密、细线和时间线、像严谨但不死板的工作档案。
 
-### 6. Contact
-
-- email;
-- phone optional on public website (revisit before publish);
-- GitHub;
-- downloadable resume.
-
-No LinkedIn currently.
-
-## KIN detail-page special structure
-
-KIN should **not** use a generic project case template first.
-
-Use:
-1. **Observation** — older-parent products mostly make risk / care legible; user wanted ordinary life to be legible.
-2. **Three beliefs** — H1 / H2 / H3.
-3. **What would prove me wrong?**
-4. **Strongest counterexamples** — global + China.
-5. **What broke** — feature novelty / state novelty.
-6. **What survived** — relationship consumption / ordinary-life context.
-7. **What changed in the product** — mature substrate first; context / consumption first.
-8. **Current product / GTM / economics** — downstream implications.
-9. **Contribution boundary** — user judgment vs AI research / implementation.
-
-This ordering is essential because the user's original insight is the career evidence.
-
-## Generic case-page template
-
-For other cases:
-1. Context
-2. Problem
-3. My ownership
-4. Others / AI
-5. Hard constraint
-6. Decision / operating model
-7. Outcome
-8. Proof
-9. What this trained
-
-## Explicit exclusions
-
-Do not include in default site:
-- Selection Dictionary;
-- WeChat note account / 8 followers;
-- a long list of audited courses;
-- tool badges such as ChatGPT / Python / Excel;
-- "passionate / hardworking / fast learner" unsupported adjectives;
-- fake metrics;
-- project screenshots with no explanation of ownership.
-
-## Future JD adaptation
-
-The site remains stable.
-
-For a specific application:
-- resume changes strongly;
-- homepage project order and hero sentence may change slightly;
-- evidence itself does not change.
-
-Examples:
-- hardware PM / GTM: SPPS → KIN → QQ Lingxi → PET
-- Brand / CMK: KIN → QQ Lingxi → SPPS → PET
-- AI product: QQ Lingxi → KIN → SPPS → PET
+不是换三种颜色；需结构/图文比不同。三案使用同一内容和事实。选一案后删除其余公共路由，只留下审查截图；绝不维护三个最终网站。

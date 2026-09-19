@@ -1,62 +1,27 @@
 # pre_training
 
-A structured career evidence bank for generating job-specific, ATS-friendly resumes from one verified source of truth.
+张朔的职业经历事实库与求职作品系统。
 
-Primary application context: **China campus recruiting**, especially consumer, technology, hardware, and multinational companies. English / overseas-style variants can be generated from the same evidence bank when needed.
+**一套事实 → 一个个人网站 + 多份按岗位选材的简历。**
 
-## Core idea
+## 从这里开始
 
-Use the "pre-training → task adaptation" metaphor internally to organize career evidence:
+- [唯一工作入口](START_HERE.md)：Codex 与后续策划者的固定启动方式。
+- [当前授权轮次](delivery/STATE.json) · [六轮交付计划](delivery/ROUNDS.md) · [审查规则](delivery/REVIEWER.md)
+- [主页大纲](site/CONTENT_ARCHITECTURE.md) · [多版本简历](resume/ASSEMBLY.md)
 
-- Training environments — where difficult problems were encountered.
-- Capability primitives — what reusable abilities were trained.
-- Evidence — what decisions, actions, outputs, feedback, and results prove those abilities.
-- JD adaptation — select and reframe only the evidence relevant to a specific role.
+## 三层结构
 
-The metaphor is a data architecture, not a gimmick to print on the resume.
+1. **事实**：PROFILE、experience，区分本人、同伴、导师和 AI 的贡献；不确定数字继续标记。
+2. **公开表达**：publication（R01 建立），从事实里选择可公开、与招聘相关的信息。网站正文和简历选材共用这层。
+3. **成品与交付**：site 是唯一网站；resume/variants 与 applications 支持不同岗位；delivery 保存逐轮任务、实际证据与审查。
 
-## Workflow
+主页主案例：KIN、SPPS、QQ 灵犀、PET。教学与协作区必须链接两个 Notion 课程主页。Selection Dictionary 与公众号尝试保留在经历库但默认不展示。
 
-PROFILE + EXPERIENCE BANK
-→ CAPABILITIES + EVIDENCE MAP
-→ Job Description
-→ Role requirements / paid-for capabilities
-→ Select strongest relevant evidence
-→ One-page targeted resume
-→ Interview evidence pack
+`pre-training` 是组织经历的方法，不在求职文案里把人包装成模型。最终呈现具体问题、本人行动、现实结果和证据。
 
-## Repository structure
+## 当前状态
 
-- PROFILE.md — canonical personal / education / contact-field schema.
-- PRINCIPLES.md — rules for what may and may not be claimed.
-- CAPABILITIES.md — reusable capability primitives.
-- EVIDENCE_MAP.md — capability → evidence index.
-- experience/ — raw experience records; facts first, resume bullets later.
-- resume/STYLE.md — ATS-safe resume formatting and writing rules.
-- resume/MASTER.md — master resume shell; not submitted directly.
-- applications/ — one folder per JD with match analysis and targeted resume.
+经历采访已经完成，不再要求用户重复讲故事。架构已就绪，R01 可实施；网站和简历成品尚未构建。SPPS 四张照片及两段视频已私存，公开衍生物/向 Codex 的素材交接尚未完成。
 
-## Source-of-truth rule
-
-Do not write a resume bullet from memory if the underlying fact is not recorded in PROFILE.md or an experience record.
-
-Always separate:
-- what the user personally decided / did / owned;
-- what AI, collaborators, or tools executed;
-- what was observed;
-- what was assumed / simulated;
-- what produced a real external result.
-
-## Current header decisions
-
-- Name: 张朔 / Zhang Shuo
-- Primary market: China
-- LinkedIn: none
-- Generic location: omitted by default
-- Phone and email: stored in the public repository by explicit user choice for the recruiting period
-- Project links: embedded directly in relevant project entries
-- Cleanup: remove contact information after recruiting
-
-## Current status
-
-Header and education basics are recorded. Next: languages / skills / recruiting constraints, then experience ingestion.
+仓库公开。不要提交保密原片、未公开论文与专利细节、账号凭证或未获授权的私人评价。手机号/邮箱曾由用户明确授权公开，但不应扩大到未授权个人信息；招聘结束后的清理另行处理。

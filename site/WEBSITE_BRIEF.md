@@ -1,168 +1,37 @@
-# Website Brief
+# Website brief — architecture-v1
 
-## Primary purpose
+## 目的与受众
 
-**China campus recruiting / early-career job search.**
+面向中国校招中产品、商业产品/GTM、品牌/消费者洞察及 AI 产品的相邻岗位。网站是稳定的个人作品与证据入口；简历负责针对 JD 取舍。主页不能一会儿自称品牌负责人、一会儿自称工程负责人。
 
-The site is a proof layer behind the resume.
+访客应在约30秒内看懂：张朔是谁、真实做过什么、哪些工作由本人主导、为什么理科研究经历与产品工作有关、如何看作品/取简历/联系。30秒是设计目标，不是假装测得的转化数据。
 
-It should help when a recruiter / hiring manager clicks a link after:
-- seeing the resume;
-- receiving a referral;
-- meeting the user in an interview / event;
-- searching the user's name.
+## 唯一身份与叙事
 
-It is not expected to replace ATS / resume screening.
+基调：有化学和医学研究训练，做过实体仪器、AI 产品与消费产品方案；愿意从人的问题出发，也能把事情推进到实际结果。
 
-## Primary audience
+候选首屏句：**从人的问题出发，把方案做到现实里。**
 
-Hiring managers and recruiters for adjacent role families:
-- GTM
-- commercial product / business product
-- hardware product manager
-- product marketing / PMM
-- Brand / CMK-style consumer insight roles
-- AI product
+支持文案须用项目证明，不自封创始人、GM、资深产品负责人。SPPS 证明实际交付；KIN 证明原创需求洞察；QQ 灵犀证明 AI 产品实践；PET 证明在新领域里共同推理与现实检验。没有把所有项目强行改写成“商业成功”。
 
-The site should be stable across this adjacent family; the resume remains the more aggressively JD-tailored artifact.
+## 内容范围
 
-## Primary action
+固定四个主案例：KIN → SPPS → QQ 灵犀 → PET。这是同一个主页的稳定编辑顺序；桌面首组同时可见 KIN 与 SPPS，手机保留上述顺序。定向简历可以重新排序，网站不跟着变。
 
-1. **View / download resume**
-2. **Contact by email**
+另有一个较小但独立可见的“教学与协作”区：课程重构、学生错误反馈与教材修订，链接两个 Notion 课程主页。不把它们藏在页脚图标中。
 
-Secondary actions:
-- open project case;
-- open public project repository / demo when useful.
+排除：Selection Dictionary、8粉丝公众号、长课程列表、软件徽章墙、敏感思想来源、负面组织评价、未公開科研/专利细节、虚构职位与商业指标。
 
-No lead form, newsletter, account system, or content funnel is needed.
+## 一站而非只有一页
 
-## 30-second visitor questions
+“一个个人主页”指一个身份、一套导航、一套内容与样式。允许四个项目详情页与通用简历页，便于从简历直达项目；不另起四个站，也不复制 KIN 产品网站或 QQ 灵犀后台。
 
-The first screen + first project row must answer:
+## 行为与语言
 
-1. Who is 张朔?
-2. Why is a chemistry / medical-research background relevant to product / commercial work?
-3. What has he actually built / owned?
-4. Can he originate a useful human / consumer insight, not just execute research?
-5. What is unusual about how he works with AI?
-6. Where can I inspect proof?
+中文为主，项目名保留必要英文。首屏两个清楚动作：查看项目、查看通用简历；顶部/页尾有邮件联系。最终PDF未生成前不可挂死下载链接。不要要求登录；不用聊天机器人代替正常页面。
 
-## Core positioning hypothesis
+## 决策边界
 
-Do not present the user as:
-- a generic researcher changing careers;
-- a generic "AI enthusiast";
-- a developer;
-- a founder with fabricated business results.
+策划者负责结构、真实表达与验收；Codex 负责实现。用户只需在 R02 选一次视觉方向、在公开受限制媒体和部署时授权。没有更多必须完成的经历采访。
 
-Current strongest identity hypothesis:
-
-**Science-trained, AI-native 0→1 product / systems problem solver who combines original problem insight with rigorous evidence-seeking and real-world execution.**
-
-This is a working positioning statement, not final hero copy.
-
-## Proof set
-
-Default homepage proof:
-1. SPPS automated flow peptide synthesizer
-2. KIN consumer hardware / commercial case
-3. QQ Lingxi AI-native product competition project
-4. PAP/ACP3 PET project
-
-Supporting trajectory:
-- natural-product synthesis;
-- organic-lab course design;
-- cross-disciplinary PKU retraining.
-
-Excluded by default:
-- Selection Dictionary (user explicitly considers it a toy / low-signal project);
-- WeChat course-note publishing experiment;
-- long course list;
-- generic software / AI tool badges.
-
-## Truth boundaries
-
-### SPPS
-Show:
-- actual instrument photo / video;
-- high-level system / sourcing / integration story;
-- user ownership and collaborators' boundaries.
-
-Do not overclaim:
-- formal project-director title;
-- audited spend / savings until reconciled;
-- confidential grant details.
-
-### KIN
-
-The primary proof is the **user-originated insight**, not the subsequent desk research.
-
-Lead with:
-- H1: missed call → unknown state;
-- H2: elder tech over-centers risk / care; ordinary life may itself be valuable family content;
-- H3: high-attachment relationships already show repeated state consumption in adjacent categories.
-
-Then show:
-- the user deliberately asked research to attack these beliefs;
-- H1/H2 were partially falsified at the feature / state layer;
-- the surviving whitespace is ordinary-life context organized for voluntary family consumption / participation;
-- this changed validation order and product scope.
-
-Do not present:
-- 爱牵挂 or any competitor as the source of the core product insight;
-- mature-platform-first as the original idea;
-- desk research as if personally conducted without AI assistance.
-
-Always label:
-- portfolio case;
-- simulated / assumed economics;
-- not launched;
-- no fabricated user traction.
-
-### QQ Lingxi
-Show:
-- solo human product ownership;
-- AI/Codex as implementation workforce;
-- working public demo / repository;
-- Tencent PCG campus AI product innovation competition second-round result.
-
-Do not imply:
-- all code hand-written by user;
-- real QQ production data.
-
-### PAP / ACP3 PET
-Show only high-level:
-- new-field learning;
-- experimental-program design;
-- AI-native co-reasoning;
-- hard-window / high-cost experimental execution;
-- first-author JMC manuscript in preparation.
-
-Do not expose:
-- unpublished patent claims;
-- confidential molecular details;
-- manuscript status as submitted before actual submission.
-
-## Voice
-
-- plainspoken;
-- evidence first;
-- calm;
-- not "personal branding" hype;
-- no grandiose self-labels;
-- short sections, strong nouns and verbs;
-- Chinese-first; English project names / technical terms where natural.
-
-## What the site should feel like
-
-Professional + memorable + minimal.
-
-Not:
-- corporate template;
-- hacker terminal;
-- neon AI aesthetic;
-- heavy 3D gimmicks;
-- skill bars;
-- long autobiography;
-- generic "passionate lifelong learner" copy.
+更具体的屏幕和案例要求见 CONTENT_ARCHITECTURE；代码约束见 TECH_DECISION；公开许可见 CONTENT_CONTRACT/MEDIA_POLICY。

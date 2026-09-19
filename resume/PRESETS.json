@@ -1,0 +1,13 @@
+{
+  "schema_version":1,
+  "site_is_invariant":true,
+  "public_default":"general-zh",
+  "presets":[
+    {"id":"general-zh","label":"通用版","priority":["kin","spps","qq-lingxi","pet"],"focus":["真实项目","本人贡献","产品洞察","AI协作"],"max_main_experiences":4},
+    {"id":"product-commercial-zh","label":"产品 / 商业产品 / GTM方向","priority":["spps","kin","qq-lingxi","teaching","pet"],"focus":["系统交付","选型与协作","产品取舍","GTM方案"],"max_main_experiences":4},
+    {"id":"brand-insight-zh","label":"品牌 / 消费者洞察方向","priority":["kin","qq-lingxi","teaching","spps","pet"],"focus":["H1/H2/H3","需求解释","价值表达","用户反馈"],"max_main_experiences":4},
+    {"id":"ai-product-zh","label":"AI产品方向","priority":["qq-lingxi","kin","pet","spps"],"focus":["产品机制","人机共同定义问题","原型实现","现实反馈"],"max_main_experiences":4}
+  ],
+  "excluded_by_default":["selection-dictionary","wechat-notes-account","full-audited-course-list"],
+  "note":"优先序不是机械装满模板。真实JD可选2–4段；仅重排简历，不改主页身份或事实。"
+}

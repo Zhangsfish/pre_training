@@ -1,39 +1,9 @@
-# Personal Homepage
+# Personal site
 
-Status: planning / build-ready.
+唯一网站工程目录；不是给每个 JD 复制的网站模板。
 
-This folder owns the job-seeking personal homepage generated from the verified evidence bank.
+请从仓库根目录 `START_HERE.md` 启动。策划合同依次为 WEBSITE_BRIEF → CONTENT_ARCHITECTURE → CONTENT_CONTRACT → TECH_DECISION；LINKS 和媒体文件按需读取。
 
-## Source of truth
+源稿/事实在仓库根部，网页只使用 publication 的公开选材。不要把仓库目录全部复制到 public，也不要把 GitHub 当浏览器运行时 CMS。
 
-The site must derive claims from:
-- `PROFILE.md`
-- `CAPABILITIES.md`
-- `EVIDENCE_MAP.md`
-- `experience/*.md`
-
-Project repositories may provide richer media / links, but must not override ownership or claim boundaries recorded here.
-
-## Build philosophy
-
-The homepage is not a duplicate resume and not a personal-brand content farm.
-
-Primary job:
-**help a recruiter / hiring manager understand the user's unusual trajectory and strongest proof in ~30 seconds, then let them inspect the evidence they care about.**
-
-Start here:
-1. `WEBSITE_BRIEF.md`
-2. `TECH_DECISION.md`
-3. `CONTENT_ARCHITECTURE.md`
-
-## External-method inspiration
-
-The workflow intentionally combines ideas from several public personal-site Skills rather than copying one:
-- story / JD-mirroring and proof-first narrative;
-- smallest-suitable technical route;
-- strict truth / permission boundaries;
-- design ambition matched to actual content richness;
-- mobile / desktop rendered QA;
-- search / share metadata.
-
-No external Skill is treated as authoritative or widely adopted merely because it exists.
+R01 创建 Astro 工程；在此之前该目录只有设计合同，不是已完成网站。

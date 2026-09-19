@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "policy": "Exact source URLs; no invented live demos; external links are not runtime dependencies.",
+  "links": [
+    {"id":"github-profile","label":"GitHub","url":"https://github.com/Zhangsfish","kind":"profile","required":true,"verification":"not_browser_tested"},
+    {"id":"email","label":"邮件联系","url":"mailto:zhangs.taq@gmail.com","kind":"contact","required":true,"verification":"user_confirmed"},
+    {"id":"kin-repo","label":"KIN 项目仓库","url":"https://github.com/Zhangsfish/kin-portfolio","kind":"repository","required":true,"verification":"connector_read","live_demo":false},
+    {"id":"qq-lingxi-repo","label":"QQ 灵犀项目仓库","url":"https://github.com/Zhangsfish/qq-lingxi-agent-platform","kind":"repository","required":true,"verification":"connector_read","live_demo":false},
+    {"id":"notion-organic-synthesis","label":"有机合成实验课程主页","url":"https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53","kind":"historical_course","required":true,"verification":"not_browser_tested","source_path":"experience/jlu-organic-lab-ta.md"},
+    {"id":"notion-organic-chemistry","label":"有机化学课程主页","url":"https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a","kind":"historical_course","required":true,"verification":"not_browser_tested","source_path":"experience/jlu-organic-lab-ta.md"}
+  ],
+  "optional_live_demos": {"kin":null,"qq-lingxi":null},
+  "public_resume": {"href":null,"status":"not_generated"}
+}
