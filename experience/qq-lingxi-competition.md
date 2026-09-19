@@ -1,13 +1,40 @@
 # Experience: QQ 灵犀 — AI Native 智能连接平台
 
-> Status: draft. Product / implementation repository has been reviewed; personal ownership and competition facts require user clarification before resume use.
+> Status: resume-usable project record.
 > Source: public `Zhangsfish/qq-lingxi-agent-platform` repository + user narrative.
 
-## User-reported context
+## Competition context
 
-- Project was built for a Tencent competition.
-- Team / project reached the second round (复赛).
-- Exact competition name, dates, team composition, judging result, and personal role: TODO.
+- Competition: **腾讯 PCG 校园 AI 产品创意大赛**
+- Result: **进入复赛**
+- Human team size: **1**
+- Working model: **user + ChatGPT Plus / Codex**
+- No human teammate contribution reported.
+
+Do not state a more specific ranking / shortlist percentage unless later verified.
+
+## Ownership model
+
+The user confirms the product was conceived and driven entirely by the user, with ChatGPT Plus / Codex acting as the implementation partner.
+
+### User-owned
+- product problem / thesis;
+- product definition and system logic;
+- product architecture / workflow decisions;
+- iterative requirements;
+- agent roles / interaction logic at the product level;
+- review / acceptance of implementation;
+- competition submission direction.
+
+### AI / Codex-owned execution
+- substantial code generation / implementation;
+- engineering execution and iteration;
+- implementation reports / technical audits visible in the repository.
+
+Resume rule:
+- do not write "independently coded the full-stack product";
+- stronger and more accurate framing is:
+  **solo product owner who used AI/Codex to turn an idea into a working full-stack demo.**
 
 ## Product thesis visible in repository
 
@@ -54,49 +81,67 @@ Repository data examples include:
 
 Step reports document API / local test passes for these modules.
 
-## Current ownership boundary
+## Why this experience matters
 
-DO NOT yet claim the user personally coded / designed every module.
+This is the first clearly documented project in the experience bank where the user:
+- left the chemistry / biomedical task environment;
+- defined an AI-native consumer / social product;
+- used AI not just as a helper, but as the primary execution workforce;
+- retained product judgment, architecture, prioritization, and QA.
 
-Need to separate:
-- original product insight / thesis;
-- product architecture / requirements;
-- prompt / agent design;
-- data / evaluation design;
-- AI / Codex implementation;
-- teammates' work;
-- competition submission / presentation.
+This is a major transition point from:
+**personally executing most work**
+to
+**defining work, delegating to AI, reviewing output, and iterating the specification.**
 
-This distinction is essential because the repository contains extensive implementation and AI-generated engineering reports.
+## AI-collaboration behavior
 
-## Potential training signals
+User self-description:
+- when AI output is poor, the default reaction is not frustration with the model;
+- the user first asks whether the prompt, decomposition, constraints, context, or acceptance criteria were underspecified;
+- then rewrites the task structure and reruns.
 
-Pending ownership confirmation:
+Do not write this literally as a resume bullet.
+
+Interpretation:
+- strong fit for iterative human-AI collaboration;
+- specification / prompt refinement;
+- treating model failure as feedback on task definition;
+- emotional stability in repeated AI iteration.
+
+Potential interview phrasing:
+**"I treat bad model output as a debugging signal for my specification before blaming the tool."**
+
+## Capability primitives trained
+
 - AI-native product conception;
+- solo product ownership;
 - turning an abstract social problem into an agent workflow;
 - product architecture;
 - user-model / preference representation;
 - recommendation / matching product thinking;
-- rapid AI-assisted prototyping;
-- competition pitching / iteration;
-- first serious product work outside chemistry / biomedical research.
+- AI-assisted full-stack prototyping;
+- requirements decomposition;
+- output QA / acceptance testing;
+- iterative prompt / specification refinement;
+- competition pitching / iteration.
 
-## Open questions
+## Resume usefulness
 
-1. Exact Tencent competition name and date?
-2. Team size and team members' roles?
-3. What was the initial idea and who proposed it?
-4. What parts did the user personally define / decide?
-5. What parts were built by AI / Codex, and what parts by teammates?
-6. What was submitted in the preliminary round, and what changed for the second round?
-7. What feedback did judges / Tencent mentors give?
-8. What exactly does "进复赛" mean (ranking / shortlist size / stage)?
-9. Was there a deployed public demo during judging?
-10. Did this project change the user's career direction or confidence about product / AI-native work?
+### High value for
+- AI product;
+- product manager;
+- commercial product / innovation;
+- GTM roles that value AI-native execution;
+- Tencent / internet / platform roles.
+
+### Moderate value for
+- P&G / brand / CMK:
+  useful as evidence of consumer-product curiosity and AI-native execution, but likely secondary to stronger consumer / business evidence.
 
 ## Claim boundaries
 
-Until Q&A is complete:
-- claim only that a working public demo repository exists;
-- do not attribute all code or product decisions solely to the user;
-- do not state a competition ranking beyond "entered the second round" without evidence.
+- Do not imply a human engineering team.
+- Do not claim all code was hand-written by the user.
+- Do not state a competition ranking beyond "entered the second round" without evidence.
+- Do not inflate mock data into real QQ user data.
