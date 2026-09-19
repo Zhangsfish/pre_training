@@ -7,6 +7,9 @@ Canonical basic profile. Do not invent missing fields.
 - Resume display name: 张朔
 - Romanized name: Zhang Shuo
 - Primary application market: China
+- Date of birth (canonical fact): 2002-01-13
+- Resume display for DOB: 2002.01
+- Native place / 籍贯: not yet recorded; omit by default unless a target employer benefits from it
 - Current city / country: omit by default for China applications unless the employer or JD makes location relevant
 - Phone: 18604097805
 - Email: zhangs.taq@gmail.com
@@ -17,11 +20,12 @@ Canonical basic profile. Do not invent missing fields.
 
 ## Personal-information policy for China applications
 
-Default header should stay minimal:
+Default private-sector campus resume:
 
 - Required: name, phone, email
+- Default optional field included by user preference: birth year-month (2002.01)
 - Optional when useful: GitHub / project link, specific portfolio link, target role
-- Do not include by default: 籍贯, 民族, 身高体重, 血型, 婚姻状况, 出生年月, 完整住址
+- Do not include by default: 籍贯, 民族, 身高体重, 血型, 婚姻状况, 完整住址
 - 性别 / 政治面貌 / 籍贯 only when the specific employer, sector, or application form makes them relevant
 - Photo is optional, not a default requirement; follow employer instructions or role norms
 
@@ -46,20 +50,37 @@ Default header should stay minimal:
 
 ## Languages
 
-- Chinese: TODO proficiency label
-- English: TODO proficiency / test evidence if useful
-- Other languages: TODO / none
+- Chinese: native
+- English:
+  - CET-4: 501
+  - CET-6: 502
+  - Resume default: CET-6 502; CET-4 normally omitted unless a specific form requests both
+- Other languages: none recorded
 
 ## Skills inventory
 
 This is the full inventory, not what appears on every resume.
 
-- Data / programming: TODO
-- AI tools / workflows: TODO
-- Research / scientific tools: TODO
-- Business / analytics tools: TODO
-- Design / prototyping: TODO
-- Other: TODO
+### Principle for non-technical commercial roles
+
+Do not create a generic "software stack" section just to look technical.
+
+Tools are worth resume space only when they prove one of these:
+- analytical ability used to make a decision;
+- ability to build or validate a real artifact;
+- unusually high execution leverage;
+- explicit JD requirement.
+
+For GTM / Brand / Commercial Product / PMM roles, evidence of problem framing, consumer insight, product judgment, data-backed decisions, commercialization, and outcomes outranks a long list of software names.
+
+### Inventory to ingest from experience evidence
+
+- Data / programming: derive from actual projects rather than self-rating
+- AI tools / workflows: derive from actual workflows and artifacts
+- Research / scientific tools: derive from research experiences; normally hidden for non-technical roles unless relevant
+- Business / analytics tools: derive from actual analytical work
+- Design / prototyping: derive from actual product/project work
+- Other: TODO only if role-relevant
 
 ## Eligibility / Search Constraints
 
@@ -83,4 +104,5 @@ Usually not printed unless useful, but needed for JD matching.
 
 - Repository visibility: Public
 - Phone/email in GitHub: Yes, explicitly authorized by the user for the recruiting period
-- Cleanup plan: remove contact information from repository after recruiting
+- Date of birth in GitHub: Yes, explicitly provided by the user
+- Cleanup plan: remove contact information and unnecessary personal data from repository after recruiting
