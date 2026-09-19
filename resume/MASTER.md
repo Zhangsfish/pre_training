@@ -4,19 +4,16 @@ Not for direct submission. This is a superset from which a one-page JD-specific 
 
 # 张朔
 
-{{PHONE}} · {{EMAIL}}
+18604097805 · zhangs.taq@gmail.com
 
-## EDUCATION
+## 教育经历
 
-Peking University Health Science Center — {{DEGREE}}, {{PROGRAM}}
-{{START}} – Expected {{GRADUATION}}
-- {{GPA / rank / honor only if useful}}
-- {{Relevant coursework only if it adds signal}}
+**北京大学基础医学院** — 放射医学系，硕士研究生  
+2024.09 – 2027.07
 
-Jilin University — {{DEGREE}}, Chemistry
-{{START}} – {{GRADUATION}}
-- Tang Aoqing honors program — {{official program name}}
-- {{GPA / rank / honors only if useful}}
+**吉林大学** — 理科实验班（化学，唐敖庆班）  
+2020.09 – 2024.06
+- GPA 3.85 / 4.00；排名 4 / 27
 
 ## EXPERIENCE / PROJECTS
 
