@@ -2,7 +2,7 @@
 
 ## Chosen baseline
 
-Primary target: China campus recruiting, especially large consumer, technology, and multinational companies.
+Primary target: China campus recruiting, especially large consumer, technology, hardware, and multinational companies.
 
 Use a conservative, ATS-friendly, single-column resume. The visual baseline remains close to Harvard / Yale / MIT professional resume standards, but the content policy is adapted for China recruiting.
 
@@ -28,10 +28,15 @@ References used for the baseline:
 
 ## China header policy
 
-Default header:
+Default private-sector campus header:
 
 张朔
-{{PHONE}} · {{EMAIL}}
+2002.01 · {{PHONE}} · {{EMAIL}}
+
+Rationale:
+- name, phone, and email are core;
+- birth year-month is included by the user's preference and is common enough in China campus resumes;
+- exact day is not displayed because it adds no recruiting signal.
 
 Optional:
 - GitHub / project link when it is actually useful;
@@ -41,7 +46,6 @@ Do not require:
 - city / current address;
 - 籍贯;
 - 民族;
-- 出生年月;
 - 婚姻状况;
 - 身高体重;
 - full street address.
@@ -59,6 +63,27 @@ For substantive projects such as KIN or Selection Dictionary:
 - include only links that strengthen the claim;
 - ensure the linked repository is presentable before submission.
 
+## Skills-section rule
+
+For non-technical roles, a software list is not mandatory.
+
+Include a tool / technology only when at least one is true:
+1. the JD explicitly asks for it;
+2. the tool enabled a decision, analysis, prototype, or measurable output;
+3. it demonstrates unusual execution leverage;
+4. it is necessary to understand the user's domain credibility.
+
+Do not spend prime resume space on long lists such as Python / Excel / ChatGPT / Origin merely because the user has touched them.
+
+For GTM / Brand / Commercial Product / PMM, prioritize evidence of:
+- user / market insight;
+- product or offer judgment;
+- data-backed decisions;
+- GTM / commercialization;
+- experimentation and feedback;
+- cross-functional ownership;
+- business outcomes.
+
 ## Default section architecture
 
 NAME
@@ -72,7 +97,8 @@ RELEVANT EXPERIENCE / PROJECT EXPERIENCE
 ADDITIONAL EXPERIENCE / LEADERSHIP
 (optional, only if useful)
 
-SKILLS
+SKILLS / ADDITIONAL
+(optional and compact)
 
 Section order can change by JD relevance. Education normally remains near the top for campus recruiting.
 
