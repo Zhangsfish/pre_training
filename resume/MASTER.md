@@ -4,7 +4,7 @@ Not for direct submission. This is a superset from which a one-page JD-specific 
 
 # 张朔
 
-18604097805 · zhangs.taq@gmail.com
+2002.01 · 18604097805 · zhangs.taq@gmail.com
 
 ## 教育经历
 
@@ -27,11 +27,19 @@ Populated from experience/; section name and ordering vary by JD.
 
 Optional. Include only if the evidence adds signal for the target role.
 
-## SKILLS
+## SKILLS / ADDITIONAL
 
-- Languages: {{...}}
-- Tools / Data / Programming: {{...}}
-- Other role-relevant skills: {{...}}
+This section is not mandatory as a generic tool list.
+
+Default non-technical commercial version:
+- English: CET-6 502
+- Add tools only when they are role-relevant or backed by strong project evidence.
+
+Possible tailored subfields:
+- Languages
+- Data / analytics
+- AI-native workflow
+- Role-specific technical knowledge
 
 ## Conditional fields
 
