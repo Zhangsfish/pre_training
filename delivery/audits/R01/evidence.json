@@ -1,0 +1,215 @@
+{
+  "round": "R01",
+  "attempt": 2,
+  "branch": "codex/R01",
+  "pr_number": 1,
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/1",
+  "base_commit": "f8fda5ab317207986d890413aec3c0742b0d6006",
+  "tested_commit": "7475be5f4961c41be8e9d0e9f1307c11a1f2c3d7",
+  "prompt_path": "delivery/prompts/R01_FOUNDATION.md",
+  "prompt_sha256": "bafd50e9fb1084e018d5f4508410c7e356ac790b3e658175d131df001fc46bc5",
+  "addressed_review_path": "delivery/reviews/R01-a01.md",
+  "addressed_review_blob_sha": "b2ef459fc66457b5e69338c8a97470c46d482dd7",
+  "addressed_review_sha256": "58a834c22297893ddbc54f0dadb235205a3b4734e21eac1b3fbbe95fa358730d",
+  "approval_authority": "R01-a01 fixes/acceptance condition 5: planner authorizes approved after the listed exact corrections; implementation acceptance still pending.",
+  "environment": {
+    "os": "Windows",
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "astro": "7.3.3",
+    "typescript": "6.0.3",
+    "astro_check": "0.9.10",
+    "node_types": "24.13.6",
+    "browser": "153.0.8010.52",
+    "playwright": "1.62.1",
+    "browser_setup": "Existing bundled Playwright + system Chrome, fresh contexts; local preview only"
+  },
+  "commands": [
+    {
+      "command": "npm.cmd --prefix site run check",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:13:58.0343403Z",
+      "log_path": "attempt-02/check.log",
+      "sha256": "5fb007c7f14721d4ceb35e0c33c654abb71a310eab43d74bfffbacf6459a6868"
+    },
+    {
+      "command": "npm.cmd --prefix site run test",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:12.2653038Z",
+      "log_path": "attempt-02/test.log",
+      "sha256": "5577a628f60df7877e5ba804cb139c78bbdc755d706478c25a088c0d3e93a6ef"
+    },
+    {
+      "command": "npm.cmd --prefix site run review:build",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:14.2357380Z",
+      "log_path": "attempt-02/review-build.log",
+      "sha256": "0dfea780af39b02500ec2774653aa796d97cfc5ee364bed00fc8c429c78493f7"
+    },
+    {
+      "command": "npm.cmd --prefix site run build",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:19.5463176Z",
+      "log_path": "attempt-02/production-build.log",
+      "sha256": "ec90c12704e8e143cd25b9d593c146a0992da61bb5a4d08597a690f012de8b3d"
+    },
+    {
+      "command": "npm.cmd --prefix site run review:preview",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:24.3842170Z",
+      "log_path": "attempt-02/review-preview.log",
+      "sha256": "918e18e0fbba992b6c75501aae011f851578b483cdfc93a4becf540438a20d8c"
+    },
+    {
+      "command": "node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-02",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:29.4620456Z",
+      "log_path": "attempt-02/browser-review.log",
+      "sha256": "3a18673ad38df8ae7b373c9c23b897a8bfefdc523bb720e5bd7e6c1d9c884cd9"
+    },
+    {
+      "command": "node node_modules/astro/bin/astro.mjs preview stop",
+      "cwd": "site",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:39.1439532Z",
+      "log_path": "attempt-02/review-preview-stop.log",
+      "sha256": "847f04db5de15bd686d57f52d92f7939b316f8c6908e0b2d91f4c04ae54643ad"
+    },
+    {
+      "command": "npm.cmd --prefix site run preview -- --port 4322",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:51.1480386Z",
+      "log_path": "attempt-02/production-preview.log",
+      "sha256": "5f7a584a68a130519db0cf4b63d92e464896d9049090b31362092e66ba4bdcdb"
+    },
+    {
+      "command": "node site/scripts/browser-evidence.mjs production delivery/audits/R01/attempt-02",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:14:55.8029762Z",
+      "log_path": "attempt-02/browser-production.log",
+      "sha256": "835dcf3a8339ede7b7713c4fc348194569c50c11675d55dd615c3a3d3d4d5eb7"
+    },
+    {
+      "command": "node node_modules/astro/bin/astro.mjs preview stop",
+      "cwd": "site",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T18:15:05.3300909Z",
+      "log_path": "attempt-02/production-preview-stop.log",
+      "sha256": "c5d48fc0a07d3df8691cc53b737e2ce857ddf3289e08436c8a6c1bdd1a59290c"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "attempt-02/home-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "mode": "review",
+      "sha256": "39bb3173a2505c8d94cc975a928b27386afef96c2b6ee384cb772be365c9d66d"
+    },
+    {
+      "path": "attempt-02/home-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "mode": "review",
+      "sha256": "c9347714f0ad0210bfb0dede80b205a1d73ac268978b9e47a6342713aa1876c4"
+    },
+    {
+      "path": "attempt-02/production-home-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "mode": "production",
+      "sha256": "527707eb7ea0e9e7f21dad988768642aec6818cff40cebf2135381b3467aea4f"
+    },
+    {
+      "path": "attempt-02/production-home-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "mode": "production",
+      "sha256": "53610861832b261e3ae15dd6c8765c9ecd009ec7e414401656f4630a5b64b687"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "attempt-01/evidence.json",
+      "sha256": "f7ee41de741390e5c551145824209f053de07cade060daa24b43a4e57863a280",
+      "role": "Preserved prior evidence index"
+    },
+    {
+      "path": "attempt-01/external-links.json",
+      "sha256": "148dcf573887720710363760adf32ee5722e55cbeead65b5a5dd45dc05eb10d2",
+      "role": "Reused unchanged external-link check, as authorized in R01-a01 condition 6"
+    }
+  ],
+  "external_links": {
+    "requeried": false,
+    "reason": "Registry unchanged; reuse authorized by review",
+    "registry_blob_sha": "ee0a998bc139e543584e8112964b87444d30db1a",
+    "original_attempt": 1
+  },
+  "outputs": [
+    {
+      "folder": "site/.review-dist",
+      "files": [
+        {
+          "path": "index.html",
+          "bytes": 10139,
+          "sha256": "088d6a58e5c960c672b2c6dab4f2125d954fcfac4143e97c3d1a0afe11ce65b3"
+        }
+      ]
+    },
+    {
+      "folder": "site/dist",
+      "files": [
+        {
+          "path": "index.html",
+          "bytes": 10070,
+          "sha256": "ad4c2692f6e325ea558a9fa1dcc29a35494cee1007be50c1c05517da18c823e8"
+        }
+      ]
+    }
+  ],
+  "implementation_status": "completed",
+  "reviewer_decision": "pending",
+  "known_gaps": [
+    "R01 attempt 02 awaits planner acceptance. No R02 work or deployment.",
+    "SPPS public derivatives remain permission/bridge pending; no media approval inferred from content approval."
+  ],
+  "previous_attempt": {
+    "attempt": 1,
+    "tested_commit": "99967ad16527f0d67a2e52cdfbf937c8fe3bfdb9",
+    "report_commit": "5c024e2faa67474b84f777cbbfba0528e269bb65",
+    "evidence_path": "attempt-01/evidence.json"
+  },
+  "report_only_followup": "After tested_commit only REPORT.md, evidence.json, preserved prior evidence index and attempt-02 evidence are added.",
+  "evidence_handling": "Actual command exits; local paths redacted, ANSI removed, trailing whitespace trimmed and line endings normalized before hashing."
+}

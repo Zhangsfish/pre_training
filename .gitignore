@@ -6,3 +6,10 @@ CONTACT_PRIVATE.md
 
 # Generated application files that may contain personal contact details.
 generated_private/
+
+# Local authoring/build output; only reviewed evidence is committed.
+site/node_modules/
+site/.astro/
+site/dist/
+site/.review-dist/
+delivery/audits/R01/tmp/

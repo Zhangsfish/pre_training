@@ -1,0 +1,144 @@
+{
+  "round": "R01",
+  "attempt": 1,
+  "base_commit": "bd25d1d62d13b1624d9f99be05bd3b6f7b7517e2",
+  "tested_commit": "99967ad16527f0d67a2e52cdfbf937c8fe3bfdb9",
+  "prompt_path": "delivery/prompts/R01_FOUNDATION.md",
+  "prompt_sha256": "bafd50e9fb1084e018d5f4508410c7e356ac790b3e658175d131df001fc46bc5",
+  "environment": {
+    "os": "Windows",
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "astro": "7.3.3",
+    "typescript": "6.0.3",
+    "astro_check": "0.9.10",
+    "node_types": "24.13.6",
+    "browser": "153.0.8010.52",
+    "playwright": "1.62.1",
+    "browser_setup": "Existing bundled Playwright and system Chrome, fresh anonymous contexts; executable paths are local-only environment variables"
+  },
+  "commands": [
+    {
+      "command": "npm.cmd --prefix site ci --no-audit --no-fund",
+      "cwd": ".",
+      "exit_code": -4048,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:52:19.9656962Z",
+      "log_path": "attempt-01/ci-initial.log",
+      "sha256": "168853cdd31708d5ede645be6c00ebb3604e03076a5819b02ccfe5dd5b12a05c",
+      "note": "Initial clean install failed because the local preview process still held a native compiler file. Preview stopped; same command then passed without code changes."
+    },
+    {
+      "command": "npm.cmd --prefix site ci --no-audit --no-fund",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:52:51.7886894Z",
+      "log_path": "attempt-01/ci.log",
+      "sha256": "e4007bb5d29a6d70653addedc5fbc6f5fd5976438175c69cc510685f6c3602b0"
+    },
+    {
+      "command": "npm.cmd --prefix site run check",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:53:18.8017537Z",
+      "log_path": "attempt-01/check.log",
+      "sha256": "3379bef2c557cb61f2bc09ce631c4c49117580985e21eff59ffa5105fca4e360"
+    },
+    {
+      "command": "npm.cmd --prefix site run test",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:54:20.8774656Z",
+      "log_path": "attempt-01/test.log",
+      "sha256": "1d783236cf856ec941549811d0ef2716e70aa99aa3b15d885713c4d4b32b3d63"
+    },
+    {
+      "command": "npm.cmd --prefix site run review:build",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:54:23.2334604Z",
+      "log_path": "attempt-01/review-build.log",
+      "sha256": "a945178965a210b6550a5d6939db6cbf1a97b8811983a0bced7a7ef08cda7aa0"
+    },
+    {
+      "command": "npm.cmd --prefix site run build",
+      "cwd": ".",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "started_at": "2026-09-19T17:54:33.1723634Z",
+      "log_path": "attempt-01/production-build.log",
+      "sha256": "7e8748aa4aa3451b331f812d3fc3a1dc523766559edd896c2a14fe6be92a535d"
+    },
+    {
+      "command": "npm.cmd --prefix site run review:preview",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:54:34.7344144Z",
+      "log_path": "attempt-01/review-preview.log",
+      "sha256": "90334fbddfcc654d294172630dfe06586ca18522f6a36546663220a0a255dfd0"
+    },
+    {
+      "command": "node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-01",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:54:41.2699469Z",
+      "log_path": "attempt-01/browser.log",
+      "sha256": "fc5441f3b71c9d7042e3415523bc4e6dd70603223583857b945c5453ac1ba800"
+    },
+    {
+      "command": "node site/scripts/browser-evidence.mjs links delivery/audits/R01/attempt-01",
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "started_at": "2026-09-19T17:54:51.7840671Z",
+      "log_path": "attempt-01/links.log",
+      "sha256": "c78eaa64e0a2f18e6630193802ae990b987fdd9d4313031d540b7c7555fcd5d8"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "attempt-01/home-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "dadc1ab832f4d742c9126fba170ca18b311785edd7f9d92ceb614a9356e2d8b7"
+    },
+    {
+      "path": "attempt-01/home-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "57368fd3adc06da75c416aaffabb00d182e952adb7f4aa103dc58d4189a8de1f"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "attempt-01/external-links.json",
+      "sha256": "148dcf573887720710363760adf32ee5722e55cbeead65b5a5dd45dc05eb10d2"
+    }
+  ],
+  "output": {
+    "review_html_bytes": 10094,
+    "production_index_exists": false
+  },
+  "known_gaps": [
+    "All publication content remains draft, awaiting planner review; production build intentionally rejected.",
+    "SPPS originals are privately archived; permission review and approved derivative bridge are pending, not required for R01.",
+    "R01 provides summaries, not final detail/resume pages; no deployment.",
+    "Automatic validation checks references and state; editorial accuracy and public approval require planner review."
+  ],
+  "implementation_status": "completed",
+  "reviewer_decision": "pending",
+  "evidence_handling": "Logs retain actual exit codes. Local repository/user paths redacted; line endings normalized to LF before hashing. No third-party course text or raw private media copied.",
+  "report_only_followup": "After tested_commit, only REPORT.md, evidence.json and attempt-01 evidence are added."
+}

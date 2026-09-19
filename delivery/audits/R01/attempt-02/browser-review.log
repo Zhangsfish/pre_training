@@ -1,0 +1,15 @@
+command: node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-02
+cwd: .
+started_at: 2026-09-19T18:14:29.4620456Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Log handling: local repository/user paths redacted; ANSI removed; trailing whitespace trimmed; LF line endings.
+
+Browser: 153.0.8010.52; anonymous fresh contexts; checked_at=2026-09-19T18:14:30.717Z
+Target: .review-dist; local_url=http://127.0.0.1:4321/
+PASS 1440px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS 768px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS 375px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS 320px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS .review-dist: 1 output files exclude resume field names/values, source/claim metadata and raw media registry
+
+exit_code: 0

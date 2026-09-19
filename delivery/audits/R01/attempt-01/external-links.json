@@ -1,0 +1,56 @@
+{
+  "network": "Local Windows network; unauthenticated browser, no stored cookies",
+  "browser": "153.0.8010.52",
+  "results": [
+    {
+      "id": "qq-lingxi-repo",
+      "url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "checked_at": "2026-09-19T17:54:59.720Z",
+      "http_status": 200,
+      "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "visible_content_markers": [
+        "Folders and files",
+        "README"
+      ],
+      "visible_text_length": 6106,
+      "method": "Fresh browser context; waited for rendered body; checked meaningful repository/course content, not HTTP 200 alone"
+    },
+    {
+      "id": "notion-organic-synthesis",
+      "url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "checked_at": "2026-09-19T17:55:08.229Z",
+      "http_status": 200,
+      "title": "Organic Synthesis Laborat",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "visible_content_markers": [
+        "Course Description",
+        "Syllabus",
+        "Course Schedule"
+      ],
+      "visible_text_length": 2110,
+      "method": "Fresh browser context; waited for rendered body; checked meaningful repository/course content, not HTTP 200 alone"
+    },
+    {
+      "id": "notion-organic-chemistry",
+      "url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "checked_at": "2026-09-19T17:55:15.151Z",
+      "http_status": 200,
+      "title": "Organic Chemistry",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "visible_content_markers": [
+        "Course Description",
+        "Syllabus",
+        "Course Schedule"
+      ],
+      "visible_text_length": 1840,
+      "method": "Fresh browser context; waited for rendered body; checked meaningful repository/course content, not HTTP 200 alone"
+    }
+  ]
+}

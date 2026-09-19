@@ -1,0 +1,14 @@
+command: node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-01
+cwd: .
+started_at: 2026-09-19T17:54:41.2699469Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Path redaction: local repository/user paths replaced by <repo>/<user>.
+
+Browser: 153.0.8010.52; anonymous fresh contexts; checked_at=2026-09-19T17:54:42.739Z
+PASS 1440px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS 768px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS 375px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS 320px: fixed order, visible required links, project/resume actions, valid anchors, keyboard access, no overflow, no client JS/page errors
+PASS output excludes source/claim metadata, private fields and raw media registry
+
+exit_code: 0
