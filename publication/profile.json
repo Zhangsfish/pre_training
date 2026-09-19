@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "publication": "draft",
+  "source_path": "PROFILE.md",
+  "fields": {
+    "name": "张朔",
+    "romanized_name": "Zhang Shuo",
+    "email": "zhangs.taq@gmail.com",
+    "github": "Zhangsfish",
+    "education": [
+      {
+        "school": "北京大学基础医学院",
+        "program": "放射医学系 · 硕士研究生",
+        "period": "2024.09–预计2027.07",
+        "claim_ids": [
+          "profile.pku"
+        ]
+      },
+      {
+        "school": "吉林大学",
+        "program": "理科实验班（化学，唐敖庆班）",
+        "period": "2020.09–2024.06",
+        "claim_ids": [
+          "profile.jlu"
+        ]
+      }
+    ]
+  },
+  "allowlists": {
+    "site": [
+      "name",
+      "romanized_name",
+      "email",
+      "github",
+      "education"
+    ],
+    "resume": [
+      "name",
+      "romanized_name",
+      "email",
+      "github",
+      "education"
+    ]
+  },
+  "claim_ids": [
+    "profile.identity",
+    "profile.pku",
+    "profile.jlu"
+  ]
+}

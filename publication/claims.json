@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "profile.identity",
+      "text": "张朔 / Zhang Shuo；公开邮箱 zhangs.taq@gmail.com，GitHub Zhangsfish。",
+      "source_path": "PROFILE.md",
+      "source_heading": "Resume Header",
+      "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "profile.pku",
+      "text": "北京大学基础医学院放射医学系硕士研究生，2024.09入学，预计2027.07毕业。",
+      "source_path": "PROFILE.md",
+      "source_heading": "北京大学基础医学院",
+      "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "profile.jlu",
+      "text": "吉林大学理科实验班（化学，唐敖庆班），2020.09–2024.06；GPA 3.85/4.00，排名4/27。",
+      "source_path": "PROFILE.md",
+      "source_heading": "吉林大学",
+      "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.h1",
+      "text": "H1：父母未接电话后，子女可能需要理解佩戴、位置与近期活动等状态，并在事先同意下建立连接；这是产品假设。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "H1 — Missed call creates an \"unknown-state\" need",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.h2",
+      "text": "H2：父母不只是风险与照护对象，普通一天也可能值得被看见、理解和参与；安全是信任底座，这是核心待验证假设。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "H2 — Elder tech over-centers risk management; ordinary life itself may be valuable",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.h3",
+      "text": "H3：孩子、宠物等高依恋关系中的状态查看行为提供相邻机制参照，迁移到独立生活的父母仍需直接验证并尊重成年人的自主与同意。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "H3 — strong adjacent support, not direct proof",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.product",
+      "text": "KIN Watch + Family App 以家庭日常连接为产品方向；先用成熟硬件验证信息组织与自主查看、参与，再判断定制硬件需求。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "Current product consequence",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.ownership",
+      "text": "本人提出原始观察和H1/H2/H3，决定哪些证据改变产品定义，并推进产品、定价、渠道与成本方案。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "User-owned judgment",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.ai",
+      "text": "AI辅助桌面研究、证据整理与计算，Codex承担仓库实施；本人保留主要判断与取舍。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "AI-native operating model",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.status",
+      "text": "独立产品与商业方案，未上市；没有已实现的商业结果，核心关系消费需求仍待现实验证。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "Current artifact",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "kin.research",
+      "text": "后续竞争检查发现已有部分状态能力与原子功能；已有state不等于普通日常的关系价值已被验证或证伪。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "What competitive research changed",
+      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "spps.period",
+      "text": "吉林大学智能化流动多肽合成仪项目，2024.03–2024.08。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "Identity",
+      "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "spps.ownership",
+      "text": "本人将参考论文与系统材料转为需求，推进架构、选型采购、跨专业接口、集成测试和交接。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "User's personal ownership",
+      "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "spps.scripts",
+      "text": "本人编写高层合成时序脚本；低层泵阀驱动由导师/电控协作者实现。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "5. Control logic and synthesis sequencing",
+      "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "spps.collaboration",
+      "text": "机械设计加工与部分装配由协作者支持，本人承担功能需求、接口及集成，不是独立完成全部CAD与驱动。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "4. Cross-disciplinary engineering coordination",
+      "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "spps.delivery",
+      "text": "据本人确认，仪器可重复运行演示，已在本人参与结束时完成交接；不推断现址或商业销售。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "8. Delivery and customer communication",
+      "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "spps.media",
+      "text": "四张仪器照片和两段运行视频已私下归档，公开使用仍须审查。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "Visual evidence received",
+      "source_blob_sha": "9bab0183e032cfe969c688d24aa56536975cedf6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "qq.thesis",
+      "text": "QQ灵犀将长期画像与当前需求结合，探索匹配人与群、内容及Agent间协商，降低连接前的判断和沟通成本。",
+      "source_path": "experience/qq-lingxi-competition.md",
+      "source_heading": "Product thesis visible in repository",
+      "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "qq.ownership",
+      "text": "本人负责产品问题、定义、系统逻辑、迭代需求与实施验收；ChatGPT/Codex承担大量代码生成和工程实施。",
+      "source_path": "experience/qq-lingxi-competition.md",
+      "source_heading": "Ownership model",
+      "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "qq.prototype",
+      "text": "经历记录中的仓库已有画像提取、人与群匹配、内容推荐和Agent间协商等原型模块；示例数据不等于真实QQ用户或增长。",
+      "source_path": "experience/qq-lingxi-competition.md",
+      "source_heading": "Implemented demo visible in repository",
+      "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "qq.competition",
+      "text": "腾讯PCG校园AI产品创意大赛进入复赛；人类参与者为本人，工作模式为本人+ChatGPT/Codex。",
+      "source_path": "experience/qq-lingxi-competition.md",
+      "source_heading": "Competition context",
+      "source_blob_sha": "698783330226137c8cfa8b5ce5e7f9f0e541ceec",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "pet.status",
+      "text": "第一作者稿件已交导师，准备投稿，尚不能称为已投稿、在审或录用。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "Identity",
+      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "pet.setup",
+      "text": "本人补齐日常合成所需耗材与操作流程，使用已有大设备；不是从零建设整套实验室。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "Starting environment",
+      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "pet.external",
+      "text": "外部医院合作关系与访问条件由导师建立，本人负责实验准备与现场协作。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "Distributed but pre-existing infrastructure",
+      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "pet.peers",
+      "text": "与同伴共同解决问题，各自拥有负责工作，并非本人管理下属团队。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "3. Peer collaboration, not centralized team management",
+      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "pet.ai",
+      "text": "本人从问题形成起与AI共同学习、讨论设计、排障、分析与写作；本人判断实验可行性、执行现实实验并承担最终判断。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "4. AI-native co-reasoning from the beginning",
+      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "pet.validation",
+      "text": "正式生物分布实验前，通过小规模验证拆解条件和风险，再进行计划的正式实验。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "High-cost one-shot experiments",
+      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "teaching.scope",
+      "text": "吉林大学有机化学实验II课程助教，两个学期，核心班至少19名学生。",
+      "source_path": "experience/jlu-organic-lab-ta.md",
+      "source_heading": "Identity",
+      "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "teaching.design",
+      "text": "本人重构从背景、基本操作到开放实验的课程框架，约8个实验为新设计或实质重构。",
+      "source_path": "experience/jlu-organic-lab-ta.md",
+      "source_heading": "New experiment design",
+      "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
+      "basis": "user_confirmed",
+      "certainty": "approximate",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "teaching.feedback",
+      "text": "逐课记录并反馈学生常见错误，以累计问题设计后续考核并编写试题。",
+      "source_path": "experience/jlu-organic-lab-ta.md",
+      "source_heading": "Continuous feedback loop",
+      "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "teaching.material",
+      "text": "本人重写教材框架、组织学生分工写作并完成终稿修订整合；教材尚未出版。",
+      "source_path": "experience/jlu-organic-lab-ta.md",
+      "source_heading": "Teaching-material / textbook project",
+      "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    },
+    {
+      "id": "teaching.links",
+      "text": "本人创建两个Notion课程主页；作为历史课程资料，不确认毕业后持续使用。",
+      "source_path": "experience/jlu-organic-lab-ta.md",
+      "source_heading": "Course websites / knowledge infrastructure",
+      "source_blob_sha": "baca176ba880261938320262903c2b40601fb1e6",
+      "basis": "user_confirmed",
+      "certainty": "confirmed",
+      "publication": "draft",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20"
+    }
+  ]
+}
