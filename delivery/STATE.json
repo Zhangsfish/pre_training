@@ -3,25 +3,25 @@
   "architecture_version": "architecture-v1",
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
-  "active_round": "R01",
-  "authorized_round": "R01",
+  "active_round": "R02",
+  "authorized_round": "R02",
   "controller": "planner_reviewer",
   "selected_design": null,
   "deployment_approval": null,
   "rounds": [
     {
       "id": "R01",
-      "status": "changes_requested",
+      "status": "accepted",
       "prompt": "delivery/prompts/R01_FOUNDATION.md",
       "branch": "codex/R01",
       "report_path": "delivery/audits/R01/REPORT.md",
-      "review_path": "delivery/reviews/R01-a01.md",
+      "review_path": "delivery/reviews/R01-a02.md",
       "pr_number": 1,
-      "accepted_commit": null
+      "accepted_commit": "6f92e91a133dce2da6c3fdbe5efcea4d3c07cd45"
     },
     {
       "id": "R02",
-      "status": "locked",
+      "status": "ready",
       "prompt": "delivery/prompts/R02_VISUAL.md",
       "branch": "codex/R02",
       "report_path": "delivery/audits/R02/REPORT.md",
@@ -75,5 +75,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R01 attempt 01 reviewed: FIX. Codex must apply delivery/reviews/R01-a01.md on codex/R01 and submit attempt 02; later rounds remain locked."
+  "note": "R01 attempt 02 accepted and PR #1 merged. R02 is the only authorized round. Codex must build three small visual directions and stop for reviewer/user selection; later rounds remain locked."
 }
