@@ -2,39 +2,62 @@
 
 ## Chosen baseline
 
-Use a conservative US-style, ATS-friendly, single-column resume inspired by current Harvard College, MIT CAPD, and Yale OCS guidance.
+Primary target: China campus recruiting, especially large consumer, technology, and multinational companies.
 
-Authoritative references:
-- Harvard College Bullet Point Resume Template: https://careerservices.fas.harvard.edu/resources/bullet-point-resume-template/
-- Harvard guide to creating a strong resume: https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/
-- MIT ATS guidance: https://capd.mit.edu/resources/make-your-resume-ats-friendly/
-- MIT resume checklist: https://capd.mit.edu/resources/resume-checklist/
-- Yale resume templates: https://ocs.yale.edu/resources/ocs-resume-template/
+Use a conservative, ATS-friendly, single-column resume. The visual baseline remains close to Harvard / Yale / MIT professional resume standards, but the content policy is adapted for China recruiting.
+
+References used for the baseline:
+- Harvard College Bullet Point Resume Template
+- MIT ATS guidance and resume checklist
+- Yale resume templates
+- Tsinghua Career Development Center resume guidance
+- China campus-recruiting resume practice references
 
 ## Formatting rules
 
 - Default: 1 page for campus / early-career applications.
 - Single column.
-- No photograph.
-- No graphics, icons, skill bars, charts, logos, text boxes, or decorative sidebars.
+- No decorative sidebars, skill bars, charts, logos, or dense form-style personal information.
 - Avoid tables in the final resume.
-- 0.5–1.0 inch margins.
+- Clean black-and-white or extremely restrained visual hierarchy.
 - 10–12 pt body text; name may be larger.
 - Common readable font.
 - Consistent dates and punctuation.
 - Reverse chronological order within dated sections unless relevance strongly justifies another structure.
-- PDF or DOCX according to employer instructions.
+- PDF by default unless the employer requests another format.
 
-## Header
+## China header policy
 
-Include:
-- name;
-- city / country;
-- phone;
-- professional email;
-- optional LinkedIn / GitHub / portfolio.
+Default header:
 
-Do not include a full street address.
+张朔
+{{PHONE}} · {{EMAIL}}
+
+Optional:
+- GitHub / project link when it is actually useful;
+- explicit target role when a direct-email submission benefits from it.
+
+Do not require:
+- city / current address;
+- 籍贯;
+- 民族;
+- 出生年月;
+- 婚姻状况;
+- 身高体重;
+- full street address.
+
+For 国企 / 事业单位 / public-sector or other employers that explicitly value or request 性别、籍贯、政治面貌、照片, create a separate tailored version instead of polluting the default private-sector resume.
+
+Photo: optional, not part of the default template.
+
+## Project-link rule
+
+Do not create a generic block of many URLs.
+
+For substantive projects such as KIN or Selection Dictionary:
+- attach the relevant GitHub / demo link to the project title or the first line of that project;
+- include only links that strengthen the claim;
+- ensure the linked repository is presentable before submission.
 
 ## Default section architecture
 
@@ -87,4 +110,5 @@ Each JD-specific resume should:
 3. retrieve matching evidence;
 4. select the few strongest experiences;
 5. rewrite only the framing, never the facts;
-6. verify every claim against the evidence bank.
+6. verify every claim against the evidence bank;
+7. adapt personal-information fields only when the specific employer actually requires them.
