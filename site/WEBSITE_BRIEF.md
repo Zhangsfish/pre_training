@@ -44,8 +44,9 @@ The first screen + first project row must answer:
 1. Who is 张朔?
 2. Why is a chemistry / medical-research background relevant to product / commercial work?
 3. What has he actually built / owned?
-4. What is unusual about how he works with AI?
-5. Where can I inspect proof?
+4. Can he originate a useful human / consumer insight, not just execute research?
+5. What is unusual about how he works with AI?
+6. Where can I inspect proof?
 
 ## Core positioning hypothesis
 
@@ -57,7 +58,7 @@ Do not present the user as:
 
 Current strongest identity hypothesis:
 
-**Science-trained, AI-native 0→1 product / systems problem solver who repeatedly enters unfamiliar environments, builds the missing operating system, and pushes work to a real artifact or decision.**
+**Science-trained, AI-native 0→1 product / systems problem solver who combines original problem insight with rigorous evidence-seeking and real-world execution.**
 
 This is a working positioning statement, not final hero copy.
 
@@ -94,10 +95,24 @@ Do not overclaim:
 - confidential grant details.
 
 ### KIN
-Show:
-- product / commercial judgment;
-- evidence-driven thesis change;
-- product / GTM / cost thinking.
+
+The primary proof is the **user-originated insight**, not the subsequent desk research.
+
+Lead with:
+- H1: missed call → unknown state;
+- H2: elder tech over-centers risk / care; ordinary life may itself be valuable family content;
+- H3: high-attachment relationships already show repeated state consumption in adjacent categories.
+
+Then show:
+- the user deliberately asked research to attack these beliefs;
+- H1/H2 were partially falsified at the feature / state layer;
+- the surviving whitespace is ordinary-life context organized for voluntary family consumption / participation;
+- this changed validation order and product scope.
+
+Do not present:
+- 爱牵挂 or any competitor as the source of the core product insight;
+- mature-platform-first as the original idea;
+- desk research as if personally conducted without AI assistance.
 
 Always label:
 - portfolio case;
