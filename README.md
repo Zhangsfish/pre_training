@@ -2,6 +2,8 @@
 
 A structured career evidence bank for generating job-specific, ATS-friendly resumes from one verified source of truth.
 
+Primary application context: **China campus recruiting**, especially consumer, technology, hardware, and multinational companies. English / overseas-style variants can be generated from the same evidence bank when needed.
+
 ## Core idea
 
 Use the "pre-training → task adaptation" metaphor internally to organize career evidence:
@@ -45,6 +47,15 @@ Always separate:
 - what was assumed / simulated;
 - what produced a real external result.
 
+## Current header decisions
+
+- Name: 张朔 / Zhang Shuo
+- Primary market: China
+- LinkedIn: none
+- Generic location: omitted by default
+- Phone and email: required in actual resume but kept outside this public repository
+- Project links: embedded directly in relevant project entries
+
 ## Current status
 
-Repository initialized. Basic profile is incomplete and will be filled through Q&A before experience ingestion starts.
+Repository initialized. Basic profile is being filled through Q&A before experience ingestion starts.
