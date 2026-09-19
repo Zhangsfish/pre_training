@@ -2,16 +2,14 @@
 
 Canonical basic profile. Do not invent missing fields.
 
-IMPORTANT PRIVACY NOTE: this repository is public. Phone number, private email, street address, ID numbers, date of birth, and other unnecessary personal identifiers must not be committed here. Generated resumes should inject {{PHONE}} and {{EMAIL}} from a private source.
-
 ## Resume Header
 
 - Resume display name: 张朔
 - Romanized name: Zhang Shuo
 - Primary application market: China
 - Current city / country: omit by default for China applications unless the employer or JD makes location relevant
-- Phone: {{PHONE}}
-- Email: {{EMAIL}}
+- Phone: 18604097805
+- Email: zhangs.taq@gmail.com
 - GitHub account: Zhangsfish
 - LinkedIn: none
 - Standalone portfolio / personal site: none currently
@@ -29,25 +27,22 @@ Default header should stay minimal:
 
 ## Education
 
-### Peking University Health Science Center
-- Official school / department name: TODO
-- Degree: Master's candidate — exact degree title TODO
-- Major / program: TODO
-- Start date: TODO
-- Expected graduation: TODO
-- GPA / rank: TODO / omit if not useful
-- Scholarships / honors: TODO
-- Relevant coursework: only if role-relevant; TODO
+### 北京大学基础医学院
+- Department: 放射医学系
+- Degree / status: 硕士研究生
+- Start date: 2024-09
+- Expected graduation: 2027-07
+- GPA / rank: omit
+- Scholarships / honors: omit
+- Relevant coursework: only if role-relevant
 
-### Jilin University
-- School / department: TODO
-- Field: Chemistry
-- Program: Tang Aoqing honors program — official English/Chinese name to confirm
-- Degree: TODO
-- Start date: TODO
-- Graduation date: TODO
-- GPA / rank: TODO / omit if not useful
-- Scholarships / honors: TODO
+### 吉林大学
+- Program: 理科实验班（化学，唐敖庆班）
+- Start date: 2020-09
+- Graduation date: 2024-06
+- GPA: 3.85 / 4.00
+- Rank: 4 / 27
+- Scholarships / honors: omit unless a future JD makes a specific one useful
 
 ## Languages
 
@@ -70,7 +65,7 @@ This is the full inventory, not what appears on every resume.
 
 Usually not printed unless useful, but needed for JD matching.
 
-- Target graduation recruiting cycle: TODO
+- Target graduation recruiting cycle: 2027 campus recruiting
 - Target countries / regions: China primary; others TODO
 - Work authorization / visa constraints: TODO
 - Willingness to relocate: TODO
@@ -78,7 +73,7 @@ Usually not printed unless useful, but needed for JD matching.
 
 ## Optional resume sections
 
-- Awards / honors: TODO
+- Awards / honors: omit by default
 - Leadership / activities: TODO
 - Publications / patents: TODO
 - Certifications: TODO
@@ -87,5 +82,5 @@ Usually not printed unless useful, but needed for JD matching.
 ## Privacy decision
 
 - Repository visibility: Public
-- Store phone/email in GitHub?: No
-- Contact details are injected only into locally generated submission copies.
+- Phone/email in GitHub: Yes, explicitly authorized by the user for the recruiting period
+- Cleanup plan: remove contact information from repository after recruiting
