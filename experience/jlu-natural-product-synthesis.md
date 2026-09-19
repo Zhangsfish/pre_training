@@ -1,108 +1,121 @@
 # Experience: 天然产物全合成 / 路线开发与小团队协同
 
-> Status: high-value draft ingestion; exact dates, outputs, team structure, and publication status require follow-up.
+> Status: strong training-environment record. Resume wording will be generated later by JD.
 
 ## Identity
 
-- Organization: 吉林大学（exact laboratory / supervisor TODO）
+- Organization: 吉林大学
 - Project: jiadifenin 及其家族天然产物的集群式合成研究
 - Start: 2022-09
 - End: TODO
-- Team size: approximately 6 people (user recollection; confirm exact)
-- Nature: academic natural-product total synthesis with route development, small-scale route validation, scale-up/material preparation, and technical troubleshooting
+- Team: approximately 5 full-time undergraduate collaborators, with total participation reaching about 10 when part-time contributors are included
+- Nature: academic natural-product total synthesis involving route design, route validation, scale-up/material preparation, and technical troubleshooting
+- Output: undergraduate thesis based on the newly designed route
 
 ## Environment
 
-The user sees this as the first substantially important undergraduate research experience.
+This was the first undergraduate research phase in which the user moved from primarily learning experimental technique to owning a dependency-heavy technical pipeline.
 
-Useful business analogy (internal interpretation only, not literal resume claim):
-- route design ≈ R&D / product-process design;
-- route scouting / small-scale validation ≈ pilot development;
-- scale-up and stable material preparation ≈ process development / supply readiness;
-- technical troubleshooting ≈ engineering problem solving.
+The work had four interdependent modes:
+- route design;
+- small-scale route validation;
+- scale-up;
+- stable material preparation for downstream work.
 
-This analogy helps explain transferability to manufacturing / consumer-hardware settings, but the resume must not misrepresent academic lab scale-up as industrial production experience.
+These activities could not be run strictly sequentially because downstream progress depended on upstream material availability.
 
-## Problem / Objective
+Internal transfer analogy only:
+- route design ≈ R&D / process design;
+- small-scale validation ≈ pilot validation;
+- scale-up/material preparation ≈ process development / supply readiness.
 
-Develop and execute a synthetic route toward jiadifenin-family natural products under a workflow where:
-- route research,
-- route validation,
-- scale-up,
-- and material preparation
-
-had to progress in parallel rather than sequentially.
+Do not describe this as industrial factory production.
 
 ## User's personal ownership
 
-### Noticed / framed
-- recognized the need to keep route development, scale-up, and material supply moving simultaneously because downstream work depended on upstream material readiness.
+### Informal team leadership
 
-### Decided
-- designed / helped design synthetic routes — exact level of independence TODO;
-- coordinated the overall sequence and dependencies across team members;
-- allocated work across different functional roles — exact authority / mechanism TODO.
+There was no formal appointment by the PI.
 
-### Personally executed
-- technical troubleshooting / key chemistry problem solving;
-- laboratory synthesis work;
-- other personal experimental work TODO.
+The group naturally organized around the user:
+- all core collaborators were undergraduates;
+- the user regularly coordinated task allocation through discussion;
+- people were assigned to work that fit their strengths;
+- the user also organized informal team-building, including shared meals;
+- additional part-time contributors were given bounded tasks by the group, with the user participating in assignment and coordination.
 
-### Coordinated
-User describes a team of about six people with roles including:
-- route design;
-- route scouting / small-scale route validation;
-- process scale-up;
-- stable material preparation / supply.
+This is evidence of informal leadership rather than formal people-management authority.
 
-The user says they coordinated this work so R&D, scale-up, and material preparation could proceed in parallel.
+### Route redesign under scale-up failure
 
-## Intensity / constraints
+A key original route could work at small scale but did not scale effectively.
 
-- User estimates 70+ hours/week in the laboratory during intense periods;
-- typically worked seven days/week while also taking classes.
+The user:
+1. recognized that the existing route was a scaling bottleneck;
+2. redesigned the synthetic route;
+3. personally pushed the new route through to viability;
+4. then coordinated parallel work so some collaborators advanced downstream chemistry while others handled scale-up / material preparation.
 
-Interpretation rule:
-- store this as evidence of workload tolerance and sustained ownership;
-- do not default to a resume bullet saying "worked 70+ hours/week";
-- stronger signal is sustained delivery under heavy parallel technical and academic load.
+This is the strongest known example of evidence-driven replanning in this experience.
 
-## Evidence from old resume
+### Parallel pipeline coordination
 
-The 2023 resume states that the group:
-- focused on highly oxidized polycyclic/cage-like natural products;
-- used a Rh-catalyzed cascade reaction based on enyne substrates;
-- reduced a previously described synthetic sequence from roughly 110 steps to roughly 12 steps for rapid construction of a common tricyclic core.
+The user coordinated work across:
+- route exploration / redesign;
+- small-scale route validation;
+- scale-up;
+- stable material preparation;
+- forward progression on downstream chemistry.
 
-IMPORTANT: exact user ownership of this route/result must be clarified before using it as a personal achievement.
+The operating goal was to keep upstream supply from starving downstream work.
 
-## Questions still open
+## Scale
 
-1. Exact end date?
-2. Exact lab / PI / mentor?
-3. Was the six-person team formally assigned, or informally coordinated?
-4. Did the user have authority to allocate tasks, or mainly coordinate through technical leadership?
-5. Which route decisions were personally made by the user?
-6. Which specific technical bottlenecks were solved by the user?
-7. What were the scale-up quantities (mg / g / tens of g)?
-8. How was "stable material supply" measured?
-9. What final compounds / intermediates were actually delivered?
-10. Publication / patent / thesis / conference / poster status?
-11. Is the 110-step → 12-step result the user's project, the lab's method, or literature context?
-12. What would have failed if the user had not coordinated the parallel pipeline?
+User-reported scale range:
+- small-scale route exploration could be around ~1 mg;
+- material preparation / scale-up for selected intermediates could reach roughly ~100 g.
 
-## Transferability hypothesis
+Do not imply 100 g refers to final natural product unless separately confirmed.
 
-Potentially strong evidence for:
-- operating a dependency-heavy pipeline;
-- small-team technical coordination;
-- resource / bottleneck management;
-- R&D-to-scale-up thinking;
-- troubleshooting under uncertainty;
-- sustained execution intensity.
+## Work intensity
+
+During intensive periods:
+- laboratory time was often 70+ hours/week;
+- work commonly extended across seven days while the user was simultaneously taking classes.
+
+Resume rule:
+- do not use "70+ hours/week" as a bragging bullet by default;
+- treat it as background evidence of sustained execution under high parallel workload.
+
+## Scientific-output boundary
+
+The user states:
+- the revised route was newly designed by the user;
+- the work became the basis of the user's undergraduate thesis.
+
+The 2023 resume also described a large step-count reduction and use of a Rh-catalyzed cascade strategy. These should not be turned into personal headline metrics until exact scientific attribution is confirmed.
+
+## Capability primitives trained
+
+- informal leadership without formal authority;
+- matching people to tasks;
+- dependency / bottleneck thinking;
+- redesign after scale-up failure;
+- parallel R&D / scale-up / material-supply coordination;
+- technical troubleshooting;
+- sustained execution under heavy workload.
+
+## Transferability
+
+Strongest transfer hypotheses:
+- commercial / product roles that require coordinating interdependent workstreams;
+- supply / operations environments where bottlenecks propagate downstream;
+- product development where an initially elegant solution fails under scale and must be redesigned;
+- small-team settings where leadership comes from judgment and execution rather than title.
 
 ## Claim boundaries
 
-Do not call this industrial manufacturing / factory production.
-Do not claim direct reports or formal people-management authority until confirmed.
-Do not attribute team/lab scientific results solely to the user without ownership evidence.
+- Do not call this industrial manufacturing or factory production.
+- Do not claim formal direct reports.
+- Do not describe the entire group output as solely the user's scientific achievement.
+- Do not over-index on chemistry details for non-technical roles; the transferable operating pattern is more important.
