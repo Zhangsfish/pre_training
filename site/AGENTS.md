@@ -9,4 +9,4 @@
 - `scripts/browser-evidence.mjs`：真实浏览器验收与匿名外链检查；通过环境指定已安装 Playwright 和 Chrome。
 - `README.md`：精确命令、版本、限制和官方文档来源。
 
-此处工程版本锁定在 package-lock；不引入 R02 视觉方案或 R03 详情路由。公开媒体尚无许可，不能加入 public。证据在 delivery/audits/R01/。
+工程版本锁定在 package-lock。R02 已授权，仅在 `review/` 建三种小型视觉方向，生产路由和首页不变；不引入 R03 详情。公开媒体尚无许可，不能加入 public。R01 证据保留；本轮证据在 delivery/audits/R02/。

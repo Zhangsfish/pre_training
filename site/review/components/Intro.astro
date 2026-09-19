@@ -1,0 +1,11 @@
+---
+import type { PublicView } from '../../src/types';
+interface Props { view: PublicView }
+const { view } = Astro.props;
+---
+<div class="intro-copy">
+  <p class="eyebrow" data-copy="hero-eyebrow">{view.hero.eyebrow}</p>
+  <h1 data-copy="hero-title">{view.hero.title}</h1>
+  <p class="intro-text" data-copy="hero-intro">{view.hero.intro}</p>
+  <div class="actions"><a class="primary" href="#work">查看项目 <span aria-hidden="true">↗</span></a><a href="#teaching">教学与协作 <span aria-hidden="true">↓</span></a></div>
+</div>

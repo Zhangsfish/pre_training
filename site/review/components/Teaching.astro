@@ -1,0 +1,12 @@
+---
+import type { DisplayProject } from '../../src/types';
+interface Props { project: DisplayProject }
+const {project:p}=Astro.props;
+---
+<section id="teaching" class="teaching" aria-labelledby="teaching-heading">
+  <div><p class="eyebrow">教学与协作</p><h2 id="teaching-heading" data-copy="teaching-title">{p.title}</h2></div>
+  <div class="teaching-body"><p data-copy="teaching-summary">{p.summary}</p><p class="boundary" data-copy="teaching-boundary">{p.boundary}</p>
+    <div class="course-links">{p.links.map(l=><a href={l.url}>{l.label}<span aria-hidden="true">↗</span></a>)}</div>
+    <small>历史课程资料</small>
+  </div>
+</section>
