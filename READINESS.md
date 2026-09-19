@@ -17,7 +17,7 @@ A specific JD is **not** required to generate the master resume. It is only requ
 ### Personal homepage / portfolio
 **CONTENT READY — VISUAL ASSETS PARTIAL**
 
-The story, projects and evidence are sufficient to build the information architecture and first implementation.
+The story, projects and evidence are sufficient to build the information architecture and implementation.
 
 The main missing high-value asset is visual proof for SPPS.
 
@@ -32,8 +32,8 @@ Recorded:
 - PKU cross-disciplinary retraining
 - PKU PAP/ACP3 PET project
 - QQ Lingxi competition project
-- Selection Dictionary
 - KIN portfolio case
+- Selection Dictionary (archive-only; excluded from default outputs)
 
 ## No more biography interview required
 
@@ -77,10 +77,10 @@ Before public use:
 ### Nice-to-have, not blocking
 
 - a neutral portrait photo;
-- a preferred English / Chinese one-line self-description;
 - screenshots / demo links for QQ Lingxi;
-- screenshots for Selection Dictionary (already available in repo);
 - finished KIN web case when that separate project completes.
+
+Selection Dictionary is intentionally excluded from the default homepage.
 
 ## Generation rule
 
@@ -99,16 +99,17 @@ Pass when:
 - at least 3 strong projects have visual / clickable proof;
 - confidential work can be shown safely or represented in redacted form.
 
-## Recommended homepage project order
+## Recommended homepage project set
 
-Default hypothesis:
-1. SPPS — strongest physical 0→1 proof
-2. KIN — strongest commercial / product judgment case
-3. Selection Dictionary — cleanest self-originated shipped utility
-4. QQ Lingxi — AI-native product / competition
-5. PAP/ACP3 PET — research / AI-native domain acquisition, high-level public-safe only
+Default:
+1. **SPPS** — strongest physical 0→1 proof
+2. **KIN** — strongest commercial / product judgment case
+3. **QQ Lingxi** — AI-native product / competition proof
+4. **PAP/ACP3 PET** — AI-native domain acquisition + first-author research, high-level public-safe only
 
-This is a default presentation order, not a fixed ranking. Final order should change with the target audience.
+Supporting trajectory:
+- Tang Aoqing / natural-product / TA history explains capability formation;
+- PKU cross-disciplinary retraining explains the move from science-only identity toward business / organization / human-behavior questions.
 
 ## Maintenance triggers
 
@@ -116,6 +117,5 @@ Update this repository when:
 - JMC manuscript is actually submitted / accepted;
 - patent applications receive filing status / numbers;
 - KIN final site is deployed;
-- Selection Dictionary release / adoption changes materially;
 - QQ Lingxi receives a later competition result;
 - SPPS visual evidence is added.
