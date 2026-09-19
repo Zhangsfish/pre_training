@@ -30,7 +30,7 @@ Visual:
 
 Working hero-content direction, **not final copy**:
 
-> 从化学实验、实体仪器到 AI 产品与商业问题，我更擅长的不是某个固定工具，而是进入陌生环境、把问题想清楚，再把系统真正跑起来。
+> 从化学实验、实体仪器到 AI 产品与商业问题，我更擅长的不是某个固定工具，而是进入陌生环境、看见一个值得解决的问题，再把它推到真实证据和可运行系统。
 
 ### 2. Selected Work — four proof cards
 
@@ -48,15 +48,29 @@ Surface immediately:
 CTA: View case.
 
 #### KIN
-Headline idea:
-**不是为产品假设辩护，而是让现实证据决定产品该缩哪里。**
+Primary headline direction:
+**老人不只是一个需要被监控的风险对象，他也有值得被看见的普通一天。**
 
-Surface:
-- consumer need;
-- competitor evidence;
-- thesis change;
-- mature-platform-first validation;
-- product / cost / GTM loop.
+Do **not** lead the card with competitor research or mature-platform reframe.
+
+Surface immediately:
+- original observation: missed call creates an unknown-state gap;
+- H1 / H2 / H3;
+- especially H2: ordinary life / presence / participation versus risk-only elder tech;
+- user's idea of state consumption for emotionally important people;
+- then: strongest counterevidence and what survived.
+
+Case narrative:
+```text
+Original insight
+→ H1 / H2 / H3
+→ try to falsify them
+→ features/state were less novel than expected
+→ core relationship-consumption insight survived
+→ product scope changed
+```
+
+The competitive-research result is proof of judgment quality, **not the source of the idea**.
 
 Clearly label as portfolio case.
 
@@ -88,23 +102,23 @@ Not a "skills" cloud.
 
 Use three recurring operating patterns proven across projects:
 
-#### A. Define before execute
+#### A. Define the real job before building
 Examples:
-- TA kinetics one-shot workflow;
-- SPPS system requirements;
-- PET biodistribution de-risking.
+- KIN: ordinary-life participation versus safety monitoring;
+- SPPS: system behavior before subsystem work;
+- TA kinetics: one-shot workflow designed before execution.
 
-#### B. Work AI-native, keep judgment human
+#### B. Work AI-native, keep reality as the judge
 Examples:
 - QQ Lingxi: AI as implementation workforce;
 - PAP/PET: AI as co-reasoning / tutor;
 - KIN: AI as research / evidence engine.
 
-#### C. Let reality change the model
+#### C. Let evidence kill assumptions
 Examples:
+- KIN H1/H2 narrowed by strongest counterexamples;
 - natural-product route redesign after scale-up failure;
-- KIN thesis reframe after competitor evidence;
-- experiments / product tests used as feedback, not decoration.
+- physical experiments / operating results used as feedback, not decoration.
 
 ### 4. Trajectory
 
@@ -137,19 +151,35 @@ Compact:
 
 No LinkedIn currently.
 
-## Case-page template
+## KIN detail-page special structure
 
-Every case should answer in this order:
+KIN should **not** use a generic project case template first.
 
-1. **Context** — what world / constraint did this happen in?
-2. **Problem** — what had to change?
-3. **My ownership** — what did I decide / own?
-4. **Others / AI** — what did collaborators or AI do?
-5. **Hard constraint** — what made the problem nontrivial?
-6. **Decision / operating model** — how was it solved?
-7. **Outcome** — what existed afterward?
-8. **Proof** — video, screenshot, repo, manuscript status, data.
-9. **What this trained** — 2–3 transferable capabilities, not a giant skill list.
+Use:
+1. **Observation** — older-parent products mostly make risk / care legible; user wanted ordinary life to be legible.
+2. **Three beliefs** — H1 / H2 / H3.
+3. **What would prove me wrong?**
+4. **Strongest counterexamples** — global + China.
+5. **What broke** — feature novelty / state novelty.
+6. **What survived** — relationship consumption / ordinary-life context.
+7. **What changed in the product** — mature substrate first; context / consumption first.
+8. **Current product / GTM / economics** — downstream implications.
+9. **Contribution boundary** — user judgment vs AI research / implementation.
+
+This ordering is essential because the user's original insight is the career evidence.
+
+## Generic case-page template
+
+For other cases:
+1. Context
+2. Problem
+3. My ownership
+4. Others / AI
+5. Hard constraint
+6. Decision / operating model
+7. Outcome
+8. Proof
+9. What this trained
 
 ## Explicit exclusions
 
