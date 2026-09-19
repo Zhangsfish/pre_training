@@ -10,6 +10,10 @@ Maps transferable capabilities to verifiable experience records.
 | Resource acquisition / procurement | SPPS instrument | requirement files, quotations, vendor manuals, invoices | component / quantity / sourcing decisions; direct requests to Tsinghua-side | user estimates ~RMB 1.5m resources secured; exact total unverified | **B/C** |
 | Cost-oriented sourcing | SPPS instrument | imported + domestic vendor evidence | selected domestic substitutes for imported fluidics | user estimates ~10× cost reduction on some components; unverified | **C** pending price reconstruction |
 | Control / workflow design | SPPS instrument | 27 script / definition entries; 3 pumps + 6 valves | user wrote high-level synthesis sequencing | automated peptide synthesis ran on physical system | **A/B** |
+| Greenfield program build | PAP/ACP3 PET project | public-safe experience record + private manuscript | user built missing local synthesis capability and reconstructed a new experimental stack | full research chain reached manuscript / patent stage | **A/B** |
+| Cross-site hard-window planning | PAP/ACP3 PET project | 68Ga / PET external-site workflow; user narrative | user planned experiments, materials, and host-lab coordination | radioactive / imaging experiments executed despite short time windows | **B/C** |
+| High-cost experiment risk reduction | PAP/ACP3 PET project | user narrative + manuscript in vivo dataset | user used smaller validation experiments before expensive biodistribution | full in vivo dataset obtained; exact one-shot linkage pending confirmation | **B/C** |
+| AI-native domain acquisition | PAP/ACP3 PET project | user narrative + integrated manuscript output | user used AI for learning / planning / analysis / figures / writing while retaining physical execution and judgment | unfamiliar field progressed to integrated manuscript | **A/B** |
 | Informal leadership | Natural-product synthesis | team workflow record | naturally coordinated ~5 core / ~10 total undergrads | parallel route / scale-up / material supply continued | **B/C** |
 | Bottleneck redesign | Natural-product synthesis | user narrative + thesis context | redesigned route after scale-up failure | new route worked and entered scale-up / supply pipeline | **B/C** |
 | Process design | Organic lab TA | kinetics protocol, 91-vial preparation, parallel groups | user designed course experiment / workflow | one-shot coordinated experiment completed | **B** |
@@ -27,8 +31,11 @@ Where a cell says **A/B** or **B/C**, the experience contains multiple evidence 
 ## Verification rule
 
 Approximate user recollections such as:
-- ~RMB 1.5m resource scale;
-- ~10× component cost reduction;
-- ~95% peptide purity;
+- ~RMB 1.5m SPPS resource scale;
+- ~10× SPPS component cost reduction;
+- ~95% SPPS peptide purity;
+- ~RMB 4,000 PAP/PET biodistribution run cost;
 
 remain explicitly marked as unverified until primary evidence is reconstructed.
+
+Pending / unpublished PAP-PET manuscript and patent details must stay out of public resume / portfolio materials except at a high level until disclosure is safe.
