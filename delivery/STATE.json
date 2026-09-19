@@ -1,21 +1,79 @@
 {
-  "schema_version":1,
-  "architecture_version":"architecture-v1",
-  "created_on":"2026-09-20",
-  "source_base_commit":"e77b9ed38902eb79d21b974fe07580760a8a0fd7",
-  "active_round":"R01",
-  "authorized_round":"R01",
-  "controller":"planner_reviewer",
-  "selected_design":null,
-  "deployment_approval":null,
-  "rounds":[
-    {"id":"R01","status":"ready","prompt":"delivery/prompts/R01_FOUNDATION.md","branch":"codex/R01","report_path":"delivery/audits/R01/REPORT.md","review_path":null,"pr_number":null,"accepted_commit":null},
-    {"id":"R02","status":"locked","prompt":"delivery/prompts/R02_VISUAL.md","branch":"codex/R02","report_path":"delivery/audits/R02/REPORT.md","review_path":null,"pr_number":null,"accepted_commit":null},
-    {"id":"R03","status":"locked","prompt":"delivery/prompts/R03_SITE.md","branch":"codex/R03","report_path":"delivery/audits/R03/REPORT.md","review_path":null,"pr_number":null,"accepted_commit":null},
-    {"id":"R04","status":"locked","prompt":"delivery/prompts/R04_RESUMES.md","branch":"codex/R04","report_path":"delivery/audits/R04/REPORT.md","review_path":null,"pr_number":null,"accepted_commit":null},
-    {"id":"R05","status":"locked","prompt":"delivery/prompts/R05_ACCEPTANCE.md","branch":"codex/R05","report_path":"delivery/audits/R05/REPORT.md","review_path":null,"pr_number":null,"accepted_commit":null},
-    {"id":"R06","status":"locked","prompt":"delivery/prompts/R06_RELEASE.md","branch":"codex/R06","report_path":"delivery/audits/R06/REPORT.md","review_path":null,"pr_number":null,"accepted_commit":null}
+  "schema_version": 1,
+  "architecture_version": "architecture-v1",
+  "created_on": "2026-09-20",
+  "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
+  "active_round": "R01",
+  "authorized_round": "R01",
+  "controller": "planner_reviewer",
+  "selected_design": null,
+  "deployment_approval": null,
+  "rounds": [
+    {
+      "id": "R01",
+      "status": "changes_requested",
+      "prompt": "delivery/prompts/R01_FOUNDATION.md",
+      "branch": "codex/R01",
+      "report_path": "delivery/audits/R01/REPORT.md",
+      "review_path": "delivery/reviews/R01-a01.md",
+      "pr_number": 1,
+      "accepted_commit": null
+    },
+    {
+      "id": "R02",
+      "status": "locked",
+      "prompt": "delivery/prompts/R02_VISUAL.md",
+      "branch": "codex/R02",
+      "report_path": "delivery/audits/R02/REPORT.md",
+      "review_path": null,
+      "pr_number": null,
+      "accepted_commit": null
+    },
+    {
+      "id": "R03",
+      "status": "locked",
+      "prompt": "delivery/prompts/R03_SITE.md",
+      "branch": "codex/R03",
+      "report_path": "delivery/audits/R03/REPORT.md",
+      "review_path": null,
+      "pr_number": null,
+      "accepted_commit": null
+    },
+    {
+      "id": "R04",
+      "status": "locked",
+      "prompt": "delivery/prompts/R04_RESUMES.md",
+      "branch": "codex/R04",
+      "report_path": "delivery/audits/R04/REPORT.md",
+      "review_path": null,
+      "pr_number": null,
+      "accepted_commit": null
+    },
+    {
+      "id": "R05",
+      "status": "locked",
+      "prompt": "delivery/prompts/R05_ACCEPTANCE.md",
+      "branch": "codex/R05",
+      "report_path": "delivery/audits/R05/REPORT.md",
+      "review_path": null,
+      "pr_number": null,
+      "accepted_commit": null
+    },
+    {
+      "id": "R06",
+      "status": "locked",
+      "prompt": "delivery/prompts/R06_RELEASE.md",
+      "branch": "codex/R06",
+      "report_path": "delivery/audits/R06/REPORT.md",
+      "review_path": null,
+      "pr_number": null,
+      "accepted_commit": null
+    }
   ],
-  "assets":{"spps_raw_archive":"verified_present","spps_publication":"pending_review","spps_codex_access":"bridge_pending"},
-  "note":"STATE是策划者维护的授权，不自动追踪运行。Codex启动前还须检查固定轮次分支是否已有未审REPORT/PR；不得重复开工或自改状态。"
+  "assets": {
+    "spps_raw_archive": "verified_present",
+    "spps_publication": "pending_review",
+    "spps_codex_access": "bridge_pending"
+  },
+  "note": "R01 attempt 01 reviewed: FIX. Codex must apply delivery/reviews/R01-a01.md on codex/R01 and submit attempt 02; later rounds remain locked."
 }
