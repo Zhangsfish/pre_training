@@ -327,3 +327,15 @@ Only a few facts still matter:
 
 Strong current claim:
 **the user acted as the de facto end-to-end system integrator / product owner who turned an underdefined benchmark into a working automated flow-peptide-synthesis instrument under real resource and stakeholder constraints.**
+
+
+## Visual evidence received
+
+Raw SPPS visual proof has been archived privately for future portfolio use:
+
+- 4 instrument photos;
+- 2 operating videos.
+
+See `site/SPPS_ASSETS.md` for the private-archive location, media metadata and publication workflow.
+
+These raw assets must not be copied directly into the public repository without a confidentiality / visible-information review.
