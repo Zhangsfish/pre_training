@@ -2,18 +2,30 @@
 
 Canonical basic profile. Do not invent missing fields.
 
-IMPORTANT PRIVACY NOTE: this repository is currently public. Phone number, private email, street address, ID numbers, date of birth, and other unnecessary personal identifiers must not be committed here. Generated resumes should inject {{PHONE}} and {{EMAIL}} from a private source unless the repository is made private and the user explicitly chooses to store them.
+IMPORTANT PRIVACY NOTE: this repository is public. Phone number, private email, street address, ID numbers, date of birth, and other unnecessary personal identifiers must not be committed here. Generated resumes should inject {{PHONE}} and {{EMAIL}} from a private source.
 
 ## Resume Header
 
-- Resume name: TODO
-- Chinese name: TODO
-- Current city / country to display: TODO
+- Resume display name: 张朔
+- Romanized name: Zhang Shuo
+- Primary application market: China
+- Current city / country: omit by default for China applications unless the employer or JD makes location relevant
 - Phone: {{PHONE}}
 - Email: {{EMAIL}}
-- GitHub: Zhangsfish
-- LinkedIn: TODO / optional
-- Portfolio / personal site: TODO / optional
+- GitHub account: Zhangsfish
+- LinkedIn: none
+- Standalone portfolio / personal site: none currently
+- Project links: place the relevant GitHub / demo link directly inside each project entry rather than in a separate generic link section
+
+## Personal-information policy for China applications
+
+Default header should stay minimal:
+
+- Required: name, phone, email
+- Optional when useful: GitHub / project link, specific portfolio link, target role
+- Do not include by default: 籍贯, 民族, 身高体重, 血型, 婚姻状况, 出生年月, 完整住址
+- 性别 / 政治面貌 / 籍贯 only when the specific employer, sector, or application form makes them relevant
+- Photo is optional, not a default requirement; follow employer instructions or role norms
 
 ## Education
 
@@ -59,7 +71,7 @@ This is the full inventory, not what appears on every resume.
 Usually not printed unless useful, but needed for JD matching.
 
 - Target graduation recruiting cycle: TODO
-- Target countries / regions: TODO
+- Target countries / regions: China primary; others TODO
 - Work authorization / visa constraints: TODO
 - Willingness to relocate: TODO
 - Preferred resume language(s): TODO
@@ -74,6 +86,6 @@ Usually not printed unless useful, but needed for JD matching.
 
 ## Privacy decision
 
-- Repository visibility at initialization: Public
-- Store phone/email in GitHub?: No by default
-- If full private profile is desired: make repository private first, then explicitly approve adding contact information.
+- Repository visibility: Public
+- Store phone/email in GitHub?: No
+- Contact details are injected only into locally generated submission copies.
