@@ -1,7 +1,7 @@
-# Experience: 北京大学 PAP/ACP3 靶向 PET 探针项目 — 从零搭建研究平台并推进至投稿 / 专利
+# Experience: 北京大学 PAP/ACP3 靶向 PET 探针项目 — 新方向落地与 AI-native 科研
 
 > Status: public-safe career evidence record.
-> Sensitive boundary: the manuscript is under submission and two patent applications are in progress. Do **not** publish novel compound structures, unpublished patent claims, exact synthetic details, or other confidential project information in this public repository.
+> Sensitive boundary: manuscript is being prepared for submission and related patent work is being handled externally. Do **not** publish novel compound structures, unpublished patent claims, exact synthetic details, or other confidential project information in this public repository.
 > Sources: user narrative + manuscript materials stored in the user's private file library.
 
 ## Identity
@@ -9,16 +9,15 @@
 - Organization: 北京大学基础医学院，放射医学系
 - Core period: approximately **2025-08 – 2026-07**
 - Domain: PAP / ACP3-targeted small-molecule PET tracer research
-- External imaging / radiochemistry collaboration: PET/CT and short-lived radiometal work performed with collaborators at 北京大学肿瘤医院
-- Current output status (user-reported):
-  - one JMC manuscript under submission;
-  - two related patent applications in progress.
-
-Do not list manuscript / patent as accepted or granted until that happens.
+- External imaging / radiochemistry site: 北京大学肿瘤医院
+- External collaboration access was arranged by the supervisor, **not by the user**.
+- Current output status:
+  - **JMC manuscript in preparation for submission; user is first author.** Draft has been handed to the supervisor; do not call it submitted yet.
+  - two related patent matters have been sent by the supervisor to a patent agency / company; exact filing status and inventor order are currently unknown.
 
 ## Starting environment
 
-The project required three distinct experimental infrastructures:
+The project required three practical experimental layers:
 
 1. **Traditional organic synthesis**
    - roughly 200 mg to 10 g scale;
@@ -33,136 +32,146 @@ The project required three distinct experimental infrastructures:
    - PET/CT imaging;
    - animal / biodistribution experiments.
 
-At project start, the local lab had only minimal traditional organic-synthesis infrastructure (user recalls essentially one usable fume hood and little else). The user reports building much of the required local synthesis workflow / infrastructure from scratch.
+At project start, the local group had minimal day-to-day organic-synthesis operating infrastructure for this direction.
 
-PET/CT and 68Ga infrastructure were not available locally and therefore had to be accessed through an external collaborator.
+The user mainly rebuilt the **working layer**, not an expensive instrument platform:
+- migrated / re-established the standard organic-chemistry consumables and workflows used in a conventional synthesis lab;
+- assembled dozens of recurring consumable SKUs / small items;
+- adapted existing major equipment rather than purchasing a large new instrument suite;
+- incremental setup cost was only on the order of several thousand RMB by user recollection.
+
+Resume rule:
+- do not exaggerate this as "built an entire laboratory from scratch";
+- stronger accurate claim: **established the missing day-to-day synthesis operating system for a new research direction.**
 
 ## Why the operating environment was difficult
 
-### Greenfield technical environment
+### Greenfield knowledge environment
 
 This was a new direction for the local group.
 
-The user entered without a trained senior student who could teach the workflow end-to-end. Earlier members had already graduated.
+The user entered without an experienced senior student who could teach the complete workflow end-to-end; earlier members with relevant experience had already graduated.
 
-The target / research direction was assigned by the supervisor, but the user reports that much of the practical route — literature learning, experiment design, method development, analysis, and troubleshooting — had to be reconstructed from first principles.
+The supervisor supplied the broad target / direction. Most practical questions still had to be solved during execution:
+- literature / domain learning;
+- experimental design;
+- method development;
+- analysis;
+- troubleshooting;
+- integration of chemistry, biology, radiochemistry, imaging, and animal data.
 
-### Distributed infrastructure
+### Distributed but pre-existing infrastructure
 
-The experimental chain spanned:
-- the local chemistry lab;
-- HPLC / analytical infrastructure;
-- external 68Ga / PET/CT facilities;
-- animal experiments.
+PET/CT and 68Ga capabilities were not local. The **relationship / access was already arranged by the supervisor**.
 
-This made planning and transport part of the scientific problem.
+The user's job was not to acquire that collaboration; it was to make experiments succeed inside a distributed setup:
+- plan the full experiment before leaving the home lab;
+- prepare and transport all needed materials;
+- coordinate the actual experimental session with the host lab;
+- work within short radioactive time windows;
+- avoid discovering a missing item or design flaw after the run had started.
 
-### Short-lived isotope constraint
-
-68Ga has a short physical half-life, so radiochemistry / PET experiments were strongly time constrained.
-
-User-reported operating pattern:
-- plan the entire experiment before leaving the home lab;
-- assemble all necessary materials in advance;
-- carry roughly ~20 SKU / item types for some external experimental sessions;
-- maintain good working relationships with the host laboratory because work depended on another group's equipment and time.
-
-Career interpretation:
-**pre-flight planning under irreversible time windows**, rather than ordinary flexible bench work.
+Some external sessions required roughly ~20 categories / SKUs of materials by user recollection.
 
 ### High-cost one-shot experiments
 
 User reports that a biodistribution experiment could cost roughly **RMB 4,000 per run**.
 
-Because the method was new to the user / local team, the approach was:
-1. use many smaller / cheaper experiments to understand the mechanism and failure modes;
-2. validate individual conditions repeatedly;
-3. only then run the expensive full experiment.
+Because the workflow was new, the operating principle was:
+1. break the final experiment into cheaper subproblems;
+2. validate conditions repeatedly in small experiments;
+3. remove foreseeable failure modes;
+4. run the expensive main experiment only after the setup was mature.
 
-The user describes the mindset as similar to a rocket launch: the high-cost main run should begin only after the low-cost uncertainties have been removed.
+The user describes this as similar to a rocket launch: much of the work happens before launch because the main run has little room for improvisation.
+
+The manuscript's final main biodistribution dataset was obtained in the **single planned formal run** described by the user.
 
 Do not treat RMB 4,000 as audited accounting; it is a user-reported approximate run cost.
 
 ## User's ownership
 
-### 1. Greenfield infrastructure buildout
+### 1. Local operating-infrastructure setup
 
-User reports personally taking primary ownership of:
-- determining what infrastructure / equipment / consumables were needed;
-- establishing the local traditional organic-synthesis workflow;
-- enabling the project to handle both larger-scale synthetic chemistry and low-scale HPLC-purified medicinal chemistry;
-- building the practical operating system required for a previously absent research direction.
+The user took primary ownership of identifying and assembling the consumables / workflows needed to make conventional organic synthesis function in a lab that did not previously operate that way for this project.
 
-Exact equipment list / spend remains TODO if later useful.
+This involved many small dependencies rather than expensive capital equipment.
 
-### 2. Experimental design from first principles
+### 2. Experimental reasoning and design
 
-The user describes the project as requiring complete understanding before execution rather than following inherited SOPs.
+There was no inherited end-to-end SOP.
 
-Examples include:
-- learning how to design and interpret PAP inhibition / IC50 experiments;
-- developing radiochemistry and biological evaluation workflows;
-- reasoning through PET / biodistribution experiment design;
-- using small validation experiments before committing to expensive in vivo runs.
+The user learned and reasoned through questions such as:
+- how to design and interpret PAP inhibition / IC50 experiments;
+- how to sequence chemistry, radiolabeling, cellular, PET, and biodistribution work;
+- how to de-risk expensive animal experiments;
+- how to interpret conflicting metrics across potency, uptake, clearance, and background.
 
-### 3. Cross-site operations
+### 3. Peer collaboration, not centralized team management
 
-For external 68Ga / PET work, the user had to:
-- plan experiments end-to-end before travel;
-- prepare and transport all required materials;
-- coordinate with the host laboratory;
-- adapt to short time windows imposed by radioisotope decay;
-- minimize the chance of discovering a missing material or design flaw after the radioactive workflow had started.
-
-### 4. Informal team leadership
-
-User reports working with:
+The user worked alongside:
 - one senior female labmate;
 - one junior male labmate.
 
-The user's typical pattern:
-- research / design the experimental logic;
-- think through the required infrastructure / steps;
-- discuss the plan with teammates;
-- then execute together.
+Each person had their **own ownership**.
 
-The user also reports helping think through teammates' experiments, not only the user's own project.
+The user reports contributing ideas across the group's experiments more often than the others, but does **not** characterize the group as a hierarchy where the user assigned everyone's tasks.
 
-Exact task split / formal authority remains to be clarified.
+Resume rule:
+- do not frame this as "managed a three-person team";
+- defensible framing is **peer technical leadership / high idea contribution / collaborative problem solving**.
 
-### 5. AI-native domain acquisition
+### 4. AI-native co-reasoning from the beginning
 
-This is a major training feature.
+This project is a strong example of a different AI workflow from QQ Lingxi.
 
-User-reported starting point:
-- the user was effectively new to much of radiopharmaceutical / PET tracer development;
-- no experienced senior student remained to provide end-to-end apprenticeship.
-
-User-reported learning loop:
-
+The user did **not** typically:
 ```text
-Supervisor provides target / broad problem
-→ user + AI reconstruct domain knowledge
-→ user designs experiments / infrastructure / analysis with AI support
-→ user tests ideas physically
-→ user interprets failures / data with AI
-→ user teaches / coordinates labmates
-→ AI assists data analysis, figures, and manuscript writing
+form a complete human plan A
+→ ask AI
+→ switch to plan B
 ```
 
-AI involvement reportedly extended across:
-- literature learning;
-- experimental design discussion;
-- troubleshooting;
-- data analysis;
-- visualization / figure work;
-- manuscript drafting / editing.
+Instead, the problem-solving process was AI-native from the start:
 
-Claim boundary:
-- AI did not perform the physical experiments;
-- do not convert AI-generated analysis or writing into evidence of independent human technical authorship without keeping the human-judgment / execution boundary explicit.
+```text
+supervisor gives broad target
+→ user and AI jointly formulate what needs to be understood
+→ jointly generate / compare possible experimental approaches
+→ user judges feasibility in the real lab
+→ physical experiment produces feedback
+→ user and AI jointly diagnose results / failures
+→ next experiment is reformulated
+→ analysis / figures / manuscript are also developed in the same loop
+```
 
-### 6. Research chain delivered
+The user therefore sees "AI changed my independent idea" as the wrong test of AI-native work: there often was no fully separated pre-AI plan.
+
+This should not be interpreted as absence of human agency.
+
+Human ownership remained in:
+- deciding what problem actually mattered;
+- deciding what could be trusted;
+- deciding what was feasible with real resources;
+- choosing which proposed experiment to physically run;
+- noticing when reality contradicted the model;
+- accepting or rejecting analysis;
+- executing all physical experiments;
+- taking responsibility for the integrated scientific result.
+
+AI functioned as:
+- domain tutor;
+- brainstorming / reasoning partner;
+- experimental-design partner;
+- troubleshooting partner;
+- analysis / statistics assistant;
+- visualization assistant;
+- writing / editing partner.
+
+This distinction is important for future interview framing:
+**AI was integrated at the problem-formulation layer, not added only after a human solution already existed.**
+
+### 5. Research chain delivered
 
 The manuscript materials show that the study spans the full chain from:
 - medicinal chemistry / SAR;
@@ -185,27 +194,26 @@ The private manuscript documents:
 - quantitative PET / biodistribution;
 - an integrated lead-selection decision based on both target uptake and normal-tissue background.
 
-This supports the claim that the project was a **full-stack translational research program**, not a single assay or synthesis task.
+This supports the claim that the project was a **full-chain translational research program**, not a single assay or synthesis task.
 
 ## Capability primitives trained
 
-### Greenfield build
-- building infrastructure where none existed;
-- learning an unfamiliar domain without an experienced local mentor;
-- turning a broad target into an executable research program.
+### Greenfield execution
+- establishing missing day-to-day operating infrastructure with many small dependencies;
+- learning an unfamiliar domain without a local senior-student apprenticeship;
+- turning a broad target into an executable multi-stage research program.
 
 ### Operations / risk
 - planning around short-lived resources and hard time windows;
-- external-site coordination;
+- cross-site execution using a supervisor-provided external facility relationship;
 - inventory / checklist thinking;
 - pilot validation before expensive irreversible execution;
 - cost-aware experimentation.
 
-### Leadership
-- designing work before team execution;
-- informal technical leadership;
-- helping others reason through experiments;
-- transferring newly acquired knowledge to teammates.
+### Collaboration
+- peer technical leadership without formal authority;
+- contributing ideas across others' experiments;
+- transferring newly learned knowledge inside the group.
 
 ### Analytical
 - first-principles experimental design;
@@ -215,10 +223,10 @@ This supports the claim that the project was a **full-stack translational resear
 - lead selection from conflicting metrics.
 
 ### AI-native execution
-- using AI as an always-available domain tutor;
-- AI-assisted experimental planning;
-- AI-assisted analysis / visualization / scientific writing;
-- retaining human responsibility for experimental judgment and physical execution.
+- human-AI co-formulation from the beginning rather than post-hoc AI assistance;
+- rapid acquisition of an unfamiliar research field;
+- AI-assisted planning, troubleshooting, analysis, visualization, and scientific writing;
+- human responsibility retained at reality-check, feasibility, execution, and final-judgment layers.
 
 ## Transferability
 
@@ -226,31 +234,18 @@ Especially relevant to:
 - 0→1 technical / hardware product roles;
 - product roles requiring operation across multiple technical subsystems;
 - program / project ownership under resource constraints;
-- roles where experiments / launches have expensive failure costs;
+- roles where launches / experiments have expensive failure costs;
 - AI-native knowledge work;
-- cross-functional roles that require learning experts' domains quickly enough to coordinate them.
+- roles requiring rapid acquisition of a domain with no local expert apprenticeship.
 
 For non-biomedical commercial roles, the highest-value story is not "I know PET."
+
 It is:
 
-**entered a nearly blank environment → built the missing infrastructure → learned an unfamiliar stack with AI → coordinated scarce external resources → validated cheaply before expensive runs → delivered an integrated research program to manuscript / patent stage.**
+**entered a new field with little inherited know-how → rebuilt the missing operating layer → used AI as a reasoning partner from problem formulation onward → de-risked expensive hard-window work through smaller tests → integrated multiple evidence streams into a first-author manuscript.**
 
-## Open questions
+## Remaining uncertainties
 
-Only facts that materially affect resume strength remain:
-
-1. Exact authorship position on the JMC manuscript (first / co-first / other)?
-2. Patent inventorship position for the two applications?
-3. Exact infrastructure built locally:
-   - major equipment / systems;
-   - approximate spend if meaningful.
-4. Team ownership:
-   - what did the senior labmate and junior labmate each own;
-   - whether the user assigned work or mainly proposed plans that the team jointly accepted.
-5. Biodistribution:
-   - whether the final manuscript's main biodistribution dataset was the "one-shot success" described by the user.
-6. AI stack:
-   - which models / tools were used most heavily during 2025-08 to 2026-07;
-   - whether there are specific examples where AI changed an experimental decision rather than just explaining or writing.
-7. Confidentiality:
-   - what project details are safe to show in a future public portfolio after manuscript / patent disclosure.
+- Exact filing status and inventor order for the two patent matters.
+- Exact date of manuscript submission once it occurs.
+- Confidentiality boundary for any future public portfolio case.
