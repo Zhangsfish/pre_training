@@ -83,6 +83,19 @@ The user reports that the materials that most changed their way of thinking were
 
 Do not publicly store or attribute sensitive intellectual influences explicitly identified by the user.
 
+## Small public-writing experiment
+
+The user briefly tried turning selected course notes into simplified public WeChat Official Account posts.
+
+- reached roughly **8 followers**;
+- stopped publishing because of copyright concerns around course-derived material;
+- also judged the writing quality not yet strong enough to justify continued public distribution;
+- kept the material for private learning / long-term accumulation instead.
+
+Interpretation:
+- useful as evidence of trying to turn learning into output and then applying a quality / rights boundary;
+- **not strong enough to occupy resume or homepage space by default**.
+
 ## AI-native learning workflow
 
 User-reported workflow:
