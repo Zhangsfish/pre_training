@@ -18,7 +18,7 @@
   },
   "commands": [
     {
-      "started_at": "2026-09-19T19:20:32.6596230Z",
+      "started_at": "2026-09-19T19:20:32.659623Z",
       "log_path": "attempt-01/check.log",
       "command": "npm --prefix site run check",
       "cwd": ".",
@@ -34,7 +34,7 @@
       "sha256": "c080223ca873b5f88079b04082aaa6dfe6fc26ee0d737423b07bdee50f08fb56"
     },
     {
-      "started_at": "2026-09-19T19:20:52.0155500Z",
+      "started_at": "2026-09-19T19:20:52.01555Z",
       "log_path": "attempt-01/review-build.log",
       "command": "npm --prefix site run review:build",
       "cwd": ".",
@@ -121,7 +121,7 @@
   },
   "visual_inspection": "All six viewport screenshots inspected; three distinct compositions; first-fold name, value and project entry readable. No screenshot editing.",
   "external_links": {
-    "checked_at": "2026-09-19T19:21:05.320Z",
+    "checked_at": "2026-09-19T19:21:05.32Z",
     "scope": "Visible approved source hrefs verified in local loopback browser; no remote availability claim or external requests."
   },
   "recommendation": "A: KIN and SPPS visible side by side on desktop, comparing product judgment and engineering delivery.",
@@ -132,5 +132,6 @@
   ],
   "implementation_status": "completed",
   "reviewer_decision": "pending",
-  "next_action": "Planner review actual images and implementation, then ask user to choose A/B/C. Stop before R03; no deployment."
+  "next_action": "Planner review actual images and implementation, then ask user to choose A/B/C. Stop before R03; no deployment.",
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/2"
 }

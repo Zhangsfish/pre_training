@@ -2,6 +2,7 @@
 
 - round / attempt: R02 / 01
 - branch: codex/R02
+- PR: https://github.com/Zhangsfish/pre_training/pull/2
 - base_commit: bdf4fb8103cd0463ee017344d391b5afe5d1f3bb
 - tested_commit: 651f9cc622610ab8e9bb3bb99038ada1857bfe29
 - prompt_path: delivery/prompts/R02_VISUAL.md
