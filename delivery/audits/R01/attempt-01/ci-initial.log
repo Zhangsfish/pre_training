@@ -1,0 +1,24 @@
+command: npm.cmd --prefix site ci --no-audit --no-fund
+cwd: .
+started_at: 2026-09-19T17:52:19.9656962Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Path redaction: local repository/user paths replaced by <repo>/<user>.
+
+npm error code EPERM
+npm error syscall unlink
+npm error path <repo>\site\node_modules\@astrojs\compiler-binding-win32-x64-msvc\astro.win32-x64-msvc.node
+npm error errno -4048
+npm error [Error: EPERM: operation not permitted, unlink '<repo>\site\node_modules\@astrojs\compiler-binding-win32-x64-msvc\astro.win32-x64-msvc.node'] {
+npm error   errno: -4048,
+npm error   code: 'EPERM',
+npm error   syscall: 'unlink',
+npm error   path: '<repo>\\site\\node_modules\\@astrojs\\compiler-binding-win32-x64-msvc\\astro.win32-x64-msvc.node'
+npm error }
+npm error
+npm error The operation was rejected by your operating system.
+npm error It's possible that the file was already in use (by a text editor or antivirus), or that you lack permissions to access it.
+npm error
+npm error If you believe this might be a permissions issue, please double-check the permissions of the file and its containing directories, or try running the command again as root/Administrator.
+npm error A complete log of this run can be found in: <user>\AppData\Local\npm-cache\_logs\2026-09-19T17_52_20_760Z-debug-0.log
+
+exit_code: -4048

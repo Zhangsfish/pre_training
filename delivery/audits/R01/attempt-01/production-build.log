@@ -1,0 +1,75 @@
+command: npm.cmd --prefix site run build
+cwd: .
+started_at: 2026-09-19T17:54:33.1723634Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Path redaction: local repository/user paths replaced by <repo>/<user>.
+
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+file:///<repo>/site/scripts/content.mjs:173
+  if (errors.length) throw new Error(`Content gate rejected ${mode}:\n${errors.join('\n')}`);
+                           ^
+
+Error: Content gate rejected production:
+profile: unapproved content
+home: unapproved content
+profile: unapproved claim profile.identity
+profile: unapproved claim profile.pku
+profile: unapproved claim profile.jlu
+education: unapproved claim profile.pku
+education: unapproved claim profile.jlu
+hero: unapproved claim profile.pku
+hero: unapproved claim profile.jlu
+hero: unapproved claim spps.ownership
+hero: unapproved claim kin.h2
+hero: unapproved claim qq.thesis
+method: unapproved claim kin.h2
+method: unapproved claim qq.ownership
+method: unapproved claim pet.ai
+method: unapproved claim spps.ownership
+method: unapproved claim pet.validation
+kin: unapproved content
+kin: unapproved claim kin.h1
+kin: unapproved claim kin.h2
+kin: unapproved claim kin.h3
+kin: unapproved claim kin.product
+kin: unapproved claim kin.ownership
+kin: unapproved claim kin.ai
+kin: unapproved claim kin.status
+kin: unapproved claim kin.research
+pet: unapproved content
+pet: unapproved claim pet.status
+pet: unapproved claim pet.setup
+pet: unapproved claim pet.external
+pet: unapproved claim pet.peers
+pet: unapproved claim pet.ai
+pet: unapproved claim pet.validation
+qq-lingxi: unapproved content
+qq-lingxi: unapproved claim qq.thesis
+qq-lingxi: unapproved claim qq.ownership
+qq-lingxi: unapproved claim qq.prototype
+qq-lingxi: unapproved claim qq.competition
+spps: unapproved content
+spps: unapproved claim spps.period
+spps: unapproved claim spps.ownership
+spps: unapproved claim spps.scripts
+spps: unapproved claim spps.collaboration
+spps: unapproved claim spps.delivery
+spps: unapproved claim spps.media
+teaching: unapproved content
+teaching: unapproved claim teaching.scope
+teaching: unapproved claim teaching.design
+teaching: unapproved claim teaching.feedback
+teaching: unapproved claim teaching.material
+teaching: unapproved claim teaching.links
+    at assertValid (file:///<repo>/site/scripts/content.mjs:173:28)
+    at file:///<repo>/site/scripts/build.mjs:6:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.15.0
+
+exit_code: 1

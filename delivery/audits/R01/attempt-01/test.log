@@ -1,0 +1,41 @@
+command: npm.cmd --prefix site run test
+cwd: .
+started_at: 2026-09-19T17:54:20.8774656Z
+environment: Windows; Node v24.15.0; CI=true; ASTRO_TELEMETRY_DISABLED=1
+Path redaction: local repository/user paths replaced by <repo>/<user>.
+
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ draft source set passes local review without source drift (40.7445ms)
+✔ missing claim fails closed (20.6913ms)
+✔ unknown cannot become an outcome (18.2581ms)
+✔ excluded project cannot enter default home (21.4656ms)
+✔ draft is blocked from production (18.4295ms)
+✔ approving document shells does not approve their underlying claims (17.8122ms)
+✔ approved synthetic in-memory copy passes gate without changing real drafts (23.3601ms)
+✔ duplicate identifiers rejected (17.1538ms)
+✔ nonexistent source rejected (16.9747ms)
+✔ wrong source heading rejected (18.2845ms)
+✔ source drift requests targeted review rather than silently updating it (19.7705ms)
+✔ required external link qq-lingxi-repo must exist (25.1328ms)
+✔ required external link notion-organic-synthesis must exist (21.5629ms)
+✔ required external link notion-organic-chemistry must exist (17.0763ms)
+✔ course links must also appear in teaching, not only registry (14.5592ms)
+✔ private resume fields cannot leak through site allowlist (17.8192ms)
+✔ explicit projection omits source metadata and phone (4.7212ms)
+✔ pending media cannot be referenced (14.2647ms)
+✔ pending original cannot be assigned public path (13.8832ms)
+✔ excluded and resume-only claims cannot render (29.2258ms)
+✔ production command ignores inherited review env and exits nonzero before output (221.9219ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 855.4148
+
+exit_code: 0
