@@ -1,0 +1,16 @@
+@page { size: A4; margin: 14mm; }
+* { box-sizing: border-box; }
+html { color: #111; background: white; }
+body { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; font-size: 10.5pt; line-height: 1.5; margin: 0; }
+h1 { font-size: 22pt; line-height: 1.1; margin: 0 0 6pt; }
+header { margin-bottom: 12pt; }
+header p { margin: 3pt 0; }
+h2 { font-size: 12pt; border-bottom: 1px solid #222; margin: 12pt 0 7pt; padding-bottom: 3pt; }
+h3 { font-size: 11pt; line-height: 1.4; margin: 8pt 0 3pt; }
+p { margin: 3pt 0; }
+a { color: inherit; text-decoration: underline; text-underline-offset: 2pt; }
+ul { padding-left: 15pt; margin: 3pt 0 7pt; }
+li { padding-left: 1pt; margin: 3pt 0; }
+article { break-inside: avoid; }
+.status { font-size: 10.5pt; }
+@media screen { body { width: 182mm; margin: 14mm auto; } }

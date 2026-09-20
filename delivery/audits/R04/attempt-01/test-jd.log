@@ -1,0 +1,28 @@
+command=npm.cmd --prefix site run test:jd
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:37:38.9385926Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 test:jd
+> node --test ../resume/scripts/model.test.mjs
+
+✔ general-zh: approved claims, snapshots, ownership and limits (27.9597ms)
+✔ product-commercial-zh: approved claims, snapshots, ownership and limits (16.9379ms)
+✔ brand-insight-zh: approved claims, snapshots, ownership and limits (14.9592ms)
+✔ ai-product-zh: approved claims, snapshots, ownership and limits (15.9673ms)
+✔ JD fixtures change selection/order while homepage remains identical to accepted R03 (253.9322ms)
+✔ reject unknown-claim (11.6966ms)
+✔ reject status-inflation (11.0921ms)
+✔ reject stale-source (8.8281ms)
+✔ reject public-variant (10.8012ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 581.9486
+
+exit_code=0

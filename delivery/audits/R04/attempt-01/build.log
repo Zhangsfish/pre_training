@@ -1,0 +1,38 @@
+command=npm.cmd --prefix site run build
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:37:28.4051312Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+09:37:33 [content] Syncing content
+09:37:33 [content] Synced content
+09:37:33 [types] Generated 1.48s
+09:37:33 [build] output: "static"
+09:37:33 [build] mode: "static"
+09:37:33 [build] directory: E:\myself\pre_training\site\dist\
+09:37:33 [build] Collecting build info...
+09:37:33 [build] ✓ Completed in 1.56s.
+09:37:33 [build] Building static entrypoints...
+09:37:34 [vite] ✓ built in 826ms
+09:37:34 [vite] ✓ built in 70ms
+09:37:34 [build] Rearranging server assets...
+
+ generating static routes
+09:37:34   ├─ /404.html (+50ms)
+09:37:34   ├─ /resume/index.html (+15ms)
+09:37:34   ├─ /work/kin/index.html (+10ms)
+09:37:34   ├─ /work/spps/index.html (+5ms)
+09:37:34   ├─ /work/qq-lingxi/index.html (+6ms)
+09:37:34   ├─ /work/pet/index.html (+6ms)
+09:37:34   ├─ /index.html (+13ms)
+09:37:34 ✓ Completed in 193ms.
+
+09:37:34 [build] ✓ Completed in 1.25s.
+09:37:34 [build] 7 page(s) built in 2.83s
+09:37:34 [build] Complete!
+Public output audit: {"files":["404.html","index.html","downloads/zhang-shuo-resume.pdf","resume/index.html","_astro/site.LYHxabVX.css","work/kin/index.html","work/pet/index.html","work/qq-lingxi/index.html","work/spps/index.html"],"total_bytes":202411,"client_js_bytes":0,"approved_media":0,"result":"pass"}
+
+exit_code=0

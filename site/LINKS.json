@@ -10,5 +10,5 @@
     {"id":"notion-organic-chemistry","label":"有机化学课程主页","url":"https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a","kind":"historical_course","required":true,"verification":"anonymous_content_verified","source_path":"experience/jlu-organic-lab-ta.md","verification_checked_at":"2026-09-19T17:44:41.055Z","verification_method":"Anonymous Chrome; rendered repository/course content inspected, not HTTP status alone"}
   ],
   "optional_live_demos": {"kin":null,"qq-lingxi":null},
-  "public_resume": {"href":null,"status":"not_generated"}
+  "public_resume": {"href":"/downloads/zhang-shuo-resume.pdf","status":"generated"}
 }

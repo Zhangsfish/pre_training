@@ -1,0 +1,15 @@
+command=npm.cmd --prefix site run resume:build -- --verify-published
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:35:09.3484675Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 resume:build
+> node ../resume/scripts/build.mjs --verify-published
+
+BUILT general-zh: resume\exports\zhang-shuo_general-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+BUILT product-commercial-zh: resume\exports\zhang-shuo_product-commercial-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+BUILT brand-insight-zh: resume\exports\zhang-shuo_brand-insight-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+BUILT ai-product-zh: resume\exports\zhang-shuo_ai-product-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+
+exit_code=0

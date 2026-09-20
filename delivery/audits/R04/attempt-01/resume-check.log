@@ -1,0 +1,19 @@
+command=npm.cmd --prefix site run resume:check
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:35:36.1275409Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 resume:check
+> node ../resume/scripts/check.mjs
+
+{"pages": 1, "a4": true, "text_order_verified": true, "replacement_characters": false, "links": ["../work/kin/", "../work/spps/", "../work/qq-lingxi/", "https://github.com/Zhangsfish/qq-lingxi-agent-platform", "../work/pet/"], "text_sha256": "ebd1008d7963bfa0b38a6595ed27d00df1063a21e61d6baff92c618fccff2d4c", "pdf_sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"}
+RENDERED general-zh: one A4 page, selectable Chinese, ordered text, clickable annotations
+{"pages": 1, "a4": true, "text_order_verified": true, "replacement_characters": false, "links": ["../work/spps/", "../work/kin/", "../work/qq-lingxi/", "https://github.com/Zhangsfish/qq-lingxi-agent-platform", "../#teaching", "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53", "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"], "text_sha256": "b9a292622e2bea5a1ea7dc55ebe7ded5b273037442e2492725ef05060ac619e8", "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22"}
+RENDERED product-commercial-zh: one A4 page, selectable Chinese, ordered text, clickable annotations
+{"pages": 1, "a4": true, "text_order_verified": true, "replacement_characters": false, "links": ["../work/kin/", "../work/qq-lingxi/", "https://github.com/Zhangsfish/qq-lingxi-agent-platform", "../#teaching", "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53", "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"], "text_sha256": "b2c04adeb3b8dda70e68e30ab8f4bc5e81b94a06177df2412faccdadbc5d01d4", "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913"}
+RENDERED brand-insight-zh: one A4 page, selectable Chinese, ordered text, clickable annotations
+{"pages": 1, "a4": true, "text_order_verified": true, "replacement_characters": false, "links": ["../work/qq-lingxi/", "https://github.com/Zhangsfish/qq-lingxi-agent-platform", "../work/kin/", "../work/pet/", "../work/spps/"], "text_sha256": "09e766a22eb81f330ac199f7488187fe4c0af7788271be76a56e7de4f2ff49bf", "pdf_sha256": "bed14317325b5997d8b119391b20cb5c6cc35e549635f6e000b6194f684b0a4f"}
+RENDERED ai-product-zh: one A4 page, selectable Chinese, ordered text, clickable annotations
+
+exit_code=0

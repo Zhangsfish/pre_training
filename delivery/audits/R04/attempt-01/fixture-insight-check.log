@@ -1,0 +1,13 @@
+command=npm.cmd --prefix site run resume:check -- --variant-file resume/exports/fixture-consumer-insight/variant.json
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:36:08.2832984Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 resume:check
+> node ../resume/scripts/check.mjs --variant-file resume/exports/fixture-consumer-insight/variant.json
+
+{"pages": 1, "a4": true, "text_order_verified": true, "replacement_characters": false, "links": ["../work/kin/", "../work/qq-lingxi/", "https://github.com/Zhangsfish/qq-lingxi-agent-platform", "../#teaching", "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53", "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"], "text_sha256": "b2c04adeb3b8dda70e68e30ab8f4bc5e81b94a06177df2412faccdadbc5d01d4", "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913"}
+RENDERED fixture-consumer-insight: one A4 page, selectable Chinese, ordered text, clickable annotations
+
+exit_code=0

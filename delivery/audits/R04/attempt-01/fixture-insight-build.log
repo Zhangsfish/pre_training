@@ -1,0 +1,12 @@
+command=npm.cmd --prefix site run resume:build -- --variant-file resume/exports/fixture-consumer-insight/variant.json
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:36:01.2860580Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 resume:build
+> node ../resume/scripts/build.mjs --variant-file resume/exports/fixture-consumer-insight/variant.json
+
+BUILT fixture-consumer-insight: resume\exports\zhang-shuo_fixture-consumer-insight_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+
+exit_code=0

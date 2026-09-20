@@ -14,7 +14,10 @@
     "build": "node scripts/build.mjs production",
     "review:build": "node scripts/build.mjs review",
     "preview": "astro preview --host 127.0.0.1",
-    "review:preview": "node scripts/preview.mjs"
+    "review:preview": "node scripts/preview.mjs",
+    "resume:build": "node ../resume/scripts/build.mjs",
+    "resume:check": "node ../resume/scripts/check.mjs",
+    "test:jd": "node --test ../resume/scripts/model.test.mjs"
   },
   "dependencies": {
     "astro": "7.3.3"

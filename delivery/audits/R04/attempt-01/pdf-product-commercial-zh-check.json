@@ -1,0 +1,17 @@
+{
+  "pages": 1,
+  "a4": true,
+  "text_order_verified": true,
+  "replacement_characters": false,
+  "links": [
+    "../work/spps/",
+    "../work/kin/",
+    "../work/qq-lingxi/",
+    "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+    "../#teaching",
+    "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+    "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+  ],
+  "text_sha256": "b9a292622e2bea5a1ea7dc55ebe7ded5b273037442e2492725ef05060ac619e8",
+  "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22"
+}
