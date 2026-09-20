@@ -70,7 +70,7 @@
     },
     {
       "id": "R06",
-      "status": "ready",
+      "status": "blocked",
       "prompt": "delivery/prompts/R06_RELEASE.md",
       "branch": "codex/R06",
       "report_path": "delivery/audits/R06/REPORT.md",
@@ -84,5 +84,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R05 accepted. User explicitly authorized R06 publication to a public temporary platform domain for visual review, with no custom-domain/DNS changes and no paid upgrade. EdgeOne direct connector is unavailable in this environment, so the authorized host is Vercel under the same scope. R06 is the only authorized round."
+  "note": "R06 deployment remains explicitly authorized under the existing public temporary-domain / no-DNS / free-only approval, but execution is BLOCKED before any deployment was created. The installed Vercel connector returned zero teams/projects and its deploy write action was unavailable; CLI fallback in the current runtime could not reach GitHub/network. No production or preview URL exists, no DNS/domain changes occurred, and no fees were incurred. Preserve deployment_approval and resume R06 once the Vercel account/write connection is available; no new user approval is required unless host/scope/fee conditions change."
 }
