@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.3。来自 KIN 项目申请描述、BRM 简历版与 SPPS 工程项目长版及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md) 与 [approved-spps-resume-brm.md](approved-spps-resume-brm.md)。
+状态：v1.4。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md) 与 [approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)。
 
 ## 用户修改揭示的差异
 
@@ -45,6 +45,18 @@
 | 从一个样例的 88% 推断整套国产替代的总体降幅 | 明确“其中以……为例，单项采购成本降低约 88%” | 数字只承担它能证明的结论，既不用模糊词浪费证据，也不跨边界外推。 |
 
 本轮进一步确认：一项工程经历可以用三条构成互补证据，而不是三次重复“负责项目”。第一条回答“你定义了什么、怎样让专业人员配合”；第二条回答“你管了多少资源、改变了什么流程、怎样做成本判断”；第三条回答“最后多快交付、效率改变多少”。
+
+## 第五轮：从具体产品到 big picture
+
+| 原稿倾向 | 用户修改方向 | 可复用规则 |
+|---|---|---|
+| 只写产品功能和原型交付 | 补回外部 AI 的用户理解、QQ 的真实关系资产与智能连接层判断 | 用户习惯从具体问题上推到平台资产和生态位置；当推演有明确机制支撑时，应保留一条战略判断。 |
+| 用“有战略思维、看到 big picture”直接评价本人 | 用“具体问题 → 产品机制 → 独特资产 → 平台机会”展示 | 不写自我形容词，让推理链本身证明战略能力。 |
+| 把匹配、Agent 协商、风险与输出全部塞进一个长句 | 先写匹配完成，再明确谁与谁协商、产生什么结果 | 复杂产品链路要拆句并写出动作主体，不能靠连续逗号让读者自行还原。 |
+| 按 Git 首尾日期写连续开发周期 | 按本人实际投入写“累计约10天”，并注明分阶段集中完成 | 日历跨度不等于有效工作时长；有明显空档时使用累计投入或只写月份。 |
+| 对外同时写 ChatGPT/Codex | 统一写 ChatGPT | 用户希望公开求职文本使用公众更熟悉的产品名；除非技术审计需要，不展开内部工具名称。 |
+
+本轮进一步确认：big picture 是用户稳定的思考特点，但成稿不能从愿景开场。先让读者理解一个真实问题和产品怎样解决，再说明哪些独特资产使它可能成长为更大的平台，最后用原型或结果把判断落回现实。
 
 ## 润色时怎样保留原意
 
