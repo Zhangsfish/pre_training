@@ -111,7 +111,13 @@ Repository evidence includes:
 
 ### 2. Defined the system architecture
 
-The user reports owning the overall system concept and deciding how the instrument should operate.
+The user confirms owning the overall instrument design and component-selection decisions. This included:
+- translating the chemistry workflow into the complete system concept;
+- deciding how the instrument should operate and how its modules should interact;
+- defining the fluid path, reactor, mechanical movements, electrical-control logic, software flow, and component list;
+- setting executable specifications such as port / aperture dimensions, geometry, pressure and temperature requirements, module interfaces, and delivery criteria.
+
+This was design ownership, not merely coordination after specialists had already designed the instrument.
 
 Repository evidence contains multiple generations of architecture / process files:
 - `设计图/循环草稿.vsdx`
@@ -146,7 +152,7 @@ The user estimates that resources personally pushed / secured for the project �
 
 Do not present this as an audited procurement total until invoice / purchase evidence is reconciled.
 
-### Domestic substitution — user estimate
+### Domestic substitution — verified single-item comparison plus broader user report
 The user reports replacing imported component families such as:
 - IDEX;
 - Swagelok / 世伟洛克;
@@ -155,22 +161,30 @@ with domestic alternatives including:
 - 润泽流体;
 - 熊川 / similar domestic suppliers.
 
-The user estimates certain substitute components reduced cost by **roughly an order of magnitude (≈10×)**.
+The user reports that some substitute components were roughly an order of magnitude cheaper. One near-specification category has now been reconstructed at price level:
+- Runze FEP tube `TFLG00001`, 0.8 mm ID × 1.6 mm OD: project invoice price approximately **RMB 7.3/m including tax**;
+- IDEX `1520L`, FEP, 0.030 in ID × 1/16 in OD: public price **USD 126.06/50 ft**, or about **USD 8.27/m**;
+- at an explicitly approximate 7.1 RMB/USD conversion, the IDEX public price is about **RMB 59/m**;
+- the Runze actual purchase price was therefore about **88% lower** for this near-specification comparison.
 
-Repository evidence supports that both imported and domestic vendor catalogs were reviewed, but the exact cost ratio still needs price-level verification before becoming a resume metric.
+This supports a resume claim about this FEP-tube comparison only. Do not generalize the 88% reduction to every substituted part or to total instrument cost.
+
+Reference pages:
+- Runze specification: <https://www.runzefluid.com/products/fep-tube.html>
+- IDEX product and public price: <https://www.idex-hs.com/store/product-detail/fep_tubing_1_16_od_x_030_id_natural_50ft>
 
 ### 4. Cross-disciplinary engineering coordination
 
 User-reported collaborator structure:
-- two mechanical-engineering contributors supporting physical build / assembly;
-- one machining / mechanical-design contributor who translated the user's functional / geometry requirements into manufacturable parts;
+- two mechanical-engineering contributors;
+- one machining contributor;
 - one electrical-control contributor (also one of the user's supervisors), who implemented low-level pump / valve driving;
-- user acted as the integrator: specifying system behavior, architecture, required movements, part interfaces, and end-to-end operating logic.
+- the user acted as project lead and overall instrument-design owner: decomposing the instrument into work packages, issuing the required actions, product form, dimensions, pressure / temperature specifications, interfaces, and delivery standards, then reviewing and integrating the outputs.
 
 Ownership boundary:
-- user did not independently design every CAD detail;
-- user did not write the low-level pump / valve driver functions;
-- user owned system requirements, operating logic, integration decisions, and delivery pressure.
+- the user owned the overall design, architecture, component selection, task decomposition, technical specifications, interfaces, acceptance, integration decisions, and delivery result;
+- collaborators produced the requested mechanical detail, machined parts, and low-level electrical implementation against those requirements;
+- the user did not personally draw every CAD detail or write the low-level pump / valve driver functions.
 
 ### 5. Control logic and synthesis sequencing
 
@@ -202,7 +216,8 @@ User-reported final state before handoff / departure:
 - the integrated instrument could run repeatedly for demonstration;
 - it successfully performed automated synthesis of approximately a **10-residue peptide**;
 - reported purity at the time was approximately **95%**;
-- synthesis speed was approximately **40 seconds per residue / coupling step** (user recollection);
+- a single coupling step was reduced from approximately **30 minutes manually to about 1 minute automatically** (roughly 97% less operation time; user-confirmed comparison);
+- the core integration stage took **under three months**;
 - longer sequences remained problematic / not fully validated before the user left;
 - later participants continued optimization after the user's departure.
 
@@ -310,18 +325,19 @@ These should later be turned into a clean public portfolio artifact rather than 
 
 Only a few facts still matter:
 1. Exact formal project / grant name if it is safe and useful to disclose.
-2. Exact number of people regularly coordinated during the instrument build.
-3. Whether any acceptance / handoff document or final presentation survives.
-4. Whether the ~RMB 1.5m resource total and ~10× substitution savings can be reconstructed from archived purchase records.
+2. Whether any acceptance / handoff document or final presentation survives.
+3. Whether the ~RMB 1.5m resource total can be reconciled from archived purchase records.
+4. Whether additional imported-to-domestic substitutions can be reconstructed at price level beyond the verified FEP-tube comparison.
 5. Whether a redacted photo / video set can be made public without violating confidentiality.
 
 ## Claim boundaries
 
 - Do not call the user the formal PI / project director.
 - Do not claim the user won the national grant or wrote the bid.
-- Do not claim sole authorship of mechanical CAD or low-level electrical drivers.
+- Do state that the user owned the overall instrument design, component selection, task specifications, interfaces, acceptance, integration, and delivery; do not flatten this into generic "coordination."
+- Do not claim sole authorship of every mechanical CAD detail or the low-level electrical drivers.
 - Do not state an audited RMB 1.5m procurement total until reconciled.
-- Do not state a verified 10× cost reduction until component-price comparisons are reconstructed.
+- The verified resume-safe cost claim is limited to the near-specification FEP-tube comparison: approximately 88% lower actual domestic purchase price versus the cited IDEX public price.
 - Do not state validated 95% peptide purity unless primary evidence is found.
 - Do not describe the reference-inspired design as wholly original scientific invention.
 
