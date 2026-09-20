@@ -103,3 +103,5 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 当任务是把 QQ 灵犀或类似 AI 产品与平台战略经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-qq-lingxi-resume-brm.md](references/approved-qq-lingxi-resume-brm.md)。优先使用两条互补证据：第一条讲清用户问题与产品机制，第二条保留由独特资产推到平台机会的 big picture，并收束到本人 ownership、真实协作边界和交付结果；不要在压缩时只剩功能，也不要只剩战略口号。
 
 当任务涉及《有机化学实验 II》，或其他需要把教学、培训、课程运营翻译为商业能力的经历时，读取 [references/approved-teaching-long-form.md](references/approved-teaching-long-form.md)。不要写成“认真授课、耐心辅导”的家教叙事；用课程重构、一线行为反馈、复杂流程运营、知识资产和继任交接证明系统设计、持续迭代与组织能力，同时保留人数、流程和结果等具体事实。
+
+当任务是把《有机化学实验 II》或类似教学、培训、项目运营经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-teaching-resume-brm.md](references/approved-teaching-resume-brm.md)。保留课程系统、复杂运营、知识资产与继任交接三个互补入口；用具体人数、流程和交付证明商业能力，并明确写出“运营课程”等动词对象，不让抽象能力词代替事实。
