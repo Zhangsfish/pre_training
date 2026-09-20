@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.8。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md) 与 [approved-natural-product-long-form.md](approved-natural-product-long-form.md)。
+状态：v1.9。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)、[approved-natural-product-long-form.md](approved-natural-product-long-form.md) 与 [approved-natural-product-resume-brm.md](approved-natural-product-resume-brm.md)。
 
 ## 用户修改揭示的差异
 
@@ -103,6 +103,16 @@
 | 为说明领导力主动解释“没有正式管理职务” | 直接写约5名核心成员、累计约10人及任务分配、依赖跟踪和阻塞调整 | 首层文案用实际组织动作划定 ownership，不用防御性说明打断叙事。 |
 
 本轮进一步确认：专业经历与目标岗位的“共同语言”，不是在结尾声明可迁移性，而是选择目标团队真正会讨论的对象——复现、放大、风险、供料和依赖——并用本人做过的动作证明。
+
+## 第十轮：研发经历的简历压缩
+
+| 原稿倾向 | 用户确认方向 | 可复用规则 |
+|---|---|---|
+| 为证明研发深度，把长稿的全部技术过程压进简历 | 用两条分别保留技术判断与瓶颈解决、小团队协同与依赖管理 | 辅助研发经历可以短，但每条要留下一个不同且能够继续追问的能力入口。 |
+| 只保留约1 mg到约100 g的尺度变化 | 同时保留路线设计、小试、放大、物料制备和路线重设计 | 数字不能脱离研发链路；尺度证明复杂度，路线瓶颈及解决才证明判断力。 |
+| 用“带领约10人”概括组织贡献 | 写核心约5人、累计约10人，并展开任务分配、并行推进、依赖跟踪和阻塞调整 | 人数必须与具体组织动作绑定，不用人数暗示不存在的正式管理关系。 |
+
+本轮进一步确认：简历中的辅助经历不是越短越好，而是只保留最能证明目标能力的两条因果链。技术细节保留到足以让招聘者相信候选人真正做过，更多过程留给面试展开。
 
 ## 润色时怎样保留原意
 

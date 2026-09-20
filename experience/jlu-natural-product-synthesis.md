@@ -1,6 +1,6 @@
 # Experience: 天然产物全合成 / 路线开发与小团队协同
 
-> Status: confirmed long-form record. Resume wording remains under user review.
+> Status: confirmed long-form and BRM resume records.
 
 ## Identity
 
