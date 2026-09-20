@@ -1,0 +1,48 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Deploying zhang-shuo-portfolio
+Uploading [--------------------] (0.0B/154.8KB)
+Uploading [=====---------------] (40.1KB/154.8KB)
+Uploading [==========----------] (84.5KB/154.8KB)
+Uploading [===============-----] (120.9KB/154.8KB)
+Uploading [====================] (154.8KB/154.8KB)
+  Inspect         https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/QGDVe9yHQHvQBzXvRLcnQgjDP8cp
+  Production      https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app
+Building…
+[2K[1A[2K[G  Production      https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app
+Completing…
+▲ Aliased         https://zhang-shuo-portfolio.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp",
+    "url": "https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/QGDVe9yHQHvQBzXvRLcnQgjDP8cp",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp",
+    "buildMachine": {
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel git connect --scope zhangsfishs-projects",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app --scope zhangsfishs-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope zhangsfishs-projects",
+      "when": "Promote to production"
+    }
+  ]
+}

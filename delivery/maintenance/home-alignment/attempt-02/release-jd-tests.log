@@ -1,0 +1,21 @@
+
+> pre-training-site@0.1.0 test:jd
+> node --test ../resume/scripts/model.test.mjs
+
+✔ general-zh: approved claims, snapshots, ownership and limits (126.5909ms)
+✔ product-commercial-zh: approved claims, snapshots, ownership and limits (92.0187ms)
+✔ brand-insight-zh: approved claims, snapshots, ownership and limits (91.5492ms)
+✔ ai-product-zh: approved claims, snapshots, ownership and limits (81.5558ms)
+✔ JD fixtures change selection/order while homepage is never mutated (160.0711ms)
+✔ reject unknown-claim (87.2249ms)
+✔ reject status-inflation (83.1472ms)
+✔ reject stale-source (81.4411ms)
+✔ reject public-variant (89.0454ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1202.0622

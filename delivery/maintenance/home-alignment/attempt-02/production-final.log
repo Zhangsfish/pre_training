@@ -1,0 +1,363 @@
+verifying primary film: 观看完整演示 2:52
+verifying primary film: 观看设备运行视频
+verifying primary film: 观看概念短片 0:50
+{
+  "base": "https://zhang-shuo-portfolio.vercel.app",
+  "checked_at": "2026-09-20T19:21:25.915Z",
+  "browser": "153.0.8010.52",
+  "authentication": "fresh anonymous browser contexts; no persistent profile",
+  "routes": [
+    {
+      "width": 375,
+      "route": "/",
+      "status": 200,
+      "title": "作品与我 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/qq-lingxi/",
+      "status": 200,
+      "title": "QQ 灵犀 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/spps/",
+      "status": 200,
+      "title": "流动化学自动多肽合成平台 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/kin/",
+      "status": 200,
+      "title": "KIN · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/pet/",
+      "status": 200,
+      "title": "PAP/ACP3 靶向 PET 小分子探针 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/teaching/",
+      "status": 200,
+      "title": "有机化学实验 II｜从课程重构到体系传承 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/natural-product/",
+      "status": 200,
+      "title": "Jiadifenin 家族天然产物全合成 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/resume/",
+      "status": 200,
+      "title": "通用简历 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 1366,
+      "route": "/",
+      "status": 200,
+      "title": "作品与我 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/qq-lingxi/",
+      "status": 200,
+      "title": "QQ 灵犀 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/spps/",
+      "status": 200,
+      "title": "流动化学自动多肽合成平台 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/kin/",
+      "status": 200,
+      "title": "KIN · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/pet/",
+      "status": 200,
+      "title": "PAP/ACP3 靶向 PET 小分子探针 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/teaching/",
+      "status": 200,
+      "title": "有机化学实验 II｜从课程重构到体系传承 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/natural-product/",
+      "status": 200,
+      "title": "Jiadifenin 家族天然产物全合成 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/resume/",
+      "status": 200,
+      "title": "通用简历 · 张朔",
+      "scroll_width": 1366
+    }
+  ],
+  "interactions": {
+    "keyboard_scene_zoom_escape_focus": "pass",
+    "primary_films": [
+      {
+        "name": "观看完整演示 2:52",
+        "before": 0.017146,
+        "after": 0.949365,
+        "focus_return": true
+      },
+      {
+        "name": "观看设备运行视频",
+        "before": 0.055475,
+        "after": 0.982591,
+        "focus_return": true
+      },
+      {
+        "name": "观看概念短片 0:50",
+        "before": 0.013675,
+        "after": 0.918067,
+        "focus_return": true
+      }
+    ],
+    "spps_two_films": "decoded",
+    "kin_market_open_and_demo_visible": true,
+    "qq_access_notice_visible": true,
+    "notion_links_visible": true,
+    "details_keyboard_toggle": "pass",
+    "reduced_motion_preview_download": "suppressed"
+  },
+  "external": [
+    {
+      "id": "kin-demo",
+      "requested_url": "https://kin-portfolio-taupe.vercel.app/",
+      "status": 200,
+      "final_url": "https://kin-portfolio-taupe.vercel.app/",
+      "title": "KIN · 产品策略与商业化设计",
+      "visible_text_length": 6191,
+      "error": null
+    },
+    {
+      "id": "qq-lingxi-repo",
+      "requested_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "status": 200,
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+      "visible_text_length": 7879,
+      "error": null
+    },
+    {
+      "id": "notion-organic-synthesis",
+      "requested_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "status": 200,
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "title": "Organic Synthesis Laborat",
+      "visible_text_length": 2099,
+      "error": null
+    },
+    {
+      "id": "notion-organic-chemistry",
+      "requested_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "status": 200,
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "title": "Organic Chemistry",
+      "visible_text_length": 2010,
+      "error": null
+    },
+    {
+      "id": "qq-lingxi-demo",
+      "requested_url": "https://qq-lingxi-agent-platform.vercel.app/",
+      "status": 401,
+      "result": "Basic Auth remains; no bypass attempted"
+    }
+  ],
+  "distribution": {
+    "not_found": 404,
+    "pdf": {
+      "status": 200,
+      "bytes": 83934,
+      "sha256": "aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07"
+    },
+    "remote_files": [
+      {
+        "path": "404.html",
+        "bytes": 1452,
+        "sha256": "b4b30767627d5fd851e8e9a3e670dc72dc89751a4d8756d0ac7690009b8732e8"
+      },
+      {
+        "path": "index.html",
+        "bytes": 9898,
+        "sha256": "643a2f60cd5b205a9697ed6829e375d7c099ce9304da4b07fe58d7b37f8c2d0d"
+      },
+      {
+        "path": "robots.txt",
+        "bytes": 87,
+        "sha256": "f79f52d699462a18cd96a2d5e0dfddc94490c57c2550e4c1bb5e7f5d8e068c2a"
+      },
+      {
+        "path": "sitemap.xml",
+        "bytes": 726,
+        "sha256": "dfb74d1e67f02d7c5f4396c037b4df65bfdc3ee827bfae5aceebd713fb8bb87e"
+      },
+      {
+        "path": "downloads/zhang-shuo-resume.pdf",
+        "bytes": 83934,
+        "sha256": "aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07"
+      },
+      {
+        "path": "media/kin-call.webp",
+        "bytes": 29920,
+        "sha256": "b4c5b9ce749eaf41d4046efa6ebd1d2c8648c23c98e8bdc792b4d51a759fc3c4"
+      },
+      {
+        "path": "media/kin-cover.webp",
+        "bytes": 42192,
+        "sha256": "5cde2039098ca18a99e597addb4c44c552c275ee5a1efb836d3a378d7a36bdc5"
+      },
+      {
+        "path": "media/kin-day.webp",
+        "bytes": 65082,
+        "sha256": "953824f098b1060fb79068ec5e03f1f90c63177da18c12dd9907cd1d7b83dfbe"
+      },
+      {
+        "path": "media/kin-film.mp4",
+        "bytes": 5379882,
+        "sha256": "fbb4b1535657a8059464db9153da4e505e60a56a9c87f51e4e04718d296cf85d"
+      },
+      {
+        "path": "media/kin-preview.mp4",
+        "bytes": 1267076,
+        "sha256": "573a448e59acb159ab6fcfe0c4a20cfac4b732e0cc571b098d77220dafaf042f"
+      },
+      {
+        "path": "media/qq-film.mp4",
+        "bytes": 8653850,
+        "sha256": "4aeec2b7797e0c000764d9fab35a8001f23adb9bf7170e3e462c7658434dcaac"
+      },
+      {
+        "path": "media/qq-match.webp",
+        "bytes": 69168,
+        "sha256": "555d16f68855f89502d438c2a2acda10997744d8ccc67601170d0257a8c72e7b"
+      },
+      {
+        "path": "media/qq-negotiate.webp",
+        "bytes": 72148,
+        "sha256": "b91210a39af3427c9219a8a6e1745470e2265da93d5319762c763e606666f6ed"
+      },
+      {
+        "path": "media/qq-preview.mp4",
+        "bytes": 347785,
+        "sha256": "024b9ee441251ebefbfc03f41dd1bca67ee4fefe9e22ccfd4ac841c8feed8d0d"
+      },
+      {
+        "path": "media/qq-profile.webp",
+        "bytes": 65668,
+        "sha256": "00c6916127f80cf510acb82914ed6b74d09cf6be34797d75c1ffd72de4b7380e"
+      },
+      {
+        "path": "media/spps-front.webp",
+        "bytes": 301490,
+        "sha256": "ea92f84c8eb2262469422ae06c714f728347b4aa5f92940cd6f6d8c0b90822d3"
+      },
+      {
+        "path": "media/spps-hero.webp",
+        "bytes": 183398,
+        "sha256": "347b11a5be39b7c4c691580c86eeb708025862a12f622e685bb57bb52b5eaef1"
+      },
+      {
+        "path": "media/spps-monitor.mp4",
+        "bytes": 2095685,
+        "sha256": "6009809ed1fdffd29ffd75562a593177c33d332a6ad51dab1df434d064371581"
+      },
+      {
+        "path": "media/spps-operation.mp4",
+        "bytes": 3027116,
+        "sha256": "0347cd1ad2510b01479306a8c1e3eb63b16f1f7268a374d401f135a7cbb9f80c"
+      },
+      {
+        "path": "media/spps-operation.webp",
+        "bytes": 33378,
+        "sha256": "82d87aa9bedeb22076d3d3039eca9d057cb1431d73ad6b825dbd1784b40bf410"
+      },
+      {
+        "path": "media/spps-room.webp",
+        "bytes": 236144,
+        "sha256": "149051e784752f39770a6d9d0994453bd62a476b2690e3a1c52f59a1b7e220f2"
+      },
+      {
+        "path": "media/spps-side.webp",
+        "bytes": 332612,
+        "sha256": "cdd85e46d3cf356d9c7c327f1795e2e423ec357b4a4fa1568e2dacbe1e41b96c"
+      },
+      {
+        "path": "resume/index.html",
+        "bytes": 5928,
+        "sha256": "7aa26728ebd9e6fea133346f9cdc83b95258520817e59da457027aaa185e4fcb"
+      },
+      {
+        "path": "_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.LNN8EulC.js",
+        "bytes": 2952,
+        "sha256": "b3b5d05e25aedc0f5af1206f8cffd6d927245f45944f76d91425444cc481b4ec"
+      },
+      {
+        "path": "_astro/site.LVWQMp7a.css",
+        "bytes": 20887,
+        "sha256": "a2dd1437b1317564caf264e264f088312857d13e8e7df3d0dc2b644c128ae88b"
+      },
+      {
+        "path": "work/kin/index.html",
+        "bytes": 8258,
+        "sha256": "55a9b1b4dff163a4de87c6ed7ad9eee2dba39607130c15219e1bb1098577ac9b"
+      },
+      {
+        "path": "work/natural-product/index.html",
+        "bytes": 3968,
+        "sha256": "30f6395e4944c2d1796424341d46aad27698ecdf934c1fe95936743b930f075f"
+      },
+      {
+        "path": "work/pet/index.html",
+        "bytes": 4058,
+        "sha256": "8cea2400853e4fd9cef95540d2f877da09eefbb01c220ffe7abe68bd11ca1488"
+      },
+      {
+        "path": "work/qq-lingxi/index.html",
+        "bytes": 6634,
+        "sha256": "9d8a739d934b15b4044c160f2c8c0383adfe3760202d04fc602c2df1d549a7b0"
+      },
+      {
+        "path": "work/spps/index.html",
+        "bytes": 8107,
+        "sha256": "4f5b80f01c341fb6ca65796cf20d6109fe815c5359c4a0155ac1b089c642c2f5"
+      },
+      {
+        "path": "work/teaching/index.html",
+        "bytes": 4699,
+        "sha256": "99fdcba3c6c1e818db8c21f473a68e8afc1b397eaba8e42f8a4028bb9d03a159"
+      }
+    ],
+    "remote_file_count": 31,
+    "remote_total_bytes": 22364182
+  }
+}

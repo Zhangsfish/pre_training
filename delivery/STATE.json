@@ -94,16 +94,32 @@
     "spps_publication": "approved",
     "spps_codex_access": "codex_ready"
   },
-  "note": "R07 accepted and the media-first portfolio is published_and_verified at https://zhang-shuo-portfolio.vercel.app. Final Vercel deployment dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE is READY and all 29 remote files exactly match the audited dist. The separate QQ Demo remains behind Basic Auth and is non-required; QQ GitHub and both Notion pages are anonymously accessible. No round is currently authorized. Future changes require a new reviewed maintenance change from main.",
+  "note": "R07 remains accepted. The authorized home-experience-alignment maintenance is merged and published_and_verified at https://zhang-shuo-portfolio.vercel.app. Vercel deployment dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp is READY; all 31 production files exactly match the audited dist from main merge commit 5ea262632032d2a885656dc5c197f9cd869e92d2. The separate QQ Demo remains behind Basic Auth; QQ GitHub, KIN and both Notion pages are anonymously accessible. No round is currently authorized.",
   "maintenance": {
     "id": "home-experience-alignment",
     "authorized_by": "user_chat_2026-09-20",
     "branch": "maintenance/home-experience-alignment",
-    "status": "implemented_pending_browser_and_deployment",
+    "status": "published_and_verified",
     "plan": "delivery/maintenance/home-alignment/03-IMPLEMENTATION.md",
     "handoff": "delivery/maintenance/home-alignment/04-CODEX-HANDOFF.md",
     "report": "delivery/maintenance/home-alignment/REPORT.md",
-    "deployment": "not_performed_vercel_scope_403",
-    "history_note": "rounds和R07已验收记录不变；本维护不冒充旧轮验收。"
+    "deployment": {
+      "host": "vercel",
+      "project": "zhang-shuo-portfolio",
+      "project_id": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+      "deployment_id": "dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp",
+      "production_url": "https://zhang-shuo-portfolio.vercel.app",
+      "immutable_url": "https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app",
+      "status": "READY",
+      "verified_at": "2026-09-20T19:21:25.915Z",
+      "dist_files": 31,
+      "dist_bytes": 22364182,
+      "remote_hash_match": true
+    },
+    "history_note": "rounds和R07已验收记录不变；本维护不冒充旧轮验收。",
+    "pr_number": 21,
+    "pr_final_head": "a375d74d011a2a190653eb1c3af54812c56e425a",
+    "merged_main_commit": "5ea262632032d2a885656dc5c197f9cd869e92d2",
+    "external_limit": "QQ Demo remains behind Basic Auth and returns 401 anonymously; no bypass attempted."
   }
 }

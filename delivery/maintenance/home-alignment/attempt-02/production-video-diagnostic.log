@@ -1,0 +1,85 @@
+{
+  "reducedMotion": "no-preference",
+  "video": {
+    "src": "https://zhang-shuo-portfolio.vercel.app/media/qq-film.mp4",
+    "readyState": 4,
+    "networkState": 1,
+    "videoWidth": 1440,
+    "duration": 172.012993,
+    "currentTime": 29.67708,
+    "paused": false,
+    "error": null
+  },
+  "events": [
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/qq-profile.webp"
+    },
+    {
+      "kind": "response",
+      "status": 206,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/qq-preview.mp4"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/spps-hero.webp"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/spps-operation.webp"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/kin-cover.webp"
+    },
+    {
+      "kind": "response",
+      "status": 206,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/qq-film.mp4"
+    }
+  ]
+}
+{
+  "reducedMotion": "reduce",
+  "video": {
+    "src": "https://zhang-shuo-portfolio.vercel.app/media/qq-film.mp4",
+    "readyState": 4,
+    "networkState": 1,
+    "videoWidth": 1440,
+    "duration": 172.012993,
+    "currentTime": 29.589655,
+    "paused": false,
+    "error": null
+  },
+  "events": [
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/qq-profile.webp"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/spps-hero.webp"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/kin-cover.webp"
+    },
+    {
+      "kind": "response",
+      "status": 206,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/qq-film.mp4"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "https://zhang-shuo-portfolio.vercel.app/media/spps-operation.webp"
+    }
+  ]
+}

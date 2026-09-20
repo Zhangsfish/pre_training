@@ -1,0 +1,66 @@
+{
+  "browser": "153.0.8010.52",
+  "checked_at": "2026-09-20T19:23:45.296Z",
+  "results": [
+    {
+      "uri": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "status": 200,
+      "click_point": {
+        "x": 617.5731463879924,
+        "y": 372.5682154600282
+      },
+      "result": "native_viewer_click_pass"
+    },
+    {
+      "uri": "https://kin-portfolio-taupe.vercel.app/",
+      "final_url": "https://kin-portfolio-taupe.vercel.app/",
+      "status": 200,
+      "click_point": {
+        "x": 784.9525344227111,
+        "y": 394.8245725271882
+      },
+      "result": "native_viewer_click_pass"
+    },
+    {
+      "uri": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "status": 200,
+      "click_point": {
+        "x": 623.4053256340425,
+        "y": 551.1521583941271
+      },
+      "result": "native_viewer_click_pass"
+    },
+    {
+      "uri": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "status": 200,
+      "click_point": {
+        "x": 596.8454641177968,
+        "y": 687.0891895827697
+      },
+      "result": "native_viewer_click_pass"
+    },
+    {
+      "uri": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "status": 200,
+      "click_point": {
+        "x": 885.1040272774493,
+        "y": 709.3455466499298
+      },
+      "result": "native_viewer_click_pass"
+    },
+    {
+      "uri": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "status": 200,
+      "click_point": {
+        "x": 574.7769667696778,
+        "y": 823.0262207714122
+      },
+      "result": "native_viewer_click_pass"
+    }
+  ]
+}

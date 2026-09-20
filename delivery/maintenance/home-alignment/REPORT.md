@@ -1,42 +1,57 @@
-# 主页内容对齐：实施与交接记录
+# 主页内容对齐：终验、合并与发布记录
 
-日期：2026-09-20。状态：代码与静态验证完成，浏览器终验和正式发布待有原项目权限的Codex执行。
+日期：2026-09-21。状态：`published_and_verified`。
 
-## 输入与实际观察
+## 结果
 
-- 从main 178b5ae9bfaa0ae49430f037f9370a6066bd4464建立维护分支；读取最终确认经历及仓库写作参考，未重写已确认BRM母稿。
-- 阅读用户上传《个人主页方案 v2 — 企业展示版.md》，形成01差异、02参考取舍和03合并方案。
-- 实际浏览器检查现有生产首页和KIN案例：媒体优先结构存在，但详情缺少最终产品解释；PET为简历占位，教学无完整入口。
-- 实际访问KIN独立展示站，确认Watch/App体验与商业方案入口可用。
+- PR [#21](https://github.com/Zhangsfish/pre_training/pull/21) 已合并。接手时指定 HEAD 为 `8433c31059189f3b2c1bc037bd963815a9ba2620`；补入真实浏览器与 PDF 证据后的最终 PR HEAD 为 `a375d74d011a2a190653eb1c3af54812c56e425a`，合并提交为 `5ea262632032d2a885656dc5c197f9cd869e92d2`。
+- 已从该合并提交的 clean checkout 重新安装锁定依赖、重建四份简历和站点，并只把审计通过的 `site/dist` 发布到原 Vercel Hobby 项目 `zhang-shuo-portfolio`。
+- 正式域名：[https://zhang-shuo-portfolio.vercel.app](https://zhang-shuo-portfolio.vercel.app)。不可变部署地址：[https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app](https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app)。
+- Deployment ID：`dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp`；Vercel project ID：`prj_CfECSSKoBni34VGDTa89UhKu4n09`；team ID：`team_iUtfj6fbX7ntRyux5VD2Req3`；状态 `READY`。
+- 未新建项目，未改 DNS、认证、仓库可见性、analytics 或付费方案。
 
-## 实施
+## 实施边界
 
-- 首页：紧凑身份 → QQ/SPPS/KIN媒体 → 三条个人表达 → 教学/PET/全合成入口 → 联系。
-- 六案例详情使用批准的publication正文；新增全合成路由，移除PET占位；恢复教学锚点；KIN市场/长期方向默认展开。
-- 同步通用简历页面和PDF，四个baseline保留原选材、同步已使用项目的最终事实。原BRM参考全文与技能内容未改。
-- PDF改为同源ReportLab排版，嵌入Noto Sans SC字体子集与OFL许可证；离线可点绝对链接。新增缺字拒绝门禁，保留一页A4、10.5pt与14mm。
-- 未改媒体及原片、原R07审计、DNS、费用或访问控制。
+- 首页保持 QQ → SPPS → KIN 的主作品顺序，随后呈现个人表达、教学、PET、全合成与联系入口。
+- 六个详情页、通用简历页面和 PDF 使用已批准的经历事实；没有重新采访、增加新联系方式、公开实验结构或原始科研数据。
+- KIN 的市场判断与长期方向默认展开；QQ Demo 继续明确标注“需访问权限”。
+- 终验未发现需要修改生产排版或文案的问题，因此本阶段只补充测试、截图、发布与审计记录。
 
-## 已执行检查
+## Clean checkout 检查
+
+合并后从 `5ea262632032d2a885656dc5c197f9cd869e92d2` 建立独立 clean checkout，执行 `npm ci` 后得到：
 
 | 检查 | 结果 |
 |---|---|
-| site check：内容引用、来源blob、Astro/TypeScript | 通过；0错误、0警告、0提示 |
-| site单元/安全负例 | 32项通过，含新增失效锚点检测 |
-| 简历选材/JD fixture | 9项通过；只是测试fixture，不是实时宝洁JD |
-| 生产构建/输出审计 | 9页；31文件；22,364,168 bytes；17份批准媒体；客户端JS 2,952 bytes |
-| 四份baseline PDF重建与检查 | 均一页A4，文字顺序/中文提取/链接通过 |
-| 通用PDF确定性复建 | 与登记公开副本逐字节一致 |
-| PDF视觉检查 | 四份全页渲染已查看；中文无缺字、裁切或叠字；最初未嵌字的失败版本已替换 |
-| 新内容静态回归 | 三媒体顺序、六案例关键事实、个人层与辅助锚点通过 |
-| git diff --check | 通过 |
+| `npm --prefix site run check` | 通过；Astro 0 错误、0 警告、0 提示 |
+| `npm --prefix site test` | 32/32 通过 |
+| `npm --prefix site run test:jd` | 9/9 通过；JD 只使用仓库 fixture |
+| `node resume/scripts/build.mjs --date 2026-09-20 --verify-published` | 四份 PDF 重建通过 |
+| `node resume/scripts/check.mjs` | 四份均为一页 A4；中文可提取；链接注释通过 |
+| `npm --prefix site run build` | 9 页；公开安全与输出审计通过 |
+| `node site/scripts/check-alignment.mjs` | 事实、主页锚点、详情页与简历对齐通过 |
 
-公开PDF SHA256：`aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07`。
+发布包共 31 个文件、22,364,182 bytes，含 17 份批准媒体和 2,952 bytes 客户端 JavaScript。
 
-## 未执行 / 不能声称完成
+## 浏览器终验
 
-- 本维护版本的桌面/手机网页视觉与真实交互验收：云浏览器访问本地预览被客户端阻止；旧生产站的浏览器观察不算新版验收。
-- 本维护版本线上影片/404/PDF下载哈希终验：尚未部署，不能引用旧R07结果充当本轮结果。
-- Vercel部署：原空间连接返回403，未尝试绕过或另建项目。
+系统 Chrome `153.0.8010.52`、全新匿名 profile 完成 375px 与 1366px 的首页、六个案例页和 `/resume/` 检查：16/16 路由返回 200，每页只有一个 H1，页面宽度等于视口宽度，无横向溢出。首页首屏能快速看到作品，主作品顺序与全部辅助入口正确，未出现完整简历堆叠、旧 `Codex` 对外称呼或 PET 占位文案。
 
-具体接手步骤见04-CODEX-HANDOFF.md。GitHub分支/PR不等于已上线；用户现有域名在有权限的终验发布前仍为旧版。
+交互检查通过：QQ 场景切换、图片放大、Esc 关闭、关闭后焦点恢复、详情键盘开合、reduce-motion 下预览不下载；QQ、SPPS、KIN 三段主影片实际解码并播放推进，SPPS 详情两段实拍均解码。真实未知路径返回 404。
+
+匿名外链检查：KIN 独立体验、QQ GitHub、两个 Notion 页面均返回 200 且有可见正文；QQ Demo 返回预期 401，未尝试绕过 Basic Auth。
+
+生产截图与机器可读结果位于 `attempt-02/browser-production/`；标准画廊回归见 `attempt-02/production-gallery.log`，扩展终验见 `attempt-02/production-final.log`。
+
+## PDF 与发布文件一致性
+
+- 通用 PDF：83,934 bytes；SHA-256 `aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07`。
+- PDF 为一页 A4，中文无缺字或裁切，文字可选择；Chrome 原生 PDF 阅读器实际点击 6 个项目链接，均打开目标并返回 200。
+- 正式域名逐一下载全部 31 个文件，远端总字节数 22,364,182；每个文件均与合并提交 clean checkout 中的 `site/dist` SHA-256 完全一致。
+- HTTPS 正常，正式域名已指向上述 READY 部署，验证时间为 `2026-09-20T19:21:25.915Z`（北京时间 2026-09-21 03:21:25）。
+
+## 唯一外部限制
+
+独立 QQ Demo 仍受原有 Basic Auth 保护，匿名访问返回 401；主页已明确写明“需访问权限”。这不影响本站、QQ GitHub、KIN 独立体验、Notion 页面或 PDF 的公开访问。
+
+证据入口：`delivery/maintenance/home-alignment/attempt-02/`。此前 R07 审计和本维护早期证据均保留，未覆盖。
