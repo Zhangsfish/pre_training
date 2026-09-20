@@ -14,4 +14,4 @@
 
 证据：[evidence.json](evidence.json)、[CLI 原始结果](attempt-01/cli-whoami.log)；[旧环境报告](previous-environment-report.md)仅保留历史。按用户指令在认证缺失处停止，不自签 ACCEPT，不修改 STATE。
 
-PR：待创建后回填。
+PR：[R06 draft #6](https://github.com/Zhangsfish/pre_training/pull/6)。

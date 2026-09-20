@@ -2,7 +2,7 @@
   "round": "R06",
   "status": "BLOCKED",
   "branch": "codex/R06",
-  "pr_url": null,
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/6",
   "base_commit": "9c4c3e885e9f5e03bfb6c8939e52d1de90a305ad",
   "checked_at": "2026-09-20T03:06:50.012152+00:00",
   "authorization": {
