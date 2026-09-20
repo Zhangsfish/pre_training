@@ -71,8 +71,6 @@ try {
      for(const p of d.projects)for(const b of p.bullets)assert.ok(text.includes(b));
      assert.deepEqual(await page.locator('[data-project]').evaluateAll(ns=>ns.map(n=>n.dataset.project)),['kin','spps','qq-lingxi','pet']);
      assert.equal(await page.locator('a[download]').getAttribute('href'),'/'+publicPath);
-     const [download]=await Promise.all([page.waitForEvent('download'),page.locator('a[download]').click()]);
-     const file=await download.path();assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'),readJson(path.join(root,'publication/resume-manifest.json')).sha256);
    }
    if(js&&width!==320){await capture(page,name,width);if(name==='home')await capture(page,'home-firstfold',width,false);}
    await page.keyboard.press('Tab');assert.equal(await page.locator(':focus').innerText(),'跳到正文');
@@ -81,6 +79,10 @@ try {
    assert.equal(await page.locator(':focus').getAttribute('id'),'main');
    if(name==='home'){await page.locator('.primary').click();assert.equal(new URL(page.url()).hash,'#work');}
    if(data.home.project_order.includes(name)){await page.locator('.toc a').last().click();assert.match(new URL(page.url()).hash,/^#part-/);}
+   if(name==='resume'){
+     const [download]=await Promise.all([page.waitForEvent('download'),page.locator('a[download]').click()]);
+     const file=await download.path();assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'),readJson(path.join(root,'publication/resume-manifest.json')).sha256);
+   }
    assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
    assert.ok(responses.every(r=>r.status<400||(name==='404'&&r.url===base+route)),'No broken resource');
    evidence.checks.push({page:name,viewport:{width,height:width===1440?1000:812},javascript:js,result:'pass'});
