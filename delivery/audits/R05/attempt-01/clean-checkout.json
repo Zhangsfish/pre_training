@@ -1,0 +1,45 @@
+{
+  "checkout": "E:\\myself\\pre_training-r05-final",
+  "locks": [
+    {
+      "sha256": "d11d253db48a8d61901cace6e835800ccec0ac9a76a38388ee9734f07f85359e",
+      "path": "site/package-lock.json"
+    },
+    {
+      "sha256": "178aa335ddc273091eb7fe3c0c5008fa03285c75cf56bbc54bbd449f52697f0a",
+      "path": "acceptance/package-lock.json"
+    }
+  ],
+  "node": "v24.15.0",
+  "checked_at": "2026-09-20T02:24:36.1286778Z",
+  "tested_commit": "b2eadcea9f9ae5def9df1068b9d715919e69586e",
+  "npm": "11.12.1",
+  "os": "Microsoft Windows NT 10.0.26200.0",
+  "absent": [
+    {
+      "exists": false,
+      "path": "site/node_modules"
+    },
+    {
+      "exists": false,
+      "path": "site/.astro"
+    },
+    {
+      "exists": false,
+      "path": "site/dist"
+    },
+    {
+      "exists": false,
+      "path": "resume/exports"
+    },
+    {
+      "exists": false,
+      "path": "acceptance/node_modules"
+    },
+    {
+      "exists": false,
+      "path": "acceptance/.venv"
+    }
+  ],
+  "git_status": []
+}

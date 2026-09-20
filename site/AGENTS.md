@@ -9,4 +9,4 @@
 - scripts/content.mjs、sections.mjs：原 R01/R03事实来源与正文合同。
 - tests：保留内容/安全负例，扩充 PDF 注册与隔离检查。
 
-依赖版本不变，SPPS媒体仍为文字降级。仅通用 PDF 复制到 public/downloads；其他导出均留 resume/exports（Git忽略）。不执行R05，不部署。
+依赖版本不变，SPPS媒体仍为文字降级。仅通用 PDF 复制到 public/downloads；其他导出均留 resume/exports（Git忽略）。R05 已由 STATE 和 R04-a01 授权，维护/干净验收入口为 ../acceptance/README.md；不执行 R06，不部署。

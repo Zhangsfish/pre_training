@@ -1,0 +1,8 @@
+
+> pre-training-site@0.1.0 resume:build
+> node ../resume/scripts/build.mjs --verify-published
+
+BUILT general-zh: resume\exports\zhang-shuo_general-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+BUILT product-commercial-zh: resume\exports\zhang-shuo_product-commercial-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+BUILT brand-insight-zh: resume\exports\zhang-shuo_brand-insight-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+BUILT ai-product-zh: resume\exports\zhang-shuo_ai-product-zh_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)

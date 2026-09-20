@@ -1,0 +1,66 @@
+{
+  "browser": "153.0.8010.52",
+  "method": "Anonymous real Chrome GET; fresh contexts without stored login; rendered body markers and viewport screenshots; not merely HEAD status",
+  "results": [
+    {
+      "id": "github-profile",
+      "url": "https://github.com/Zhangsfish",
+      "http_status": 200,
+      "title": "Zhangsfish · GitHub",
+      "final_url": "https://github.com/Zhangsfish",
+      "checked_at": "2026-09-20T02:29:36.584Z",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "screenshot": "external-github-profile.png",
+      "visible_text_length": 1019
+    },
+    {
+      "id": "kin-repo",
+      "url": "https://github.com/Zhangsfish/kin-portfolio",
+      "http_status": 404,
+      "title": "Page not found · GitHub · GitHub",
+      "final_url": "https://github.com/Zhangsfish/kin-portfolio",
+      "checked_at": "2026-09-20T02:29:40.742Z",
+      "verification": "unconfirmed",
+      "error": null,
+      "screenshot": "external-kin-repo.png",
+      "visible_text_length": 1001
+    },
+    {
+      "id": "qq-lingxi-repo",
+      "url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "http_status": 200,
+      "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "checked_at": "2026-09-20T02:29:46.121Z",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "screenshot": "external-qq-lingxi-repo.png",
+      "visible_text_length": 6106
+    },
+    {
+      "id": "notion-organic-synthesis",
+      "url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "http_status": 200,
+      "title": "Organic Synthesis Laborat",
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "checked_at": "2026-09-20T02:29:54.221Z",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "screenshot": "external-notion-organic-synthesis.png",
+      "visible_text_length": 2110
+    },
+    {
+      "id": "notion-organic-chemistry",
+      "url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "http_status": 200,
+      "title": "Organic Chemistry",
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "checked_at": "2026-09-20T02:30:00.786Z",
+      "verification": "anonymous_content_verified",
+      "error": null,
+      "screenshot": "external-notion-organic-chemistry.png",
+      "visible_text_length": 1840
+    }
+  ]
+}

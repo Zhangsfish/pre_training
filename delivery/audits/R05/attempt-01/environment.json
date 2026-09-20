@@ -1,0 +1,15 @@
+{
+  "fresh_acceptance_dependency_install": true,
+  "os": "Microsoft Windows NT 10.0.26200.0",
+  "typescript": "6.0.3",
+  "poppler": "pdftoppm version 26.07.0",
+  "node": "v24.15.0",
+  "git_status_after": [],
+  "astro": "7.3.3",
+  "fresh_site_dependency_install": true,
+  "fresh_python_venv": true,
+  "python": "Python 3.12.14",
+  "playwright": "1.62.1",
+  "pypdf": "6.10.0",
+  "npm": "11.12.1"
+}

@@ -1,0 +1,8 @@
+Collecting pypdf==6.10.0 (from -r acceptance/requirements.txt (line 1))
+  Downloading pypdf-6.10.0-py3-none-any.whl.metadata (7.1 kB)
+Downloading pypdf-6.10.0-py3-none-any.whl (334 kB)
+Installing collected packages: pypdf
+Successfully installed pypdf-6.10.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: E:\myself\pre_training-r05-final\acceptance\.venv\Scripts\python.exe -m pip install --upgrade pip

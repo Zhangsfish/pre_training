@@ -1,0 +1,1380 @@
+{
+  "checked_at": "2026-09-20T02:28:58.205Z",
+  "browser": "153.0.8010.52",
+  "zoom_method": "Chrome tabs.setZoom(2) in isolated profile; getZoom + innerWidth measured; no CSS scale or deviceScaleFactor substitution",
+  "zoom": [
+    {
+      "route": "/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 1539,
+      "result": "pass"
+    },
+    {
+      "route": "/work/kin/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 791,
+      "result": "pass"
+    },
+    {
+      "route": "/work/spps/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 554,
+      "result": "pass"
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 585,
+      "result": "pass"
+    },
+    {
+      "route": "/work/pet/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 519,
+      "result": "pass"
+    },
+    {
+      "route": "/resume/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 938,
+      "result": "pass"
+    },
+    {
+      "route": "/missing/",
+      "factor": 2,
+      "physical_viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow",
+      "inner_width": 720,
+      "scroll_width": 720,
+      "dpr": 2,
+      "main": 58,
+      "result": "pass"
+    }
+  ],
+  "keyboard": [
+    {
+      "route": "/",
+      "links": 31,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#work",
+          "label": "查看项目 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "通用简历 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/kin/",
+          "label": "01KIN↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/spps/",
+          "label": "02SPPS↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/qq-lingxi/",
+          "label": "03QQ 灵犀↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/pet/",
+          "label": "04PET↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/kin/",
+          "label": "父母的普通一天，也值得被看见。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/kin/",
+          "label": "阅读 KIN 案例 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://github.com/Zhangsfish/kin-portfolio",
+          "label": "KIN 项目仓库 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/spps/",
+          "label": "从参考论文到一台真正运行的仪器。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/spps/",
+          "label": "阅读 SPPS 案例 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/qq-lingxi/",
+          "label": "先理解一个人，再帮他找到合适的人和群。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/qq-lingxi/",
+          "label": "阅读 QQ 灵犀 案例 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "label": "QQ 灵犀项目仓库 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/pet/",
+          "label": "在新方向里，把学习、实验与证据接起来。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/pet/",
+          "label": "阅读 PET 案例 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+          "label": "有机合成实验课程主页↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+          "label": "有机化学课程主页↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/kin/",
+          "label": "先看清人的问题：KIN 把普通生活与参与感放在风险看护之外。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/qq-lingxi/",
+          "label": "与 AI 一起形成方案：从 QQ 灵犀的产品迭代，到 PET 的学习与实验讨论。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/spps/",
+          "label": "把现实约束提前放进方案：SPPS 的部件接口，以及 PET 正式实验前的小规模验证。",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "mailto:zhangs.taq@gmail.com",
+          "label": "zhangs.taq@gmail.com ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://github.com/Zhangsfish",
+          "label": "GitHub ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "通用简历 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "route": "/work/kin/",
+      "links": 17,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 全部项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-1",
+          "label": "01　我的观察",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-2",
+          "label": "02　三个原始判断",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-3",
+          "label": "03　从判断到方案",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-4",
+          "label": "04　先验证，再投入",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-5",
+          "label": "05　后续研究检查",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-6",
+          "label": "06　贡献与边界",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://github.com/Zhangsfish/kin-portfolio",
+          "label": "KIN 项目仓库 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 返回项目索引",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/spps/",
+          "label": "下一篇：SPPS →",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "route": "/work/spps/",
+      "links": 13,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 全部项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-1",
+          "label": "01　从参考到集成",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-2",
+          "label": "02　本人与协作者",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-3",
+          "label": "03　结果与边界",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 返回项目索引",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/qq-lingxi/",
+          "label": "下一篇：QQ 灵犀 →",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "links": 14,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 全部项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-1",
+          "label": "01　产品问题",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-2",
+          "label": "02　已有原型与归属",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-3",
+          "label": "03　当前边界",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "label": "QQ 灵犀项目仓库 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 返回项目索引",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/pet/",
+          "label": "下一篇：PET →",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "route": "/work/pet/",
+      "links": 13,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 全部项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-1",
+          "label": "01　补齐日常工作条件",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-2",
+          "label": "02　共推方案与现实检验",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#part-3",
+          "label": "03　交付边界",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "← 返回项目索引",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/kin/",
+          "label": "下一篇：KIN →",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "route": "/resume/",
+      "links": 14,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "mailto:zhangs.taq@gmail.com",
+          "label": "zhangs.taq@gmail.com",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/downloads/zhang-shuo-resume.pdf",
+          "label": "下载通用简历 PDF ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/kin/",
+          "label": "KIN | 家庭日常连接产品方案",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/spps/",
+          "label": "SPPS | 智能化流动多肽合成仪",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/qq-lingxi/",
+          "label": "QQ 灵犀 | AI 产品原型",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "label": "QQ 灵犀项目仓库 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/work/pet/",
+          "label": "PET | 科研实践",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    },
+    {
+      "route": "/missing/",
+      "links": 10,
+      "tab_order": [
+        {
+          "href": "#main",
+          "label": "跳到正文",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "张朔Zhang Shuo",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "项目",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#teaching",
+          "label": "教学",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "简历",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#contact",
+          "label": "联系",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/",
+          "label": "返回首页 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/#work",
+          "label": "浏览项目 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "/resume/",
+          "label": "通用简历 ↗",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        },
+        {
+          "href": "#main",
+          "label": "返回顶部 ↑",
+          "outline": "solid",
+          "outline_width": "3px",
+          "visible": true
+        }
+      ],
+      "result": "pass"
+    }
+  ],
+  "motion": [
+    {
+      "route": "/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    },
+    {
+      "route": "/work/kin/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    },
+    {
+      "route": "/work/spps/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    },
+    {
+      "route": "/work/pet/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    },
+    {
+      "route": "/resume/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    },
+    {
+      "route": "/missing/",
+      "preference": true,
+      "animations": 0,
+      "smooth": false
+    }
+  ],
+  "contacts": [
+    {
+      "route": "/",
+      "label": "zhangs.taq@gmail.com ↗",
+      "href": "mailto:zhangs.taq@gmail.com"
+    },
+    {
+      "route": "/resume/",
+      "label": "zhangs.taq@gmail.com",
+      "href": "mailto:zhangs.taq@gmail.com"
+    }
+  ],
+  "pdf_reader": [
+    {
+      "variant": "general-zh",
+      "local_fixture": false,
+      "uri": "../work/kin/",
+      "actual": "/work/kin/",
+      "expected": "/work/kin/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 620.9481240384647,
+        "y": 420.81942136591175
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "general-zh",
+      "local_fixture": false,
+      "uri": "../work/spps/",
+      "actual": "/work/spps/",
+      "expected": "/work/spps/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 625.4465359988259,
+        "y": 568.7455936370579
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "general-zh",
+      "local_fixture": false,
+      "uri": "../work/qq-lingxi/",
+      "actual": "/work/qq-lingxi/",
+      "expected": "/work/qq-lingxi/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 601.9548290947175,
+        "y": 696.6817426283196
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "general-zh",
+      "local_fixture": false,
+      "uri": "../work/pet/",
+      "actual": "/work/pet/",
+      "expected": "/work/pet/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 576.9636515371556,
+        "y": 844.6079148994658
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "product-commercial-zh",
+      "local_fixture": true,
+      "uri": "../work/spps/",
+      "actual": "/work/spps/",
+      "expected": "/work/spps/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 625.4465359988259,
+        "y": 420.81942136591175
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "product-commercial-zh",
+      "local_fixture": true,
+      "uri": "../work/kin/",
+      "actual": "/work/kin/",
+      "expected": "/work/kin/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 620.9481240384647,
+        "y": 547.7560691931792
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "product-commercial-zh",
+      "local_fixture": true,
+      "uri": "../work/qq-lingxi/",
+      "actual": "/work/qq-lingxi/",
+      "expected": "/work/qq-lingxi/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 601.9548290947175,
+        "y": 696.6817426283196
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "product-commercial-zh",
+      "local_fixture": true,
+      "uri": "../#teaching",
+      "actual": "/#teaching",
+      "expected": "/#teaching",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 614.4504178734985,
+        "y": 844.6079148994658
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "brand-insight-zh",
+      "local_fixture": true,
+      "uri": "../work/kin/",
+      "actual": "/work/kin/",
+      "expected": "/work/kin/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 620.9481240384647,
+        "y": 420.81942136591175
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "brand-insight-zh",
+      "local_fixture": true,
+      "uri": "../work/qq-lingxi/",
+      "actual": "/work/qq-lingxi/",
+      "expected": "/work/qq-lingxi/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 601.9548290947175,
+        "y": 568.7455936370579
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "brand-insight-zh",
+      "local_fixture": true,
+      "uri": "../#teaching",
+      "actual": "/#teaching",
+      "expected": "/#teaching",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 614.4504178734985,
+        "y": 717.6712670721984
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "ai-product-zh",
+      "local_fixture": true,
+      "uri": "../work/qq-lingxi/",
+      "actual": "/work/qq-lingxi/",
+      "expected": "/work/qq-lingxi/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 601.9548290947175,
+        "y": 420.81942136591175
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "ai-product-zh",
+      "local_fixture": true,
+      "uri": "../work/kin/",
+      "actual": "/work/kin/",
+      "expected": "/work/kin/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 620.9481240384647,
+        "y": 568.7455936370579
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "ai-product-zh",
+      "local_fixture": true,
+      "uri": "../work/pet/",
+      "actual": "/work/pet/",
+      "expected": "/work/pet/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 576.9636515371556,
+        "y": 717.6712670721984
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "variant": "ai-product-zh",
+      "local_fixture": true,
+      "uri": "../work/spps/",
+      "actual": "/work/spps/",
+      "expected": "/work/spps/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 625.4465359988259,
+        "y": 865.5974393433447
+      },
+      "result": "online_relative_link_pass"
+    },
+    {
+      "uri": "../work/kin/",
+      "actual": "chrome-error://chromewebdata/",
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 620.9481240384647,
+        "y": 420.81942136591175
+      },
+      "result": "offline_relative_link_unavailable",
+      "limitation": "Downloaded standalone PDF has no site base or sibling work pages. Do not promise offline project links; choose real absolute site URLs only after R06 domain approval."
+    }
+  ]
+}

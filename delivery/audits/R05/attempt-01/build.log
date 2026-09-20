@@ -1,0 +1,31 @@
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+10:27:19 [content] Syncing content
+10:27:19 [content] Synced content
+10:27:19 [types] Generated 1.91s
+10:27:19 [build] output: "static"
+10:27:19 [build] mode: "static"
+10:27:19 [build] directory: E:\myself\pre_training-r05-final\site\dist\
+10:27:19 [build] Collecting build info...
+10:27:19 [build] ✓ Completed in 2.03s.
+10:27:19 [build] Building static entrypoints...
+10:27:20 [vite] ✓ built in 1.02s
+10:27:20 [vite] ✓ built in 69ms
+10:27:21 [build] Rearranging server assets...
+
+ generating static routes 
+10:27:21   ├─ /404.html (+61ms) 
+10:27:21   ├─ /resume/index.html (+16ms) 
+10:27:21   ├─ /work/kin/index.html (+10ms) 
+10:27:21   ├─ /work/spps/index.html (+7ms) 
+10:27:21   ├─ /work/qq-lingxi/index.html (+7ms) 
+10:27:21   ├─ /work/pet/index.html (+7ms) 
+10:27:21   ├─ /index.html (+15ms) 
+10:27:21 ✓ Completed in 215ms.
+
+10:27:21 [build] ✓ Completed in 1.47s.
+10:27:21 [build] 7 page(s) built in 3.51s
+10:27:21 [build] Complete!
+Public output audit: {"files":["404.html","index.html","downloads/zhang-shuo-resume.pdf","resume/index.html","_astro/site.LYHxabVX.css","work/kin/index.html","work/pet/index.html","work/qq-lingxi/index.html","work/spps/index.html"],"total_bytes":202411,"client_js_bytes":0,"approved_media":0,"result":"pass"}

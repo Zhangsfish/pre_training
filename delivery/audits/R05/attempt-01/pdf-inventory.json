@@ -1,0 +1,360 @@
+[
+  {
+    "variant": "general-zh",
+    "check": {
+      "pages": 1,
+      "a4": true,
+      "text_order_verified": true,
+      "replacement_characters": false,
+      "links": [
+        "../work/kin/",
+        "../work/spps/",
+        "../work/qq-lingxi/",
+        "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "../work/pet/"
+      ],
+      "text_sha256": "ebd1008d7963bfa0b38a6595ed27d00df1063a21e61d6baff92c618fccff2d4c",
+      "pdf_sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+    },
+    "r04_text_stable": true,
+    "width": 594.95996,
+    "height": 841.91998,
+    "annotations": [
+      {
+        "uri": "../work/kin/",
+        "rect": [
+          39.75,
+          562.91998,
+          180.75,
+          577.91998
+        ]
+      },
+      {
+        "uri": "../work/spps/",
+        "rect": [
+          39.75,
+          451.91998,
+          187.5,
+          466.91998
+        ]
+      },
+      {
+        "uri": "../work/qq-lingxi/",
+        "rect": [
+          39.75,
+          355.91998,
+          152.25,
+          370.91998
+        ]
+      },
+      {
+        "uri": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "rect": [
+          282.75,
+          337.91998,
+          366.0,
+          352.16998
+        ]
+      },
+      {
+        "uri": "../work/pet/",
+        "rect": [
+          39.75,
+          244.91998,
+          114.75,
+          259.91998
+        ]
+      }
+    ],
+    "metadata": {
+      "/Title": "张朔 - 简历",
+      "/Creator": "Playwright Chromium",
+      "/Producer": "pre_training resume exporter",
+      "/CreationDate": "D:20260920000000Z",
+      "/ModDate": "D:20260920000000Z"
+    },
+    "embedded_fonts": [
+      "/AAAAAA+MicrosoftYaHei-Bold",
+      "/BAAAAA+MicrosoftYaHei"
+    ],
+    "attachments": 0,
+    "javascript_or_launch_actions": 0,
+    "render_sha256": "c01f297648d2cc4a3f3dfe3a13e228118117341d1aaa0b15b9f9fc2c1cf375b2"
+  },
+  {
+    "variant": "product-commercial-zh",
+    "check": {
+      "pages": 1,
+      "a4": true,
+      "text_order_verified": true,
+      "replacement_characters": false,
+      "links": [
+        "../work/spps/",
+        "../work/kin/",
+        "../work/qq-lingxi/",
+        "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "../#teaching",
+        "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+        "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+      ],
+      "text_sha256": "b9a292622e2bea5a1ea7dc55ebe7ded5b273037442e2492725ef05060ac619e8",
+      "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22"
+    },
+    "r04_text_stable": true,
+    "width": 594.95996,
+    "height": 841.91998,
+    "annotations": [
+      {
+        "uri": "../work/spps/",
+        "rect": [
+          39.75,
+          562.91998,
+          187.5,
+          577.91998
+        ]
+      },
+      {
+        "uri": "../work/kin/",
+        "rect": [
+          39.75,
+          467.66998,
+          180.75,
+          482.66998
+        ]
+      },
+      {
+        "uri": "../work/qq-lingxi/",
+        "rect": [
+          39.75,
+          355.91998,
+          152.25,
+          370.91998
+        ]
+      },
+      {
+        "uri": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "rect": [
+          282.75,
+          337.91998,
+          366.0,
+          352.16998
+        ]
+      },
+      {
+        "uri": "../#teaching",
+        "rect": [
+          39.75,
+          244.91998,
+          171.0,
+          259.91998
+        ]
+      },
+      {
+        "uri": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+        "rect": [
+          183.0,
+          226.91998,
+          288.0,
+          241.16998
+        ]
+      },
+      {
+        "uri": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+        "rect": [
+          297.0,
+          226.91998,
+          381.0,
+          241.16998
+        ]
+      }
+    ],
+    "metadata": {
+      "/Title": "张朔 - 简历",
+      "/Creator": "Playwright Chromium",
+      "/Producer": "pre_training resume exporter",
+      "/CreationDate": "D:20260920000000Z",
+      "/ModDate": "D:20260920000000Z"
+    },
+    "embedded_fonts": [
+      "/AAAAAA+MicrosoftYaHei-Bold",
+      "/BAAAAA+MicrosoftYaHei"
+    ],
+    "attachments": 0,
+    "javascript_or_launch_actions": 0,
+    "render_sha256": "003d903501ec78cc88036ee510ca1680339a19de15352cc61485e2c0195ec04d"
+  },
+  {
+    "variant": "brand-insight-zh",
+    "check": {
+      "pages": 1,
+      "a4": true,
+      "text_order_verified": true,
+      "replacement_characters": false,
+      "links": [
+        "../work/kin/",
+        "../work/qq-lingxi/",
+        "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "../#teaching",
+        "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+        "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+      ],
+      "text_sha256": "b2c04adeb3b8dda70e68e30ab8f4bc5e81b94a06177df2412faccdadbc5d01d4",
+      "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913"
+    },
+    "r04_text_stable": true,
+    "width": 594.95996,
+    "height": 841.91998,
+    "annotations": [
+      {
+        "uri": "../work/kin/",
+        "rect": [
+          39.75,
+          562.91998,
+          180.75,
+          577.91998
+        ]
+      },
+      {
+        "uri": "../work/qq-lingxi/",
+        "rect": [
+          39.75,
+          451.91998,
+          152.25,
+          466.91998
+        ]
+      },
+      {
+        "uri": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "rect": [
+          282.75,
+          433.16998,
+          366.0,
+          447.41998
+        ]
+      },
+      {
+        "uri": "../#teaching",
+        "rect": [
+          39.75,
+          340.16998,
+          171.0,
+          355.16998
+        ]
+      },
+      {
+        "uri": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+        "rect": [
+          183.0,
+          322.16998,
+          288.0,
+          336.41998
+        ]
+      },
+      {
+        "uri": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+        "rect": [
+          297.0,
+          322.16998,
+          381.0,
+          336.41998
+        ]
+      }
+    ],
+    "metadata": {
+      "/Title": "张朔 - 简历",
+      "/Creator": "Playwright Chromium",
+      "/Producer": "pre_training resume exporter",
+      "/CreationDate": "D:20260920000000Z",
+      "/ModDate": "D:20260920000000Z"
+    },
+    "embedded_fonts": [
+      "/AAAAAA+MicrosoftYaHei-Bold",
+      "/BAAAAA+MicrosoftYaHei"
+    ],
+    "attachments": 0,
+    "javascript_or_launch_actions": 0,
+    "render_sha256": "d2cf2f8fea264267c281d7737c41e7b9886129b7f9cbfcea6059876c0e7e1cc4"
+  },
+  {
+    "variant": "ai-product-zh",
+    "check": {
+      "pages": 1,
+      "a4": true,
+      "text_order_verified": true,
+      "replacement_characters": false,
+      "links": [
+        "../work/qq-lingxi/",
+        "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "../work/kin/",
+        "../work/pet/",
+        "../work/spps/"
+      ],
+      "text_sha256": "09e766a22eb81f330ac199f7488187fe4c0af7788271be76a56e7de4f2ff49bf",
+      "pdf_sha256": "bed14317325b5997d8b119391b20cb5c6cc35e549635f6e000b6194f684b0a4f"
+    },
+    "r04_text_stable": true,
+    "width": 594.95996,
+    "height": 841.91998,
+    "annotations": [
+      {
+        "uri": "../work/qq-lingxi/",
+        "rect": [
+          39.75,
+          562.91998,
+          152.25,
+          577.91998
+        ]
+      },
+      {
+        "uri": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "rect": [
+          282.75,
+          544.16998,
+          366.0,
+          558.41998
+        ]
+      },
+      {
+        "uri": "../work/kin/",
+        "rect": [
+          39.75,
+          451.91998,
+          180.75,
+          466.91998
+        ]
+      },
+      {
+        "uri": "../work/pet/",
+        "rect": [
+          39.75,
+          340.16998,
+          114.75,
+          355.16998
+        ]
+      },
+      {
+        "uri": "../work/spps/",
+        "rect": [
+          39.75,
+          229.16998,
+          187.5,
+          244.16998
+        ]
+      }
+    ],
+    "metadata": {
+      "/Title": "张朔 - 简历",
+      "/Creator": "Playwright Chromium",
+      "/Producer": "pre_training resume exporter",
+      "/CreationDate": "D:20260920000000Z",
+      "/ModDate": "D:20260920000000Z"
+    },
+    "embedded_fonts": [
+      "/AAAAAA+MicrosoftYaHei-Bold",
+      "/BAAAAA+MicrosoftYaHei"
+    ],
+    "attachments": 0,
+    "javascript_or_launch_actions": 0,
+    "render_sha256": "34003c633bc5316791c8e5aee44ac980cfb00df5d45bca3542e4e8078af7a026"
+  }
+]

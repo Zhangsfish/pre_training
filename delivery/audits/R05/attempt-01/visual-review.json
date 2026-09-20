@@ -1,0 +1,36 @@
+{
+  "reviewer": "implementation agent; planner decision pending",
+  "files": [
+    "pdf-general-zh.png",
+    "pdf-product-commercial-zh.png",
+    "pdf-brand-insight-zh.png",
+    "pdf-ai-product-zh.png",
+    "home-1440.png",
+    "home-firstfold-1440.png",
+    "home-375.png",
+    "kin-1440.png",
+    "spps-1440.png",
+    "qq-lingxi-1440.png",
+    "pet-1440.png",
+    "resume-375.png",
+    "404-375.png",
+    "resume-zoom200.png",
+    "404-zoom200.png",
+    "pdf-native-reader-general-zh.png",
+    "pdf-offline-click.png",
+    "home-firstfold-768.png",
+    "home-320.png",
+    "external-qq-lingxi-repo.png",
+    "external-notion-organic-synthesis.png",
+    "external-notion-organic-chemistry.png",
+    "external-kin-repo.png"
+  ],
+  "method": "Open actual generated PNGs; compare text/ownership with approved publication and accepted R04. No synthetic browser mockups.",
+  "observations": [
+    "Four one-page PDFs: Chinese legible, safe margins, no black boxes/clipping/overlap; distinct project selections/order.",
+    "Desktop/phone/tablet/320 layouts retain reading order, navigation, labels and contact/download links.",
+    "Native 200% viewport contains both left and right navigation/contents; capture dimensions asserted 1440x1000.",
+    "Offline PDF project-link click shows ERR_FILE_NOT_FOUND; limitation retained.",
+    "Visible external course/repository content and KIN anonymous 404 reviewed."
+  ]
+}

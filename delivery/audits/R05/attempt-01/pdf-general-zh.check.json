@@ -1,0 +1,15 @@
+{
+  "pages": 1,
+  "a4": true,
+  "text_order_verified": true,
+  "replacement_characters": false,
+  "links": [
+    "../work/kin/",
+    "../work/spps/",
+    "../work/qq-lingxi/",
+    "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+    "../work/pet/"
+  ],
+  "text_sha256": "ebd1008d7963bfa0b38a6595ed27d00df1063a21e61d6baff92c618fccff2d4c",
+  "pdf_sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+}

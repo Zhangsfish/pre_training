@@ -1,0 +1,43 @@
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ reviewed source set passes review and production without source drift (54.7266ms)
+✔ missing claim fails closed (16.0246ms)
+✔ unknown cannot become an outcome (17.6528ms)
+✔ excluded project cannot enter default home (22.6085ms)
+✔ draft is blocked from production (39.6683ms)
+✔ approving document shells does not approve their underlying claims (16.8954ms)
+✔ draft negative fixtures do not mutate the planner-approved source (17.3168ms)
+✔ duplicate identifiers rejected (14.8812ms)
+✔ nonexistent source rejected (13.0942ms)
+✔ wrong source heading rejected (16.1782ms)
+✔ source drift requests targeted review rather than silently updating it (15.8947ms)
+✔ required external link qq-lingxi-repo must exist (14.0152ms)
+✔ required external link notion-organic-synthesis must exist (13.7526ms)
+✔ required external link notion-organic-chemistry must exist (16.7979ms)
+✔ course links must also appear in teaching, not only registry (14.2486ms)
+✔ both resume-only fields are forbidden in site allowlist (28.5669ms)
+✔ real resume fields exist but explicit site projection omits their names and values (4.4797ms)
+✔ pending media cannot be referenced (16.0639ms)
+✔ pending original cannot be assigned public path (13.8775ms)
+✔ excluded and resume-only claims cannot render (33.8391ms)
+✔ production command ignores inherited review env and exits nonzero before output (481.6449ms)
+✔ case sections preserve every approved sentence, without introducing body facts (11.9031ms)
+✔ KIN starts with ordinary life; competitive checking stays after the hypotheses and product (4.0093ms)
+✔ dist gate rejects rogue-media (103.8838ms)
+✔ dist gate rejects candidate-route (75.9203ms)
+✔ dist gate rejects private-field (74.5795ms)
+✔ dist gate rejects broken-link (76.4944ms)
+✔ dist gate rejects fake-pdf (88.7358ms)
+✔ R04 output rejects tampered-pdf (100.1488ms)
+✔ R04 output rejects unregistered-variant (98.2466ms)
+✔ R04 output rejects resume-contact-in-case (90.4179ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1145.7465
