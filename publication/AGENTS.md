@@ -8,3 +8,6 @@
 - `projects/*.md`：四个案例与教学短稿，JSON 形式的 YAML frontmatter 便于无额外解析依赖读取。
 
 R01-a01 审查单明确批准：完成其指定修正后，将本批 profile/home/projects/claims 标为 approved。本次状态变更依据 `delivery/reviews/R01-a01.md` 第5项，并非实施者自签；新内容仍须单独审查。出生年月与电话仅在 resume allowlist，网站白名单不变。不收录未知专利状态、未核价金额、科研细节或受限制原片。KIN 的竞争检查不代替原始 H1/H2/H3，也不证明 H2 已验证或证伪。
+
+## Current content-alignment maintenance
+本轮用户已授权依最终确认经历更新公开选材；范围见 delivery/maintenance/home-alignment/03-IMPLEMENTATION.md。本轮新增 natural-product，并补齐个人表达与已确认市场分析；数字状态须保留原口径。最终BRM参考母稿不重写。

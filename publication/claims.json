@@ -6,7 +6,7 @@
       "text": "张朔 / Zhang Shuo；公开邮箱 zhangs.taq@gmail.com，GitHub Zhangsfish。",
       "source_path": "PROFILE.md",
       "source_heading": "Resume Header",
-      "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
+      "source_blob_sha": "5c224104d36bc57a23c34d443d609bfb6f62602d",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -21,7 +21,7 @@
       "text": "北京大学基础医学院放射医学系硕士研究生，2024.09入学，预计2027.07毕业。",
       "source_path": "PROFILE.md",
       "source_heading": "北京大学基础医学院",
-      "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
+      "source_blob_sha": "5c224104d36bc57a23c34d443d609bfb6f62602d",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -36,7 +36,7 @@
       "text": "吉林大学理科实验班（化学，唐敖庆班），2020.09–2024.06；GPA 3.85/4.00，排名4/27。",
       "source_path": "PROFILE.md",
       "source_heading": "吉林大学",
-      "source_blob_sha": "714ee3878471e00d3bc04b986c8226f836d01156",
+      "source_blob_sha": "5c224104d36bc57a23c34d443d609bfb6f62602d",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -51,7 +51,7 @@
       "text": "H1：父母未接电话后，子女可能需要理解佩戴、位置与近期活动等状态，并在事先同意下建立连接；这是产品假设。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "H1 — Missed call creates an \"unknown-state\" need",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -66,7 +66,7 @@
       "text": "H2：父母不只是风险与照护对象，普通一天也可能值得被看见、理解和参与；安全是信任底座，这是核心待验证假设。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "H2 — Elder tech over-centers risk management; ordinary life itself may be valuable",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -81,7 +81,7 @@
       "text": "H3：孩子、宠物等高依恋关系中的状态查看行为提供相邻机制参照，迁移到独立生活的父母仍需直接验证并尊重成年人的自主与同意。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "H3 — strong adjacent support, not direct proof",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -96,7 +96,7 @@
       "text": "KIN Watch + Family App 以家庭日常连接为产品方向；先用成熟硬件验证信息组织与自主查看、参与，再判断定制硬件需求。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "Current product consequence",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -111,7 +111,7 @@
       "text": "本人提出原始观察和H1/H2/H3，决定哪些证据改变产品定义，并推进产品、定价、渠道与成本方案。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "User-owned judgment",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -123,10 +123,10 @@
     },
     {
       "id": "kin.ai",
-      "text": "AI辅助桌面研究、证据整理与计算，Codex承担仓库实施；本人保留主要判断与取舍。",
+      "text": "AI辅助桌面研究、证据整理与计算，ChatGPT承担代码与仓库实施；本人保留主要判断与取舍。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "AI-native operating model",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -141,7 +141,7 @@
       "text": "独立产品与商业方案，未上市；没有已实现的商业结果，核心关系消费需求仍待现实验证。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "Current artifact",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -156,7 +156,7 @@
       "text": "后续竞争检查发现已有部分状态能力与原子功能；已有state不等于普通日常的关系价值已被验证或证伪。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "What competitive research changed",
-      "source_blob_sha": "d7dcd5c79039b831aed67b55d3fa175d570759da",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
       "basis": "analysis",
       "certainty": "confirmed",
       "publication": "approved",
@@ -273,7 +273,7 @@
     },
     {
       "id": "qq.ownership",
-      "text": "本人负责产品问题、定义、系统逻辑、迭代需求与实施验收；ChatGPT/Codex承担大量代码生成和工程实施。",
+      "text": "本人负责产品问题、定义、系统逻辑、迭代需求与实施验收；ChatGPT承担大量代码生成和工程实施。",
       "source_path": "experience/qq-lingxi-competition.md",
       "source_heading": "Ownership model",
       "source_blob_sha": "99163dc1fd9f97779ab8e9b00c31e1c738d4beea",
@@ -303,7 +303,7 @@
     },
     {
       "id": "qq.competition",
-      "text": "腾讯PCG校园AI产品创意大赛进入复赛；人类参与者为本人，工作模式为本人+ChatGPT/Codex。",
+      "text": "腾讯PCG校园AI产品创意大赛进入复赛；人类参与者为本人，工作模式为本人+ChatGPT。",
       "source_path": "experience/qq-lingxi-competition.md",
       "source_heading": "Competition context",
       "source_blob_sha": "99163dc1fd9f97779ab8e9b00c31e1c738d4beea",
@@ -318,10 +318,10 @@
     },
     {
       "id": "pet.status",
-      "text": "第一作者稿件已交导师，准备投稿，尚不能称为已投稿、在审或录用。",
+      "text": "第一作者论文初稿完成并交导师，拟投Journal of Medicinal Chemistry，准备投稿。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "Identity",
-      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -336,7 +336,7 @@
       "text": "本人补齐日常合成所需耗材与操作流程，使用已有大设备；不是从零建设整套实验室。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "Starting environment",
-      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -351,7 +351,7 @@
       "text": "外部医院合作关系与访问条件由导师建立，本人负责实验准备与现场协作。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "Distributed but pre-existing infrastructure",
-      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -366,7 +366,7 @@
       "text": "与同伴共同解决问题，各自拥有负责工作，并非本人管理下属团队。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "3. Peer collaboration, not centralized team management",
-      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -381,7 +381,7 @@
       "text": "本人从问题形成起与AI共同学习、讨论设计、排障、分析与写作；本人判断实验可行性、执行现实实验并承担最终判断。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "4. AI-native co-reasoning from the beginning",
-      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -396,7 +396,7 @@
       "text": "正式生物分布实验前，通过小规模验证拆解条件和风险，再进行计划的正式实验。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "High-cost one-shot experiments",
-      "source_blob_sha": "b6e90fd468b775b14721689da6fe73d2bfe67880",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -510,6 +510,231 @@
         "resume"
       ],
       "as_of": "2026-09-20"
+    },
+    {
+      "id": "profile.interests",
+      "text": "对人的选择与付费好奇，偏好直接带来日常幸福的产品；事前推演、连续小验证、现实反馈与AI辅助学习。",
+      "source_path": "PROFILE.md",
+      "source_heading": "Public interests and working style",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "5c224104d36bc57a23c34d443d609bfb6f62602d"
+    },
+    {
+      "id": "kin.definition",
+      "text": "Watch / Family App按事实—推断—家庭理解组织Now、Today、Data；三枚实体键与蜂窝通话；实现窗口2026.09.15–09.20。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+    },
+    {
+      "id": "kin.market",
+      "text": "中国40–60岁子女/60–80岁父母；2.85亿分析基准，采用率10/25/50%对应2850万/7130万/1.43亿DAU情景；米家历史1.17亿MAU仅为异口径量级参照。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "certainty": "approximate",
+      "basis": "analysis",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+    },
+    {
+      "id": "kin.vision",
+      "text": "AI吸收事务性访问，家庭关心可能保留人的注意力；扩展潜在查看者约5亿，采用率10/25/50%对应5000万/1.25亿/2.5亿DAU情景。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "certainty": "approximate",
+      "basis": "analysis",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+    },
+    {
+      "id": "kin.deliverables",
+      "text": "交互原型、约50秒品牌片、完整商业方案；999元方案定价、完整软件免费、双边GTM与成本/反馈设计。",
+      "source_path": "experience/kin-portfolio.md",
+      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+    },
+    {
+      "id": "spps.resources",
+      "text": "约150万元资源管理规模，近20家供应商，数量/库存/询价与经费协调；与导师对齐后直接对接需求方采购。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "3. Component selection, sourcing, procurement, and substitution",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb"
+    },
+    {
+      "id": "spps.substitution",
+      "text": "泵、管路、阀和小耗材国产替代；近同规格FEP管7.3元/米对照IDEX当时公开价折算约59元/米，单项约88%低价，不外推整机。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "Domestic substitution — verified single-item comparison plus broader user report",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb"
+    },
+    {
+      "id": "spps.performance",
+      "text": "核心集成不到3个月；约10残基自动合成演示；单次偶联操作约30分钟到约1分钟，约97%用时减少。",
+      "source_path": "experience/jlu-spps-instrument.md",
+      "source_heading": "7. Experimental validation and final technical state",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb"
+    },
+    {
+      "id": "qq.timing",
+      "text": "2026.05，初赛与复赛准备期分两轮集中工作，累计约10天。",
+      "source_path": "experience/qq-lingxi-competition.md",
+      "source_heading": "Timing",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "99163dc1fd9f97779ab8e9b00c31e1c738d4beea"
+    },
+    {
+      "id": "qq.strategy",
+      "text": "外部AI的用户理解与QQ真实关系/群资产结合，以QQ-MBTI冷启动，探索智能连接层。",
+      "source_path": "experience/qq-lingxi-competition.md",
+      "source_heading": "Strategic frame confirmed in repository",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "99163dc1fd9f97779ab8e9b00c31e1c738d4beea"
+    },
+    {
+      "id": "pet.window",
+      "text": "68Ga半衰期约68分钟、有效实验窗口约4小时，生物分布单次约4000元；连续低成本小规模MVP验证。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "High-cost one-shot experiments",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025"
+    },
+    {
+      "id": "pet.patents",
+      "text": "完成一作初稿拟投JMC；相关成果预计形成2项专利申请，申请/授权尚未确认。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "Identity",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025"
+    },
+    {
+      "id": "pet.period",
+      "text": "研究核心时期2025.08–2026.07。",
+      "source_path": "experience/pku-pap-pet-project.md",
+      "source_heading": "Identity",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025"
+    },
+    {
+      "id": "natural.route",
+      "text": "2022.09–2023.11；约1mg路线探索、前两步中间体约100g放大；重设计瓶颈路线成为后续集群式研究基础。",
+      "source_path": "experience/jlu-natural-product-synthesis.md",
+      "source_heading": "Identity",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "82f54820d180810b89175d0bdcae52c0844cbb71"
+    },
+    {
+      "id": "natural.team",
+      "text": "核心约5人、累计约10名本科生；分配路线/验证/放大/备料，管理上下游依赖并调整人员实验。",
+      "source_path": "experience/jlu-natural-product-synthesis.md",
+      "source_heading": "Informal team leadership",
+      "certainty": "approximate",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": [
+        "site",
+        "resume"
+      ],
+      "as_of": "2026-09-20",
+      "source_blob_sha": "82f54820d180810b89175d0bdcae52c0844cbb71"
     }
   ]
 }

@@ -62,15 +62,25 @@
     },
     {
       "id": "qq-lingxi-demo",
-      "label": "体验 QQ 灵犀",
+      "label": "独立 Demo（需访问权限）",
       "url": "https://qq-lingxi-agent-platform.vercel.app/",
       "kind": "demo",
       "required": false,
-      "verification": "user_provided"
+      "verification": "authentication_required"
+    },
+    {
+      "id": "kin-demo",
+      "label": "体验 KIN 与商业方案",
+      "url": "https://kin-portfolio-taupe.vercel.app/",
+      "kind": "demo",
+      "required": false,
+      "verification": "anonymous_content_verified",
+      "verification_checked_at": "2026-09-20",
+      "verification_method": "Cloud browser: rendered Watch, Family App and commercial case inspected"
     }
   ],
   "optional_live_demos": {
-    "kin": null,
+    "kin": "https://kin-portfolio-taupe.vercel.app/",
     "qq-lingxi": "https://qq-lingxi-agent-platform.vercel.app/"
   },
   "public_resume": {

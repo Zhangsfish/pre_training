@@ -1,5 +1,9 @@
 # AGENTS — pre_training
 
+## Current maintenance authorization
+
+本轮用户授权：核对最终经历与主页、审阅上传方案、合并方案并直接实施；权限受阻部分交给用户的Codex。执行范围以 `delivery/maintenance/home-alignment/03-IMPLEMENTATION.md` 为准，覆盖旧轮次冻结，但不改原始R07验收、不改DNS/费用/认证。保持三个主画廊顺序；增加辅助详情并修正通用简历既有选材。Vercel发布权限受阻时只交接，不绕过。
+
 本仓库服务张朔的中国校招：**一个稳定个人网站，多份按岗位选材的简历**。先读 `START_HERE.md`，再按角色加载；不要全仓无差别灌入上下文。
 
 ## 不可静默改变的约束

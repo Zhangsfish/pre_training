@@ -53,6 +53,20 @@ User hypothesis:
 
 ## Product thesis
 
+### Final user-confirmed public framing — 2026-09-20
+
+The finalized narrative takes priority over earlier career-story recommendations below. Competitive research is supporting evidence, not the opening and not a substitute for the user's product/market judgment. H2 relationship consumption has not been directly proven or falsified merely by the existence of state-detection products.
+
+- Project presentation period: 2026.09.15–2026.09.20 (repository implementation window, not the date the first idea arose).
+- Watch provides independent communication, location/activity/heart-rate/wear cues; Family App combines time and personal history into facts, inferences and family understanding.
+- Now shows approximate location, activity, wear and update freshness; Today organizes outings, returns and familiar-place visits into a day; Data shows trends and synchronized replay. Three physical keys and independent cellular calls reduce calling friction.
+- The concrete trigger is the fear of not knowing why a parent did not answer: busy walking/shopping, missed phone, or a condition requiring prompt contact. Inferred activities are qualified, not treated as certain diagnoses.
+- China-first analysis targets adult children 40–60 and independently living parents 60–80. About 285 million is an analytical population baseline; 10%, 25%, 50% daily adoption scenarios imply roughly 28.5m, 71.3m, 143m DAU. Comparison with Mijia's historical approximately 117m MAU is scale context only, not a like-for-like active-user comparison.
+- Long-term extension to children, pets and home spaces uses a deduplicated potential-viewer scenario of approximately 500m; 10%, 25%, 50% daily-use scenarios imply 50m, 125m, 250m DAU. These are scenarios, not acquired users or revenue.
+- User's strategic judgment: AI Agents may absorb transactional app visits, while caring about family/pets and participating in real life may retain human attention; KIN explores a Family / Living Context Entry.
+- Project deliverables include Watch/App interactive prototype, approximately 50-second brand film, product/commercial scheme, 999 RMB proposed hardware price, free full software, GTM, cost/unit-economics and feedback design. User owns problem, product and key commercial judgments; ChatGPT executes assigned research, calculation, visual and code tasks under user review.
+
+
 Current Gen 1:
 ```text
 KIN Watch + Family App

@@ -14,11 +14,14 @@ const results=[];
 try{
  for(const width of [375,1366]){
   const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const page=await ctx.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  for(const route of ['/','/work/qq-lingxi/','/work/spps/','/work/kin/','/work/pet/','/resume/']){
+  for(const route of ['/','/work/qq-lingxi/','/work/spps/','/work/kin/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/']){
    const r=await page.goto(base+route,{waitUntil:'load'});assert.equal(r.status(),200);assert.equal(await page.locator('h1').count(),1);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));results.push({width,route,status:200});
    if(output){const name=route==='/'?'home':route.split('/').filter(Boolean).join('-');await page.screenshot({path:path.join(output,`${name}-${width}.png`),fullPage:true});}
   }
-  await page.goto(base+'/');assert.ok(await page.locator('[data-preview]').evaluateAll(vs=>vs.every(v=>!v.getAttribute('src'))),'Reduced motion must not auto-download previews');
+  await page.goto(base+'/');
+  for(const id of ['work','about','teaching','pet','natural-product','contact'])assert.equal(await page.locator('#'+id).count(),1);
+  assert.deepEqual(await page.locator('.work-section').evaluateAll(nodes=>nodes.map(n=>n.className.split('work-')[2])),['qq-lingxi','spps','kin']);
+  assert.ok(await page.locator('[data-preview]').evaluateAll(vs=>vs.every(v=>!v.getAttribute('src'))),'Reduced motion must not auto-download previews');
   await page.getByRole('button',{name:'02 找到共同体',exact:true}).click();assert.equal(await page.getByRole('button',{name:'02 找到共同体',exact:true}).getAttribute('aria-pressed'),'true');
   const zoom=page.getByRole('button',{name:'放大QQ 灵犀画面',exact:true});await zoom.click();assert.ok(await page.locator('dialog').evaluate(d=>d.open));if(output)await page.screenshot({path:path.join(output,`qq-zoom-${width}.png`)});await page.keyboard.press('Escape');assert.ok(!(await page.locator('dialog').evaluate(d=>d.open)));assert.ok(await zoom.evaluate(el=>document.activeElement===el));
   for(const name of ['观看完整演示 2:52','观看设备运行视频','观看概念短片 0:50']){

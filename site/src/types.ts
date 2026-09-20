@@ -24,6 +24,8 @@ export interface PublicView {
   };
   hero: { title: string; eyebrow: string; intro: string };
   projects: DisplayProject[];
+  personal: { title: string; text: string }[];
+  moreProjects: DisplayProject[];
   methods: { text: string; project_id: string }[];
   links: DisplayLink[];
 }

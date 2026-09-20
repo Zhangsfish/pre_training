@@ -14,3 +14,6 @@
 
 ## R07 current user override — 2026-09-20
 The user explicitly requested a media-first redesign and publication in the current Work conversation. The old text-only visual freeze and R06 round lock are superseded for this scoped change. Homepage public copy comes from publication/gallery.json; project fact records and résumé are preserved. Selected derivatives are authorized; original masters stay excluded. New local media interaction JavaScript is permitted, with a hash-based output allowlist and no analytics. Existing Vercel/free-only/no-DNS scope applies.
+
+## Current content-alignment maintenance
+本轮用户已授权依最终经历与上传方案修改主页；以 delivery/maintenance/home-alignment/03-IMPLEMENTATION.md 为当前范围。保留三部视觉作品，加入关于与三个辅助案例，并修正通用简历。旧文字冻结不适用此范围；原R07验收记录保持不变。Vercel403时交接，不能绕过。
