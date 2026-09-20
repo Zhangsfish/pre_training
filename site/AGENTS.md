@@ -10,3 +10,7 @@
 - tests：保留内容/安全负例，扩充 PDF 注册与隔离检查。
 
 依赖版本不变，SPPS媒体仍为文字降级。仅通用 PDF 复制到 public/downloads；其他导出均留 resume/exports（Git忽略）。R05 已由 STATE 和 R04-a01 授权，维护/干净验收入口为 ../acceptance/README.md；不执行 R06，不部署。
+
+
+## R07 current user override — 2026-09-20
+The user explicitly requested a media-first redesign and publication in the current Work conversation. The old text-only visual freeze and R06 round lock are superseded for this scoped change. Homepage public copy comes from publication/gallery.json; project fact records and résumé are preserved. Selected derivatives are authorized; original masters stay excluded. New local media interaction JavaScript is permitted, with a hash-based output allowlist and no analytics. Existing Vercel/free-only/no-DNS scope applies.

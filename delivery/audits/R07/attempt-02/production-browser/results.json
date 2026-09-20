@@ -1,0 +1,325 @@
+{
+  "base": "https://zhang-shuo-portfolio.vercel.app",
+  "checked_at": "2026-09-20T05:45:49.580Z",
+  "browser": "Chromium incognito contexts; no persistent profile or stored cookies",
+  "routes": [
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "title": "作品 · 张朔",
+      "h1": "做出来，给你看。"
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "width": 1440,
+      "status": 200,
+      "title": "QQ 灵犀 · 张朔",
+      "h1": "QQ 灵犀"
+    },
+    {
+      "route": "/work/spps/",
+      "width": 1440,
+      "status": 200,
+      "title": "流动化学自动多肽合成平台 · 张朔",
+      "h1": "流动化学自动多肽合成平台"
+    },
+    {
+      "route": "/work/kin/",
+      "width": 1440,
+      "status": 200,
+      "title": "KIN · 张朔",
+      "h1": "KIN"
+    },
+    {
+      "route": "/work/pet/",
+      "width": 1440,
+      "status": 200,
+      "title": "PET 研究 · 张朔",
+      "h1": "PET 小分子探针研究"
+    },
+    {
+      "route": "/resume/",
+      "width": 1440,
+      "status": 200,
+      "title": "通用简历 · 张朔",
+      "h1": "张朔 / 通用简历"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "status": 200,
+      "scroll_width": 375
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "width": 375,
+      "status": 200,
+      "scroll_width": 375
+    },
+    {
+      "route": "/work/spps/",
+      "width": 375,
+      "status": 200,
+      "scroll_width": 375
+    },
+    {
+      "route": "/work/kin/",
+      "width": 375,
+      "status": 200,
+      "scroll_width": 375
+    },
+    {
+      "route": "/work/pet/",
+      "width": 375,
+      "status": 200,
+      "scroll_width": 375
+    },
+    {
+      "route": "/resume/",
+      "width": 375,
+      "status": 200,
+      "scroll_width": 375
+    }
+  ],
+  "interactions": {
+    "scene_switch": "pass",
+    "zoom_escape_focus_return": "pass",
+    "films": [
+      {
+        "name": "观看完整演示 2:52",
+        "duration": 172.012993,
+        "advanced_from": 0.02322,
+        "advanced_to": 1.105704,
+        "close_focus_return": true
+      },
+      {
+        "name": "观看设备运行视频",
+        "duration": 19,
+        "advanced_from": 0.033405,
+        "advanced_to": 1.291244,
+        "close_focus_return": true
+      },
+      {
+        "name": "观看概念短片 0:50",
+        "duration": 49.792,
+        "advanced_from": 0.013314,
+        "advanced_to": 1.235587,
+        "close_focus_return": true
+      }
+    ],
+    "reduced_motion_preview_download": "suppressed"
+  },
+  "distribution": {
+    "https": true,
+    "hsts": "max-age=63072000; includeSubDomains; preload",
+    "files": [
+      {
+        "path": "404.html",
+        "bytes": 1424,
+        "sha256": "ef76d6d65022e1554457a8f3a9b7ebb8856a2e38e2d7d537dffd11ad973caf71"
+      },
+      {
+        "path": "index.html",
+        "bytes": 7441,
+        "sha256": "d33528ec941aca4539402cf5d2538c4d6b609377d8eb1316334129d19d37ac02"
+      },
+      {
+        "path": "robots.txt",
+        "bytes": 87,
+        "sha256": "f79f52d699462a18cd96a2d5e0dfddc94490c57c2550e4c1bb5e7f5d8e068c2a"
+      },
+      {
+        "path": "sitemap.xml",
+        "bytes": 559,
+        "sha256": "e128f9fc36809817a6a548c171f315444947e4a3b52f4cb7db76c3058283f47a"
+      },
+      {
+        "path": "downloads/zhang-shuo-resume.pdf",
+        "bytes": 166740,
+        "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+      },
+      {
+        "path": "media/kin-call.webp",
+        "bytes": 29920,
+        "sha256": "b4c5b9ce749eaf41d4046efa6ebd1d2c8648c23c98e8bdc792b4d51a759fc3c4"
+      },
+      {
+        "path": "media/kin-cover.webp",
+        "bytes": 42192,
+        "sha256": "5cde2039098ca18a99e597addb4c44c552c275ee5a1efb836d3a378d7a36bdc5"
+      },
+      {
+        "path": "media/kin-day.webp",
+        "bytes": 65082,
+        "sha256": "953824f098b1060fb79068ec5e03f1f90c63177da18c12dd9907cd1d7b83dfbe"
+      },
+      {
+        "path": "media/kin-film.mp4",
+        "bytes": 5379882,
+        "sha256": "fbb4b1535657a8059464db9153da4e505e60a56a9c87f51e4e04718d296cf85d"
+      },
+      {
+        "path": "media/kin-preview.mp4",
+        "bytes": 1267076,
+        "sha256": "573a448e59acb159ab6fcfe0c4a20cfac4b732e0cc571b098d77220dafaf042f"
+      },
+      {
+        "path": "media/qq-film.mp4",
+        "bytes": 8653850,
+        "sha256": "4aeec2b7797e0c000764d9fab35a8001f23adb9bf7170e3e462c7658434dcaac"
+      },
+      {
+        "path": "media/qq-match.webp",
+        "bytes": 69168,
+        "sha256": "555d16f68855f89502d438c2a2acda10997744d8ccc67601170d0257a8c72e7b"
+      },
+      {
+        "path": "media/qq-negotiate.webp",
+        "bytes": 72148,
+        "sha256": "b91210a39af3427c9219a8a6e1745470e2265da93d5319762c763e606666f6ed"
+      },
+      {
+        "path": "media/qq-preview.mp4",
+        "bytes": 347785,
+        "sha256": "024b9ee441251ebefbfc03f41dd1bca67ee4fefe9e22ccfd4ac841c8feed8d0d"
+      },
+      {
+        "path": "media/qq-profile.webp",
+        "bytes": 65668,
+        "sha256": "00c6916127f80cf510acb82914ed6b74d09cf6be34797d75c1ffd72de4b7380e"
+      },
+      {
+        "path": "media/spps-front.webp",
+        "bytes": 301490,
+        "sha256": "ea92f84c8eb2262469422ae06c714f728347b4aa5f92940cd6f6d8c0b90822d3"
+      },
+      {
+        "path": "media/spps-hero.webp",
+        "bytes": 183398,
+        "sha256": "347b11a5be39b7c4c691580c86eeb708025862a12f622e685bb57bb52b5eaef1"
+      },
+      {
+        "path": "media/spps-monitor.mp4",
+        "bytes": 2095685,
+        "sha256": "6009809ed1fdffd29ffd75562a593177c33d332a6ad51dab1df434d064371581"
+      },
+      {
+        "path": "media/spps-operation.mp4",
+        "bytes": 3027116,
+        "sha256": "0347cd1ad2510b01479306a8c1e3eb63b16f1f7268a374d401f135a7cbb9f80c"
+      },
+      {
+        "path": "media/spps-operation.webp",
+        "bytes": 33378,
+        "sha256": "82d87aa9bedeb22076d3d3039eca9d057cb1431d73ad6b825dbd1784b40bf410"
+      },
+      {
+        "path": "media/spps-room.webp",
+        "bytes": 236144,
+        "sha256": "149051e784752f39770a6d9d0994453bd62a476b2690e3a1c52f59a1b7e220f2"
+      },
+      {
+        "path": "media/spps-side.webp",
+        "bytes": 332612,
+        "sha256": "cdd85e46d3cf356d9c7c327f1795e2e423ec357b4a4fa1568e2dacbe1e41b96c"
+      },
+      {
+        "path": "resume/index.html",
+        "bytes": 4939,
+        "sha256": "f047a210148e96c838692505a0dfeb1089ae8b9f20243d6e5b421b757fc05b9c"
+      },
+      {
+        "path": "_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.LNN8EulC.js",
+        "bytes": 2952,
+        "sha256": "b3b5d05e25aedc0f5af1206f8cffd6d927245f45944f76d91425444cc481b4ec"
+      },
+      {
+        "path": "_astro/site.4bs0aM4Z.css",
+        "bytes": 18448,
+        "sha256": "3f42c59ce4224af513b2365d92b4f5272f8f0c96b1dbd34f2035330de9df8ddc"
+      },
+      {
+        "path": "work/kin/index.html",
+        "bytes": 3885,
+        "sha256": "1162597031378240fb3bd032549f19315b0c9cf57eebdcfde96c40e5595223b1"
+      },
+      {
+        "path": "work/pet/index.html",
+        "bytes": 1918,
+        "sha256": "c1f1f3c7cf164804fd64bb893da77093a140938a0ef3f786b10f482e5ca081d7"
+      },
+      {
+        "path": "work/qq-lingxi/index.html",
+        "bytes": 4309,
+        "sha256": "615ac06e24704620a59ef5dc1e9e22323cc87871d9eaad8a3d85b9fad6bdac3c"
+      },
+      {
+        "path": "work/spps/index.html",
+        "bytes": 5144,
+        "sha256": "f629556cce782fea4a529fd3ecac967fa0b92ac01cc170c7f1ca12e2e123c934"
+      }
+    ],
+    "file_count": 29,
+    "total_bytes": 22420440,
+    "not_found": {
+      "status": 404,
+      "body_hash_matches_dist": true
+    },
+    "pdf": {
+      "status": 200,
+      "bytes": 166740,
+      "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+    }
+  },
+  "external_links": [
+    {
+      "id": "qq-lingxi-demo",
+      "requested_url": "https://qq-lingxi-agent-platform.vercel.app/",
+      "status": null,
+      "final_url": "chrome-error://chromewebdata/",
+      "title": "",
+      "body_text_length": 0,
+      "error": "page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qq-lingxi-agent-platform.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://qq-lingxi-agent-platform.vercel.app/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "required": false,
+      "source_route": "/work/qq-lingxi/",
+      "source_link_visible": true
+    },
+    {
+      "id": "qq-lingxi-repo",
+      "requested_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "status": 200,
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+      "body_text_length": 7879,
+      "error": null,
+      "required": true,
+      "source_route": "/work/qq-lingxi/",
+      "source_link_visible": true
+    },
+    {
+      "id": "notion-organic-synthesis",
+      "requested_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "status": 200,
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "title": "Organic Synthesis Laborat",
+      "body_text_length": 2099,
+      "error": null,
+      "required": true,
+      "source_route": "/resume/",
+      "source_link_visible": true
+    },
+    {
+      "id": "notion-organic-chemistry",
+      "requested_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "status": 200,
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "title": "Organic Chemistry",
+      "body_text_length": 2010,
+      "error": null,
+      "required": true,
+      "source_route": "/resume/",
+      "source_link_visible": true
+    }
+  ]
+}

@@ -1,16 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
-import Education from '../components/Education.astro';
-import {siteContent,names} from '../lib/site';
+import MediaExperience from '../components/MediaExperience.astro';
+import GalleryRuntime from '../components/GalleryRuntime.astro';
+import {siteContent} from '../lib/site';
+import gallery from '../../../publication/gallery.json';
+import registry from '../../LINKS.json';
 const view=await siteContent();
-const teaching=view.teaching;
+const link=(id:string)=>registry.links.find(l=>l.id===id)!.url;
 ---
-<BaseLayout title="项目与实践" description={view.hero.intro} view={view}>
-<section class="hero" aria-labelledby="headline" data-section="S1"><div><p class="eyebrow">{view.hero.eyebrow}</p><h1 id="headline">{view.hero.title}</h1><p class="intro">{view.hero.intro}</p><div class="actions"><a class="primary" href="#work">查看项目 ↗</a><a href="/resume/">通用简历 ↗</a></div></div><nav class="index" aria-label="四个案例">{view.cases.map((p,i)=><a href={`/work/${p.id}/`}><span>{String(i+1).padStart(2,'0')}</span><strong>{names[p.id]}</strong><span aria-hidden="true">↗</span></a>)}</nav></section>
-<section id="work" aria-labelledby="work-title" data-section="S2"><div class="section-heading"><h2 id="work-title">项目选读</h2><span>产品判断 / 工程实践</span></div><div class="projects">{view.cases.map((p,i)=><ProjectCard project={p} index={i} />)}</div></section>
-<section class="section split" id="teaching" aria-labelledby="teaching-title" data-section="S3"><div><p class="eyebrow">教学与协作</p><h2 id="teaching-title">{teaching.title}</h2></div><div class="section-body"><p>{teaching.summary} {teaching.ownership} {teaching.result}</p><p class="boundary">{teaching.boundary}</p><div class="course-links">{teaching.links.map(l=><a href={l.url}>{l.label}<span aria-hidden="true">↗</span></a>)}</div><p class="note">历史课程资料 · 如外站访问受限，可先阅读以上摘要。</p></div></section>
-<section class="section split" id="method" aria-labelledby="method-title" data-section="S4"><div><p class="eyebrow">How I Work</p><h2 id="method-title">我怎样工作</h2></div><ul class="methods">{view.methods.map(m=><li><a href={`/work/${m.project_id}/`}>{m.text}</a></li>)}</ul></section>
-<section class="section split" id="education" aria-labelledby="education-title" data-section="S5"><div><p class="eyebrow">关于与教育</p><h2 id="education-title">学习的来处</h2><p class="about-intro">{view.hero.intro.split('。')[0]}。</p></div><Education view={view} detail={view.educationDetail} /></section>
-<section class="section split" id="contact" aria-labelledby="contact-title" data-section="S6"><div><p class="eyebrow">联系</p><h2 id="contact-title">继续交流</h2></div><div class="contact-links">{view.links.map(l=><a href={l.url}>{l.id==='email'?view.profile.email:l.label} ↗</a>)}<a href="/resume/">通用简历 ↗</a></div></section>
+<BaseLayout title="作品" description={gallery.intro} view={view}>
+<section class="gallery-intro"><div><p class="overline">ZHANG SHUO / SELECTED WORK</p><h1>{gallery.title}</h1></div><p>{gallery.intro}</p></section>
+<div id="work" class="work-gallery">{gallery.projects.map((p,i)=><section class={`work-section work-${p.id}`} aria-labelledby={`title-${p.id}`}><div class="work-heading"><div><p class="overline">0{i+1} / {p.label}</p><h2 id={`title-${p.id}`}><a href={`/work/${p.id}/`}>{p.name}</a></h2><p class="work-caption">{p.caption}</p></div><div class="work-actions">{p.id==='qq-lingxi'&&<a class="pill primary-pill" href={link('qq-lingxi-demo')} target="_blank" rel="noopener noreferrer">体验产品 ↗</a>}<a class="text-link" href={`/work/${p.id}/`}>{p.id==='spps'?'看看这台机器':'打开作品'} ↗</a></div></div><MediaExperience project={p} /></section>)}</div>
+<section id="contact" class="contact-strip"><div><p class="overline">SAY HELLO</p><a class="contact-email" href={link('email')}>{view.profile.email} ↗</a></div><div class="contact-secondary"><a href="/resume/">简历</a><a href={link('github-profile')}>GitHub ↗</a></div></section>
+<GalleryRuntime />
 </BaseLayout>

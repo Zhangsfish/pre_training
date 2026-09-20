@@ -3,8 +3,8 @@
   "architecture_version": "architecture-v1",
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
-  "active_round": "R06",
-  "authorized_round": null,
+  "active_round": "R07",
+  "authorized_round": "R07",
   "controller": "planner_reviewer",
   "selected_design": "A",
   "deployment_approval": {
@@ -77,6 +77,14 @@
       "review_path": "delivery/reviews/R06-a01.md",
       "pr_number": 6,
       "accepted_commit": "3ac4461ad9000750e85fa9d9ee4f98a562478bb2"
+    },
+    {
+      "id": "R07",
+      "status": "blocked",
+      "prompt": "delivery/prompts/R07_MEDIA_GALLERY.md",
+      "branch": "codex/R07-media-gallery",
+      "report_path": "delivery/audits/R07/REPORT.md",
+      "blocker": "Implementation complete. Existing Vercel scope returns 403; initial generic deployment action also rejected by automatic approval review. No remote push/public deployment."
     }
   ],
   "assets": {
@@ -84,5 +92,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R06 accepted and production is published_and_verified at https://zhang-shuo-portfolio.vercel.app. Final Vercel deployment dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw is READY and remote resources exactly match audited dist. No round is currently authorized. Future changes require a new reviewed maintenance change and redeployment; do not mutate production ad hoc."
+  "note": "User explicitly authorized implementation and publication of media-first redesign in current Work turn. Existing Vercel target, public temporary domain, no DNS/fees. No final ACCEPT self-assigned."
 }

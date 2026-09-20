@@ -1,0 +1,31 @@
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+13:31:06 [content] Syncing content
+13:31:07 [content] Synced content
+13:31:07 [types] Generated 2.30s
+13:31:07 [build] output: "static"
+13:31:07 [build] mode: "static"
+13:31:07 [build] directory: E:\myself\pre_training-r07\site\dist\
+13:31:07 [build] Collecting build info...
+13:31:07 [build] ✓ Completed in 2.62s.
+13:31:07 [build] Building static entrypoints...
+13:31:08 [vite] ✓ built in 929ms
+13:31:08 [vite] ✓ built in 158ms
+13:31:08 [build] Rearranging server assets...
+
+ generating static routes 
+13:31:08   ├─ /404.html (+65ms) 
+13:31:08   ├─ /resume/index.html (+21ms) 
+13:31:08   ├─ /work/kin/index.html (+15ms) 
+13:31:08   ├─ /work/spps/index.html (+7ms) 
+13:31:08   ├─ /work/qq-lingxi/index.html (+10ms) 
+13:31:08   ├─ /work/pet/index.html (+7ms) 
+13:31:08   ├─ /index.html (+12ms) 
+13:31:08 ✓ Completed in 253ms.
+
+13:31:08 [build] ✓ Completed in 1.51s.
+13:31:08 [build] 7 page(s) built in 4.14s
+13:31:08 [build] Complete!
+Public output audit: {"files":["404.html","index.html","robots.txt","sitemap.xml","downloads/zhang-shuo-resume.pdf","media/kin-call.webp","media/kin-cover.webp","media/kin-day.webp","media/kin-film.mp4","media/kin-preview.mp4","media/qq-film.mp4","media/qq-match.webp","media/qq-negotiate.webp","media/qq-preview.mp4","media/qq-profile.webp","media/spps-front.webp","media/spps-hero.webp","media/spps-monitor.mp4","media/spps-operation.mp4","media/spps-operation.webp","media/spps-room.webp","media/spps-side.webp","resume/index.html","_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.LNN8EulC.js","_astro/site.4bs0aM4Z.css","work/kin/index.html","work/pet/index.html","work/qq-lingxi/index.html","work/spps/index.html"],"total_bytes":22420440,"client_js_bytes":2952,"approved_media":17,"result":"pass"}

@@ -1,0 +1,43 @@
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ reviewed source set passes review and production without source drift (269.6975ms)
+✔ missing claim fails closed (131.5304ms)
+✔ unknown cannot become an outcome (142.4908ms)
+✔ excluded project cannot enter default home (183.1625ms)
+✔ draft is blocked from production (300.056ms)
+✔ approving document shells does not approve their underlying claims (124.5232ms)
+✔ draft negative fixtures do not mutate the planner-approved source (134.9705ms)
+✔ duplicate identifiers rejected (135.1124ms)
+✔ nonexistent source rejected (126.4212ms)
+✔ wrong source heading rejected (141.1976ms)
+✔ source drift requests targeted review rather than silently updating it (125.4333ms)
+✔ required external link qq-lingxi-repo must exist (131.9742ms)
+✔ required external link notion-organic-synthesis must exist (147.8434ms)
+✔ required external link notion-organic-chemistry must exist (117.9482ms)
+✔ course links must also appear in teaching, not only registry (123.3262ms)
+✔ both resume-only fields are forbidden in site allowlist (265.9349ms)
+✔ real resume fields exist but explicit site projection omits their names and values (18.6014ms)
+✔ pending media cannot be referenced (128.1554ms)
+✔ pending original cannot be assigned public path (124.3924ms)
+✔ excluded and resume-only claims cannot render (322.2804ms)
+✔ production command ignores inherited review env and exits nonzero before output (499.6391ms)
+✔ case sections preserve every approved sentence, without introducing body facts (21.394ms)
+✔ KIN starts with ordinary life; competitive checking stays after the hypotheses and product (13.4179ms)
+✔ dist gate rejects rogue-media (118.1725ms)
+✔ dist gate rejects candidate-route (89.9552ms)
+✔ dist gate rejects private-field (111.4574ms)
+✔ dist gate rejects broken-link (108.8916ms)
+✔ dist gate rejects fake-pdf (127.5236ms)
+✔ R04 output rejects tampered-pdf (177.3382ms)
+✔ R04 output rejects unregistered-variant (172.7066ms)
+✔ R04 output rejects resume-contact-in-case (143.8008ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3970.5116

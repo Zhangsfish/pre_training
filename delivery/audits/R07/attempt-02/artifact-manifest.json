@@ -1,0 +1,276 @@
+{
+  "generated_at": "2026-09-20T05:50:21.5206468Z",
+  "root": "delivery/audits/R07/attempt-02",
+  "artifacts": [
+    {
+      "path": "acceptance-install.log",
+      "bytes": 77,
+      "sha256": "999cd5c508483dcf6cedf567b6917256379af5e19286a1428f9d97e0d74a0c28"
+    },
+    {
+      "path": "audit-dist.log",
+      "bytes": 1072,
+      "sha256": "c82a5e99da0f1f1e866f9f567b19760f49288d6de925001c17eda496ef84d43a"
+    },
+    {
+      "path": "build.log",
+      "bytes": 1887,
+      "sha256": "763c132120e2d4d35fdf70bad54e4ae9ed95f4c1fa331bdb41ecb1700e38e2df"
+    },
+    {
+      "path": "check.log",
+      "bytes": 477,
+      "sha256": "be43113e648e023f31e6cc9e9d4cc214a340b8a807db7ed7fdfbb6f366ddeea1"
+    },
+    {
+      "path": "dist-compare.json",
+      "bytes": 8407,
+      "sha256": "ce2bd5764d217f91cf7e855775bc3eaf67806055cc48839476fcbd53d73d47aa"
+    },
+    {
+      "path": "gallery-e2e-with-screenshots.log",
+      "bytes": 1263,
+      "sha256": "2ecab71d1dade88aff1f4418ea3cb93ca574b7cc5f6f2b0456b175e548b98ea4"
+    },
+    {
+      "path": "gallery-e2e.log",
+      "bytes": 1263,
+      "sha256": "2ecab71d1dade88aff1f4418ea3cb93ca574b7cc5f6f2b0456b175e548b98ea4"
+    },
+    {
+      "path": "local-browser/film-观看概念短片-0-50.png",
+      "bytes": 86636,
+      "sha256": "94006d7ff4036bb76a0bd8d966292af9da783b43c4d49bca606a00e3a0af733d"
+    },
+    {
+      "path": "local-browser/film-观看设备运行视频.png",
+      "bytes": 366091,
+      "sha256": "0d8087fb85aa935db2d5b220ba06adba26454eebf19c6955fa42120a6eb22fb4"
+    },
+    {
+      "path": "local-browser/film-观看完整演示-2-52.png",
+      "bytes": 795480,
+      "sha256": "83055a27c9f7e09112fc26b6fb84e54b4ee816fa3bfc3b66768668c2a0bd6fb9"
+    },
+    {
+      "path": "local-browser/home-1366.png",
+      "bytes": 1612385,
+      "sha256": "f2314235703b7386780d0fe67e606f79a07d68ea2b5a0c896afb22d4f88e5e4d"
+    },
+    {
+      "path": "local-browser/home-375.png",
+      "bytes": 488422,
+      "sha256": "f3f26829d5215b4d9a8bf08fcca25f4cb524eafaf15c17194a63643548f93af5"
+    },
+    {
+      "path": "local-browser/qq-zoom-1366.png",
+      "bytes": 390378,
+      "sha256": "30a04f406e55be79cb591f13c27347a6343175a42e276fbdc8cf4cfc48ee4fe5"
+    },
+    {
+      "path": "local-browser/qq-zoom-375.png",
+      "bytes": 97367,
+      "sha256": "31f0c44f21cb11e9838a4506e2a320225001a6351eb0b11087f865520c311128"
+    },
+    {
+      "path": "local-browser/resume-1366.png",
+      "bytes": 165676,
+      "sha256": "5fe993bb034d11df9c87c67b76a2c8bd8b1d7d9bb5c2c15b18ad4e5d87449c62"
+    },
+    {
+      "path": "local-browser/resume-375.png",
+      "bytes": 151625,
+      "sha256": "6874827627ffa72cc0551e4f6ee0806baf0168216dabedd43562202fd90a5554"
+    },
+    {
+      "path": "local-browser/work-kin-1366.png",
+      "bytes": 1167234,
+      "sha256": "540ad4cde9cb0fef449ac2bd149365877b6688a7b0f4609b44b702e1219f1fea"
+    },
+    {
+      "path": "local-browser/work-kin-375.png",
+      "bytes": 323194,
+      "sha256": "af80702f737f58a019d0f00f286503a1cb2e1565a1ca82485fdf925bf8208676"
+    },
+    {
+      "path": "local-browser/work-pet-1366.png",
+      "bytes": 29450,
+      "sha256": "383f8d4466e39836b3dc5ac4640acfae48759e776b9abd62738bb75f3af9545b"
+    },
+    {
+      "path": "local-browser/work-pet-375.png",
+      "bytes": 22152,
+      "sha256": "df94cec5052d1a751f1a5b3b93c0500b2958440bb629174098ea90832ead50ec"
+    },
+    {
+      "path": "local-browser/work-qq-lingxi-1366.png",
+      "bytes": 664052,
+      "sha256": "1884d15aa7e15a5c4f80a68c9a441a1fb28687aa6eaeb4d9fb99cbffd0f17156"
+    },
+    {
+      "path": "local-browser/work-qq-lingxi-375.png",
+      "bytes": 207138,
+      "sha256": "8f5d4516738cc6e851d1b1824d017ca75864249d851a456e6756f16df0df6766"
+    },
+    {
+      "path": "local-browser/work-spps-1366.png",
+      "bytes": 1962562,
+      "sha256": "9908691dae5656f25942f3188939d6909638b8a92a0124ae17c21a681ed7ad1d"
+    },
+    {
+      "path": "local-browser/work-spps-375.png",
+      "bytes": 1004202,
+      "sha256": "60728aee33d01a4266990084fb1a4ddfbbd6f88a59f71d19ee3f73225352a2ea"
+    },
+    {
+      "path": "media-ffprobe.json",
+      "bytes": 1900,
+      "sha256": "c6e2a923a8ffc71ae9655d03425cc9599b2985f1ab46201e07d46786b39e1550"
+    },
+    {
+      "path": "prebuilt-package.json",
+      "bytes": 473,
+      "sha256": "05c40415299c4e58960e6d1563c7e7384c03887045fe4f60ed1ead1ca45b55ca"
+    },
+    {
+      "path": "production-browser.log",
+      "bytes": 10154,
+      "sha256": "231eef8fab724ec9f74f8489725b2f86f2a317c5fc84182aa9673862e3f1747b"
+    },
+    {
+      "path": "production-browser/404-1440.png",
+      "bytes": 24333,
+      "sha256": "56614142d3c18d0007f0668b553075582ce0927beee0514c1f90a9f10627f33a"
+    },
+    {
+      "path": "production-browser/external-notion-organic-chemistry.png",
+      "bytes": 318671,
+      "sha256": "1b399e52f6ca1c16caf3f96c86720572ca0cca2a6af4da3d6d54e954769307f5"
+    },
+    {
+      "path": "production-browser/external-notion-organic-synthesis.png",
+      "bytes": 333170,
+      "sha256": "6e5836186c18fdb343f80dc6ec8355ba8b9132e4ee6d42dcd2c399b628956dd3"
+    },
+    {
+      "path": "production-browser/external-qq-lingxi-demo.png",
+      "bytes": 4254,
+      "sha256": "3878570f4a62a0d65f57cf1754e0269e56ec797f4e36e26b44c172eb6e800401"
+    },
+    {
+      "path": "production-browser/external-qq-lingxi-repo.png",
+      "bytes": 830137,
+      "sha256": "90d565da27f644ff83cd7084b3cc6b0ab01e4a405b8904a249a2ade86b2afdd3"
+    },
+    {
+      "path": "production-browser/film-1-1440.png",
+      "bytes": 825385,
+      "sha256": "6c99eef5b4c092f1154596776c8eb8365ac614cf0684e31cc56615bac21b658e"
+    },
+    {
+      "path": "production-browser/film-2-1440.png",
+      "bytes": 464935,
+      "sha256": "05e0ecfec47ae0ebad101b548a99904284f3824179da7fa36bf1cca405775b1d"
+    },
+    {
+      "path": "production-browser/film-3-1440.png",
+      "bytes": 178577,
+      "sha256": "27a0ce0f8dd5463181a18a5d92f097f96d01eac69fe98a5c31314f84695cd914"
+    },
+    {
+      "path": "production-browser/home-1440.png",
+      "bytes": 1641901,
+      "sha256": "6d1428d6885e764070a2f106e1d2c8129ceb2698b3d5de56fc853411b7cc6bbb"
+    },
+    {
+      "path": "production-browser/home-375.png",
+      "bytes": 478672,
+      "sha256": "fd8eeca9859a9f1e085024b573abb31f14161cc9e502e479e6029e0a67c6873f"
+    },
+    {
+      "path": "production-browser/qq-zoom-1440.png",
+      "bytes": 415967,
+      "sha256": "f4572cde7d6b0e80c6f5633e4dfc0781112d08624c0744f8d4e8870607ef16cf"
+    },
+    {
+      "path": "production-browser/results.json",
+      "bytes": 9829,
+      "sha256": "b2354aa3ec1a9ff66cca9de49873e0d970c873a2ddbb32af50b476df3fac9cdd"
+    },
+    {
+      "path": "production-browser/resume-1440.png",
+      "bytes": 166909,
+      "sha256": "57b0f6322c8118aa29f4dbe083af87b2d1be42f8d3ddfd2051903091ffdb0a64"
+    },
+    {
+      "path": "production-browser/resume-375.png",
+      "bytes": 151625,
+      "sha256": "6874827627ffa72cc0551e4f6ee0806baf0168216dabedd43562202fd90a5554"
+    },
+    {
+      "path": "production-browser/work-kin-1440.png",
+      "bytes": 742299,
+      "sha256": "78a932ba2f369e8ee8e45b162b16bf7945bde80197ec9ae10eda268c73ac6836"
+    },
+    {
+      "path": "production-browser/work-kin-375.png",
+      "bytes": 265248,
+      "sha256": "57441876064a32cf543c304e76ac633aed39c59fa6b7af60c79bcbcef6dc748c"
+    },
+    {
+      "path": "production-browser/work-pet-1440.png",
+      "bytes": 31949,
+      "sha256": "761ca87c91b94f9c8f0a4d8951fc5e92ba7fc266b4afe75674e16acce27fb7df"
+    },
+    {
+      "path": "production-browser/work-pet-375.png",
+      "bytes": 21789,
+      "sha256": "27f9eeeb175d218b42babe513b152d3d639e1ed10836a640eb8f76f0343c9b1f"
+    },
+    {
+      "path": "production-browser/work-qq-lingxi-1440.png",
+      "bytes": 697973,
+      "sha256": "ca351593744888f870f9b7d1d7370df2e413d92b4a7e16619547ab3dd0f2fb5d"
+    },
+    {
+      "path": "production-browser/work-qq-lingxi-375.png",
+      "bytes": 203456,
+      "sha256": "1b70e6c05a092680f5a846e4900c1a2652022c5b0a1455194223175eec9216c2"
+    },
+    {
+      "path": "production-browser/work-spps-1440.png",
+      "bytes": 2039511,
+      "sha256": "52dc464b54411f5ddd026cb76bc42507ed49331bf3038667145cda686ac6d44f"
+    },
+    {
+      "path": "production-browser/work-spps-375.png",
+      "bytes": 858690,
+      "sha256": "ca01404344cc0b37c1347e1f34ad9fa79d4e1404f52fcd364994a543e91f316b"
+    },
+    {
+      "path": "qq-demo-headers.txt",
+      "bytes": 375,
+      "sha256": "aaccce1f2cf043a216410a7e615f4decd5ce02e9174eff6c38f4dd84e866d5db"
+    },
+    {
+      "path": "site-install.log",
+      "bytes": 151,
+      "sha256": "f57adce4eaccb6680c613439866c5c703db111c316b65370df5e5f8065d22ecf"
+    },
+    {
+      "path": "test.log",
+      "bytes": 2256,
+      "sha256": "6e58747422beb9f99fe85488249650c8b1cddf3779843cd0174f09f4adbed6ef"
+    },
+    {
+      "path": "vercel-deploy.log",
+      "bytes": 2061,
+      "sha256": "6a016d0f2387e9b1434c7c894220b74f99370187322eea9f081a4f22dc94c606"
+    },
+    {
+      "path": "vercel-inspect.log",
+      "bytes": 1134,
+      "sha256": "2794eda98f4378416d2f0c9437fb643825f5b0751f5237f3c3563b2706819932"
+    }
+  ]
+}

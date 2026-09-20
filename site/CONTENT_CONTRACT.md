@@ -57,3 +57,7 @@ KIN核心先H1/H2/H3，尤其H2；相邻行为只提供机制线索。PET团队�
 R01至少实现：ID唯一、source_path存在、引用都可解析、未知字段不能包装成数字、默认排除项目不会进入home、三条必需外链存在、未approved内容不能进入production build。缺正式项目日期可省略，不能猜。
 
 R04新增每条简历bullet的claim_ids侧表。R05检查dist只含公开allowlist，没有experience、审计、原稿、候选方向路由或具体投递分析。noindex只用于去索引，不能代替保密。
+
+
+## R07 current user override — 2026-09-20
+The user explicitly requested a media-first redesign and publication in the current Work conversation. The old text-only visual freeze and R06 round lock are superseded for this scoped change. Homepage public copy comes from publication/gallery.json; project fact records and résumé are preserved. Selected derivatives are authorized; original masters stay excluded. New local media interaction JavaScript is permitted, with a hash-based output allowlist and no analytics. Existing Vercel/free-only/no-DNS scope applies.

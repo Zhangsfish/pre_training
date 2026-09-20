@@ -1,0 +1,41 @@
+
+> pre-training-site@0.1.0 audit:dist
+> node scripts/audit-dist.mjs
+
+{
+  "files": [
+    "404.html",
+    "index.html",
+    "robots.txt",
+    "sitemap.xml",
+    "downloads/zhang-shuo-resume.pdf",
+    "media/kin-call.webp",
+    "media/kin-cover.webp",
+    "media/kin-day.webp",
+    "media/kin-film.mp4",
+    "media/kin-preview.mp4",
+    "media/qq-film.mp4",
+    "media/qq-match.webp",
+    "media/qq-negotiate.webp",
+    "media/qq-preview.mp4",
+    "media/qq-profile.webp",
+    "media/spps-front.webp",
+    "media/spps-hero.webp",
+    "media/spps-monitor.mp4",
+    "media/spps-operation.mp4",
+    "media/spps-operation.webp",
+    "media/spps-room.webp",
+    "media/spps-side.webp",
+    "resume/index.html",
+    "_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.LNN8EulC.js",
+    "_astro/site.4bs0aM4Z.css",
+    "work/kin/index.html",
+    "work/pet/index.html",
+    "work/qq-lingxi/index.html",
+    "work/spps/index.html"
+  ],
+  "total_bytes": 22420440,
+  "client_js_bytes": 2952,
+  "approved_media": 17,
+  "result": "pass"
+}

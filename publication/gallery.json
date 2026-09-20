@@ -1,0 +1,9 @@
+{
+  "title": "做出来，给你看。",
+  "intro": "AI 产品、真实机器，以及关于家人的新想法。",
+  "projects": [
+    {"id":"qq-lingxi","name":"QQ 灵犀","label":"AI SOCIAL · 产品原型","caption":"从理解一个人，到为他找到合适的人和群。","cover":"qq-profile.webp","preview":"qq-preview.mp4","film":"qq-film.mp4","duration":"2:52","link_id":"qq-lingxi-demo","scenes":[{"image":"qq-profile.webp","label":"理解你"},{"image":"qq-match.webp","label":"找到共同体"},{"image":"qq-negotiate.webp","label":"让 Agent 去聊"}]},
+    {"id":"spps","name":"流动化学自动多肽合成平台","full_name":"Development of an Automated Solid-Phase Peptide Synthesis Platform Based on Flow Chemistry","label":"HARDWARE · 实物运行","caption":"把合成流程，变成一台自动运行的机器。","cover":"spps-hero.webp","film":"spps-operation.mp4","duration":"0:19","scenes":[{"image":"spps-hero.webp","label":"整机"},{"image":"spps-side.webp","label":"流路与控制"},{"image":"spps-front.webp","label":"正面细节"},{"image":"spps-room.webp","label":"实验现场"}]},
+    {"id":"kin","name":"KIN","label":"FAMILY CONNECTION · 概念演示","caption":"父母普通的一天，也值得被看见。","cover":"kin-cover.webp","preview":"kin-preview.mp4","film":"kin-film.mp4","duration":"0:50","scenes":[{"image":"kin-cover.webp","label":"看见一天"},{"image":"kin-day.webp","label":"参与日常"},{"image":"kin-call.webp","label":"聊得更近"}]}
+  ]
+}
