@@ -3,8 +3,8 @@
   "architecture_version": "architecture-v1",
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
-  "active_round": "R04",
-  "authorized_round": "R04",
+  "active_round": "R05",
+  "authorized_round": "R05",
   "controller": "planner_reviewer",
   "selected_design": "A",
   "deployment_approval": null,
@@ -41,17 +41,17 @@
     },
     {
       "id": "R04",
-      "status": "ready",
+      "status": "accepted",
       "prompt": "delivery/prompts/R04_RESUMES.md",
       "branch": "codex/R04",
       "report_path": "delivery/audits/R04/REPORT.md",
-      "review_path": null,
-      "pr_number": null,
-      "accepted_commit": null
+      "review_path": "delivery/reviews/R04-a01.md",
+      "pr_number": 4,
+      "accepted_commit": "3f1d3cb5ce9d2cf306c6bf3c4ab81040874df053"
     },
     {
       "id": "R05",
-      "status": "locked",
+      "status": "ready",
       "prompt": "delivery/prompts/R05_ACCEPTANCE.md",
       "branch": "codex/R05",
       "report_path": "delivery/audits/R05/REPORT.md",
@@ -75,5 +75,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R03 attempt 01 accepted and PR #3 merged. R04 is the only authorized round: generate four one-page Chinese resume baselines, public general resume/PDF integration, JD fixtures and resume rendering checks. Do not enter R05 or deploy. SPPS public media remains pending planner bridge/permission review."
+  "note": "R04 attempt 01 accepted after reviewing PR #4 diff, four one-page resume renders, tests, factual/ownership boundaries, links and publication safety; PR #4 merged at 3f1d3cb5ce9d2cf306c6bf3c4ab81040874df053. R05 is the only authorized round: perform clean-checkout final acceptance and release preparation only. Do not deploy or enter R06; deployment approval remains separate. SPPS public media remains pending planner bridge/permission review."
 }
