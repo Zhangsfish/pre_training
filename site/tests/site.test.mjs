@@ -9,10 +9,10 @@ import {auditDist,pages} from '../scripts/audit-dist.mjs';
 function writeRequiredFiles(dir){
  for(const file of pages){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
  fs.writeFileSync(path.join(dir,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://zhang-shuo-portfolio.vercel.app/sitemap.xml\n');
- fs.writeFileSync(path.join(dir,'sitemap.xml'),'<?xml version="1.0"?><urlset>'+['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/resume/'].map(route=>`<url><loc>https://zhang-shuo-portfolio.vercel.app${route}</loc></url>`).join('')+'</urlset>');
+ fs.writeFileSync(path.join(dir,'sitemap.xml'),'<?xml version="1.0"?><urlset>'+['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/'].map(route=>`<url><loc>https://zhang-shuo-portfolio.vercel.app${route}</loc></url>`).join('')+'</urlset>');
 }
 test('case sections preserve every approved sentence, without introducing body facts',()=>{
- for(const p of loadContent().projects.filter(p=>p.id!=='teaching')) {
+ for(const p of loadContent().projects) {
    const sections=caseSections(p.id,p.body);
    const original=p.body.replace(/^## .+$/gm,'').replace(/^- /gm,'').split(/\r?\n/).filter(s=>s.trim()).join('');
    const rendered=sections.flatMap(s=>s.blocks.flatMap(b=>b.items||[b.text])).join('');
@@ -20,14 +20,15 @@ test('case sections preserve every approved sentence, without introducing body f
    assert.deepEqual(sentences(rendered),sentences(original),p.id);
  }
 });
-test('KIN starts with ordinary life; competitive checking stays after the hypotheses and product',()=>{
+test('KIN preserves the missed-call problem, state explanation, market scenario and ownership',()=>{
  const p=loadContent().projects.find(p=>p.id==='kin'),s=caseSections(p.id,p.body);
- assert.match(s[0].blocks[0].text,/普通的一天/);
- assert.ok(!JSON.stringify(s.slice(0,4)).includes('爱牵挂'));
- assert.match(s[4].blocks[0].text,/不自动证明 H2 对或错/);
- assert.match(s[1].blocks[0].items[2],/自主授权/);
+ assert.match(s[0].blocks[0].text,/电话没接通/);
+ assert.match(s[1].blocks[0].text,/Now、Today 和 Data/);
+ assert.match(JSON.stringify(s[3]),/2.85亿/);
+ assert.match(JSON.stringify(s[3]),/不能直接排名/);
+ assert.match(p.ownership,/负责问题判断/);
 });
-for(const mutation of ['rogue-media','candidate-route','private-field','broken-link','fake-pdf']) test(`dist gate rejects ${mutation}`,()=>{
+for(const mutation of ['rogue-media','candidate-route','private-field','broken-link','broken-fragment','fake-pdf']) test(`dist gate rejects ${mutation}`,()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pre-training-r03-'));
  try {
    writeRequiredFiles(dir);
@@ -37,6 +38,7 @@ for(const mutation of ['rogue-media','candidate-route','private-field','broken-l
    if(mutation==='private-field') fs.appendFileSync(path.join(dir,'index.html'),loadContent().profile.fields.phone);
    if(mutation==='broken-link') fs.appendFileSync(path.join(dir,'index.html'),'<a href="/missing/">Link</a>');
    if(mutation==='fake-pdf') fs.appendFileSync(path.join(dir,'index.html'),'<a href="/resume.pdf">PDF</a>');
+   if(mutation==='broken-fragment') fs.appendFileSync(path.join(dir,'index.html'),'<a href="/#missing-teaching">Teaching</a>');
    assert.throws(()=>auditDist(dir,loadContent(),{requireResume:false}));
  } finally {
    assert.equal(path.dirname(path.resolve(dir)),path.resolve(os.tmpdir()));

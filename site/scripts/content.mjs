@@ -7,6 +7,7 @@ export const root = fileURLToPath(new URL('../../', import.meta.url));
 export const projectOrder = ['kin', 'spps', 'qq-lingxi', 'pet'];
 export const siteFields = ['name', 'romanized_name', 'email', 'github', 'education'];
 const resumeFields = [...siteFields, 'birth_year_month', 'phone'];
+const supplementaryIds = ['teaching', 'natural-product'];
 const requiredLinks = ['email', 'github-profile', 'kin-repo', 'qq-lingxi-repo', 'notion-organic-synthesis', 'notion-organic-chemistry'];
 const json = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 
@@ -75,7 +76,7 @@ export function validate(data, { mode = 'review', sourceRoot = root } = {}) {
   source(data.profile.source_path, 'profile');
   require(JSON.stringify(data.home.project_order) === JSON.stringify(projectOrder), 'home: fixed project order only; excluded or unknown project');
   require(data.home.teaching_id === 'teaching', 'home: missing teaching');
-  for (const id of [...projectOrder, 'teaching']) require(projects.has(id), `Missing project ${id}`);
+  for (const id of [...projectOrder, ...supplementaryIds]) require(projects.has(id), `Missing project ${id}`);
   for (const context of ['site', 'resume']) {
     const list = data.profile.allowlists[context];
     const allowed = context === 'site' ? siteFields : resumeFields;
@@ -111,8 +112,11 @@ export function validate(data, { mode = 'review', sourceRoot = root } = {}) {
     refs(item.claim_ids, 'method');
     require(projectOrder.includes(item.project_id), 'method: invalid project');
   }
+  for (const item of data.home.personal ?? []) refs(item.claim_ids, 'personal');
+  require(data.home.personal?.length === 3, 'home: three personal statements required');
+  require(JSON.stringify(data.home.more_projects) === JSON.stringify(['teaching','pet','natural-product']), 'home: supplementary project order');
   for (const p of data.projects) {
-    require([...projectOrder, 'teaching'].includes(p.id), `Excluded or unsupported project ${p.id}`);
+    require([...projectOrder, ...supplementaryIds].includes(p.id), `Excluded or unsupported project ${p.id}`);
     publication(p, p.id);
     refs(p.claim_ids, p.id);
     linkRefs(p.link_ids, p.id);
@@ -152,15 +156,18 @@ export function publicView(data) {
     return { id: x.id, label: x.label, url: x.url, verification: x.verification };
   };
   const fields = Object.fromEntries(data.profile.allowlists.site.map(k => [k, data.profile.fields[k]]));
+  const displayProject = id => {
+    const p = data.projects.find(p => p.id === id);
+    return { id:p.id,title:p.title,status:p.status_label,period:p.period,summary:p.summary,
+      ownership:p.ownership,result:p.result,boundary:p.boundary,links:p.link_ids.map(pickLink) };
+  };
   return {
     profile: { name: fields.name, romanized_name: fields.romanized_name, email: fields.email,
       education: fields.education.map(e => ({ school: e.school, program: e.program, period: e.period })) },
     hero: { title: data.home.hero.title, eyebrow: data.home.hero.eyebrow, intro: data.home.hero.intro },
-    projects: [...data.home.project_order, data.home.teaching_id].map(id => {
-      const p = data.projects.find(p => p.id === id);
-      return { id: p.id, title: p.title, status: p.status_label, period: p.period, summary: p.summary,
-        ownership: p.ownership, result: p.result, boundary: p.boundary, links: p.link_ids.map(pickLink) };
-    }),
+    projects: [...data.home.project_order, ...supplementaryIds].map(displayProject),
+    personal: data.home.personal.map(p => ({ title:p.title, text:p.text })),
+    moreProjects: data.home.more_projects.map(displayProject),
     methods: data.home.methods.map(m => ({ text: m.text, project_id: m.project_id })),
     links: data.home.link_ids.map(pickLink),
   };

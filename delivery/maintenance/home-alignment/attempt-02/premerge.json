@@ -1,0 +1,35 @@
+{
+  "base_main": "178b5ae9bfaa0ae49430f037f9370a6066bd4464",
+  "pr_number": 21,
+  "initial_pr_head": "8433c31059189f3b2c1bc037bd963815a9ba2620",
+  "merge_conflicts": false,
+  "node": "24.15.0",
+  "npm": "11.12.1",
+  "chrome": "153.0.8010.52",
+  "site_dependencies": {"packages": 272, "vulnerabilities": 0},
+  "acceptance_dependencies": {"packages": 2, "vulnerabilities": 0},
+  "python_dependencies": {"reportlab": "4.4.9", "pypdf": "6.10.0", "fonttools": "4.61.1"},
+  "checks": {
+    "astro": {"errors": 0, "warnings": 0, "hints": 0},
+    "site_tests": {"passed": 32, "failed": 0},
+    "jd_tests": {"passed": 9, "failed": 0},
+    "resume_variants": 4,
+    "resume_pages_each": 1,
+    "build_pages": 9,
+    "dist_files": 31,
+    "dist_bytes": 22364182,
+    "approved_media": 17,
+    "client_js_bytes": 2952,
+    "alignment": "pass",
+    "gallery_browser": "pass",
+    "final_browser": "pass",
+    "pdf_native_viewer_links_clicked": 6
+  },
+  "public_pdf_sha256": "aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07",
+  "external": {
+    "kin_demo": 200,
+    "qq_repository": 200,
+    "notion_pages": [200, 200],
+    "qq_demo": 401
+  }
+}

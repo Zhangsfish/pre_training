@@ -1,0 +1,33 @@
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+02:45:53 [content] Syncing content
+02:45:53 [content] Synced content
+02:45:53 [types] Generated 2.28s
+02:45:53 [build] output: "static"
+02:45:53 [build] mode: "static"
+02:45:53 [build] directory: E:\myself\pre_training-home-alignment\site\dist\
+02:45:53 [build] Collecting build info...
+02:45:53 [build] ✓ Completed in 2.61s.
+02:45:53 [build] Building static entrypoints...
+02:45:55 [vite] ✓ built in 1.20s
+02:45:55 [vite] ✓ built in 150ms
+02:45:55 [build] Rearranging server assets...
+
+ generating static routes 
+02:45:55   ├─ /404.html (+52ms) 
+02:45:55   ├─ /resume/index.html (+14ms) 
+02:45:55   ├─ /work/kin/index.html (+14ms) 
+02:45:55   ├─ /work/spps/index.html (+7ms) 
+02:45:55   ├─ /work/qq-lingxi/index.html (+9ms) 
+02:45:55   ├─ /work/pet/index.html (+8ms) 
+02:45:55   ├─ /work/teaching/index.html (+8ms) 
+02:45:55   ├─ /work/natural-product/index.html (+7ms) 
+02:45:55   ├─ /index.html (+15ms) 
+02:45:55 ✓ Completed in 245ms.
+
+02:45:55 [build] ✓ Completed in 1.77s.
+02:45:55 [build] 9 page(s) built in 4.38s
+02:45:55 [build] Complete!
+Public output audit: {"files":["404.html","index.html","robots.txt","sitemap.xml","downloads/zhang-shuo-resume.pdf","media/kin-call.webp","media/kin-cover.webp","media/kin-day.webp","media/kin-film.mp4","media/kin-preview.mp4","media/qq-film.mp4","media/qq-match.webp","media/qq-negotiate.webp","media/qq-preview.mp4","media/qq-profile.webp","media/spps-front.webp","media/spps-hero.webp","media/spps-monitor.mp4","media/spps-operation.mp4","media/spps-operation.webp","media/spps-room.webp","media/spps-side.webp","resume/index.html","_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.LNN8EulC.js","_astro/site.LVWQMp7a.css","work/kin/index.html","work/natural-product/index.html","work/pet/index.html","work/qq-lingxi/index.html","work/spps/index.html","work/teaching/index.html"],"total_bytes":22364182,"client_js_bytes":2952,"approved_media":17,"result":"pass"}

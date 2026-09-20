@@ -94,5 +94,16 @@
     "spps_publication": "approved",
     "spps_codex_access": "codex_ready"
   },
-  "note": "R07 accepted and the media-first portfolio is published_and_verified at https://zhang-shuo-portfolio.vercel.app. Final Vercel deployment dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE is READY and all 29 remote files exactly match the audited dist. The separate QQ Demo remains behind Basic Auth and is non-required; QQ GitHub and both Notion pages are anonymously accessible. No round is currently authorized. Future changes require a new reviewed maintenance change from main."
+  "note": "R07 accepted and the media-first portfolio is published_and_verified at https://zhang-shuo-portfolio.vercel.app. Final Vercel deployment dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE is READY and all 29 remote files exactly match the audited dist. The separate QQ Demo remains behind Basic Auth and is non-required; QQ GitHub and both Notion pages are anonymously accessible. No round is currently authorized. Future changes require a new reviewed maintenance change from main.",
+  "maintenance": {
+    "id": "home-experience-alignment",
+    "authorized_by": "user_chat_2026-09-20",
+    "branch": "maintenance/home-experience-alignment",
+    "status": "implemented_pending_browser_and_deployment",
+    "plan": "delivery/maintenance/home-alignment/03-IMPLEMENTATION.md",
+    "handoff": "delivery/maintenance/home-alignment/04-CODEX-HANDOFF.md",
+    "report": "delivery/maintenance/home-alignment/REPORT.md",
+    "deployment": "not_performed_vercel_scope_403",
+    "history_note": "rounds和R07已验收记录不变；本维护不冒充旧轮验收。"
+  }
 }

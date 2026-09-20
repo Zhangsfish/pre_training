@@ -10,3 +10,6 @@
 - publication/resume-manifest.json：唯一公开 general PDF 的日期、hash 和输入指纹；生成成功不等于策划验收。
 
 公开只允许 general-zh；其他方向 PDF 不复制到 site/public。公开审查截图可包含已许可的 baseline 内容，不包含真实 JD/私人 MATCH。生成器不读取 experience，不修改主页。源码变化后重新生成并验收；R05 已授权，复现与维护详见 ../acceptance/README.md；R06 与部署未授权。
+
+## Current maintenance override
+用户已授权修正现有通用简历与页面不一致处。四个baseline同步其已有项目的事实表达与来源快照，不扩展选材，不改最终BRM母稿。PDF改用ReportLab同源展示模型和嵌入式OFL字体子集，保持A4单栏10.5pt/14mm。依resume/README.md复现；未核验的定向PDF不能对外发送。

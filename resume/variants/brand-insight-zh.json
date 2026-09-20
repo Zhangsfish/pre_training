@@ -7,23 +7,25 @@
     "profile.identity",
     "profile.pku",
     "profile.jlu",
-    "kin.h1",
+    "kin.definition",
     "kin.h2",
-    "kin.h3",
+    "kin.market",
+    "kin.vision",
+    "kin.deliverables",
     "kin.ownership",
-    "kin.product",
     "kin.ai",
-    "kin.status",
     "qq.thesis",
-    "qq.ownership",
     "qq.prototype",
+    "qq.strategy",
+    "qq.ownership",
+    "qq.timing",
     "qq.competition",
     "teaching.scope",
     "teaching.design",
     "teaching.feedback",
+    "teaching.kinetics",
     "teaching.material",
     "teaching.links",
-    "teaching.kinetics",
     "teaching.succession"
   ],
   "section_order": [
@@ -38,37 +40,43 @@
   "bullets": {
     "kin": [
       {
-        "text": "提出 H1/H2/H3，以“父母普通一天也值得被看见”为核心待验证假设；形成腕表与 Family App 方案，决定先用成熟硬件检验自主查看与参与。",
+        "text": "从“父母电话没接，不知道只是没听见还是遇到危险”的恐惧出发，定义 KIN Watch + Family App：将位置、活动、心率等信号整理成父母现在在做什么、今天过得怎样，让查看源于关心与参与，而不只为处理告警。",
         "claim_ids": [
-          "kin.h1",
-          "kin.h2",
-          "kin.h3",
-          "kin.ownership",
-          "kin.product"
+          "kin.definition",
+          "kin.h2"
         ]
       },
       {
-        "text": "推进产品定义、定价、渠道与成本方案；AI 辅助研究与计算，Codex 承担仓库实施。尚未上市，核心需求仍待现实验证，无已实现商业结果。",
+        "text": "以约2.85亿人为市场分析基准，10%形成日用对应约2850万DAU的采用情景；判断AI将吸收事务性流量，而关心家人仍需要人亲自投入注意力，据此提出家庭注意力入口、999元硬件与完整软件免费方案。",
+        "claim_ids": [
+          "kin.market",
+          "kin.vision",
+          "kin.deliverables"
+        ]
+      },
+      {
+        "text": "负责产品定义、品牌使命与商业取舍，将研究、测算、视觉和代码拆解给ChatGPT并审阅验收，交付Watch/App交互原型、约50秒品牌片和完整商业方案。",
         "claim_ids": [
           "kin.ownership",
           "kin.ai",
-          "kin.status"
+          "kin.deliverables"
         ]
       }
     ],
     "qq-lingxi": [
       {
-        "text": "定义长期画像与当前需求结合的产品机制，探索人与群、内容匹配和 Agent 间协商；负责产品问题、系统逻辑、迭代需求及实施验收。",
+        "text": "定义“长期人格画像＋当前需求画像”，由QQ-MBTI与需求访谈理解用户，匹配人、群和内容；连接前由双方Agent确认适配点、边界与沟通方式，给出推荐理由、风险提醒和开场建议。",
         "claim_ids": [
           "qq.thesis",
-          "qq.ownership"
+          "qq.prototype"
         ]
       },
       {
-        "text": "ChatGPT/Codex 承担大量代码生成和工程实施，形成画像提取、匹配及协商原型；进入腾讯 PCG 校园 AI 产品创意大赛复赛，示例数据不代表真实用户或增长。",
+        "text": "结合外部AI对用户的理解与QQ的真实关系资产，提出智能连接层战略；负责产品定义、架构、交互与验收，ChatGPT承担工程实现，累计约10天交付可交互原型，进入腾讯PCG校园AI产品创意大赛复赛。",
         "claim_ids": [
+          "qq.strategy",
           "qq.ownership",
-          "qq.prototype",
+          "qq.timing",
           "qq.competition"
         ]
       }
@@ -100,17 +108,17 @@
     ]
   },
   "source_snapshot": {
-    "publication/claims.json": "d4193bc280fd12ce37cd6f1023133144def6b9746fe713068bf44081902a8e98",
+    "publication/claims.json": "48f29f69298473f29813b2f8e3a996d853bc8a113aee6ec8f208c89b7fe78019",
     "publication/profile.json": "75cf3d8cab5b602f230fb9c83bc0cb8b60ade4f2ea2f3da23f2565a258be5228",
-    "site/LINKS.json": "f74dc974f0c319ed7880cd9ccb1f12758cc166c60c87900642e2b250c85da0a7",
-    "publication/projects/kin.md": "18a8e8fb289b924f4701be20c77a89d3b88a54435839f0143b24aa037b4e0566",
-    "publication/projects/spps.md": "9e8900ecde80703b99242a7f0126022bea93d131dde495660023d88286a234a1",
-    "publication/projects/qq-lingxi.md": "55fad26f92c6a429850cfd734db8513a88e4217fc2cc978e893f0662637dceea",
-    "publication/projects/pet.md": "a543372ea05e760e7cdb440e0787b67e3647db70366c28c2559462db5c18fc73",
-    "publication/projects/teaching.md": "4b3c6c2b8b7e047a7377666941ec6d05b38e8d18394ac29e99b92b8785048d74"
+    "site/LINKS.json": "2be3bcec6f1be29f224f898642150cddc85e5aa182ac36c0b16f52584bd2422e",
+    "publication/projects/kin.md": "936acaa669d1e562d7288ca3a0371f2b235754a3c7fa3184a29ce4a711296be2",
+    "publication/projects/spps.md": "3618a0a98ecf622932cd02c2c9cec153877eaeb2b6360c044f2f7e75afac21bb",
+    "publication/projects/qq-lingxi.md": "6bf397f85d6b7a54b8bd7b0117e05f98ca086b8ff2c67bae0cb40ccc836b47ec",
+    "publication/projects/pet.md": "759c536f3cb93c30864474f65e3862e3ef06a7ce443decd0b8de5fbad04d9317",
+    "publication/projects/teaching.md": "9576cf6c77d52e254e9f74aa1617d651e8ecead3bdc083afa018a4b2cfd0fec4"
   },
   "approved_for_export": true,
-  "export_authorization": "delivery/prompts/R04_RESUMES.md: generate four baseline PDFs; planner acceptance remains pending",
+  "export_authorization": "delivery/maintenance/home-alignment/03-IMPLEMENTATION.md: align current baseline facts; preserve approved BRM reference drafts.",
   "public_export": false,
   "selection_rationale": {
     "included": "依次展示需求假设、连接意图与课程反馈；保留待验证边界，不将洞察写成市场实绩。",

@@ -4,19 +4,27 @@ import MediaExperience from '../../components/MediaExperience.astro';
 import GalleryRuntime from '../../components/GalleryRuntime.astro';
 import {siteContent} from '../../lib/site';
 import gallery from '../../../../publication/gallery.json';
-import registry from '../../../LINKS.json';
 export async function getStaticPaths(){const view=await siteContent();return view.cases.map(project=>({params:{slug:project.id},props:{view,project}}));}
 const {view,project}=Astro.props;
 const p=gallery.projects.find(p=>p.id===project.id);
-const link=(id:string)=>registry.links.find(l=>l.id===id)!.url;
 const i=p?gallery.projects.indexOf(p):0;
-const next=gallery.projects[(i+1)%gallery.projects.length];
+const next=p?gallery.projects[(i+1)%gallery.projects.length]:null;
+const lead=project.sections.slice(0,p?3:project.sections.length);
+const deeper=p?project.sections.slice(3):[];
 ---
-<BaseLayout title={p?.name??'PET 研究'} description={p?.caption??'PET 小分子探针研究'} view={view}>
+<BaseLayout title={p?.name??project.title} description={project.summary} view={view}>
 <div class="breadcrumb"><a href="/#work">← 全部作品</a></div>
-{p ? <article class="visual-case"><header class="visual-case-head"><p class="overline">{p.label}</p><h1>{p.name}</h1>{p.id==='spps'&&<p class="full-project-name">{p.full_name}</p>}<p class="work-caption">{p.caption}</p><div class="case-actions"><button class="pill primary-pill" data-film={`/media/${p.film}`} data-title={p.name}>▶ {p.id==='spps'?'观看设备运行':'观看完整影片'} · {p.duration}</button>{p.id==='qq-lingxi'&&<><a class="pill" href={link('qq-lingxi-demo')} target="_blank" rel="noopener noreferrer">体验产品 ↗</a><a class="text-link" href={link('qq-lingxi-repo')}>GitHub ↗</a></>}</div></header><MediaExperience project={p} />
-<div class:list={['still-gallery',{'hardware-stills':p.id==='spps'}]}>{p.scenes.slice(1).map(s=><figure><button data-zoom={`/media/${s.image}`} data-title={s.label} aria-label={`放大：${s.label}`}><img src={`/media/${s.image}`} alt={`${p.name}：${s.label}`} loading="lazy" width="1440" height="900" /></button><figcaption>{s.label}</figcaption></figure>)}</div>
-{p.id==='spps'&&<div class="hardware-video-row"><div><p class="overline">IN MOTION</p><h2>流路、泵、控制。</h2><p>设备运行实拍</p></div><video controls playsinline preload="none" poster="/media/spps-operation.webp" src="/media/spps-operation.mp4" aria-label="设备运行视频"></video><div><button class="pill" data-film="/media/spps-monitor.mp4" data-title="设备与监测界面">▶ 另一段运行实拍</button></div></div>}
-</article> : <article class="research-note"><p class="overline">RESEARCH</p><h1>PET 小分子探针研究</h1><p>研究经历与进展收录于简历。</p><a class="pill" href="/resume/">查看简历 ↗</a></article>}
-<div class="case-next"><a href="/#work">← 全部作品</a><a href={`/work/${next.id}/`}>继续看：{next.name} →</a></div><GalleryRuntime />
+<article class:list={['visual-case',{'text-case':!p}]}>
+<header class="visual-case-head"><p class="overline">{p?.label??'RESEARCH & PRACTICE'}</p><h1>{p?.name??project.title}</h1>{p?.id==='spps'&&<p class="full-project-name">{p.full_name}</p>}<p class="work-caption">{project.summary}</p><p class="case-meta">{project.period} · {project.status}</p><div class="case-actions">{p&&<button class="pill primary-pill" data-film={`/media/${p.film}`} data-title={p.name}>▶ {p.id==='spps'?'观看设备运行':'观看完整影片'} · {p.duration}</button>}{project.links.map(l=><a class="pill" href={l.url} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>)}</div></header>
+{p&&<MediaExperience project={p} />}
+<div class="case-story">
+{lead.map(s=><section><h2>{s.heading}</h2>{s.blocks.map(b=>b.kind==='list'?<ul>{b.items.map(item=><li>{item}</li>)}</ul>:<p>{b.text}</p>)}</section>)}
+{deeper.length>0&&<details class="case-deeper" open={p?.id==='kin'}><summary>{p?.id==='kin'?'市场判断与长期方向':'展开更多过程与取舍'}</summary>{deeper.map(s=><section><h2>{s.heading}</h2>{s.blocks.map(b=>b.kind==='list'?<ul>{b.items.map(item=><li>{item}</li>)}</ul>:<p>{b.text}</p>)}</section>)}</details>}
+<aside class="ownership-note"><p class="overline">我的工作</p><p>{project.ownership}</p><p>{project.result}</p></aside>
+<p class="case-footnote">{project.boundary}</p>
+</div>
+{p&&<><div class:list={['still-gallery',{'hardware-stills':p.id==='spps'}]}>{p.scenes.slice(1).map(s=><figure><button data-zoom={`/media/${s.image}`} data-title={s.label} aria-label={`放大：${s.label}`}><img src={`/media/${s.image}`} alt={`${p.name}：${s.label}`} loading="lazy" width="1440" height="900" /></button><figcaption>{s.label}</figcaption></figure>)}</div>
+{p.id==='spps'&&<div class="hardware-video-row"><div><p class="overline">IN MOTION</p><h2>流路、泵、控制。</h2><p>设备运行实拍</p></div><video controls playsinline preload="none" poster="/media/spps-operation.webp" src="/media/spps-operation.mp4" aria-label="设备运行视频"></video><div><button class="pill" data-film="/media/spps-monitor.mp4" data-title="设备与监测界面">▶ 另一段运行实拍</button></div></div>}</>}
+</article>
+<div class="case-next"><a href="/#work">← 全部作品</a>{next&&<a href={`/work/${next.id}/`}>继续看：{next.name} →</a>}</div><GalleryRuntime />
 </BaseLayout>

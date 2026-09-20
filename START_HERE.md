@@ -2,6 +2,10 @@
 
 架构版本：`architecture-v1`，建立日期：2026-09-20。
 
+## 当前维护交接
+
+此分支正在执行用户明确授权的主页内容对齐。优先读取 `delivery/maintenance/home-alignment/04-CODEX-HANDOFF.md` 与该目录 REPORT；旧R07仍为已验收历史，不代表本次改动已上线。仅对本维护任务，新的用户授权与交接范围优先于下方旧启动语。需要有原项目权限的Codex完成浏览器验收与原域名发布；不另建站点、不修改DNS或认证。
+
 ## 给 Codex 的固定启动语
 
 > 读取 Zhangsfish/pre_training 默认分支的 START_HERE.md 和 AGENTS.md，依据 delivery/STATE.json 只执行当前授权轮次。读取该轮提示词及其列出的必要文件，在该轮分支实施并提交代码、REPORT.md 和实际测试/截图证据，创建 PR 后停止。已有待审提交时只返回审查入口；有 FIX 则只处理该轮返工。不要自行进入下一轮，不要部署。

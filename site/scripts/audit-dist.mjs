@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {loadContent,root} from './content.mjs';
 import {readJson,inputHash,loadVariant,publicPath} from '../../resume/scripts/model.mjs';
-export const pages=['index.html','work/kin/index.html','work/spps/index.html','work/qq-lingxi/index.html','work/pet/index.html','resume/index.html','404.html'];
+export const pages=['index.html','work/kin/index.html','work/spps/index.html','work/qq-lingxi/index.html','work/pet/index.html','work/teaching/index.html','work/natural-product/index.html','resume/index.html','404.html'];
 export const publicFiles=['robots.txt','sitemap.xml'];
 const productionOrigin='https://zhang-shuo-portfolio.vercel.app';
 export function auditDist(directory,data=loadContent(),{requireResume=true}={}) {
@@ -39,6 +39,15 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
            const target=value.split('#')[0].slice(1);
            assert.ok(files.includes(!target||target.endsWith('/')?target+'index.html':target),`Broken local URL ${value} in ${file}`);
          }
+         if(value.includes('#') && (value.startsWith('/') || value.startsWith('#'))) {
+           const [route,fragment]=value.split('#');
+           if(fragment) {
+             const target=route ? route.slice(1) : file;
+             const targetFile=!target||target.endsWith('/')?target+'index.html':target;
+             const targetHtml=fs.readFileSync(path.join(directory,targetFile),'utf8');
+             assert.ok(targetHtml.includes('id="'+fragment+'"'),`Broken local fragment ${value} in ${file}`);
+           }
+         }
          if(/\.pdf(?:$|[?#])/i.test(value))assert.equal(value,manifest.href,'Only the registered general PDF is public');
        }
      }
@@ -46,7 +55,7 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
      const text=bytes.toString('utf8');assert.match(text,/User-agent: \*/);assert.match(text,new RegExp(`Sitemap: ${productionOrigin.replaceAll('.','\\.')}\\/sitemap\\.xml`));
    } else if(file==='sitemap.xml'){
      const text=bytes.toString('utf8');assert.match(text,/^<\?xml/);assert.ok(!text.includes('404'), '404 must not appear in sitemap');
-     for(const route of ['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/resume/']) assert.ok(text.includes(`<loc>${productionOrigin}${route}</loc>`),`Missing sitemap route ${route}`);
+     for(const route of ['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/']) assert.ok(text.includes(`<loc>${productionOrigin}${route}</loc>`),`Missing sitemap route ${route}`);
    } else if(file===publicPath){
      assert.ok(bytes.subarray(0,5).toString()==='%PDF-');assert.equal(createHash('sha256').update(bytes).digest('hex'),manifest.sha256,'Public resume hash mismatch');
    } else {

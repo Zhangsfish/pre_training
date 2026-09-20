@@ -4,11 +4,11 @@
 
 ## 工具前提
 
-沿用网站 Node 与锁定依赖。需要 Playwright、Chrome、Python+pypdf、Poppler 的 pdftoppm；本机复用 Codex bundled Playwright 1.62.1 / Python pypdf 6.10.0、系统 Chrome 153，不新增依赖。其他机器用环境变量指定已有工具，不把机器路径写死到脚本：
+沿用网站 Node 与锁定依赖。PDF 使用 Python + ReportLab + pypdf，渲染复核使用 Poppler；不再为文字打印启动浏览器。安装：`python -m pip install -r resume/requirements.txt`。网页端到端测试仍使用原 Playwright 工具。
 
 - PLAYWRIGHT_MODULE：Playwright 模块绝对路径（不设则常规模块解析）
 - CHROME_EXECUTABLE：Chrome 可执行路径
-- RESUME_PYTHON：带 pypdf 的 Python（不设则 python）
+- RESUME_PYTHON：带 ReportLab 和 pypdf 的 Python（不设则 python）
 - PDFTOPPM：Poppler pdftoppm（不设则 PATH）
 
 ## Baseline
@@ -21,11 +21,11 @@ npm --prefix site run resume:check
 npm --prefix site run test:jd
 ```
 
-也可传 `-- --variant general-zh`。每份在 resume/exports 输出日期命名 PDF、可编辑 Markdown、print HTML、逐页 PNG、文本与机器核对 JSON。PDF 由 Chromium 文字打印后用 pypdf 规范化时间/ID与站内相对链接，中文可选择；不是截图 PDF。10.5pt、14mm边距，不缩放塞页。生成不代表审查通过。
+也可传 `-- --variant general-zh`。每份在 resume/exports 输出日期命名 PDF、可编辑 Markdown、print HTML、逐页 PNG、文本与机器核对 JSON。PDF 由 ReportLab 从同一展示模型生成，嵌入仓库中的 Noto Sans SC 字体子集，再用 pypdf 规范化时间/ID，中文可选择；不是截图 PDF。10.5pt、14mm边距，不缩放塞页。生成不代表审查通过。
 
 唯一公开副本由 `resume:build -- --variant general-zh --publish` 更新，同时登记 publication/resume-manifest.json。该操作只写本地文件，不部署。`resume:build -- --verify-published` 重新生成并核对公开 PDF 字节。网站构建验证选材与 manifest，拒绝过期输入/其他 PDF。`/resume/` 同源生成，电话/出生年月只在这一简历页面和获准 PDF 中；首页与案例继续禁止这些字段。
 
-项目标题链接为同站稳定详情路径。PDF 内 URI 相对 downloads/ 解析，无虚构部署域名；从网站在线打开可按站点基址访问，离线文件缺少站点基址时相对链接可能无法导航。QQ/Notion 外链为绝对地址。实际部署轮须核对宿主 PDF 阅读器的相对链接行为；KIN 仓库匿名404，因此简历不把它作为可用仓库入口。
+项目标题使用已确认生产域名的绝对详情链接，下载到本地后仍可访问。QQ 独立 Demo 标明需要访问权限，本地案例和影片为首要入口。字体来自 Google Fonts 的 Noto Sans SC（OFL，许可证见 templates/OFL.txt），只嵌入 PDF，不增加网页字体请求。新增字符若不在子集中，导出会拒绝；使用上游完整字体执行 `python resume/scripts/prepare-font.py /path/to/NotoSansSC[wght].ttf` 后重新检查全部版式。
 
 ## JD 工作流
 

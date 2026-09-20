@@ -1,0 +1,17 @@
+{
+  "pages": 1,
+  "a4": true,
+  "text_order_verified": true,
+  "replacement_characters": false,
+  "links": [
+    "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+    "https://kin-portfolio-taupe.vercel.app/",
+    "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+    "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+    "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+    "https://qq-lingxi-agent-platform.vercel.app/",
+    "https://zhang-shuo-portfolio.vercel.app/work/pet/"
+  ],
+  "text_sha256": "e038c46e0f0eb1d8ed189a9251cdf25a88c7e85a4eb8b3a94d7c1f9b3d217375",
+  "pdf_sha256": "aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07"
+}

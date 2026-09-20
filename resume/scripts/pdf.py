@@ -1,4 +1,4 @@
-"""Normalize Chrome PDF metadata, then verify selectable text and link annotations."""
+"""Normalize generated PDF metadata, then verify selectable text and link annotations."""
 import argparse, json, hashlib
 from pathlib import Path
 from pypdf import PdfReader, PdfWriter
@@ -14,7 +14,7 @@ if a.action=='normalize':
     reader=PdfReader(file)
     writer=PdfWriter(clone_from=reader)
     date='D:'+a.date.replace('-','')+'000000Z'
-    writer.add_metadata({'/CreationDate':date,'/ModDate':date,'/Producer':'pre_training resume exporter','/Creator':'Playwright Chromium'})
+    writer.add_metadata({'/CreationDate':date,'/ModDate':date,'/Producer':'pre_training resume exporter','/Creator':'ReportLab'})
     from pypdf.generic import TextStringObject
     for page in writer.pages:
         for annotation in page.get('/Annots', []):

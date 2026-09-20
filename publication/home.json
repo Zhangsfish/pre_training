@@ -8,15 +8,15 @@
     "pet"
   ],
   "hero": {
-    "title": "从人的问题出发，把方案做到现实里。",
+    "title": "从人的问题出发，把想法做到现实里。",
     "eyebrow": "北京大学硕士在读 · 2027届",
-    "intro": "我有化学与医学研究背景，做过自动化仪器，也在探索家庭连接与 AI 社交产品。我关心人为什么需要一个东西，以及怎样把想法变成可检验、可运行的方案。",
+    "intro": "我关心人为什么需要一个东西，也关心它怎样真正进入生活。从形成判断，到做成可以体验、可以运行的东西，再根据现实反馈调整。",
     "claim_ids": [
       "profile.pku",
-      "profile.jlu",
+      "profile.interests",
       "spps.ownership",
       "kin.h2",
-      "qq.thesis"
+      "qq.ownership"
     ]
   },
   "teaching_id": "teaching",
@@ -48,5 +48,36 @@
   "link_ids": [
     "email",
     "github-profile"
+  ],
+  "personal": [
+    {
+      "title": "我对人为什么做选择很好奇。",
+      "text": "为什么需要某样东西，为什么愿意为它付钱，什么会真正留在生活里。我喜欢从这些问题理解产品与生意。",
+      "claim_ids": [
+        "profile.interests"
+      ]
+    },
+    {
+      "title": "想做能直接带来幸福的东西。",
+      "text": "一次安心的联系，一点被看见的日常，一个用起来更舒服的东西。我希望人放下产品以后，生活仍然因此好了一点。",
+      "claim_ids": [
+        "profile.interests",
+        "kin.h2"
+      ]
+    },
+    {
+      "title": "先想清楚，再让现实回答。",
+      "text": "先理清目标和约束，把关键问题拆成小规模验证；再把想法做成能体验、能运行的东西。新的证据出现，就更新判断。",
+      "claim_ids": [
+        "profile.interests",
+        "pet.validation",
+        "spps.delivery"
+      ]
+    }
+  ],
+  "more_projects": [
+    "teaching",
+    "pet",
+    "natural-product"
   ]
 }

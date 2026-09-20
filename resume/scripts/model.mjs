@@ -24,23 +24,22 @@ export function validateVariant(v,data=loadContent()){
  assert.equal(new Set(v.selected_claim_ids).size,v.selected_claim_ids.length);
  const used=new Set(['profile.identity','profile.pku','profile.jlu']);
  for(const id of v.experience_order){assert.ok(Object.hasOwn(names,id));assert.ok(Array.isArray(v.bullets[id])&&v.bullets[id].length);if(id==='spps')used.add('spps.period');
-  for(const b of v.bullets[id]){assert.ok(typeof b.text==='string'&&b.text.length>5);assert.ok(b.claim_ids.length);for(const ref of b.claim_ids){assert.ok(v.selected_claim_ids.includes(ref));used.add(ref);}assert.ok(!/[<>]|TODO|source_path|claim_ids|150万元|95%|90%|获奖冠军|已发表|已投稿|已录用/.test(b.text),'Unsafe resume expression');}
+  for(const b of v.bullets[id]){assert.ok(typeof b.text==='string'&&b.text.length>5);assert.ok(b.claim_ids.length);for(const ref of b.claim_ids){assert.ok(v.selected_claim_ids.includes(ref));used.add(ref);}assert.ok(!/[<>]|TODO|source_path|claim_ids|95%|90%|获奖冠军|已发表|已投稿|已录用/.test(b.text),'Unsafe resume expression');}
  }
  assert.deepEqual([...used].sort(),[...v.selected_claim_ids].sort(),'Unused or missing claim references');
  const text=id=>(v.bullets[id]||[]).map(b=>b.text).join('');
- if(v.experience_order.includes('kin')){assert.match(text('kin'),/H1\/H2\/H3/);assert.match(text('kin'),/普通一天/);assert.match(text('kin'),/待.*验证/);assert.match(text('kin'),/未上市|尚未上市/);assert.match(text('kin'),/AI.*Codex/);}
+ if(v.experience_order.includes('kin')){assert.match(text('kin'),/父母/);assert.match(text('kin'),/Watch|腕表/);assert.match(text('kin'),/情景/);assert.match(text('kin'),/ChatGPT/);}
  if(v.experience_order.includes('spps')){assert.match(text('spps'),/高层.*脚本/);assert.match(text('spps'),/低层.*协作者/);assert.match(text('spps'),/交接/);}
- if(v.experience_order.includes('qq-lingxi')){assert.match(text('qq-lingxi'),/ChatGPT\/Codex/);assert.match(text('qq-lingxi'),/复赛/);assert.match(text('qq-lingxi'),/示例数据不代表真实/);}
- if(v.experience_order.includes('pet')){assert.match(text('pet'),/第一作者稿件已交导师，准备投稿/);assert.match(text('pet'),/已有大设备/);assert.match(text('pet'),/关系由导师建立/);}
+ if(v.experience_order.includes('qq-lingxi')){assert.match(text('qq-lingxi'),/ChatGPT/);assert.match(text('qq-lingxi'),/复赛/);}
+ if(v.experience_order.includes('pet')){assert.match(text('pet'),/第一作者论文初稿/);assert.match(text('pet'),/拟投JMC/);assert.match(text('pet'),/已有主要设备/);assert.match(text('pet'),/预计.*专利申请/);}
  return data;
 }
 /** @param {any} v @param {Pick<ReturnType<typeof loadContent>, 'profile'|'claims'|'projects'|'links'>} data */
 export function display(v,data=validateVariant(v)){
  const f=Object.fromEntries(data.profile.allowlists.resume.map(k=>[k,data.profile.fields[k]]));
  const education=f.education.map(e=>({school:e.school,program:e.program,period:e.period,detail:e.school==='吉林大学'?data.claims.find(c=>c.id==='profile.jlu').text.split('；')[1]:''}));
- // Stable local routes become relative links inside the hosted PDF: downloads/../work.
- // No invented deployment domain; downloaded standalone PDFs may lack a base URL.
- const projects=v.experience_order.map(id=>({id,title:names[id],status:data.projects.find(p=>p.id===id).status_label,period:data.projects.find(p=>p.id===id).period,local_href:id==='teaching'?'/#teaching':`/work/${id}/`,pdf_href:id==='teaching'?'../#teaching':`../work/${id}/`,links:data.projects.find(p=>p.id===id).link_ids.filter(id=>id!=='kin-repo').map(id=>data.links.find(l=>l.id===id)),bullets:v.bullets[id].map(b=>b.text)}));
+ // Use the already deployed domain so links also work in a downloaded standalone PDF.
+ const projects=v.experience_order.map(id=>({id,title:names[id],status:data.projects.find(p=>p.id===id).status_label,period:data.projects.find(p=>p.id===id).period,local_href:`/work/${id}/`,pdf_href:`https://zhang-shuo-portfolio.vercel.app/work/${id}/`,links:data.projects.find(p=>p.id===id).link_ids.filter(id=>id!=='kin-repo').map(id=>data.links.find(l=>l.id===id)),bullets:v.bullets[id].map(b=>b.text)}));
  return {name:f.name,birth:f.birth_year_month,phone:f.phone,email:f.email,education,projects};
 }
 export function render(v){
@@ -52,4 +51,4 @@ export function render(v){
  const md=`# ${d.name}\n\n${contact}\n\n## 教育背景\n\n${d.education.map(x=>`### ${x.school}\n\n${x.program} · ${x.period}${x.detail?'\n\n'+x.detail:''}`).join('\n\n')}\n\n## 项目与实践\n\n${d.projects.map(p=>`### [${p.title}](${p.local_href})${p.period?' · '+p.period:''}\n\n${p.status}\n\n${p.bullets.map(b=>'- '+b).join('\n')}${p.links.length?'\n\n'+p.links.map(l=>`[${l.label}](${l.url})`).join(' · '):''}`).join('\n\n')}\n`;
  return {html,md,display:d};
 }
-export function inputHash(v){return sha(JSON.stringify({variant:v,template:canonical(path.join(root,'resume/templates/print.css')),model:canonical(path.join(root,'resume/scripts/model.mjs')),exporter:canonical(path.join(root,'resume/scripts/build.mjs')),pdf:canonical(path.join(root,'resume/scripts/pdf.py'))}));}
+export function inputHash(v){return sha(JSON.stringify({variant:v,template:canonical(path.join(root,'resume/templates/print.css')),model:canonical(path.join(root,'resume/scripts/model.mjs')),exporter:canonical(path.join(root,'resume/scripts/build.mjs')),pdf:canonical(path.join(root,'resume/scripts/pdf.py')),reportlab:canonical(path.join(root,'resume/scripts/reportlab-export.py')),font:sha(fs.readFileSync(path.join(root,'resume/templates/NotoSansSC-resume.ttf')))}));}

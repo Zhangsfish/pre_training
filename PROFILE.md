@@ -15,7 +15,7 @@ Canonical basic profile. Do not invent missing fields.
 - Email: zhangs.taq@gmail.com
 - GitHub account: Zhangsfish
 - LinkedIn: none
-- Standalone portfolio / personal site: none currently
+- Standalone portfolio / personal site: https://zhang-shuo-portfolio.vercel.app
 - Project links: place the relevant GitHub / demo link directly inside each project entry rather than in a separate generic link section
 
 ## Personal-information policy for China applications
@@ -56,6 +56,16 @@ Default private-sector campus resume:
   - CET-6: 502
   - Resume default: CET-6 502; CET-4 normally omitted unless a specific form requests both
 - Other languages: none recorded
+
+## Public interests and working style
+
+User-confirmed direction, expressed for an employer-facing portfolio:
+- curious about why people need, choose and pay for products, and what becomes part of everyday life;
+- prefers products whose direct experience brings connection, comfort, peace of mind and happiness; values mutual benefit, not manipulation;
+- thinks through goals, dependencies and constraints before action, then uses small experiments and real artifacts to test and update judgments;
+- uses AI for unfamiliar knowledge and implementation while retaining responsibility for feasibility, choices and acceptance.
+
+These are preferences and working methods, not claims of realized consumer/business outcomes. Do not publish private life plans or sensitive intellectual influences.
 
 ## Skills inventory
 

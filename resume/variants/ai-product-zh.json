@@ -7,28 +7,33 @@
     "profile.identity",
     "profile.pku",
     "profile.jlu",
+    "spps.period",
     "qq.thesis",
-    "qq.ownership",
     "qq.prototype",
+    "qq.strategy",
+    "qq.ownership",
+    "qq.timing",
     "qq.competition",
-    "kin.h1",
+    "kin.definition",
     "kin.h2",
-    "kin.h3",
+    "kin.market",
+    "kin.vision",
+    "kin.deliverables",
     "kin.ownership",
-    "kin.product",
     "kin.ai",
-    "kin.status",
     "pet.ai",
+    "pet.setup",
+    "pet.window",
     "pet.validation",
     "pet.status",
-    "pet.setup",
-    "pet.external",
-    "pet.peers",
+    "pet.patents",
     "spps.ownership",
-    "spps.delivery",
-    "spps.scripts",
     "spps.collaboration",
-    "spps.period"
+    "spps.scripts",
+    "spps.resources",
+    "spps.substitution",
+    "spps.delivery",
+    "spps.performance"
   ],
   "section_order": [
     "education",
@@ -43,88 +48,97 @@
   "bullets": {
     "qq-lingxi": [
       {
-        "text": "定义长期画像与当前需求结合的产品机制，探索人与群、内容匹配和 Agent 间协商；负责产品问题、系统逻辑、迭代需求及实施验收。",
+        "text": "定义“长期人格画像＋当前需求画像”，由QQ-MBTI与需求访谈理解用户，匹配人、群和内容；连接前由双方Agent确认适配点、边界与沟通方式，给出推荐理由、风险提醒和开场建议。",
         "claim_ids": [
           "qq.thesis",
-          "qq.ownership"
+          "qq.prototype"
         ]
       },
       {
-        "text": "ChatGPT/Codex 承担大量代码生成和工程实施，形成画像提取、匹配及协商原型；进入腾讯 PCG 校园 AI 产品创意大赛复赛，示例数据不代表真实用户或增长。",
+        "text": "结合外部AI对用户的理解与QQ的真实关系资产，提出智能连接层战略；负责产品定义、架构、交互与验收，ChatGPT承担工程实现，累计约10天交付可交互原型，进入腾讯PCG校园AI产品创意大赛复赛。",
         "claim_ids": [
+          "qq.strategy",
           "qq.ownership",
-          "qq.prototype",
+          "qq.timing",
           "qq.competition"
         ]
       }
     ],
     "kin": [
       {
-        "text": "提出 H1/H2/H3，以“父母普通一天也值得被看见”为核心待验证假设；形成腕表与 Family App 方案，决定先用成熟硬件检验自主查看与参与。",
+        "text": "从“父母电话没接，不知道只是没听见还是遇到危险”的恐惧出发，定义 KIN Watch + Family App：将位置、活动、心率等信号整理成父母现在在做什么、今天过得怎样，让查看源于关心与参与，而不只为处理告警。",
         "claim_ids": [
-          "kin.h1",
-          "kin.h2",
-          "kin.h3",
-          "kin.ownership",
-          "kin.product"
+          "kin.definition",
+          "kin.h2"
         ]
       },
       {
-        "text": "推进产品定义、定价、渠道与成本方案；AI 辅助研究与计算，Codex 承担仓库实施。尚未上市，核心需求仍待现实验证，无已实现商业结果。",
+        "text": "以约2.85亿人为市场分析基准，10%形成日用对应约2850万DAU的采用情景；判断AI将吸收事务性流量，而关心家人仍需要人亲自投入注意力，据此提出家庭注意力入口、999元硬件与完整软件免费方案。",
+        "claim_ids": [
+          "kin.market",
+          "kin.vision",
+          "kin.deliverables"
+        ]
+      },
+      {
+        "text": "负责产品定义、品牌使命与商业取舍，将研究、测算、视觉和代码拆解给ChatGPT并审阅验收，交付Watch/App交互原型、约50秒品牌片和完整商业方案。",
         "claim_ids": [
           "kin.ownership",
           "kin.ai",
-          "kin.status"
+          "kin.deliverables"
         ]
       }
     ],
     "pet": [
       {
-        "text": "从问题形成起与 AI 共同学习、讨论设计及排障，判断可行性并执行实验；正式生物分布实验前先做小规模验证。第一作者稿件已交导师，准备投稿。",
+        "text": "依托已有主要设备，将有机合成实验室从“0.5”补到“1”；通过AI学习大部分陌生知识，再结合文献与实验判断方案，补齐耗材和操作体系。",
         "claim_ids": [
           "pet.ai",
-          "pet.validation",
-          "pet.status"
+          "pet.setup"
         ]
       },
       {
-        "text": "补齐日常耗材与操作流程，使用已有大设备；外部医院关系由导师建立，负责实验准备与现场协作，同伴各自承担负责工作。",
+        "text": "针对68Ga半衰期约68分钟、有效窗口约4小时的实验，先拆成低成本小规模验证，再执行正式实验；完成第一作者论文初稿，拟投JMC，相关成果预计形成2项专利申请。",
         "claim_ids": [
-          "pet.setup",
-          "pet.external",
-          "pet.peers"
+          "pet.window",
+          "pet.validation",
+          "pet.status",
+          "pet.patents"
         ]
       }
     ],
     "spps": [
       {
-        "text": "将参考论文与系统材料转为需求，推进架构、选型采购、跨专业接口与集成测试；仪器可重复运行演示，在参与结束时完成交接。",
+        "text": "独立完成整机方案、部件选型与接口定义，向4名跨专业协作者下发机械、加工、电控和采购任务，负责评审、验收与集成；编写高层合成时序脚本，低层驱动由协作者实现。",
         "claim_ids": [
           "spps.ownership",
-          "spps.delivery"
+          "spps.collaboration",
+          "spps.scripts"
         ]
       },
       {
-        "text": "编写高层合成时序脚本；低层泵阀驱动由导师/电控协作者实现，机械设计加工及部分装配由协作者支持。",
+        "text": "对接近20家供应商，推动泵、管路、阀门和耗材国产替代；以近同规格FEP管为例，单项采购成本降低约88%。不到3个月完成核心集成，演示约10肽自动合成，单次偶联由约30分钟缩至约1分钟，完成交接。",
         "claim_ids": [
-          "spps.scripts",
-          "spps.collaboration"
+          "spps.resources",
+          "spps.substitution",
+          "spps.delivery",
+          "spps.performance"
         ]
       }
     ]
   },
   "source_snapshot": {
-    "publication/claims.json": "d4193bc280fd12ce37cd6f1023133144def6b9746fe713068bf44081902a8e98",
+    "publication/claims.json": "48f29f69298473f29813b2f8e3a996d853bc8a113aee6ec8f208c89b7fe78019",
     "publication/profile.json": "75cf3d8cab5b602f230fb9c83bc0cb8b60ade4f2ea2f3da23f2565a258be5228",
-    "site/LINKS.json": "f74dc974f0c319ed7880cd9ccb1f12758cc166c60c87900642e2b250c85da0a7",
-    "publication/projects/kin.md": "18a8e8fb289b924f4701be20c77a89d3b88a54435839f0143b24aa037b4e0566",
-    "publication/projects/spps.md": "9e8900ecde80703b99242a7f0126022bea93d131dde495660023d88286a234a1",
-    "publication/projects/qq-lingxi.md": "55fad26f92c6a429850cfd734db8513a88e4217fc2cc978e893f0662637dceea",
-    "publication/projects/pet.md": "a543372ea05e760e7cdb440e0787b67e3647db70366c28c2559462db5c18fc73",
-    "publication/projects/teaching.md": "4b3c6c2b8b7e047a7377666941ec6d05b38e8d18394ac29e99b92b8785048d74"
+    "site/LINKS.json": "2be3bcec6f1be29f224f898642150cddc85e5aa182ac36c0b16f52584bd2422e",
+    "publication/projects/kin.md": "936acaa669d1e562d7288ca3a0371f2b235754a3c7fa3184a29ce4a711296be2",
+    "publication/projects/spps.md": "3618a0a98ecf622932cd02c2c9cec153877eaeb2b6360c044f2f7e75afac21bb",
+    "publication/projects/qq-lingxi.md": "6bf397f85d6b7a54b8bd7b0117e05f98ca086b8ff2c67bae0cb40ccc836b47ec",
+    "publication/projects/pet.md": "759c536f3cb93c30864474f65e3862e3ef06a7ce443decd0b8de5fbad04d9317",
+    "publication/projects/teaching.md": "9576cf6c77d52e254e9f74aa1617d651e8ecead3bdc083afa018a4b2cfd0fec4"
   },
   "approved_for_export": true,
-  "export_authorization": "delivery/prompts/R04_RESUMES.md: generate four baseline PDFs; planner acceptance remains pending",
+  "export_authorization": "delivery/maintenance/home-alignment/03-IMPLEMENTATION.md: align current baseline facts; preserve approved BRM reference drafts.",
   "public_export": false,
   "selection_rationale": {
     "included": "先展示 AI 产品定义和原型，再展示 AI 研究辅助、共推实验方案与现实系统交付。",
