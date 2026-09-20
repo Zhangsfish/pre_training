@@ -28,8 +28,13 @@ try{
   const layout=await page.evaluate(()=>({inner_width:innerWidth,scroll_width:document.documentElement.scrollWidth,dpr:devicePixelRatio,main:document.querySelector('main').innerText.length}));
   assert.equal(layout.scroll_width,layout.inner_width);assert.ok(layout.main>30);
   const clipped=await page.locator('main a,h1,h2,h3,p,li').evaluateAll(nodes=>nodes.filter(n=>{const r=n.getBoundingClientRect();return r.width>0&&(r.left < -1||r.right>innerWidth+1);}).map(n=>n.tagName+':'+n.textContent.slice(0,50)));
-  assert.deepEqual(clipped,[]);await page.screenshot({path:path.join(output,`${name}-zoom200.png`),fullPage:true});
-  evidence.zoom.push({route,factor:2,physical_viewport:{width:1440,height:1000},...layout,result:'pass'});
+  // Full-page clipping in Playwright uses CSS dimensions, which crop Chrome's
+  // native browser-zoom output. Capture the actual compositor viewport instead.
+  assert.deepEqual(clipped,[]);
+  const screenshot=await (await context.newCDPSession(page)).send('Page.captureScreenshot',{format:'png',fromSurface:true});
+  const png=Buffer.from(screenshot.data,'base64');assert.equal(png.readUInt32BE(16),1440);assert.equal(png.readUInt32BE(20),1000);
+  fs.writeFileSync(path.join(output,`${name}-zoom200.png`),png);
+  evidence.zoom.push({route,factor:2,physical_viewport:{width:1440,height:1000},screenshot:'Native compositor viewport, 1440x1000 PNG; entire document also checked for overflow',...layout,result:'pass'});
   await zoom(1);await page.setViewportSize({width:320,height:812});await page.goto(host.base+route);
   await page.screenshot({path:path.join(output,`${name}-320.png`),fullPage:true});
   const links=await page.locator('a[href]').count(),visited=[];
