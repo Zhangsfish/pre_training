@@ -59,11 +59,19 @@
       "source_path": "experience/jlu-organic-lab-ta.md",
       "verification_checked_at": "2026-09-19T17:44:41.055Z",
       "verification_method": "Anonymous Chrome; rendered repository/course content inspected, not HTTP status alone"
+    },
+    {
+      "id": "qq-lingxi-demo",
+      "label": "体验 QQ 灵犀",
+      "url": "https://qq-lingxi-agent-platform.vercel.app/",
+      "kind": "demo",
+      "required": false,
+      "verification": "user_provided"
     }
   ],
   "optional_live_demos": {
     "kin": null,
-    "qq-lingxi": null
+    "qq-lingxi": "https://qq-lingxi-agent-platform.vercel.app/"
   },
   "public_resume": {
     "href": "/downloads/zhang-shuo-resume.pdf",

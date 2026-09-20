@@ -26,3 +26,7 @@ R01不依赖媒体，可做内容与工程底座。R02三案可使用真实可�
 每项字段：id/project/type/path或null/source_filename/source_sha256/derived_sha256或null/availability/publication/integration/alt/caption/permission_note。
 
 网站使用构建时sanitize后的字段，不能把原片存储路径和内部许可讨论导出。图片显示真实器件关系；操作视频证明设备动作，不能由此声称特定纯度、稳定性或临床性能。
+
+
+## R07 current user override — 2026-09-20
+The user explicitly requested a media-first redesign and publication in the current Work conversation. The old text-only visual freeze and R06 round lock are superseded for this scoped change. Homepage public copy comes from publication/gallery.json; project fact records and résumé are preserved. Selected derivatives are authorized; original masters stay excluded. New local media interaction JavaScript is permitted, with a hash-based output allowlist and no analytics. Existing Vercel/free-only/no-DNS scope applies.

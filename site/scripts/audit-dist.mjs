@@ -21,12 +21,14 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
  let total=0;
  for(const file of files) {
    const bytes=fs.readFileSync(path.join(directory,file));total+=bytes.length;
-   assert.ok(file===publicPath||pages.includes(file)||publicFiles.includes(file)||/^_astro\/[\w.-]+\.css$/.test(file)||assets.some(a=>a.path===file),`Unapproved output file: ${file}`);
-   if(/\.(html|css)$/.test(file)) {
+   assert.ok(file===publicPath||pages.includes(file)||publicFiles.includes(file)||/^_astro\/[\w.-]+\.(css|js)$/.test(file)||assets.some(a=>a.path===file),`Unapproved output file: ${file}`);
+   if(/\.(html|css|js)$/.test(file)) {
      const text=bytes.toString('utf8');
      if(file!=='resume/index.html')for(const key of ['phone','birth_year_month'])assert.ok(!text.includes(data.profile.fields[key]),`Resume-only field outside resume: ${file}`);
      for(const marker of forbidden) assert.ok(!text.includes(marker),`Private/candidate marker in ${file}`);
-     assert.ok(!/<script\b|<iframe\b|@import|https?:\/\/[^\s"')]+\.(?:woff|ttf)/i.test(text),`Unexpected runtime/embed/font: ${file}`);
+     assert.ok(!/<iframe\b|@import|https?:\/\/[^\s"')]+\.(?:woff|ttf)/i.test(text),`Unexpected embed/font: ${file}`);
+     if(file.endsWith('.html')) for(const script of text.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)) { assert.ok(!script[2].trim(),'Inline script rejected'); assert.match(script[1],/src="\/_astro\/[\w.-]+\.js"/,'Only built local gallery scripts'); }
+     if(file.endsWith('.js')) assert.ok(!/https?:|fetch\(|XMLHttpRequest|WebSocket|eval\(/.test(text),'Gallery JS must stay local');
      if(file.endsWith('.html')) {
        assert.equal((text.match(/<h1\b/g)||[]).length,1,`Single h1: ${file}`);
        for(const match of text.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
@@ -52,8 +54,10 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
      assert.equal(createHash('sha256').update(bytes).digest('hex'),a.derived_sha256,'Approved media hash');
    }
  }
- // The whole text-only site fits below the homepage's initial resource budget.
- assert.ok(total<=1024*1024,'Text-only site exceeds 1MB budget');
- return {files,total_bytes:total,client_js_bytes:0,approved_media:assets.length,result:'pass'};
+ // Full films load only after an explicit user action; originals never ship.
+ assert.ok(total<=32*1024*1024,'Published gallery exceeds 32MB total budget');
+ const jsBytes=files.filter(f=>f.endsWith('.js')).reduce((n,f)=>n+fs.statSync(path.join(directory,f)).size,0);
+ assert.ok(jsBytes<20000,'Gallery runtime exceeds 20KB');
+ return {files,total_bytes:total,client_js_bytes:jsBytes,approved_media:assets.length,result:'pass'};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) console.log(JSON.stringify(auditDist(path.join(root,'site/dist')),null,2));

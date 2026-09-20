@@ -22,3 +22,7 @@
 - 用户：不重复讲经历；仅在确需主观选择、保密确认或发布授权时决定。
 
 实施分支为 `codex/R01` 等；不得改其他项目仓库。遇到用户更正事实，提报具体冲突，交审查者先改事实层；不要用文案掩盖。规则的目的为防止事实漂移，不是生产更多文书。每轮只有一个报告入口、一包实际证据和一份审查裁决。
+
+
+## R07 current user override — 2026-09-20
+The user explicitly requested a media-first redesign and publication in the current Work conversation. The old text-only visual freeze and R06 round lock are superseded for this scoped change. Homepage public copy comes from publication/gallery.json; project fact records and résumé are preserved. Selected derivatives are authorized; original masters stay excluded. New local media interaction JavaScript is permitted, with a hash-based output allowlist and no analytics. Existing Vercel/free-only/no-DNS scope applies.
