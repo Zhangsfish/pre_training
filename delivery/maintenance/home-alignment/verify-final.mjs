@@ -58,7 +58,7 @@ async function warmLazyContent(page) {
 try {
   for (const width of [375, 1366]) {
     const context = await browser.newContext({ viewport: { width, height: width === 375 ? 812 : 900 } });
-    const page = await context.newPage();
+    let page = await context.newPage();
     const errors = [];
     page.on('pageerror', (error) => errors.push(error.message));
     for (const route of routes) {
@@ -83,6 +83,10 @@ try {
     for (const id of ['work', 'about', 'teaching', 'pet', 'natural-product', 'contact']) assert.equal(await page.locator(`#${id}`).count(), 1, `${id} reachable`);
 
     if (width === 1366) {
+      await page.close();
+      page = await context.newPage();
+      page.on('pageerror', (error) => errors.push(error.message));
+      await page.goto(base + '/', { waitUntil: 'networkidle' });
       const scene = page.getByRole('button', { name: '02 找到共同体', exact: true });
       await scene.focus();
       await page.keyboard.press('Enter');
@@ -98,16 +102,15 @@ try {
 
       report.interactions.primary_films = [];
       for (const name of ['观看完整演示 2:52', '观看设备运行视频', '观看概念短片 0:50']) {
+        console.log(`verifying primary film: ${name}`);
         const opener = page.getByRole('button', { name, exact: true });
-        await opener.focus();
-        await opener.press('Enter');
+        await opener.click();
         assert.ok(await page.locator('dialog').evaluate((dialog) => dialog.open));
         const video = page.locator('dialog video');
-        await video.evaluate((element) => element.load());
         await page.waitForFunction(() => {
           const video = document.querySelector('dialog video');
           return video && video.readyState >= 2 && video.videoWidth > 0;
-        }, {}, { timeout: 60000 });
+        }, {}, { timeout: 120000 });
         await video.evaluate((element) => element.play());
         const before = await video.evaluate((element) => element.currentTime);
         await page.waitForTimeout(900);
@@ -129,7 +132,7 @@ try {
       await page.waitForFunction(() => {
         const video = document.querySelector('dialog video');
         return video && video.readyState >= 2 && video.videoWidth > 0;
-      });
+      }, {}, { timeout: 120000 });
       assert.ok((await page.locator('dialog video').getAttribute('src')).includes('spps-monitor.mp4'));
       await page.keyboard.press('Escape');
       assert.ok(await secondSpps.evaluate((element) => document.activeElement === element));

@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "maintenance_id": "home-experience-alignment",
+  "attempt": 2,
+  "status": "published_and_verified",
+  "pr": {
+    "number": 21,
+    "url": "https://github.com/Zhangsfish/pre_training/pull/21",
+    "final_head": "a375d74d011a2a190653eb1c3af54812c56e425a",
+    "merged": true,
+    "merge_commit": "5ea262632032d2a885656dc5c197f9cd869e92d2"
+  },
+  "deployment": {
+    "provider": "vercel",
+    "plan": "Hobby/free",
+    "project": "zhang-shuo-portfolio",
+    "project_id": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+    "team_id": "team_iUtfj6fbX7ntRyux5VD2Req3",
+    "deployment_id": "dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp",
+    "production_url": "https://zhang-shuo-portfolio.vercel.app",
+    "immutable_url": "https://zhang-shuo-portfolio-cqr7ec31y-zhangsfishs-projects.vercel.app",
+    "status": "READY",
+    "verified_at": "2026-09-20T19:21:25.915Z"
+  },
+  "checks": {
+    "site_check": "pass_0_errors_0_warnings_0_hints",
+    "site_tests": "32_of_32_pass",
+    "jd_tests": "9_of_9_pass",
+    "resume_build": "4_pdf_pass",
+    "resume_check": "4_one_page_a4_selectable_chinese_links_pass",
+    "site_build": "9_pages_publication_audit_pass",
+    "alignment": "pass",
+    "browser_routes": "16_of_16_pass_375_and_1366",
+    "gallery": "pass",
+    "media": "three_primary_and_two_spps_decoded",
+    "keyboard_focus_reduced_motion": "pass",
+    "not_found_status": 404,
+    "external_public_links": "4_of_4_status_200",
+    "qq_demo_status": 401,
+    "qq_demo_result": "expected Basic Auth; no bypass attempted",
+    "native_pdf_links": "6_of_6_click_pass"
+  },
+  "distribution": {
+    "files": 31,
+    "bytes": 22364182,
+    "remote_hash_match_count": 31,
+    "pdf_bytes": 83934,
+    "pdf_sha256": "aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07"
+  },
+  "external_limit": "QQ Demo remains behind Basic Auth and returns 401 anonymously.",
+  "artifacts": [
+    {
+      "path": "browser-production/404-1366.png",
+      "bytes": 26768,
+      "sha256": "0728a23304c6f0f3155de4432a7a68b96bdd26491a76ee01b57c168a704833af"
+    },
+    {
+      "path": "browser-production/home-1366.png",
+      "bytes": 2320186,
+      "sha256": "6ab180af87f3bfe9ef1bcaf1db5ca3f436b307e1311dd5ef87eb1380f0ff9409"
+    },
+    {
+      "path": "browser-production/home-375.png",
+      "bytes": 643064,
+      "sha256": "4bc6a4b544d12f5f0034e595cf70a676c7244095d1ddc0255cef9b61e463ea78"
+    },
+    {
+      "path": "browser-production/results.json",
+      "bytes": 10776,
+      "sha256": "4959f20e12d5c82de1d84b9f7380782f532da974c0fd8b43923d2aa18438cae5"
+    },
+    {
+      "path": "browser-production/resume-1366.png",
+      "bytes": 215990,
+      "sha256": "af7472d4a55816b3c6df216aea6b3ba901628816e96983fcf7731ca1fb5bb4ea"
+    },
+    {
+      "path": "browser-production/resume-375.png",
+      "bytes": 199247,
+      "sha256": "144cddfe5dcac44f296c6064678dec03129606d4cddb91bbdd64524ccdacbe2d"
+    },
+    {
+      "path": "browser-production/work-kin-1366.png",
+      "bytes": 1444636,
+      "sha256": "c4cd596d104e00437b48527004694cb5b74187cdb86d59cf1c617505e83401e1"
+    },
+    {
+      "path": "browser-production/work-kin-375.png",
+      "bytes": 539184,
+      "sha256": "57e67aa1394e436092eb709acd57bad638f0b47756ce0ad39061ba2ba57c1aad"
+    },
+    {
+      "path": "browser-production/work-natural-product-1366.png",
+      "bytes": 147719,
+      "sha256": "d19946b2147a501aa66bd5ab5b35bff63d43f5a4ad58d8b2513f3d61a254b91a"
+    },
+    {
+      "path": "browser-production/work-natural-product-375.png",
+      "bytes": 118417,
+      "sha256": "5a3b654d2420dada9a892f793a0704eab66dc01c231b463580aefee88e3117b2"
+    },
+    {
+      "path": "browser-production/work-pet-1366.png",
+      "bytes": 142489,
+      "sha256": "fef6b949c534c5cf4cf4de1ba7463a569821a08fb796f5449350eba2f3c82854"
+    },
+    {
+      "path": "browser-production/work-pet-375.png",
+      "bytes": 116524,
+      "sha256": "1c19d8e15e1727d187e806d0e4b9e7ce17898c01152dd11904203b7dfe16813c"
+    },
+    {
+      "path": "browser-production/work-qq-lingxi-1366.png",
+      "bytes": 757019,
+      "sha256": "2add00018cdfb0a74f1d1a805426e012032742f5fc30242f4df577e0ce042a20"
+    },
+    {
+      "path": "browser-production/work-qq-lingxi-375.png",
+      "bytes": 299715,
+      "sha256": "20dac1f02b220533fda8a784d987b8ab52e26993ebc421b4ea9ceebde81acf24"
+    },
+    {
+      "path": "browser-production/work-spps-1366.png",
+      "bytes": 2048634,
+      "sha256": "1af6f8e5fe5cc83a319c8e204bac8a72453907bca221dfc61ef697ccc8af4572"
+    },
+    {
+      "path": "browser-production/work-spps-375.png",
+      "bytes": 1099611,
+      "sha256": "775711f980908917537d58bfb0abe7e9aa80834d23bfd4a963f65963ecaffb92"
+    },
+    {
+      "path": "browser-production/work-teaching-1366.png",
+      "bytes": 181475,
+      "sha256": "5ba4e8eaa08b7e349d0860f75cb5f7c75f35ab72fc54c873160d13d7464278c0"
+    },
+    {
+      "path": "browser-production/work-teaching-375.png",
+      "bytes": 145983,
+      "sha256": "c455d1a22d7fcbb037a80477f388530712aebade1de2adf96233852d4d876358"
+    },
+    {
+      "path": "pdf-production/pdf-native-reader.png",
+      "bytes": 334454,
+      "sha256": "5a54a6bcc56378edf492316c696bfa1f01aa20811f408dda7bbf7ba820762bfb"
+    },
+    {
+      "path": "pdf-production/pdf-viewer-results.json",
+      "bytes": 1960,
+      "sha256": "31a10ddd3bdd452cbc8a2b13a62273f1d703f3053861270cc9135f64b3eed238"
+    },
+    {
+      "path": "pdf-production.log",
+      "bytes": 1809,
+      "sha256": "be26c4cbaf1b4230f55cc763d9ad0a297eefac88197f17f73605276ed022217b"
+    },
+    {
+      "path": "production-final.log",
+      "bytes": 11284,
+      "sha256": "29ae959f964be8d0ae24f4fd1a41354759e3ba7cbeadadc3c3edb70199b395a6"
+    },
+    {
+      "path": "production-gallery.log",
+      "bytes": 1647,
+      "sha256": "632bd93b53f2703458e118c99c10bbeaf70a33cef6353afae7c2226d80b7ac22"
+    },
+    {
+      "path": "production-video-diagnostic.log",
+      "bytes": 2203,
+      "sha256": "6e908dbc352baf907082005197d3312b6eea50c2a1d6b03717c3af9dabb73ee8"
+    },
+    {
+      "path": "release-alignment.log",
+      "bytes": 100,
+      "sha256": "f0e4d9198e5ae0be36d8a7148c378dc7b94e4273112943317254d72bcc227fb6"
+    },
+    {
+      "path": "release-check.log",
+      "bytes": 483,
+      "sha256": "3f6eeb3f579887719fc8feb7ada26a6e47984ac4cb48cbc9486f760bd5baa9bb"
+    },
+    {
+      "path": "release-install.log",
+      "bytes": 151,
+      "sha256": "b9249f76c8648342f17f85fd8faf47c71cc741234bc065989cb8c3bc065a6a29"
+    },
+    {
+      "path": "release-jd-tests.log",
+      "bytes": 782,
+      "sha256": "4a786a31e41d3587555ce4824c91450f090664d468dc51a8cd027edeb113f4ba"
+    },
+    {
+      "path": "release-prebuilt-package.json",
+      "bytes": 535,
+      "sha256": "6f41873ea9be25f099ea58ed33c4e74db55a9de406b6f02c1b35b7b782010286"
+    },
+    {
+      "path": "release-resume-build.log",
+      "bytes": 460,
+      "sha256": "b4ce7a11d0a00f41992e350e666257b1fecce545d4428cb5762d7eb79f6bf551"
+    },
+    {
+      "path": "release-resume-check.log",
+      "bytes": 3232,
+      "sha256": "f765968a9ef35130343081b8aee0408e8a7f096bf0722e67a3acc2c18e895f99"
+    },
+    {
+      "path": "release-site-build.log",
+      "bytes": 2059,
+      "sha256": "285c1338bec05eeec1ebe9a4dced8721f9c45055bea2fe5d69e75037f09a7ac0"
+    },
+    {
+      "path": "release-site-tests.log",
+      "bytes": 2291,
+      "sha256": "df999d3adc52a39bc694df9e31752ca4401636bd0e9c19c9c1113b3c1305d010"
+    },
+    {
+      "path": "vercel-deploy.log",
+      "bytes": 2069,
+      "sha256": "4aba03fd81be9a0b375ad3920dad7c133f4972957656e1442718f0cdaddfec51"
+    },
+    {
+      "path": "vercel-inspect.log",
+      "bytes": 1125,
+      "sha256": "99a23e45bd3d8e41a723b00ae091ebcc21e8aa58f71ae204ff4a0538c3455e8d"
+    }
+  ]
+}

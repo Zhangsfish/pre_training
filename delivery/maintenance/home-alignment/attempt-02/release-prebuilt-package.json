@@ -1,0 +1,25 @@
+{
+  "main_commit": "5ea262632032d2a885656dc5c197f9cd869e92d2",
+  "project": {
+    "projectId": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+    "orgId": "team_iUtfj6fbX7ntRyux5VD2Req3",
+    "projectName": "zhang-shuo-portfolio"
+  },
+  "source": "site/dist",
+  "files": 31,
+  "bytes": 22364182.0,
+  "sha256_match": true,
+  "config": {
+    "version": 3,
+    "routes": [
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/(.*)",
+        "status": 404,
+        "dest": "/404.html"
+      }
+    ]
+  }
+}
