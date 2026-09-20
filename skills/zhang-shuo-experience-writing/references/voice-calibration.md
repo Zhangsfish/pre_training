@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.6。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md) 与 [approved-teaching-long-form.md](approved-teaching-long-form.md)。
+状态：v1.7。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md) 与 [approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)。
 
 ## 用户修改揭示的差异
 
@@ -80,6 +80,17 @@
 | 沿用早期近似人数 | 以用户最终确认的19名学生、5名助教覆盖旧口径 | 用户明确更正的数字具有最高优先级；不得因旧文件或早期记忆恢复已废弃口径。 |
 
 本轮进一步确认：课程经历最强的结果不是“课上得好”，而是从零重构一套课程系统，依据一线行为持续调整，经复杂场景运行后形成教材和知识基础设施，并培养接班人使其可以独立运行。商业能力通过这条事实链自然显现，不需要把助教职称包装成虚构管理岗。
+
+## 第八轮：课程经历的简历压缩
+
+| 原稿倾向 | 用户确认方向 | 可复用规则 |
+|---|---|---|
+| 为缩短篇幅，把课程设计、复杂运营和继任交接合并成更少条目 | 保留三条分别承载系统与反馈、并行流程、教材与接班人 | 当三组事实提供不同的面试入口时，不为表面简洁删除其中一种能力证据。 |
+| 用“商业能力”概括教学经历 | 保留19名学生、5名助教、3条流程、91个样品瓶等现场事实 | 先写真实任务和尺度，让招聘者自己得出系统设计、运营与组织能力的判断。 |
+| 写“前两学期直接运营”并省略对象 | 改为“前两学期直接运营课程” | 动词必须有明确对象；尤其在一句同时出现教材、主页和交接时，不能要求读者猜测运营的是什么。 |
+| 把继任者独立运行写成本人持续管理的成果 | 明确第三学期逐步交接、第四学期由继任助教独立运行 | 继任体系是成果，但不能借结果扩大本人在退出后的直接管理范围。 |
+
+本轮进一步确认：从专业或教学经历抽象商业能力，不是把原始场景翻译成商业术语，而是选择能证明目标能力的具体事实，并让每条承担一个清晰、可继续追问的判断。
 
 ## 润色时怎样保留原意
 
