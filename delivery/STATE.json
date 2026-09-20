@@ -4,10 +4,19 @@
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
   "active_round": "R06",
-  "authorized_round": null,
+  "authorized_round": "R06",
   "controller": "planner_reviewer",
   "selected_design": "A",
-  "deployment_approval": null,
+  "deployment_approval": {
+    "approved_on": "2026-09-20",
+    "source": "user_chat",
+    "host": "vercel",
+    "scope": "public",
+    "domain": "platform_temporary_domain_only",
+    "dns_changes": false,
+    "fee_scope": "free_only_no_paid_upgrade",
+    "notes": "User asked to publish now to see the current site and confirmed it can be changed later. EdgeOne direct connector unavailable; use connected Vercel temporary public domain under the same no-DNS/no-paid constraints."
+  },
   "rounds": [
     {
       "id": "R01",
@@ -61,7 +70,7 @@
     },
     {
       "id": "R06",
-      "status": "needs_user",
+      "status": "ready",
       "prompt": "delivery/prompts/R06_RELEASE.md",
       "branch": "codex/R06",
       "report_path": "delivery/audits/R06/REPORT.md",
@@ -75,5 +84,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R05 attempt 01 accepted after clean-checkout rebuild, 40 tests, 56 viewport/JS configurations, true 200% zoom, native PDF click-through, external-link, factual/ownership and exhaustive dist/privacy review; PR #5 merged at 3abb14d725b7bd46181013d217dfc5a09d1716b7. No round is currently authorized. R06 awaits explicit deployment approval with host, public/private scope, domain/DNS scope and fee scope; deployment_approval remains null. SPPS public media remains pending and the accepted text-only degradation continues."
+  "note": "R05 accepted. User explicitly authorized R06 publication to a public temporary platform domain for visual review, with no custom-domain/DNS changes and no paid upgrade. EdgeOne direct connector is unavailable in this environment, so the authorized host is Vercel under the same scope. R06 is the only authorized round."
 }
