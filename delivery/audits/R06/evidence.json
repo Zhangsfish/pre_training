@@ -1,0 +1,112 @@
+{
+  "round": "R06",
+  "status": "BLOCKED",
+  "branch": "codex/R06",
+  "pr_url": null,
+  "base_commit": "9c4c3e885e9f5e03bfb6c8939e52d1de90a305ad",
+  "checked_at": "2026-09-20T03:06:50.012152+00:00",
+  "authorization": {
+    "approved_on": "2026-09-20",
+    "source": "user_chat",
+    "host": "vercel",
+    "scope": "public",
+    "domain": "platform_temporary_domain_only",
+    "dns_changes": false,
+    "fee_scope": "free_only_no_paid_upgrade",
+    "notes": "User asked to publish now to see the current site and confirmed it can be changed later. EdgeOne direct connector unavailable; use connected Vercel temporary public domain under the same no-DNS/no-paid constraints."
+  },
+  "implementation_changes": "No site/resume/content or deployment configuration changes; authentication probe and audit records only.",
+  "cli": {
+    "version": "59.23.2",
+    "install_exit_code": 0,
+    "credential_env_present": false,
+    "whoami": {
+      "command": "vercel whoami --no-color",
+      "exit_code": 1,
+      "started_at": "2026-09-20T03:04:21.1687512Z"
+    },
+    "loggedIn": false,
+    "reason": "login_required",
+    "userActionRequired": true
+  },
+  "connector": {
+    "environment": "Current Codex desktop, fresh calls this R06 turn",
+    "teams": {
+      "count": 0
+    },
+    "projects_without_team_filter": {
+      "count": 1,
+      "project_name": "qq-lingxi-agent-platform",
+      "action": "read-only discovery; unrelated project not modified"
+    },
+    "deploy_tool": {
+      "isError": true,
+      "error": "McpServerError: Tool deploy_to_vercel not found",
+      "error_code": "INVALID_ARGUMENT",
+      "json_rpc_code": -32602
+    },
+    "interpretation": "Read connection works, but exposed deployment write tool is unavailable. CLI tested independently."
+  },
+  "exact_missing_requirement": "One valid Vercel CLI login in this Codex local environment (vercel login); existing deployment authorization remains valid.",
+  "production_url": null,
+  "preview_url": null,
+  "deployment_id": null,
+  "deployed_commit": null,
+  "deployment_created": false,
+  "uploaded_files": 0,
+  "charges_incurred_by_this_attempt": false,
+  "dns_custom_domain_changes": false,
+  "analytics_added": false,
+  "repository_visibility_changed": false,
+  "state_modified": false,
+  "post_deploy_checks": {
+    "status": "not_run_no_deployment",
+    "checks": [
+      "HTTPS",
+      "home",
+      "four case routes",
+      "resume",
+      "PDF download",
+      "mobile",
+      "404",
+      "QQ repository",
+      "two Notion links",
+      "resources",
+      "native PDF online relative links",
+      "production URL"
+    ],
+    "screenshots": []
+  },
+  "rollback": "Not applicable: no deployment created or changed.",
+  "official_docs_checked": [
+    "https://vercel.com/docs/plans/hobby",
+    "https://vercel.com/docs/cli/login",
+    "https://vercel.com/docs/cli/deploy"
+  ],
+  "artifacts": [
+    {
+      "path": "attempt-01/allowlist-preflight.json",
+      "sha256": "4a640ab6728ccd5b6502395a0cbdb57aac9f36a502d15e5e14f173d578a00e49"
+    },
+    {
+      "path": "attempt-01/cli-install.log",
+      "sha256": "c78fbe02e07b1fbf5c243baa55bfebfba7ce4789d7dbcf87d3877939782eb804"
+    },
+    {
+      "path": "attempt-01/cli-version.log",
+      "sha256": "7844d7fa592485569369b06faf8d29a1d839baab6b5e10f81e0c59b6d69da42d"
+    },
+    {
+      "path": "attempt-01/cli-whoami-result.json",
+      "sha256": "6b61d7bae8d059a16877d7c500665298f0132a5e7ca2c657839976778763de12"
+    },
+    {
+      "path": "attempt-01/cli-whoami.log",
+      "sha256": "28099042b87d265bef1f81c12705d7916b31f7e7edc9a7061490281ea96e4e0e"
+    },
+    {
+      "path": "attempt-01/connector-results.json",
+      "sha256": "fde3e789602f64bf1e01fa7ced2ba6b62bfdb6ae1fac44fc92ecf35d4a200b27"
+    }
+  ]
+}
