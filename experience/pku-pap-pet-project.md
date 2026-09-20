@@ -1,6 +1,6 @@
 # Experience: 北京大学 PAP/ACP3 靶向 PET 探针项目 — 新方向落地与 AI-native 科研
 
-> Status: public-safe career evidence record.
+> Status: public-safe career evidence record; long-form and BRM resume wording confirmed on 2026-09-20.
 > Sensitive boundary: manuscript is being prepared for submission and related patent work is being handled externally. Do **not** publish novel compound structures, unpublished patent claims, exact synthetic details, or other confidential project information in this public repository.
 > Sources: user narrative + manuscript materials stored in the user's private file library.
 
@@ -12,8 +12,8 @@
 - External imaging / radiochemistry site: 北京大学肿瘤医院
 - External collaboration access was arranged by the supervisor, **not by the user**.
 - Current output status:
-  - **JMC manuscript in preparation for submission; user is first author.** Draft has been handed to the supervisor; do not call it submitted yet.
-  - two related patent matters have been sent by the supervisor to a patent agency / company; exact filing status and inventor order are currently unknown.
+  - **First-author manuscript draft completed and planned for submission to JMC.** Draft has been handed to the supervisor; do not call it submitted or published yet.
+  - related results are expected to form two patent applications; two patent matters have been sent by the supervisor to a patent agency / company, while exact filing status and inventor order are currently unknown. Do not call them filed or granted yet.
 
 ## Starting environment
 
@@ -32,7 +32,7 @@ The project required three practical experimental layers:
    - PET/CT imaging;
    - animal / biodistribution experiments.
 
-At project start, the local group had minimal day-to-day organic-synthesis operating infrastructure for this direction.
+At project start, the group already had the main equipment, but lacked the complete consumables and operating system needed for day-to-day organic synthesis in this direction.
 
 The user mainly rebuilt the **working layer**, not an expensive instrument platform:
 - migrated / re-established the standard organic-chemistry consumables and workflows used in a conventional synthesis lab;
@@ -42,7 +42,7 @@ The user mainly rebuilt the **working layer**, not an expensive instrument platf
 
 Resume rule:
 - do not exaggerate this as "built an entire laboratory from scratch";
-- stronger accurate claim: **established the missing day-to-day synthesis operating system for a new research direction.**
+- user-confirmed public shorthand: **brought the organic-synthesis lab from “0.5” to “1” by completing the missing consumables and operating system on top of existing major equipment.**
 
 ## Why the operating environment was difficult
 
@@ -77,6 +77,8 @@ Some external sessions required roughly ~20 categories / SKUs of materials by us
 
 User reports that a biodistribution experiment could cost roughly **RMB 4,000 per run**.
 
+The 68Ga half-life is approximately **68 minutes**. The user uses **about four hours** as the practical effective experiment window. This is an operational window, not a claim that radioactivity becomes zero or absolutely unmeasurable after four hours.
+
 Because the workflow was new, the operating principle was:
 1. break the final experiment into cheaper subproblems;
 2. validate conditions repeatedly in small experiments;
@@ -88,6 +90,22 @@ The user describes this as similar to a rocket launch: much of the work happens 
 The manuscript's final main biodistribution dataset was obtained in the **single planned formal run** described by the user.
 
 Do not treat RMB 4,000 as audited accounting; it is a user-reported approximate run cost.
+
+## User-confirmed training narrative
+
+The central career value of this project is not an exhaustive list of PET techniques. It is the working method trained by the environment:
+
+1. think through the objective, steps, dependencies, materials, timing, failure points, and decision criteria before the formal experiment;
+2. break high-cost, hard-window work into successive low-cost, small-scale MVPs;
+3. use AI to learn unfamiliar knowledge quickly;
+4. use literature, real operating constraints, and physical experimental results to decide which AI-assisted proposals are actually feasible;
+5. retain human responsibility for physical execution and the integrated result.
+
+Long-form and BRM resume reference copies are stored in:
+- `skills/zhang-shuo-experience-writing/references/approved-pet-long-form.md`;
+- `skills/zhang-shuo-experience-writing/references/approved-pet-resume-brm.md`.
+
+The user-confirmed long version intentionally does **not** repeat the “one formal run produced the main manuscript data” claim in its final output bullet. That bullet is reserved for authorship and current paper/patent status. The approved resume version retains the one-run result because it compresses method and outcome into two bullets.
 
 ## User's ownership
 
