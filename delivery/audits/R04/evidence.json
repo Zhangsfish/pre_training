@@ -1,0 +1,885 @@
+{
+  "round": "R04",
+  "attempt": 1,
+  "branch": "codex/R04",
+  "base_commit": "d6b2ff81f5400c9994cfac32050762f3e512fc3b",
+  "tested_commit": "fb94812872e4ce7910c5b1bb92c2901049a82f03",
+  "prompt_path": "delivery/prompts/R04_RESUMES.md",
+  "prompt_sha256": "9a236ecc129c2772c7b0398b27f6e4fd6ed82f3aff81734b7307ce0667c6298c",
+  "implementation_status": "completed",
+  "reviewer_decision": "pending",
+  "environment": {
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "astro": "7.3.3",
+    "typescript": "6.0.3",
+    "browser": "153.0.8010.52",
+    "playwright": "1.62.1",
+    "python": "3.12.14",
+    "pypdf": "6.10.0",
+    "poppler": "26.07.0",
+    "font": "Microsoft YaHei",
+    "dependencies_installed": false
+  },
+  "commands": [
+    {
+      "command": "npm.cmd --prefix site run check",
+      "log_path": "attempt-01/check.log",
+      "started_at": "2026-09-20T01:37:07.6213977Z",
+      "exit_code": 0,
+      "sha256": "ebb74a2f064aa686a12cb73975e306c7b180c310b0c72d10ac7060773bc5c1f1"
+    },
+    {
+      "command": "npm.cmd --prefix site run build",
+      "log_path": "attempt-01/build.log",
+      "started_at": "2026-09-20T01:37:28.4051312Z",
+      "exit_code": 0,
+      "sha256": "ee7c50851d02d0076f37d490cfdf588b76d1d88fac3ae15bd2f2fa6350b40e12"
+    },
+    {
+      "command": "npm.cmd --prefix site run test",
+      "log_path": "attempt-01/test.log",
+      "started_at": "2026-09-20T01:37:35.8006844Z",
+      "exit_code": 0,
+      "sha256": "71781312743b0c63b150b6d5430ed486bec0a01fc42a017ba3695a2f03f2661a"
+    },
+    {
+      "command": "npm.cmd --prefix site run test:jd",
+      "log_path": "attempt-01/test-jd.log",
+      "started_at": "2026-09-20T01:37:38.9385926Z",
+      "exit_code": 0,
+      "sha256": "1e7a3b6376497dd83223df32159e99497ed7d9d51ff67ed8fa15475a3e939e94"
+    },
+    {
+      "command": "npm.cmd --prefix site run audit:dist",
+      "log_path": "attempt-01/audit-dist.log",
+      "started_at": "2026-09-20T01:37:41.4737326Z",
+      "exit_code": 0,
+      "sha256": "34a1201a132f91a848b95bd15dfd0b715b551c74c359984b8c409e1a690dc9ef"
+    },
+    {
+      "command": "npm.cmd --prefix site run test:e2e",
+      "log_path": "attempt-01/test-e2e.log",
+      "started_at": "2026-09-20T01:37:43.6072584Z",
+      "exit_code": 0,
+      "sha256": "f9fdf5b4cfdbdc4a0c5b3cee1e093239f3dc5c2d6a20d65ead1713cf7378081d"
+    },
+    {
+      "log_path": "attempt-01/resume-build.log",
+      "started_at": "2026-09-20T01:35:09.3484675Z",
+      "command": "npm.cmd --prefix site run resume:build -- --verify-published",
+      "exit_code": 0,
+      "sha256": "ce59b130e82303b3fbc50a87935fc790cfb4ebd932d0be8bfcaf2da9c1555ff5"
+    },
+    {
+      "log_path": "attempt-01/resume-check.log",
+      "started_at": "2026-09-20T01:35:36.1275409Z",
+      "command": "npm.cmd --prefix site run resume:check",
+      "exit_code": 0,
+      "sha256": "4c63b3f41e133bb6d9f8444f001beec3e945f2a12e7622feb4d7b5a2a8a22a4e"
+    },
+    {
+      "log_path": "attempt-01/fixture-product-select.log",
+      "started_at": "2026-09-20T01:35:44.4434539Z",
+      "command": "node resume/scripts/select-jd.mjs --jd resume/fixtures/product-commercial.json",
+      "exit_code": 0,
+      "sha256": "cc91371636722597d142612850d4ee0e055a0bdde11a00a38e194db534f2070e"
+    },
+    {
+      "log_path": "attempt-01/fixture-product-build.log",
+      "started_at": "2026-09-20T01:35:45.6223365Z",
+      "command": "npm.cmd --prefix site run resume:build -- --variant-file resume/exports/fixture-product-commercial/variant.json",
+      "exit_code": 0,
+      "sha256": "3ecc0533026a02896426c7930bb88857046cf962d6c51002e7f1262bdfd504de"
+    },
+    {
+      "log_path": "attempt-01/fixture-product-check.log",
+      "started_at": "2026-09-20T01:35:55.8173481Z",
+      "command": "npm.cmd --prefix site run resume:check -- --variant-file resume/exports/fixture-product-commercial/variant.json",
+      "exit_code": 0,
+      "sha256": "4c456f428244772b5f124087a72a35b22788f2297e52a9aa055b5e2ce3c88ff6"
+    },
+    {
+      "log_path": "attempt-01/fixture-insight-select.log",
+      "started_at": "2026-09-20T01:35:59.9724438Z",
+      "command": "node resume/scripts/select-jd.mjs --jd resume/fixtures/consumer-insight.json",
+      "exit_code": 0,
+      "sha256": "0dad1974ba8401d17deed72e771e6466ac05fce4e934de6a16698d1b86483f04"
+    },
+    {
+      "log_path": "attempt-01/fixture-insight-build.log",
+      "started_at": "2026-09-20T01:36:01.2860580Z",
+      "command": "npm.cmd --prefix site run resume:build -- --variant-file resume/exports/fixture-consumer-insight/variant.json",
+      "exit_code": 0,
+      "sha256": "56aada431cf3009b05d9833e5e2068b27333b589a66a7a2e4bae458b14dd502f"
+    },
+    {
+      "log_path": "attempt-01/fixture-insight-check.log",
+      "started_at": "2026-09-20T01:36:08.2832984Z",
+      "command": "npm.cmd --prefix site run resume:check -- --variant-file resume/exports/fixture-consumer-insight/variant.json",
+      "exit_code": 0,
+      "sha256": "f29e43a7bca0f4f93f458cb978825ccfd595bf208adb5dc76b3b4cd1d1d6d656"
+    }
+  ],
+  "browser": {
+    "configurations": 56,
+    "screenshots": [
+      {
+        "path": "home-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "4969b985bd2e7712fe5af6fa16e334cad533eced0bc6c74132023de3c496069d"
+      },
+      {
+        "path": "home-firstfold-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": false,
+        "sha256": "4cac3d90cbf2674082563a0ec975a0f4ecc89965c078b800ca676d33abd81e66"
+      },
+      {
+        "path": "home-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "d5067d7a6901f89544df596d7f1a58482f27df41ae6566cb2616786f71ab472e"
+      },
+      {
+        "path": "home-firstfold-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": false,
+        "sha256": "268b5bdc87433a633f98b052999ed10a05491f8071ff7959bae8e52ac405656b"
+      },
+      {
+        "path": "home-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "b06880a58e05e5c419f7226c66331d7a564cbd38ef186f8e62678a66c16faf75"
+      },
+      {
+        "path": "home-firstfold-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": false,
+        "sha256": "7128af1b1e8a1f148ccdc95c754312915816beb3434ad9b75e08f4520fa2cbda"
+      },
+      {
+        "path": "kin-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "03411247b1eae19b3d168031168d19d444689870a5246c9d6c36ad3e52287905"
+      },
+      {
+        "path": "kin-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "ce7e919b385da1742214e799a2ddc43ea4d286d85d3448ccf0c63fe14e57d5d5"
+      },
+      {
+        "path": "kin-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "cdb05a39cc492e74b31f337f3589f3c32fe7fbdc3168d490670ed71f125632d8"
+      },
+      {
+        "path": "spps-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "df4f3ebb279ffb6e4940614c533cecb6075ee37f50fca3618b986bc68197e9e6"
+      },
+      {
+        "path": "spps-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "f161083674d1a9cb9f8b8103aef13b7374950fdbcab723ba79e1879a418e3389"
+      },
+      {
+        "path": "spps-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "352ef1de5f6acd6840c33122dceeaa392c54d97329cd55d5b1f865764833e124"
+      },
+      {
+        "path": "qq-lingxi-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "fcdf0c4871dfcf3fd875885e4e1397f2221a4d46b006be5d80224afe85102f3e"
+      },
+      {
+        "path": "qq-lingxi-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "8007981c55e130858c7d14ec079ba002559795a5934d49f625447c7ff09ae8f9"
+      },
+      {
+        "path": "qq-lingxi-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "d756ff8557d386d8d88a62f589c9be52669ca66ef53771c61c81be3a9b900868"
+      },
+      {
+        "path": "pet-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "d233af78712b6703b2231464f9bd55559d4bfcd417cdf9cbebf49e9bbb2016f2"
+      },
+      {
+        "path": "pet-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "29e9ba7a93a323e30a27b4ba7a3c22f261ecfc3ca265f561b2e754083ba31293"
+      },
+      {
+        "path": "pet-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "8e70f9fcb9d40dfe345b0e6b0a7d70ee0191cea6ed2427bf13b4989620df55b6"
+      },
+      {
+        "path": "resume-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "79161821ef70ad59d32765691e8c0cd50c472057e629bc9ad13e5b88e2240fe6"
+      },
+      {
+        "path": "resume-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "4b57d535abc03d2178273e73a1c3b2bedb13345141d21c82ce670a5b5473420e"
+      },
+      {
+        "path": "resume-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "ff3116d4716f9a8dabf05ca98615de17215c920a6790016db7efe9d36bd1af61"
+      },
+      {
+        "path": "404-1440.png",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "full_page": true,
+        "sha256": "1689fe9d79b34b263a1e722eed49d37f362b75593c81fd92572987f0d3206373"
+      },
+      {
+        "path": "404-768.png",
+        "viewport": {
+          "width": 768,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "a279b7b5a2b39536c1de1250564fa5bd4a8a503e04edf16f23bab2821ad7178a"
+      },
+      {
+        "path": "404-375.png",
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "full_page": true,
+        "sha256": "c811a791c11dbe47f9424a3a179649d9d3d460ef298caa27f9b682b62b86c121"
+      }
+    ],
+    "download_verified": true,
+    "local_links": [
+      "/#main",
+      "/",
+      "/#work",
+      "/#teaching",
+      "/resume/",
+      "/#contact",
+      "/work/kin/",
+      "/work/spps/",
+      "/work/qq-lingxi/",
+      "/work/pet/",
+      "/work/kin/#main",
+      "/work/kin/#part-1",
+      "/work/kin/#part-2",
+      "/work/kin/#part-3",
+      "/work/kin/#part-4",
+      "/work/kin/#part-5",
+      "/work/kin/#part-6",
+      "/work/spps/#main",
+      "/work/spps/#part-1",
+      "/work/spps/#part-2",
+      "/work/spps/#part-3",
+      "/work/qq-lingxi/#main",
+      "/work/qq-lingxi/#part-1",
+      "/work/qq-lingxi/#part-2",
+      "/work/qq-lingxi/#part-3",
+      "/work/pet/#main",
+      "/work/pet/#part-1",
+      "/work/pet/#part-2",
+      "/work/pet/#part-3",
+      "/resume/#main",
+      "/downloads/zhang-shuo-resume.pdf",
+      "/not-a-real-page/#main"
+    ]
+  },
+  "exports": [
+    {
+      "id": "general-zh",
+      "public_pdf": true,
+      "files": [
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_general-zh_20260920.pdf",
+          "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_general-zh_20260920.md",
+          "sha256": "41df100d340f8c8e39b834f7e91e5d67bd689d4eaf0cb534be2e5d5a579e3061"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_general-zh_20260920.html",
+          "sha256": "cbf6c681915fed22a2daf7ad5f09d5d09542e51d0783b0589d386ba01ec06181"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_general-zh_20260920.png",
+          "sha256": "c01f297648d2cc4a3f3dfe3a13e228118117341d1aaa0b15b9f9fc2c1cf375b2"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_general-zh_20260920.txt",
+          "sha256": "42dd7e6679646c283c9b5cc4f9beed3e696937ede686e19c70899bde39cdeaf5"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_general-zh_20260920.check.json",
+          "sha256": "83e9e2b6fdbea9b252597218f139d61db8da41b2f61f4a65e184a51ded4c71d4"
+        }
+      ],
+      "check": {
+        "pages": 1,
+        "a4": true,
+        "text_order_verified": true,
+        "replacement_characters": false,
+        "links": [
+          "../work/kin/",
+          "../work/spps/",
+          "../work/qq-lingxi/",
+          "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "../work/pet/"
+        ],
+        "text_sha256": "ebd1008d7963bfa0b38a6595ed27d00df1063a21e61d6baff92c618fccff2d4c",
+        "pdf_sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+      },
+      "visual_inspection": "One page inspected: legible Chinese, no clipping/black boxes/overlaps; A4 single column, 10.5pt, 14mm margins"
+    },
+    {
+      "id": "product-commercial-zh",
+      "public_pdf": false,
+      "files": [
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_product-commercial-zh_20260920.pdf",
+          "sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_product-commercial-zh_20260920.md",
+          "sha256": "52ae294a86420dcdae1ad842eac436509ad026db185ea429a501c21b5bd57911"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_product-commercial-zh_20260920.html",
+          "sha256": "d970381c715810814e27973702e46cfed645f757c4c2ff383084c6790293537d"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_product-commercial-zh_20260920.png",
+          "sha256": "003d903501ec78cc88036ee510ca1680339a19de15352cc61485e2c0195ec04d"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_product-commercial-zh_20260920.txt",
+          "sha256": "674f7208cfaf5e2780f8ec1d70907357c3dc37592ffe19c35287e1291e800e96"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_product-commercial-zh_20260920.check.json",
+          "sha256": "43173000941c36292fd2860a2f63fdcb39d4822ad1d02f06efb8d040ad2db8a9"
+        }
+      ],
+      "check": {
+        "pages": 1,
+        "a4": true,
+        "text_order_verified": true,
+        "replacement_characters": false,
+        "links": [
+          "../work/spps/",
+          "../work/kin/",
+          "../work/qq-lingxi/",
+          "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "../#teaching",
+          "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+          "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+        ],
+        "text_sha256": "b9a292622e2bea5a1ea7dc55ebe7ded5b273037442e2492725ef05060ac619e8",
+        "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22"
+      },
+      "visual_inspection": "One page inspected: legible Chinese, no clipping/black boxes/overlaps; A4 single column, 10.5pt, 14mm margins"
+    },
+    {
+      "id": "brand-insight-zh",
+      "public_pdf": false,
+      "files": [
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_brand-insight-zh_20260920.pdf",
+          "sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_brand-insight-zh_20260920.md",
+          "sha256": "235fd71b748f886016111aea59f686e0c38b59405e50bfc5fe3a1d916bea7588"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_brand-insight-zh_20260920.html",
+          "sha256": "029f3f83a2ace74d647615de0597e4de3cca1a4a54225af48f7f8606bbf0406a"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_brand-insight-zh_20260920.png",
+          "sha256": "d2cf2f8fea264267c281d7737c41e7b9886129b7f9cbfcea6059876c0e7e1cc4"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_brand-insight-zh_20260920.txt",
+          "sha256": "5bafeec539aa16fcf663d096d969af8df6b69ed4697cada475958bbca8c2cb99"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_brand-insight-zh_20260920.check.json",
+          "sha256": "1c748ff2b871b3178ce2f333d3ab78a2e46707325192bc87c5e314e9a5c77678"
+        }
+      ],
+      "check": {
+        "pages": 1,
+        "a4": true,
+        "text_order_verified": true,
+        "replacement_characters": false,
+        "links": [
+          "../work/kin/",
+          "../work/qq-lingxi/",
+          "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "../#teaching",
+          "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+          "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+        ],
+        "text_sha256": "b2c04adeb3b8dda70e68e30ab8f4bc5e81b94a06177df2412faccdadbc5d01d4",
+        "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913"
+      },
+      "visual_inspection": "One page inspected: legible Chinese, no clipping/black boxes/overlaps; A4 single column, 10.5pt, 14mm margins"
+    },
+    {
+      "id": "ai-product-zh",
+      "public_pdf": false,
+      "files": [
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_ai-product-zh_20260920.pdf",
+          "sha256": "bed14317325b5997d8b119391b20cb5c6cc35e549635f6e000b6194f684b0a4f"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_ai-product-zh_20260920.md",
+          "sha256": "69cd33af163bb4c4fdfea06b15d29cd92548f705d791e0fc711771cad35ca872"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_ai-product-zh_20260920.html",
+          "sha256": "af1a326545d030059194bd56a1e8cc85a6d43569915f736a04d10b6fede21b1e"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_ai-product-zh_20260920.png",
+          "sha256": "34003c633bc5316791c8e5aee44ac980cfb00df5d45bca3542e4e8078af7a026"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_ai-product-zh_20260920.txt",
+          "sha256": "5a8e23d99005c9889ecf4a2b23d2228e15f3339e7bb49e67e989f8524d0e74a6"
+        },
+        {
+          "path": "E:/myself/pre_training/resume/exports/zhang-shuo_ai-product-zh_20260920.check.json",
+          "sha256": "d302457fb853bb0ffece78fe318ec9ff9cad8b421d16dc6abf87c47ace9aa3c0"
+        }
+      ],
+      "check": {
+        "pages": 1,
+        "a4": true,
+        "text_order_verified": true,
+        "replacement_characters": false,
+        "links": [
+          "../work/qq-lingxi/",
+          "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "../work/kin/",
+          "../work/pet/",
+          "../work/spps/"
+        ],
+        "text_sha256": "09e766a22eb81f330ac199f7488187fe4c0af7788271be76a56e7de4f2ff49bf",
+        "pdf_sha256": "bed14317325b5997d8b119391b20cb5c6cc35e549635f6e000b6194f684b0a4f"
+      },
+      "visual_inspection": "One page inspected: legible Chinese, no clipping/black boxes/overlaps; A4 single column, 10.5pt, 14mm margins"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "fixture-product-commercial",
+      "experience_order": [
+        "spps",
+        "kin",
+        "qq-lingxi",
+        "teaching"
+      ],
+      "selected_claim_ids": [
+        "profile.identity",
+        "profile.pku",
+        "profile.jlu",
+        "spps.ownership",
+        "spps.delivery",
+        "spps.scripts",
+        "spps.collaboration",
+        "kin.h1",
+        "kin.h2",
+        "kin.h3",
+        "kin.ownership",
+        "kin.product",
+        "kin.ai",
+        "kin.status",
+        "qq.thesis",
+        "qq.ownership",
+        "qq.prototype",
+        "qq.competition",
+        "teaching.scope",
+        "teaching.design",
+        "teaching.feedback",
+        "teaching.material",
+        "teaching.links",
+        "spps.period"
+      ],
+      "pdf_path": "E:/myself/pre_training/resume/exports/zhang-shuo_fixture-product-commercial_20260920.pdf",
+      "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22",
+      "check": {
+        "pages": 1,
+        "a4": true,
+        "text_order_verified": true,
+        "replacement_characters": false,
+        "links": [
+          "../work/spps/",
+          "../work/kin/",
+          "../work/qq-lingxi/",
+          "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "../#teaching",
+          "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+          "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+        ],
+        "text_sha256": "b9a292622e2bea5a1ea7dc55ebe7ded5b273037442e2492725ef05060ac619e8",
+        "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22"
+      }
+    },
+    {
+      "id": "fixture-consumer-insight",
+      "experience_order": [
+        "kin",
+        "qq-lingxi",
+        "teaching"
+      ],
+      "selected_claim_ids": [
+        "profile.identity",
+        "profile.pku",
+        "profile.jlu",
+        "kin.h1",
+        "kin.h2",
+        "kin.h3",
+        "kin.ownership",
+        "kin.product",
+        "kin.ai",
+        "kin.status",
+        "qq.thesis",
+        "qq.ownership",
+        "qq.prototype",
+        "qq.competition",
+        "teaching.scope",
+        "teaching.design",
+        "teaching.feedback",
+        "teaching.material",
+        "teaching.links"
+      ],
+      "pdf_path": "E:/myself/pre_training/resume/exports/zhang-shuo_fixture-consumer-insight_20260920.pdf",
+      "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913",
+      "check": {
+        "pages": 1,
+        "a4": true,
+        "text_order_verified": true,
+        "replacement_characters": false,
+        "links": [
+          "../work/kin/",
+          "../work/qq-lingxi/",
+          "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+          "../#teaching",
+          "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+          "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a"
+        ],
+        "text_sha256": "b2c04adeb3b8dda70e68e30ab8f4bc5e81b94a06177df2412faccdadbc5d01d4",
+        "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913"
+      }
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "variant": "general-zh",
+    "href": "/downloads/zhang-shuo-resume.pdf",
+    "date": "2026-09-20",
+    "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+    "input_sha256": "9d57ec16fd22a765bcf60bc71433ba44e3e93cb0978b36814055c13fc7bbdcb6",
+    "authorization": "delivery/prompts/R04_RESUMES.md",
+    "reviewer_decision": "pending"
+  },
+  "unchanged": {
+    "facts": true,
+    "approved_claims": true,
+    "home_identity_and_order": true,
+    "state": true
+  },
+  "known_limits": [
+    "CET-6 is not present in the approved publication claims; optional language line omitted, no new claim approval claimed.",
+    "PDF local detail URIs are relative; the final hosting/PDF reader must verify base resolution in the release round. Offline copies may not resolve these links. Absolute QQ/Notion links remain present.",
+    "KIN anonymous repository 404 from R03 remains; resume uses local case route, not a claimed working repository.",
+    "SPPS media remains pending permission/bridge; no raw media exported.",
+    "DOCX deferred per R04; no real-JD application or deployment performed."
+  ],
+  "artifacts": [
+    {
+      "path": "attempt-01/404-1440.png",
+      "sha256": "1689fe9d79b34b263a1e722eed49d37f362b75593c81fd92572987f0d3206373"
+    },
+    {
+      "path": "attempt-01/404-375.png",
+      "sha256": "c811a791c11dbe47f9424a3a179649d9d3d460ef298caa27f9b682b62b86c121"
+    },
+    {
+      "path": "attempt-01/404-768.png",
+      "sha256": "a279b7b5a2b39536c1de1250564fa5bd4a8a503e04edf16f23bab2821ad7178a"
+    },
+    {
+      "path": "attempt-01/audit-dist.log",
+      "sha256": "34a1201a132f91a848b95bd15dfd0b715b551c74c359984b8c409e1a690dc9ef"
+    },
+    {
+      "path": "attempt-01/browser-results.json",
+      "sha256": "1c91b98ff484773807fd8cdd012c3cb8a9cb457ebc52fb6119f62d99d5b3413f"
+    },
+    {
+      "path": "attempt-01/build.log",
+      "sha256": "ee7c50851d02d0076f37d490cfdf588b76d1d88fac3ae15bd2f2fa6350b40e12"
+    },
+    {
+      "path": "attempt-01/check.log",
+      "sha256": "ebb74a2f064aa686a12cb73975e306c7b180c310b0c72d10ac7060773bc5c1f1"
+    },
+    {
+      "path": "attempt-01/fixture-insight-build.log",
+      "sha256": "56aada431cf3009b05d9833e5e2068b27333b589a66a7a2e4bae458b14dd502f"
+    },
+    {
+      "path": "attempt-01/fixture-insight-check.log",
+      "sha256": "f29e43a7bca0f4f93f458cb978825ccfd595bf208adb5dc76b3b4cd1d1d6d656"
+    },
+    {
+      "path": "attempt-01/fixture-insight-select.log",
+      "sha256": "0dad1974ba8401d17deed72e771e6466ac05fce4e934de6a16698d1b86483f04"
+    },
+    {
+      "path": "attempt-01/fixture-product-build.log",
+      "sha256": "3ecc0533026a02896426c7930bb88857046cf962d6c51002e7f1262bdfd504de"
+    },
+    {
+      "path": "attempt-01/fixture-product-check.log",
+      "sha256": "4c456f428244772b5f124087a72a35b22788f2297e52a9aa055b5e2ce3c88ff6"
+    },
+    {
+      "path": "attempt-01/fixture-product-select.log",
+      "sha256": "cc91371636722597d142612850d4ee0e055a0bdde11a00a38e194db534f2070e"
+    },
+    {
+      "path": "attempt-01/home-1440.png",
+      "sha256": "4969b985bd2e7712fe5af6fa16e334cad533eced0bc6c74132023de3c496069d"
+    },
+    {
+      "path": "attempt-01/home-375.png",
+      "sha256": "b06880a58e05e5c419f7226c66331d7a564cbd38ef186f8e62678a66c16faf75"
+    },
+    {
+      "path": "attempt-01/home-768.png",
+      "sha256": "d5067d7a6901f89544df596d7f1a58482f27df41ae6566cb2616786f71ab472e"
+    },
+    {
+      "path": "attempt-01/home-firstfold-1440.png",
+      "sha256": "4cac3d90cbf2674082563a0ec975a0f4ecc89965c078b800ca676d33abd81e66"
+    },
+    {
+      "path": "attempt-01/home-firstfold-375.png",
+      "sha256": "7128af1b1e8a1f148ccdc95c754312915816beb3434ad9b75e08f4520fa2cbda"
+    },
+    {
+      "path": "attempt-01/home-firstfold-768.png",
+      "sha256": "268b5bdc87433a633f98b052999ed10a05491f8071ff7959bae8e52ac405656b"
+    },
+    {
+      "path": "attempt-01/kin-1440.png",
+      "sha256": "03411247b1eae19b3d168031168d19d444689870a5246c9d6c36ad3e52287905"
+    },
+    {
+      "path": "attempt-01/kin-375.png",
+      "sha256": "cdb05a39cc492e74b31f337f3589f3c32fe7fbdc3168d490670ed71f125632d8"
+    },
+    {
+      "path": "attempt-01/kin-768.png",
+      "sha256": "ce7e919b385da1742214e799a2ddc43ea4d286d85d3448ccf0c63fe14e57d5d5"
+    },
+    {
+      "path": "attempt-01/pdf-ai-product-zh-check.json",
+      "sha256": "77d5b807afa599ce9c26799be7b7d7dd93e2e981cad1ee1e30014acc41de94b8"
+    },
+    {
+      "path": "attempt-01/pdf-ai-product-zh.png",
+      "sha256": "34003c633bc5316791c8e5aee44ac980cfb00df5d45bca3542e4e8078af7a026"
+    },
+    {
+      "path": "attempt-01/pdf-brand-insight-zh-check.json",
+      "sha256": "2fecc2b7854879326f1c1933135d7844365ec5b427b9ab3f08a59e5739ff0619"
+    },
+    {
+      "path": "attempt-01/pdf-brand-insight-zh.png",
+      "sha256": "d2cf2f8fea264267c281d7737c41e7b9886129b7f9cbfcea6059876c0e7e1cc4"
+    },
+    {
+      "path": "attempt-01/pdf-general-zh-check.json",
+      "sha256": "4bf59bf639e0679933b95a1055802e3e9f8472b0deba1d96506071117f53edff"
+    },
+    {
+      "path": "attempt-01/pdf-general-zh.png",
+      "sha256": "c01f297648d2cc4a3f3dfe3a13e228118117341d1aaa0b15b9f9fc2c1cf375b2"
+    },
+    {
+      "path": "attempt-01/pdf-product-commercial-zh-check.json",
+      "sha256": "cb69cdd3ee6d4fb782c7f290959fb3103386bd1a20eaa7652695d22df448cfd4"
+    },
+    {
+      "path": "attempt-01/pdf-product-commercial-zh.png",
+      "sha256": "003d903501ec78cc88036ee510ca1680339a19de15352cc61485e2c0195ec04d"
+    },
+    {
+      "path": "attempt-01/pet-1440.png",
+      "sha256": "d233af78712b6703b2231464f9bd55559d4bfcd417cdf9cbebf49e9bbb2016f2"
+    },
+    {
+      "path": "attempt-01/pet-375.png",
+      "sha256": "8e70f9fcb9d40dfe345b0e6b0a7d70ee0191cea6ed2427bf13b4989620df55b6"
+    },
+    {
+      "path": "attempt-01/pet-768.png",
+      "sha256": "29e9ba7a93a323e30a27b4ba7a3c22f261ecfc3ca265f561b2e754083ba31293"
+    },
+    {
+      "path": "attempt-01/qq-lingxi-1440.png",
+      "sha256": "fcdf0c4871dfcf3fd875885e4e1397f2221a4d46b006be5d80224afe85102f3e"
+    },
+    {
+      "path": "attempt-01/qq-lingxi-375.png",
+      "sha256": "d756ff8557d386d8d88a62f589c9be52669ca66ef53771c61c81be3a9b900868"
+    },
+    {
+      "path": "attempt-01/qq-lingxi-768.png",
+      "sha256": "8007981c55e130858c7d14ec079ba002559795a5934d49f625447c7ff09ae8f9"
+    },
+    {
+      "path": "attempt-01/resume-1440.png",
+      "sha256": "79161821ef70ad59d32765691e8c0cd50c472057e629bc9ad13e5b88e2240fe6"
+    },
+    {
+      "path": "attempt-01/resume-375.png",
+      "sha256": "ff3116d4716f9a8dabf05ca98615de17215c920a6790016db7efe9d36bd1af61"
+    },
+    {
+      "path": "attempt-01/resume-768.png",
+      "sha256": "4b57d535abc03d2178273e73a1c3b2bedb13345141d21c82ce670a5b5473420e"
+    },
+    {
+      "path": "attempt-01/resume-build.log",
+      "sha256": "ce59b130e82303b3fbc50a87935fc790cfb4ebd932d0be8bfcaf2da9c1555ff5"
+    },
+    {
+      "path": "attempt-01/resume-check.log",
+      "sha256": "4c63b3f41e133bb6d9f8444f001beec3e945f2a12e7622feb4d7b5a2a8a22a4e"
+    },
+    {
+      "path": "attempt-01/spps-1440.png",
+      "sha256": "df4f3ebb279ffb6e4940614c533cecb6075ee37f50fca3618b986bc68197e9e6"
+    },
+    {
+      "path": "attempt-01/spps-375.png",
+      "sha256": "352ef1de5f6acd6840c33122dceeaa392c54d97329cd55d5b1f865764833e124"
+    },
+    {
+      "path": "attempt-01/spps-768.png",
+      "sha256": "f161083674d1a9cb9f8b8103aef13b7374950fdbcab723ba79e1879a418e3389"
+    },
+    {
+      "path": "attempt-01/test-e2e.log",
+      "sha256": "f9fdf5b4cfdbdc4a0c5b3cee1e093239f3dc5c2d6a20d65ead1713cf7378081d"
+    },
+    {
+      "path": "attempt-01/test-jd.log",
+      "sha256": "1e7a3b6376497dd83223df32159e99497ed7d9d51ff67ed8fa15475a3e939e94"
+    },
+    {
+      "path": "attempt-01/test.log",
+      "sha256": "71781312743b0c63b150b6d5430ed486bec0a01fc42a017ba3695a2f03f2661a"
+    }
+  ]
+}

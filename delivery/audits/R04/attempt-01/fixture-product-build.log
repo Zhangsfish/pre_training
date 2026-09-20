@@ -1,0 +1,12 @@
+command=npm.cmd --prefix site run resume:build -- --variant-file resume/exports/fixture-product-commercial/variant.json
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:35:45.6223365Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 resume:build
+> node ../resume/scripts/build.mjs --variant-file resume/exports/fixture-product-commercial/variant.json
+
+BUILT fixture-product-commercial: resume\exports\zhang-shuo_fixture-product-commercial_20260920.{html,md,pdf} (10.5pt; A4 14mm margins)
+
+exit_code=0

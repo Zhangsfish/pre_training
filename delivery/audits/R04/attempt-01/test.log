@@ -1,0 +1,50 @@
+command=npm.cmd --prefix site run test
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:37:35.8006844Z
+node=v24.15.0
+npm=11.12.1
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ reviewed source set passes review and production without source drift (41.2996ms)
+✔ missing claim fails closed (15.713ms)
+✔ unknown cannot become an outcome (14.0729ms)
+✔ excluded project cannot enter default home (13.7601ms)
+✔ draft is blocked from production (29.472ms)
+✔ approving document shells does not approve their underlying claims (17.838ms)
+✔ draft negative fixtures do not mutate the planner-approved source (20.5388ms)
+✔ duplicate identifiers rejected (14.2706ms)
+✔ nonexistent source rejected (12.9375ms)
+✔ wrong source heading rejected (14.8419ms)
+✔ source drift requests targeted review rather than silently updating it (13.4205ms)
+✔ required external link qq-lingxi-repo must exist (16.6622ms)
+✔ required external link notion-organic-synthesis must exist (14.3085ms)
+✔ required external link notion-organic-chemistry must exist (12.3777ms)
+✔ course links must also appear in teaching, not only registry (13.8369ms)
+✔ both resume-only fields are forbidden in site allowlist (27.5003ms)
+✔ real resume fields exist but explicit site projection omits their names and values (3.7027ms)
+✔ pending media cannot be referenced (13.8462ms)
+✔ pending original cannot be assigned public path (13.162ms)
+✔ excluded and resume-only claims cannot render (31.972ms)
+✔ production command ignores inherited review env and exits nonzero before output (431.6085ms)
+✔ case sections preserve every approved sentence, without introducing body facts (10.8923ms)
+✔ KIN starts with ordinary life; competitive checking stays after the hypotheses and product (2.4754ms)
+✔ dist gate rejects rogue-media (85.625ms)
+✔ dist gate rejects candidate-route (78.8917ms)
+✔ dist gate rejects private-field (76.5685ms)
+✔ dist gate rejects broken-link (69.5225ms)
+✔ dist gate rejects fake-pdf (70.8601ms)
+✔ R04 output rejects tampered-pdf (83.6558ms)
+✔ R04 output rejects unregistered-variant (86.1474ms)
+✔ R04 output rejects resume-contact-in-case (91.0476ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1029.5388
+
+exit_code=0

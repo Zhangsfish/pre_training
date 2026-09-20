@@ -1,0 +1,8 @@
+command=node resume/scripts/select-jd.mjs --jd resume/fixtures/consumer-insight.json
+cwd=E:/myself/pre_training
+started_at=2026-09-20T01:35:59.9724438Z
+node=v24.15.0
+npm=11.12.1
+E:\myself\pre_training\resume\exports\fixture-consumer-insight\variant.json
+
+exit_code=0
