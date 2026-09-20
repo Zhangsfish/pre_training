@@ -15,6 +15,6 @@ const next=view.cases[(index+1)%view.cases.length];
 <div class="case-grid"><nav class="toc" aria-label="本页目录"><p>本页选读</p>{p.sections.map((s,i)=><a href={`#part-${i+1}`}>{String(i+1).padStart(2,'0')}　{s.heading}</a>)}</nav>
 <div class="case-body">{p.sections.map((s,i)=><section id={`part-${i+1}`}><h2>{s.heading}</h2>{s.blocks.map(block=>block.kind==='list'?<ul>{block.items!.map(item=><li>{item}</li>)}</ul>:<p>{block.text}</p>)}</section>)}
 {p.id==='spps'&&<aside class="media-note"><strong>实拍素材整理中</strong>当前为文字版案例，未展示未经公开许可的设备素材。</aside>}
-<div class="case-end"><p class="boundary">{p.boundary}</p>{p.links.length>0&&<div class="links">{p.links.map(l=><a href={l.url}>{l.label} ↗</a>)}</div>}</div></div></div></article>
+<div class="case-end"><p class="boundary">{p.boundary}</p>{p.links.length>0&&<div class="links">{p.links.map(l=><a href={l.url}>{l.label} ↗</a>)}</div>}{p.id==='kin'&&<p class="note">仓库匿名访问暂不可用，可先阅读本站案例。</p>}</div></div></div></article>
 <div class="case-next"><a href="/#work">← 返回项目索引</a><a href={`/work/${next.id}/`}>下一篇：{names[next.id]} →</a></div>
 </BaseLayout>

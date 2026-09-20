@@ -56,13 +56,13 @@ try {
      for(const p of view.projects.filter(p=>p.id!=='teaching'))for(const key of ['title','status','ownership','result','boundary'])assert.ok(text.includes(p[key]),`${p.id} ${key}`);
      for(const id of ['qq-lingxi-repo','notion-organic-synthesis','notion-organic-chemistry'])assert.ok(await page.locator(`a[href="${data.links.find(l=>l.id===id).url}"]`).isVisible());
      for(const selector of ['.name','#headline','.hero .intro','.primary']){const b=await page.locator(selector).boundingBox();assert.ok(b&&b.y>=0&&b.y+b.height<=(width===1440?1000:812),`${selector} firstfold ${width}`);}
-     assert.ok(text.includes('2027届'));
+     assert.ok(text.includes('2027届'));assert.ok(text.includes('仓库匿名访问暂不可用'));
    } else if(data.home.project_order.includes(name)) {
      const p=data.projects.find(p=>p.id===name);
      for(const key of ['title','status_label','summary','ownership','result','boundary']) assert.ok(text.includes(p[key]),`${name}: ${key}`);
      const blocks=caseSections(name,p.body).flatMap(s=>s.blocks.flatMap(b=>b.items||[b.text]));
      for(const block of blocks)assert.ok(text.includes(block),`${name} approved body missing`);
-     if(name==='kin') {assert.ok(text.indexOf('H2：')<text.indexOf('爱牵挂'));assert.ok(text.indexOf('普通的一天')<text.indexOf('爱牵挂'));}
+     if(name==='kin') {assert.ok(text.indexOf('H2：')<text.indexOf('爱牵挂'));assert.ok(text.indexOf('普通的一天')<text.indexOf('爱牵挂'));assert.ok(text.includes('仓库匿名访问暂不可用'));}
      if(name==='spps')assert.ok(await page.getByText('实拍素材整理中',{exact:true}).isVisible());
      if(name==='qq-lingxi')assert.ok(await page.locator(`a[href="${data.links.find(l=>l.id==='qq-lingxi-repo').url}"]`).isVisible());
    } else if(name==='resume')assert.ok(text.includes('PDF 尚未生成'));
