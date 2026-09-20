@@ -4,7 +4,7 @@
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
   "active_round": "R07",
-  "authorized_round": "R07",
+  "authorized_round": null,
   "controller": "planner_reviewer",
   "selected_design": "A",
   "deployment_approval": {
@@ -80,17 +80,19 @@
     },
     {
       "id": "R07",
-      "status": "blocked",
+      "status": "accepted",
       "prompt": "delivery/prompts/R07_MEDIA_GALLERY.md",
       "branch": "codex/R07-media-gallery",
       "report_path": "delivery/audits/R07/REPORT.md",
-      "blocker": "Implementation complete. Existing Vercel scope returns 403; initial generic deployment action also rejected by automatic approval review. No remote push/public deployment."
+      "review_path": "delivery/reviews/R07-a01.md",
+      "pr_number": 7,
+      "accepted_commit": "223dd0f0a920de05ba8648f25a0a463ece26b9e8"
     }
   ],
   "assets": {
     "spps_raw_archive": "verified_present",
-    "spps_publication": "pending_review",
-    "spps_codex_access": "bridge_pending"
+    "spps_publication": "approved",
+    "spps_codex_access": "codex_ready"
   },
-  "note": "User explicitly authorized implementation and publication of media-first redesign in current Work turn. Existing Vercel target, public temporary domain, no DNS/fees. No final ACCEPT self-assigned."
+  "note": "R07 accepted and the media-first portfolio is published_and_verified at https://zhang-shuo-portfolio.vercel.app. Final Vercel deployment dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE is READY and all 29 remote files exactly match the audited dist. The separate QQ Demo remains behind Basic Auth and is non-required; QQ GitHub and both Notion pages are anonymously accessible. No round is currently authorized. Future changes require a new reviewed maintenance change from main."
 }
