@@ -69,3 +69,5 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 - 润色后是否仍像本人，而不是像标准商业文案？
 
 当任务涉及修改用户已经亲自改过的文字，读取 [references/voice-calibration.md](references/voice-calibration.md)，以用户修改后的取舍为准。
+
+当任务是申请表中的长篇项目描述，需要查看一份已经完成用户校准的成稿时，读取 [references/approved-kin-long-form.md](references/approved-kin-long-form.md)。只学习其叙事结构、因果密度和语气，不把 KIN 的事实迁移到其他经历。
