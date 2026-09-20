@@ -3,10 +3,10 @@
   "architecture_version": "architecture-v1",
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
-  "active_round": "R02",
-  "authorized_round": "R02",
+  "active_round": "R03",
+  "authorized_round": "R03",
   "controller": "planner_reviewer",
-  "selected_design": null,
+  "selected_design": "A",
   "deployment_approval": null,
   "rounds": [
     {
@@ -21,17 +21,17 @@
     },
     {
       "id": "R02",
-      "status": "needs_user",
+      "status": "accepted",
       "prompt": "delivery/prompts/R02_VISUAL.md",
       "branch": "codex/R02",
       "report_path": "delivery/audits/R02/REPORT.md",
-      "review_path": "delivery/reviews/R02-a01.md",
+      "review_path": "delivery/reviews/R02-a02.md",
       "pr_number": 2,
-      "accepted_commit": null
+      "accepted_commit": "0243dd30d09418911464b9238cf9db0ca7a25a82"
     },
     {
       "id": "R03",
-      "status": "locked",
+      "status": "ready",
       "prompt": "delivery/prompts/R03_SITE.md",
       "branch": "codex/R03",
       "report_path": "delivery/audits/R03/REPORT.md",
@@ -75,5 +75,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R02 attempt 01 passed factual, engineering, privacy and production-isolation review. User must choose A/B/C before R02 can be accepted; PR #2 stays open and R03 remains locked."
+  "note": "R02 accepted with visual direction A selected by planner under delegated design responsibility. R03 is the only authorized round: build one complete site from A; no B/C production alternatives, no deployment. SPPS public media remains pending planner bridge/permission review."
 }
