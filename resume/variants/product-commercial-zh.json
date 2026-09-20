@@ -27,6 +27,8 @@
     "teaching.feedback",
     "teaching.material",
     "teaching.links",
+    "teaching.kinetics",
+    "teaching.succession",
     "spps.period"
   ],
   "section_order": [
@@ -95,7 +97,7 @@
     ],
     "teaching": [
       {
-        "text": "面向核心班至少 19 名学生、持续两个学期，重构课程框架，约 8 个实验为新设计或实质重构；逐课记录常见错误并据此设计后续考核。",
+        "text": "面向19名核心学生重构课程能力路径及预习、实验、报告、批改和考核流程，独立设计或实质重构约8个实验；逐课记录共性错误并反馈至后续讲解、流程与考题。",
         "claim_ids": [
           "teaching.scope",
           "teaching.design",
@@ -103,23 +105,31 @@
         ]
       },
       {
-        "text": "重写教材框架、组织学生分工写作并完成终稿整合；教材尚未出版。创建两个 Notion 课程主页，作为历史课程资料。",
+        "text": "将19名学生、5名助教参与的动力学实验拆解为3条并行流程，规划91个样品瓶及取样、淬灭、处理、GC分析的时间和交接关系，获得质量较好的动力学数据。",
+        "claim_ids": [
+          "teaching.kinetics"
+        ]
+      },
+      {
+        "text": "主导一本有机化学实验教材书稿，重构框架并组织约4名学生完成内容，负责终稿整合并搭建2个Notion课程主页；前两学期直接运营，第三学期逐步交接，第四学期由继任助教独立运行。",
         "claim_ids": [
           "teaching.material",
-          "teaching.links"
+          "teaching.links",
+          "teaching.scope",
+          "teaching.succession"
         ]
       }
     ]
   },
   "source_snapshot": {
-    "publication/claims.json": "f35faab40dc85582733109114667378d8d036fc50f70ca66d16865ccf5909baa",
+    "publication/claims.json": "d4193bc280fd12ce37cd6f1023133144def6b9746fe713068bf44081902a8e98",
     "publication/profile.json": "75cf3d8cab5b602f230fb9c83bc0cb8b60ade4f2ea2f3da23f2565a258be5228",
     "site/LINKS.json": "f74dc974f0c319ed7880cd9ccb1f12758cc166c60c87900642e2b250c85da0a7",
     "publication/projects/kin.md": "18a8e8fb289b924f4701be20c77a89d3b88a54435839f0143b24aa037b4e0566",
     "publication/projects/spps.md": "9e8900ecde80703b99242a7f0126022bea93d131dde495660023d88286a234a1",
     "publication/projects/qq-lingxi.md": "55fad26f92c6a429850cfd734db8513a88e4217fc2cc978e893f0662637dceea",
     "publication/projects/pet.md": "a543372ea05e760e7cdb440e0787b67e3647db70366c28c2559462db5c18fc73",
-    "publication/projects/teaching.md": "bb24166715004fb30c4e5f6c071d9012ba9f43fd0ddf7aa50f2ad3338e9861e3"
+    "publication/projects/teaching.md": "4b3c6c2b8b7e047a7377666941ec6d05b38e8d18394ac29e99b92b8785048d74"
   },
   "approved_for_export": true,
   "export_authorization": "delivery/prompts/R04_RESUMES.md: generate four baseline PDFs; planner acceptance remains pending",

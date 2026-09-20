@@ -1,129 +1,119 @@
-# Experience: 《有机化学实验 II》课程助教 / 课程设计与运营
+# Experience: 《有机化学实验 II》课程助教 / 课程体系设计与运营
 
-> Status: strong training-environment record. This experience is materially broader than routine TA work.
+> Status: user-confirmed record. This experience is materially broader than routine TA work.
 
 ## Identity
 
 - Organization: 吉林大学
 - Course: 《有机化学实验 II》
-- Role: 课程助教
-- Period: two semesters, approximately 16 weeks per semester
-- Core class size: at least 19 students; additional high-school visitors sometimes participated
+- Formal role: 课程助教
+- System-building and handover cycle: 2022.09–2024.06
+- Core class size: 19 students
+- Operating phases:
+  - first two semesters: user directly ran the course system;
+  - third semester: user trained the successor TA and transferred approximately half of the responsibilities;
+  - fourth semester: the successor TA ran the system independently.
 - Course websites:
   - Organic Synthesis Laboratory: https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53
   - Organic Chemistry: https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a
 
-## Environment
+## Environment and ownership
 
-The formal title was teaching assistant, but the day-to-day operating model gave the user substantial ownership.
+The formal title was teaching assistant, but the day-to-day operating model gave the user substantial ownership. The user took responsibility for:
 
-The instructor did not micromanage course execution. The user took responsibility for:
 - deciding teaching content and sequence;
-- designing / redesigning experiments;
-- running classes;
-- observing repeated student errors;
-- converting those errors into feedback and later assessment;
-- restructuring teaching materials and course documentation.
+- designing or materially rebuilding experiments;
+- defining the preview, classroom experiment, lab-report, TA-marking, and final-assessment workflows;
+- running the course during the first two semesters;
+- observing repeated student errors and feeding them back into later teaching and assessment;
+- designing a tightly timed multi-person kinetics experiment;
+- leading an organic chemistry experiment textbook manuscript;
+- building course knowledge infrastructure;
+- training a successor TA and progressively handing over the system.
 
-## User's personal ownership
+## Course architecture
 
-### Course architecture
+The original course was organized largely by reaction type. The user redesigned it around the capabilities students needed to develop:
 
-The user redesigned the teaching framework.
-
-Old structure:
-- organized largely by reaction type.
-
-Rewritten structure:
 1. background knowledge;
 2. basic experimental operations;
-3. experiments ordered from easier to harder operations;
-4. more open / innovative experiments later.
+3. comprehensive experiments ordered by operational difficulty;
+4. more open and innovative experiments later.
 
-The user rewrote the outline and framework, then had other student contributors fill portions of the content, after which the user performed final review / audit and integration.
+The user independently designed or materially rebuilt approximately eight experiments and redefined the complete operating flow from preparation through assessment.
 
-### New experiment design
-
-User estimates approximately 8 experiments were newly designed or materially rebuilt.
-
-These were not merely copied from an existing syllabus.
-
-### Continuous feedback loop
+## Continuous feedback loop
 
 The user:
-- recorded common student mistakes after each class;
-- explained errors after the session;
-- accumulated recurring error patterns;
-- used this evidence to design the final examination.
 
-The user also wrote exam questions.
+- recorded recurring student mistakes after each class;
+- distinguished isolated errors from common understanding gaps;
+- explained the causes of those errors;
+- fed the accumulated problems back into later explanations, experimental workflows, and assessment design;
+- wrote final-examination questions from the observed failure patterns.
 
-This is a strong example of:
-observe behavior → capture errors → feed back immediately → aggregate patterns → redesign assessment.
+The transferable mechanism is:
 
-### Teaching-material / textbook project
+front-line behavior → recurring-problem identification → content and process adjustment → assessment design.
 
-The course work later expanded into a teaching-reform subproject.
+## Kinetics experiment — parallel-flow operations case
 
-The user:
-- helped add new experiments to an existing teaching text;
-- rewrote the overall teaching framework;
-- coordinated approximately four student contributors for content work;
-- performed the final editorial review / audit / integration of the manuscript.
+The user designed a kinetics experiment involving 19 students and five teaching assistants. Because sampling was time-dense and the experiment had almost no room for a restart, the user organized it like a production line:
 
-The book has not yet been published as of the latest user check.
+- three parallel workflows;
+- 91 sample vials planned and numbered in advance;
+- explicit reaction, timed sampling, quenching, sample-processing, and GC-analysis tasks;
+- defined time points and handoffs between each stage.
 
-Do not claim publication.
+The group completed the coordinated sampling workflow and obtained good-quality kinetics data. The relevant capability signal is not the chemistry itself, but the ability to decompose a one-shot operation into people, materials, timing, interfaces, and handoffs before execution.
 
-### Course websites / knowledge infrastructure
+## Organic chemistry experiment textbook manuscript
 
-The user created course websites to organize teaching content and experimental information.
+The user led the preparation of an organic chemistry experiment textbook manuscript. The user:
 
-Do not claim they remained in use after the user's graduation unless later verified.
+- rebuilt the overall structure of the book;
+- added new experiments;
+- divided content work among approximately four student contributors;
+- performed final review, revision, and integration of the manuscript.
 
-## Kinetics experiment — process-design case
+The artifact is a completed textbook manuscript. Do not claim formal publication unless later verified.
 
-The uploaded plan is dated 2023-12-04 and names 张朔 as author.
+## Course websites and knowledge infrastructure
 
-The experiment required advance coordination because the reaction had dense time-point sampling and effectively no easy second chance once execution began.
+The user created two Notion course homepages to organize course methods and experimental materials. Do not imply continued adoption after graduation unless later verified.
 
-Documented operating design included:
-- preparation and labeling of 91 sample vials in advance;
-- multiple reaction lines with predefined sampling schedules;
-- rapid sampling, quenching, phase separation, drying, and later GC analysis;
-- separate standard-curve preparation for quantification;
-- a six-person competition-reaction group;
-- a two-person standard-curve group.
+## Succession and independent operation
 
-User describes the overall class workflow as several parallel lines, with people responsible for timed sampling, quenching, sample preparation, and GC analysis so that a complete kinetic curve could be reconstructed.
+The first two semesters were directly operated by the user. During the third semester, the user trained the next-generation teaching assistant in actual course work and progressively transferred approximately half of the responsibilities. By the fourth semester, the successor operated the course system independently.
 
-The key capability signal is not the chemistry itself; it is the need to think through the full workflow before execution because mistimed sampling would destroy the dataset.
+This is evidence that the work moved beyond personal execution: the user converted course judgment into a system that could be learned, handed over, and operated without continued direct management.
 
 ## Capability primitives trained
 
-- end-to-end system design under low supervision;
-- curriculum / product architecture;
-- process decomposition;
-- parallel workflow design;
-- coordination of ~19+ participants;
-- continuous user-error observation and feedback;
+- end-to-end system and service design under low supervision;
+- front-line behavior observation and feedback-driven iteration;
+- process decomposition and parallel workflow design;
+- time-critical operations involving 19 students, five teaching assistants, and 91 sample vials;
 - assessment design from observed failure modes;
-- knowledge-system building;
-- delegation + final QA / editorial audit.
+- delegation, contributor management, and final quality ownership;
+- knowledge-system and textbook building;
+- successor development and staged handover.
 
 ## Transferability
 
 Strong transfer hypotheses:
-- product / program ownership;
-- operations design;
-- launch / event / process planning where timing and interfaces matter;
-- training / enablement;
-- product iteration based on observed user errors;
-- small-team content / system delivery with final quality ownership.
+
+- product or program ownership;
+- consumer/user observation translated into system iteration;
+- operations design under tight timing and interface constraints;
+- training and enablement;
+- small-team content delivery with final quality ownership;
+- building a repeatable system that can operate without its original designer.
 
 ## Claim boundaries
 
 - Do not say the user was the formal course instructor.
-- Do not claim the textbook was published.
-- Do not call the kinetics workflow literal factory production.
+- The fourth semester is evidence of successful independent operation by the successor, not a claim that the user still managed the course directly.
+- Call the book a textbook manuscript unless formal publication is later verified.
+- Do not call the kinetics workflow literal factory production; describe it as designed using a production-line or parallel-flow approach.
 - Do not imply continued adoption of the Notion sites after graduation without evidence.

@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.5。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md) 与 [approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)。
+状态：v1.6。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md) 与 [approved-teaching-long-form.md](approved-teaching-long-form.md)。
 
 ## 用户修改揭示的差异
 
@@ -68,6 +68,18 @@
 | 把所有机制与交付细节塞进简历证明完整性 | 留下核心链路与可交互原型、复赛结果，把其余内容留给追问 | 简历为面试建立入口；长版与事实源负责支撑展开，不必在首层复述全部材料。 |
 
 本轮进一步确认：对 AI 产品经历，简历可以先用一条让陌生人真正理解“系统怎样替用户完成连接”，再用一条回答“为什么这可能成为更大的平台、候选人拥有什么决策权、最后交付了什么”。具体机制与 big picture 都不能被通用产品术语替代。
+
+## 第七轮：把教学经历还原为商业能力
+
+| 原稿倾向 | 用户修改方向 | 可复用规则 |
+|---|---|---|
+| 围绕讲课、解释错误和关心学生展开 | 围绕课程体系、一线反馈、复杂运营与人才交接展开 | 教学场景面向商业岗位时，不拔高职称，而是重组事实，使读者看见系统设计、迭代和组织能力。 |
+| 把教材写成“教学资料”或“内容沉淀” | 明确写出主导一本有机化学实验教材书稿 | 重要交付物必须用准确的物理形态命名；抽象概括不能缩小实际工作范围。 |
+| 只写本人连续做了几个学期 | 写清前两学期直接运行、第三学期逐步交接、第四学期继任者独立运行 | 体系能脱离设计者继续运行是结果；同时必须区分本人直接投入期与继任者独立运行期。 |
+| 罗列动力学实验的化学步骤 | 用19名学生、5名助教、3条并行流程和91个样品瓶说明人员、物料、时间与交接设计 | 跨行业写专业项目时，保留足以证明复杂度的数字，把专业步骤组织成目标岗位能理解的运营机制。 |
+| 沿用早期近似人数 | 以用户最终确认的19名学生、5名助教覆盖旧口径 | 用户明确更正的数字具有最高优先级；不得因旧文件或早期记忆恢复已废弃口径。 |
+
+本轮进一步确认：课程经历最强的结果不是“课上得好”，而是从零重构一套课程系统，依据一线行为持续调整，经复杂场景运行后形成教材和知识基础设施，并培养接班人使其可以独立运行。商业能力通过这条事实链自然显现，不需要把助教职称包装成虚构管理岗。
 
 ## 润色时怎样保留原意
 
