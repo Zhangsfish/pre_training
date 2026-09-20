@@ -1,0 +1,11 @@
+---
+import type { DisplayProject } from '../types';
+import {names} from '../lib/site';
+interface Props { project:DisplayProject; index:number; }
+const {project:p,index}=Astro.props;
+---
+<article id={p.id} class:list={['project',index>1?'compact':'featured']}>
+<div class="project-label"><span class="number">{String(index+1).padStart(2,'0')}</span><span>{names[p.id]}</span></div>
+<div class="project-copy"><h3><a href={`/work/${p.id}/`}>{p.title}</a></h3><p class="status">{p.status}</p>
+<dl><div><dt>我的工作</dt><dd>{p.ownership}</dd></div><div><dt>当前结果</dt><dd>{p.result}</dd></div></dl><p class="boundary">{p.boundary}</p>
+<div class="links"><a class="detail-link" href={`/work/${p.id}/`}>阅读 {names[p.id]} 案例 ↗</a>{p.links.map(l=><a href={l.url}>{l.label} ↗</a>)}</div></div></article>

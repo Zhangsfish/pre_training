@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {siteContent} from '../lib/site';
+const view=await siteContent();
+---
+<BaseLayout title="页面未找到" description="这个地址暂时没有页面，请返回项目索引。" view={view}><section class="empty-page"><p class="eyebrow">404</p><h1>这个地址没有页面。</h1><p>可以从项目索引继续阅读，或查看通用简历。</p><div class="actions"><a href="/">返回首页 ↗</a><a href="/#work">浏览项目 ↗</a><a href="/resume/">通用简历 ↗</a></div></section></BaseLayout>

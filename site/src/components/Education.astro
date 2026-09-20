@@ -1,0 +1,6 @@
+---
+import type { PublicView } from '../types';
+interface Props { view:PublicView; detail:string; }
+const {view,detail}=Astro.props;
+---
+<div class="education-list">{view.profile.education.map((e,i)=><div><h3>{e.school}</h3>{i===1?<p>{detail}</p>:<><p>{e.program}</p><p class="muted">{e.period}</p></>}</div>)}</div>

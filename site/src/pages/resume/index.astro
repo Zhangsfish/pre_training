@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Education from '../../components/Education.astro';
+import {siteContent,names} from '../../lib/site';
+const view=await siteContent();
+---
+<BaseLayout title="通用简历" description="通用简历网页骨架：教育、项目、教学与联系。PDF 尚未生成。" view={view}>
+<div class="resume"><p class="eyebrow">{view.hero.eyebrow}</p><h1>{view.profile.name} / 通用简历</h1><p class="intro">{view.hero.intro}</p><p class="note">网页骨架 · PDF 尚未生成，计划在 R04 整理后提供。</p><div class="links">{view.links.map(l=><a href={l.url}>{l.id==='email'?view.profile.email:l.label} ↗</a>)}</div>
+<section class="resume-section"><h2>教育</h2><Education view={view} detail={view.educationDetail} /></section>
+<section class="resume-section"><h2>项目与实践</h2>{view.cases.map(p=><article class="resume-project"><h3><a href={`/work/${p.id}/`}>{names[p.id]} / {p.title}</a></h3><p class="status">{p.status}</p><p>{p.ownership}</p><p>{p.result}</p><p class="boundary">{p.boundary}</p></article>)}</section>
+<section class="resume-section"><h2>教学与协作</h2><p>{view.teaching.summary} {view.teaching.ownership}</p><p class="boundary">{view.teaching.boundary}</p><div class="links"><a href="/#teaching">查看课程资料 ↗</a></div></section></div>
+</BaseLayout>

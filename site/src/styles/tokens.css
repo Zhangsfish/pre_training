@@ -1,0 +1,6 @@
+/* Selected R02 editorial baseline, extended as the sole design. */
+:root {
+ --paper:#f6f3eb; --ink:#262923; --muted:#5f665b; --line:#d8d7ca; --accent:#6d3f21;
+ --serif:"Noto Serif CJK SC","Source Han Serif SC","SimSun",serif; --sans:system-ui,"Microsoft YaHei",sans-serif;
+ --body:17px; --h1:clamp(32px,3.5vw,50px); --h2:28px; --h3:25px; --section:72px; --width:1200px;
+}

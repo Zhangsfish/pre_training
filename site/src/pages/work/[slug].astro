@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {siteContent,names} from '../../lib/site';
+export async function getStaticPaths() {
+ const view=await siteContent();
+ return view.cases.map((project,index)=>({params:{slug:project.id},props:{view,project,index}}));
+}
+const {view,project:p,index}=Astro.props;
+const next=view.cases[(index+1)%view.cases.length];
+---
+<BaseLayout title={`${names[p.id]} · ${p.title}`} description={p.summary} view={view}>
+<div class="breadcrumb"><a href="/#work">← 全部项目</a></div>
+<article class="case" data-project={p.id}><header class="case-hero"><p class="eyebrow">{String(index+1).padStart(2,'0')} / {names[p.id]}{p.period && ` · ${p.period}`}</p><h1>{p.title}</h1><p class="status">{p.status}</p><p class="intro">{p.summary}</p></header>
+<dl class="case-overview"><div><dt>我的工作</dt><dd>{p.ownership}</dd></div><div><dt>当前结果</dt><dd>{p.result}</dd></div></dl>
+<div class="case-grid"><nav class="toc" aria-label="本页目录"><p>本页选读</p>{p.sections.map((s,i)=><a href={`#part-${i+1}`}>{String(i+1).padStart(2,'0')}　{s.heading}</a>)}</nav>
+<div class="case-body">{p.sections.map((s,i)=><section id={`part-${i+1}`}><h2>{s.heading}</h2>{s.blocks.map(block=>block.kind==='list'?<ul>{block.items!.map(item=><li>{item}</li>)}</ul>:<p>{block.text}</p>)}</section>)}
+{p.id==='spps'&&<aside class="media-note"><strong>实拍素材整理中</strong>当前为文字版案例，未展示未经公开许可的设备素材。</aside>}
+<div class="case-end"><p class="boundary">{p.boundary}</p>{p.links.length>0&&<div class="links">{p.links.map(l=><a href={l.url}>{l.label} ↗</a>)}</div>}</div></div></div></article>
+<div class="case-next"><a href="/#work">← 返回项目索引</a><a href={`/work/${next.id}/`}>下一篇：{names[next.id]} →</a></div>
+</BaseLayout>
