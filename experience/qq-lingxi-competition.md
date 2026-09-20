@@ -8,14 +8,21 @@
 - Competition: **腾讯 PCG 校园 AI 产品创意大赛**
 - Result: **进入复赛**
 - Human team size: **1**
-- Working model: **user + ChatGPT Plus / Codex**
+- Working model: **user + ChatGPT**
 - No human teammate contribution reported.
+
+## Timing
+
+- Resume period: **2026-05**.
+- The work was concentrated around the preliminary-round and second-round preparation windows rather than performed continuously between repository dates.
+- User-confirmed cumulative active work: approximately **10 days**.
+- Repository activity on May 5–6 and May 25 supports describing two separated work bursts, but Git calendar span must not be rewritten as three continuous weeks of development.
 
 Do not state a more specific ranking / shortlist percentage unless later verified.
 
 ## Ownership model
 
-The user confirms the product was conceived and driven entirely by the user, with ChatGPT Plus / Codex acting as the implementation partner.
+The user confirms the product was conceived and driven entirely by the user, with ChatGPT acting as the implementation partner.
 
 ### User-owned
 - product problem / thesis;
@@ -26,7 +33,7 @@ The user confirms the product was conceived and driven entirely by the user, wit
 - review / acceptance of implementation;
 - competition submission direction.
 
-### AI / Codex-owned execution
+### ChatGPT-owned execution
 - substantial code generation / implementation;
 - engineering execution and iteration;
 - implementation reports / technical audits visible in the repository.
@@ -34,7 +41,7 @@ The user confirms the product was conceived and driven entirely by the user, wit
 Resume rule:
 - do not write "independently coded the full-stack product";
 - stronger and more accurate framing is:
-  **solo product owner who used AI/Codex to turn an idea into a working full-stack demo.**
+  **solo product owner who used ChatGPT to turn an idea into a working full-stack demo.**
 
 ## Product thesis visible in repository
 
@@ -55,6 +62,25 @@ The product distinguishes:
 - privacy / authorization boundaries.
 
 A later framing uses QQ-MBTI / 灵犀人格 as a shareable cold-start mechanism for a longer-term user model.
+
+## Strategic frame confirmed in repository
+
+The project does not stop at a matching feature. Its broader strategic judgment is:
+
+```text
+external AI has accumulated long-term understanding of the user
++ QQ owns real relationships, groups, expressions, and small communities
+→ use QQ-MBTI as a shareable cold-start entry
+→ connect long-term understanding with QQ's relationship assets
+→ move QQ from a chat / group tool toward an AI-native intelligent connection layer
+```
+
+This is a recurring user strength: starting from a specific human problem, abstracting the mechanism, identifying the platform's differentiated assets, and then reasoning toward a larger ecosystem position.
+
+Resume rule:
+- keep one grounded strategic sentence when it differentiates the user's contribution;
+- show the chain from concrete problem to product mechanism to unique assets to platform opportunity;
+- do not replace the actual product and delivered prototype with a free-floating "big picture" claim.
 
 ## Implemented demo visible in repository
 
