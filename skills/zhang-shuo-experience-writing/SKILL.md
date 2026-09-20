@@ -99,3 +99,5 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 当任务是把 SPPS 或类似工程交付经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-spps-resume-brm.md](references/approved-spps-resume-brm.md)。学习如何用三条分别保留设计与跨职能领导、资源与流程改造、集成与结果；当一项广泛工作只有一个可核实的量化样例时，先写完整工作范围，再把该数字明确写成例子。
 
 当任务涉及 QQ 灵犀，或其他需要把 AI 产品机制、平台战略与 ChatGPT 协作边界写在一起的项目时，读取 [references/approved-qq-lingxi-long-form.md](references/approved-qq-lingxi-long-form.md)。先讲清具体问题和产品如何工作，再保留一条由独特资产推到平台机会的战略判断，最后划分本人定义/验收与 ChatGPT 工程实现的边界；不要用宏大愿景替代产品机制和交付。
+
+当任务是把 QQ 灵犀或类似 AI 产品与平台战略经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-qq-lingxi-resume-brm.md](references/approved-qq-lingxi-resume-brm.md)。优先使用两条互补证据：第一条讲清用户问题与产品机制，第二条保留由独特资产推到平台机会的 big picture，并收束到本人 ownership、真实协作边界和交付结果；不要在压缩时只剩功能，也不要只剩战略口号。

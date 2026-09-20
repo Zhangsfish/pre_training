@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.4。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md) 与 [approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)。
+状态：v1.5。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md) 与 [approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)。
 
 ## 用户修改揭示的差异
 
@@ -57,6 +57,17 @@
 | 对外同时写 ChatGPT/Codex | 统一写 ChatGPT | 用户希望公开求职文本使用公众更熟悉的产品名；除非技术审计需要，不展开内部工具名称。 |
 
 本轮进一步确认：big picture 是用户稳定的思考特点，但成稿不能从愿景开场。先让读者理解一个真实问题和产品怎样解决，再说明哪些独特资产使它可能成长为更大的平台，最后用原型或结果把判断落回现实。
+
+## 第六轮：AI 产品项目的简历压缩
+
+| 原稿倾向 | 用户确认方向 | 可复用规则 |
+|---|---|---|
+| 把长版的产品、战略、协作与交付平均压入多条 bullet | 用两条分别承载产品机制，以及平台判断、ownership 与结果 | 两条不等于删掉一半逻辑；每条只承担一种主要阅读任务，合起来形成完整判断。 |
+| 压缩时优先保留功能，战略被当作可删愿景 | 保留外部 AI 的用户理解与 QQ 真实关系资产之间的连接 | 有产品机制和独特资产支撑的 big picture 是候选人的关键贡献，应进入简历而不只留在长稿。 |
+| 以项目跨越的日历天数表现速度 | 使用“累计约10天完成两轮集中迭代” | 当投入分阶段且中间停工，累计有效工作时间比首尾日期更能说明执行速度。 |
+| 把所有机制与交付细节塞进简历证明完整性 | 留下核心链路与可交互原型、复赛结果，把其余内容留给追问 | 简历为面试建立入口；长版与事实源负责支撑展开，不必在首层复述全部材料。 |
+
+本轮进一步确认：对 AI 产品经历，简历可以先用一条让陌生人真正理解“系统怎样替用户完成连接”，再用一条回答“为什么这可能成为更大的平台、候选人拥有什么决策权、最后交付了什么”。具体机制与 big picture 都不能被通用产品术语替代。
 
 ## 润色时怎样保留原意
 
