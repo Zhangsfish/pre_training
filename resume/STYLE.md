@@ -142,3 +142,18 @@ Each JD-specific resume should:
 5. rewrite only the framing, never the facts;
 6. verify every claim against the evidence bank;
 7. adapt personal-information fields only when the specific employer actually requires them.
+
+## Readability-first PDF layout (2026-09-20)
+
+User-approved priority: human readability comes before maximum density. Keep the conservative Harvard / Yale / MIT-inspired single-column baseline; it is not a mandate to reproduce one specific MIT template.
+
+- Use A4, black text, embedded Noto Sans SC or an equally legible Chinese font, and selectable text. Preserve working project-title hyperlinks without long underlines. Keep email / portfolio links visibly identifiable in the contact row.
+- Tested six-project baseline: 10.5 pt body, 11 pt bold project titles, 9.5 pt secondary metadata, 21 pt name; 14 mm side margins and approximately 12–13 mm top / minimum bottom margins.
+- Never use condensed character spacing or horizontal scaling to fit content. This revision uses +0.15 pt character spacing for ordinary text. Check mixed Chinese / Latin / numeral spacing visually.
+- Use 14–15 pt body leading, not the previous cramped 12.75 pt. Separate bullets by 1.5–2 pt, projects by 5–7 pt, and metadata from body by 1.5–2 pt. These are tested ranges, not a requirement to give differently sized versions identical leading.
+- Keep dates consistently right-aligned and metadata subordinate but readable. If section rules are retained, use restrained 0.5 pt rules rather than heavy dividers.
+- Distribute content down the page instead of compressing it at the top. In the verified BRM / CBD variants the final text ends roughly 19–24 mm above the bottom edge. Do not artificially stretch a genuinely short resume just to fill the page.
+- Render scientific notation correctly: isotope mass numbers must be superscripts, e.g. ⁶⁸Ga, never visible source syntax such as `^68Ga`. Preserve ordinary numbers, units, costs, dates and claim qualifications.
+- For these BRM / CBD applications, the user's explicit request is to retain all six experiences and change their relevance-based order. This overrides generic project-count reduction advice for these two variants; do not drop experiences to solve a layout issue.
+- Before delivery, render and visually inspect every PDF page at normal reading size and enlarged detail. Verify no clipping, overlaps, unexpected page breaks, broken superscripts or missing glyphs; confirm six projects, role-specific order, selectable text and links. If the page still cannot fit legibly, discuss content prioritization or a second page rather than silently shrinking type.
+- Keep tailored PDFs and private candidate data out of the public repository. This section records typography requirements only; it does not authorize website changes or deployment.
