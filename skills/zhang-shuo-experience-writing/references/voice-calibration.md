@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.9。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)、[approved-natural-product-long-form.md](approved-natural-product-long-form.md) 与 [approved-natural-product-resume-brm.md](approved-natural-product-resume-brm.md)。
+状态：v2.0。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述及简历版、PET 研发训练项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)、[approved-natural-product-long-form.md](approved-natural-product-long-form.md)、[approved-natural-product-resume-brm.md](approved-natural-product-resume-brm.md)、[approved-pet-long-form.md](approved-pet-long-form.md) 与 [approved-pet-resume-brm.md](approved-pet-resume-brm.md)。
 
 ## 用户修改揭示的差异
 
@@ -113,6 +113,19 @@
 | 用“带领约10人”概括组织贡献 | 写核心约5人、累计约10人，并展开任务分配、并行推进、依赖跟踪和阻塞调整 | 人数必须与具体组织动作绑定，不用人数暗示不存在的正式管理关系。 |
 
 本轮进一步确认：简历中的辅助经历不是越短越好，而是只保留最能证明目标能力的两条因果链。技术细节保留到足以让招聘者相信候选人真正做过，更多过程留给面试展开。
+
+## 第十一轮：把科研项目写成做事方法的训练
+
+| 原稿倾向 | 用户修改方向 | 可复用规则 |
+|---|---|---|
+| 以跨化学、生物、放射化学和成像的完整技术链证明项目含金量 | 把中心收回“做事前先想清楚”和“连续小规模MVP”，技术只负责解释约束 | 当用户真正重视的是训练出的工作方法时，经历不必按技术模块平均展开；让约束、判断和行动证明方法。 |
+| 把实验室描述成从零搭建 | 明确为课题组已有主要设备、但缺少完整耗材和操作体系，从“0.5”补到“1” | 0到1类表达必须先定义起点；既保留实际建设工作，也不把工作层补齐夸大成资本设备从无到有。 |
+| 为维护“独立能力”而淡化AI | 直接写大部分陌生知识由AI逐项教会，再写用文献、现实条件和实验结果判断方案 | 用户愿意公开承认AI是主要老师；人的价值不靠隐去AI，而靠问题判断、现实校验、物理执行与结果责任。 |
+| 抽象写“控制实验风险” | 用^68Ga约68分钟半衰期、约4小时有效窗口和单次约4,000元说明为何不能一次押上 | 方法论要落到真实硬约束；时间、成本和失败代价共同解释为什么需要事前推演与连续MVP。 |
+| 在每条都重复最终结果以增强结果感 | 用户从长版第三条删除“正式实验获得论文主数据”，只保留论文与专利状态 | 各条应有不同任务；已经由方法条支撑的结果不必在成果条再次出现，压缩不能等于重复。 |
+| 把论文和专利按预期价值写成既成成果 | 明确第一作者、论文初稿拟投JMC、相关成果预计形成2项专利申请 | 作者身份与成果状态分别写准；“拟投、预计”不能升级为“已投稿、已申请、已发表或已授权”。 |
+
+本轮进一步确认：训练型经历可以直接说“这段经历改变了怎样做事”，但不能只下结论。最有说服力的结构是“起点缺口与学习方式 → 硬约束 → 具体拆解方法 → 有边界的成果状态”。长版允许用“发射火箭”帮助理解，但比喻必须紧跟真实约束；简历版则把同一方法压成两条可以继续追问的证据。
 
 ## 润色时怎样保留原意
 
