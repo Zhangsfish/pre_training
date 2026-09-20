@@ -7,7 +7,7 @@ import {ids,loadVariant,render,inputHash,root,sha,publicPath,readJson} from './m
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const args=process.argv.slice(2),option=k=>args.includes(k)?args[args.indexOf(k)+1]:null;
-const targets=option('--variant-file')?[readJson(path.resolve(option('--variant-file')))]:option('--variant')?[loadVariant(option('--variant'))]:ids.map(loadVariant);
+const targets=option('--variant-file')?[readJson(path.resolve(root,option('--variant-file')))]:option('--variant')?[loadVariant(option('--variant'))]:ids.map(loadVariant);
 if(args.includes('--publish')){assert.equal(targets.length,1);assert.equal(targets[0].id,'general-zh');assert.ok(!option('--variant-file'),'Publish only the checked-in general baseline');}
 const buildDate=option('--date')||(args.includes('--verify-published')?readJson(path.join(root,'publication/resume-manifest.json')).date:new Date().toISOString().slice(0,10));
 assert.match(buildDate,/^\d{4}-\d{2}-\d{2}$/);
