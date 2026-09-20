@@ -1,13 +1,13 @@
 # Experience: 天然产物全合成 / 路线开发与小团队协同
 
-> Status: strong training-environment record. Resume wording will be generated later by JD.
+> Status: confirmed long-form record. Resume wording remains under user review.
 
 ## Identity
 
 - Organization: 吉林大学
 - Project: jiadifenin 及其家族天然产物的集群式合成研究
 - Start: 2022-09
-- End: TODO
+- End: 2023-11
 - Team: approximately 5 full-time undergraduate collaborators, with total participation reaching about 10 when part-time contributors are included
 - Nature: academic natural-product total synthesis involving route design, route validation, scale-up/material preparation, and technical troubleshooting
 - Output: undergraduate thesis based on the newly designed route
@@ -73,9 +73,9 @@ The operating goal was to keep upstream supply from starving downstream work.
 
 User-reported scale range:
 - small-scale route exploration could be around ~1 mg;
-- material preparation / scale-up for selected intermediates could reach roughly ~100 g.
+- scale-up experiments for intermediates from the first two steps of the route could reach roughly ~100 g.
 
-Do not imply 100 g refers to final natural product unless separately confirmed.
+Do not imply 100 g refers to the final natural product, later intermediates, or every step of the route.
 
 ## Work intensity
 

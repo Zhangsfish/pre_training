@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v1.7。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md) 与 [approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)。
+状态：v1.8。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md) 与 [approved-natural-product-long-form.md](approved-natural-product-long-form.md)。
 
 ## 用户修改揭示的差异
 
@@ -89,8 +89,20 @@
 | 用“商业能力”概括教学经历 | 保留19名学生、5名助教、3条流程、91个样品瓶等现场事实 | 先写真实任务和尺度，让招聘者自己得出系统设计、运营与组织能力的判断。 |
 | 写“前两学期直接运营”并省略对象 | 改为“前两学期直接运营课程” | 动词必须有明确对象；尤其在一句同时出现教材、主页和交接时，不能要求读者猜测运营的是什么。 |
 | 把继任者独立运行写成本人持续管理的成果 | 明确第三学期逐步交接、第四学期由继任助教独立运行 | 继任体系是成果，但不能借结果扩大本人在退出后的直接管理范围。 |
+| 只写继任者已经独立运行 | 用“完成课程体系传承”说明这段交接的组织结果 | 当一套方法、资料和运行机制由继任者接续时，可明确命名为体系传承，但仍需先写出具体交接过程。 |
 
 本轮进一步确认：从专业或教学经历抽象商业能力，不是把原始场景翻译成商业术语，而是选择能证明目标能力的具体事实，并让每条承担一个清晰、可继续追问的判断。
+
+## 第九轮：用研发过程证明技术共同语言
+
+| 原稿倾向 | 用户修改方向 | 可复用规则 |
+|---|---|---|
+| 反复使用“我经历了、我理解、我能听懂”等第一人称总结 | 直接写路线设计、小试验证、稳定复现、放大、供料和上下游依赖 | 面向商业岗位证明研发理解时，让真实研发链路和判断对象说话，不写小学生作文式心得。 |
+| 把约100 g泛写成“个别中间体” | 明确为合成路线前两步中间体的约100 g放大实验 | 尺度数字必须绑定具体对象与环节，不能让读者误解为最终产物或整条路线的普遍规模。 |
+| 用“成为本科毕业论文基础”结束路线重设计 | 改为“成为支撑后续集群式合成研究的基础路线” | 项目描述优先交代成果在项目内部解决了什么问题；个人论文可留作履历事实或面试展开。 |
+| 为说明领导力主动解释“没有正式管理职务” | 直接写约5名核心成员、累计约10人及任务分配、依赖跟踪和阻塞调整 | 首层文案用实际组织动作划定 ownership，不用防御性说明打断叙事。 |
+
+本轮进一步确认：专业经历与目标岗位的“共同语言”，不是在结尾声明可迁移性，而是选择目标团队真正会讨论的对象——复现、放大、风险、供料和依赖——并用本人做过的动作证明。
 
 ## 润色时怎样保留原意
 

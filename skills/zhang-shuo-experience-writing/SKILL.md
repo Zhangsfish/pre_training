@@ -105,3 +105,5 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 当任务涉及《有机化学实验 II》，或其他需要把教学、培训、课程运营翻译为商业能力的经历时，读取 [references/approved-teaching-long-form.md](references/approved-teaching-long-form.md)。不要写成“认真授课、耐心辅导”的家教叙事；用课程重构、一线行为反馈、复杂流程运营、知识资产和继任交接证明系统设计、持续迭代与组织能力，同时保留人数、流程和结果等具体事实。
 
 当任务是把《有机化学实验 II》或类似教学、培训、项目运营经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-teaching-resume-brm.md](references/approved-teaching-resume-brm.md)。保留课程系统、复杂运营、知识资产与继任交接三个互补入口；用具体人数、流程和交付证明商业能力，并明确写出“运营课程”等动词对象，不让抽象能力词代替事实。
+
+当任务涉及 jiadifenin 家族天然产物全合成，或其他需要把专业研发经历写给商业、产品或 BRM 岗位阅读的场景时，读取 [references/approved-natural-product-long-form.md](references/approved-natural-product-long-form.md)。用路线设计、小试验证、稳定复现、放大、供料和上下游依赖证明候选人真正经历过研发；不要另写“我学到了什么”的作文式总结，也不要把学术实验放大冒充工业生产。
