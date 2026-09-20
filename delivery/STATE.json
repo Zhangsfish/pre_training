@@ -4,7 +4,7 @@
   "created_on": "2026-09-20",
   "source_base_commit": "e77b9ed38902eb79d21b974fe07580760a8a0fd7",
   "active_round": "R06",
-  "authorized_round": "R06",
+  "authorized_round": null,
   "controller": "planner_reviewer",
   "selected_design": "A",
   "deployment_approval": {
@@ -70,13 +70,13 @@
     },
     {
       "id": "R06",
-      "status": "ready",
+      "status": "accepted",
       "prompt": "delivery/prompts/R06_RELEASE.md",
       "branch": "codex/R06",
       "report_path": "delivery/audits/R06/REPORT.md",
-      "review_path": null,
-      "pr_number": null,
-      "accepted_commit": null
+      "review_path": "delivery/reviews/R06-a01.md",
+      "pr_number": 6,
+      "accepted_commit": "3ac4461ad9000750e85fa9d9ee4f98a562478bb2"
     }
   ],
   "assets": {
@@ -84,5 +84,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R06 is explicitly re-authorized for Codex execution by the user. Existing deployment approval remains: public temporary platform domain only, no custom-domain/DNS changes, free-only/no paid upgrade. Codex should attempt deployment from its own environment using delivery/prompts/R06_RELEASE.md. Prefer the authorized Vercel host recorded in deployment_approval; if that environment has no usable write/auth connection, stop with BLOCKED and record the exact missing credential/connection. Do not broaden host, fee, DNS, visibility, or analytics scope without new user approval."
+  "note": "R06 accepted and production is published_and_verified at https://zhang-shuo-portfolio.vercel.app. Final Vercel deployment dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw is READY and remote resources exactly match audited dist. No round is currently authorized. Future changes require a new reviewed maintenance change and redeployment; do not mutate production ad hoc."
 }
