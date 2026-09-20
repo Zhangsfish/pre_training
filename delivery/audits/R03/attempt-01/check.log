@@ -1,0 +1,19 @@
+command: npm --prefix site run check
+cwd: .
+started_at: 2026-09-20T00:41:55.8011833Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 check
+> node scripts/validate-content.mjs && astro check
+
+PASS: content contract, source references, public fields and required links
+08:42:04 [content] Syncing content
+08:42:04 [content] Synced content
+08:42:04 [types] Generated 2.02s
+08:42:04 [check] Getting diagnostics for Astro files in <repo>\site...
+Result (23 files):
+- 0 errors
+- 0 warnings
+- 0 hints

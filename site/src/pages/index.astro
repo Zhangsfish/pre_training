@@ -1,70 +1,16 @@
 ---
-import { getCollection } from 'astro:content';
-import { publicView } from '../../scripts/content.mjs';
-import profile from '../../../publication/profile.json';
-import home from '../../../publication/home.json';
-import linkRegistry from '../../LINKS.json';
-import '../styles/global.css';
-const review = process.env.PRETRAINING_REVIEW === '1';
-const entries = await getCollection('projects');
-const view = publicView({ profile, home, links: linkRegistry.links, projects: entries.map(entry => entry.data) });
-const cases = view.projects.filter(p => p.id !== 'teaching');
-const teaching = view.projects.find(p => p.id === 'teaching')!;
-const email = view.links.find(l => l.id === 'email')!;
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Education from '../components/Education.astro';
+import {siteContent,names} from '../lib/site';
+const view=await siteContent();
+const teaching=view.teaching;
 ---
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={view.hero.intro} />
-    <title>{view.profile.name} · 项目与实践</title>
-  </head>
-  <body>
-    <a class="skip" href="#main">跳到正文</a>
-    {review && <aside class="review-note">本地审阅稿 · 本轮待验收</aside>}
-    <header class="wrap">
-      <a class="name" href="#main">{view.profile.name} <span>{view.profile.romanized_name}</span></a>
-      <nav aria-label="主导航"><a href="#work">项目</a><a href="#teaching">教学</a><a href={email.url}>邮件联系</a></nav>
-    </header>
-    <main id="main" class="wrap">
-      <section class="hero" aria-labelledby="headline">
-        <p class="eyebrow">{view.hero.eyebrow}</p>
-        <h1 id="headline">{view.hero.title}</h1>
-        <p class="intro">{view.hero.intro}</p>
-        <div class="actions"><a class="button" href="#work">查看项目 ↓</a><a href="#resume-status">通用简历 · 待整理</a></div>
-      </section>
-      <section id="work" aria-labelledby="work-title">
-        <div class="section-head"><h2 id="work-title">项目与实践</h2><p>四个项目，四种现实问题。</p></div>
-        <div class="projects">
-          {cases.map((p, i) => <article id={p.id}>
-            <p class="eyebrow">{String(i + 1).padStart(2, '0')} / {p.id === 'qq-lingxi' ? 'QQ 灵犀' : p.id.toUpperCase()}</p>
-            <h3>{p.title}</h3>
-            <p class="status">{p.status}{p.period && <span> · {p.period}</span>}</p>
-            <p>{p.summary}</p>
-            <p><strong>我的工作</strong> {p.ownership}</p>
-            <p><strong>当前结果</strong> {p.result}</p>
-            <p class="boundary">{p.boundary}</p>
-            <div class="project-links">{p.links.map(l => <a href={l.url} rel="noopener noreferrer">{l.label} ↗</a>)}</div>
-            <p class="pending">案例详情待整理 · 当前展示项目摘要</p>
-          </article>)}
-        </div>
-      </section>
-      <section id="teaching" class="text-section" aria-labelledby="teaching-title">
-        <p class="eyebrow">教学与协作</p><h2 id="teaching-title">{teaching.title}</h2>
-        <p>{teaching.summary} {teaching.ownership} {teaching.result}</p>
-        <p class="boundary">{teaching.boundary}</p>
-        <div class="course-links">{teaching.links.map(l => <div><a href={l.url} rel="noopener noreferrer">{l.label} ↗</a><small>历史课程资料{l.verification === 'anonymous_content_verified' ? ' · 已核对匿名可读' : ' · 匿名可读性未证实，访问可能受限'}</small></div>)}</div>
-      </section>
-      <section class="text-section" aria-labelledby="method-title">
-        <h2 id="method-title">我怎样工作</h2>
-        <ul>{view.methods.map(m => <li><a href={`#${m.project_id}`}>{m.text}</a></li>)}</ul>
-      </section>
-      <section class="text-section" aria-labelledby="education-title"><h2 id="education-title">教育</h2>
-        {view.profile.education.map(e => <p><strong>{e.school}</strong><br />{e.program}<br /><span class="boundary">{e.period}</span></p>)}
-      </section>
-      <section id="resume-status" class="text-section"><h2>简历与联系</h2><p>通用简历正在整理，暂未提供下载。</p><p><a href={email.url}>{view.profile.email}</a> · {view.links.filter(l => l.id !== 'email').map(l => <a href={l.url}>{l.label} ↗</a>)}</p></section>
-    </main>
-    <footer class="wrap">{view.profile.name} · 项目与实践</footer>
-  </body>
-</html>
+<BaseLayout title="项目与实践" description={view.hero.intro} view={view}>
+<section class="hero" aria-labelledby="headline" data-section="S1"><div><p class="eyebrow">{view.hero.eyebrow}</p><h1 id="headline">{view.hero.title}</h1><p class="intro">{view.hero.intro}</p><div class="actions"><a class="primary" href="#work">查看项目 ↗</a><a href="/resume/">通用简历 ↗</a></div></div><nav class="index" aria-label="四个案例">{view.cases.map((p,i)=><a href={`/work/${p.id}/`}><span>{String(i+1).padStart(2,'0')}</span><strong>{names[p.id]}</strong><span aria-hidden="true">↗</span></a>)}</nav></section>
+<section id="work" aria-labelledby="work-title" data-section="S2"><div class="section-heading"><h2 id="work-title">项目选读</h2><span>产品判断 / 工程实践</span></div><div class="projects">{view.cases.map((p,i)=><ProjectCard project={p} index={i} />)}</div></section>
+<section class="section split" id="teaching" aria-labelledby="teaching-title" data-section="S3"><div><p class="eyebrow">教学与协作</p><h2 id="teaching-title">{teaching.title}</h2></div><div class="section-body"><p>{teaching.summary} {teaching.ownership} {teaching.result}</p><p class="boundary">{teaching.boundary}</p><div class="course-links">{teaching.links.map(l=><a href={l.url}>{l.label}<span aria-hidden="true">↗</span></a>)}</div><p class="note">历史课程资料 · 如外站访问受限，可先阅读以上摘要。</p></div></section>
+<section class="section split" id="method" aria-labelledby="method-title" data-section="S4"><div><p class="eyebrow">How I Work</p><h2 id="method-title">我怎样工作</h2></div><ul class="methods">{view.methods.map(m=><li><a href={`/work/${m.project_id}/`}>{m.text}</a></li>)}</ul></section>
+<section class="section split" id="education" aria-labelledby="education-title" data-section="S5"><div><p class="eyebrow">关于与教育</p><h2 id="education-title">学习的来处</h2><p class="about-intro">{view.hero.intro.split('。')[0]}。</p></div><Education view={view} detail={view.educationDetail} /></section>
+<section class="section split" id="contact" aria-labelledby="contact-title" data-section="S6"><div><p class="eyebrow">联系</p><h2 id="contact-title">继续交流</h2></div><div class="contact-links">{view.links.map(l=><a href={l.url}>{l.id==='email'?view.profile.email:l.label} ↗</a>)}<a href="/resume/">通用简历 ↗</a></div></section>
+</BaseLayout>

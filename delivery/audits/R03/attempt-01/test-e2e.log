@@ -1,0 +1,67 @@
+command: npm --prefix site run test:e2e
+cwd: .
+started_at: 2026-09-20T00:42:30.6493808Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 test:e2e
+> node scripts/site-e2e.mjs
+
+PASS home 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS home 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS kin 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS spps 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS qq-lingxi 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS pet 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS resume 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 1440px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 1440px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 768px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 768px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 375px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 375px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 320px JS=true: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 404 320px JS=false: content, layout, links, focus, privacy, zero runtime/external requests
+PASS 56 configurations, 31 local hrefs, navigation round trips and retired candidate URLs

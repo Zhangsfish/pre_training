@@ -1,59 +1,39 @@
-# R01 本地审阅工程
+# 唯一正式网站 · R03
 
-唯一网站工程目录，不为每个 JD 复制网站。请从根 START_HERE.md 启动；本目录 WEBSITE_BRIEF、CONTENT_ARCHITECTURE、CONTENT_CONTRACT、TECH_DECISION 为策划合同，LINKS 与媒体登记按需读取。
+从仓库 START_HERE.md 和 STATE 启动。当前沿用已选 A：浅底、深字、衬线标题、并排 KIN/SPPS 与紧凑 QQ/PET；没有视觉切换器或候选路由。
 
-R01 返工待验收。仅实现固定身份、四案例摘要、教学链接与联系入口；详情和简历位置有明确说明，没有虚假下载或 Demo。依据 `delivery/reviews/R01-a01.md` 第5项授权，指定修正后的这批 publication 内容已改为 approved；这不代表轮次验收或部署获准。
+## 本地运行
 
-## 环境与命令
+Node 24.15.0、npm 11.12.1；Astro 7.3.3、TypeScript 6.0.3、@astrojs/check 0.9.10、@types/node 24.13.6。版本由现有 lockfile 锁定，本轮未新增依赖。
 
-Node **24.15.0**（偶数 LTS），npm **11.12.1**；Astro **7.3.3**、@astrojs/check **0.9.10**、TypeScript **6.0.3**、@types/node **24.13.6**。精确依赖在 package-lock.json。检查器的 peer range 是 TypeScript `^5 || ^6`，因此不使用不兼容的 TypeScript 7，也不使用 force/legacy-peer-deps。
-
-从仓库根运行：
+从仓库根依次运行，避免 Astro 缓存并发写入：
 
 ```sh
 npm --prefix site ci
 npm --prefix site run check
 npm --prefix site run test
-npm --prefix site run review:build
-npm --prefix site run review:preview
-```
-
-生产构建与本地查看（先停掉审阅预览）：
-
-```sh
 npm --prefix site run build
-npm --prefix site run preview -- --port 4322
+npm --prefix site run audit:dist
+npm --prefix site run test:e2e
 ```
 
-依次执行检查和构建（两者会写同一 `.astro` 内容缓存，不能并行运行）。审阅结束在 site 目录执行 `node node_modules/astro/bin/astro.mjs preview stop` 停止本机服务。
+浏览器命令复用已有 Playwright 和 Chrome：PLAYWRIGHT_MODULE 指向可解析的 playwright 模块目录，CHROME_EXECUTABLE 指向 Chrome 可执行文件。建议设置 CI=true、ASTRO_TELEMETRY_DISABLED=1。e2e 启停自己的 127.0.0.1 静态服务器，将证据写入 delivery/audits/R03/attempt-01；临时探测可用 `-- --output delivery/audits/R01/tmp/r03-probe`。不要覆盖已提交的历史证据。
 
-预览只监听 `http://127.0.0.1:4321/`，输出在 gitignored `site/.review-dist/`。不要上传该目录。
+手动查看：`npm --prefix site run preview -- --port 4322`，打开 http://127.0.0.1:4322/ 。Astro预览可能在后台运行；结束时从site目录执行 `node node_modules/astro/bin/astro.mjs preview stop`。仅本地预览，不部署。
 
-`npm --prefix site run build` 是生产命令。本批内容获授权后应成功；任何必要内容或引用 claim 被改为 draft 时仍拒绝构建。负例测试在隔离临时副本中验证拒绝行为，不修改真实公开稿。即使父进程带有 review 环境变量，这条命令仍显式验证 production；直接 Astro build 也有 integration hook 门禁。生产目标是 `site/dist/`，出生年月和手机号不得进入输出。不通过 noindex 隐藏不应输出的内容。
+## 页面与内容边界
 
-## 数据与检查范围
+- `/`：S1首屏、S2四案例、S3教学、S4方法、S5教育、S6联系。
+- `/work/kin/`、`/work/spps/`、`/work/qq-lingxi/`、`/work/pet/`：同一本档案的四篇详情；批准短稿完整保留，不为字数目标新增事实。
+- `/resume/`：公开通用网页骨架；PDF尚未生成，没有假下载链接，也不导出简历专用电话/年月。
+- `/404.html`：错误页与返回入口。实际未知路径HTTP状态由静态host配置决定；本地e2e模拟正确404回退，生产部署需R06再次验证。
 
-Astro 当前 `glob` 内容集合读取 `publication/projects/*.md`，使用 `astro/zod` 校验结构。frontmatter 用 JSON（YAML 兼容）保持无需额外解析器的确定性读取。页面的事实来自 publication；模板只含导航、状态提示和布局。
+正文来自已批准 publication；LINKS 是外链唯一来源。KIN重新分段以把竞争检查留到后段，所有原始句子保留。SPPS原件已收到但未获公开衍生物，当前使用安全文字版和整理提示；无假照片、视频播放器或未经允许的媒体。
 
-构建前检查 claim ID、来源/标题、引用、发布状态、上下文、外链与媒体。source blob 漂移只提示相关 claim 需要策划核对，不自动改写。网页以显式字段投影编译，不带 claim 对象、源文件路径或媒体内部记录。未知 claim 一律不用于本轮事实性文案，不能升级成成果数字。语义是否准确仍需策划对照事实源审查，自动检查不能替代人工判读。
+review:build 仍支持内容审阅门禁，输出相同页面到 .review-dist，不再含A/B/C候选。R02截图仍保存在旧审计包；其旧复现说明只适用于当时的tested_commit。R01 browser-evidence.mjs同样是历史脚本，本轮以site-e2e为准。
 
-## 浏览器证据
+## 验证范围
 
-复用已有 Playwright 库和 Chrome，无需新的浏览器下载。设 `PLAYWRIGHT_MODULE` 为已安装模块目录、`CHROME_EXECUTABLE` 为 Chrome 可执行文件，然后在仓库根执行：
+check检查内容门禁及严格类型；test包含不修改真实数据的负例。build后自动audit：只能输出规定页面/CSS/获准媒体，检查私有字段、候选CSS、外部资源、PDF和本地文件链接，并记录体积。e2e覆盖7页×4宽度×JS开关，检查文字保真、首屏、溢出、键盘跳转、页内/跨页锚点、详情往返、必需外链可见、零外部请求；保存三宽度全页图及首页首屏图。
 
-```sh
-node site/scripts/browser-evidence.mjs home delivery/audits/R01/attempt-02
-node site/scripts/browser-evidence.mjs production delivery/audits/R01/attempt-02
-```
-
-home 需先启动4321端口的本地审阅预览；production 需启动4322端口的生产预览。两种模式均检查1440/768/375/320px、锚点、键盘访问、必需链接与全部输出文件泄漏，并分别生成桌面/手机真实截图。链接未变化，按审查单复用 attempt-01 匿名核验；需要重查时脚本 links 模式只记录内容标记与状态，不复制课程全文或第三方联系方式。
-
-这两个脚本不是正式后续轮次的 test:e2e / audit:dist。R02–R06 工作、媒体公开桥接、简历与部署尚未实施。
-
-## 官方依据（2026-09-20 核对）
-
-- [Astro 安装与 Node 前提](https://docs.astro.build/en/install-and-setup/)
-- [Astro 内容集合、glob 与 astro/zod](https://docs.astro.build/en/guides/content-collections/)
-- [Playwright 页面 API](https://playwright.dev/docs/api/class-page)
-
-包版本和兼容范围另以 npm registry 元数据及安装成功的 lockfile 为准。具体实测以 delivery/audits/R01/REPORT.md 为入口。
+匿名外链活性独立运行 `node site/scripts/check-links.mjs`：仅记录HTTP状态和公开内容标记，不复制Notion全文。不把网络波动混入本地确定性测试，也不更改LINKS的策划记录。SHA256、环境、测试快照及限制见本轮REPORT/evidence。

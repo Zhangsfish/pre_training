@@ -1,0 +1,14 @@
+---
+import type { PublicView } from '../types';
+import '../styles/tokens.css';
+import '../styles/global.css';
+interface Props { title:string; description:string; view:PublicView; }
+const {title,description,view}=Astro.props;
+const onHome=Astro.url.pathname==='/';
+---
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content={description} /><title>{title} · {view.profile.name}</title></head>
+<body><a class="skip" href="#main">跳到正文</a><div class="wrap">
+<header class="identity"><a class="name" href="/" aria-label={`${view.profile.name}，返回首页`}>{view.profile.name}<span>{view.profile.romanized_name}</span></a><nav aria-label="主导航"><a href={onHome?'#work':'/#work'}>项目</a><a href={onHome?'#teaching':'/#teaching'}>教学</a><a href="/resume/" aria-current={Astro.url.pathname==='/resume/'?'page':undefined}>简历</a><a href={onHome?'#contact':'/#contact'}>联系</a></nav></header>
+<main id="main" tabindex="-1"><slot /></main><footer><span>{view.profile.name} · 项目与实践</span><a href="#main">返回顶部 ↑</a></footer>
+</div></body></html>

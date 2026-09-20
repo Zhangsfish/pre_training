@@ -1,12 +1,14 @@
-# R01 网站工程
+# R03 网站工程
 
-继承根规则与本目录只读架构合同。工程只从 publication、LINKS 和素材 manifest 构建，不在运行时读取 experience 或远程 API。
+继承根规则与只读架构合同。唯一视觉方向 A；只从 publication、LINKS 和已批准素材登记构建。无运行时 API。
 
-- `scripts/content.mjs`：读取公开稿、合同校验、显式字段投影；源文件仅用于构建前校验，不打包。
-- `scripts/build.mjs`、`astro.config.mjs`：双层生产门禁；只有显式 review 模式可输出 draft 到 `.review-dist/`。
-- `src/content.config.ts`：Astro glob 内容集合；`src/pages/index.astro`：R01 单页审阅壳。
-- `tests/`：Node 原生负例/合同测试，不依赖网络。
-- `scripts/browser-evidence.mjs`：真实浏览器验收与匿名外链检查；通过环境指定已安装 Playwright 和 Chrome。
-- `README.md`：精确命令、版本、限制和官方文档来源。
+- src/lib/site.ts：Astro 内容集合与显式公开字段；仅投影获准正文。
+- src/layouts/BaseLayout.astro、styles/tokens.css/global.css：唯一编辑式档案布局。
+- src/pages/：首页 S1–S6、四详情、resume骨架、404。
+- scripts/content.mjs：内容合同、发布状态、来源漂移与字段门禁。
+- scripts/sections.mjs：批准正文分段；KIN竞争检查放在后段，不生成新事实。
+- scripts/build.mjs、audit-dist.mjs：构建及公开输出/路由/预算门禁。
+- scripts/site-e2e.mjs：56组真实浏览器检查及截图；scripts/check-links.mjs：独立匿名外链检查。
+- tests/：合同负例、正文保真与输出拒绝测试。
 
-工程版本锁定在 package-lock。R02 已授权，仅在 `review/` 建三种小型视觉方向，生产路由和首页不变；不引入 R03 详情。公开媒体尚无许可，不能加入 public。R01 证据保留；本轮证据在 delivery/audits/R02/。
+R02候选实现已移除，历史证据留在 delivery/audits/R02。当前证据仅写 R03。依赖版本不变。SPPS媒体仍未获公开许可/桥接，使用文字版。resume不生成PDF，未进入R04；不得部署。
