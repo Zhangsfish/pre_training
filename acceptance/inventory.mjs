@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {root,loadContent} from '../site/scripts/content.mjs';
+import {auditDist} from '../site/scripts/audit-dist.mjs';
+const output=path.resolve(process.argv[2]),directory=path.join(root,'site/dist');
+const audit=auditDist(directory),data=loadContent();
+const files=audit.files.sort().map(file=>{const bytes=fs.readFileSync(path.join(directory,file));return {path:file,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),type:path.extname(file),basis:file.endsWith('.html')?'Explicit seven-route allowlist; publication projection':file.endsWith('.pdf')?'Registered general-zh PDF; publication/resume-manifest.json':file.endsWith('.css')?'Local A design CSS; no runtime or remote imports':'Approved derived media manifest'};});
+fs.writeFileSync(path.join(output,'dist-inventory.json'),JSON.stringify({checked_at:new Date().toISOString(),...audit,files,media:data.assets.map(a=>({id:a.id,publication:a.publication,availability:a.availability,emitted:!!a.path&&audit.files.includes(a.path)}))},null,2)+'\n');
+fs.writeFileSync(path.join(output,'dist-inventory.md'),'# dist 完整资源清单\n\n仅此目录可成为未来发布产物；清单不是部署授权。\n\n| 文件 | bytes | SHA-256 |\n|---|---:|---|\n'+files.map(f=>`| ${f.path} | ${f.bytes} | ${f.sha256} |`).join('\n')+`\n\n合计 ${audit.total_bytes} bytes；${files.length} 文件；客户端 JS 0；公开媒体 ${audit.approved_media}。逐文件许可基础与待许可媒体排除状态见 JSON。\n`);
+console.log(JSON.stringify({files:files.length,total_bytes:audit.total_bytes,result:'pass'}));

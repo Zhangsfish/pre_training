@@ -1,6 +1,6 @@
 # 简历生成与复核
 
-上游：ASSEMBLY、STYLE、PRESETS 和策划批准的 publication。四份 variants 为可公开的 baseline 选材输入；每条 bullet 的 claim_ids 与取舍理由保存在 JSON 侧表，不进入 PDF。
+上游：ASSEMBLY、STYLE、PRESETS 和策划批准的 publication。四份 variants 为可公开的 baseline 选材输入；每条 bullet 的 claim_ids 与取舍理由保存在 JSON 侧表，不进入 PDF。R05 新环境安装与完整维护步骤见 [验收维护 README](../acceptance/README.md)，不再要求复用个人 Codex 缓存。
 
 ## 工具前提
 
