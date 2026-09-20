@@ -70,7 +70,7 @@
     },
     {
       "id": "R06",
-      "status": "blocked",
+      "status": "ready",
       "prompt": "delivery/prompts/R06_RELEASE.md",
       "branch": "codex/R06",
       "report_path": "delivery/audits/R06/REPORT.md",
@@ -84,5 +84,5 @@
     "spps_publication": "pending_review",
     "spps_codex_access": "bridge_pending"
   },
-  "note": "R06 deployment remains explicitly authorized under the existing public temporary-domain / no-DNS / free-only approval, but execution is BLOCKED before any deployment was created. The installed Vercel connector returned zero teams/projects and its deploy write action was unavailable; CLI fallback in the current runtime could not reach GitHub/network. No production or preview URL exists, no DNS/domain changes occurred, and no fees were incurred. Preserve deployment_approval and resume R06 once the Vercel account/write connection is available; no new user approval is required unless host/scope/fee conditions change."
+  "note": "R06 is explicitly re-authorized for Codex execution by the user. Existing deployment approval remains: public temporary platform domain only, no custom-domain/DNS changes, free-only/no paid upgrade. Codex should attempt deployment from its own environment using delivery/prompts/R06_RELEASE.md. Prefer the authorized Vercel host recorded in deployment_approval; if that environment has no usable write/auth connection, stop with BLOCKED and record the exact missing credential/connection. Do not broaden host, fee, DNS, visibility, or analytics scope without new user approval."
 }
