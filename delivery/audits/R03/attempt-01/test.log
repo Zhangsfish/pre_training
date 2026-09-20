@@ -1,0 +1,46 @@
+command: npm --prefix site run test
+cwd: .
+started_at: 2026-09-20T00:42:24.3918185Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ reviewed source set passes review and production without source drift (65.5276ms)
+✔ missing claim fails closed (21.4508ms)
+✔ unknown cannot become an outcome (20.1385ms)
+✔ excluded project cannot enter default home (22.877ms)
+✔ draft is blocked from production (38.0419ms)
+✔ approving document shells does not approve their underlying claims (21.3783ms)
+✔ draft negative fixtures do not mutate the planner-approved source (25.7261ms)
+✔ duplicate identifiers rejected (21.4625ms)
+✔ nonexistent source rejected (21.0381ms)
+✔ wrong source heading rejected (20.5261ms)
+✔ source drift requests targeted review rather than silently updating it (21.9809ms)
+✔ required external link qq-lingxi-repo must exist (18.2369ms)
+✔ required external link notion-organic-synthesis must exist (14.6099ms)
+✔ required external link notion-organic-chemistry must exist (20.8236ms)
+✔ course links must also appear in teaching, not only registry (15.2724ms)
+✔ both resume-only fields are forbidden in site allowlist (37.0874ms)
+✔ real resume fields exist but explicit site projection omits their names and values (4.9326ms)
+✔ pending media cannot be referenced (17.8777ms)
+✔ pending original cannot be assigned public path (23.4941ms)
+✔ excluded and resume-only claims cannot render (33.5763ms)
+✔ production command ignores inherited review env and exits nonzero before output (493.1327ms)
+✔ case sections preserve every approved sentence, without introducing body facts (12.2097ms)
+✔ KIN starts with ordinary life; competitive checking stays after the hypotheses and product (4.8207ms)
+✔ dist gate rejects rogue-media (107.1484ms)
+✔ dist gate rejects candidate-route (100.2778ms)
+✔ dist gate rejects private-field (79.5361ms)
+✔ dist gate rejects broken-link (79.0264ms)
+✔ dist gate rejects fake-pdf (78.9903ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1288.4095

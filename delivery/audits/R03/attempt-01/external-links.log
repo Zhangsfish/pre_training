@@ -1,0 +1,9 @@
+command: node site/scripts/check-links.mjs
+cwd: .
+started_at: 2026-09-20T00:42:26.8695427Z
+exit_code: 0
+{"id":"github-profile","url":"https://github.com/Zhangsfish","checked_at":"2026-09-20T00:42:32.876Z","http_status":200,"title":"Zhangsfish · GitHub","final_url":"https://github.com/Zhangsfish","verification":"anonymous_content_verified","error":null,"visible_text_length":2827}
+{"id":"kin-repo","url":"https://github.com/Zhangsfish/kin-portfolio","checked_at":"2026-09-20T00:42:36.477Z","http_status":404,"title":"Page not found · GitHub · GitHub","final_url":"https://github.com/Zhangsfish/kin-portfolio","verification":"unconfirmed","error":null,"visible_text_length":1001}
+{"id":"qq-lingxi-repo","url":"https://github.com/Zhangsfish/qq-lingxi-agent-platform","checked_at":"2026-09-20T00:42:41.443Z","http_status":200,"title":"GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub","final_url":"https://github.com/Zhangsfish/qq-lingxi-agent-platform","verification":"anonymous_content_verified","error":null,"visible_text_length":6106}
+{"id":"notion-organic-synthesis","url":"https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53","checked_at":"2026-09-20T00:42:48.503Z","http_status":200,"title":"Organic Synthesis Laborat","final_url":"https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53","verification":"anonymous_content_verified","error":null,"visible_text_length":2110}
+{"id":"notion-organic-chemistry","url":"https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a","checked_at":"2026-09-20T00:42:55.925Z","http_status":200,"title":"Organic Chemistry","final_url":"https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a","verification":"anonymous_content_verified","error":null,"visible_text_length":1840}

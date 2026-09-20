@@ -1,0 +1,37 @@
+command: npm --prefix site run build
+cwd: .
+started_at: 2026-09-20T00:42:15.9245191Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+08:42:22 [content] Syncing content
+08:42:22 [content] Synced content
+08:42:22 [types] Generated 1.90s
+08:42:22 [build] output: "static"
+08:42:22 [build] mode: "static"
+08:42:22 [build] directory: <repo>\site\dist\
+08:42:22 [build] Collecting build info...
+08:42:22 [build] ✓ Completed in 2.02s.
+08:42:22 [build] Building static entrypoints...
+08:42:23 [vite] ✓ built in 667ms
+08:42:23 [vite] ✓ built in 52ms
+08:42:23 [build] Rearranging server assets...
+
+ generating static routes
+08:42:23   ├─ /404.html (+48ms)
+08:42:23   ├─ /resume/index.html (+16ms)
+08:42:23   ├─ /work/kin/index.html (+13ms)
+08:42:23   ├─ /work/spps/index.html (+7ms)
+08:42:23   ├─ /work/qq-lingxi/index.html (+6ms)
+08:42:23   ├─ /work/pet/index.html (+5ms)
+08:42:23   ├─ /index.html (+12ms)
+08:42:23 ✓ Completed in 195ms.
+
+08:42:23 [build] ✓ Completed in 1.07s.
+08:42:23 [build] 7 page(s) built in 3.10s
+08:42:23 [build] Complete!
+Public output audit: {"files":["404.html","index.html","resume/index.html","_astro/site.LYHxabVX.css","work/kin/index.html","work/pet/index.html","work/qq-lingxi/index.html","work/spps/index.html"],"total_bytes":36057,"client_js_bytes":0,"approved_media":0,"result":"pass"}

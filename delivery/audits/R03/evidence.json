@@ -1,0 +1,392 @@
+{
+  "round": "R03",
+  "attempt": 1,
+  "branch": "codex/R03",
+  "base_commit": "361f52986231be597eb8ff241b100b051d2f0dea",
+  "tested_commit": "636a951f87d473c19a64660269de08929b8400bd",
+  "prompt_path": "delivery/prompts/R03_SITE.md",
+  "prompt_sha256": "8211d124336562555efd57ffec0df2c428f683077f7c11f725fb945c0583a76d",
+  "prompt_hash_basis": "Git blob bytes",
+  "selected_design": "A",
+  "environment": {
+    "os": "Windows",
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "astro": "7.3.3",
+    "typescript": "6.0.3",
+    "browser": "Chrome 153.0.8010.52",
+    "playwright": "1.62.1",
+    "CI": "true",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "dependencies_changed": false
+  },
+  "commands": [
+    {
+      "started_at": "2026-09-20T00:41:55.8011833Z",
+      "cwd": ".",
+      "log_path": "attempt-01/check.log",
+      "exit_code": 0,
+      "command": "npm --prefix site run check",
+      "sha256": "6c77684beeee6a49ef57c7ed78af4a2f9025bd46fb3c1524467559c2ba0271f0"
+    },
+    {
+      "started_at": "2026-09-20T00:42:15.9245191Z",
+      "cwd": ".",
+      "log_path": "attempt-01/build.log",
+      "exit_code": 0,
+      "command": "npm --prefix site run build",
+      "sha256": "6948abf220142fb1e4227aa5c8527bf5c406f8f277614bf2b25724ee720e1af4"
+    },
+    {
+      "started_at": "2026-09-20T00:42:24.3918185Z",
+      "cwd": ".",
+      "log_path": "attempt-01/test.log",
+      "exit_code": 0,
+      "command": "npm --prefix site run test",
+      "sha256": "18b36d41d56b6cd7399409ef4987677d5f2a5244a90a241a79a2ebb671cf5cc3"
+    },
+    {
+      "started_at": "2026-09-20T00:42:28.0779612Z",
+      "cwd": ".",
+      "log_path": "attempt-01/audit-dist.log",
+      "exit_code": 0,
+      "command": "npm --prefix site run audit:dist",
+      "sha256": "8942c0a2d43588279709cf9076ed771cf793507b80b9ced4e79632b02a278f59"
+    },
+    {
+      "started_at": "2026-09-20T00:42:30.6493808Z",
+      "cwd": ".",
+      "log_path": "attempt-01/test-e2e.log",
+      "exit_code": 0,
+      "command": "npm --prefix site run test:e2e",
+      "sha256": "48c213a6d427e8972541b8c4b32c76d03fe915c1319acb5ea781f4c564d924ff"
+    },
+    {
+      "command": "node site/scripts/check-links.mjs",
+      "cwd": ".",
+      "started_at": "2026-09-20T00:42:26.8695427Z",
+      "exit_code": 0,
+      "log_path": "attempt-01/external-links.log",
+      "sha256": "51ce5b69b02371f394b8a1d3ea507b8c52722db4c39745de163a4fe17d80ce03"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "attempt-01/home-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "4969b985bd2e7712fe5af6fa16e334cad533eced0bc6c74132023de3c496069d"
+    },
+    {
+      "path": "attempt-01/home-firstfold-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": false,
+      "sha256": "4cac3d90cbf2674082563a0ec975a0f4ecc89965c078b800ca676d33abd81e66"
+    },
+    {
+      "path": "attempt-01/home-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "d5067d7a6901f89544df596d7f1a58482f27df41ae6566cb2616786f71ab472e"
+    },
+    {
+      "path": "attempt-01/home-firstfold-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": false,
+      "sha256": "268b5bdc87433a633f98b052999ed10a05491f8071ff7959bae8e52ac405656b"
+    },
+    {
+      "path": "attempt-01/home-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "b06880a58e05e5c419f7226c66331d7a564cbd38ef186f8e62678a66c16faf75"
+    },
+    {
+      "path": "attempt-01/home-firstfold-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": false,
+      "sha256": "7128af1b1e8a1f148ccdc95c754312915816beb3434ad9b75e08f4520fa2cbda"
+    },
+    {
+      "path": "attempt-01/kin-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "03411247b1eae19b3d168031168d19d444689870a5246c9d6c36ad3e52287905"
+    },
+    {
+      "path": "attempt-01/kin-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "ce7e919b385da1742214e799a2ddc43ea4d286d85d3448ccf0c63fe14e57d5d5"
+    },
+    {
+      "path": "attempt-01/kin-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "cdb05a39cc492e74b31f337f3589f3c32fe7fbdc3168d490670ed71f125632d8"
+    },
+    {
+      "path": "attempt-01/spps-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "df4f3ebb279ffb6e4940614c533cecb6075ee37f50fca3618b986bc68197e9e6"
+    },
+    {
+      "path": "attempt-01/spps-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "f161083674d1a9cb9f8b8103aef13b7374950fdbcab723ba79e1879a418e3389"
+    },
+    {
+      "path": "attempt-01/spps-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "352ef1de5f6acd6840c33122dceeaa392c54d97329cd55d5b1f865764833e124"
+    },
+    {
+      "path": "attempt-01/qq-lingxi-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "fcdf0c4871dfcf3fd875885e4e1397f2221a4d46b006be5d80224afe85102f3e"
+    },
+    {
+      "path": "attempt-01/qq-lingxi-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "8007981c55e130858c7d14ec079ba002559795a5934d49f625447c7ff09ae8f9"
+    },
+    {
+      "path": "attempt-01/qq-lingxi-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "d756ff8557d386d8d88a62f589c9be52669ca66ef53771c61c81be3a9b900868"
+    },
+    {
+      "path": "attempt-01/pet-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "d233af78712b6703b2231464f9bd55559d4bfcd417cdf9cbebf49e9bbb2016f2"
+    },
+    {
+      "path": "attempt-01/pet-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "29e9ba7a93a323e30a27b4ba7a3c22f261ecfc3ca265f561b2e754083ba31293"
+    },
+    {
+      "path": "attempt-01/pet-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "8e70f9fcb9d40dfe345b0e6b0a7d70ee0191cea6ed2427bf13b4989620df55b6"
+    },
+    {
+      "path": "attempt-01/resume-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "f5386f869b5a8c563f80d9297c9720b4b4dad073230ad4ce0d9b683eb239c9b5"
+    },
+    {
+      "path": "attempt-01/resume-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "0be5f2e73b2149fa06554ae17e87e1dc6937bbd82b68cea01e955d12c824ce7f"
+    },
+    {
+      "path": "attempt-01/resume-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "1e1e3ec1b4b7bbb4c05bfae0d84ac105f5a33cd1be42539e926ed45c7e16c0fa"
+    },
+    {
+      "path": "attempt-01/404-1440.png",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true,
+      "sha256": "1689fe9d79b34b263a1e722eed49d37f362b75593c81fd92572987f0d3206373"
+    },
+    {
+      "path": "attempt-01/404-768.png",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "a279b7b5a2b39536c1de1250564fa5bd4a8a503e04edf16f23bab2821ad7178a"
+    },
+    {
+      "path": "attempt-01/404-375.png",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "full_page": true,
+      "sha256": "c811a791c11dbe47f9424a3a179649d9d3d460ef298caa27f9b682b62b86c121"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "attempt-01/browser-results.json",
+      "sha256": "17f1b8b5e7d548d1e9b61457a5e8db3928a6acd7be3051bed70628e2704e8697"
+    },
+    {
+      "path": "attempt-01/external-links.json",
+      "sha256": "f94b42ff9cdc3b7853f644c705e1022bd4721c8aed1f0211cdfa0287856910fd"
+    }
+  ],
+  "browser_configurations": 56,
+  "local_hrefs_checked": 31,
+  "navigation": [
+    {
+      "from": "/",
+      "to": "/work/kin/",
+      "back": "/",
+      "result": "pass"
+    },
+    {
+      "from": "/",
+      "to": "/work/spps/",
+      "back": "/",
+      "result": "pass"
+    },
+    {
+      "from": "/",
+      "to": "/work/qq-lingxi/",
+      "back": "/",
+      "result": "pass"
+    },
+    {
+      "from": "/",
+      "to": "/work/pet/",
+      "back": "/",
+      "result": "pass"
+    },
+    {
+      "from": "/",
+      "to": "/resume/",
+      "back": "/",
+      "result": "pass"
+    },
+    {
+      "from": "404",
+      "to": "/",
+      "result": "pass"
+    }
+  ],
+  "output_audit": {
+    "files": [
+      "404.html",
+      "index.html",
+      "resume/index.html",
+      "_astro/site.LYHxabVX.css",
+      "work/kin/index.html",
+      "work/pet/index.html",
+      "work/qq-lingxi/index.html",
+      "work/spps/index.html"
+    ],
+    "total_bytes": 36057,
+    "client_js_bytes": 0,
+    "approved_media": 0,
+    "result": "pass"
+  },
+  "visual_inspection": "All 24 actual captures inspected: seven full pages at three widths plus homepage first folds. No edited screenshots.",
+  "external_links": {
+    "checked_at": [
+      "2026-09-20T00:42:32.876Z",
+      "2026-09-20T00:42:36.477Z",
+      "2026-09-20T00:42:41.443Z",
+      "2026-09-20T00:42:48.503Z",
+      "2026-09-20T00:42:55.925Z"
+    ],
+    "network": "Local Windows network; fresh anonymous Chrome contexts; no stored cookies",
+    "verified": 4,
+    "unconfirmed": [
+      {
+        "id": "kin-repo",
+        "reason": "unconfirmed"
+      }
+    ]
+  },
+  "source_changes": {
+    "publication": false,
+    "experience": false,
+    "profile": false,
+    "state": false,
+    "links": false,
+    "assets_manifest": false
+  },
+  "known_gaps": [
+    "SPPS public derivative permission/bridge pending: safe text-only page with explicit media notice; no raw or fabricated media.",
+    "Resume PDF intentionally not generated until R04; no download link.",
+    "Detail length follows existing approved short copy; no unapproved expansion to meet a word-count target.",
+    "Unknown-path 404 tested on local static server; final host routing remains an R06 check.",
+    "External link availability unconfirmed (HTTP 404 for KIN): kin-repo"
+  ],
+  "implementation_status": "completed",
+  "reviewer_decision": "pending",
+  "next_action": "Planner review R03; stop before R04, no deployment."
+}
