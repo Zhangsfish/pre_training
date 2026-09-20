@@ -1,0 +1,376 @@
+{
+  "checked_at": "2026-09-20T03:34:51.900Z",
+  "base_url": "https://zhang-shuo-portfolio.vercel.app",
+  "method": "Fresh temporary Chrome profile; no saved cookies or login; HTTPS errors not ignored",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/",
+      "canonical": "https://zhang-shuo-portfolio.vercel.app/",
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 1589,
+      "result": "pass"
+    },
+    {
+      "route": "/work/kin/",
+      "status": 200,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "canonical": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 840,
+      "result": "pass"
+    },
+    {
+      "route": "/work/spps/",
+      "status": 200,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "canonical": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 603,
+      "result": "pass"
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "status": 200,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "canonical": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 634,
+      "result": "pass"
+    },
+    {
+      "route": "/work/pet/",
+      "status": 200,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "canonical": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 568,
+      "result": "pass"
+    },
+    {
+      "route": "/resume/",
+      "status": 200,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/resume/",
+      "canonical": "https://zhang-shuo-portfolio.vercel.app/resume/",
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 988,
+      "result": "pass"
+    },
+    {
+      "route": "/r06-not-found/",
+      "status": 404,
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/r06-not-found/",
+      "canonical": null,
+      "headers": {
+        "content_type": "text/html; charset=utf-8",
+        "strict_transport_security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "width": 1440,
+      "scroll_width": 1440,
+      "text_length": 108,
+      "result": "pass"
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/_astro/site.LYHxabVX.css",
+      "status": 304,
+      "resource_type": "stylesheet",
+      "content_type": null
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/resume/",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/r06-not-found/",
+      "status": 404,
+      "resource_type": "document",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/robots.txt",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/sitemap.xml",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "application/xml"
+    },
+    {
+      "url": "https://zhang-shuo-portfolio.vercel.app/downloads/zhang-shuo-resume.pdf",
+      "status": 200,
+      "resource_type": "document",
+      "content_type": "application/pdf",
+      "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e"
+    }
+  ],
+  "mobile": [
+    {
+      "route": "/",
+      "status": 200,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 1589,
+      "screenshot": "home-production-375.png",
+      "result": "pass"
+    },
+    {
+      "route": "/work/kin/",
+      "status": 200,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 840,
+      "screenshot": "kin-production-375.png",
+      "result": "pass"
+    },
+    {
+      "route": "/work/spps/",
+      "status": 200,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 603,
+      "screenshot": "spps-production-375.png",
+      "result": "pass"
+    },
+    {
+      "route": "/work/qq-lingxi/",
+      "status": 200,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 634,
+      "screenshot": "qq-lingxi-production-375.png",
+      "result": "pass"
+    },
+    {
+      "route": "/work/pet/",
+      "status": 200,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 568,
+      "screenshot": "pet-production-375.png",
+      "result": "pass"
+    },
+    {
+      "route": "/resume/",
+      "status": 200,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 988,
+      "screenshot": "resume-production-375.png",
+      "result": "pass"
+    },
+    {
+      "route": "/r06-not-found/",
+      "status": 404,
+      "width": 375,
+      "scroll_width": 375,
+      "text_length": 108,
+      "screenshot": "404-production-375.png",
+      "result": "pass"
+    }
+  ],
+  "downloads": [
+    {
+      "source": "https://zhang-shuo-portfolio.vercel.app/resume/",
+      "suggested_filename": "zhang-shuo-resume.pdf",
+      "bytes": 166740,
+      "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+      "result": "pass"
+    }
+  ],
+  "pdf_links": [
+    {
+      "uri": "../work/kin/",
+      "expected": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "actual": "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "status": 200,
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 620.9481240384647,
+        "y": 420.81942136591175
+      },
+      "result": "pass"
+    },
+    {
+      "uri": "../work/spps/",
+      "expected": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "actual": "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "status": 200,
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 625.4465359988259,
+        "y": 568.7455936370579
+      },
+      "result": "pass"
+    },
+    {
+      "uri": "../work/qq-lingxi/",
+      "expected": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "actual": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "status": 200,
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 601.9548290947175,
+        "y": 696.6817426283196
+      },
+      "result": "pass"
+    },
+    {
+      "uri": "../work/pet/",
+      "expected": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "actual": "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+      "status": 200,
+      "geometry": {
+        "rect": {
+          "x": 173,
+          "y": 3,
+          "width": 793,
+          "height": 1122
+        },
+        "size": {
+          "width": 1139,
+          "height": 944
+        }
+      },
+      "point": {
+        "x": 576.9636515371556,
+        "y": 844.6079148994658
+      },
+      "result": "pass"
+    }
+  ],
+  "external": [
+    {
+      "id": "qq-lingxi-repo",
+      "url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "status": 200,
+      "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+      "visible_text_length": 6115,
+      "screenshot": "external-production-qq-lingxi-repo.png",
+      "result": "anonymous_content_verified"
+    },
+    {
+      "id": "notion-organic-synthesis",
+      "url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "status": 200,
+      "title": "Organic Synthesis Laborat",
+      "visible_text_length": 2099,
+      "screenshot": "external-production-notion-organic-synthesis.png",
+      "result": "anonymous_content_verified"
+    },
+    {
+      "id": "notion-organic-chemistry",
+      "url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "status": 200,
+      "title": "Organic Chemistry",
+      "visible_text_length": 1840,
+      "screenshot": "external-production-notion-organic-chemistry.png",
+      "result": "anonymous_content_verified"
+    }
+  ],
+  "browser": "153.0.8010.52",
+  "checked_completed_at": "2026-09-20T03:36:13.155Z"
+}

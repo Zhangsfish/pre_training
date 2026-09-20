@@ -1,0 +1,76 @@
+{
+  "scope": "source and registered public-file check only, not a new R06 build",
+  "accepted_r05_commit": "3abb14d725b7bd46181013d217dfc5a09d1716b7",
+  "source_difference": [],
+  "site_public_files": [
+    "downloads/zhang-shuo-resume.pdf"
+  ],
+  "general_pdf_sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+  "accepted_output_allowlist": [
+    {
+      "path": "404.html",
+      "bytes": 1123,
+      "sha256": "c4e8376ed417ca84907d03f1b1843ea3521cf902a4f21977e134ace7080839a1",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    },
+    {
+      "path": "_astro/site.LYHxabVX.css",
+      "bytes": 8374,
+      "sha256": "55ec825fccb2e30fbaa578cae3c5edac1dc2c5198f2107768f17c6f1220159d4",
+      "type": ".css",
+      "basis": "Local A design CSS; no runtime or remote imports"
+    },
+    {
+      "path": "downloads/zhang-shuo-resume.pdf",
+      "bytes": 166740,
+      "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+      "type": ".pdf",
+      "basis": "Registered general-zh PDF; publication/resume-manifest.json"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8556,
+      "sha256": "62eed7faa4ed7d6229b04cebe250610af9a015f6189544fe46041bdf3092e0c9",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    },
+    {
+      "path": "resume/index.html",
+      "bytes": 4170,
+      "sha256": "7ed349aadb787c9edb8e1893023e26895d065a81d0bf8dc00ba7343aeebc010c",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    },
+    {
+      "path": "work/kin/index.html",
+      "bytes": 3985,
+      "sha256": "a52ace62e65075f603a59a139f983fcd8fcf148dbee24b81b487e396db033275",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    },
+    {
+      "path": "work/pet/index.html",
+      "bytes": 3071,
+      "sha256": "c7650053acffae25fb3ba4c33234a141e189a1b61eea46e8cf5de229639a9405",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    },
+    {
+      "path": "work/qq-lingxi/index.html",
+      "bytes": 3213,
+      "sha256": "7735a095f87ad11f70c787c55ec756374b10acb7804dae54e4de5b9575cde803",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    },
+    {
+      "path": "work/spps/index.html",
+      "bytes": 3179,
+      "sha256": "d66a459752b0223a4c3e6a29ee93e7732d36d4bd785ed00a5e84772b763585df",
+      "type": ".html",
+      "basis": "Explicit seven-route allowlist; publication projection"
+    }
+  ],
+  "fresh_r06_build": false,
+  "uploaded_files": []
+}

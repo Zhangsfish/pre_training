@@ -1,0 +1,13 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+> NOTE: The Vercel CLI now collects telemetry regarding usage of the CLI.
+> This information is used to shape the CLI roadmap and prioritize features.
+> You can learn more, including how to opt-out if you'd not like to participate in this program, by visiting the following URL:
+> https://vercel.com/docs/cli/about-telemetry
+Retrieving project…
+> Downloading `production` environment variables for zhangsfishs-projects/zhang-shuo-portfolio
+Downloading
+
+✓ Created         .vercel\.env.production.local file
+
+> Downloading project settings
+Downloaded project settings to E:\myself\pre_training-r06\site\.vercel\project.json [0ms]

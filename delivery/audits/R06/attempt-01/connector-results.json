@@ -1,0 +1,18 @@
+{
+  "environment": "Current Codex desktop, fresh calls this R06 turn",
+  "teams": {
+    "count": 0
+  },
+  "projects_without_team_filter": {
+    "count": 1,
+    "project_name": "qq-lingxi-agent-platform",
+    "action": "read-only discovery; unrelated project not modified"
+  },
+  "deploy_tool": {
+    "isError": true,
+    "error": "McpServerError: Tool deploy_to_vercel not found",
+    "error_code": "INVALID_ARGUMENT",
+    "json_rpc_code": -32602
+  },
+  "interpretation": "Read connection works, but exposed deployment write tool is unavailable. CLI tested independently."
+}

@@ -21,4 +21,6 @@ delivery/audits/R04/tmp/
 # R05 isolated acceptance tools and evidence scratch
 acceptance/node_modules/
 acceptance/.venv/
+delivery/audits/R06/tmp/
+delivery/audits/R06/attempt-02/downloaded-general-resume.pdf
 delivery/audits/R05/tmp/

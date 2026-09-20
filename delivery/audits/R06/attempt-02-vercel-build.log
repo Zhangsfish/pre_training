@@ -1,0 +1,25 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Running "install" command: `npm ci`...
+
+added 272 packages, and audited 273 packages in 17s
+
+85 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+{
+  "status": "error",
+  "reason": "build_failed",
+  "message": "spawn cmd.exe ENOENT",
+  "next": [
+    {
+      "command": "vercel pull --yes --environment production --scope zhangsfishs-projects",
+      "when": "Ensure project settings are present"
+    },
+    {
+      "command": "vercel build --yes --target production --scope zhangsfishs-projects",
+      "when": "re-run build"
+    }
+  ]
+}
+Error: spawn cmd.exe ENOENT

@@ -1,0 +1,23 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+> Found Project zhangsfishs-projects/zhang-shuo-portfolio [419ms]
+
+General
+
+ID				prj_CfECSSKoBni34VGDTa89UhKu4n09
+Name			zhang-shuo-portfolio
+Owner			zhangsfish's projects
+Created At			20 September 2026 11:20:25 [23s ago]
+Root Directory		.
+Node.js Version		24.x
+
+Framework Settings
+
+Framework Preset		Other
+Build Command		`npm run vercel-build` or `npm run build`
+Output Directory		`public` if it exists, or `.`
+Install Command		`yarn install`, `pnpm install`, `npm install`, or `bun install`
+
+Sandbox
+
+Region			iad1
+Failover Regions		None

@@ -1,0 +1,5 @@
+{
+  "command": "vercel whoami --no-color",
+  "exit_code": 1,
+  "started_at": "2026-09-20T03:04:21.1687512Z"
+}

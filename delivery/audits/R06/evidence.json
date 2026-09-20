@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "round": "R06",
+  "attempt": 2,
+  "status": "deployed_and_verified_pending_review",
+  "reviewer_decision": "pending",
+  "branch": "codex/R06",
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/6",
+  "base_commit": "9c4c3e885e9f5e03bfb6c8939e52d1de90a305ad",
+  "deployed_commit": "2aca9cd130d9b57db608dc80bb952e5f3bf9894e",
+  "prompt": {
+    "path": "delivery/prompts/R06_RELEASE.md",
+    "sha256": "bcbb9e2995fbd61c7a1af406c92dca09199470f89e1eb0dcf43166902ce52ea6"
+  },
+  "accepted_review": {
+    "path": "delivery/reviews/R05-a01.md",
+    "git_blob_sha": "ef48d28e6eb127ff00219b6499c0fcd8f77ca0ab"
+  },
+  "authorization": {
+    "source": "user_chat_and_STATE",
+    "host": "Vercel",
+    "visibility": "public",
+    "domain_scope": "platform_temporary_domain_only",
+    "custom_domain_or_dns_changes": false,
+    "paid_upgrade_allowed": false,
+    "analytics_allowed": false
+  },
+  "account": {
+    "username": "zhangsfish",
+    "plan": "hobby",
+    "paid_upgrade_performed": false,
+    "excess_billing_enabled": false,
+    "login_method": "Vercel CLI device authorization completed by user in Edge"
+  },
+  "deployment": {
+    "project_name": "zhang-shuo-portfolio",
+    "project_id": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+    "team_id": "team_iUtfj6fbX7ntRyux5VD2Req3",
+    "production_url": "https://zhang-shuo-portfolio.vercel.app",
+    "immutable_url": "https://zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app",
+    "deployment_id": "dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw",
+    "ready_state": "READY",
+    "target": "production",
+    "aliases": [
+      "zhang-shuo-portfolio.vercel.app",
+      "zhang-shuo-portfolio-zhangsfishs-projects.vercel.app"
+    ],
+    "custom_domains": [],
+    "git_auto_deploy_connected": false,
+    "verified_from": "2026-09-20T03:34:51.900Z",
+    "verified_through": "2026-09-20T03:38:00.362Z"
+  },
+  "build_and_allowlist": {
+    "npm_ci_packages": 272,
+    "npm_audit_vulnerabilities": 0,
+    "astro_check": {"errors": 0, "warnings": 0, "hints": 0},
+    "node_tests": {"passed": 31, "failed": 0},
+    "dist_audit": "pass",
+    "files": 11,
+    "total_bytes": 206629,
+    "client_js_bytes": 0,
+    "approved_media": 0,
+    "public_resume_count": 1,
+    "remote_files_exactly_match_dist": true,
+    "manifest": "attempt-02/dist-resource-manifest.json"
+  },
+  "browser": {
+    "engine": "Chrome 153.0.8010.52",
+    "authentication_state": "fresh temporary profile, no saved login",
+    "https_errors_ignored": false,
+    "desktop_routes": 7,
+    "mobile_375_routes": 7,
+    "statuses": {
+      "/": 200,
+      "/work/kin/": 200,
+      "/work/spps/": 200,
+      "/work/qq-lingxi/": 200,
+      "/work/pet/": 200,
+      "/resume/": 200,
+      "/r06-not-found/": 404
+    },
+    "same_origin_resource_failures": 0,
+    "canonical_and_og": "pass on six indexable routes",
+    "custom_404_noindex": "pass",
+    "mobile_horizontal_overflow": 0,
+    "hsts": "max-age=63072000; includeSubDomains; preload",
+    "result_file": "attempt-02/production-browser.json"
+  },
+  "pdf": {
+    "url": "https://zhang-shuo-portfolio.vercel.app/downloads/zhang-shuo-resume.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 166740,
+    "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+    "download_ui_verified": true,
+    "native_reader_relative_links_clicked": 4,
+    "targets": [
+      "https://zhang-shuo-portfolio.vercel.app/work/kin/",
+      "https://zhang-shuo-portfolio.vercel.app/work/spps/",
+      "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/",
+      "https://zhang-shuo-portfolio.vercel.app/work/pet/"
+    ],
+    "result": "pass"
+  },
+  "external_links": [
+    {"id":"qq-lingxi-repo","http_status":200,"result":"anonymous_content_verified"},
+    {"id":"notion-organic-synthesis","http_status":200,"result":"anonymous_content_verified"},
+    {"id":"notion-organic-chemistry","http_status":200,"result":"anonymous_content_verified"}
+  ],
+  "restrictions": {
+    "state_modified": false,
+    "facts_modified": false,
+    "repository_visibility_changed": false,
+    "analytics_added": false,
+    "custom_domain_or_dns_changed": false,
+    "unapproved_media_uploaded": false,
+    "other_resume_variants_uploaded": false,
+    "deployment_scope": "site/dist only"
+  },
+  "superseded_attempts": [
+    {
+      "deployment_id": "dpl_BnAhmREPoyfkkNMnX5mJV3oj94Am",
+      "status": "ERROR",
+      "reason": "site-only source upload omitted build-time sibling resume scripts; never became production"
+    },
+    {
+      "deployment_id": "dpl_7Zp2QRRET5LAP7BLGeyXpZ5XQWTV",
+      "status": "SUPERSEDED",
+      "reason": "static content deployed but default Vercel 404 appeared; alias replaced after custom fallback route was added"
+    }
+  ],
+  "rollback": {
+    "previous_accepted_production": null,
+    "restore_deployment_id": "dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw",
+    "restore_commit": "2aca9cd130d9b57db608dc80bb952e5f3bf9894e",
+    "automatic_production_deployments": false,
+    "note": "For a future bad deployment, roll production back to this deployment. Do not use superseded dpl_7Zp2... because its unknown-route behavior was incomplete."
+  },
+  "artifacts": [
+    {"path":"attempt-02/production-browser.json","bytes":11021,"sha256":"63ea3ea26739883d1d305871d6fc041e8ba391b863f5a26841a60ca5b41b5ece"},
+    {"path":"attempt-02/dist-resource-manifest.json","bytes":4810,"sha256":"160d092427d01fad426477793551406e1908c32477425b6ce68727ebda91788f"},
+    {"path":"attempt-02/home-production-1440.png","bytes":294319,"sha256":"4969b985bd2e7712fe5af6fa16e334cad533eced0bc6c74132023de3c496069d"},
+    {"path":"attempt-02/home-production-375.png","bytes":260798,"sha256":"b06880a58e05e5c419f7226c66331d7a564cbd38ef186f8e62678a66c16faf75"},
+    {"path":"attempt-02/404-production-1440.png","bytes":31590,"sha256":"1689fe9d79b34b263a1f722eed49d37f362b75593c81fd92572987f0d3206373"},
+    {"path":"attempt-02/pdf-production-native-reader.png","bytes":254955,"sha256":"28c9c342c9f32d36a58217d259af9cef91805925da59a6ebed2e94396c6ffa6d"},
+    {"path":"attempt-02/external-production-qq-lingxi-repo.png","bytes":81514,"sha256":"b02f8fb33f3f037f8956e76e5f30e65495cc5864e877db269779548d78d801d9"},
+    {"path":"attempt-02/external-production-notion-organic-synthesis.png","bytes":443948,"sha256":"040529fb2e92c4d9313e5007818b120001d0407bc143f37006fd240f27cd4f38"},
+    {"path":"attempt-02/external-production-notion-organic-chemistry.png","bytes":457374,"sha256":"2693a2561ada00dbeb0ea580b47433e29c2f377f46daf0c5f1e0080b7101e9ea"},
+    {"path":"attempt-02-prebuilt-deploy-404.log","bytes":1869,"sha256":"d97f912493739cb35e9d8e6547be842a55eee88dfabfc72c045eb442794decf9"},
+    {"path":"attempt-02-deployment-inspect.json","bytes":1911,"sha256":"13baff4ae02ecac2c5ac260d788b9e02dc52c186298d00063ee9e09a07f79cc5"}
+  ],
+  "non_blocking_limits": [
+    "SPPS original images/videos remain excluded under the accepted text-only fallback because publication permission/bridge is still incomplete.",
+    "China mainland carrier and regional reachability were not tested.",
+    "R06 public browser verification used current Chrome; cross-browser layout evidence remains the accepted R05 local suite."
+  ]
+}
