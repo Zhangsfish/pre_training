@@ -5,6 +5,7 @@
   "status": "deployed_and_verified_pending_review",
   "reviewer_decision": "pending",
   "branch": "codex/R07-media-gallery",
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/7",
   "base_commit": "46a5ac0b1e9abc02e37776eb8fde3631d2eeb0eb",
   "import_commit": "6bf1f5566ea3c1549fe16a1b89b41fd58576d7e3",
   "deployed_commit": "6c9bd47704eb620dcd1788d0f7cadd432a413e02",

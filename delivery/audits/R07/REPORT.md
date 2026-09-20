@@ -7,6 +7,7 @@ R07 已按用户提供的成品包完成集成、独立重建、真实浏览器�
 - 生产 URL：<https://zhang-shuo-portfolio.vercel.app>
 - 本次不可变部署 URL：<https://zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app>
 - Vercel deployment ID：`dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE`
+- 审查 PR：<https://github.com/Zhangsfish/pre_training/pull/7>
 - Vercel project ID：`prj_CfECSSKoBni34VGDTa89UhKu4n09`
 - Vercel team ID：`team_iUtfj6fbX7ntRyux5VD2Req3`
 - 部署源提交：`6c9bd47704eb620dcd1788d0f7cadd432a413e02`
@@ -62,4 +63,4 @@ QQ Demo 的 401 来自独立的 `qq-lingxi-agent-platform.vercel.app`，不是�
 
 如需回滚作品集 production alias，可恢复 R06 已接受部署 `dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw`。附件导入的 `delivery/STATE.json` 仍保留旧环境的 blocked 记录；实施者未自行改写授权/验收状态，请审查者以本报告和 production evidence 裁决并更新 STATE。
 
-等待策划者审查；不进入下一轮，不再发布其他版本。
+PR #7 等待策划者审查；不进入下一轮，不再发布其他版本。
