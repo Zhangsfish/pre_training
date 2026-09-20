@@ -8,6 +8,7 @@
 - prompt_sha256 (Git blob): 8211d124336562555efd57ffec0df2c428f683077f7c11f725fb945c0583a76d
 - implementation_status: completed
 - reviewer_decision: pending
+- PR: https://github.com/Zhangsfish/pre_training/pull/3
 
 ## 完成
 
