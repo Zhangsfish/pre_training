@@ -1,0 +1,41 @@
+command: npm --prefix site run test
+cwd: .
+started_at: 2026-09-19T19:20:49.3217017Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ reviewed source set passes review and production without source drift (28.469ms)
+✔ missing claim fails closed (8.7546ms)
+✔ unknown cannot become an outcome (8.237ms)
+✔ excluded project cannot enter default home (8.9545ms)
+✔ draft is blocked from production (16.4324ms)
+✔ approving document shells does not approve their underlying claims (8.0402ms)
+✔ draft negative fixtures do not mutate the planner-approved source (10.1789ms)
+✔ duplicate identifiers rejected (8.209ms)
+✔ nonexistent source rejected (8.2598ms)
+✔ wrong source heading rejected (9.2956ms)
+✔ source drift requests targeted review rather than silently updating it (8.5207ms)
+✔ required external link qq-lingxi-repo must exist (8.9903ms)
+✔ required external link notion-organic-synthesis must exist (8.5448ms)
+✔ required external link notion-organic-chemistry must exist (9.3485ms)
+✔ course links must also appear in teaching, not only registry (8.0501ms)
+✔ both resume-only fields are forbidden in site allowlist (16.6703ms)
+✔ real resume fields exist but explicit site projection omits their names and values (2.5929ms)
+✔ pending media cannot be referenced (8.9104ms)
+✔ pending original cannot be assigned public path (8.6013ms)
+✔ excluded and resume-only claims cannot render (16.0808ms)
+✔ production command ignores inherited review env and exits nonzero before output (321.4628ms)
+✔ production injects zero candidate routes (2.1949ms)
+✔ review registers exactly three local prerendered candidates (0.9717ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 729.6628

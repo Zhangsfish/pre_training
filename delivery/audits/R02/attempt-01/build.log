@@ -1,0 +1,30 @@
+command: npm --prefix site run build
+cwd: .
+started_at: 2026-09-19T19:20:57.7895263Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+03:21:01 [content] Syncing content
+03:21:01 [content] Synced content
+03:21:01 [types] Generated 1.02s
+03:21:01 [build] output: "static"
+03:21:01 [build] mode: "static"
+03:21:01 [build] directory: <repo>\site\dist\
+03:21:01 [build] Collecting build info...
+03:21:01 [build] ✓ Completed in 1.08s.
+03:21:01 [build] Building static entrypoints...
+03:21:02 [vite] ✓ built in 464ms
+03:21:02 [vite] ✓ built in 61ms
+03:21:02 [build] Rearranging server assets...
+
+ generating static routes 
+03:21:02   ├─ /index.html (+59ms) 
+03:21:02 ✓ Completed in 114ms.
+
+03:21:02 [build] ✓ Completed in 724ms.
+03:21:02 [build] 1 page(s) built in 1.81s
+03:21:02 [build] Complete!

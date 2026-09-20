@@ -1,0 +1,21 @@
+---
+import type { DisplayProject } from '../../src/types';
+interface Props { project: DisplayProject; variant: 'a'|'b'|'c'; index: number }
+const { project:p, variant, index }=Astro.props;
+---
+<article id={p.id} class:list={['project', `project-${p.id}`]} data-project={p.id}>
+  <div class="project-margin"><span class="number">0{index + 1}</span><span class="project-name">{p.id.toUpperCase()}</span></div>
+  {variant==='b' && p.id==='kin' && <div class="type-stage" aria-hidden="true"><span>KIN</span><span class="stage-arrow">↗</span></div>}
+  {p.id==='spps' && <div class="media-placeholder" role="note" aria-label="实拍素材整理中，开发占位，非设备照片"><span>实拍素材整理中</span><small>开发占位 · 非设备照片</small></div>}
+  <div class="project-copy">
+    <h3 data-copy={`${p.id}-title`}>{p.title}</h3>
+    <p class="status" data-copy={`${p.id}-status`}>{p.status}</p>
+    <p data-copy={`${p.id}-summary`}>{p.summary}</p>
+    <dl>
+      <div><dt>我的工作</dt><dd data-copy={`${p.id}-ownership`}>{p.ownership}</dd></div>
+      <div><dt>当前结果</dt><dd data-copy={`${p.id}-result`}>{p.result}</dd></div>
+    </dl>
+    <p class="boundary" data-copy={`${p.id}-boundary`}>{p.boundary}</p>
+    {p.links.map(l=><a class="project-link" href={l.url}>{l.label} ↗</a>)}
+  </div>
+</article>

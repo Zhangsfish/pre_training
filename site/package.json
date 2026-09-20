@@ -9,6 +9,7 @@
   "scripts": {
     "check": "node scripts/validate-content.mjs && astro check",
     "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node review/e2e.mjs",
     "build": "node scripts/build.mjs production",
     "review:build": "node scripts/build.mjs review",
     "preview": "astro preview --host 127.0.0.1",

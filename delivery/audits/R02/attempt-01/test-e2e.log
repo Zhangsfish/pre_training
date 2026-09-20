@@ -1,0 +1,36 @@
+command: npm --prefix site run test:e2e
+cwd: .
+started_at: 2026-09-19T19:21:03.2003114Z
+node: v24.15.0
+npm: 11.12.1
+exit_code: 0
+
+> pre-training-site@0.1.0 test:e2e
+> node review/e2e.mjs
+
+PASS production isolation: 1 files, no candidate routes/styles/content or private fields
+PASS A 1440x1000 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 1440x1000 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 768x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 768x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 375x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 375x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 320x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS A 320x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 1440x1000 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 1440x1000 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 768x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 768x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 375x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 375x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 320x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS B 320x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 1440x1000 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 1440x1000 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 768x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 768x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 375x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 375x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 320x812 JS=true: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS C 320x812 JS=false: source parity, first fold, links, keyboard, media label, no overflow/errors/external requests
+PASS structurally distinct A/B/C; production root readable and all candidate URLs return 404
