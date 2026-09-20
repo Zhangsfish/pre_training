@@ -1,0 +1,201 @@
+{
+  "base": "http://127.0.0.1:4321",
+  "checked_at": "2026-09-20T18:56:21.487Z",
+  "browser": "153.0.8010.52",
+  "authentication": "fresh anonymous browser contexts; no persistent profile",
+  "routes": [
+    {
+      "width": 375,
+      "route": "/",
+      "status": 200,
+      "title": "作品与我 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/qq-lingxi/",
+      "status": 200,
+      "title": "QQ 灵犀 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/spps/",
+      "status": 200,
+      "title": "流动化学自动多肽合成平台 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/kin/",
+      "status": 200,
+      "title": "KIN · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/pet/",
+      "status": 200,
+      "title": "PAP/ACP3 靶向 PET 小分子探针 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/teaching/",
+      "status": 200,
+      "title": "有机化学实验 II｜从课程重构到体系传承 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/work/natural-product/",
+      "status": 200,
+      "title": "Jiadifenin 家族天然产物全合成 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 375,
+      "route": "/resume/",
+      "status": 200,
+      "title": "通用简历 · 张朔",
+      "scroll_width": 375
+    },
+    {
+      "width": 1366,
+      "route": "/",
+      "status": 200,
+      "title": "作品与我 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/qq-lingxi/",
+      "status": 200,
+      "title": "QQ 灵犀 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/spps/",
+      "status": 200,
+      "title": "流动化学自动多肽合成平台 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/kin/",
+      "status": 200,
+      "title": "KIN · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/pet/",
+      "status": 200,
+      "title": "PAP/ACP3 靶向 PET 小分子探针 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/teaching/",
+      "status": 200,
+      "title": "有机化学实验 II｜从课程重构到体系传承 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/work/natural-product/",
+      "status": 200,
+      "title": "Jiadifenin 家族天然产物全合成 · 张朔",
+      "scroll_width": 1366
+    },
+    {
+      "width": 1366,
+      "route": "/resume/",
+      "status": 200,
+      "title": "通用简历 · 张朔",
+      "scroll_width": 1366
+    }
+  ],
+  "interactions": {
+    "keyboard_scene_zoom_escape_focus": "pass",
+    "primary_films": [
+      {
+        "name": "观看完整演示 2:52",
+        "before": 0.025266,
+        "after": 0.955,
+        "focus_return": true
+      },
+      {
+        "name": "观看设备运行视频",
+        "before": 0.125176,
+        "after": 1.04805,
+        "focus_return": true
+      },
+      {
+        "name": "观看概念短片 0:50",
+        "before": 0.006292,
+        "after": 0.930161,
+        "focus_return": true
+      }
+    ],
+    "spps_two_films": "decoded",
+    "kin_market_open_and_demo_visible": true,
+    "qq_access_notice_visible": true,
+    "notion_links_visible": true,
+    "details_keyboard_toggle": "pass",
+    "reduced_motion_preview_download": "suppressed"
+  },
+  "external": [
+    {
+      "id": "kin-demo",
+      "requested_url": "https://kin-portfolio-taupe.vercel.app/",
+      "status": 200,
+      "final_url": "https://kin-portfolio-taupe.vercel.app/",
+      "title": "KIN · 产品策略与商业化设计",
+      "visible_text_length": 6191,
+      "error": null
+    },
+    {
+      "id": "qq-lingxi-repo",
+      "requested_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "status": 200,
+      "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+      "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+      "visible_text_length": 7879,
+      "error": null
+    },
+    {
+      "id": "notion-organic-synthesis",
+      "requested_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "status": 200,
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+      "title": "Organic Synthesis Laborat",
+      "visible_text_length": 2110,
+      "error": null
+    },
+    {
+      "id": "notion-organic-chemistry",
+      "requested_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "status": 200,
+      "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+      "title": "Organic Chemistry",
+      "visible_text_length": 2010,
+      "error": null
+    },
+    {
+      "id": "qq-lingxi-demo",
+      "requested_url": "https://qq-lingxi-agent-platform.vercel.app/",
+      "status": 401,
+      "result": "Basic Auth remains; no bypass attempted"
+    }
+  ],
+  "distribution": {
+    "not_found": 404,
+    "pdf": {
+      "status": 200,
+      "bytes": 83934,
+      "sha256": "aa92cf7c795cf4df8fafc37bc8a93b719b4325975d0ef18c8363f141e2985b07"
+    }
+  }
+}

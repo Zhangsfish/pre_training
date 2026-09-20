@@ -1,0 +1,15 @@
+
+> pre-training-site@0.1.0 check
+> node scripts/validate-content.mjs && astro check
+
+PASS: content contract, source references, public fields and required links
+02:44:38 [vite] [optimizer] bundling dependencies...
+02:44:42 [content] Syncing content
+02:44:43 [content] Synced content
+02:44:43 [types] Generated 6.77s
+02:44:43 [check] Getting diagnostics for Astro files in E:\myself\pre_training-home-alignment\site...
+Result (29 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
