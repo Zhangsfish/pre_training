@@ -1,0 +1,26 @@
+[
+  {
+    "log_path": "clean-site-install.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:24:41.3165587Z",
+    "command": "npm.cmd --prefix site ci --cache delivery/audits/R05/tmp/new-site-cache --no-audit --no-fund"
+  },
+  {
+    "log_path": "clean-tools-install.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:25:02.8296002Z",
+    "command": "npm.cmd --prefix acceptance ci --cache delivery/audits/R05/tmp/new-tool-cache --no-audit --no-fund"
+  },
+  {
+    "log_path": "clean-python-venv.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:25:07.0199343Z",
+    "command": "python -m venv acceptance/.venv"
+  },
+  {
+    "log_path": "clean-python-install.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:25:26.0155778Z",
+    "command": "acceptance/.venv/Scripts/python.exe -m pip install --no-cache-dir -r acceptance/requirements.txt"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "log_path": "check.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:25:34.2049328Z",
+    "command": "npm.cmd --prefix site run check"
+  },
+  {
+    "log_path": "resume-build.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:26:45.7501351Z",
+    "command": "npm.cmd --prefix site run resume:build -- --verify-published"
+  },
+  {
+    "log_path": "resume-check.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:05.6236807Z",
+    "command": "npm.cmd --prefix site run resume:check"
+  },
+  {
+    "log_path": "pdf-inventory.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:11.2816285Z",
+    "command": "E:\\myself\\pre_training-r05-final\\acceptance\\.venv\\Scripts\\python.exe acceptance/pdf-inventory.py E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01"
+  },
+  {
+    "log_path": "build.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:12.0696970Z",
+    "command": "npm.cmd --prefix site run build"
+  },
+  {
+    "log_path": "test.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:21.4689026Z",
+    "command": "npm.cmd --prefix site run test"
+  },
+  {
+    "log_path": "test-jd.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:24.1895909Z",
+    "command": "npm.cmd --prefix site run test:jd"
+  },
+  {
+    "log_path": "audit-dist.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:26.0193540Z",
+    "command": "npm.cmd --prefix site run audit:dist"
+  },
+  {
+    "log_path": "inventory.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:27.2117867Z",
+    "command": "node acceptance/inventory.mjs E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01"
+  },
+  {
+    "log_path": "test-e2e.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:27:27.4304549Z",
+    "command": "npm.cmd --prefix site run test:e2e -- --output E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01"
+  },
+  {
+    "log_path": "acceptance-browser.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:28:56.4688987Z",
+    "command": "node acceptance/browser.mjs E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01"
+  },
+  {
+    "log_path": "external-links.log",
+    "exit_code": 0,
+    "started_at": "2026-09-20T02:29:31.5531487Z",
+    "command": "node acceptance/external.mjs E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01"
+  }
+]

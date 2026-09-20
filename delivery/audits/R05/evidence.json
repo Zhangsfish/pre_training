@@ -1,0 +1,1134 @@
+{
+  "round": "R05",
+  "attempt": 1,
+  "branch": "codex/R05",
+  "pr_url": null,
+  "base_commit": "5b1f48a99af87ee693f1b2c43d37756a418ac061",
+  "tested_commit": "b2eadcea9f9ae5def9df1068b9d715919e69586e",
+  "prompt_path": "delivery/prompts/R05_ACCEPTANCE.md",
+  "prompt_sha256": "0fc4858197d304479ce6e966773c9bbe9b01ca88bbd8a52ce1a79cfe74690339",
+  "accepted_reviews": [
+    {
+      "path": "delivery/reviews/R01-a02.md",
+      "git_blob_sha": "f2941223665d11d15763c2da82d1daf63c3e2665"
+    },
+    {
+      "path": "delivery/reviews/R02-a02.md",
+      "git_blob_sha": "10173d166c6e8f25522ac88a8771f8137bb39acc"
+    },
+    {
+      "path": "delivery/reviews/R03-a01.md",
+      "git_blob_sha": "4a4b48c3497132a845f60643601d27fe038b6501"
+    },
+    {
+      "path": "delivery/reviews/R04-a01.md",
+      "git_blob_sha": "baa3b4b66ee2b2cfaac1eadd2f83e1c86d848b04"
+    }
+  ],
+  "status": "ready_for_deployment",
+  "implementation_status": "completed",
+  "reviewer_decision": "pending",
+  "deployment_performed": false,
+  "environment": {
+    "fresh_acceptance_dependency_install": true,
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "typescript": "6.0.3",
+    "poppler": "pdftoppm version 26.07.0",
+    "node": "v24.15.0",
+    "git_status_after": [],
+    "astro": "7.3.3",
+    "fresh_site_dependency_install": true,
+    "fresh_python_venv": true,
+    "python": "Python 3.12.14",
+    "playwright": "1.62.1",
+    "pypdf": "6.10.0",
+    "npm": "11.12.1",
+    "browser": "153.0.8010.52",
+    "embedded_fonts": [
+      "/AAAAAA+MicrosoftYaHei-Bold",
+      "/BAAAAA+MicrosoftYaHei"
+    ]
+  },
+  "clean_checkout": {
+    "checkout": "E:\\myself\\pre_training-r05-final",
+    "locks": [
+      {
+        "sha256": "d11d253db48a8d61901cace6e835800ccec0ac9a76a38388ee9734f07f85359e",
+        "path": "site/package-lock.json"
+      },
+      {
+        "sha256": "178aa335ddc273091eb7fe3c0c5008fa03285c75cf56bbc54bbd449f52697f0a",
+        "path": "acceptance/package-lock.json"
+      }
+    ],
+    "node": "v24.15.0",
+    "checked_at": "2026-09-20T02:24:36.1286778Z",
+    "tested_commit": "b2eadcea9f9ae5def9df1068b9d715919e69586e",
+    "npm": "11.12.1",
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "absent": [
+      {
+        "exists": false,
+        "path": "site/node_modules"
+      },
+      {
+        "exists": false,
+        "path": "site/.astro"
+      },
+      {
+        "exists": false,
+        "path": "site/dist"
+      },
+      {
+        "exists": false,
+        "path": "resume/exports"
+      },
+      {
+        "exists": false,
+        "path": "acceptance/node_modules"
+      },
+      {
+        "exists": false,
+        "path": "acceptance/.venv"
+      }
+    ],
+    "git_status": []
+  },
+  "installations": [
+    {
+      "log_path": "clean-site-install.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:24:41.3165587Z",
+      "command": "npm.cmd --prefix site ci --cache delivery/audits/R05/tmp/new-site-cache --no-audit --no-fund",
+      "sha256": "9a1e4f573c3f7f436c63551e688ca4c9c8bf2958a76b5d1996400512d5ef6bcd"
+    },
+    {
+      "log_path": "clean-tools-install.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:25:02.8296002Z",
+      "command": "npm.cmd --prefix acceptance ci --cache delivery/audits/R05/tmp/new-tool-cache --no-audit --no-fund",
+      "sha256": "f7d44730ce3d2c9ff0d8f29d189e7b3b1a6ff375003a3a792fb1b9d59e4bc76b"
+    },
+    {
+      "log_path": "clean-python-venv.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:25:07.0199343Z",
+      "command": "python -m venv acceptance/.venv",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "log_path": "clean-python-install.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:25:26.0155778Z",
+      "command": "acceptance/.venv/Scripts/python.exe -m pip install --no-cache-dir -r acceptance/requirements.txt",
+      "sha256": "165108a8bdcaf692e5b1bbd78a0aeb63046caf0190eeef59db0039678af751f9"
+    }
+  ],
+  "commands": [
+    {
+      "log_path": "check.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:25:34.2049328Z",
+      "command": "npm.cmd --prefix site run check",
+      "sha256": "c80098349fd6716014e6d22d388940d66fad15f2794a7bcfa5da569e729598fe"
+    },
+    {
+      "log_path": "resume-build.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:26:45.7501351Z",
+      "command": "npm.cmd --prefix site run resume:build -- --verify-published",
+      "sha256": "398df095bdf17e2f50a7a42e43bd62a868410c5976a08639444d2d874d4eccaa"
+    },
+    {
+      "log_path": "resume-check.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:05.6236807Z",
+      "command": "npm.cmd --prefix site run resume:check",
+      "sha256": "6692ba6689e929a4e129d90219c56a12fac5c9152a586a89f0e4c9c2af2fc55a"
+    },
+    {
+      "log_path": "pdf-inventory.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:11.2816285Z",
+      "command": "E:\\myself\\pre_training-r05-final\\acceptance\\.venv\\Scripts\\python.exe acceptance/pdf-inventory.py E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01",
+      "sha256": "81d5ce3a295ce0bbb0efb20e28493ed5ae141890639fefe642ba6702734856ca"
+    },
+    {
+      "log_path": "build.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:12.0696970Z",
+      "command": "npm.cmd --prefix site run build",
+      "sha256": "ecff9ded63b36e8219b00e63ed6b9a72473b3209236b58d06e2e8a8e7087e2f1"
+    },
+    {
+      "log_path": "test.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:21.4689026Z",
+      "command": "npm.cmd --prefix site run test",
+      "sha256": "cdae04ba41431b4b480a40f359bb033ae200a50274d448155a1f9218737719d3"
+    },
+    {
+      "log_path": "test-jd.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:24.1895909Z",
+      "command": "npm.cmd --prefix site run test:jd",
+      "sha256": "bb87dca61ac6aae2b1984c739993928c144b2ad717a468338dd466670a558e59"
+    },
+    {
+      "log_path": "audit-dist.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:26.0193540Z",
+      "command": "npm.cmd --prefix site run audit:dist",
+      "sha256": "82ff6aa0d698d54195b3223373907674d6b4355bd229414621f97a184a6d49b2"
+    },
+    {
+      "log_path": "inventory.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:27.2117867Z",
+      "command": "node acceptance/inventory.mjs E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01",
+      "sha256": "84f6e347502498a7f1b19fa4dfa691c2fbd4ef6bf4356c04c0649c54918ef2ce"
+    },
+    {
+      "log_path": "test-e2e.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:27:27.4304549Z",
+      "command": "npm.cmd --prefix site run test:e2e -- --output E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01",
+      "sha256": "3a379b6619dadcfab1c8d12c388a9da141f32a1741312f6dc24f2a715db94726"
+    },
+    {
+      "log_path": "acceptance-browser.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:28:56.4688987Z",
+      "command": "node acceptance/browser.mjs E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01",
+      "sha256": "bed7538f07526629708348283d8b4d0c7a270b04c56a92839eda4cd1a0e1d30f"
+    },
+    {
+      "log_path": "external-links.log",
+      "exit_code": 0,
+      "started_at": "2026-09-20T02:29:31.5531487Z",
+      "command": "node acceptance/external.mjs E:\\myself\\pre_training-r05\\delivery\\audits\\R05\\attempt-01",
+      "sha256": "5fc0486e5287b47f47e36fbf8b9c6f71dfcf964533ba13e96bd108517a9f0961"
+    }
+  ],
+  "browser": {
+    "configurations": 56,
+    "local_hrefs": 32,
+    "widths": [
+      320,
+      375,
+      768,
+      1440
+    ],
+    "javascript": [
+      true,
+      false
+    ],
+    "zoom_200_pages": 7,
+    "zoom_capture": "Native compositor viewport; verified 1440x1000 PNG; innerWidth 720 at 200%. Playwright fullPage capture was found to crop the zoom image during preflight and fixed before this tested commit.",
+    "keyboard_pages": 7,
+    "reduced_motion_pages": 7,
+    "online_pdf_relative_clicks": 15,
+    "pdf_fixture_note": "Only general PDF is in dist. Three other baseline PDFs served solely by local explicit test fixtures from ignored exports.",
+    "download_sha256_verified": true
+  },
+  "pdfs": [
+    {
+      "variant": "general-zh",
+      "pages": 1,
+      "text_sha256": "ebd1008d7963bfa0b38a6595ed27d00df1063a21e61d6baff92c618fccff2d4c",
+      "pdf_sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+      "r04_text_stable": true,
+      "render_sha256": "c01f297648d2cc4a3f3dfe3a13e228118117341d1aaa0b15b9f9fc2c1cf375b2"
+    },
+    {
+      "variant": "product-commercial-zh",
+      "pages": 1,
+      "text_sha256": "b9a292622e2bea5a1ea7dc55ebe7ded5b273037442e2492725ef05060ac619e8",
+      "pdf_sha256": "a63084997a2ed68675c3c123c50ff54b000665fabac733b62749607f3dc3ff22",
+      "r04_text_stable": true,
+      "render_sha256": "003d903501ec78cc88036ee510ca1680339a19de15352cc61485e2c0195ec04d"
+    },
+    {
+      "variant": "brand-insight-zh",
+      "pages": 1,
+      "text_sha256": "b2c04adeb3b8dda70e68e30ab8f4bc5e81b94a06177df2412faccdadbc5d01d4",
+      "pdf_sha256": "2a3a1707551f3a7c9724b2511d973888c1c2d94fc2171048dcd9e76da8bdd913",
+      "r04_text_stable": true,
+      "render_sha256": "d2cf2f8fea264267c281d7737c41e7b9886129b7f9cbfcea6059876c0e7e1cc4"
+    },
+    {
+      "variant": "ai-product-zh",
+      "pages": 1,
+      "text_sha256": "09e766a22eb81f330ac199f7488187fe4c0af7788271be76a56e7de4f2ff49bf",
+      "pdf_sha256": "bed14317325b5997d8b119391b20cb5c6cc35e549635f6e000b6194f684b0a4f",
+      "r04_text_stable": true,
+      "render_sha256": "34003c633bc5316791c8e5aee44ac980cfb00df5d45bca3542e4e8078af7a026"
+    }
+  ],
+  "dist": {
+    "checked_at": "2026-09-20T02:27:27.405Z",
+    "files": [
+      {
+        "path": "404.html",
+        "bytes": 1123,
+        "sha256": "c4e8376ed417ca84907d03f1b1843ea3521cf902a4f21977e134ace7080839a1",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      },
+      {
+        "path": "_astro/site.LYHxabVX.css",
+        "bytes": 8374,
+        "sha256": "55ec825fccb2e30fbaa578cae3c5edac1dc2c5198f2107768f17c6f1220159d4",
+        "type": ".css",
+        "basis": "Local A design CSS; no runtime or remote imports"
+      },
+      {
+        "path": "downloads/zhang-shuo-resume.pdf",
+        "bytes": 166740,
+        "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+        "type": ".pdf",
+        "basis": "Registered general-zh PDF; publication/resume-manifest.json"
+      },
+      {
+        "path": "index.html",
+        "bytes": 8556,
+        "sha256": "62eed7faa4ed7d6229b04cebe250610af9a015f6189544fe46041bdf3092e0c9",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      },
+      {
+        "path": "resume/index.html",
+        "bytes": 4170,
+        "sha256": "7ed349aadb787c9edb8e1893023e26895d065a81d0bf8dc00ba7343aeebc010c",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      },
+      {
+        "path": "work/kin/index.html",
+        "bytes": 3985,
+        "sha256": "a52ace62e65075f603a59a139f983fcd8fcf148dbee24b81b487e396db033275",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      },
+      {
+        "path": "work/pet/index.html",
+        "bytes": 3071,
+        "sha256": "c7650053acffae25fb3ba4c33234a141e189a1b61eea46e8cf5de229639a9405",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      },
+      {
+        "path": "work/qq-lingxi/index.html",
+        "bytes": 3213,
+        "sha256": "7735a095f87ad11f70c787c55ec756374b10acb7804dae54e4de5b9575cde803",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      },
+      {
+        "path": "work/spps/index.html",
+        "bytes": 3179,
+        "sha256": "d66a459752b0223a4c3e6a29ee93e7732d36d4bd785ed00a5e84772b763585df",
+        "type": ".html",
+        "basis": "Explicit seven-route allowlist; publication projection"
+      }
+    ],
+    "total_bytes": 202411,
+    "client_js_bytes": 0,
+    "approved_media": 0,
+    "result": "pass",
+    "media": [
+      {
+        "id": "spps-original-1",
+        "publication": "pending",
+        "availability": "private_archive",
+        "emitted": false
+      },
+      {
+        "id": "spps-original-2",
+        "publication": "pending",
+        "availability": "private_archive",
+        "emitted": false
+      },
+      {
+        "id": "spps-original-3",
+        "publication": "pending",
+        "availability": "private_archive",
+        "emitted": false
+      },
+      {
+        "id": "spps-original-4",
+        "publication": "pending",
+        "availability": "private_archive",
+        "emitted": false
+      },
+      {
+        "id": "spps-original-5",
+        "publication": "pending",
+        "availability": "private_archive",
+        "emitted": false
+      },
+      {
+        "id": "spps-original-6",
+        "publication": "pending",
+        "availability": "private_archive",
+        "emitted": false
+      }
+    ]
+  },
+  "external_links": {
+    "browser": "153.0.8010.52",
+    "method": "Anonymous real Chrome GET; fresh contexts without stored login; rendered body markers and viewport screenshots; not merely HEAD status",
+    "results": [
+      {
+        "id": "github-profile",
+        "url": "https://github.com/Zhangsfish",
+        "http_status": 200,
+        "title": "Zhangsfish · GitHub",
+        "final_url": "https://github.com/Zhangsfish",
+        "checked_at": "2026-09-20T02:29:36.584Z",
+        "verification": "anonymous_content_verified",
+        "error": null,
+        "screenshot": "external-github-profile.png",
+        "visible_text_length": 1019
+      },
+      {
+        "id": "kin-repo",
+        "url": "https://github.com/Zhangsfish/kin-portfolio",
+        "http_status": 404,
+        "title": "Page not found · GitHub · GitHub",
+        "final_url": "https://github.com/Zhangsfish/kin-portfolio",
+        "checked_at": "2026-09-20T02:29:40.742Z",
+        "verification": "unconfirmed",
+        "error": null,
+        "screenshot": "external-kin-repo.png",
+        "visible_text_length": 1001
+      },
+      {
+        "id": "qq-lingxi-repo",
+        "url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "http_status": 200,
+        "title": "GitHub - Zhangsfish/qq-lingxi-agent-platform · GitHub",
+        "final_url": "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+        "checked_at": "2026-09-20T02:29:46.121Z",
+        "verification": "anonymous_content_verified",
+        "error": null,
+        "screenshot": "external-qq-lingxi-repo.png",
+        "visible_text_length": 6106
+      },
+      {
+        "id": "notion-organic-synthesis",
+        "url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+        "http_status": 200,
+        "title": "Organic Synthesis Laborat",
+        "final_url": "https://jlu-taq-chem.notion.site/Organic-Synthesis-Laborat-25d2b4b2c08b80dfa538c31fe9dfbe53",
+        "checked_at": "2026-09-20T02:29:54.221Z",
+        "verification": "anonymous_content_verified",
+        "error": null,
+        "screenshot": "external-notion-organic-synthesis.png",
+        "visible_text_length": 2110
+      },
+      {
+        "id": "notion-organic-chemistry",
+        "url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+        "http_status": 200,
+        "title": "Organic Chemistry",
+        "final_url": "https://jlu-taq-chem.notion.site/Organic-Chemistry-2582b4b2c08b80a19813c4c516fd9d6a",
+        "checked_at": "2026-09-20T02:30:00.786Z",
+        "verification": "anonymous_content_verified",
+        "error": null,
+        "screenshot": "external-notion-organic-chemistry.png",
+        "visible_text_length": 1840
+      }
+    ]
+  },
+  "unchanged": {
+    "facts": true,
+    "publication": true,
+    "state": true,
+    "selected_design": "A",
+    "site_implementation": true,
+    "resume_implementation": true
+  },
+  "blockers": [],
+  "non_blocking_limits": [
+    "SPPS four images/two videos still pending permission/bridge; accepted R03/R04 text-only downgrade retained; no raw media, poster or empty player.",
+    "KIN repository anonymous GET remains 404; visible limitation and working local case retained.",
+    "Standalone downloaded PDF relative project links fail without site base; online Chrome clicks pass. R06 must verify actual host/reader and real-domain strategy separately.",
+    "Optional CET-6 omitted per R04 review because it is not an approved publication claim.",
+    "Local Windows/Chrome/static-host verification is not multi-browser/real-public-host or nationwide network certification; no deployment performed."
+  ],
+  "artifacts": [
+    {
+      "path": "attempt-01/404-1440.png",
+      "bytes": 31590,
+      "sha256": "1689fe9d79b34b263a1e722eed49d37f362b75593c81fd92572987f0d3206373",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/404-320.png",
+      "bytes": 19701,
+      "sha256": "b992de82238c6dcf19b1202abf2273992404b97897c9d2c13e2599f523cfa288",
+      "pixels": [
+        320,
+        812
+      ]
+    },
+    {
+      "path": "attempt-01/404-375.png",
+      "bytes": 19848,
+      "sha256": "c811a791c11dbe47f9424a3a179649d9d3d460ef298caa27f9b682b62b86c121",
+      "pixels": [
+        375,
+        812
+      ]
+    },
+    {
+      "path": "attempt-01/404-768.png",
+      "bytes": 22418,
+      "sha256": "a279b7b5a2b39536c1de1250564fa5bd4a8a503e04edf16f23bab2821ad7178a",
+      "pixels": [
+        768,
+        812
+      ]
+    },
+    {
+      "path": "attempt-01/404-zoom200.png",
+      "bytes": 60965,
+      "sha256": "061efa23b320822e12eb2011bd9e5cc7bab17c10a67a1029e2ca3f0b68335cf9",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/acceptance-browser.json",
+      "bytes": 34176,
+      "sha256": "836776270a14894bd10bb1d28c7958682027a617dfa7663cb4b0aca5fd13392d"
+    },
+    {
+      "path": "attempt-01/acceptance-browser.log",
+      "bytes": 154,
+      "sha256": "bed7538f07526629708348283d8b4d0c7a270b04c56a92839eda4cd1a0e1d30f"
+    },
+    {
+      "path": "attempt-01/audit-dist.log",
+      "bytes": 426,
+      "sha256": "82ff6aa0d698d54195b3223373907674d6b4355bd229414621f97a184a6d49b2"
+    },
+    {
+      "path": "attempt-01/browser-results.json",
+      "bytes": 16247,
+      "sha256": "7780e5ab5add91d9c539893ab43230645159ae1ef125ce0ce01fdda270fff108"
+    },
+    {
+      "path": "attempt-01/build.log",
+      "bytes": 1355,
+      "sha256": "ecff9ded63b36e8219b00e63ed6b9a72473b3209236b58d06e2e8a8e7087e2f1"
+    },
+    {
+      "path": "attempt-01/check.log",
+      "bytes": 468,
+      "sha256": "c80098349fd6716014e6d22d388940d66fad15f2794a7bcfa5da569e729598fe"
+    },
+    {
+      "path": "attempt-01/clean-checkout.json",
+      "bytes": 994,
+      "sha256": "8e96451f838be85fb96afc979130e8f204293b3f55063025c3e1773efeacee9d"
+    },
+    {
+      "path": "attempt-01/clean-python-install.log",
+      "bytes": 443,
+      "sha256": "165108a8bdcaf692e5b1bbd78a0aeb63046caf0190eeef59db0039678af751f9"
+    },
+    {
+      "path": "attempt-01/clean-python-venv.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "attempt-01/clean-site-install.log",
+      "bytes": 236,
+      "sha256": "9a1e4f573c3f7f436c63551e688ca4c9c8bf2958a76b5d1996400512d5ef6bcd"
+    },
+    {
+      "path": "attempt-01/clean-tools-install.log",
+      "bytes": 233,
+      "sha256": "f7d44730ce3d2c9ff0d8f29d189e7b3b1a6ff375003a3a792fb1b9d59e4bc76b"
+    },
+    {
+      "path": "attempt-01/commands.json",
+      "bytes": 2383,
+      "sha256": "5eff3c9d941ee9b7d84dcd5c8c57827642856dfa2865cf5195e4a54cf51b073e"
+    },
+    {
+      "path": "attempt-01/dist-inventory.json",
+      "bytes": 3264,
+      "sha256": "c89a39fa3913ab0bb071d901bc54394db31b3c68d86b9fad00e5861065b2f985"
+    },
+    {
+      "path": "attempt-01/dist-inventory.md",
+      "bytes": 1159,
+      "sha256": "7abd58481b0f41d67f0580fa9e0824560675ea67d5e726e2cc29afa74cbac115"
+    },
+    {
+      "path": "attempt-01/environment.json",
+      "bytes": 396,
+      "sha256": "33ade9c4ba153833023e7e48305cefc2775866efc69253518279be1080c403ab"
+    },
+    {
+      "path": "attempt-01/external-github-profile.png",
+      "bytes": 83145,
+      "sha256": "228c1c47c9e75e682e4b39684af5462aedd96282636d700c2c0ad0162981ecc7",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "path": "attempt-01/external-kin-repo.png",
+      "bytes": 123046,
+      "sha256": "d363b519746504732eeffc58e4050094509980e3758c19214b1aebd5c86e65e1",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "path": "attempt-01/external-links.json",
+      "bytes": 2635,
+      "sha256": "fccf8f9c6f51d9d5b2f81ed22ec4be7e2eb914d56f0a051538011259a23023f4"
+    },
+    {
+      "path": "attempt-01/external-links.log",
+      "bytes": 1983,
+      "sha256": "5fc0486e5287b47f47e36fbf8b9c6f71dfcf964533ba13e96bd108517a9f0961"
+    },
+    {
+      "path": "attempt-01/external-notion-organic-chemistry.png",
+      "bytes": 379611,
+      "sha256": "5dd2120639e7d131ab9aa33a3fc939c968bd6e43e0b584991a60a1250373e2ce",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "path": "attempt-01/external-notion-organic-synthesis.png",
+      "bytes": 393425,
+      "sha256": "d7497911d3553264df9fd81af8e96e8b5834f669ff88f231954bccf444e25766",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "path": "attempt-01/external-qq-lingxi-repo.png",
+      "bytes": 74754,
+      "sha256": "4cf4eb58468673e65ff6b75dc625bf6e06d93fe72bd00661e9ec211810aeeca1",
+      "pixels": [
+        1280,
+        900
+      ]
+    },
+    {
+      "path": "attempt-01/home-1440.png",
+      "bytes": 294319,
+      "sha256": "4969b985bd2e7712fe5af6fa16e334cad533eced0bc6c74132023de3c496069d",
+      "pixels": [
+        1440,
+        2989
+      ]
+    },
+    {
+      "path": "attempt-01/home-320.png",
+      "bytes": 258164,
+      "sha256": "b3e4e25a91f20b6cec1a9d653d7f4bfc5913f4d2bc4dba0720090eea50ac18cb",
+      "pixels": [
+        320,
+        5163
+      ]
+    },
+    {
+      "path": "attempt-01/home-375.png",
+      "bytes": 260798,
+      "sha256": "b06880a58e05e5c419f7226c66331d7a564cbd38ef186f8e62678a66c16faf75",
+      "pixels": [
+        375,
+        4768
+      ]
+    },
+    {
+      "path": "attempt-01/home-768.png",
+      "bytes": 275412,
+      "sha256": "d5067d7a6901f89544df596d7f1a58482f27df41ae6566cb2616786f71ab472e",
+      "pixels": [
+        768,
+        3303
+      ]
+    },
+    {
+      "path": "attempt-01/home-firstfold-1440.png",
+      "bytes": 113558,
+      "sha256": "4cac3d90cbf2674082563a0ec975a0f4ecc89965c078b800ca676d33abd81e66",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/home-firstfold-375.png",
+      "bytes": 46793,
+      "sha256": "7128af1b1e8a1f148ccdc95c754312915816beb3434ad9b75e08f4520fa2cbda",
+      "pixels": [
+        375,
+        812
+      ]
+    },
+    {
+      "path": "attempt-01/home-firstfold-768.png",
+      "bytes": 67354,
+      "sha256": "268b5bdc87433a633f98b052999ed10a05491f8071ff7959bae8e52ac405656b",
+      "pixels": [
+        768,
+        812
+      ]
+    },
+    {
+      "path": "attempt-01/home-zoom200.png",
+      "bytes": 127099,
+      "sha256": "68656575c7fda0abee87272c54ce0b34c7f9148eaae00e1e695df042e12caebc",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/installs.json",
+      "bytes": 878,
+      "sha256": "d51121bb40dc3bf225b839c4fcb8272da5607a79f4951bf31a11009f69c3996a"
+    },
+    {
+      "path": "attempt-01/inventory.log",
+      "bytes": 49,
+      "sha256": "84f6e347502498a7f1b19fa4dfa691c2fbd4ef6bf4356c04c0649c54918ef2ce"
+    },
+    {
+      "path": "attempt-01/kin-1440.png",
+      "bytes": 158122,
+      "sha256": "03411247b1eae19b3d168031168d19d444689870a5246c9d6c36ad3e52287905",
+      "pixels": [
+        1440,
+        1998
+      ]
+    },
+    {
+      "path": "attempt-01/kin-320.png",
+      "bytes": 134650,
+      "sha256": "69d25ec160308cc5207aa5cd084e8be2437456a5e213c39499b4e7686559b97a",
+      "pixels": [
+        320,
+        2762
+      ]
+    },
+    {
+      "path": "attempt-01/kin-375.png",
+      "bytes": 136815,
+      "sha256": "cdb05a39cc492e74b31f337f3589f3c32fe7fbdc3168d490670ed71f125632d8",
+      "pixels": [
+        375,
+        2582
+      ]
+    },
+    {
+      "path": "attempt-01/kin-768.png",
+      "bytes": 146039,
+      "sha256": "ce7e919b385da1742214e799a2ddc43ea4d286d85d3448ccf0c63fe14e57d5d5",
+      "pixels": [
+        768,
+        2097
+      ]
+    },
+    {
+      "path": "attempt-01/kin-zoom200.png",
+      "bytes": 119435,
+      "sha256": "3147bdde1b9553c1177304b2fdfac4989faa43e9809f1d8c819eb8c04ae0c3e7",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-ai-product-zh.check.json",
+      "bytes": 432,
+      "sha256": "77d5b807afa599ce9c26799be7b7d7dd93e2e981cad1ee1e30014acc41de94b8"
+    },
+    {
+      "path": "attempt-01/pdf-ai-product-zh.png",
+      "bytes": 276652,
+      "sha256": "34003c633bc5316791c8e5aee44ac980cfb00df5d45bca3542e4e8078af7a026",
+      "pixels": [
+        992,
+        1404
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-brand-insight-zh.check.json",
+      "bytes": 601,
+      "sha256": "2fecc2b7854879326f1c1933135d7844365ec5b427b9ab3f08a59e5739ff0619"
+    },
+    {
+      "path": "attempt-01/pdf-brand-insight-zh.png",
+      "bytes": 233233,
+      "sha256": "d2cf2f8fea264267c281d7737c41e7b9886129b7f9cbfcea6059876c0e7e1cc4",
+      "pixels": [
+        992,
+        1404
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-click-kin.png",
+      "bytes": 91940,
+      "sha256": "0a1d44f136d11ab70ee6d42cfc09a2b1b6e93270cda6b20c32c4e33c3c6ac16c",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-click-pet.png",
+      "bytes": 97895,
+      "sha256": "7f935a3a527bb7f9a2c65e45cea49d48b6399c753fb654e97b4699e56c38ae1b",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-click-qq-lingxi.png",
+      "bytes": 94200,
+      "sha256": "87a362be33450ab9edfb6a41d0b0769a7cdfe8a7734ccb9e1819342a56faa898",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-click-spps.png",
+      "bytes": 89535,
+      "sha256": "2c80a08e6540951ac7186f720737224a4a05bd0bf141bf640b1a1754c6d34783",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-click-teaching.png",
+      "bytes": 95832,
+      "sha256": "2cdbf61c9147bd8c70dd00707af6636998914ae0cd8a88787d9d5123336d6c75",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-general-zh.check.json",
+      "bytes": 432,
+      "sha256": "4bf59bf639e0679933b95a1055802e3e9f8472b0deba1d96506071117f53edff"
+    },
+    {
+      "path": "attempt-01/pdf-general-zh.png",
+      "bytes": 276533,
+      "sha256": "c01f297648d2cc4a3f3dfe3a13e228118117341d1aaa0b15b9f9fc2c1cf375b2",
+      "pixels": [
+        992,
+        1404
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-inventory.json",
+      "bytes": 8884,
+      "sha256": "6f137bbe236f9973b6e2c25da1e01344c52670868d668753feac4ac566d2413f"
+    },
+    {
+      "path": "attempt-01/pdf-inventory.log",
+      "bytes": 126,
+      "sha256": "81d5ce3a295ce0bbb0efb20e28493ed5ae141890639fefe642ba6702734856ca"
+    },
+    {
+      "path": "attempt-01/pdf-native-reader-ai-product-zh.png",
+      "bytes": 254908,
+      "sha256": "80b16fdd0c4d594c03c7fb5725eaf93e8fa1b477a5503c2e4b2e75f5fd881133",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-native-reader-brand-insight-zh.png",
+      "bytes": 209701,
+      "sha256": "96733961e60283f7285b2ecaf20fd690810df0898b081bf2f8fbc87be41cc196",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-native-reader-general-zh.png",
+      "bytes": 254955,
+      "sha256": "28c9c342c9f32d36a58217d259af9cef91805925da59a6ebed2e94396c6ffa6d",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-native-reader-product-commercial-zh.png",
+      "bytes": 260381,
+      "sha256": "bf77d967e11bc6c093001dfe6226fa7d077e14846d217f644b272f45e1d4cbdd",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-offline-click.png",
+      "bytes": 16603,
+      "sha256": "1da5332a6a9b86b309f356082c13fcf77c67e02a3ee9b77587d203b9ea265001",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/pdf-product-commercial-zh.check.json",
+      "bytes": 622,
+      "sha256": "cb69cdd3ee6d4fb782c7f290959fb3103386bd1a20eaa7652695d22df448cfd4"
+    },
+    {
+      "path": "attempt-01/pdf-product-commercial-zh.png",
+      "bytes": 288090,
+      "sha256": "003d903501ec78cc88036ee510ca1680339a19de15352cc61485e2c0195ec04d",
+      "pixels": [
+        992,
+        1404
+      ]
+    },
+    {
+      "path": "attempt-01/pet-1440.png",
+      "bytes": 115401,
+      "sha256": "d233af78712b6703b2231464f9bd55559d4bfcd417cdf9cbebf49e9bbb2016f2",
+      "pixels": [
+        1440,
+        1372
+      ]
+    },
+    {
+      "path": "attempt-01/pet-320.png",
+      "bytes": 97449,
+      "sha256": "6bb54d9a7875302f9113f0e1e541c4058f559e13ae4da028ca9652126cbccc15",
+      "pixels": [
+        320,
+        2036
+      ]
+    },
+    {
+      "path": "attempt-01/pet-375.png",
+      "bytes": 98567,
+      "sha256": "8e70f9fcb9d40dfe345b0e6b0a7d70ee0191cea6ed2427bf13b4989620df55b6",
+      "pixels": [
+        375,
+        1845
+      ]
+    },
+    {
+      "path": "attempt-01/pet-768.png",
+      "bytes": 103120,
+      "sha256": "29e9ba7a93a323e30a27b4ba7a3c22f261ecfc3ca265f561b2e754083ba31293",
+      "pixels": [
+        768,
+        1407
+      ]
+    },
+    {
+      "path": "attempt-01/pet-zoom200.png",
+      "bytes": 121438,
+      "sha256": "38428af2afa5fd1557207596bdada8f9366aa43f264a91b2ecf0ada208cebf3c",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/qq-lingxi-1440.png",
+      "bytes": 114620,
+      "sha256": "fcdf0c4871dfcf3fd875885e4e1397f2221a4d46b006be5d80224afe85102f3e",
+      "pixels": [
+        1440,
+        1418
+      ]
+    },
+    {
+      "path": "attempt-01/qq-lingxi-320.png",
+      "bytes": 97325,
+      "sha256": "ea4db6f0f27fba3eea535267774aac2ac85f27919134181bb507066e46f97613",
+      "pixels": [
+        320,
+        2108
+      ]
+    },
+    {
+      "path": "attempt-01/qq-lingxi-375.png",
+      "bytes": 97591,
+      "sha256": "d756ff8557d386d8d88a62f589c9be52669ca66ef53771c61c81be3a9b900868",
+      "pixels": [
+        375,
+        1881
+      ]
+    },
+    {
+      "path": "attempt-01/qq-lingxi-768.png",
+      "bytes": 102825,
+      "sha256": "8007981c55e130858c7d14ec079ba002559795a5934d49f625447c7ff09ae8f9",
+      "pixels": [
+        768,
+        1487
+      ]
+    },
+    {
+      "path": "attempt-01/qq-lingxi-zoom200.png",
+      "bytes": 137280,
+      "sha256": "06a4c3a288430de7b94b4e45b4edf92851d44ee5e0e0bc726323021bdfd6b1bc",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/resume-1440.png",
+      "bytes": 172106,
+      "sha256": "79161821ef70ad59d32765691e8c0cd50c472057e629bc9ad13e5b88e2240fe6",
+      "pixels": [
+        1440,
+        1892
+      ]
+    },
+    {
+      "path": "attempt-01/resume-320.png",
+      "bytes": 148625,
+      "sha256": "2d5b50952b240886c851ea60f80b52522204ba0316041e225922aef49fdec405",
+      "pixels": [
+        320,
+        2614
+      ]
+    },
+    {
+      "path": "attempt-01/resume-375.png",
+      "bytes": 152445,
+      "sha256": "ff3116d4716f9a8dabf05ca98615de17215c920a6790016db7efe9d36bd1af61",
+      "pixels": [
+        375,
+        2466
+      ]
+    },
+    {
+      "path": "attempt-01/resume-768.png",
+      "bytes": 163395,
+      "sha256": "4b57d535abc03d2178273e73a1c3b2bedb13345141d21c82ce670a5b5473420e",
+      "pixels": [
+        768,
+        1924
+      ]
+    },
+    {
+      "path": "attempt-01/resume-build.log",
+      "bytes": 551,
+      "sha256": "398df095bdf17e2f50a7a42e43bd62a868410c5976a08639444d2d874d4eccaa"
+    },
+    {
+      "path": "attempt-01/resume-check.log",
+      "bytes": 2371,
+      "sha256": "6692ba6689e929a4e129d90219c56a12fac5c9152a586a89f0e4c9c2af2fc55a"
+    },
+    {
+      "path": "attempt-01/resume-zoom200.png",
+      "bytes": 100564,
+      "sha256": "c795c57df931d4a25bc21ae03fbc78f97ca0f87546a376d35059641e3b6581a5",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/spps-1440.png",
+      "bytes": 119008,
+      "sha256": "df4f3ebb279ffb6e4940614c533cecb6075ee37f50fca3618b986bc68197e9e6",
+      "pixels": [
+        1440,
+        1511
+      ]
+    },
+    {
+      "path": "attempt-01/spps-320.png",
+      "bytes": 100587,
+      "sha256": "1b67d6fc9039541a94d2b6d14bb73ee9e5e004bf71194024ba17bcf7a3cb4e18",
+      "pixels": [
+        320,
+        2131
+      ]
+    },
+    {
+      "path": "attempt-01/spps-375.png",
+      "bytes": 102693,
+      "sha256": "352ef1de5f6acd6840c33122dceeaa392c54d97329cd55d5b1f865764833e124",
+      "pixels": [
+        375,
+        1981
+      ]
+    },
+    {
+      "path": "attempt-01/spps-768.png",
+      "bytes": 106828,
+      "sha256": "f161083674d1a9cb9f8b8103aef13b7374950fdbcab723ba79e1879a418e3389",
+      "pixels": [
+        768,
+        1517
+      ]
+    },
+    {
+      "path": "attempt-01/spps-zoom200.png",
+      "bytes": 135065,
+      "sha256": "0de6914717daca28855af81f35a11c52245179d77b25903bfe5ff0651e112550",
+      "pixels": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "path": "attempt-01/test-e2e.log",
+      "bytes": 5672,
+      "sha256": "3a379b6619dadcfab1c8d12c388a9da141f32a1741312f6dc24f2a715db94726"
+    },
+    {
+      "path": "attempt-01/test-jd.log",
+      "bytes": 775,
+      "sha256": "bb87dca61ac6aae2b1984c739993928c144b2ad717a468338dd466670a558e59"
+    },
+    {
+      "path": "attempt-01/test.log",
+      "bytes": 2189,
+      "sha256": "cdae04ba41431b4b480a40f359bb033ae200a50274d448155a1f9218737719d3"
+    },
+    {
+      "path": "attempt-01/visual-review.json",
+      "bytes": 1413,
+      "sha256": "5615f59d3bddc8d17c53fa5756e0475ed08936468d49789cbf3a230c6ff3dfb8"
+    },
+    {
+      "path": "MANUAL_AUDIT.md",
+      "sha256": "a7200c990c57bff19f735be41c4afcc60688645b505f3661610ef60281a4d147"
+    }
+  ]
+}
