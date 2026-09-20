@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "round": "R07",
+  "attempt": 2,
+  "status": "deployed_and_verified_pending_review",
+  "reviewer_decision": "pending",
+  "branch": "codex/R07-media-gallery",
+  "base_commit": "46a5ac0b1e9abc02e37776eb8fde3631d2eeb0eb",
+  "import_commit": "6bf1f5566ea3c1549fe16a1b89b41fd58576d7e3",
+  "deployed_commit": "6c9bd47704eb620dcd1788d0f7cadd432a413e02",
+  "source_package": {
+    "path_outside_repository": "C:/Users/Zhang S/Downloads/portfolio-R07-release.zip",
+    "sha256": "a13f55b03734e3a31862aa6cfb760a3edd743bc3681d9eeda61caf3fdef894e1",
+    "sha256s_entries": 33,
+    "sha256s_failures": 0,
+    "patch_sha256": "ae40de4c6e18d09b9901bde288e6411711794718ba2f3c58609100c13f193f51"
+  },
+  "authorization": {
+    "source": "current_user_prompt",
+    "host": "Vercel",
+    "visibility": "public",
+    "target_existing_project_only": true,
+    "custom_domain_or_dns_changes": false,
+    "paid_upgrade_allowed": false,
+    "analytics_allowed": false
+  },
+  "account": {
+    "username": "zhangsfish",
+    "scope": "zhangsfishs-projects",
+    "plan": "hobby_inherited_from_accepted_R06",
+    "paid_upgrade_performed": false,
+    "login_verified_by": "Vercel CLI whoami"
+  },
+  "deployment": {
+    "project_name": "zhang-shuo-portfolio",
+    "project_id": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+    "team_id": "team_iUtfj6fbX7ntRyux5VD2Req3",
+    "production_url": "https://zhang-shuo-portfolio.vercel.app",
+    "immutable_url": "https://zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app",
+    "deployment_id": "dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE",
+    "ready_state": "READY",
+    "target": "production",
+    "created_at": "2026-09-20T05:38:59Z",
+    "verified_from": "2026-09-20T05:45:49.580Z",
+    "deployment_scope": "audited site/dist only",
+    "git_auto_deploy_connected": false
+  },
+  "build_and_allowlist": {
+    "npm_ci_packages": 272,
+    "npm_audit_vulnerabilities": 0,
+    "astro_check": {"errors": 0, "warnings": 0, "hints": 0},
+    "node_tests": {"passed": 31, "failed": 0},
+    "gallery_browser_test": "pass",
+    "dist_audit": "pass",
+    "files": 29,
+    "total_bytes": 22420440,
+    "client_js_bytes": 2952,
+    "approved_media": 17,
+    "public_resume_count": 1,
+    "prebuilt_copy_exactly_matches_dist": true,
+    "remote_files_exactly_match_dist": true
+  },
+  "artifact_manifest": "attempt-02/artifact-manifest.json",
+  "browser": {
+    "engine": "Chrome 153.0.8010.52",
+    "authentication_state": "fresh incognito contexts with no persistent profile or saved cookies",
+    "https_errors_ignored": false,
+    "desktop_width": 1440,
+    "mobile_width": 375,
+    "content_routes": 6,
+    "mobile_horizontal_overflow": 0,
+    "films_decoded_and_advanced": 3,
+    "scene_switch": "pass",
+    "zoom_escape_and_focus_return": "pass",
+    "reduced_motion": "pass",
+    "not_found_status": 404,
+    "hsts": "max-age=63072000; includeSubDomains; preload",
+    "result_file": "attempt-02/production-browser/results.json"
+  },
+  "pdf": {
+    "url": "https://zhang-shuo-portfolio.vercel.app/downloads/zhang-shuo-resume.pdf",
+    "http_status": 200,
+    "bytes": 166740,
+    "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+    "result": "pass"
+  },
+  "external_links": [
+    {"id":"qq-lingxi-repo","source_link_visible":true,"http_status":200,"result":"anonymous_content_verified"},
+    {"id":"notion-organic-synthesis","source_link_visible":true,"http_status":200,"result":"anonymous_content_verified"},
+    {"id":"notion-organic-chemistry","source_link_visible":true,"http_status":200,"result":"anonymous_content_verified"},
+    {"id":"qq-lingxi-demo","source_link_visible":true,"http_status":401,"result":"external_site_requires_basic_auth","required":false}
+  ],
+  "publication_safety": {
+    "original_masters_uploaded": false,
+    "unregistered_media_uploaded": false,
+    "other_resume_pdfs_uploaded": false,
+    "repository_root_uploaded": false,
+    "audit_files_uploaded": false,
+    "analytics_added": false,
+    "custom_domain_or_dns_changed": false,
+    "repository_visibility_changed": false
+  },
+  "rollback": {
+    "previous_accepted_deployment_id": "dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw",
+    "current_deployment_id": "dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE"
+  },
+  "limitations": [
+    "The separately hosted QQ Demo currently returns HTTP 401 with a Basic Auth challenge; the portfolio link remains visible and its GitHub repository is anonymously accessible.",
+    "China mainland carrier and regional reachability were not tested.",
+    "Final ACCEPT remains the planner/reviewer's decision."
+  ]
+}

@@ -1,0 +1,48 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Deploying zhang-shuo-portfolio
+Uploading [--------------------] (0.0B/21.2MB)
+Uploading [=====---------------] (5.3MB/21.2MB)
+Uploading [==========----------] (10.6MB/21.2MB)
+Uploading [===============-----] (15.9MB/21.2MB)
+Uploading [====================] (21.2MB/21.2MB)
+  Inspect         https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/D2TSX3HAx3HQTpQoYvxzxFgLVtCE
+  Production      https://zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app
+Building…
+[2K[1A[2K[G  Production      https://zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app
+Completing…
+▲ Aliased         https://zhang-shuo-portfolio.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE",
+    "url": "https://zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/D2TSX3HAx3HQTpQoYvxzxFgLVtCE",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_D2TSX3HAx3HQTpQoYvxzxFgLVtCE",
+    "buildMachine": {
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel git connect --scope zhangsfishs-projects",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect zhang-shuo-portfolio-65c454u79-zhangsfishs-projects.vercel.app --scope zhangsfishs-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope zhangsfishs-projects",
+      "when": "Promote to production"
+    }
+  ]
+}
