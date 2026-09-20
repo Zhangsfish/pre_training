@@ -95,3 +95,5 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 当任务是为 BRM 等岗位压缩中文简历项目经历，或需要查看一份已完成用户校准的简历成稿时，读取 [references/approved-kin-resume-brm.md](references/approved-kin-resume-brm.md)。学习其选材、可面试性和长短取舍，不把 KIN 的事实迁移到其他经历。
 
 当任务涉及 SPPS 或其他跨机械、加工、电控、采购与软件的工程交付经历时，读取 [references/approved-spps-long-form.md](references/approved-spps-long-form.md)。学习其正序叙事、设计权与执行边界、以及尺度/成本/效率的定量方式，不把 SPPS 的事实迁移到其他经历。
+
+当任务是把 SPPS 或类似工程交付经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-spps-resume-brm.md](references/approved-spps-resume-brm.md)。学习如何用三条分别保留设计与跨职能领导、资源与流程改造、集成与结果；当一项广泛工作只有一个可核实的量化样例时，先写完整工作范围，再把该数字明确写成例子。

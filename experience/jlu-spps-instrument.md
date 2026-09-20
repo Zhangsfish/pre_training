@@ -153,7 +153,13 @@ The user estimates that resources personally pushed / secured for the project �
 Do not present this as an audited procurement total until invoice / purchase evidence is reconciled.
 
 ### Domestic substitution — verified single-item comparison plus broader user report
-The user reports replacing imported component families such as:
+The user confirms that the domestic-substitution program covered multiple categories rather than a single tube:
+- pumps;
+- tubing / fluid-path components;
+- valves;
+- multiple small consumables.
+
+Across those categories, the user reports replacing imported component families such as:
 - IDEX;
 - Swagelok / 世伟洛克;
 
@@ -167,7 +173,7 @@ The user reports that some substitute components were roughly an order of magnit
 - at an explicitly approximate 7.1 RMB/USD conversion, the IDEX public price is about **RMB 59/m**;
 - the Runze actual purchase price was therefore about **88% lower** for this near-specification comparison.
 
-This supports a resume claim about this FEP-tube comparison only. Do not generalize the 88% reduction to every substituted part or to total instrument cost.
+This supports using the FEP tube as one quantified example inside the broader substitution program. Do not reduce the full program to "replacing one tube," and do not generalize the 88% reduction to every substituted part or to total instrument cost.
 
 Reference pages:
 - Runze specification: <https://www.runzefluid.com/products/fep-tube.html>
