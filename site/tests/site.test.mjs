@@ -6,6 +6,11 @@ import path from 'node:path';
 import {loadContent} from '../scripts/content.mjs';
 import {caseSections} from '../scripts/sections.mjs';
 import {auditDist,pages} from '../scripts/audit-dist.mjs';
+function writeRequiredFiles(dir){
+ for(const file of pages){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
+ fs.writeFileSync(path.join(dir,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://zhang-shuo-portfolio.vercel.app/sitemap.xml\n');
+ fs.writeFileSync(path.join(dir,'sitemap.xml'),'<?xml version="1.0"?><urlset>'+['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/resume/'].map(route=>`<url><loc>https://zhang-shuo-portfolio.vercel.app${route}</loc></url>`).join('')+'</urlset>');
+}
 test('case sections preserve every approved sentence, without introducing body facts',()=>{
  for(const p of loadContent().projects.filter(p=>p.id!=='teaching')) {
    const sections=caseSections(p.id,p.body);
@@ -25,7 +30,7 @@ test('KIN starts with ordinary life; competitive checking stays after the hypoth
 for(const mutation of ['rogue-media','candidate-route','private-field','broken-link','fake-pdf']) test(`dist gate rejects ${mutation}`,()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pre-training-r03-'));
  try {
-   for(const file of pages) {fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
+   writeRequiredFiles(dir);
    assert.equal(auditDist(dir,loadContent(),{requireResume:false}).result,'pass');
    if(mutation==='rogue-media') fs.writeFileSync(path.join(dir,'unapproved.png'),'not-approved');
    if(mutation==='candidate-route') fs.appendFileSync(path.join(dir,'index.html'),'<div class="review-bar">候选</div>');
@@ -42,7 +47,7 @@ for(const mutation of ['rogue-media','candidate-route','private-field','broken-l
 for(const mutation of ['tampered-pdf','unregistered-variant','resume-contact-in-case']) test(`R04 output rejects ${mutation}`,()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pre-training-r04-'));
  try {
-  for(const file of pages){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
+  writeRequiredFiles(dir);
   fs.mkdirSync(path.join(dir,'downloads'));
   const pdf='downloads/zhang-shuo-resume.pdf';fs.copyFileSync(new URL('../public/'+pdf,import.meta.url),path.join(dir,pdf));
   fs.appendFileSync(path.join(dir,'resume/index.html'),loadContent().profile.fields.phone);

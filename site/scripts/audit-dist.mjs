@@ -6,6 +6,8 @@ import {fileURLToPath} from 'node:url';
 import {loadContent,root} from './content.mjs';
 import {readJson,inputHash,loadVariant,publicPath} from '../../resume/scripts/model.mjs';
 export const pages=['index.html','work/kin/index.html','work/spps/index.html','work/qq-lingxi/index.html','work/pet/index.html','resume/index.html','404.html'];
+export const publicFiles=['robots.txt','sitemap.xml'];
+const productionOrigin='https://zhang-shuo-portfolio.vercel.app';
 export function auditDist(directory,data=loadContent(),{requireResume=true}={}) {
  const manifest=readJson(path.join(root,'publication/resume-manifest.json'));
  assert.equal(manifest.href,readJson(path.join(root,'site/LINKS.json')).public_resume.href);
@@ -14,11 +16,12 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
  const assets=data.assets.filter(a=>a.publication==='approved'&&a.availability==='codex_ready'&&a.path);
  const forbidden=['source_path','source_blob_sha','claim_ids','permission_note','private_archive','birth_year_month','phone','review-bar','review-note','direction-a','direction-b','direction-c','/review/','experience/','delivery/audits',...data.assets.map(a=>a.source_filename)];
  for(const page of pages) assert.ok(files.includes(page),`Missing page ${page}`);
+ for(const file of publicFiles) assert.ok(files.includes(file),`Missing public file ${file}`);
  if(requireResume)assert.ok(files.includes(publicPath),'Missing public resume PDF');
  let total=0;
  for(const file of files) {
    const bytes=fs.readFileSync(path.join(directory,file));total+=bytes.length;
-   assert.ok(file===publicPath||pages.includes(file)||/^_astro\/[\w.-]+\.css$/.test(file)||assets.some(a=>a.path===file),`Unapproved output file: ${file}`);
+   assert.ok(file===publicPath||pages.includes(file)||publicFiles.includes(file)||/^_astro\/[\w.-]+\.css$/.test(file)||assets.some(a=>a.path===file),`Unapproved output file: ${file}`);
    if(/\.(html|css)$/.test(file)) {
      const text=bytes.toString('utf8');
      if(file!=='resume/index.html')for(const key of ['phone','birth_year_month'])assert.ok(!text.includes(data.profile.fields[key]),`Resume-only field outside resume: ${file}`);
@@ -28,7 +31,7 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
        assert.equal((text.match(/<h1\b/g)||[]).length,1,`Single h1: ${file}`);
        for(const match of text.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
          const value=match[1].replaceAll('&amp;','&');
-         if(value.startsWith('https:')||value.startsWith('mailto:')) assert.ok(data.links.some(l=>l.url===value),`Unregistered external link: ${file}`);
+         if(value.startsWith('https:')||value.startsWith('mailto:')) assert.ok(value.startsWith(productionOrigin+'/')||data.links.some(l=>l.url===value),`Unregistered external link: ${file}`);
          else if(!value.startsWith('#')) {
            assert.ok(value.startsWith('/'),`Unexpected relative URL: ${file}`);
            const target=value.split('#')[0].slice(1);
@@ -37,6 +40,11 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
          if(/\.pdf(?:$|[?#])/i.test(value))assert.equal(value,manifest.href,'Only the registered general PDF is public');
        }
      }
+   } else if(file==='robots.txt'){
+     const text=bytes.toString('utf8');assert.match(text,/User-agent: \*/);assert.match(text,new RegExp(`Sitemap: ${productionOrigin.replaceAll('.','\\.')}\\/sitemap\\.xml`));
+   } else if(file==='sitemap.xml'){
+     const text=bytes.toString('utf8');assert.match(text,/^<\?xml/);assert.ok(!text.includes('404'), '404 must not appear in sitemap');
+     for(const route of ['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/resume/']) assert.ok(text.includes(`<loc>${productionOrigin}${route}</loc>`),`Missing sitemap route ${route}`);
    } else if(file===publicPath){
      assert.ok(bytes.subarray(0,5).toString()==='%PDF-');assert.equal(createHash('sha256').update(bytes).digest('hex'),manifest.sha256,'Public resume hash mismatch');
    } else {
