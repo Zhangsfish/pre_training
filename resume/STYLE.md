@@ -102,6 +102,10 @@ SKILLS / ADDITIONAL
 
 Section order can change by JD relevance. Education normally remains near the top for campus recruiting.
 
+## Personal voice rule
+
+For Chinese project descriptions, application-form narratives, and résumé bullets that need the user's own reasoning and tone, read `skills/zhang-shuo-experience-writing/SKILL.md`. When the user has edited a draft, the edited wording and the decisions revealed by those edits take priority over generic résumé conventions; polish grammar without neutralizing the user's judgment.
+
 ## Bullet contract
 
 A strong bullet should usually expose:
