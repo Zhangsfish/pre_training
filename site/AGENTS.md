@@ -1,14 +1,12 @@
-# R03 网站工程
+# R04 网站工程
 
-继承根规则与只读架构合同。唯一视觉方向 A；只从 publication、LINKS 和已批准素材登记构建。无运行时 API。
+继承根规则与只读架构合同。唯一视觉方向 A，首页与四案例延续已接受 R03。
 
-- src/lib/site.ts：Astro 内容集合与显式公开字段；仅投影获准正文。
-- src/layouts/BaseLayout.astro、styles/tokens.css/global.css：唯一编辑式档案布局。
-- src/pages/：首页 S1–S6、四详情、resume骨架、404。
-- scripts/content.mjs：内容合同、发布状态、来源漂移与字段门禁。
-- scripts/sections.mjs：批准正文分段；KIN竞争检查放在后段，不生成新事实。
-- scripts/build.mjs、audit-dist.mjs：构建及公开输出/路由/预算门禁。
-- scripts/site-e2e.mjs：56组真实浏览器检查及截图；scripts/check-links.mjs：独立匿名外链检查。
-- tests/：合同负例、正文保真与输出拒绝测试。
+- src/pages/resume/index.astro：由通用 variant 投影简历页面，只此页允许 resume 白名单电话/出生年月；唯一 PDF 链接来自 publication/resume-manifest，与 LINKS 登记核对。
+- ../resume/scripts：选材校验、打印与 PDF 验证。../resume/README.md 为复现入口。
+- scripts/build.mjs/audit-dist.mjs：构建验证通用 variant 和公开 PDF hash，禁止其他简历文件进入 dist；非简历页面仍拒绝 resume-only 字段。
+- scripts/site-e2e.mjs：56组浏览器检查、真实下载 hash、导航与隐私隔离。默认证据目录 R04/attempt-01。
+- scripts/content.mjs、sections.mjs：原 R01/R03事实来源与正文合同。
+- tests：保留内容/安全负例，扩充 PDF 注册与隔离检查。
 
-R02候选实现已移除，历史证据留在 delivery/audits/R02。当前证据仅写 R03。依赖版本不变。SPPS媒体仍未获公开许可/桥接，使用文字版。resume不生成PDF，未进入R04；不得部署。
+依赖版本不变，SPPS媒体仍为文字降级。仅通用 PDF 复制到 public/downloads；其他导出均留 resume/exports（Git忽略）。不执行R05，不部署。

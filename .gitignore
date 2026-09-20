@@ -13,3 +13,7 @@ site/.astro/
 site/dist/
 site/.review-dist/
 delivery/audits/R01/tmp/
+
+# R04 local resume exports and temporary verification
+resume/exports/
+delivery/audits/R04/tmp/

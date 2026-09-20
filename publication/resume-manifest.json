@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "variant": "general-zh",
+  "href": "/downloads/zhang-shuo-resume.pdf",
+  "date": "2026-09-20",
+  "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+  "input_sha256": "8163ddeac3213355f079e052f0ec9aefa8ad3ef5cc7a09bca4301a570c895e00",
+  "authorization": "delivery/prompts/R04_RESUMES.md",
+  "reviewer_decision": "pending"
+}

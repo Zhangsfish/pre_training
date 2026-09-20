@@ -26,16 +26,30 @@ for(const mutation of ['rogue-media','candidate-route','private-field','broken-l
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pre-training-r03-'));
  try {
    for(const file of pages) {fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
-   assert.equal(auditDist(dir).result,'pass');
+   assert.equal(auditDist(dir,loadContent(),{requireResume:false}).result,'pass');
    if(mutation==='rogue-media') fs.writeFileSync(path.join(dir,'unapproved.png'),'not-approved');
    if(mutation==='candidate-route') fs.appendFileSync(path.join(dir,'index.html'),'<div class="review-bar">候选</div>');
    if(mutation==='private-field') fs.appendFileSync(path.join(dir,'index.html'),loadContent().profile.fields.phone);
    if(mutation==='broken-link') fs.appendFileSync(path.join(dir,'index.html'),'<a href="/missing/">Link</a>');
    if(mutation==='fake-pdf') fs.appendFileSync(path.join(dir,'index.html'),'<a href="/resume.pdf">PDF</a>');
-   assert.throws(()=>auditDist(dir));
+   assert.throws(()=>auditDist(dir,loadContent(),{requireResume:false}));
  } finally {
    assert.equal(path.dirname(path.resolve(dir)),path.resolve(os.tmpdir()));
    assert.ok(path.basename(dir).startsWith('pre-training-r03-'));
    fs.rmSync(dir,{recursive:true,force:true});
  }
+});
+for(const mutation of ['tampered-pdf','unregistered-variant','resume-contact-in-case']) test(`R04 output rejects ${mutation}`,()=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pre-training-r04-'));
+ try {
+  for(const file of pages){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
+  fs.mkdirSync(path.join(dir,'downloads'));
+  const pdf='downloads/zhang-shuo-resume.pdf';fs.copyFileSync(new URL('../public/'+pdf,import.meta.url),path.join(dir,pdf));
+  fs.appendFileSync(path.join(dir,'resume/index.html'),loadContent().profile.fields.phone);
+  assert.equal(auditDist(dir).result,'pass');
+  if(mutation==='tampered-pdf')fs.appendFileSync(path.join(dir,pdf),'tampered');
+  if(mutation==='unregistered-variant')fs.copyFileSync(path.join(dir,pdf),path.join(dir,'downloads/ai-product.pdf'));
+  if(mutation==='resume-contact-in-case')fs.appendFileSync(path.join(dir,'work/kin/index.html'),loadContent().profile.fields.phone);
+  assert.throws(()=>auditDist(dir));
+ }finally{assert.equal(path.dirname(path.resolve(dir)),path.resolve(os.tmpdir()));assert.ok(path.basename(dir).startsWith('pre-training-r04-'));fs.rmSync(dir,{recursive:true,force:true});}
 });

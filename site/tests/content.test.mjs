@@ -76,7 +76,7 @@ test('production command ignores inherited review env and exits nonzero before o
   // Isolate the intentionally unapproved copy; never rewrite the actual publication.
   const fixture=fs.mkdtempSync(path.join(os.tmpdir(),'pre-training-test-'));
   try {
-    for(const relative of ['publication',...new Set(fresh().claims.map(c=>c.source_path)),'site/scripts','site/LINKS.json','site/assets-manifest.json']) {
+    for(const relative of ['publication',...new Set(fresh().claims.map(c=>c.source_path)),'site/scripts','resume/scripts','site/LINKS.json','site/assets-manifest.json']) {
       const target=path.join(fixture,relative); fs.mkdirSync(path.dirname(target),{recursive:true});
       fs.cpSync(path.join(root,relative),target,{recursive:true});
     }
