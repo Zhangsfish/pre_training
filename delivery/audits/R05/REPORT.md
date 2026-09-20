@@ -10,4 +10,4 @@ tested_commit：`b2eadcea9f9ae5def9df1068b9d715919e69586e`；基线 `5b1f48a99af
 
 阻塞项：无。非阻塞限制：KIN 匿名仓库仍 404；SPPS 按已接受审查继续文字降级；离线 PDF 相对链接无网站基址而失败，在线可用；CET-6 按 R04 省略。QQ 与两 Notion 匿名可读。公网宿主/真实域名与其他阅读器须另获 R06 授权后核验。未部署，不进入 R06。
 
-PR：待创建后回填实际入口。
+PR：[R05 #5](https://github.com/Zhangsfish/pre_training/pull/5)。
