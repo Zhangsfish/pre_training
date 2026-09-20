@@ -1,6 +1,7 @@
 # R04 报告
 
 - round / attempt: R04 / 01
+- PR: https://github.com/Zhangsfish/pre_training/pull/4
 - branch: codex/R04
 - base_commit: d6b2ff81f5400c9994cfac32050762f3e512fc3b
 - tested_commit: fb94812872e4ce7910c5b1bb92c2901049a82f03

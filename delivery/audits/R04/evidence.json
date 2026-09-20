@@ -1,5 +1,6 @@
 {
   "round": "R04",
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/4",
   "attempt": 1,
   "branch": "codex/R04",
   "base_commit": "d6b2ff81f5400c9994cfac32050762f3e512fc3b",
