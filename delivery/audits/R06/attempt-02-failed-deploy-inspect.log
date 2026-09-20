@@ -1,0 +1,47 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Fetching deployment "zhang-shuo-portfolio-ntb01kw6g-zhangsfishs-projects.vercel.app" in zhangsfishs-projects
+2026-09-20T03:28:08.459Z  Running build in Washington, D.C., USA (East) – iad1
+2026-09-20T03:28:08.461Z  Build machine configuration: 2 cores, 8 GB
+2026-09-20T03:28:08.494Z  Retrieving list of deployment files...
+2026-09-20T03:28:08.598Z  Previous build caches not available.
+2026-09-20T03:28:08.805Z  Downloading 58 deployment files...
+2026-09-20T03:28:09.901Z  Running "vercel build"
+2026-09-20T03:28:09.922Z  Vercel CLI 59.23.2
+2026-09-20T03:28:10.617Z  Running "install" command: `npm ci`...
+2026-09-20T03:28:17.422Z
+2026-09-20T03:28:17.423Z  added 272 packages, and audited 273 packages in 7s
+2026-09-20T03:28:17.424Z
+2026-09-20T03:28:17.424Z  86 packages are looking for funding
+2026-09-20T03:28:17.425Z  run `npm fund` for details
+2026-09-20T03:28:17.425Z
+2026-09-20T03:28:17.425Z  found 0 vulnerabilities
+2026-09-20T03:28:17.425Z  npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:
+2026-09-20T03:28:17.426Z  npm warn allow-scripts   esbuild@0.28.2 (postinstall: node install.js)
+2026-09-20T03:28:17.426Z  npm warn allow-scripts
+2026-09-20T03:28:17.426Z  npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+2026-09-20T03:28:17.777Z
+2026-09-20T03:28:17.778Z  > pre-training-site@0.1.0 build
+2026-09-20T03:28:17.778Z  > node scripts/build.mjs production
+2026-09-20T03:28:17.778Z
+2026-09-20T03:28:17.821Z  node:internal/modules/esm/resolve:271
+2026-09-20T03:28:17.821Z  throw new ERR_MODULE_NOT_FOUND(
+2026-09-20T03:28:17.821Z  ^
+2026-09-20T03:28:17.822Z
+2026-09-20T03:28:17.822Z  Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/vercel/resume/scripts/model.mjs' imported from /vercel/path0/scripts/audit-dist.mjs
+2026-09-20T03:28:17.822Z  at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+2026-09-20T03:28:17.822Z  at moduleResolve (node:internal/modules/esm/resolve:865:10)
+2026-09-20T03:28:17.822Z  at defaultResolve (node:internal/modules/esm/resolve:992:11)
+2026-09-20T03:28:17.822Z  at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+2026-09-20T03:28:17.822Z  at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+2026-09-20T03:28:17.823Z  at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:56)
+2026-09-20T03:28:17.823Z  at #resolve (node:internal/modules/esm/loader:683:17)
+2026-09-20T03:28:17.823Z  at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:603:35)
+2026-09-20T03:28:17.823Z  at ModuleJob.syncLink (node:internal/modules/esm/module_job:163:33)
+2026-09-20T03:28:17.823Z  at ModuleJob.link (node:internal/modules/esm/module_job:253:17) {
+2026-09-20T03:28:17.823Z  code: 'ERR_MODULE_NOT_FOUND',
+2026-09-20T03:28:17.823Z  url: 'file:///vercel/resume/scripts/model.mjs'
+2026-09-20T03:28:17.823Z  }
+2026-09-20T03:28:17.823Z
+2026-09-20T03:28:17.823Z  Node.js v24.19.0
+2026-09-20T03:28:17.889Z  Error: Command "npm run build" exited with 1
+status	● Error

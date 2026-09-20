@@ -1,0 +1,13 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+
+Directory       E:\myself\pre_training-r06\site
+
+Searching for existing projects…
+
+✓ Linked          zhangsfishs-projects/zhang-shuo-portfolio
+
+Retrieving project…
+> Downloading a fresh `VERCEL_OIDC_TOKEN` for zhangsfishs-projects/zhang-shuo-portfolio
+Downloading
+
+✓ Created         .env.local file and added it to .gitignore

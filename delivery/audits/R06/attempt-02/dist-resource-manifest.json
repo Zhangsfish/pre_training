@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-09-20T03:38:00.362Z",
+  "base_url": "https://zhang-shuo-portfolio.vercel.app",
+  "result": "pass",
+  "files": 11,
+  "total_bytes": 206629,
+  "client_js_bytes": 0,
+  "approved_media": 0,
+  "resources": [
+    {
+      "path": "404.html",
+      "bytes": 1461,
+      "sha256": "424714995121a7e00070e34d3c112126bf77759d71d94d21a7246d12500dd174",
+      "url": "https://zhang-shuo-portfolio.vercel.app/404.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/404.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "_astro/site.LYHxabVX.css",
+      "bytes": 8374,
+      "sha256": "55ec825fccb2e30fbaa578cae3c5edac1dc2c5198f2107768f17c6f1220159d4",
+      "url": "https://zhang-shuo-portfolio.vercel.app/_astro/site.LYHxabVX.css",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/_astro/site.LYHxabVX.css",
+      "http_status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "downloads/zhang-shuo-resume.pdf",
+      "bytes": 166740,
+      "sha256": "9584697754adb1d5b7b67f85e3bfb458ca4c50bafb6ba8820babc685a158034e",
+      "url": "https://zhang-shuo-portfolio.vercel.app/downloads/zhang-shuo-resume.pdf",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/downloads/zhang-shuo-resume.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "remote_exact_match": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 9144,
+      "sha256": "225cfbc870fe6032fc0800e5f9acbc1f230b6b0f65847a4aaaf6a172efaaf27a",
+      "url": "https://zhang-shuo-portfolio.vercel.app/index.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "resume/index.html",
+      "bytes": 4630,
+      "sha256": "9caa6103c1670ae8c3e4e6287cf57d7740381713c6a32c870da4d21e948d970f",
+      "url": "https://zhang-shuo-portfolio.vercel.app/resume/index.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/resume/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 84,
+      "sha256": "a6d9f1f47853d244a5ea60d1fc77b1026e4fff7e3765ad01881040368e07916b",
+      "url": "https://zhang-shuo-portfolio.vercel.app/robots.txt",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/robots.txt",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 550,
+      "sha256": "be5133b9c880ea15610ee48fa022ef26207fd1ea79d73d0f8e994135b8f222b9",
+      "url": "https://zhang-shuo-portfolio.vercel.app/sitemap.xml",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/sitemap.xml",
+      "http_status": 200,
+      "content_type": "application/xml",
+      "remote_exact_match": true
+    },
+    {
+      "path": "work/kin/index.html",
+      "bytes": 4517,
+      "sha256": "a0fa08cbd9d92d8fcfd17e4e776936f5913d1cc092c763934d6cb3f7b135e4c4",
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/kin/index.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/kin/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "work/pet/index.html",
+      "bytes": 3629,
+      "sha256": "332ee684b1d290cd0d37992da6d60d3863d5333e578f12d83a4728e548dc03be",
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/pet/index.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/pet/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "work/qq-lingxi/index.html",
+      "bytes": 3781,
+      "sha256": "5e7c343ea54838295e06dc097ac10313cac226f20be5e6d44c8cd045b5e38140",
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/index.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    },
+    {
+      "path": "work/spps/index.html",
+      "bytes": 3719,
+      "sha256": "55a1ca2831d3f7c96ce82a39a651f0d7ca675711892584a4f8141ab072b7e386",
+      "url": "https://zhang-shuo-portfolio.vercel.app/work/spps/index.html",
+      "final_url": "https://zhang-shuo-portfolio.vercel.app/work/spps/index.html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "remote_exact_match": true
+    }
+  ]
+}

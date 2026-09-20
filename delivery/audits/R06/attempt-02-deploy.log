@@ -1,0 +1,31 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Deploying zhang-shuo-portfolio
+Uploading [--------------------] (0.0B/655.9KB)
+Uploading [=====---------------] (165.9KB/655.9KB)
+Uploading [==========----------] (334.0KB/655.9KB)
+Uploading [===============-----] (494.0KB/655.9KB)
+Uploading [====================] (655.9KB/655.9KB)
+  Inspect         https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/BnAhmREPoyfkkNMnX5mJV3oj94Am
+  Production      https://zhang-shuo-portfolio-ntb01kw6g-zhangsfishs-projects.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 58 deployment files...
+Running "vercel build"
+Vercel CLI 59.23.2
+Running "install" command: `npm ci`...
+{
+  "status": "error",
+  "reason": "deploy_failed",
+  "message": "Command \"npm run build\" exited with 1",
+  "next": [
+    {
+      "command": "vercel deploy --scope zhangsfishs-projects",
+      "when": "retry deploy"
+    }
+  ]
+}
+Error: Command "npm run build" exited with 1

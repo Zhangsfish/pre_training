@@ -1,0 +1,52 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Deploying zhang-shuo-portfolio
+Uploading [--------------------] (0.0B/5.9KB)
+Uploading [=============-------] (4.1KB/5.9KB)
+Uploading [====================] (5.9KB/5.9KB)
+  Inspect         https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/7Zp2QRRET5LAP7BLGeyXpZ5XQWTV
+  Production      https://zhang-shuo-portfolio-58lcw36wz-zhangsfishs-projects.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+[2K[1A[2K[G  Production      https://zhang-shuo-portfolio-58lcw36wz-zhangsfishs-projects.vercel.app
+Completing…
+▲ Aliased         https://zhang-shuo-portfolio.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_7Zp2QRRET5LAP7BLGeyXpZ5XQWTV",
+    "url": "https://zhang-shuo-portfolio-58lcw36wz-zhangsfishs-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/7Zp2QRRET5LAP7BLGeyXpZ5XQWTV",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_7Zp2QRRET5LAP7BLGeyXpZ5XQWTV",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment zhang-shuo-portfolio-58lcw36wz-zhangsfishs-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel git connect --scope zhangsfishs-projects",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://zhang-shuo-portfolio-58lcw36wz-zhangsfishs-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect zhang-shuo-portfolio-58lcw36wz-zhangsfishs-projects.vercel.app --scope zhangsfishs-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope zhangsfishs-projects",
+      "when": "Promote to production"
+    }
+  ]
+}

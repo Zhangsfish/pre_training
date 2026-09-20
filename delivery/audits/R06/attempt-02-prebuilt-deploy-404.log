@@ -1,0 +1,46 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Deploying zhang-shuo-portfolio
+  Inspect         https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/YagSCrhDMgnDtnFQGYTFnVcqrJZw
+  Production      https://zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app
+Building…
+Building…
+[2K[1A[2K[G  Production      https://zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app
+Completing…
+▲ Aliased         https://zhang-shuo-portfolio.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw",
+    "url": "https://zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/YagSCrhDMgnDtnFQGYTFnVcqrJZw",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_YagSCrhDMgnDtnFQGYTFnVcqrJZw",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel git connect --scope zhangsfishs-projects",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect zhang-shuo-portfolio-gqu10i1r9-zhangsfishs-projects.vercel.app --scope zhangsfishs-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope zhangsfishs-projects",
+      "when": "Promote to production"
+    }
+  ]
+}
