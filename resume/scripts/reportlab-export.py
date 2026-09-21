@@ -18,7 +18,8 @@ font_path = Path(__file__).resolve().parents[1] / "templates/NotoSansSC-resume.t
 font = "ResumeCJK"
 registered = TTFont(font, str(font_path))
 pdfmetrics.registerFont(registered)
-missing = sorted({ch for ch in json.dumps(data, ensure_ascii=False)
+font_check_text = json.dumps(data, ensure_ascii=False).replace("⁶", "6").replace("⁸", "8")
+missing = sorted({ch for ch in font_check_text
                   if not ch.isspace() and ord(ch) not in registered.face.charWidths})
 if missing:
     raise ValueError("Regenerate the resume font subset; missing glyphs: " + "".join(missing))
@@ -52,6 +53,9 @@ def heading(text):
 def link(label, url):
     return '<link href="' + escape(url, quote=True) + '">' + escape(label) + '</link>'
 
+def scientific(text):
+    return escape(text).replace("⁶⁸Ga", "<super>68</super>Ga")
+
 line(escape(data["name"]), size=22, leading=26, after=5)
 line(escape(" · ".join([data["birth"], data["phone"], data["email"]])), after=3)
 heading("教育背景")
@@ -69,7 +73,7 @@ for project in data["projects"]:
          "".join(" · " + link(item["label"], item["url"]) for item in project["links"]),
          size=10.5, leading=14, after=3)
     for bullet in project["bullets"]:
-        line("• " + escape(bullet), after=3, indent=3)
+        line("• " + scientific(bullet), after=3, indent=3)
     y -= 4
 c.showPage()
 c.save()
