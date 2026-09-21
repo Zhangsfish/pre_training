@@ -13,6 +13,24 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 2. 读取相关经历事实源、已确认项目定义和本人原话；事实不确定时不得靠文风补齐。
 3. 区分本人提出与决定的内容，以及 AI、同伴或工具完成的研究、计算、制作和实现。
 
+## 两套内容与唯一固定路径
+
+六段项目经历只维护两套可直接调用的成稿。不得根据聊天记录重新拼接，也不得把 `experience/*.md` 的事实记录误当成已经确认的成稿。
+
+| 项目 | 申请表详细版 | 简历固定短版 |
+|---|---|---|
+| KIN | `references/approved-kin-long-form.md` | `references/approved-kin-resume-b.md` |
+| 智能化流动多肽合成仪 | `references/approved-spps-long-form.md` | `references/approved-spps-resume-b.md` |
+| QQ 灵犀 | `references/approved-qq-lingxi-long-form.md` | `references/approved-qq-lingxi-resume-b.md` |
+| 《有机化学实验 II》 | `references/approved-teaching-long-form.md` | `references/approved-teaching-resume-b.md` |
+| Jiadifenin 家族天然产物全合成 | `references/approved-natural-product-long-form.md` | `references/approved-natural-product-resume-b.md` |
+| PAP/ACP3 靶向 PET 小分子探针 | `references/approved-pet-long-form.md` | `references/approved-pet-resume-b.md` |
+
+- 填申请系统，以及维护个人主页或作品集的详细叙事时，从对应 `approved-*-long-form.md` 读取；主页或作品集需要短摘要时，从对应 `approved-*-resume-b.md` 取材。
+- 生成 BRM、Customer Business Development Manager 或其他一页简历时，只从对应 `approved-*-resume-b.md` 取材并调整项目顺序；不得自行重新压缩或恢复更早措辞。若页面放不下，先与用户商量。
+- `approved-*-resume-brm.md` 是历史版本，仅供追溯，不再作为默认生成源。
+- 用户要求查看“旧版六段详细经历”时，逐字读取上述六个 long-form 文件；这里的“旧版”指当前已经沉淀、包含历次用户修改的详细版，不是最早聊天草稿。
+
 ## 叙事重心
 
 根据材料取舍，但优先形成下面这条因果链：
@@ -92,7 +110,7 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 
 当任务是申请表中的长篇项目描述，需要查看一份已经完成用户校准的成稿时，读取 [references/approved-kin-long-form.md](references/approved-kin-long-form.md)。只学习其叙事结构、因果密度和语气，不把 KIN 的事实迁移到其他经历。
 
-当任务是为 BRM 等岗位压缩中文简历项目经历，或需要查看一份已完成用户校准的简历成稿时，读取 [references/approved-kin-resume-brm.md](references/approved-kin-resume-brm.md)。学习其选材、可面试性和长短取舍，不把 KIN 的事实迁移到其他经历。
+当任务是为 BRM、Customer Business Development Manager 等岗位使用 KIN 简历项目经历，或需要查看一份已完成用户校准的简历成稿时，优先读取 [references/approved-kin-resume-b.md](references/approved-kin-resume-b.md)，并把 [references/approved-kin-resume-brm.md](references/approved-kin-resume-brm.md) 仅作为历史版参考。学习其选材、可面试性和长短取舍，不把 KIN 的事实迁移到其他经历。
 
 当任务涉及 SPPS 或其他跨机械、加工、电控、采购与软件的工程交付经历时，读取 [references/approved-spps-long-form.md](references/approved-spps-long-form.md)。学习其正序叙事、设计权与执行边界、以及尺度/成本/效率的定量方式，不把 SPPS 的事实迁移到其他经历。
 
