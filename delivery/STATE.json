@@ -94,12 +94,12 @@
     "spps_publication": "approved",
     "spps_codex_access": "codex_ready"
   },
-  "note": "R07 remains accepted. The authorized home-experience-alignment maintenance is merged and published_and_verified at https://zhang-shuo-portfolio.vercel.app. Vercel deployment dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp is READY; all 31 production files exactly match the audited dist from main merge commit 5ea262632032d2a885656dc5c197f9cd869e92d2. The separate QQ Demo remains behind Basic Auth; QQ GitHub, KIN and both Notion pages are anonymously accessible. No round is currently authorized.",
+  "note": "R07 remains accepted. The authorized home-experience-alignment maintenance is FINAL-REVIEW ACCEPTED and published_and_verified at https://zhang-shuo-portfolio.vercel.app. Vercel deployment dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp is READY; all 31 production files exactly match the audited dist from site merge commit 5ea262632032d2a885656dc5c197f9cd869e92d2. The separate QQ Demo remains behind Basic Auth; QQ GitHub, KIN and both Notion pages are anonymously accessible. No round is currently authorized.",
   "maintenance": {
     "id": "home-experience-alignment",
     "authorized_by": "user_chat_2026-09-20",
     "branch": "maintenance/home-experience-alignment",
-    "status": "published_and_verified",
+    "status": "accepted_published_and_verified",
     "plan": "delivery/maintenance/home-alignment/03-IMPLEMENTATION.md",
     "handoff": "delivery/maintenance/home-alignment/04-CODEX-HANDOFF.md",
     "report": "delivery/maintenance/home-alignment/REPORT.md",
@@ -120,6 +120,8 @@
     "pr_number": 21,
     "pr_final_head": "a375d74d011a2a190653eb1c3af54812c56e425a",
     "merged_main_commit": "5ea262632032d2a885656dc5c197f9cd869e92d2",
-    "external_limit": "QQ Demo remains behind Basic Auth and returns 401 anonymously; no bypass attempted."
+    "external_limit": "QQ Demo remains behind Basic Auth and returns 401 anonymously; no bypass attempted.",
+    "final_review": "delivery/maintenance/home-alignment/FINAL_REVIEW_2026-09-21.md",
+    "final_reviewed_main": "d39101e4c8d30b9cc48f7e004f0a978ddc8bcb3f"
   }
 }
