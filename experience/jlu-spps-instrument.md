@@ -115,7 +115,7 @@ The user confirms owning the overall instrument design and component-selection d
 - translating the chemistry workflow into the complete system concept;
 - deciding how the instrument should operate and how its modules should interact;
 - defining the fluid path, reactor, mechanical movements, electrical-control logic, software flow, and component list;
-- setting executable specifications such as port / aperture dimensions, geometry, pressure and temperature requirements, module interfaces, and delivery criteria.
+- setting executable specifications such as port / aperture dimensions, geometry, pressure and temperature requirements, required component functions and control behavior, and delivery criteria.
 
 This was design ownership, not merely coordination after specialists had already designed the instrument.
 
@@ -185,10 +185,10 @@ User-reported collaborator structure:
 - two mechanical-engineering contributors;
 - one machining contributor;
 - one electrical-control contributor (also one of the user's supervisors), who implemented low-level pump / valve driving;
-- the user acted as project lead and overall instrument-design owner: decomposing the instrument into work packages, issuing the required actions, product form, dimensions, pressure / temperature specifications, interfaces, and delivery standards, then reviewing and integrating the outputs.
+- the user acted as project lead and overall instrument-design owner: decomposing the instrument into work packages, issuing the required actions, product form, dimensions, pressure / temperature specifications, control requirements, and delivery standards, then reviewing and integrating the outputs.
 
 Ownership boundary:
-- the user owned the overall design, architecture, component selection, task decomposition, technical specifications, interfaces, acceptance, integration decisions, and delivery result;
+- the user owned the overall design, architecture, component selection, task decomposition, technical specifications, required component functions and control behavior, acceptance, integration decisions, and delivery result;
 - collaborators produced the requested mechanical detail, machined parts, and low-level electrical implementation against those requirements;
 - the user did not personally draw every CAD detail or write the low-level pump / valve driver functions.
 
@@ -340,7 +340,7 @@ Only a few facts still matter:
 
 - Do not call the user the formal PI / project director.
 - Do not claim the user won the national grant or wrote the bid.
-- Do state that the user owned the overall instrument design, component selection, task specifications, interfaces, acceptance, integration, and delivery; do not flatten this into generic "coordination."
+- Do state that the user owned the overall instrument design, component selection, task specifications, required component functions and control behavior, acceptance, integration, and delivery; do not flatten this into generic "coordination."
 - Do not claim sole authorship of every mechanical CAD detail or the low-level electrical drivers.
 - Do not state an audited RMB 1.5m procurement total until reconciled.
 - The verified resume-safe cost claim is limited to the near-specification FEP-tube comparison: approximately 88% lower actual domestic purchase price versus the cited IDEX public price.
