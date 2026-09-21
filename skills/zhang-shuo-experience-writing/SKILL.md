@@ -108,7 +108,7 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 
 当任务涉及 jiadifenin 家族天然产物全合成，或其他需要把专业研发经历写给商业、产品或 BRM 岗位阅读的场景时，读取 [references/approved-natural-product-long-form.md](references/approved-natural-product-long-form.md)。用路线设计、小试验证、稳定复现、放大、供料和上下游依赖证明候选人真正经历过研发；不要另写“我学到了什么”的作文式总结，也不要把学术实验放大冒充工业生产。
 
-当任务是把 jiadifenin 家族天然产物全合成或类似研发经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-natural-product-resume-brm.md](references/approved-natural-product-resume-brm.md)。用两条分别保留技术判断与瓶颈解决、任务分配与研发依赖管理；辅助经历控制长度，但不能删掉能够证明研发共同语言的具体链路。
+当任务是把 jiadifenin 家族天然产物全合成或类似研发经历压缩成面向 BRM 的简历段落时，优先读取 [references/approved-natural-product-resume-b.md](references/approved-natural-product-resume-b.md)，并把 [references/approved-natural-product-resume-brm.md](references/approved-natural-product-resume-brm.md) 仅作为历史版参考。用两条分别保留技术判断与瓶颈解决、任务分配与研发依赖管理；约100 g必须绑定合成路线前两步中间体，团队人数必须与具体组织动作绑定，不把学术协作扩写为正式直线管理。
 
 当任务涉及 PAP/ACP3 靶向 PET 小分子探针，或其他主要价值是陌生领域学习、方法训练与高风险交付的经历时，读取 [references/approved-pet-long-form.md](references/approved-pet-long-form.md)。先交代起点缺口和学习方式，再用真实的时间、成本与失败约束解释“先想清楚、再做连续小规模MVP”，最后准确交代成果状态；不要把技术链路清单当作叙事中心。
 
