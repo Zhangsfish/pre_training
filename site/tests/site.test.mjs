@@ -10,6 +10,7 @@ function writeRequiredFiles(dir){
  for(const file of pages){fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});fs.writeFileSync(path.join(dir,file),'<h1>Title</h1>');}
  fs.writeFileSync(path.join(dir,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://zhang-shuo-portfolio.vercel.app/sitemap.xml\n');
  fs.writeFileSync(path.join(dir,'sitemap.xml'),'<?xml version="1.0"?><urlset>'+['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/'].map(route=>`<url><loc>https://zhang-shuo-portfolio.vercel.app${route}</loc></url>`).join('')+'</urlset>');
+ fs.writeFileSync(path.join(dir,'favicon.svg'),'<svg xmlns="http://www.w3.org/2000/svg"></svg>');
 }
 test('case sections preserve every approved sentence, without introducing body facts',()=>{
  for(const p of loadContent().projects) {

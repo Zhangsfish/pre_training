@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {loadContent,root} from './content.mjs';
 import {readJson,inputHash,loadVariant,publicPath} from '../../resume/scripts/model.mjs';
 export const pages=['index.html','work/kin/index.html','work/spps/index.html','work/qq-lingxi/index.html','work/pet/index.html','work/teaching/index.html','work/natural-product/index.html','resume/index.html','404.html'];
-export const publicFiles=['robots.txt','sitemap.xml'];
+export const publicFiles=['robots.txt','sitemap.xml','favicon.svg'];
 const productionOrigin='https://zhang-shuo-portfolio.vercel.app';
 export function auditDist(directory,data=loadContent(),{requireResume=true}={}) {
  const manifest=readJson(path.join(root,'publication/resume-manifest.json'));
@@ -56,6 +56,8 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
    } else if(file==='sitemap.xml'){
      const text=bytes.toString('utf8');assert.match(text,/^<\?xml/);assert.ok(!text.includes('404'), '404 must not appear in sitemap');
      for(const route of ['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/']) assert.ok(text.includes(`<loc>${productionOrigin}${route}</loc>`),`Missing sitemap route ${route}`);
+   } else if(file==='favicon.svg'){
+     const text=bytes.toString('utf8');assert.match(text,/^<svg\b/);assert.ok(bytes.length<2048,'Favicon must stay lightweight');
    } else if(file===publicPath){
      assert.ok(bytes.subarray(0,5).toString()==='%PDF-');assert.equal(createHash('sha256').update(bytes).digest('hex'),manifest.sha256,'Public resume hash mismatch');
    } else {
