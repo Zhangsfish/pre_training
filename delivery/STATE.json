@@ -94,7 +94,7 @@
     "spps_publication": "approved",
     "spps_codex_access": "codex_ready"
   },
-  "note": "R07 remains accepted. The authorized home-experience-alignment maintenance is FINAL-REVIEW ACCEPTED and published_and_verified at https://zhang-shuo-portfolio.vercel.app. Vercel deployment dpl_QGDVe9yHQHvQBzXvRLcnQgjDP8cp is READY; all 31 production files exactly match the audited dist from site merge commit 5ea262632032d2a885656dc5c197f9cd869e92d2. The separate QQ Demo remains behind Basic Auth; QQ GitHub, KIN and both Notion pages are anonymously accessible. No round is currently authorized.",
+  "note": "R07 remains accepted. The authorized home-experience-alignment maintenance is FINAL-REVIEW ACCEPTED and published_and_verified at https://zhang-shuo-portfolio.vercel.app. The 2026-09-21 user-authorized follow-up changed 68Ga to ⁶⁸Ga, removed the QQ Demo access notice, and removed Basic Auth from the existing QQ Demo project. Both production sites are anonymously verified. No round is currently authorized.",
   "maintenance": {
     "id": "home-experience-alignment",
     "authorized_by": "user_chat_2026-09-20",
@@ -120,8 +120,21 @@
     "pr_number": 21,
     "pr_final_head": "a375d74d011a2a190653eb1c3af54812c56e425a",
     "merged_main_commit": "5ea262632032d2a885656dc5c197f9cd869e92d2",
-    "external_limit": "QQ Demo remains behind Basic Auth and returns 401 anonymously; no bypass attempted.",
+    "external_limit": null,
     "final_review": "delivery/maintenance/home-alignment/FINAL_REVIEW_2026-09-21.md",
-    "final_reviewed_main": "d39101e4c8d30b9cc48f7e004f0a978ddc8bcb3f"
+    "final_reviewed_main": "d39101e4c8d30b9cc48f7e004f0a978ddc8bcb3f",
+    "follow_up_2026_09_21": {
+      "authorization": "user_chat",
+      "portfolio_pr": 23,
+      "portfolio_site_commit": "a286e227996c333729f277735c5e3f54e63a2b28",
+      "portfolio_deployment_id": "dpl_HWZucc4cSkD7JxBfasC4FCiXSzcG",
+      "portfolio_url": "https://zhang-shuo-portfolio.vercel.app",
+      "qq_pr": 3,
+      "qq_commit": "991328d074579aa393afeb91ae7e1fa7ae22237a",
+      "qq_deployment_id": "dpl_EJ4LGWzXN8f4LpqaaoqWtQM3yK8x",
+      "qq_url": "https://qq-lingxi-agent-platform.vercel.app",
+      "anonymous_verification": "homepage, QQ Demo, and QQ public API returned 200 without WWW-Authenticate",
+      "general_pdf_sha256": "6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf"
+    }
   }
 }

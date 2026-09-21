@@ -62,3 +62,12 @@
 最终主审已通过：`delivery/maintenance/home-alignment/FINAL_REVIEW_2026-09-21.md`。
 
 主审结论：当前主页、六案例、通用简历/PDF与生产发布均可作为对外求职作品使用；不再建议开启额外润色轮次。QQ独立Demo的Basic Auth为已声明外部限制，不构成本站发布阻断。
+
+## 2026-09-21 用户授权后续
+
+此记录取代上文关于 QQ Demo Basic Auth 的历史限制说明，其余终验结论不变。
+
+- Portfolio PR [#23](https://github.com/Zhangsfish/pre_training/pull/23) 已合并；站点内容提交为 `a286e227996c333729f277735c5e3f54e63a2b28`。PET 摘要及四份简历中的核素写法改为 `⁶⁸Ga`，通用 PDF 已重新构建并发布，SHA-256 为 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+- QQ PR [#3](https://github.com/Zhangsfish/qq-lingxi-agent-platform/pull/3) 已合并，提交为 `991328d074579aa393afeb91ae7e1fa7ae22237a`。已删除 Basic Auth 中间件以及现有 Vercel 项目中的 `DEMO_AUTH_USER`、`DEMO_AUTH_PASSWORD`，未修改模型 API 配置。
+- Portfolio 部署 `dpl_HWZucc4cSkD7JxBfasC4FCiXSzcG` 与 QQ 部署 `dpl_EJ4LGWzXN8f4LpqaaoqWtQM3yK8x` 均为 `READY`，继续使用原项目、原域名和免费方案。
+- 全新匿名 Chrome 会话验证：主页、QQ Demo 及 QQ 公开 API 均返回 200，响应不含 `WWW-Authenticate`；主页不再出现“需访问权限”。
