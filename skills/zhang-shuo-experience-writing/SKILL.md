@@ -112,4 +112,4 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 
 当任务涉及 PAP/ACP3 靶向 PET 小分子探针，或其他主要价值是陌生领域学习、方法训练与高风险交付的经历时，读取 [references/approved-pet-long-form.md](references/approved-pet-long-form.md)。先交代起点缺口和学习方式，再用真实的时间、成本与失败约束解释“先想清楚、再做连续小规模MVP”，最后准确交代成果状态；不要把技术链路清单当作叙事中心。
 
-当任务是把 PAP/ACP3 靶向 PET 小分子探针或类似训练型研发经历压缩成面向 BRM 的简历段落时，再读取 [references/approved-pet-resume-brm.md](references/approved-pet-resume-brm.md)。用两条分别保留AI辅助学习与基础体系搭建、硬约束下的风险拆解与成果交付；不得夸大实验室起点，也不得把拟投论文和预计专利写成已完成的外部成果。
+当任务是把 PAP/ACP3 靶向 PET 小分子探针或类似训练型研发经历压缩成面向 BRM、Customer Business Development Manager 等岗位的简历段落时，优先读取 [references/approved-pet-resume-b.md](references/approved-pet-resume-b.md)，并把 [references/approved-pet-resume-brm.md](references/approved-pet-resume-brm.md) 仅作为历史版参考。用两条分别保留实验室工作层补齐、AI辅助学习与“先理解再行动”，以及硬约束下的连续MVP迭代与成果状态；不得恢复“一次正式实验获得论文主数据”等一枪命中的错误叙事，不得夸大实验室起点，也不得把拟投论文和预计专利写成已完成的外部成果。源文本统一写 `68Ga`，最终 Word/PDF 对质量数应用真正的上标文本格式。
