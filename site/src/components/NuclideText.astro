@@ -1,0 +1,8 @@
+---
+interface Props {
+  text: string;
+}
+const {text} = Astro.props;
+const parts = text.split(/(68Ga)/);
+---
+<span class="nuclide-text">{parts.map(part => part === '68Ga' ? <><sup>68</sup>Ga</> : part)}</span>

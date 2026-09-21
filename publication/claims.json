@@ -51,7 +51,7 @@
       "text": "H1：父母未接电话后，子女可能需要理解佩戴、位置与近期活动等状态，并在事先同意下建立连接；这是产品假设。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "H1 — Missed call creates an \"unknown-state\" need",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -59,14 +59,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.h2",
       "text": "H2：父母不只是风险与照护对象，普通一天也可能值得被看见、理解和参与；安全是信任底座，这是核心待验证假设。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "H2 — Elder tech over-centers risk management; ordinary life itself may be valuable",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -74,14 +74,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.h3",
       "text": "H3：孩子、宠物等高依恋关系中的状态查看行为提供相邻机制参照，迁移到独立生活的父母仍需直接验证并尊重成年人的自主与同意。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "H3 — strong adjacent support, not direct proof",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -89,14 +89,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.product",
       "text": "KIN Watch + Family App 以家庭日常连接为产品方向；先用成熟硬件验证信息组织与自主查看、参与，再判断定制硬件需求。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "Current product consequence",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -104,14 +104,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.ownership",
       "text": "本人提出原始观察和H1/H2/H3，决定哪些证据改变产品定义，并推进产品、定价、渠道与成本方案。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "User-owned judgment",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -119,14 +119,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.ai",
       "text": "AI辅助桌面研究、证据整理与计算，ChatGPT承担代码与仓库实施；本人保留主要判断与取舍。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "AI-native operating model",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -134,14 +134,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.status",
       "text": "独立产品与商业方案，未上市；没有已实现的商业结果，核心关系消费需求仍待现实验证。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "Current artifact",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -149,14 +149,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "kin.research",
       "text": "后续竞争检查发现已有部分状态能力与原子功能；已有state不等于普通日常的关系价值已被验证或证伪。",
       "source_path": "experience/kin-portfolio.md",
       "source_heading": "What competitive research changed",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f",
       "basis": "analysis",
       "certainty": "confirmed",
       "publication": "approved",
@@ -164,14 +164,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "spps.period",
       "text": "吉林大学智能化流动多肽合成仪项目，2024.03–2024.08。",
       "source_path": "experience/jlu-spps-instrument.md",
       "source_heading": "Identity",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -179,14 +179,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "spps.ownership",
-      "text": "本人将参考论文与系统材料转为可执行方案，独立完成整机设计与部件选型，定义流路、机械动作、电控逻辑、软件流程、任务指标及模块接口，并负责集成测试和交接。",
+      "text": "本人将参考论文与系统材料转为可执行方案，独立完成整机设计与部件选型，定义流路、机械动作、电控逻辑、软件流程、任务指标、各部件功能及控制方式，并负责集成测试和交接。",
       "source_path": "experience/jlu-spps-instrument.md",
       "source_heading": "User's personal ownership",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -194,14 +194,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "spps.scripts",
       "text": "本人编写高层合成时序脚本；低层泵阀驱动由导师/电控协作者实现。",
       "source_path": "experience/jlu-spps-instrument.md",
       "source_heading": "5. Control logic and synthesis sequencing",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -209,14 +209,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "spps.collaboration",
-      "text": "本人将整机拆解并向2名机械、1名加工和1名电控协作者下发动作、参数、接口与交付标准，负责评审、验收和整机集成；CAD细化、定制加工与低层驱动由协作者按要求实现。",
+      "text": "本人将整机拆解并向2名机械、1名加工和1名电控协作者下发动作、产品形态、技术参数、控制要求与交付标准，负责评审、验收和整机集成；CAD细化、定制加工与低层驱动由协作者按要求实现。",
       "source_path": "experience/jlu-spps-instrument.md",
       "source_heading": "4. Cross-disciplinary engineering coordination",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -224,14 +224,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "spps.delivery",
       "text": "据本人确认，仪器可重复运行演示，已在本人参与结束时完成交接；不推断现址或商业销售。",
       "source_path": "experience/jlu-spps-instrument.md",
       "source_heading": "8. Delivery and customer communication",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -239,14 +239,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "spps.media",
       "text": "四张仪器照片和两段运行视频已私下归档，公开使用仍须审查。",
       "source_path": "experience/jlu-spps-instrument.md",
       "source_heading": "Visual evidence received",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -254,7 +254,7 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "qq.thesis",
@@ -321,7 +321,7 @@
       "text": "第一作者论文初稿完成并交导师，拟投Journal of Medicinal Chemistry，准备投稿。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "Identity",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -329,14 +329,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "pet.setup",
       "text": "本人补齐日常合成所需耗材与操作流程，使用已有大设备；不是从零建设整套实验室。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "Starting environment",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -344,14 +344,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "pet.external",
       "text": "外部医院合作关系与访问条件由导师建立，本人负责实验准备与现场协作。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "Distributed but pre-existing infrastructure",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -359,14 +359,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "pet.peers",
       "text": "与同伴共同解决问题，各自拥有负责工作，并非本人管理下属团队。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "3. Peer collaboration, not centralized team management",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -374,14 +374,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "pet.ai",
       "text": "本人从问题形成起与AI共同学习、讨论设计、排障、分析与写作；本人判断实验可行性、执行现实实验并承担最终判断。",
       "source_path": "experience/pku-pap-pet-project.md",
       "source_heading": "4. AI-native co-reasoning from the beginning",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -389,14 +389,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "pet.validation",
-      "text": "正式生物分布实验前，通过小规模验证拆解条件和风险，再进行计划的正式实验。",
+      "text": "正式生物分布实验前，将关键条件拆成连续的低成本、小规模MVP，根据每轮结果迭代条件与流程，再进入正式实验。",
       "source_path": "experience/pku-pap-pet-project.md",
-      "source_heading": "High-cost one-shot experiments",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025",
+      "source_heading": "High-cost, hard-window experiments",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
       "basis": "user_confirmed",
       "certainty": "confirmed",
       "publication": "approved",
@@ -404,7 +404,7 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20"
+      "as_of": "2026-09-21"
     },
     {
       "id": "teaching.scope",
@@ -530,7 +530,7 @@
       "id": "kin.definition",
       "text": "Watch / Family App按事实—推断—家庭理解组织Now、Today、Data；三枚实体键与蜂窝通话；实现窗口2026.09.15–09.20。",
       "source_path": "experience/kin-portfolio.md",
-      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "source_heading": "Final user-confirmed public framing — 2026-09-21",
       "certainty": "confirmed",
       "basis": "user_confirmed",
       "publication": "approved",
@@ -538,14 +538,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f"
     },
     {
       "id": "kin.market",
-      "text": "中国40–60岁子女/60–80岁父母；2.85亿分析基准，采用率10/25/50%对应2850万/7130万/1.43亿DAU情景；米家历史1.17亿MAU仅为异口径量级参照。",
+      "text": "中国40–60岁子女/60–80岁父母；约2.85亿为分析基准，若其中10%形成日常使用习惯，对应约2850万DAU；米家历史约1.17亿MAU仅作异口径量级参照。",
       "source_path": "experience/kin-portfolio.md",
-      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "source_heading": "Final user-confirmed public framing — 2026-09-21",
       "certainty": "approximate",
       "basis": "analysis",
       "publication": "approved",
@@ -553,14 +553,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f"
     },
     {
       "id": "kin.vision",
       "text": "AI吸收事务性访问，家庭关心可能保留人的注意力；扩展潜在查看者约5亿，采用率10/25/50%对应5000万/1.25亿/2.5亿DAU情景。",
       "source_path": "experience/kin-portfolio.md",
-      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "source_heading": "Final user-confirmed public framing — 2026-09-21",
       "certainty": "approximate",
       "basis": "analysis",
       "publication": "approved",
@@ -568,14 +568,14 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f"
     },
     {
       "id": "kin.deliverables",
       "text": "交互原型、约50秒品牌片、完整商业方案；999元方案定价、完整软件免费、双边GTM与成本/反馈设计。",
       "source_path": "experience/kin-portfolio.md",
-      "source_heading": "Final user-confirmed public framing — 2026-09-20",
+      "source_heading": "Final user-confirmed public framing — 2026-09-21",
       "certainty": "confirmed",
       "basis": "user_confirmed",
       "publication": "approved",
@@ -583,8 +583,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "2c1eb87c1d2ecf865d4a11917ab38f12a5fa0ef5"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "7765c6b8f347b60ba6a44e8c352731afb2dfa49f"
     },
     {
       "id": "spps.resources",
@@ -598,8 +598,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2"
     },
     {
       "id": "spps.substitution",
@@ -613,8 +613,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2"
     },
     {
       "id": "spps.performance",
@@ -628,8 +628,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "caba4954f9b1a709122d02f432edac19f099e2eb"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "e156a3a3dd7c657e83820099145da5562e751ca2"
     },
     {
       "id": "qq.timing",
@@ -663,9 +663,9 @@
     },
     {
       "id": "pet.window",
-      "text": "68Ga半衰期约68分钟、有效实验窗口约4小时，生物分布单次约4000元；连续低成本小规模MVP验证。",
+      "text": "68Ga半衰期约68分钟、有效实验窗口约4小时，生物分布单次约4000元；以连续低成本、小规模MVP降低正式实验风险。",
       "source_path": "experience/pku-pap-pet-project.md",
-      "source_heading": "High-cost one-shot experiments",
+      "source_heading": "High-cost, hard-window experiments",
       "certainty": "approximate",
       "basis": "user_confirmed",
       "publication": "approved",
@@ -673,8 +673,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf"
     },
     {
       "id": "pet.patents",
@@ -688,8 +688,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf"
     },
     {
       "id": "pet.period",
@@ -703,8 +703,8 @@
         "site",
         "resume"
       ],
-      "as_of": "2026-09-20",
-      "source_blob_sha": "784e26bd025f7d310b1b5d6a60fbb95ae531d025"
+      "as_of": "2026-09-21",
+      "source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf"
     },
     {
       "id": "natural.route",

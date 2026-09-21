@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import MediaExperience from '../../components/MediaExperience.astro';
 import GalleryRuntime from '../../components/GalleryRuntime.astro';
+import NuclideText from '../../components/NuclideText.astro';
 import {siteContent} from '../../lib/site';
 import gallery from '../../../../publication/gallery.json';
 export async function getStaticPaths(){const view=await siteContent();return view.cases.map(project=>({params:{slug:project.id},props:{view,project}}));}
@@ -18,8 +19,8 @@ const deeper=p?project.sections.slice(3):[];
 <header class="visual-case-head"><p class="overline">{p?.label??'RESEARCH & PRACTICE'}</p><h1>{p?.name??project.title}</h1>{p?.id==='spps'&&<p class="full-project-name">{p.full_name}</p>}<p class="work-caption">{project.summary}</p><p class="case-meta">{project.period} · {project.status}</p><div class="case-actions">{p&&<button class="pill primary-pill" data-film={`/media/${p.film}`} data-title={p.name}>▶ {p.id==='spps'?'观看设备运行':'观看完整影片'} · {p.duration}</button>}{project.links.map(l=><a class="pill" href={l.url} target="_blank" rel="noopener noreferrer">{l.label} ↗</a>)}</div></header>
 {p&&<MediaExperience project={p} />}
 <div class="case-story">
-{lead.map(s=><section><h2>{s.heading}</h2>{s.blocks.map(b=>b.kind==='list'?<ul>{b.items.map(item=><li>{item}</li>)}</ul>:<p>{b.text}</p>)}</section>)}
-{deeper.length>0&&<details class="case-deeper" open={p?.id==='kin'}><summary>{p?.id==='kin'?'市场判断与长期方向':'展开更多过程与取舍'}</summary>{deeper.map(s=><section><h2>{s.heading}</h2>{s.blocks.map(b=>b.kind==='list'?<ul>{b.items.map(item=><li>{item}</li>)}</ul>:<p>{b.text}</p>)}</section>)}</details>}
+{lead.map(s=><section><h2>{s.heading}</h2>{s.blocks.map(b=>b.kind==='list'?<ul>{b.items.map(item=><li><NuclideText text={item} /></li>)}</ul>:<p><NuclideText text={b.text} /></p>)}</section>)}
+{deeper.length>0&&<details class="case-deeper" open={p?.id==='kin'}><summary>{p?.id==='kin'?'市场判断与长期方向':'展开更多过程与取舍'}</summary>{deeper.map(s=><section><h2>{s.heading}</h2>{s.blocks.map(b=>b.kind==='list'?<ul>{b.items.map(item=><li><NuclideText text={item} /></li>)}</ul>:<p><NuclideText text={b.text} /></p>)}</section>)}</details>}
 <aside class="ownership-note"><p class="overline">我的工作</p><p>{project.ownership}</p><p>{project.result}</p></aside>
 <p class="case-footnote">{project.boundary}</p>
 </div>

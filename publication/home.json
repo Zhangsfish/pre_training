@@ -37,7 +37,7 @@
       ]
     },
     {
-      "text": "把现实约束提前放进方案：SPPS 的部件接口，以及 PET 正式实验前的小规模验证。",
+      "text": "把现实约束提前放进方案：SPPS 的部件参数与控制要求，以及 PET 正式实验前的小规模验证。",
       "project_id": "spps",
       "claim_ids": [
         "spps.ownership",

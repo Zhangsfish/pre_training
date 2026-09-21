@@ -1,6 +1,6 @@
 # Experience: 北京大学 PAP/ACP3 靶向 PET 探针项目 — 新方向落地与 AI-native 科研
 
-> Status: public-safe career evidence record; long-form and BRM resume wording confirmed on 2026-09-20.
+> Status: public-safe career evidence record; canonical long-form and résumé B wording confirmed on 2026-09-21.
 > Sensitive boundary: manuscript is being prepared for submission and related patent work is being handled externally. Do **not** publish novel compound structures, unpublished patent claims, exact synthetic details, or other confidential project information in this public repository.
 > Sources: user narrative + manuscript materials stored in the user's private file library.
 
@@ -73,7 +73,7 @@ The user's job was not to acquire that collaboration; it was to make experiments
 
 Some external sessions required roughly ~20 categories / SKUs of materials by user recollection.
 
-### High-cost one-shot experiments
+### High-cost, hard-window experiments
 
 User reports that a biodistribution experiment could cost roughly **RMB 4,000 per run**.
 
@@ -87,7 +87,7 @@ Because the workflow was new, the operating principle was:
 
 The user describes this as similar to a rocket launch: much of the work happens before launch because the main run has little room for improvisation.
 
-The manuscript's final main biodistribution dataset was obtained in the **single planned formal run** described by the user.
+There had been an earlier unsuccessful attempt. Public career material must therefore not describe the project as a one-shot success; it should state that conditions and process were iterated through successive small validations before the formal experiment.
 
 Do not treat RMB 4,000 as audited accounting; it is a user-reported approximate run cost.
 
@@ -101,11 +101,11 @@ The central career value of this project is not an exhaustive list of PET techni
 4. use literature, real operating constraints, and physical experimental results to decide which AI-assisted proposals are actually feasible;
 5. retain human responsibility for physical execution and the integrated result.
 
-Long-form and BRM resume reference copies are stored in:
+Canonical long-form and résumé B reference copies are stored in:
 - `skills/zhang-shuo-experience-writing/references/approved-pet-long-form.md`;
-- `skills/zhang-shuo-experience-writing/references/approved-pet-resume-brm.md`.
+- `skills/zhang-shuo-experience-writing/references/approved-pet-resume-b.md`.
 
-The user-confirmed long version intentionally does **not** repeat the “one formal run produced the main manuscript data” claim in its final output bullet. That bullet is reserved for authorship and current paper/patent status. The approved resume version retains the one-run result because it compresses method and outcome into two bullets.
+Neither canonical version uses the old one-shot-success claim. The long-form output bullet is reserved for authorship and current paper/patent status; the résumé B version describes iterative small-scale validation, condition and process refinement, and then the formal experiment.
 
 ## User's ownership
 
