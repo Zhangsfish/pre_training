@@ -1,6 +1,6 @@
 # 主页内容对齐：终验、合并与发布记录
 
-日期：2026-09-21。状态：`published_and_verified`。
+日期：2026-09-21。状态：`accepted / published_and_verified`。
 
 ## 结果
 
@@ -55,3 +55,10 @@
 独立 QQ Demo 仍受原有 Basic Auth 保护，匿名访问返回 401；主页已明确写明“需访问权限”。这不影响本站、QQ GitHub、KIN 独立体验、Notion 页面或 PDF 的公开访问。
 
 证据入口：`delivery/maintenance/home-alignment/attempt-02/`。此前 R07 审计和本维护早期证据均保留，未覆盖。
+
+
+## 最终主审
+
+最终主审已通过：`delivery/maintenance/home-alignment/FINAL_REVIEW_2026-09-21.md`。
+
+主审结论：当前主页、六案例、通用简历/PDF与生产发布均可作为对外求职作品使用；不再建议开启额外润色轮次。QQ独立Demo的Basic Auth为已声明外部限制，不构成本站发布阻断。
