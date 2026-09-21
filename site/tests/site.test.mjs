@@ -24,8 +24,12 @@ test('KIN preserves the missed-call problem, state explanation, market scenario 
  const p=loadContent().projects.find(p=>p.id==='kin'),s=caseSections(p.id,p.body);
  assert.match(s[0].blocks[0].text,/电话没接通/);
  assert.match(s[1].blocks[0].text,/Now、Today 和 Data/);
- assert.match(JSON.stringify(s[3]),/2.85亿/);
- assert.match(JSON.stringify(s[3]),/不能直接排名/);
+ const market=JSON.stringify(s[3]);
+ assert.match(market,/2.85亿/);
+ assert.match(market,/仅10%/);
+ assert.match(market,/2850万/);
+ assert.match(market,/1.17亿MAU/);
+ assert.doesNotMatch(market,/7130万|1\.43亿DAU|不能直接排名/);
  assert.match(p.ownership,/负责问题判断/);
 });
 for(const mutation of ['rogue-media','candidate-route','private-field','broken-link','broken-fragment','fake-pdf']) test(`dist gate rejects ${mutation}`,()=>{

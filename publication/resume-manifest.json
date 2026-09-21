@@ -2,9 +2,9 @@
   "schema_version": 1,
   "variant": "general-zh",
   "href": "/downloads/zhang-shuo-resume.pdf",
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "sha256": "6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf",
-  "input_sha256": "172afe3e7bfe1ffd4342de828c89147cc89365a3825f11540e4433724c18a6ee",
+  "input_sha256": "8a4d5b646ef91f7b82c54bf94a2a95ceae3d340b61f52a7ed97d5d0174214aed",
   "authorization": "delivery/maintenance/home-alignment/03-IMPLEMENTATION.md",
   "reviewer_decision": "pending"
 }
