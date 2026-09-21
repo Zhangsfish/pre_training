@@ -62,11 +62,11 @@
     },
     {
       "id": "qq-lingxi-demo",
-      "label": "独立 Demo（需访问权限）",
+      "label": "独立 Demo",
       "url": "https://qq-lingxi-agent-platform.vercel.app/",
       "kind": "demo",
       "required": false,
-      "verification": "authentication_required"
+      "verification": "anonymous_access_authorized"
     },
     {
       "id": "kin-demo",
