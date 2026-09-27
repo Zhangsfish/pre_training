@@ -1,6 +1,6 @@
 # 写作校准记录
 
-状态：v2.0。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述及简历版、PET 研发训练项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)、[approved-natural-product-long-form.md](approved-natural-product-long-form.md)、[approved-natural-product-resume-brm.md](approved-natural-product-resume-brm.md)、[approved-pet-long-form.md](approved-pet-long-form.md) 与 [approved-pet-resume-brm.md](approved-pet-resume-brm.md)。
+状态：v2.1。来自 KIN 项目申请描述、BRM 简历版、SPPS 工程项目长版及简历版、QQ 灵犀项目描述及简历版、课程体系项目描述及简历版、天然产物全合成项目描述及简历版、PET 研发训练项目描述及简历版的用户修改和最终确认。这里记录用户修改揭示的稳定偏好，不把任一项目的具体事实自动迁移到其他经历。已确认参考见 [approved-kin-long-form.md](approved-kin-long-form.md)、[approved-kin-resume-brm.md](approved-kin-resume-brm.md)、[approved-spps-long-form.md](approved-spps-long-form.md)、[approved-spps-resume-brm.md](approved-spps-resume-brm.md)、[approved-qq-lingxi-long-form.md](approved-qq-lingxi-long-form.md)、[approved-qq-lingxi-resume-brm.md](approved-qq-lingxi-resume-brm.md)、[approved-teaching-long-form.md](approved-teaching-long-form.md)、[approved-teaching-resume-brm.md](approved-teaching-resume-brm.md)、[approved-natural-product-long-form.md](approved-natural-product-long-form.md)、[approved-natural-product-resume-brm.md](approved-natural-product-resume-brm.md)、[approved-pet-long-form.md](approved-pet-long-form.md) 与 [approved-pet-resume-brm.md](approved-pet-resume-brm.md)。公开观点写作新增校准案例见 [public-writing-callable-kol-2026-09-27.md](public-writing-callable-kol-2026-09-27.md)。
 
 ## 用户修改揭示的差异
 
@@ -154,3 +154,19 @@
 - “生活片段由此自然变成话题，增加子女与父母之间的交流。”
 
 后续每完成一项经历的用户改稿，只追加能够改变未来写作决策的新偏好；不把一次性的词语选择累积成僵硬模板。
+
+
+## 第十二轮：公开观点文案——从“解释完整”改成“具体、可试、可调用”
+
+完整原稿与用户修改稿见 [public-writing-callable-kol-2026-09-27.md](public-writing-callable-kol-2026-09-27.md)。
+
+| 原稿倾向 | 用户修改方向 | 可复用规则 |
+|---|---|---|
+| 先写“我最近越来越相信一个判断”再进入观点 | 直接改成“我想” | 公开观点文案先说判断，少写作者自己的心理铺垫。 |
+| 用“哪些是真的、谁跟我口味接近”概括信息筛选问题 | 改成“哪些不是广”“探店博主一条视频吃十八家，一个个记好麻烦” | 抽象问题优先落成读者真实遇到的使用摩擦；允许口语、简称和不规整表达保留人味。 |
+| 用“陌生城市”“小红书必吃”做泛化例子 | 改成“陌生城市旅行”“武汉过早攻略” | 场景能具体就具体，城市、内容类型和动作越明确，读者越容易进入。 |
+| 写“我会继续记录”“正常发在社交媒体”“沉淀到 Food Memory” | 改成“持续记录”“发小红书，顺便引流”“直接链接 GitHub 仓库” | 少写重复主语；平台、动作、目的和入口能明确时不使用中性泛称。 |
+| 关注“能不能长出一个有用的 Larry.food” | 改成“会不会真的有人使用 Larry_food.skill” | 公开表达更看重外部真实使用，而不是内部系统是否显得完整。 |
+| 只解释“可调用”概念 | 增加一句可以直接对 GPT 说的调用方式 | 观点后面留一个读者立刻能试的钩子；CTA 要能执行，不只欢迎关注。 |
+
+本轮进一步确认：公开长文不追求把所有背景、反证和旁支一次讲完。一个核心判断、一到两个真实摩擦、一个可执行入口已经足够。若为了“完整”加入不会改变读者判断的项目史、宏大背景或额外机制，优先删除。用户接受鲜明口语和平台真实意图，不需要用标准书面语或中性措辞把它抹平。
