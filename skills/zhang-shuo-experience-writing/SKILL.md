@@ -108,6 +108,8 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 
 当任务涉及修改用户已经亲自改过的文字，读取 [references/voice-calibration.md](references/voice-calibration.md)，以用户修改后的取舍为准。
 
+当任务是公众号、社交媒体或 Build in Public 的公开观点长文时，额外读取 [references/public-writing-callable-kol-2026-09-27.md](references/public-writing-callable-kol-2026-09-27.md)。学习“少写心理铺垫、用真实场景替代抽象问题、明确平台与动作、给可立即执行的入口、只保留一个主判断”的取舍；不要照搬该文结构，也不要把求职写作里的完整因果链硬套到公开文章。
+
 当任务是申请表中的长篇项目描述，需要查看一份已经完成用户校准的成稿时，读取 [references/approved-kin-long-form.md](references/approved-kin-long-form.md)。只学习其叙事结构、因果密度和语气，不把 KIN 的事实迁移到其他经历。
 
 当任务是为 BRM、Customer Business Development Manager 等岗位使用 KIN 简历项目经历，或需要查看一份已完成用户校准的简历成稿时，优先读取 [references/approved-kin-resume-b.md](references/approved-kin-resume-b.md)，并把 [references/approved-kin-resume-brm.md](references/approved-kin-resume-brm.md) 仅作为历史版参考。学习其选材、可面试性和长短取舍，不把 KIN 的事实迁移到其他经历。
