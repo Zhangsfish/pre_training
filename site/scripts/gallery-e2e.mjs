@@ -20,7 +20,23 @@ try{
   }
   await page.goto(base+'/');
   for(const id of ['work','about','teaching','pet','natural-product','contact'])assert.equal(await page.locator('#'+id).count(),1);
-  assert.deepEqual(await page.locator('.work-section').evaluateAll(nodes=>nodes.map(n=>n.className.split('work-')[2])),['qq-lingxi','spps','kin']);
+  assert.deepEqual(await page.locator('#work > .work-section').evaluateAll(nodes=>nodes.map(n=>n.classList.contains('app-showcase')?n.classList.contains('app-lecture-asset')?'lecture-asset':'everwhile':n.className.split('work-')[2])),['lecture-asset','everwhile','qq-lingxi','spps','kin']);
+  for(const [name,total] of [['Lecture Asset',6],['Everwhile',4]]){
+   const carousel=page.locator(`[data-carousel][aria-label="${name}宣传截图"]`);
+   assert.equal(await carousel.locator('[data-slide]:visible').count(),1);
+   await carousel.getByRole('button',{name:`${name}下一张宣传截图`}).click();
+   assert.equal(await carousel.locator('[data-count]').textContent(),`02 / ${String(total).padStart(2,'0')}`);
+   await carousel.getByRole('button',{name:`放大${name}宣传截图`}).click();
+   assert.ok(await page.locator('dialog').evaluate(d=>d.open));
+   await page.keyboard.press('Escape');
+   assert.ok(!(await page.locator('dialog').evaluate(d=>d.open)));
+  }
+  const lectureVideo=page.locator('video[aria-label="Lecture Asset 宣传片节选"]');
+  await lectureVideo.evaluate(v=>{v.muted=true;v.play()});
+  await page.waitForFunction(()=>{const v=document.querySelector('video[aria-label="Lecture Asset 宣传片节选"]');return v&&v.readyState>=2&&v.currentTime>.1&&v.videoWidth>0});
+  assert.ok(await lectureVideo.evaluate(v=>v.duration>20&&v.duration<21&&v.videoWidth>0&&!v.error));
+  await lectureVideo.evaluate(v=>v.pause());
+  assert.equal(await page.getByRole('link',{name:/App Store.*下载/}).count(),0);
   assert.ok(await page.locator('[data-preview]').evaluateAll(vs=>vs.every(v=>!v.getAttribute('src'))),'Reduced motion must not auto-download previews');
   await page.getByRole('button',{name:'02 找到共同体',exact:true}).click();assert.equal(await page.getByRole('button',{name:'02 找到共同体',exact:true}).getAttribute('aria-pressed'),'true');
   const zoom=page.getByRole('button',{name:'放大QQ 灵犀画面',exact:true});await zoom.click();assert.ok(await page.locator('dialog').evaluate(d=>d.open));if(output)await page.screenshot({path:path.join(output,`qq-zoom-${width}.png`)});await page.keyboard.press('Escape');assert.ok(!(await page.locator('dialog').evaluate(d=>d.open)));assert.ok(await zoom.evaluate(el=>document.activeElement===el));

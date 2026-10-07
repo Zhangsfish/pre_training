@@ -7,6 +7,23 @@ let opener: HTMLElement | null = null;
 const players = [...document.querySelectorAll<HTMLVideoElement>('[data-preview]')];
 const visible = new Set<HTMLVideoElement>();
 const blocked = new Set<HTMLVideoElement>();
+document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(carousel=>{
+ const slides=[...carousel.querySelectorAll<HTMLImageElement>('[data-slide]')];
+ const counter=carousel.querySelector<HTMLElement>('[data-count]')!;
+ const caption=carousel.querySelector<HTMLElement>('[data-caption]')!;
+ const zoom=carousel.querySelector<HTMLButtonElement>('[data-zoom]')!;
+ let index=0;
+ const show=(next:number)=>{
+  index=(next+slides.length)%slides.length;
+  slides.forEach((slide,i)=>slide.hidden=i!==index);
+  counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
+  caption.textContent=slides[index].alt.split('：').at(-1)||'';
+  zoom.dataset.zoom=slides[index].getAttribute('src')!;
+  zoom.dataset.title=slides[index].alt;
+ };
+ carousel.querySelector('[data-prev]')?.addEventListener('click',()=>show(index-1));
+ carousel.querySelector('[data-next]')?.addEventListener('click',()=>show(index+1));
+});
 function sync(v:HTMLVideoElement) {
  const button=v.closest('.media-experience')!.querySelector<HTMLButtonElement>('.preview-toggle')!;
  const play=visible.has(v)&&!blocked.has(v)&&!reduced.matches&&!document.hidden&&!dialog.open;

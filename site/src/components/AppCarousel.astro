@@ -1,0 +1,13 @@
+---
+interface Slide {file:string;label:string}
+interface Props {name:string;slides:Slide[]}
+const {name,slides}=Astro.props;
+---
+<div class="app-carousel" data-carousel aria-label={`${name}宣传截图`}>
+  <div class="app-carousel-image">
+    {slides.map((slide,i)=><img data-slide src={`/media/${slide.file}`} alt={`${name}：${slide.label}`} width="1320" height="2868" loading={i===0?'eager':'lazy'} hidden={i!==0} />)}
+    <button class="app-slide-zoom" data-zoom={`/media/${slides[0].file}`} data-title={`${name}：${slides[0].label}`} aria-label={`放大${name}宣传截图`}>放大 ↗</button>
+  </div>
+  <div class="app-carousel-controls"><button data-prev aria-label={`${name}上一张宣传截图`}>←</button><span data-count aria-live="polite">01 / {String(slides.length).padStart(2,'0')}</span><button data-next aria-label={`${name}下一张宣传截图`}>→</button></div>
+  <p class="app-carousel-caption" data-caption>{slides[0].label}</p>
+</div>

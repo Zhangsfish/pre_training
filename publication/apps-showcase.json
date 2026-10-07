@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "publication": "approved_by_user_chat_2026-10-07",
+  "apps": [
+    {
+      "id": "lecture-asset",
+      "name": "Lecture Asset",
+      "label": "iOS APP · 讲座照片整理",
+      "tagline": "把讲座交给 AI，把相册还给自己。",
+      "status": "已提交 App Review；尚未公开发布",
+      "scenario": "一场讲座拍下几十张 PPT：留在相册里难以重看，舍不得删；直接交给 AI，又只是一堆没有顺序的照片。",
+      "product": "把选中的照片按顺序整理成供人阅读的 PDF 和交给外部 AI 的 ZIP。确认资料已保存后，再决定是否清理源照片。App 本身不生成 AI 总结。",
+      "marketing": "推广构想：面向经常拍讲座照片的学生与研究者，先在主页和商店页用短片呈现“照片挤满相册”的问题，再以六张截图解释选图、PDF、AI ZIP、保存和清理。待审核与手动发布完成后接入真实商店入口；从早期反馈检验这些步骤是否讲清楚。",
+      "film": "lecture-film-portfolio.mp4",
+      "film_note": "宣传片节选 · 应用仍在审核中",
+      "slides": [
+        {"file":"lecture-01.png","label":"讲座照片留在相册里"},
+        {"file":"lecture-02.png","label":"选择并整理顺序"},
+        {"file":"lecture-03.png","label":"生成 PDF 与 AI ZIP"},
+        {"file":"lecture-04.png","label":"供人阅读的 PDF"},
+        {"file":"lecture-05.png","label":"交给外部 AI 的资料包"},
+        {"file":"lecture-06.png","label":"保存后再清理源照片"}
+      ]
+    },
+    {
+      "id": "everwhile",
+      "name": "Everwhile",
+      "label": "iOS APP · 温和的时间提醒",
+      "tagline": "感受时间流逝，仅此而已。",
+      "status": "商店发布准备中；尚未公开发布",
+      "scenario": "刷社交软件、聊天或沉浸工作时，时间常常在不知不觉中过去。你可能只想知道已经过了多久，而不想被拦下或评判。",
+      "product": "选定想留意的 App 和提醒间隔，使用过程中收到温和提醒；事后在“今天”查看时间去了哪里。继续、暂停或离开，都由自己决定。",
+      "marketing": "推广构想：面向想要轻提醒、又不愿被屏幕时间工具管控的 iPhone 用户；美国市场先推免费版，用中英双语商店图讲清感知时间、选 App、收到提醒和回看今天。公开发布后再加入下载入口，并根据首批反馈调整说明，不预设使用或转化成绩。",
+      "slides": [
+        {"file":"everwhile-01.png","label":"感受时间流逝"},
+        {"file":"everwhile-02.png","label":"选择 App 与提醒间隔"},
+        {"file":"everwhile-03.png","label":"提醒而非限制"},
+        {"file":"everwhile-04.png","label":"回看今天的时间"}
+      ]
+    }
+  ]
+}
