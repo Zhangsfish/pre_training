@@ -20,7 +20,7 @@ try{
   }
   await page.goto(base+'/');
   for(const id of ['work','about','teaching','pet','natural-product','contact'])assert.equal(await page.locator('#'+id).count(),1);
-  assert.deepEqual(await page.locator('#work > .work-section').evaluateAll(nodes=>nodes.map(n=>n.classList.contains('app-showcase')?n.classList.contains('app-lecture-asset')?'lecture-asset':'everwhile':n.className.split('work-')[2])),['lecture-asset','everwhile','qq-lingxi','spps','kin']);
+  assert.deepEqual(await page.locator('#work .work-section').evaluateAll(nodes=>nodes.map(n=>n.classList.contains('app-showcase')?n.classList.contains('app-lecture-asset')?'lecture-asset':'everwhile':n.className.split('work-')[2])),['lecture-asset','everwhile','qq-lingxi','spps','kin']);
   for(const [name,total] of [['Lecture Asset',6],['Everwhile',4]]){
    const carousel=page.locator(`[data-carousel][aria-label="${name}宣传截图"]`);
    assert.equal(await carousel.locator('[data-slide]:visible').count(),1);
