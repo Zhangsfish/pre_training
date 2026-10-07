@@ -36,6 +36,6 @@ This folder records the 2026-10-07 user-requested homepage addition and publicat
 
 ## Handoff
 
-- PR #26 is open for the owner's visual feedback; do not claim it is merged. The published site artifact corresponds to source commit `f1188a996d8ce5c9749fa76a71b5a7b0172b9c91`.
-- Production deployment `dpl_rKqzBnNhKGH7dp8MXc4V6yL5QPzC` at the existing `zhang-shuo-portfolio.vercel.app` domain was anonymously browser-tested and 43/43 files hash-matched. `REPORT.md` and `production-resource-audit.json` are the current evidence entry points.
+- PR #26 is open for the owner's visual feedback; do not claim it is merged. Current published site artifact corresponds to source commit `87b57e904d0d7479542b6d1d81f430b3476debb9` with the latest bilingual Lecture films and Everwhile English film.
+- Current production deployment `dpl_HK36VxCQCPTus9WMxQ937dkYianT` at the existing `zhang-shuo-portfolio.vercel.app` domain was anonymously browser-tested and 45/45 files hash-matched. `REPORT.md` (Attempt 02) and `attempt-02/production-resource-audit.json` are the current evidence entry points. Attempt 01 deployment/evidence remain historical.
 - Any further copy or layout change requires rebuilding, reauditing, and redeploying the same existing project before saying production reflects it.

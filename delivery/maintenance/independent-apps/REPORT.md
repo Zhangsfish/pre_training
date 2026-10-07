@@ -1,5 +1,7 @@
 # 个人主页独立产品展示：Lecture Asset / Everwhile
 
+**当前交付：下方 Attempt 02「最新版双语 / 英文影片」，已在原正式域名发布并验收。前段为 Attempt 01 历史记录。**
+
 日期：2026-10-07。用户要求先做一版，发布到原个人主页查看。已发布并完成匿名线上验收；PR 保持开放，供用户看版后提出调整。
 
 ## 范围
@@ -41,3 +43,44 @@
 - 发布命令、项目检查和部署详情分别见 [vercel-deploy.log](vercel-deploy.log)、[vercel-inspect.log](vercel-inspect.log)。原项目未连接 Git 自动部署；PR 后续合并本身不会自动替换已核验的版本。
 
 当前外部状态：Lecture Asset 宣传片上游仍在导演审阅，应用提交 App Review 但未公开发布；Everwhile 仍在商店发布准备中。网页因此只展示宣传素材与推广构想，不提供未核实的下载入口。
+
+## Attempt 02 — 最新版双语 / 英文影片（2026-10-07）
+
+用户要求读取两个 GitHub 仓库的最新版影片，Lecture Asset 中英可选，Everwhile 只用英文。本次更新已发布，PR #26 继续开放供用户看版反馈。
+
+- Lecture Asset：源为 main `862532409a43fa7e3e224cdd00cc296130b719d4` 的 `director-r3-caption-male`，已获上游用户接受。主页默认中文，可用「中文 / English」切换；切换会停止并重置播放，不自动播放。两版保留至 20.4s，在 19.6–20.4s 淡出，排除仍未经验证的 App Store 下载/二维码结尾。
+- Everwhile：源为 Elapse main `34bc5e808d79c03b7a8cb0e74200b51ce99ca4ad` 的 `EVERWHILE_R2_EN_720.mp4`，完整 18s 英文片。用户直接授权用于个人主页；上游导演主观验收仍未在本轮代签。
+- 两组宣传截图继续翻页和放大；影片与截图在桌面并排、手机顺序排列；需求场景、产品回应和推广构想位于下方。顺序保持 Lecture Asset → Everwhile → QQ → SPPS → KIN。
+- 三段网页衍生片均为 720×1280 / 30fps，H.264 CRF28、AAC96k、faststart。源文件和衍生片逐项 SHA-256、完整音视频解码见 [media-provenance.json](attempt-02/media-provenance.json)。未引入依赖、analytics 或新外链。
+
+### 当前分支与内容边界
+
+代码/测试提交：`87b57e904d0d7479542b6d1d81f430b3476debb9`，分支仍为 `maintenance/independent-apps-showcase`。[PR #26](https://github.com/Zhangsfish/pre_training/pull/26) 未合并。六案例、`publication/home.json`、claims、简历 bullets/顺序/variants、公开 PDF、LINKS 和 STATE 与本轮开始的 `f9a16a3` 无 diff；PDF SHA-256 仍是 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+
+最新 main `5d8c524` 已检查，它新增的是独立简历组装资料及 PET 事实更新，没有更新锁定网站 claims 的来源指纹。试同步后，既有 source-drift / 简历构建门禁拦截；记录保留在 [upstream-main-build-drift.log](attempt-02/upstream-main-build-drift.log) 和 [upstream-main-jd-drift.log](attempt-02/upstream-main-jd-drift.log)。本轮沿用已发布的预览分支基线实现视频更新，试同步历史保留在本地 `preservation/apps-main-sync-20261007`；未回退远端 main、修改新事实、放宽测试或重写简历。后续把此 PR 合入最新 main 前，应单独审查两版公开内容的来源映射。本轮发布不声称已完成该内容同步。
+
+### 测试与发布
+
+| 检查 | 本轮结果 |
+|---|---|
+| `npm --prefix site run check` | 32 Astro 文件，0 errors / warnings / hints |
+| `npm --prefix site test` | 32/32 PASS |
+| `npm --prefix site run test:jd` | 9/9 PASS |
+| `npm --prefix site run build` | 9 页；45 文件；30,258,687 bytes；JS 4,023 bytes；allowlist 审计 PASS |
+| `node site/scripts/check-alignment.mjs` | PASS |
+| `npm --prefix site run test:gallery`（本地 / 正式域名） | 两次均 PASS；375/1366、16 路由、中英键盘切换、三段新增影片及原三段影片解码、截图轮播/放大、Esc/焦点、reduce-motion、PDF hash、404 |
+| `node .../attempt-02/media-audit.mjs` | 三段影片完整音视频解码 PASS；720p/30fps/时长核验 PASS |
+| 部署前资源核对 | 45/45 SHA-256 相同，无额外文件 |
+| 正式域名资源核对 | 45/45 HTTP 200、字节数、SHA-256 与本地发布包相同 |
+
+锁定依赖复用本任务 Attempt 01 的 `npm ci` 安装；本次未改变 package/lockfile。真实 Astro 预览为该工作区已运行的 4321 服务。日志、当前 dist 清单、预发布核验、生产核验均独立存于 [attempt-02](attempt-02/AGENTS.md)，未覆盖旧 R07 或 Attempt 01。
+
+- 原项目：`zhangsfishs-projects/zhang-shuo-portfolio`，Project ID `prj_CfECSSKoBni34VGDTa89UhKu4n09`。
+- 发布源码 commit：`87b57e904d0d7479542b6d1d81f430b3476debb9`。干净源码提交对应的审计 dist 打包到新的本地临时目录；采用原项目 Build Output API 静态发布方式，未改项目构建设置。
+- Deployment ID：`dpl_HK36VxCQCPTus9WMxQ937dkYianT`，`READY` / production；2026-10-07 22:10:21（北京时间）创建。
+- 正式域名：[https://zhang-shuo-portfolio.vercel.app/](https://zhang-shuo-portfolio.vercel.app/)；不可变地址：[https://zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app/](https://zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app/)。
+- 2026-10-07 22:11–22:12（北京时间）匿名 Chrome 生产检查通过。线上 45 文件哈希一致，含三段新增影片和 PDF，见 [production-resource-audit.json](attempt-02/production-resource-audit.json) 与 [gallery-production.log](attempt-02/gallery-production.log)。
+- 实际生产截图：[Lecture 桌面](attempt-02/screenshots/production-lecture-asset-1366.png)、[Lecture 手机](attempt-02/screenshots/production-lecture-asset-375.png)、[Everwhile 桌面](attempt-02/screenshots/production-everwhile-1366.png)、[Everwhile 手机](attempt-02/screenshots/production-everwhile-375.png)。
+- 发布详情：[vercel-deploy.log](attempt-02/vercel-deploy.log)、[vercel-inspect.log](attempt-02/vercel-inspect.log)、[evidence.json](attempt-02/evidence.json)。未创建新项目/团队/域名，未修改 DNS、认证、费用设置或其他仓库。
+
+外部限制：两款 App 的公开下载仍未验证，因此保留未公开下载说明；Lecture 的商店下载片尾未公开。独立产品发布和上游导演主观验收不属于本次主页集成验收。

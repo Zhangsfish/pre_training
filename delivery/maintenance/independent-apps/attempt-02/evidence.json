@@ -1,0 +1,48 @@
+{
+  "attempt": "independent-apps-02",
+  "user_authorization": "Latest Lecture Asset zh/en selectable films and Everwhile English film on the existing portfolio; continuation of authorized publication preview",
+  "tested_commit": "87b57e904d0d7479542b6d1d81f430b3476debb9",
+  "branch": "maintenance/independent-apps-showcase",
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/26",
+  "pr_merged": false,
+  "latest_main_inspected": "5d8c524f3f7cfb2d30c323b600a13d3d74a8c0af",
+  "latest_main_content_sync": "Not part of publication: trial merge exposed PET source drift. New main facts preserved remotely; no locked copy/test changes to bypass drift. See upstream-main logs and AGENTS.md.",
+  "deployment": {
+    "id": "dpl_HK36VxCQCPTus9WMxQ937dkYianT",
+    "project_id": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+    "scope": "zhangsfishs-projects",
+    "state": "READY",
+    "environment": "production",
+    "production_url": "https://zhang-shuo-portfolio.vercel.app/",
+    "immutable_url": "https://zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app/",
+    "created_at": "2026-10-07T14:10:21+00:00"
+  },
+  "verification": {
+    "resource_checked_at": "2026-10-07T14:11:08.090Z",
+    "anonymous_browser": "System Chrome, fresh isolated Playwright contexts; no authenticated browser profile",
+    "viewports": [375, 1366],
+    "routes_per_viewport": 8,
+    "page_script_errors": 0,
+    "horizontal_overflow": false,
+    "language_switch": "PASS: Chinese default; keyboard English/Chinese selection; pause and reset; both sources decode",
+    "everwhile": "PASS: English only; complete 18s film decodes",
+    "original_media_carousels_modal_reduced_motion": "PASS",
+    "not_found_status": 404,
+    "files_hash_matched": 45,
+    "files_expected": 45,
+    "pdf_sha256": "6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf"
+  },
+  "tests": {
+    "astro_check": "32 files; 0 errors/warnings/hints",
+    "site_unit": "32/32 PASS",
+    "resume_model": "9/9 PASS",
+    "build_public_audit": "PASS; 9 pages, 45 files, 30258687 bytes, 4023 JS bytes",
+    "alignment": "PASS",
+    "gallery_local": "PASS",
+    "gallery_production": "PASS",
+    "full_video_audio_decode": "3/3 PASS"
+  },
+  "unchanged": ["locked_resume_bullets", "resume_project_order", "public_pdf", "claims", "six_cases", "LINKS", "STATE", "Vercel_project", "domain", "DNS", "authentication", "free_plan"],
+  "limitations": ["Lecture public clips exclude the unverified App Store QR/download end card", "App Store availability remains unverified", "Upstream Everwhile director subjective verdict not asserted by portfolio integration"],
+  "evidence_paths": ["media-provenance.json", "dist-manifest.json", "predeploy.json", "production-resource-audit.json", "gallery-local.log", "gallery-production.log", "screenshots/", "vercel-deploy.log", "vercel-inspect.log"]
+}
