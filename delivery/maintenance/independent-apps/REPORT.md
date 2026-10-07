@@ -1,6 +1,6 @@
 # 个人主页独立产品展示：Lecture Asset / Everwhile
 
-日期：2026-10-07。用户要求先做一版，发布到原个人主页查看。当前报告将在真实生产验收后补齐部署结果。
+日期：2026-10-07。用户要求先做一版，发布到原个人主页查看。已发布并完成匿名线上验收；PR 保持开放，供用户看版后提出调整。
 
 ## 范围
 
@@ -32,4 +32,12 @@
 
 ## 发布与线上验收
 
-待补充。
+- PR：[#26](https://github.com/Zhangsfish/pre_training/pull/26)，分支 `maintenance/independent-apps-showcase`，截至本报告仍开放、未合并；`main` 保持 `b247d040ee8e598b799150557f0388fe727f59d0`。
+- 站点源码提交：`f1188a996d8ce5c9749fa76a71b5a7b0172b9c91`。从此提交对应的 `site/dist` 生成静态 Build Output 包，预部署逐文件比较 43/43 SHA-256 一致。
+- 原 Vercel Hobby 项目：`zhangsfishs-projects/zhang-shuo-portfolio`，Project ID `prj_CfECSSKoBni34VGDTa89UhKu4n09`。未新建项目、域名或团队，未修改 DNS、认证、analytics 或付费设置。
+- Deployment ID：`dpl_rKqzBnNhKGH7dp8MXc4V6yL5QPzC`，状态 `READY`。正式地址：[https://zhang-shuo-portfolio.vercel.app/](https://zhang-shuo-portfolio.vercel.app/)；不可变地址：[https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app/](https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app/)。
+- 2026-10-07 15:13–15:14（北京时间）从正式域名逐个下载 43 个文件；HTTP 200、字节数及 SHA-256 全部与本地审计包一致，见 [production-resource-audit.json](production-resource-audit.json)。通用 PDF 线上 SHA-256 仍为 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+- 全新匿名 Chrome 访问正式 HTTPS 域名：375/1366 两视口的首页、六个案例和 `/resume/` 共 16 次路由均返回 200，无横向溢出和页面脚本错误。Lecture Asset → Everwhile → QQ → SPPS → KIN 顺序正确；两组轮播、图片放大/Esc、焦点恢复、Lecture Asset 影片与原有三段影片均通过真实解码；reduce-motion、PDF 下载 hash 和未知路径 404 通过。证据见 [production-gallery.log](production-gallery.log) 与 [桌面截图](evidence/production-apps-1366.png)、[手机截图](evidence/production-apps-375.png)。
+- 发布命令、项目检查和部署详情分别见 [vercel-deploy.log](vercel-deploy.log)、[vercel-inspect.log](vercel-inspect.log)。原项目未连接 Git 自动部署；PR 后续合并本身不会自动替换已核验的版本。
+
+当前外部状态：Lecture Asset 宣传片上游仍在导演审阅，应用提交 App Review 但未公开发布；Everwhile 仍在商店发布准备中。网页因此只展示宣传素材与推广构想，不提供未核实的下载入口。

@@ -1,0 +1,56 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Deploying zhang-shuo-portfolio
+Uploading [--------------------] (0.0B/5.3MB)
+Uploading [=====---------------] (1.3MB/5.3MB)
+Uploading [==========----------] (2.7MB/5.3MB)
+Uploading [===============-----] (4.0MB/5.3MB)
+Uploading [====================] (5.3MB/5.3MB)
+  Inspect         https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/rKqzBnNhKGH7dp8MXc4V6yL5QPzC
+  Production      https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 44 deployment files...
+[2K[1A[2K[G  Production      https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app
+Completing…
+▲ Aliased         https://zhang-shuo-portfolio.vercel.app
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_rKqzBnNhKGH7dp8MXc4V6yL5QPzC",
+    "url": "https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/zhangsfishs-projects/zhang-shuo-portfolio/rKqzBnNhKGH7dp8MXc4V6yL5QPzC",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_rKqzBnNhKGH7dp8MXc4V6yL5QPzC",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel git connect --scope zhangsfishs-projects --non-interactive",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app --scope zhangsfishs-projects --non-interactive",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope zhangsfishs-projects --non-interactive",
+      "when": "Promote to production"
+    }
+  ]
+}

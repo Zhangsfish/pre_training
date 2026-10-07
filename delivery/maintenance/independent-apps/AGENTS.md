@@ -29,3 +29,9 @@ This folder records the 2026-10-07 user-requested homepage addition and publicat
 - Lecture Asset's PDF is for human reading and its ZIP for an external AI; the app itself does not generate AI summaries. Cleanup requires saved-archive confirmation.
 - Everwhile informs the user's time choices without blocking or scoring them. Its store screenshots use visible tutorial examples, not claimed live usage data.
 - No analytics, new contact field, paid feature, new Vercel project, DNS change, or source-app code change.
+
+## Handoff
+
+- PR #26 is open for the owner's visual feedback; do not claim it is merged. The published site artifact corresponds to source commit `f1188a996d8ce5c9749fa76a71b5a7b0172b9c91`.
+- Production deployment `dpl_rKqzBnNhKGH7dp8MXc4V6yL5QPzC` at the existing `zhang-shuo-portfolio.vercel.app` domain was anonymously browser-tested and 43/43 files hash-matched. `REPORT.md` and `production-resource-audit.json` are the current evidence entry points.
+- Any further copy or layout change requires rebuilding, reauditing, and redeploying the same existing project before saying production reflects it.
