@@ -31,6 +31,17 @@ description: 用张朔偏好的叙事方式撰写或修改中文求职项目经�
 - `approved-*-resume-brm.md` 是历史版本，仅供追溯，不再作为默认生成源。
 - 用户要求查看“旧版六段详细经历”时，逐字读取上述六个 long-form 文件；这里的“旧版”指当前已经沉淀、包含历次用户修改的详细版，不是最早聊天草稿。
 
+### 新增两款独立 App（2026-10-07 用户确认）
+
+这两项不替换上述六段经历，各自有可单独选入简历的固定短版。未来可合并成一个项目，也可只选其中一项；按岗位调整选材与顺序时，先读取定稿，不从聊天或事实文件重新拼写。
+
+| 项目 | 事实记录 | 简历固定短版 |
+|---|---|---|
+| Lecture Asset | [`experience/lecture-asset.md`](../../experience/lecture-asset.md) | [`references/approved-lecture-asset-resume.md`](references/approved-lecture-asset-resume.md) |
+| Everwhile | [`experience/everwhile.md`](../../experience/everwhile.md) | [`references/approved-everwhile-resume.md`](references/approved-everwhile-resume.md) |
+
+两款共用的[`进度与推广`](references/approved-independent-apps-progress-20261007.md)是 **2026-10-07 快照**，可在两项同页时选用。宣传片完成、美区审核、中国大陆备案及推广计划不可当成永久状态；投递前核实是否已上架或状态有变。没有用户确认的 App 长版文案，不能用短版反推长版。
+
 ## 叙事重心
 
 根据材料取舍，但优先形成下面这条因果链：

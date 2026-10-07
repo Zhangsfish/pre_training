@@ -31,3 +31,12 @@ For each experience, interview the user until the record can answer:
 Then populate a copy of _TEMPLATE.md.
 
 Do not optimize wording for a JD during ingestion. Preserve facts first.
+
+## 独立 App 索引（2026-10-07）
+
+| 项目事实 | 用户确认的简历短版 |
+|---|---|
+| [Lecture Asset](lecture-asset.md) | [单项目短版](../skills/zhang-shuo-experience-writing/references/approved-lecture-asset-resume.md) |
+| [Everwhile](everwhile.md) | [单项目短版](../skills/zhang-shuo-experience-writing/references/approved-everwhile-resume.md) |
+
+两款共用的[进度与推广快照](../skills/zhang-shuo-experience-writing/references/approved-independent-apps-progress-20261007.md)带日期，后续使用前重新核实审核状态。事实文件不能替代已确认的简历措辞。

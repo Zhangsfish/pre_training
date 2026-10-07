@@ -6,6 +6,8 @@
 
 `resume/MASTER.md`仍是经历全集/内容壳，不等于一页成品。`publication/claims.json`提供可用事实；每份简历只能重组与表达，不能发明经历。
 
+用户于 2026-10-07 新确认的两款独立 App 简历短版分别见 [`Lecture Asset`](../skills/zhang-shuo-experience-writing/references/approved-lecture-asset-resume.md) 与 [`Everwhile`](../skills/zhang-shuo-experience-writing/references/approved-everwhile-resume.md)；可按岗位单独选用或合并。两款共用的[`进度与推广`](../skills/zhang-shuo-experience-writing/references/approved-independent-apps-progress-20261007.md)只是日期快照，不属于静态产品事实。这里是文案入口，不代表旧 R04 variant 或公开 PDF 已加入这两项；更改生成器选材须另行同步 claim 映射并验收。
+
 ## 版本
 
 R04制作四份中文baseline：general-zh、product-commercial-zh、brand-insight-zh、ai-product-zh，取舍见PRESETS。后面每个真实JD生成application variant，不无限增加baseline。
