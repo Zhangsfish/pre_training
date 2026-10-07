@@ -1,5 +1,9 @@
 # Independent Apps homepage task
 
+## Current attempt — latest films
+
+The 2026-10-07 follow-up replaces the earlier Chinese cut with the newest Lecture Asset Chinese/English films and adds the latest Everwhile English film. See `attempt-02/AGENTS.md`, source/derivative hashes in `attempt-02/media-provenance.json`, and the appended current-attempt section of `REPORT.md`. Earlier evidence below remains historical and is not overwritten.
+
 ## Purpose and scope
 
 This folder records the 2026-10-07 user-requested homepage addition and publication of Lecture Asset and Everwhile before QQ Lingxi. The existing project cases, fact records, résumé, PDF, Vercel project, and domain remain unchanged.

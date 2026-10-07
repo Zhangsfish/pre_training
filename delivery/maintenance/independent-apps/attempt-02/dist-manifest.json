@@ -1,0 +1,230 @@
+{
+  "files": [
+    {
+      "path": "_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.DHOWwbz1.js",
+      "bytes": 4023,
+      "sha256": "54464d40b0021d1c90bf5486e04ed430602f5e471e44ca42372f5cfd05dcb331"
+    },
+    {
+      "path": "_astro/site.CjM9vapD.css",
+      "bytes": 24874,
+      "sha256": "9e1b5108f15291d81ced55af1db75bd22ac49013c534b5168b4173069f259e83"
+    },
+    {
+      "path": "404.html",
+      "bytes": 1510,
+      "sha256": "01ed2ddd16029cb63e822d5f10be7abbf63ac8f8fbb92802db467f06fa3bb39a"
+    },
+    {
+      "path": "downloads/zhang-shuo-resume.pdf",
+      "bytes": 83374,
+      "sha256": "6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 251,
+      "sha256": "0eabef16202d7317029c3ada2deb4f5cc51ed4fa0c7f12cf0f225850716e4cf3"
+    },
+    {
+      "path": "index.html",
+      "bytes": 16085,
+      "sha256": "286e25a626d0247637299003b90b3ac2f3c55bc652f000b4969f8cdbe8d18c7b"
+    },
+    {
+      "path": "media/everwhile-01.png",
+      "bytes": 230228,
+      "sha256": "e256c1e1c381f69a1e91ae1104383e7dd17f0be070070a5f6893624dae278760"
+    },
+    {
+      "path": "media/everwhile-02.png",
+      "bytes": 547897,
+      "sha256": "cd7f76499104877c1c6f6415c4026dcc22bd4d53b44b08403c2f7f4b8b9b775f"
+    },
+    {
+      "path": "media/everwhile-03.png",
+      "bytes": 407236,
+      "sha256": "52953445c3fbbfca54540badca865820b30e0600e37bd28595753be37cb247b5"
+    },
+    {
+      "path": "media/everwhile-04.png",
+      "bytes": 444022,
+      "sha256": "5d5e6ccd8f6f70039dba6a6a4572c1b9f23be056a59e9b63c1ef6ab78b978fca"
+    },
+    {
+      "path": "media/everwhile-film-en.mp4",
+      "bytes": 1207197,
+      "sha256": "cf75d92c0177874292131f27fce57b6def50ee27a52cad3e5f1e64d2c46e9c1d"
+    },
+    {
+      "path": "media/kin-call.webp",
+      "bytes": 29920,
+      "sha256": "b4c5b9ce749eaf41d4046efa6ebd1d2c8648c23c98e8bdc792b4d51a759fc3c4"
+    },
+    {
+      "path": "media/kin-cover.webp",
+      "bytes": 42192,
+      "sha256": "5cde2039098ca18a99e597addb4c44c552c275ee5a1efb836d3a378d7a36bdc5"
+    },
+    {
+      "path": "media/kin-day.webp",
+      "bytes": 65082,
+      "sha256": "953824f098b1060fb79068ec5e03f1f90c63177da18c12dd9907cd1d7b83dfbe"
+    },
+    {
+      "path": "media/kin-film.mp4",
+      "bytes": 5379882,
+      "sha256": "fbb4b1535657a8059464db9153da4e505e60a56a9c87f51e4e04718d296cf85d"
+    },
+    {
+      "path": "media/kin-preview.mp4",
+      "bytes": 1267076,
+      "sha256": "573a448e59acb159ab6fcfe0c4a20cfac4b732e0cc571b098d77220dafaf042f"
+    },
+    {
+      "path": "media/lecture-01.png",
+      "bytes": 491186,
+      "sha256": "e1ec593f61091e5f6671e1f4f7fd325eed814034626d4f38c78fc8cabb78dc3f"
+    },
+    {
+      "path": "media/lecture-02.png",
+      "bytes": 456284,
+      "sha256": "4edb4d53f7a0e4d7405fd086b578d1be856ffb9070042b658673d0d4ea15cb49"
+    },
+    {
+      "path": "media/lecture-03.png",
+      "bytes": 215838,
+      "sha256": "bb39351a8899f25b95e8f652c4ad1b02e8865b6a224237d562418836b7532c39"
+    },
+    {
+      "path": "media/lecture-04.png",
+      "bytes": 359665,
+      "sha256": "e9cc3148e34fe241610d7054ddbcd0fa89107847226894af63a7b6ce72d43bd3"
+    },
+    {
+      "path": "media/lecture-05.png",
+      "bytes": 286489,
+      "sha256": "7546f1a5508431ec4542a719309becfa780f91d94b0dd77731b6ee432db77b31"
+    },
+    {
+      "path": "media/lecture-06.png",
+      "bytes": 278842,
+      "sha256": "23ed0470a3313bb70a31a1d375def171e2f441075fbdd08636f0ff037d06ea90"
+    },
+    {
+      "path": "media/lecture-film-en.mp4",
+      "bytes": 1482479,
+      "sha256": "f114dec9cfc48162737c6fbf066803e12f61f45750a83954a7a3fb1c142d79ef"
+    },
+    {
+      "path": "media/lecture-film-zh.mp4",
+      "bytes": 1474832,
+      "sha256": "f3ac086ec7ec0dbd073a51f5c11f7ef7850108dd206f8775cd87c84dc24b6469"
+    },
+    {
+      "path": "media/qq-film.mp4",
+      "bytes": 8653850,
+      "sha256": "4aeec2b7797e0c000764d9fab35a8001f23adb9bf7170e3e462c7658434dcaac"
+    },
+    {
+      "path": "media/qq-match.webp",
+      "bytes": 69168,
+      "sha256": "555d16f68855f89502d438c2a2acda10997744d8ccc67601170d0257a8c72e7b"
+    },
+    {
+      "path": "media/qq-negotiate.webp",
+      "bytes": 72148,
+      "sha256": "b91210a39af3427c9219a8a6e1745470e2265da93d5319762c763e606666f6ed"
+    },
+    {
+      "path": "media/qq-preview.mp4",
+      "bytes": 347785,
+      "sha256": "024b9ee441251ebefbfc03f41dd1bca67ee4fefe9e22ccfd4ac841c8feed8d0d"
+    },
+    {
+      "path": "media/qq-profile.webp",
+      "bytes": 65668,
+      "sha256": "00c6916127f80cf510acb82914ed6b74d09cf6be34797d75c1ffd72de4b7380e"
+    },
+    {
+      "path": "media/spps-front.webp",
+      "bytes": 301490,
+      "sha256": "ea92f84c8eb2262469422ae06c714f728347b4aa5f92940cd6f6d8c0b90822d3"
+    },
+    {
+      "path": "media/spps-hero.webp",
+      "bytes": 183398,
+      "sha256": "347b11a5be39b7c4c691580c86eeb708025862a12f622e685bb57bb52b5eaef1"
+    },
+    {
+      "path": "media/spps-monitor.mp4",
+      "bytes": 2095685,
+      "sha256": "6009809ed1fdffd29ffd75562a593177c33d332a6ad51dab1df434d064371581"
+    },
+    {
+      "path": "media/spps-operation.mp4",
+      "bytes": 3027116,
+      "sha256": "0347cd1ad2510b01479306a8c1e3eb63b16f1f7268a374d401f135a7cbb9f80c"
+    },
+    {
+      "path": "media/spps-operation.webp",
+      "bytes": 33378,
+      "sha256": "82d87aa9bedeb22076d3d3039eca9d057cb1431d73ad6b825dbd1784b40bf410"
+    },
+    {
+      "path": "media/spps-room.webp",
+      "bytes": 236144,
+      "sha256": "149051e784752f39770a6d9d0994453bd62a476b2690e3a1c52f59a1b7e220f2"
+    },
+    {
+      "path": "media/spps-side.webp",
+      "bytes": 332612,
+      "sha256": "cdd85e46d3cf356d9c7c327f1795e2e423ec357b4a4fa1568e2dacbe1e41b96c"
+    },
+    {
+      "path": "resume/index.html",
+      "bytes": 5969,
+      "sha256": "3e49a1af42b3bebffeeee94bf0284f414e22cbc46747d010152925355f13087d"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 87,
+      "sha256": "f79f52d699462a18cd96a2d5e0dfddc94490c57c2550e4c1bb5e7f5d8e068c2a"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 726,
+      "sha256": "dfb74d1e67f02d7c5f4396c037b4df65bfdc3ee827bfae5aceebd713fb8bb87e"
+    },
+    {
+      "path": "work/kin/index.html",
+      "bytes": 8600,
+      "sha256": "7a53d51c8f304e67281cb31e999e3649314d2e76366d0d0940f43b723bab50d8"
+    },
+    {
+      "path": "work/natural-product/index.html",
+      "bytes": 4128,
+      "sha256": "f10178dbecc66f352e3a0b9e5b76bca463b29926e647195c8023dddd8493d89e"
+    },
+    {
+      "path": "work/pet/index.html",
+      "bytes": 4225,
+      "sha256": "d2d93236e76dd2f7806ed3da51bcfaeb7b7787b79c6a17cfa4e41a43a6c81a0d"
+    },
+    {
+      "path": "work/qq-lingxi/index.html",
+      "bytes": 6743,
+      "sha256": "6a517ee9c9cf6a95989ff46dd51cdfdb115865a25f8c51e103a225098f6a1225"
+    },
+    {
+      "path": "work/spps/index.html",
+      "bytes": 8392,
+      "sha256": "887386f7a764a1bc906699684db431f8b2958678aaabb53f75f8cff540dc6442"
+    },
+    {
+      "path": "work/teaching/index.html",
+      "bytes": 4911,
+      "sha256": "ab1c5508e58eb0c88f92729ac88b4c1416a182271fc8d791e0943ba50216bf52"
+    }
+  ],
+  "total_bytes": 30258687
+}

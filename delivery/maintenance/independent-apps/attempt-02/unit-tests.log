@@ -1,0 +1,44 @@
+
+> pre-training-site@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ reviewed source set passes review and production without source drift (529.61ms)
+✔ missing claim fails closed (228.0906ms)
+✔ unknown cannot become an outcome (243.5578ms)
+✔ excluded project cannot enter default home (214.742ms)
+✔ draft is blocked from production (419.0706ms)
+✔ approving document shells does not approve their underlying claims (214.9363ms)
+✔ draft negative fixtures do not mutate the planner-approved source (248.9972ms)
+✔ duplicate identifiers rejected (234.9481ms)
+✔ nonexistent source rejected (220.1104ms)
+✔ wrong source heading rejected (204.6225ms)
+✔ source drift requests targeted review rather than silently updating it (219.5627ms)
+✔ required external link qq-lingxi-repo must exist (269.0451ms)
+✔ required external link notion-organic-synthesis must exist (225.5371ms)
+✔ required external link notion-organic-chemistry must exist (264.0669ms)
+✔ course links must also appear in teaching, not only registry (262.6447ms)
+✔ both resume-only fields are forbidden in site allowlist (421.8924ms)
+✔ real resume fields exist but explicit site projection omits their names and values (16.6899ms)
+✔ pending media cannot be referenced (200.8116ms)
+✔ pending original cannot be assigned public path (195.9173ms)
+✔ excluded and resume-only claims cannot render (409.2262ms)
+✔ production command ignores inherited review env and exits nonzero before output (628.0688ms)
+✔ case sections preserve every approved sentence, without introducing body facts (34.4305ms)
+✔ KIN preserves the missed-call problem, state explanation, market scenario and ownership (20.3053ms)
+✔ dist gate rejects rogue-media (214.7753ms)
+✔ dist gate rejects candidate-route (167.9046ms)
+✔ dist gate rejects private-field (183.6582ms)
+✔ dist gate rejects broken-link (158.5752ms)
+✔ dist gate rejects broken-fragment (176.9496ms)
+✔ dist gate rejects fake-pdf (188.1163ms)
+✔ R04 output rejects tampered-pdf (170.7358ms)
+✔ R04 output rejects unregistered-variant (191.325ms)
+✔ R04 output rejects resume-contact-in-case (202.9896ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6185.5705

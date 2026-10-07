@@ -498,19 +498,49 @@
       "permission_note": "Owner explicitly requested portfolio publication on 2026-10-07; upstream source and transform recorded in delivery/maintenance/independent-apps/AGENTS.md."
     },
     {
-      "id": "lecture-film-portfolio",
+      "id": "lecture-film-zh",
       "project": "lecture-asset",
       "type": "video",
-      "path": "media/lecture-film-portfolio.mp4",
+      "path": "media/lecture-film-zh.mp4",
       "source_filename": "director-cut-zh-workbuddy-720.mp4",
-      "source_sha256": "0d05b331f4c4667854f3a1b07476b8ccf6981a2e4885ec11091f585782940158",
-      "derived_sha256": "ee305972e7bf38233a5aabfce0bfcb4b35a5b3070dcbec5040138c21d0c5989b",
+      "source_sha256": "2b6028e6268274ac2bb2fd2bef4f35e86b3ea01f18ceba706f1a071d4c0cfd35",
+      "derived_sha256": "f3ac086ec7ec0dbd073a51f5c11f7ef7850108dd206f8775cd87c84dc24b6469",
       "availability": "codex_ready",
       "publication": "approved",
       "integration": "verified",
       "alt": "Lecture Asset 公开宣传素材",
       "caption": "用户授权用于个人主页的公开展示",
-      "permission_note": "Owner explicitly requested portfolio publication on 2026-10-07; upstream source and transform recorded in delivery/maintenance/independent-apps/AGENTS.md."
+      "permission_note": "Owner requested the latest bilingual films for the portfolio on 2026-10-07. Source: lecture-asset main 8625324, director-r3-caption-male. Derived at 720p/30fps through 20.4s, fade from 19.6s; excludes the unverified App Store QR and download end card."
+    },
+    {
+      "id": "lecture-film-en",
+      "project": "lecture-asset",
+      "type": "video",
+      "path": "media/lecture-film-en.mp4",
+      "source_filename": "director-cut-en-chatgpt-720.mp4",
+      "source_sha256": "b55c47d1f1e4dd0378937747904699394fa5b4055c00d76f5790c4a1b1d704bf",
+      "derived_sha256": "f114dec9cfc48162737c6fbf066803e12f61f45750a83954a7a3fb1c142d79ef",
+      "availability": "codex_ready",
+      "publication": "approved",
+      "integration": "verified",
+      "alt": "Lecture Asset 英文宣传片节选",
+      "caption": "用户授权用于个人主页的公开展示",
+      "permission_note": "Owner requested the latest bilingual films for the portfolio on 2026-10-07. Source: lecture-asset main 8625324, director-r3-caption-male. Derived at 720p/30fps through 20.4s, fade from 19.6s; excludes the unverified App Store QR and download end card."
+    },
+    {
+      "id": "everwhile-film-en",
+      "project": "everwhile",
+      "type": "video",
+      "path": "media/everwhile-film-en.mp4",
+      "source_filename": "EVERWHILE_R2_EN_720.mp4",
+      "source_sha256": "f2521eb0a46a93e4e3d484548aa3c42dbb28d7dd70bdded20ad902275113c1ed",
+      "derived_sha256": "cf75d92c0177874292131f27fce57b6def50ee27a52cad3e5f1e64d2c46e9c1d",
+      "availability": "codex_ready",
+      "publication": "approved",
+      "integration": "verified",
+      "alt": "Everwhile 英文宣传片",
+      "caption": "用户授权用于个人主页的公开展示",
+      "permission_note": "Owner requested the latest English film for the portfolio on 2026-10-07. Source: Elapse main 34bc5e8, director-r2. Derived at 720p/30fps. Upstream film is still pending director review, so portfolio labels it a preview and makes no App Store availability claim."
     }
   ]
 }

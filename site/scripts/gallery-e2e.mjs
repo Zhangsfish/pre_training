@@ -31,11 +31,32 @@ try{
    await page.keyboard.press('Escape');
    assert.ok(!(await page.locator('dialog').evaluate(d=>d.open)));
   }
-  const lectureVideo=page.locator('video[aria-label="Lecture Asset 宣传片节选"]');
-  await lectureVideo.evaluate(v=>{v.muted=true;v.play()});
-  await page.waitForFunction(()=>{const v=document.querySelector('video[aria-label="Lecture Asset 宣传片节选"]');return v&&v.readyState>=2&&v.currentTime>.1&&v.videoWidth>0});
-  assert.ok(await lectureVideo.evaluate(v=>v.duration>20&&v.duration<21&&v.videoWidth>0&&!v.error));
-  await lectureVideo.evaluate(v=>v.pause());
+  const lecture=page.locator('.app-lecture-asset');
+  const lectureVideo=lecture.locator('[data-app-film]');
+  assert.equal(await lectureVideo.getAttribute('preload'),'none');
+  assert.equal(await lecture.locator('[aria-pressed=true]').textContent(),'中文');
+  async function decode(video,selector,duration){
+   await video.evaluate(v=>{v.muted=true;return v.play()});
+   await page.waitForFunction(selector=>{const v=document.querySelector(selector);return v&&v.readyState>=2&&v.currentTime>.1&&v.videoWidth>0},selector);
+   assert.ok(await video.evaluate((v,d)=>Math.abs(v.duration-d)<.1&&v.videoWidth===720&&!v.error,duration));
+   await video.evaluate(v=>v.pause());
+  }
+  await decode(lectureVideo,'.app-lecture-asset [data-app-film]',20.4);
+  const english=lecture.getByRole('button',{name:'English',exact:true});
+  await english.focus();await page.keyboard.press('Enter');
+  assert.equal(await english.getAttribute('aria-pressed'),'true');
+  assert.ok(await lectureVideo.evaluate(v=>v.paused&&v.currentTime===0));
+  await decode(lectureVideo,'.app-lecture-asset [data-app-film]',20.4);
+  assert.ok((await lectureVideo.evaluate(v=>v.currentSrc)).endsWith('/lecture-film-en.mp4'));
+  if(output)await page.screenshot({path:path.join(output,`lecture-english-${width}.png`),fullPage:true});
+  await lecture.getByRole('button',{name:'中文',exact:true}).click();
+  await decode(lectureVideo,'.app-lecture-asset [data-app-film]',20.4);
+  assert.ok((await lectureVideo.evaluate(v=>v.currentSrc)).endsWith('/lecture-film-zh.mp4'));
+  const everwhile=page.locator('.app-everwhile');
+  assert.equal(await everwhile.locator('[data-app-film-language]').count(),0);
+  await decode(everwhile.locator('[data-app-film]'),'.app-everwhile [data-app-film]',18);
+  assert.ok((await everwhile.locator('[data-app-film]').evaluate(v=>v.currentSrc)).endsWith('/everwhile-film-en.mp4'));
+  if(output)await page.screenshot({path:path.join(output,`everwhile-english-${width}.png`),fullPage:true});
   assert.equal(await page.getByRole('link',{name:/App Store.*下载/}).count(),0);
   assert.ok(await page.locator('[data-preview]').evaluateAll(vs=>vs.every(v=>!v.getAttribute('src'))),'Reduced motion must not auto-download previews');
   await page.getByRole('button',{name:'02 找到共同体',exact:true}).click();assert.equal(await page.getByRole('button',{name:'02 找到共同体',exact:true}).getAttribute('aria-pressed'),'true');
@@ -47,5 +68,5 @@ try{
  }
  const ctx=await browser.newContext();const page=await ctx.newPage();const r=await page.goto(base+'/this-page-does-not-exist/');assert.equal(r.status(),404);
  const pdf=await ctx.request.get(base+'/downloads/zhang-shuo-resume.pdf');assert.equal(pdf.status(),200);const expected=JSON.parse(fs.readFileSync(new URL('../../publication/resume-manifest.json',import.meta.url))).sha256;assert.equal(createHash('sha256').update(await pdf.body()).digest('hex'),expected);await ctx.close();
- console.log(JSON.stringify({results,media:'decoded',modal:'pass',reduced_motion:'pass',pdf:'hash matched',not_found:404},null,2));
+ console.log(JSON.stringify({results,media:'decoded: Lecture zh/en, Everwhile en, QQ, SPPS, KIN',language_switch:'keyboard/pass; pauses and resets playback',modal:'pass',reduced_motion:'pass',pdf:'hash matched',not_found:404},null,2));
 }finally{await browser.close()}

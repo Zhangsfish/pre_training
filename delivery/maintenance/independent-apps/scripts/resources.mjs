@@ -6,7 +6,9 @@ import {fileURLToPath} from 'node:url';
 const task=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
 const root=path.resolve(task,'../../..');
 const directory=path.join(root,'site/dist');
-const manifestPath=path.join(task,'dist-manifest.json');
+const evidence=process.env.RESOURCE_EVIDENCE_DIR?path.resolve(process.env.RESOURCE_EVIDENCE_DIR):task;
+fs.mkdirSync(evidence,{recursive:true});
+const manifestPath=path.join(evidence,'dist-manifest.json');
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 
 if(process.argv[2]==='local'){
@@ -30,7 +32,7 @@ if(process.argv[2]==='local'){
   results.push({path:file.path,status:response.status,bytes:bytes.length,sha256:sha(bytes),match:response.status===200&&bytes.length===file.bytes&&sha(bytes)===file.sha256});
  }
  const report={checked_at:new Date().toISOString(),origin,expected_files:manifest.files.length,matched:results.filter(r=>r.match).length,results};
- fs.writeFileSync(path.join(task,'production-resource-audit.json'),JSON.stringify(report,null,2)+'\n');
+ fs.writeFileSync(path.join(evidence,'production-resource-audit.json'),JSON.stringify(report,null,2)+'\n');
  console.log(JSON.stringify({origin,matched:report.matched,expected_files:report.expected_files}));
  if(report.matched!==report.expected_files)process.exitCode=1;
 }else throw new Error('Use local or remote <HTTPS origin>');
