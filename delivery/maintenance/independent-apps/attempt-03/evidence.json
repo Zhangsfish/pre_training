@@ -1,0 +1,49 @@
+{
+  "attempt": "independent-apps-03",
+  "authorized_scope": "User-approved compact desktop row with narrow-screen wrapping, remove promotional plans, adopt approved scenario/response copy and publish",
+  "tested_commit": "f7e2d6b8538b6e7b3b861278a19f89d734513ad6",
+  "branch": "maintenance/independent-apps-showcase",
+  "pr_url": "https://github.com/Zhangsfish/pre_training/pull/26",
+  "pr_merged": false,
+  "baseline_commit": "722577092576089614ae51a0956cabf7f60f454b",
+  "deployment": {
+    "id": "dpl_Cgrah1FZN6AwbCSKJr5cYd1vTazh",
+    "project_id": "prj_CfECSSKoBni34VGDTa89UhKu4n09",
+    "scope": "zhangsfishs-projects",
+    "state": "READY",
+    "environment": "production",
+    "production_url": "https://zhang-shuo-portfolio.vercel.app/",
+    "immutable_url": "https://zhang-shuo-portfolio-7ifrljhum-zhangsfishs-projects.vercel.app/",
+    "created_at": "2026-10-07T15:25:08+00:00"
+  },
+  "verification": {
+    "resource_checked_at": "2026-10-07T15:26:11.175Z",
+    "layout_checked_at": "2026-10-07T15:26:12.708Z",
+    "anonymous_browser": "System Chrome, fresh isolated Playwright contexts; no authenticated profile",
+    "viewports": [320, 375, 768, 1024, 1170, 1200, 1366, 1920],
+    "same_row_at": [1200, 1366, 1920],
+    "stacked_at": [320, 375, 768, 1024, 1170],
+    "page_and_console_errors": 0,
+    "horizontal_overflow": false,
+    "promotional_plans_removed": true,
+    "approved_scenario_response_visible": true,
+    "gallery_routes": "16/16 HTTP 200 at 375/1366",
+    "film_language_carousels_modal_reduced_motion": "PASS",
+    "not_found_status": 404,
+    "files_hash_matched": 45,
+    "files_expected": 45,
+    "pdf_sha256": "6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf"
+  },
+  "tests": {
+    "astro_check": "32 files; zero diagnostics",
+    "site_unit": "32/32 PASS",
+    "resume_model": "9/9 PASS",
+    "build_public_audit": "PASS; 9 pages, 45 files, 30259269 bytes, 4023 JS bytes",
+    "alignment": "PASS",
+    "layout_local_and_production": "8/8 viewports each PASS",
+    "gallery_local_and_production": "PASS"
+  },
+  "unchanged": ["locked_resume_bullets", "resume_project_order", "public_pdf", "claims", "six_cases", "LINKS", "STATE", "all_media_files", "source_app_repositories", "Vercel_project", "domain", "DNS", "authentication", "free_plan"],
+  "inherited_limitations": ["App Store download availability unverified; Lecture web clips exclude its unverified download/QR end card", "Latest main PET source mapping remains a separate pre-merge content-review issue, documented in attempt-02"],
+  "evidence_paths": ["local-layout.json", "production-layout.json", "dist-manifest.json", "predeploy.json", "production-resource-audit.json", "gallery-local.log", "gallery-production.log", "screenshots/", "vercel-deploy.log", "vercel-inspect.log"]
+}

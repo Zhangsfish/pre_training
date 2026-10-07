@@ -1,8 +1,8 @@
 # Independent Apps homepage task
 
-## Current attempt — latest films
+## Current attempt — compact row and approved copy
 
-The 2026-10-07 follow-up replaces the earlier Chinese cut with the newest Lecture Asset Chinese/English films and adds the latest Everwhile English film. See `attempt-02/AGENTS.md`, source/derivative hashes in `attempt-02/media-provenance.json`, and the appended current-attempt section of `REPORT.md`. Earlier evidence below remains historical and is not overwritten.
+The user approved a desktop row with responsive wrapping, removed promotional plans, and approved revised scenario/response copy. Current evidence is in `attempt-03/AGENTS.md` and parent REPORT (Attempt 03). Films remain the verified latest Lecture Asset Chinese/English and Everwhile English derivatives from Attempt 02; their provenance/hashes remain in `attempt-02/media-provenance.json`. Earlier evidence is historical and is not overwritten.
 
 ## Purpose and scope
 
@@ -18,7 +18,7 @@ This folder records the 2026-10-07 user-requested homepage addition and publicat
 
 ## File map
 
-- `publication/apps-showcase.json`: site-only, user-authorized homepage copy. Its marketing paragraphs are explicitly proposed plans, not measured outcomes.
+- `publication/apps-showcase.json`: site-only, user-authorized scenario/response copy. Promotional-plan fields and sections were removed by direct user request.
 - `site/public/media/lecture-*`, `everwhile-*`: copied public screenshots and the derived web film. SHA-256 and publication allowlist live in `site/assets-manifest.json`.
 - `site/src/components/AppCarousel.astro`, `site/src/pages/index.astro`, `site/src/scripts/gallery.ts`, `site/src/styles/gallery.css`: presentation and accessible carousel behavior.
 - `REPORT.md`: build, browser, and deployment acceptance results.
@@ -36,6 +36,6 @@ This folder records the 2026-10-07 user-requested homepage addition and publicat
 
 ## Handoff
 
-- PR #26 is open for the owner's visual feedback; do not claim it is merged. Current published site artifact corresponds to source commit `87b57e904d0d7479542b6d1d81f430b3476debb9` with the latest bilingual Lecture films and Everwhile English film.
-- Current production deployment `dpl_HK36VxCQCPTus9WMxQ937dkYianT` at the existing `zhang-shuo-portfolio.vercel.app` domain was anonymously browser-tested and 45/45 files hash-matched. `REPORT.md` (Attempt 02) and `attempt-02/production-resource-audit.json` are the current evidence entry points. Attempt 01 deployment/evidence remain historical.
+- PR #26 is open for the owner's visual feedback; do not claim it is merged. Current published site artifact corresponds to source commit `f7e2d6b8538b6e7b3b861278a19f89d734513ad6` with the compact row, approved copy and latest bilingual/English films.
+- Current production deployment `dpl_Cgrah1FZN6AwbCSKJr5cYd1vTazh` at the existing `zhang-shuo-portfolio.vercel.app` domain was anonymously browser-tested and 45/45 files hash-matched. `REPORT.md` (Attempt 03) and `attempt-03/production-resource-audit.json` are the current evidence entry points. Earlier deployment/evidence remain historical.
 - Any further copy or layout change requires rebuilding, reauditing, and redeploying the same existing project before saying production reflects it.
