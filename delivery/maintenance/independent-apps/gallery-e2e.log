@@ -1,0 +1,93 @@
+
+> pre-training-site@0.1.0 test:gallery
+> node scripts/gallery-e2e.mjs
+
+{
+  "results": [
+    {
+      "width": 375,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/work/qq-lingxi/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/work/spps/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/work/kin/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/work/pet/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/work/teaching/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/work/natural-product/",
+      "status": 200
+    },
+    {
+      "width": 375,
+      "route": "/resume/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/work/qq-lingxi/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/work/spps/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/work/kin/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/work/pet/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/work/teaching/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/work/natural-product/",
+      "status": 200
+    },
+    {
+      "width": 1366,
+      "route": "/resume/",
+      "status": 200
+    }
+  ],
+  "media": "decoded",
+  "modal": "pass",
+  "reduced_motion": "pass",
+  "pdf": "hash matched",
+  "not_found": 404
+}

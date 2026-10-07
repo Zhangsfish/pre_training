@@ -1,0 +1,42 @@
+Vercel CLI 59.23.2 (Node.js 24.15.0)
+Fetching deployment "dpl_HK36VxCQCPTus9WMxQ937dkYianT" in zhangsfishs-projects
+> Fetched deployment "zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app" in zhangsfishs-projects [917ms]
+
+  General
+
+    id		dpl_HK36VxCQCPTus9WMxQ937dkYianT
+    name	zhang-shuo-portfolio
+    target	production
+    status	● Ready
+    url		https://zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app
+    created	Wed Oct 07 2026 22:10:21 GMT+0800 (中国标准时间) [31s ago]
+
+
+  Build Machine
+
+    requested build machine basic
+    actual assigned cores   2 vCPU (actual assignment)
+    memory                  8192 MiB
+    selection type          fixed
+    selection source        plan-default
+
+
+  Duration
+
+    build duration	3s
+    post-build duration	unavailable
+    billable duration	unavailable
+    CPU Minutes Usage	unavailable
+
+
+  Aliases
+
+    ╶ https://zhang-shuo-portfolio.vercel.app
+    ╶ https://zhang-shuo-portfolio-zhangsfishs-projects.vercel.app
+    
+
+  Builds
+
+    ╶ .        [0ms]
+    
+

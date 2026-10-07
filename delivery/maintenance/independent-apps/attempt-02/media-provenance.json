@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-07T14:06:07.977Z",
+  "results": [
+    {
+      "name": "lecture-film-zh",
+      "source": "lecture-zh-latest",
+      "duration": 20.4,
+      "repo": "lecture-asset",
+      "commit": "862532409a43fa7e3e224cdd00cc296130b719d4",
+      "path": "marketing/video/v2/review/director-r3-caption-male/director-cut-zh-workbuddy-720.mp4",
+      "source_url": "https://github.com/Zhangsfish/lecture-asset/blob/862532409a43fa7e3e224cdd00cc296130b719d4/marketing/video/v2/review/director-r3-caption-male/director-cut-zh-workbuddy-720.mp4",
+      "source_sha256": "2b6028e6268274ac2bb2fd2bef4f35e86b3ea01f18ceba706f1a071d4c0cfd35",
+      "derived_sha256": "f3ac086ec7ec0dbd073a51f5c11f7ef7850108dd206f8775cd87c84dc24b6469",
+      "bytes": 1474832,
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "full_audio_video_decode": "pass",
+      "transform": "20.4s; fade video/audio 19.6–20.4s; exclude QR/download end card",
+      "encoding": "H.264 CRF28, preset medium, 720×1280/30fps, yuv420p, AAC96k, faststart"
+    },
+    {
+      "name": "lecture-film-en",
+      "source": "lecture-en-latest",
+      "duration": 20.4,
+      "repo": "lecture-asset",
+      "commit": "862532409a43fa7e3e224cdd00cc296130b719d4",
+      "path": "marketing/video/v2/review/director-r3-caption-male/director-cut-en-chatgpt-720.mp4",
+      "source_url": "https://github.com/Zhangsfish/lecture-asset/blob/862532409a43fa7e3e224cdd00cc296130b719d4/marketing/video/v2/review/director-r3-caption-male/director-cut-en-chatgpt-720.mp4",
+      "source_sha256": "b55c47d1f1e4dd0378937747904699394fa5b4055c00d76f5790c4a1b1d704bf",
+      "derived_sha256": "f114dec9cfc48162737c6fbf066803e12f61f45750a83954a7a3fb1c142d79ef",
+      "bytes": 1482479,
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "full_audio_video_decode": "pass",
+      "transform": "20.4s; fade video/audio 19.6–20.4s; exclude QR/download end card",
+      "encoding": "H.264 CRF28, preset medium, 720×1280/30fps, yuv420p, AAC96k, faststart"
+    },
+    {
+      "name": "everwhile-film-en",
+      "source": "everwhile-en-latest",
+      "duration": 18,
+      "repo": "Elapse",
+      "commit": "34bc5e808d79c03b7a8cb0e74200b51ce99ca4ad",
+      "path": "marketing/video/everwhile-v1/review/director-r2/EVERWHILE_R2_EN_720.mp4",
+      "source_url": "https://github.com/Zhangsfish/Elapse/blob/34bc5e808d79c03b7a8cb0e74200b51ce99ca4ad/marketing/video/everwhile-v1/review/director-r2/EVERWHILE_R2_EN_720.mp4",
+      "source_sha256": "f2521eb0a46a93e4e3d484548aa3c42dbb28d7dd70bdded20ad902275113c1ed",
+      "derived_sha256": "cf75d92c0177874292131f27fce57b6def50ee27a52cad3e5f1e64d2c46e9c1d",
+      "bytes": 1207197,
+      "width": 720,
+      "height": 1280,
+      "fps": "30/1",
+      "full_audio_video_decode": "pass",
+      "transform": "complete 18s; no timing/copy changes",
+      "encoding": "H.264 CRF28, preset medium, 720×1280/30fps, yuv420p, AAC96k, faststart"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+
+> pre-training-site@0.1.0 test:jd
+> node --test ../resume/scripts/model.test.mjs
+
+✖ general-zh: approved claims, snapshots, ownership and limits (212.8856ms)
+✖ product-commercial-zh: approved claims, snapshots, ownership and limits (250.9048ms)
+✖ brand-insight-zh: approved claims, snapshots, ownership and limits (163.3171ms)
+✖ ai-product-zh: approved claims, snapshots, ownership and limits (189.6558ms)
+✖ JD fixtures change selection/order while homepage is never mutated (217.1302ms)
+✔ reject unknown-claim (193.9981ms)
+✔ reject status-inflation (195.8018ms)
+✔ reject stale-source (216.9952ms)
+✔ reject public-variant (204.7824ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 4
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2045.0635
+
+✖ failing tests:
+
+test at ..\resume\scripts\model.test.mjs:6:21
+✖ general-zh: approved claims, snapshots, ownership and limits (212.8856ms)
+  AssertionError [ERR_ASSERTION]: Source drift requires planner review
+  + actual - expected
+  
+  + [
+  +   'pet.status: source_blob_sha drift; planner must review affected claim',
+  +   'pet.setup: source_blob_sha drift; planner must review affected claim',
+  +   'pet.external: source_blob_sha drift; planner must review affected claim',
+  +   'pet.peers: source_blob_sha drift; planner must review affected claim',
+  +   'pet.ai: source_blob_sha drift; planner must review affected claim',
+  +   'pet.validation: source_blob_sha drift; planner must review affected claim',
+  +   'pet.window: source_blob_sha drift; planner must review affected claim',
+  +   'pet.patents: source_blob_sha drift; planner must review affected claim',
+  +   'pet.period: source_blob_sha drift; planner must review affected claim'
+  + ]
+  - []
+  
+      at validateVariant (file:///E:/myself/pre_training-apps/resume/scripts/model.mjs:16:92)
+      at TestContext.<anonymous> (file:///E:/myself/pre_training-apps/resume/scripts/model.test.mjs:6:88)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'pet.status: source_blob_sha drift; planner must review affected claim', 'pet.setup: source_blob_sha drift; planner must review affected claim', 'pet.external: source_blob_sha drift; planner must review affected claim', 'pet.peers: source_blob_sha drift; planner must review affected claim', 'pet.ai: source_blob_sha drift; planner must review affected claim', 'pet.validation: source_blob_sha drift; planner must review affected claim', 'pet.window: source_blob_sha drift; planner must review affected claim', 'pet.patents: source_blob_sha drift; planner must review affected claim', 'pet.period: source_blob_sha drift; planner must review affected claim' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at ..\resume\scripts\model.test.mjs:6:21
+✖ product-commercial-zh: approved claims, snapshots, ownership and limits (250.9048ms)
+  AssertionError [ERR_ASSERTION]: Source drift requires planner review
+  + actual - expected
+  
+  + [
+  +   'pet.status: source_blob_sha drift; planner must review affected claim',
+  +   'pet.setup: source_blob_sha drift; planner must review affected claim',
+  +   'pet.external: source_blob_sha drift; planner must review affected claim',
+  +   'pet.peers: source_blob_sha drift; planner must review affected claim',
+  +   'pet.ai: source_blob_sha drift; planner must review affected claim',
+  +   'pet.validation: source_blob_sha drift; planner must review affected claim',
+  +   'pet.window: source_blob_sha drift; planner must review affected claim',
+  +   'pet.patents: source_blob_sha drift; planner must review affected claim',
+  +   'pet.period: source_blob_sha drift; planner must review affected claim'
+  + ]
+  - []
+  
+      at validateVariant (file:///E:/myself/pre_training-apps/resume/scripts/model.mjs:16:92)
+      at TestContext.<anonymous> (file:///E:/myself/pre_training-apps/resume/scripts/model.test.mjs:6:88)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'pet.status: source_blob_sha drift; planner must review affected claim', 'pet.setup: source_blob_sha drift; planner must review affected claim', 'pet.external: source_blob_sha drift; planner must review affected claim', 'pet.peers: source_blob_sha drift; planner must review affected claim', 'pet.ai: source_blob_sha drift; planner must review affected claim', 'pet.validation: source_blob_sha drift; planner must review affected claim', 'pet.window: source_blob_sha drift; planner must review affected claim', 'pet.patents: source_blob_sha drift; planner must review affected claim', 'pet.period: source_blob_sha drift; planner must review affected claim' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at ..\resume\scripts\model.test.mjs:6:21
+✖ brand-insight-zh: approved claims, snapshots, ownership and limits (163.3171ms)
+  AssertionError [ERR_ASSERTION]: Source drift requires planner review
+  + actual - expected
+  
+  + [
+  +   'pet.status: source_blob_sha drift; planner must review affected claim',
+  +   'pet.setup: source_blob_sha drift; planner must review affected claim',
+  +   'pet.external: source_blob_sha drift; planner must review affected claim',
+  +   'pet.peers: source_blob_sha drift; planner must review affected claim',
+  +   'pet.ai: source_blob_sha drift; planner must review affected claim',
+  +   'pet.validation: source_blob_sha drift; planner must review affected claim',
+  +   'pet.window: source_blob_sha drift; planner must review affected claim',
+  +   'pet.patents: source_blob_sha drift; planner must review affected claim',
+  +   'pet.period: source_blob_sha drift; planner must review affected claim'
+  + ]
+  - []
+  
+      at validateVariant (file:///E:/myself/pre_training-apps/resume/scripts/model.mjs:16:92)
+      at TestContext.<anonymous> (file:///E:/myself/pre_training-apps/resume/scripts/model.test.mjs:6:88)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'pet.status: source_blob_sha drift; planner must review affected claim', 'pet.setup: source_blob_sha drift; planner must review affected claim', 'pet.external: source_blob_sha drift; planner must review affected claim', 'pet.peers: source_blob_sha drift; planner must review affected claim', 'pet.ai: source_blob_sha drift; planner must review affected claim', 'pet.validation: source_blob_sha drift; planner must review affected claim', 'pet.window: source_blob_sha drift; planner must review affected claim', 'pet.patents: source_blob_sha drift; planner must review affected claim', 'pet.period: source_blob_sha drift; planner must review affected claim' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at ..\resume\scripts\model.test.mjs:6:21
+✖ ai-product-zh: approved claims, snapshots, ownership and limits (189.6558ms)
+  AssertionError [ERR_ASSERTION]: Source drift requires planner review
+  + actual - expected
+  
+  + [
+  +   'pet.status: source_blob_sha drift; planner must review affected claim',
+  +   'pet.setup: source_blob_sha drift; planner must review affected claim',
+  +   'pet.external: source_blob_sha drift; planner must review affected claim',
+  +   'pet.peers: source_blob_sha drift; planner must review affected claim',
+  +   'pet.ai: source_blob_sha drift; planner must review affected claim',
+  +   'pet.validation: source_blob_sha drift; planner must review affected claim',
+  +   'pet.window: source_blob_sha drift; planner must review affected claim',
+  +   'pet.patents: source_blob_sha drift; planner must review affected claim',
+  +   'pet.period: source_blob_sha drift; planner must review affected claim'
+  + ]
+  - []
+  
+      at validateVariant (file:///E:/myself/pre_training-apps/resume/scripts/model.mjs:16:92)
+      at TestContext.<anonymous> (file:///E:/myself/pre_training-apps/resume/scripts/model.test.mjs:6:88)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'pet.status: source_blob_sha drift; planner must review affected claim', 'pet.setup: source_blob_sha drift; planner must review affected claim', 'pet.external: source_blob_sha drift; planner must review affected claim', 'pet.peers: source_blob_sha drift; planner must review affected claim', 'pet.ai: source_blob_sha drift; planner must review affected claim', 'pet.validation: source_blob_sha drift; planner must review affected claim', 'pet.window: source_blob_sha drift; planner must review affected claim', 'pet.patents: source_blob_sha drift; planner must review affected claim', 'pet.period: source_blob_sha drift; planner must review affected claim' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at ..\resume\scripts\model.test.mjs:7:1
+✖ JD fixtures change selection/order while homepage is never mutated (217.1302ms)
+  AssertionError [ERR_ASSERTION]: Source drift requires planner review
+  + actual - expected
+  
+  + [
+  +   'pet.status: source_blob_sha drift; planner must review affected claim',
+  +   'pet.setup: source_blob_sha drift; planner must review affected claim',
+  +   'pet.external: source_blob_sha drift; planner must review affected claim',
+  +   'pet.peers: source_blob_sha drift; planner must review affected claim',
+  +   'pet.ai: source_blob_sha drift; planner must review affected claim',
+  +   'pet.validation: source_blob_sha drift; planner must review affected claim',
+  +   'pet.window: source_blob_sha drift; planner must review affected claim',
+  +   'pet.patents: source_blob_sha drift; planner must review affected claim',
+  +   'pet.period: source_blob_sha drift; planner must review affected claim'
+  + ]
+  - []
+  
+      at validateVariant (file:///E:/myself/pre_training-apps/resume/scripts/model.mjs:16:92)
+      at selectJD (file:///E:/myself/pre_training-apps/resume/scripts/select-jd.mjs:13:2)
+      at TestContext.<anonymous> (file:///E:/myself/pre_training-apps/resume/scripts/model.test.mjs:10:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'pet.status: source_blob_sha drift; planner must review affected claim', 'pet.setup: source_blob_sha drift; planner must review affected claim', 'pet.external: source_blob_sha drift; planner must review affected claim', 'pet.peers: source_blob_sha drift; planner must review affected claim', 'pet.ai: source_blob_sha drift; planner must review affected claim', 'pet.validation: source_blob_sha drift; planner must review affected claim', 'pet.window: source_blob_sha drift; planner must review affected claim', 'pet.patents: source_blob_sha drift; planner must review affected claim', 'pet.period: source_blob_sha drift; planner must review affected claim' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

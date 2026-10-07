@@ -1,0 +1,121 @@
+# 个人主页独立产品展示：Lecture Asset / Everwhile
+
+**当前交付：下方 Attempt 03「宽屏同排与确认文案」，已在原正式域名发布并验收。前段为历史记录。**
+
+日期：2026-10-07。用户要求先做一版，发布到原个人主页查看。已发布并完成匿名线上验收；PR 保持开放，供用户看版后提出调整。
+
+## 范围
+
+- 在 QQ → SPPS → KIN 三个既有主画廊之前增加 Lecture Asset 与 Everwhile；原三者内部顺序不变。
+- Lecture Asset 为 20.5 秒网页宣传片与 6 张已整理的中文商店截图并排，截图可前后切换与放大；影片从 PR #18 的 720p 中文版生成，在未经核实的 App Store 下载二维码出现前结束并淡出。
+- Everwhile 用 4 张中文商店截图和旁边的需求场景、产品回应、推广计划展示，不伪造宣传片。
+- 两款 App 的状态均明确为尚未公开发布；推广段落明确为构想，没有虚构用户数、下载量或转化表现。
+- 简历 bullet、项目顺序、PDF、六个既有详情页、`publication/home.json` 和 `site/LINKS.json` 均未修改。新增仓库外链会使四份锁定简历快照失效，因此本版暂不加入新的外链。
+
+## 素材与公开边界
+
+来源 SHA 与精确文件见 [AGENTS.md](AGENTS.md)，公开文件的逐项 SHA-256 见 `site/assets-manifest.json` 与 [dist-manifest.json](dist-manifest.json)。Lecture Asset 影片仍在上游 PR #18 导演审阅中；用户已明确要求使用已有宣传片做在线预览，本站展示为去下载结尾的“宣传片节选”。原始片和检查帧留在 Git 忽略的 `tmp/`，未进入 `site/dist` 或 Git 提交。
+
+## 本地验收
+
+| 检查 | 结果 |
+|---|---|
+| `npm ci` | 锁定依赖安装完成 |
+| `npm run check` | Astro 31 文件，0 error / 0 warning / 0 hint |
+| `npm test` | 32/32 通过 |
+| `npm run test:jd` | 9/9 通过，简历来源快照保持一致 |
+| `npm run build` | 9 页；公开输出审计通过 |
+| `node site/scripts/check-alignment.mjs` | 原三作品、六案例及事实信号通过 |
+| `npm run test:gallery` | 375/1366 两断点、16 条路由、两组轮播、影片解码、原三影片、弹窗焦点、reduce-motion、PDF hash、404 通过 |
+
+发布包为 43 个文件、27,865,427 bytes，低于 32 MiB 上限；客户端 JS 3,563 bytes，低于 20 KB 上限。通用简历 PDF SHA-256 保持 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+
+旧的 `npm run test:e2e` 是 R04 文字版脚本，仍断言全站不得出现 `script, iframe, img, video`，与已接受的 R07 媒体画廊冲突；本轮运行后如实记录为历史脚本不适用，而以现行 `test:gallery` 和生产输出审计为发布门禁。`node resume/scripts/check.mjs` 在新的隔离工作区缺少未跟踪的 `resume/exports/*.latest.json` 而无法启动；没有重建或修改锁定 PDF，实际公开 PDF 与 manifest SHA-256 一致。
+
+## 发布与线上验收
+
+- PR：[#26](https://github.com/Zhangsfish/pre_training/pull/26)，分支 `maintenance/independent-apps-showcase`，截至本报告仍开放、未合并；`main` 保持 `b247d040ee8e598b799150557f0388fe727f59d0`。
+- 站点源码提交：`f1188a996d8ce5c9749fa76a71b5a7b0172b9c91`。从此提交对应的 `site/dist` 生成静态 Build Output 包，预部署逐文件比较 43/43 SHA-256 一致。
+- 原 Vercel Hobby 项目：`zhangsfishs-projects/zhang-shuo-portfolio`，Project ID `prj_CfECSSKoBni34VGDTa89UhKu4n09`。未新建项目、域名或团队，未修改 DNS、认证、analytics 或付费设置。
+- Deployment ID：`dpl_rKqzBnNhKGH7dp8MXc4V6yL5QPzC`，状态 `READY`。正式地址：[https://zhang-shuo-portfolio.vercel.app/](https://zhang-shuo-portfolio.vercel.app/)；不可变地址：[https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app/](https://zhang-shuo-portfolio-k2wdjb8pg-zhangsfishs-projects.vercel.app/)。
+- 2026-10-07 15:13–15:14（北京时间）从正式域名逐个下载 43 个文件；HTTP 200、字节数及 SHA-256 全部与本地审计包一致，见 [production-resource-audit.json](production-resource-audit.json)。通用 PDF 线上 SHA-256 仍为 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+- 全新匿名 Chrome 访问正式 HTTPS 域名：375/1366 两视口的首页、六个案例和 `/resume/` 共 16 次路由均返回 200，无横向溢出和页面脚本错误。Lecture Asset → Everwhile → QQ → SPPS → KIN 顺序正确；两组轮播、图片放大/Esc、焦点恢复、Lecture Asset 影片与原有三段影片均通过真实解码；reduce-motion、PDF 下载 hash 和未知路径 404 通过。证据见 [production-gallery.log](production-gallery.log) 与 [桌面截图](evidence/production-apps-1366.png)、[手机截图](evidence/production-apps-375.png)。
+- 发布命令、项目检查和部署详情分别见 [vercel-deploy.log](vercel-deploy.log)、[vercel-inspect.log](vercel-inspect.log)。原项目未连接 Git 自动部署；PR 后续合并本身不会自动替换已核验的版本。
+
+当前外部状态：Lecture Asset 宣传片上游仍在导演审阅，应用提交 App Review 但未公开发布；Everwhile 仍在商店发布准备中。网页因此只展示宣传素材与推广构想，不提供未核实的下载入口。
+
+## Attempt 02 — 最新版双语 / 英文影片（2026-10-07）
+
+用户要求读取两个 GitHub 仓库的最新版影片，Lecture Asset 中英可选，Everwhile 只用英文。本次更新已发布，PR #26 继续开放供用户看版反馈。
+
+- Lecture Asset：源为 main `862532409a43fa7e3e224cdd00cc296130b719d4` 的 `director-r3-caption-male`，已获上游用户接受。主页默认中文，可用「中文 / English」切换；切换会停止并重置播放，不自动播放。两版保留至 20.4s，在 19.6–20.4s 淡出，排除仍未经验证的 App Store 下载/二维码结尾。
+- Everwhile：源为 Elapse main `34bc5e808d79c03b7a8cb0e74200b51ce99ca4ad` 的 `EVERWHILE_R2_EN_720.mp4`，完整 18s 英文片。用户直接授权用于个人主页；上游导演主观验收仍未在本轮代签。
+- 两组宣传截图继续翻页和放大；影片与截图在桌面并排、手机顺序排列；需求场景、产品回应和推广构想位于下方。顺序保持 Lecture Asset → Everwhile → QQ → SPPS → KIN。
+- 三段网页衍生片均为 720×1280 / 30fps，H.264 CRF28、AAC96k、faststart。源文件和衍生片逐项 SHA-256、完整音视频解码见 [media-provenance.json](attempt-02/media-provenance.json)。未引入依赖、analytics 或新外链。
+
+### 当前分支与内容边界
+
+代码/测试提交：`87b57e904d0d7479542b6d1d81f430b3476debb9`，分支仍为 `maintenance/independent-apps-showcase`。[PR #26](https://github.com/Zhangsfish/pre_training/pull/26) 未合并。六案例、`publication/home.json`、claims、简历 bullets/顺序/variants、公开 PDF、LINKS 和 STATE 与本轮开始的 `f9a16a3` 无 diff；PDF SHA-256 仍是 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+
+最新 main `5d8c524` 已检查，它新增的是独立简历组装资料及 PET 事实更新，没有更新锁定网站 claims 的来源指纹。试同步后，既有 source-drift / 简历构建门禁拦截；记录保留在 [upstream-main-build-drift.log](attempt-02/upstream-main-build-drift.log) 和 [upstream-main-jd-drift.log](attempt-02/upstream-main-jd-drift.log)。本轮沿用已发布的预览分支基线实现视频更新，试同步历史保留在本地 `preservation/apps-main-sync-20261007`；未回退远端 main、修改新事实、放宽测试或重写简历。后续把此 PR 合入最新 main 前，应单独审查两版公开内容的来源映射。本轮发布不声称已完成该内容同步。
+
+### 测试与发布
+
+| 检查 | 本轮结果 |
+|---|---|
+| `npm --prefix site run check` | 32 Astro 文件，0 errors / warnings / hints |
+| `npm --prefix site test` | 32/32 PASS |
+| `npm --prefix site run test:jd` | 9/9 PASS |
+| `npm --prefix site run build` | 9 页；45 文件；30,258,687 bytes；JS 4,023 bytes；allowlist 审计 PASS |
+| `node site/scripts/check-alignment.mjs` | PASS |
+| `npm --prefix site run test:gallery`（本地 / 正式域名） | 两次均 PASS；375/1366、16 路由、中英键盘切换、三段新增影片及原三段影片解码、截图轮播/放大、Esc/焦点、reduce-motion、PDF hash、404 |
+| `node .../attempt-02/media-audit.mjs` | 三段影片完整音视频解码 PASS；720p/30fps/时长核验 PASS |
+| 部署前资源核对 | 45/45 SHA-256 相同，无额外文件 |
+| 正式域名资源核对 | 45/45 HTTP 200、字节数、SHA-256 与本地发布包相同 |
+
+锁定依赖复用本任务 Attempt 01 的 `npm ci` 安装；本次未改变 package/lockfile。真实 Astro 预览为该工作区已运行的 4321 服务。日志、当前 dist 清单、预发布核验、生产核验均独立存于 [attempt-02](attempt-02/AGENTS.md)，未覆盖旧 R07 或 Attempt 01。
+
+- 原项目：`zhangsfishs-projects/zhang-shuo-portfolio`，Project ID `prj_CfECSSKoBni34VGDTa89UhKu4n09`。
+- 发布源码 commit：`87b57e904d0d7479542b6d1d81f430b3476debb9`。干净源码提交对应的审计 dist 打包到新的本地临时目录；采用原项目 Build Output API 静态发布方式，未改项目构建设置。
+- Deployment ID：`dpl_HK36VxCQCPTus9WMxQ937dkYianT`，`READY` / production；2026-10-07 22:10:21（北京时间）创建。
+- 正式域名：[https://zhang-shuo-portfolio.vercel.app/](https://zhang-shuo-portfolio.vercel.app/)；不可变地址：[https://zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app/](https://zhang-shuo-portfolio-glvahdd07-zhangsfishs-projects.vercel.app/)。
+- 2026-10-07 22:11–22:12（北京时间）匿名 Chrome 生产检查通过。线上 45 文件哈希一致，含三段新增影片和 PDF，见 [production-resource-audit.json](attempt-02/production-resource-audit.json) 与 [gallery-production.log](attempt-02/gallery-production.log)。
+- 实际生产截图：[Lecture 桌面](attempt-02/screenshots/production-lecture-asset-1366.png)、[Lecture 手机](attempt-02/screenshots/production-lecture-asset-375.png)、[Everwhile 桌面](attempt-02/screenshots/production-everwhile-1366.png)、[Everwhile 手机](attempt-02/screenshots/production-everwhile-375.png)。
+- 发布详情：[vercel-deploy.log](attempt-02/vercel-deploy.log)、[vercel-inspect.log](attempt-02/vercel-inspect.log)、[evidence.json](attempt-02/evidence.json)。未创建新项目/团队/域名，未修改 DNS、认证、费用设置或其他仓库。
+
+外部限制：两款 App 的公开下载仍未验证，因此保留未公开下载说明；Lecture 的商店下载片尾未公开。独立产品发布和上游导演主观验收不属于本次主页集成验收。
+
+## Attempt 03 — 宽屏同排与确认文案（2026-10-07）
+
+用户确认草稿后授权直接实施并上线。本次仅修改两个 App 的展示布局和需求场景/回应文案，删除「推广计划／推广构想」区块和数据字段。
+
+- Lecture Asset 与 Everwhile 在宽屏同排；采用 CSS Grid auto-fit 和不超过容器宽度的 520px 最小卡片宽，空间不足时自动换成上下两排。实测 1200/1366/1920px 同排，320/375/768/1024/1170px 上下排列。
+- 每个项目保留影片及可翻页、放大的宣传截图；桌面项目内为两列，手机内部上下排列。缩短媒体留白，保留 Lecture 中文/English 切换与 Everwhile 完整英文片。
+- 文案使用用户已确认草稿：Lecture 描述讲座照片很少回看、交给 AI 整理麻烦，回应为按拍摄时间生成 PDF/含 OCR 索引、AI 阅读说明和 JPG 原图的 ZIP，保存后清理相册；Everwhile 描述刷视频/看小说时感知时间流逝，保留温和提醒与「今天」回看。
+- 六案例、事实/claims、简历 bullets/顺序/variants、公开 PDF、LINKS、STATE 和全部媒体文件与本轮基线 `7225770` 无 diff。旧母稿和本轮之外的项目仓库均未修改。
+
+### 验收结果
+
+| 检查 | 结果 |
+|---|---|
+| `npm --prefix site run check` | 32 Astro 文件，0 errors/warnings/hints |
+| `npm --prefix site test` | 32/32 PASS |
+| `npm --prefix site run test:jd` | 9/9 PASS |
+| `npm --prefix site run build` | 9 页；45 文件；30,259,269 bytes；JS 4,023 bytes；公开 allowlist PASS |
+| `node site/scripts/check-alignment.mjs` | PASS |
+| 本地及生产 `browser-layout.mjs` | 各 8 视口 PASS；同排/换行、卡片内控件、无横向溢出、无 pageerror/console error；新文案可见、推广块不存在 |
+| 本地及生产 `npm --prefix site run test:gallery` | 各 16 路由 PASS；影片真实解码、中英键盘切换、截图轮播/放大、Esc/焦点、reduce-motion、PDF hash 与真实 404 PASS |
+| 发布前静态包 / 发布后正式域名 | 两次均 45/45 文件 SHA-256 一致 |
+
+当前视口测量见 [local-layout.json](attempt-03/local-layout.json) 和 [production-layout.json](attempt-03/production-layout.json)，选定截图见 [桌面两项目同排](attempt-03/screenshots/production-apps-1366.png)、[手机上下排列](attempt-03/screenshots/production-apps-375.png)、[平板布局](attempt-03/screenshots/production-apps-768.png)。所有本轮证据独立在 `attempt-03/`，未覆盖旧截图或审计。
+
+### 实际发布
+
+- 源码 commit：`f7e2d6b8538b6e7b3b861278a19f89d734513ad6`；分支 `maintenance/independent-apps-showcase`；[PR #26](https://github.com/Zhangsfish/pre_training/pull/26) 继续开放，未合并。
+- 原 Vercel 项目：`zhangsfishs-projects/zhang-shuo-portfolio` / `prj_CfECSSKoBni34VGDTa89UhKu4n09`，沿用既有静态 Build Output 发布方式，无新增项目/域名/团队、DNS/认证/构建配置/费用变更。
+- Deployment ID：`dpl_Cgrah1FZN6AwbCSKJr5cYd1vTazh`，READY / production；2026-10-07 23:25:08（北京时间）创建。
+- 正式域名：[https://zhang-shuo-portfolio.vercel.app/](https://zhang-shuo-portfolio.vercel.app/)；不可变地址：[https://zhang-shuo-portfolio-7ifrljhum-zhangsfishs-projects.vercel.app/](https://zhang-shuo-portfolio-7ifrljhum-zhangsfishs-projects.vercel.app/)。
+- 2026-10-07 23:26（北京时间）全新匿名 Chrome 验收通过；正式域名 45 文件与本地审计 dist 字节数/hash 全相同，确认不是旧缓存。公开 PDF SHA-256 仍为 `6ffad2b816e42127769360cac709ad037db7a9699f53ffad6b584bb6daaa1abf`。
+- 发布及核验详情：[vercel-deploy.log](attempt-03/vercel-deploy.log)、[vercel-inspect.log](attempt-03/vercel-inspect.log)、[production-resource-audit.json](attempt-03/production-resource-audit.json)、[gallery-production.log](attempt-03/gallery-production.log)、[evidence.json](attempt-03/evidence.json)。
+
+既有边界继续适用：Lecture 下载片尾被排除，两款 App 公开下载尚未核实；PR 合入最新 main 前的 PET 来源映射问题仍单独待处理，详见 Attempt 02，本轮没有绕过该门禁。当前生产使用的是已通过检查的维护分支。

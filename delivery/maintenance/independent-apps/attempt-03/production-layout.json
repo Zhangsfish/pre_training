@@ -1,0 +1,182 @@
+{
+  "checked_at": "2026-10-07T15:26:12.708Z",
+  "base": "https://zhang-shuo-portfolio.vercel.app",
+  "results": [
+    {
+      "width": 320,
+      "layout": "two project rows",
+      "boxes": [
+        {
+          "x": 16,
+          "y": 388.34375,
+          "width": 288,
+          "height": 1629.9375,
+          "bottom": 2018.28125
+        },
+        {
+          "x": 16,
+          "y": 2056.28125,
+          "width": 288,
+          "height": 1546.609375,
+          "bottom": 3602.890625
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "layout": "two project rows",
+      "boxes": [
+        {
+          "x": 16,
+          "y": 388.34375,
+          "width": 343,
+          "height": 1629.9375,
+          "bottom": 2018.28125
+        },
+        {
+          "x": 16,
+          "y": 2056.28125,
+          "width": 343,
+          "height": 1546.609375,
+          "bottom": 3602.890625
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "layout": "two project rows",
+      "boxes": [
+        {
+          "x": 28,
+          "y": 356.8125,
+          "width": 712,
+          "height": 1073.484375,
+          "bottom": 1430.296875
+        },
+        {
+          "x": 28,
+          "y": 1462.296875,
+          "width": 712,
+          "height": 1047.59375,
+          "bottom": 2509.890625
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "layout": "two project rows",
+      "boxes": [
+        {
+          "x": 56,
+          "y": 398.71875,
+          "width": 912,
+          "height": 1050.328125,
+          "bottom": 1449.046875
+        },
+        {
+          "x": 56,
+          "y": 1481.046875,
+          "width": 912,
+          "height": 1024.4375,
+          "bottom": 2505.484375
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 1170,
+      "layout": "two project rows",
+      "boxes": [
+        {
+          "x": 56,
+          "y": 414.03125,
+          "width": 1058,
+          "height": 1054.890625,
+          "bottom": 1468.921875
+        },
+        {
+          "x": 56,
+          "y": 1500.921875,
+          "width": 1058,
+          "height": 1029,
+          "bottom": 2529.921875
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 1200,
+      "layout": "two projects in one row",
+      "boxes": [
+        {
+          "x": 56,
+          "y": 417.1875,
+          "width": 528,
+          "height": 1020.6875,
+          "bottom": 1437.875
+        },
+        {
+          "x": 616,
+          "y": 417.1875,
+          "width": 528,
+          "height": 1020.6875,
+          "bottom": 1437.875
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "layout": "two projects in one row",
+      "boxes": [
+        {
+          "x": 56,
+          "y": 431.1875,
+          "width": 611,
+          "height": 999.984375,
+          "bottom": 1431.171875
+        },
+        {
+          "x": 699,
+          "y": 431.1875,
+          "width": 611,
+          "height": 999.984375,
+          "bottom": 1431.171875
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "layout": "two projects in one row",
+      "boxes": [
+        {
+          "x": 300,
+          "y": 446.1875,
+          "width": 644,
+          "height": 1001.5625,
+          "bottom": 1447.75
+        },
+        {
+          "x": 976,
+          "y": 446.1875,
+          "width": 644,
+          "height": 1001.5625,
+          "bottom": 1447.75
+        }
+      ],
+      "page_errors": [],
+      "overflow": false
+    }
+  ]
+}

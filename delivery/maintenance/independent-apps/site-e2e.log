@@ -1,0 +1,22 @@
+
+> pre-training-site@0.1.0 test:e2e
+> node scripts/site-e2e.mjs
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: No client script or unapproved media
+
+18 !== 0
+
+    at file:///E:/myself/pre_training-apps/site/scripts/site-e2e.mjs:46:11 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 18,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0

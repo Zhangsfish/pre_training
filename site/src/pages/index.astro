@@ -2,15 +2,26 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import MediaExperience from '../components/MediaExperience.astro';
 import GalleryRuntime from '../components/GalleryRuntime.astro';
+import AppCarousel from '../components/AppCarousel.astro';
+import AppFilm from '../components/AppFilm.astro';
 import {siteContent} from '../lib/site';
 import gallery from '../../../publication/gallery.json';
+import appsShowcase from '../../../publication/apps-showcase.json';
 import registry from '../../LINKS.json';
 const view=await siteContent();
 const link=(id:string)=>registry.links.find(l=>l.id===id)!.url;
 ---
 <BaseLayout title="作品与我" description={view.hero.intro} view={view}>
 <section class="gallery-intro person-intro"><div><p class="overline">{view.hero.eyebrow}</p><h1>{view.hero.title}</h1></div><p>{view.hero.intro}</p></section>
-<div id="work" class="work-gallery"><p class="overline selected-heading">SELECTED WORK / 做出来，给你看。</p>{gallery.projects.map((p,i)=><section class={`work-section work-${p.id}`} aria-labelledby={`title-${p.id}`}><div class="work-heading"><div><p class="overline">0{i+1} / {p.label}</p><h2 id={`title-${p.id}`}><a href={`/work/${p.id}/`}>{p.name}</a></h2><p class="work-caption">{p.caption}</p></div><div class="work-actions"><a class="text-link" href={`/work/${p.id}/`}>{p.id==='spps'?'看看这台机器':'了解这个作品'} ↗</a></div></div><MediaExperience project={p} /></section>)}</div>
+<div id="work" class="work-gallery">
+  <p class="overline selected-heading">SELECTED WORK / 做出来，给你看。</p>
+  <div class="apps-grid">{appsShowcase.apps.map((app,i)=><section class={`work-section app-showcase app-${app.id}`} aria-labelledby={`title-${app.id}`}>
+    <div class="work-heading"><div><p class="overline">APP 0{i+1} / {app.label}</p><h2 id={`title-${app.id}`}>{app.name}</h2><p class="work-caption">{app.tagline}</p></div></div>
+    <div class="app-showcase-media"><AppFilm name={app.name} poster={app.slides[0].file} films={app.films} note={app.film_note} /><AppCarousel name={app.name} slides={app.slides} /></div>
+    <div class="app-narrative app-showcase-narrative"><p class="app-status">{app.status}</p><h3>需求场景</h3><p>{app.scenario}</p><h3>它怎么回应</h3><p>{app.product}</p></div>
+  </section>)}</div>
+  {gallery.projects.map((p,i)=><section class={`work-section work-${p.id}`} aria-labelledby={`title-${p.id}`}><div class="work-heading"><div><p class="overline">0{i+1} / {p.label}</p><h2 id={`title-${p.id}`}><a href={`/work/${p.id}/`}>{p.name}</a></h2><p class="work-caption">{p.caption}</p></div><div class="work-actions"><a class="text-link" href={`/work/${p.id}/`}>{p.id==='spps'?'看看这台机器':'了解这个作品'} ↗</a></div></div><MediaExperience project={p} /></section>)}
+</div>
 <section id="about" class="about-section" aria-labelledby="about-title"><p class="overline">BEHIND THE WORK</p><h2 id="about-title">这些作品背后，我在意什么。</h2><div class="care-grid">{view.personal.map(p=><div><h3>{p.title}</h3><p>{p.text}</p></div>)}</div></section>
 <section class="more-practice" aria-labelledby="more-title"><div class="section-heading"><p class="overline">MORE PRACTICE</p><h2 id="more-title">也在这些地方，学会把事情做好。</h2></div>{view.moreProjects.map(p=><a id={p.id} class="practice-row" href={`/work/${p.id}/`}><div><h3>{p.title} <span aria-hidden="true">↗</span></h3><p>{p.summary}</p></div><span class="practice-period">{p.period}</span></a>)}</section>
 <section id="contact" class="contact-strip"><div><p class="overline">SAY HELLO</p><a class="contact-email" href={link('email')}>{view.profile.email} ↗</a></div><div class="contact-secondary"><a href="/resume/">简历</a><a href={link('github-profile')}>GitHub ↗</a></div></section>
