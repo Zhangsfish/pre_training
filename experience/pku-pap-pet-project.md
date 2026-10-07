@@ -1,7 +1,7 @@
 # Experience: 北京大学 PAP/ACP3 靶向 PET 探针项目 — 新方向落地与 AI-native 科研
 
-> Status: public-safe career evidence record; canonical long-form and résumé B wording confirmed on 2026-09-21.
-> Sensitive boundary: manuscript is being prepared for submission and related patent work is being handled externally. Do **not** publish novel compound structures, unpublished patent claims, exact synthetic details, or other confidential project information in this public repository.
+> Status: public-safe career evidence record. Earlier long-form and résumé B wording was confirmed on 2026-09-21; the user reported later progress on 2026-10-07, recorded below. Older wording must not silently override the later update.
+> Sensitive boundary: do **not** publish novel compound structures, unpublished patent claims, exact synthetic details, or other confidential project information in this public repository.
 > Sources: user narrative + manuscript materials stored in the user's private file library.
 
 ## Identity
@@ -12,7 +12,8 @@
 - External imaging / radiochemistry site: 北京大学肿瘤医院
 - External collaboration access was arranged by the supervisor, **not by the user**.
 - Current output status:
-  - **First-author manuscript draft completed and planned for submission to JMC.** Draft has been handed to the supervisor; do not call it submitted or published yet.
+  - **2026-10-07 user update:** The project has progressed from PAP/ACP3-targeted small-molecule structure optimization through protein activity, cell and animal validation. The user describes the preclinical research chain as completed and says preparation for human-research ethics submission is underway. This does **not** mean ethics approval has been granted or a human study has begun.
+  - **2026-10-07 user update:** The first-author JMC manuscript is “在投” (in the submission process), per the user's wording. The exact editorial-system state has not been independently checked; do not call it accepted or published. This supersedes the 2026-09-21 description that it was only planned for submission.
   - related results are expected to form two patent applications; two patent matters have been sent by the supervisor to a patent agency / company, while exact filing status and inventor order are currently unknown. Do not call them filed or granted yet.
 
 ## Starting environment

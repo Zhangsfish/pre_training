@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-07",
+  "scope": "用户审阅通过的产品与商业化方向一页简历内容快照；不等于网站公开默认PDF",
+  "direction": "产品与商业化",
+  "header": {
+    "name": "张朔",
+    "birth_month": "2002.01",
+    "phone": "18604097805",
+    "email": "zhangs.taq@gmail.com",
+    "portfolio": "https://zhang-shuo-portfolio.vercel.app"
+  },
+  "education": [
+    {
+      "school": "北京大学基础医学院",
+      "program": "放射医学系｜硕士研究生",
+      "date": "2024.09-2027.07"
+    },
+    {
+      "school": "吉林大学",
+      "program": "理科实验班（化学，唐敖庆班）｜GPA 3.85/4.00，4/27｜CET-6 502",
+      "date": "2020.09-2024.06"
+    }
+  ],
+  "projects": [
+    {
+      "id": "app_pair",
+      "title": "Lecture Asset + Everwhile｜两款 iPhone App",
+      "date": "2026.09-至今",
+      "meta": "Lecture Asset 2026.09.24 起；Everwhile 2026.10.02 起｜个人产品，主导需求与验收",
+      "bullets": [
+        [
+          "Lecture Asset",
+          "讲座与会议照片常因“以后可能要看”长期留在相册，却很少回看；逐张导入AI整理又费时。将照片批量生成便于回看的PDF，并打包原图、OCR索引与AI阅读说明，供用户上传ChatGPT继续整理，确认保存后再清理相册。"
+        ],
+        [
+          "Everwhile",
+          "针对刷手机时容易失去时间感的问题，不设强制使用限额：将选中的App合并计时，每累计使用5分钟提醒一次，并展示当天时间去向，让用户在使用中自行决定是否继续。"
+        ],
+        [
+          "进度与推广",
+          "两款宣传片已完成，App均在美区App Store审核，中国大陆上架待备案；计划免费上线，后续通过TikTok、视频平台和微信公众号发布演示内容，不以盈利为目标。"
+        ]
+      ],
+      "section": "核心项目",
+      "links": [
+        {
+          "label": "Lecture Asset",
+          "url": "https://github.com/Zhangsfish/lecture-asset"
+        },
+        {
+          "label": "Everwhile",
+          "url": "https://github.com/Zhangsfish/Elapse"
+        }
+      ]
+    },
+    {
+      "id": "kin_qq_pair",
+      "title": "KIN + QQ 灵犀｜消费与 AI 产品探索",
+      "date": "2026.05-09",
+      "meta": "KIN 2026.09.15-09.20；QQ 灵犀 2026.05-06｜个人项目",
+      "bullets": [
+        [
+          "KIN",
+          "从父母电话未接的不安出发，定义KIN Watch + Family App与“状态消费”：把位置、活动、心率等数据翻译成父母“现在在做什么、今天过得怎样”，让子女因关心主动参与日常，而非只处理告警；明确子女购买、父母佩戴，选择999元硬件与免费软件，交付原型、宣传片和商业方案。"
+        ],
+        [
+          "QQ 灵犀",
+          "发现喜欢的内容、聊得来的人和共同体难发现、难连接；结合外部AI对用户的长期理解与QQ关系资产，定义“长期人格画像+当前需求画像”，以QQ-MBTI冷启动并匹配内容、人和群，再由双方Agent沟通确认适配；主导产品定义与AI实现，进入复赛。"
+        ]
+      ],
+      "section": "核心项目",
+      "links": [
+        {
+          "label": "KIN",
+          "url": "https://zhang-shuo-portfolio.vercel.app/work/kin/"
+        },
+        {
+          "label": "QQ 灵犀",
+          "url": "https://zhang-shuo-portfolio.vercel.app/work/qq-lingxi/"
+        }
+      ]
+    },
+    {
+      "id": "SPPS",
+      "title": "智能化流动多肽合成仪｜整机研发负责人",
+      "date": "2024.03-2024.08",
+      "meta": "吉林大学｜整机方案、系统搭建与集成交付",
+      "bullets": [
+        [
+          "方案与协作",
+          "从论文与供应商资料出发，独立设计整机方案，完成选件、控制脚本及采购；向4名工程师下达明确动作、需求参数与验收要求，由其完成非标件机加工和底层电控，并协助本人完成整机装配调试和实验。"
+        ],
+        [
+          "资源与交付",
+          "管理约150万元设备与元器件资源、对接近20家供应商，重构采购流程，推动泵、管路、阀门及耗材国产替代，其中近同规格FEP管单项采购成本降低约88%。不到3个月完成核心集成，演示约10肽自动合成，单次偶联由手工约30分钟缩至自动化约1分钟并完成项目交接。"
+        ]
+      ],
+      "section": "核心项目",
+      "links": [
+        {
+          "label": "智能化流动多肽合成仪",
+          "url": "https://zhang-shuo-portfolio.vercel.app/work/spps/"
+        }
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "《有机化学实验 T》｜课程体系设计与运营",
+      "date": "2022.09-2024.06",
+      "meta": "吉林大学｜课程体系设计、复杂运营与助教培养",
+      "bullets": [
+        [
+          "系统与传承",
+          "担任课程助教（19名学生）设计8节教学内容，重构教学框架，逐课记录共性错误及时讲解最终沉淀成期末考题；主导实验教程再版，搭建2个Notion课程主页，逐步交接课程，第四学期由继任助教独立运行。"
+        ]
+      ],
+      "section": "补充经历",
+      "links": [
+        {
+          "label": "《有机化学实验 T》",
+          "url": "https://zhang-shuo-portfolio.vercel.app/#teaching"
+        }
+      ]
+    },
+    {
+      "id": "natural_product",
+      "title": "Jiadifenin 家族天然产物全合成｜路线开发与研发协同",
+      "date": "2022.09-2023.11",
+      "meta": "吉林大学｜路线重设计、放大验证与小团队协同",
+      "bullets": [
+        [
+          "路线与协同",
+          "推进路线设计、小试验证与放大，在原路线出现放大瓶颈时重新设计路线并打通，为后续集群式合成奠定基础。在核心约5人、累计约10人团队中按成员特点分配任务，跟踪上下游依赖，在路线或供料受阻时调整实验与人员。"
+        ]
+      ],
+      "section": "补充经历",
+      "links": [
+        {
+          "label": "Jiadifenin 家族天然产物全合成",
+          "url": "https://zhang-shuo-portfolio.vercel.app/work/natural-product/"
+        }
+      ]
+    },
+    {
+      "id": "PET",
+      "title": "PAP/ACP3 靶向 PET 小分子探针｜研发方法与成果交付",
+      "date": "2025.08-2026.07",
+      "meta": "北京大学医学部｜实验室搭建与实验风险控制",
+      "bullets": [
+        [
+          "理解与迭代",
+          "项目围绕PAP/ACP3靶点，完成小分子结构优化、蛋白活性、细胞与动物层面的临床前验证，现正准备人体研究伦理申报；本人依托已有设备重建合成实验室，针对放射性实验窗口短、成本高的特点，先以MVP验证条件再开展正式实验。一作JMC论文在投，相关成果预计形成2项专利申请。"
+        ]
+      ],
+      "section": "补充经历",
+      "links": [
+        {
+          "label": "PAP/ACP3 靶向 PET 小分子探针",
+          "url": "https://zhang-shuo-portfolio.vercel.app/work/pet/"
+        }
+      ]
+    }
+  ],
+  "status_note": "两款App美区审核、中国大陆备案及推广计划来自2026-10-07用户口述；每次投递前核实，不作为永久状态。PET论文/伦理状态也需核实。"
+}

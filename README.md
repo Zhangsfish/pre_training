@@ -7,6 +7,7 @@
 ## 从这里开始
 
 - [唯一工作入口](START_HERE.md)：Codex 与后续策划者的固定启动方式。
+- [当前一页简历的 AI 组装说明](resume/assembly-guides/general-product-apps-20261007/README.md)：从 GitHub 复现用户确认的产品与商业化版，并按岗位排列组合。
 - [当前授权轮次](delivery/STATE.json) · [六轮交付计划](delivery/ROUNDS.md) · [审查规则](delivery/REVIEWER.md)
 - [主页大纲](site/CONTENT_ARCHITECTURE.md) · [多版本简历](resume/ASSEMBLY.md)
 

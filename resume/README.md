@@ -1,5 +1,7 @@
 # 简历生成与复核
 
+需要从 GitHub 还原用户在 2026-10-07 确认的产品与商业化一页版，先读[该版的 AI 组装说明与完整选材快照](assembly-guides/general-product-apps-20261007/README.md)。下文描述的是仓库既有 baseline 生成器，两者的输入尚未合并，不要把 baseline 输出误认为该快照。
+
 上游：ASSEMBLY、STYLE、PRESETS 和策划批准的 publication。四份 variants 为可公开的 baseline 选材输入；每条 bullet 的 claim_ids 与取舍理由保存在 JSON 侧表，不进入 PDF。R05 新环境安装与完整维护步骤见 [验收维护 README](../acceptance/README.md)，不再要求复用个人 Codex 缓存。
 
 ## 工具前提

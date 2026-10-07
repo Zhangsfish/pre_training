@@ -11,7 +11,7 @@
 1. 网站只有一个身份、一个默认项目顺序；不因 JD 改首页、生成企业专属网站或在浏览器里自动改写履历。
 2. `PROFILE.md` 与 `experience/*.md` 保存事实；`publication/` 是经审查的公开表达，不是第二套事实源。旧 `CAPABILITIES.md` / `EVIDENCE_MAP.md` 只是索引，不能把推断升级为事实。
 3. KIN 首先证明用户的 H1/H2/H3，尤以 H2「父母的普通一天也值得被看见」为中心。爱牵挂是后续竞争检查，不是洞察来源；竞品已有 state 不等于 H2 的关系消费命题被证伪。核心需求仍待现实验证，不能说已经商业成功。
-4. SPPS 的整机方案、部件选型、任务指标、各部件功能与控制方式、整机集成和高层控制脚本由用户负责；2 名机械、1 名加工和 1 名电控协作者按用户下发的动作、参数、控制要求与交付标准完成结构细化、定制加工和低层驱动。用户未编写具体模块接口，不使用“定义模块接口”或“下发接口”表述。不把用户降格写成普通协调者，也不写其独立完成全部 CAD 与底层驱动。PET 外部医院关系由导师建立，大设备已有，用户补齐的是耗材与操作体系；同伴各有 ownership，不写管理三人团队。JMC：一作稿件已交导师、准备投稿，不能写已投/在审/录用。专利正式申请与顺位未知。
+4. SPPS 的整机方案、部件选型、任务指标、各部件功能与控制方式、整机集成和高层控制脚本由用户负责；2 名机械、1 名加工和 1 名电控协作者按用户下发的动作、参数、控制要求与交付标准完成结构细化、定制加工和低层驱动。用户未编写具体模块接口，不使用“定义模块接口”或“下发接口”表述。不把用户降格写成普通协调者，也不写其独立完成全部 CAD 与底层驱动。PET 外部医院关系由导师建立，大设备已有，用户补齐的是耗材与操作体系；同伴各有 ownership，不写管理三人团队。JMC：用户于 2026-10-07 更新为一作稿件“在投”；确切投稿系统状态未独立核实，不写录用或发表。人体研究伦理正在准备申报，不写已批准或已开始人体研究。专利正式申请与顺位未知。旧 2026-09-21 “准备投稿”口径已被此更新覆盖。
 5. AI 可以从问题定义阶段就参与共思考。既不抹去用户判断，也不把 AI/同伴执行冒充用户逐行编写或独立完成所有实验。
 6. QQ 灵犀及两个 Notion 课程主页必须是可见、可点的真实链接，地址唯一来源 `site/LINKS.json`。不得编造 Demo 域名、登录凭证或线上可用状态。
 7. Selection Dictionary、8 粉丝公众号、冗长旁听清单默认不进入网站/简历。旁听不是正式第二学位/MBA；保存的作业文件不证明做过作业。
@@ -30,3 +30,7 @@
 
 ## R07 current user override — 2026-09-20
 The user explicitly requested a media-first redesign and publication in the current Work conversation. The old text-only visual freeze and R06 round lock are superseded for this scoped change. Homepage public copy comes from publication/gallery.json; project fact records and résumé are preserved. Selected derivatives are authorized; original masters stay excluded. New local media interaction JavaScript is permitted, with a hash-based output allowlist and no analytics. Existing Vercel/free-only/no-DNS scope applies.
+
+## 2026-10-07 一页简历组装入口
+
+用户确认一版含 Lecture Asset + Everwhile、KIN + QQ 灵犀及四段旧项目的产品与商业化简历，并要求其他 AI 能从 GitHub 组装和按 JD 排列组合。入口为 [`resume/assembly-guides/general-product-apps-20261007/README.md`](resume/assembly-guides/general-product-apps-20261007/README.md)，整页逐字快照在同目录 `selected_projects.json`。这是新确认的特定简历版本；原 R04 baseline、旧六段 references 和网站公开 PDF 不会自动更新为它。两款 App 状态与 PAP 投稿/伦理进度须在新投递前复核。

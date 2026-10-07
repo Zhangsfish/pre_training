@@ -31,6 +31,7 @@
 - 外链：`site/LINKS.json`
 - 媒体交接：`site/MEDIA_POLICY.md`、`site/SPPS_ASSETS.md`
 - 多版本简历：`resume/ASSEMBLY.md`、`resume/PRESETS.json`、`resume/STYLE.md`
+- 2026-10-07 用户确认的一页产品简历组装：`resume/assembly-guides/general-product-apps-20261007/README.md`
 - 中文项目经历、申请表长描述与个人表达：`skills/zhang-shuo-experience-writing/SKILL.md`
 - 每轮交付与裁决：`delivery/ROUNDS.md`、`delivery/REVIEWER.md`
 - 原始经历：`PROFILE.md`、`experience/`
