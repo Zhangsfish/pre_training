@@ -1,6 +1,11 @@
 # 简历生成与复核
 
-需要从 GitHub 还原用户在 2026-10-07 确认的产品与商业化一页版，先读[该版的 AI 组装说明与完整选材快照](assembly-guides/general-product-apps-20261007/README.md)。下文描述的是仓库既有 baseline 生成器，两者的输入尚未合并，不要把 baseline 输出误认为该快照。
+当前有两个独立的一页简历组装入口：
+
+- [2026-10-07 产品与商业化一页版](assembly-guides/general-product-apps-20261007/README.md)：传统产品 / 商业化岗位使用。
+- [AI Native 公司专用版](assembly-guides/ainative-companies/README.md)：面向 Kimi 类新公司 / 新组织形态，最高层主线是“持续理解世界”，AI 作为理解、行动和持续学习的手段。
+
+两者都属于经用户单独定义的 assembly guide，与下文仓库既有 baseline 生成器分开维护；不要把 baseline 输出误认为这些专用快照。
 
 上游：ASSEMBLY、STYLE、PRESETS 和策划批准的 publication。四份 variants 为可公开的 baseline 选材输入；每条 bullet 的 claim_ids 与取舍理由保存在 JSON 侧表，不进入 PDF。R05 新环境安装与完整维护步骤见 [验收维护 README](../acceptance/README.md)，不再要求复用个人 Codex 缓存。
 
@@ -27,7 +32,7 @@ npm --prefix site run test:jd
 
 唯一公开副本由 `resume:build -- --variant general-zh --publish` 更新，同时登记 publication/resume-manifest.json。该操作只写本地文件，不部署。`resume:build -- --verify-published` 重新生成并核对公开 PDF 字节。网站构建验证选材与 manifest，拒绝过期输入/其他 PDF。`/resume/` 同源生成，电话/出生年月只在这一简历页面和获准 PDF 中；首页与案例继续禁止这些字段。
 
-项目标题使用已确认生产域名的绝对详情链接，下载到本地后仍可访问。QQ 独立 Demo 标明需要访问权限，本地案例和影片为首要入口。字体来自 Google Fonts 的 Noto Sans SC（OFL，许可证见 templates/OFL.txt），只嵌入 PDF，不增加网页字体请求。新增字符若不在子集中，导出会拒绝；使用上游完整字体执行 `python resume/scripts/prepare-font.py /path/to/NotoSansSC[wght].ttf` 后重新检查全部版式。
+项目标题使用已确认生产域名的绝对详情链接，下载到本地后仍可访问。字体来自 Google Fonts 的 Noto Sans SC（OFL，许可证见 templates/OFL.txt），只嵌入 PDF，不增加网页字体请求。新增字符若不在子集中，导出会拒绝；使用上游完整字体执行 `python resume/scripts/prepare-font.py /path/to/NotoSansSC[wght].ttf` 后重新检查全部版式。
 
 ## JD 工作流
 

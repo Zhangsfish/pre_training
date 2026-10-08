@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-08",
+  "id": "ainative-companies",
+  "label": "AI Native 公司｜新公司 / 新组织形态",
+  "scope": "面向 Kimi 类 AI Native 新公司与新组织形态的一页简历内容源；AI 是手段，长期研究对象是人、组织与世界。",
+  "target_definition": "生成式AI时代诞生或重构的公司：AI/Agent成为默认生产力，组织角色更流动，人聚焦问题定义、判断、审美、现实约束和结果责任，长期context与harness支持持续的人机协作。",
+  "header": {
+    "name": "张朔",
+    "romanized_name": "Zhang Shuo",
+    "birth_month": "2002.01",
+    "phone": "18604097805",
+    "email": "zhangs.taq@gmail.com",
+    "github": "https://github.com/Zhangsfish",
+    "portfolio": "https://zhang-shuo-portfolio.vercel.app"
+  },
+  "education": [
+    {
+      "school": "北京大学基础医学院",
+      "program": "放射医学系｜硕士研究生",
+      "date": "2024.09-2027.07"
+    },
+    {
+      "school": "吉林大学",
+      "program": "理科实验班（化学，唐敖庆班）｜GPA 3.85/4.00，4/27｜CET-6 502",
+      "date": "2020.09-2024.06"
+    }
+  ],
+  "thesis": {
+    "title": "持续理解世界",
+    "text": "长期好奇人的偏好、判断与行动如何形成，人与人如何连接、合作与冲突，以及这些微观行为如何通过组织、市场、制度和技术形成更大的社会结果。互联网扩大了连接，AI正在提高理解能力：它可以从长期context与现实反馈中更深地理解人和世界，并在行动—反馈—更新中持续进步。"
+  },
+  "sections": [
+    {
+      "id": "ai-native-products",
+      "title": "AI Native 产品实验｜理解人，并把理解变成更深的连接",
+      "items": [
+        {
+          "id": "qq-lingxi",
+          "title": "QQ 灵犀｜AI Native 智能连接平台",
+          "date": "2026.05",
+          "text": "传统推荐容易停在“喜欢过什么”；更想追问“为什么喜欢”，抽象出能跨场景迁移的深层偏好。一个人常吃咖喱饭，真正偏好的可能是浓稠酱汁裹着主食的口感结构，同样的理解可以迁移到旅行方式、相处对象和共同活动。基于“长期人格画像 + 当前需求画像”，让AI先理解用户，再匹配内容、人和群，并由双方Agent在连接前沟通适配点、边界和开场方式；进入腾讯PCG校园AI产品创意大赛复赛。",
+          "links": [
+            "https://github.com/Zhangsfish/qq-lingxi-agent-platform",
+            "https://qq-lingxi-agent-platform.vercel.app/"
+          ]
+        },
+        {
+          "id": "kin",
+          "title": "KIN｜Family Connection",
+          "date": "2026.09",
+          "text": "从“父母电话没接时，我想知道他今天在做什么、过得怎样”出发，把位置、活动、佩戴、心率等状态组织成可理解的生活context，探索子女因为关心和参与感主动查看父母普通一天的产品机制。完成Watch + Family App原型、产品与商业方案，并在竞品研究后把验证重点收敛到context与关系消费。",
+          "links": [
+            "https://github.com/Zhangsfish/kin-portfolio",
+            "https://kin-portfolio-taupe.vercel.app/"
+          ]
+        },
+        {
+          "id": "apps",
+          "title": "Lecture Asset + Everwhile｜把个人工作流摩擦直接做成 App",
+          "date": "2026.09-至今",
+          "text": "Lecture Asset解决讲座后上百张PPT照片难整理、难复用的问题：按时间整理照片，生成供人阅读的PDF和包含JPG原图、OCR索引、AI阅读说明的ZIP，保存后可清理相册；已提交App Review。Everwhile解决刷视频、看小说等场景中时间感消失的问题：用户选择想留意的App和提醒间隔，累计使用时收到温和提醒，并在“今天”回看时间去向；已完成上架候选与商店材料。",
+          "links": [
+            "https://github.com/Zhangsfish/lecture-asset",
+            "https://github.com/Zhangsfish/Elapse"
+          ]
+        },
+        {
+          "id": "food-memory",
+          "title": "Food Memory｜个人长期记忆实验",
+          "date": "2026.09-至今",
+          "text": "用少量真实饮食记录测试长期context：保留第一手经历，并按时间、地区、店铺建立检索入口，让AI以后可以重新理解“为什么喜欢”、口味如何变化，以及某段经验对另一个人是否有参考价值。",
+          "links": [
+            "https://github.com/Zhangsfish/food_memory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science-physical",
+      "title": "AI for Science 与物理自动化｜知道模型外面还有什么",
+      "items": [
+        {
+          "id": "pet",
+          "title": "PAP/ACP3 靶向 PET 小分子探针",
+          "date": "2025.08-2026.07",
+          "text": "从小分子结构优化推进到蛋白、细胞、动物模型、68Ga PET/CT、biodistribution与lead selection，完成临床前研究链路，一作JMC稿件在投。AI从问题形成阶段参与学习、方案比较、故障诊断与分析；同时进行分子模拟相关探索。长期hands-on实验使本人能区分论文中显性的知识、wet-lab/dry-lab中的隐性know-how和仍未被数字化的黑箱，并判断哪些环节真正值得接入AI与自动化。",
+          "links": [
+            "https://zhang-shuo-portfolio.vercel.app/work/pet/",
+            "https://github.com/Zhangsfish/MD"
+          ]
+        },
+        {
+          "id": "spps",
+          "title": "智能化流动多肽合成仪｜整机研发负责人",
+          "date": "2024.03-2024.08",
+          "text": "把多肽合成流程拆成泵、阀、流路、反应器、时间序列与控制动作，负责整机方案、部件选型、高层控制脚本、采购、装配调试与集成；协调4名跨专业协作者并对接近20家供应商。不到3个月完成核心集成，演示约10肽自动合成，单次偶联由人工约30分钟缩短至自动约1分钟。由此形成对实验自动化的具体判断：哪些状态需要感知、哪些动作值得自动执行、哪些反馈必须留下。",
+          "links": [
+            "https://zhang-shuo-portfolio.vercel.app/work/spps/"
+          ]
+        },
+        {
+          "id": "jiadifenin",
+          "title": "Jiadifenin 家族天然产物全合成｜路线开发与研发协同",
+          "date": "2022.09-2023.11",
+          "text": "经历路线设计、小试验证、放大、稳定供料与下游推进的完整依赖链；原路线在放大阶段遇到瓶颈后重新设计并打通。核心约5人、累计约10人协作中按成员特点分配任务、协调上下游依赖。该经历提供了对CRO/CDMO式研发生产链的hands-on理解，也成为判断化学研发中可标准化、可并行和可自动化环节的现实基础。",
+          "links": [
+            "https://zhang-shuo-portfolio.vercel.app/work/natural-product/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "organization-learning",
+      "title": "组织与持续学习｜理解人，也理解人如何组成系统",
+      "items": [
+        {
+          "id": "organization",
+          "title": "在组织里的位置",
+          "text": "天然产物项目中在无正式管理权的情况下形成非正式协作中心；SPPS项目负责跨机械、加工、电控和供应商的系统集成；有机化学实验课程中面向19名学生、5名助教组织复杂实验，并将91个样品编排成3条并行时间序列，随后逐步把课程体系交给继任助教独立运行。"
+        },
+        {
+          "id": "learning",
+          "title": "持续理解世界",
+          "text": "研究生阶段主动把学习范围从自然科学扩展到几乎完整的人文社科谱系：经济学、政治学、社会学、历史、哲学、逻辑、公共政策、财务会计、计量与因果推断等。把课程、讲座、阅读、AI讨论和长期笔记作为理解现实世界的多个入口；职业与产品选择也持续从人的行为、组织激励、制度与商业机制重新检验。",
+          "links": [
+            "https://github.com/Zhangsfish/notes"
+          ]
+        },
+        {
+          "id": "harness",
+          "title": "Human + AI 的长期工作方式",
+          "text": "把GitHub等外部环境当作persistent context / external harness，沉淀产品定义、当前状态、关键判断、失败证据、待办和交接，使不同时间与不同Agent能继续同一长期任务。本人持续负责问题选择、现实约束、判断更新和最终验收。",
+          "links": [
+            "https://github.com/Zhangsfish"
+          ]
+        }
+      ]
+    }
+  ],
+  "writing_rules": [
+    "AI是手段，长期研究对象是人、组织与世界。",
+    "产品项目优先写真实场景、解决方案和现实进展。",
+    "不把Agent自动完成的工程流程写成本人工程能力。",
+    "Food Memory保持个人小实验的真实规模。",
+    "避免无必要的防御性语言。",
+    "避免“不是……而是……”句式。",
+    "针对具体AI Native公司只调整顺序与强调，不改事实和长期主线。"
+  ]
+}
