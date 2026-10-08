@@ -24,19 +24,6 @@ document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(carousel=>{
  carousel.querySelector('[data-prev]')?.addEventListener('click',()=>show(index-1));
  carousel.querySelector('[data-next]')?.addEventListener('click',()=>show(index+1));
 });
-document.querySelectorAll<HTMLElement>('[data-app-film-group]').forEach(group=>{
- const video=group.querySelector<HTMLVideoElement>('[data-app-film]')!;
- const source=video.querySelector<HTMLSourceElement>('source')!;
- const buttons=[...group.querySelectorAll<HTMLButtonElement>('[data-app-film-language]')];
- buttons.forEach(button=>button.addEventListener('click',()=>{
-  if(button.getAttribute('aria-pressed')==='true')return;
-  video.pause();
-  source.src=button.dataset.src!;
-  video.setAttribute('aria-label',`${group.dataset.name} ${button.textContent?.trim()} ${document.body.dataset.promoFilm}`);
-  video.load();
-  buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
- }));
-});
 function sync(v:HTMLVideoElement) {
  const button=v.closest('.media-experience')!.querySelector<HTMLButtonElement>('.preview-toggle')!;
  const play=visible.has(v)&&!blocked.has(v)&&!reduced.matches&&!document.hidden&&!dialog.open;

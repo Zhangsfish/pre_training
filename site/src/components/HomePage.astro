@@ -14,8 +14,7 @@ const {locale}=Astro.props;
 const english=locale==='en';
 const view=await siteContent(locale);
 const galleryCopy=(english?overlayGallery(gallery):gallery) as typeof gallery;
-type AppCopy=typeof appsShowcase.apps[number] & {image_note?:string};
-const appsCopy=(english?overlayApps(appsShowcase):appsShowcase) as {apps:AppCopy[]};
+const appsCopy=(english?overlayApps(appsShowcase):appsShowcase) as typeof appsShowcase;
 const ui=english?englishUi():null;
 const root=english?'/en/':'/';
 const link=(id:string)=>registry.links.find(l=>l.id===id)!.url;
@@ -26,7 +25,7 @@ const link=(id:string)=>registry.links.find(l=>l.id===id)!.url;
   <p class="overline selected-heading">{english?ui!.home.selected:'SELECTED WORK / 做出来，给你看。'}</p>
   <div class="apps-grid">{appsCopy.apps.map((app,i)=><section class={`work-section app-showcase app-${app.id}`} aria-labelledby={`title-${app.id}`}>
     <div class="work-heading"><div><p class="overline">APP 0{i+1} / {app.label}</p><h2 id={`title-${app.id}`}>{app.name}</h2><p class="work-caption">{app.tagline}</p></div></div>
-    <div class="app-showcase-media"><AppFilm name={app.name} poster={app.slides[0].file} films={app.films} note={app.film_note} locale={locale} /><div><AppCarousel name={app.name} slides={app.slides} locale={locale} />{english&&<p class="image-language-note">{app.image_note}</p>}</div></div>
+    <div class="app-showcase-media"><AppFilm name={app.name} poster={app.slides[0].file} films={app.films} note={app.film_note} locale={locale} /><div><AppCarousel name={app.name} slides={app.slides} locale={locale} /></div></div>
     <div class="app-narrative app-showcase-narrative"><p class="app-status">{app.status}</p><h3>{english?ui!.home.scenario:'需求场景'}</h3><p>{app.scenario}</p><h3>{english?ui!.home.response:'它怎么回应'}</h3><p>{app.product}</p></div>
   </section>)}</div>
   {galleryCopy.projects.map((p,i)=><section class={`work-section work-${p.id}`} aria-labelledby={`title-${p.id}`}><div class="work-heading"><div><p class="overline">0{i+1} / {p.label}</p><h2 id={`title-${p.id}`}><a href={`${root}work/${p.id}/`}>{p.name}</a></h2><p class="work-caption">{p.caption}</p></div><div class="work-actions"><a class="text-link" href={`${root}work/${p.id}/`}>{p.id==='spps'?(english?ui!.home.spps_action:'看看这台机器'):(english?ui!.home.work_action:'了解这个作品')} ↗</a></div></div><MediaExperience project={p} locale={locale} /></section>)}

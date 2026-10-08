@@ -51,6 +51,9 @@ export function overlayApps(chinese){
   return {...chinese,apps:chinese.apps.map((app,i)=>{
     const translation=english.apps[i];
     if(app.id!==translation.id||app.slides.length!==translation.slides.length)throw new Error(`English app mismatch: ${app.id}`);
-    return {...app,name:translation.name,label:translation.label,tagline:translation.tagline,status:translation.status,scenario:translation.scenario,product:translation.product,film_note:translation.film_note,image_note:translation.image_note,slides:app.slides.map((slide,index)=>({...slide,label:translation.slides[index]}))};
+    return {...app,name:translation.name,label:translation.label,tagline:translation.tagline,status:translation.status,scenario:translation.scenario,product:translation.product,film_note:translation.film_note,slides:app.slides.map((slide,index)=>{
+      if(!slide.english_file)throw new Error(`Missing English promotional image: ${app.id} ${index+1}`);
+      return {...slide,file:slide.english_file,label:translation.slides[index]};
+    })};
   })};
 }

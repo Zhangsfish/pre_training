@@ -69,7 +69,7 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
    }
  }
  // Full films load only after an explicit user action; originals never ship.
- assert.ok(total<=32*1024*1024,'Published gallery exceeds 32MB total budget');
+ assert.ok(total<=36*1024*1024,'Published gallery exceeds 36MB total budget');
  const jsBytes=files.filter(f=>f.endsWith('.js')).reduce((n,f)=>n+fs.statSync(path.join(directory,f)).size,0);
  assert.ok(jsBytes<20000,'Gallery runtime exceeds 20KB');
  return {files,total_bytes:total,client_js_bytes:jsBytes,approved_media:assets.length,result:'pass'};
