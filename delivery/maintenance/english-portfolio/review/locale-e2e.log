@@ -1,0 +1,13 @@
+
+> pre-training-site@0.1.0 test:locale
+> node scripts/locale-e2e.mjs
+
+{
+  "result": "pass",
+  "checks": 40,
+  "language_pairs": "pass",
+  "translation": "pass",
+  "media_controls": "pass",
+  "pdf_hash": "pass",
+  "english_404_page": "pass"
+}

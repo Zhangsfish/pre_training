@@ -3,15 +3,26 @@ import type { PublicView } from '../types';
 import '../styles/tokens.css';
 import '../styles/global.css';
 import '../styles/gallery.css';
-interface Props { title:string; description:string; view:PublicView; noindex?:boolean; }
-const {title,description,view,noindex=false}=Astro.props;
-const onHome=Astro.url.pathname==='/';
-const fullTitle=`${title} · ${view.profile.name}`;
+import '../styles/locale.css';
+import {englishUi} from '../../scripts/english.mjs';
+interface Props { title:string; description:string; view:PublicView; locale?:'zh'|'en'; noindex?:boolean; }
+const {title,description,view,locale='zh',noindex=false}=Astro.props;
+const english=locale==='en';
+const ui=english?englishUi():null;
+const home=english?'/en/':'/';
+const pathname=Astro.url.pathname;
+const onHome=pathname===home;
+const paired=(pathname==='/404/'||pathname==='/404.html')?'/en/404/':pathname==='/en/404/'?'/404.html':english?(pathname.replace(/^\/en(?=\/)/,'')||'/'):`/en${pathname}`;
+const zhPath=english?paired:(pathname==='/404/'?'/404.html':pathname);
+const enPath=english?pathname:paired;
+const fullTitle=`${title} · ${english?view.profile.romanized_name:view.profile.name}`;
 const canonical=noindex?undefined:new URL(Astro.url.pathname,Astro.site??Astro.url.origin).toString();
+const origin=Astro.site??Astro.url.origin;
+const nav=english?ui!.navigation:{work:'作品',about:'关于',resume:'简历',contact:'联系',skip:'跳到正文',home:'返回首页',primary:'主导航',language:'语言'};
 ---
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content={description} /><link rel="icon" href="/favicon.svg" type="image/svg+xml" />{noindex&&<meta name="robots" content="noindex, follow" />}{canonical&&<link rel="canonical" href={canonical} />}<meta property="og:type" content="website" /><meta property="og:locale" content="zh_CN" /><meta property="og:title" content={fullTitle} /><meta property="og:description" content={description} />{canonical&&<meta property="og:url" content={canonical} />}<meta name="twitter:card" content="summary" /><title>{fullTitle}</title></head>
-<body><a class="skip" href="#main">跳到正文</a><div class="wrap">
-<header class="identity"><a class="name" href="/" aria-label={`${view.profile.name}，返回首页`}>{view.profile.name}<span>{view.profile.romanized_name}</span></a><nav aria-label="主导航"><a href={onHome?'#work':'/#work'}>作品</a><a href={onHome?'#about':'/#about'}>关于</a><a href="/resume/" aria-current={Astro.url.pathname==='/resume/'?'page':undefined}>简历</a><a href={onHome?'#contact':'/#contact'}>联系</a></nav></header>
-<main id="main" tabindex="-1"><slot /></main><footer><span>{view.profile.name} · 作品集</span><a href="#main">返回顶部 ↑</a></footer>
+<html lang={english?'en':'zh-CN'}><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content={description} /><link rel="icon" href="/favicon.svg" type="image/svg+xml" />{noindex&&<meta name="robots" content="noindex, follow" />}{canonical&&<link rel="canonical" href={canonical} />}{!noindex&&<><link rel="alternate" hreflang="zh-CN" href={new URL(zhPath,origin).toString()} /><link rel="alternate" hreflang="en" href={new URL(enPath,origin).toString()} /><link rel="alternate" hreflang="x-default" href={new URL(zhPath,origin).toString()} /></>}<meta property="og:type" content="website" /><meta property="og:locale" content={english?'en_US':'zh_CN'} /><meta property="og:title" content={fullTitle} /><meta property="og:description" content={description} />{canonical&&<meta property="og:url" content={canonical} />}<meta name="twitter:card" content="summary" /><title>{fullTitle}</title></head>
+<body data-pause-preview={english?ui!.media.pause_preview:'暂停预览 Ⅱ'} data-play-preview={english?ui!.media.play_preview:'播放预览 ▶'} data-promo-film={english?ui!.media.promo_film:'宣传片'} data-dialog-title={english?'Work preview':'作品预览'} data-scene-fallback={english?'Project image':'作品画面'}><a class="skip" href="#main">{nav.skip}</a><div class="wrap">
+<header class="identity"><a class="name" href={home} aria-label={`${english?view.profile.romanized_name:view.profile.name}${english?', ':'，'}${nav.home}`}>{english?view.profile.romanized_name:view.profile.name}<span>{english?view.profile.name:view.profile.romanized_name}</span></a><nav class="primary-nav" aria-label={nav.primary}><a href={onHome?'#work':`${home}#work`}>{nav.work}</a><a href={onHome?'#about':`${home}#about`}>{nav.about}</a><a href={`${home}resume/`} aria-current={pathname===`${home}resume/`?'page':undefined}>{nav.resume}</a><a href={onHome?'#contact':`${home}#contact`}>{nav.contact}</a></nav><nav class="language-switch" aria-label={nav.language}><a href={zhPath} hreflang="zh-CN" lang="zh-CN" aria-current={!english?'page':undefined}>中文</a><span aria-hidden="true">/</span><a href={enPath} hreflang="en" lang="en" aria-current={english?'page':undefined}>English</a></nav></header>
+<main id="main" tabindex="-1"><slot /></main><footer><span>{english?view.profile.romanized_name:view.profile.name} · {english?ui!.footer.portfolio:'作品集'}</span><a href="#main">{english?ui!.footer.top:'返回顶部 ↑'}</a></footer>
 </div></body></html>

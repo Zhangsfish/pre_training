@@ -10,6 +10,17 @@ const resumeFields = [...siteFields, 'birth_year_month', 'phone'];
 const supplementaryIds = ['teaching', 'natural-product'];
 const requiredLinks = ['email', 'github-profile', 'kin-repo', 'qq-lingxi-repo', 'notion-organic-synthesis', 'notion-organic-chemistry'];
 const json = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
+const sha256 = (file) => createHash('sha256').update(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')).digest('hex');
+function reviewedHistoricalPet(c,currentHash,data) {
+  if(!fs.existsSync(path.join(root,'delivery/maintenance/english-portfolio/pet-public-copy-freeze.json')))return false;
+  const policy=json('delivery/maintenance/english-portfolio/pet-public-copy-freeze.json');
+  return c.source_path===policy.source_path && policy.claim_ids.includes(c.id)
+    && c.source_blob_sha===policy.public_copy_source_blob_sha
+    && currentHash===policy.current_source_blob_sha
+    && sha256('publication/claims.json')===policy.claims_sha256
+    && JSON.stringify(data.claims)===JSON.stringify(json('publication/claims.json').claims)
+    && sha256('publication/projects/pet.md')===policy.pet_public_page_sha256;
+}
 
 export function readProject(file) {
   const raw = fs.readFileSync(file, 'utf8');
@@ -70,7 +81,7 @@ export function validate(data, { mode = 'review', sourceRoot = root } = {}) {
       const headings = [...text.matchAll(/^#{1,6} (.+)$/gm)].map(m => m[1].trim());
       require(headings.includes(c.source_heading), `${c.id}: missing source heading`);
       const hash = createHash('sha1').update(`blob ${Buffer.byteLength(text)}\0`).update(text).digest('hex');
-      if (hash !== c.source_blob_sha) warnings.push(`${c.id}: source_blob_sha drift; planner must review affected claim`);
+      if (hash !== c.source_blob_sha && !reviewedHistoricalPet(c,hash,data)) warnings.push(`${c.id}: source_blob_sha drift; planner must review affected claim`);
     }
   }
   source(data.profile.source_path, 'profile');

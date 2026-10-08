@@ -1,13 +1,15 @@
 ---
 interface Film { language: string; label: string; file: string }
-interface Props { name: string; poster: string; films: Film[]; note: string }
-const {name,poster,films,note}=Astro.props;
+import {englishUi} from '../../scripts/english.mjs';
+interface Props { name: string; poster: string; films: Film[]; note: string; locale?:'zh'|'en' }
+const {name,poster,films,note,locale='zh'}=Astro.props;
+const media=locale==='en'?englishUi().media:null;
 ---
 <figure class="app-film" data-app-film-group data-name={name}>
-  {films.length>1&&<div class="app-film-languages" role="group" aria-label={`${name} 宣传片语言`}>
+  {films.length>1&&<div class="app-film-languages" role="group" aria-label={`${name} ${media?.film_language??'宣传片语言'}`}>
     {films.map((film,index)=><button type="button" data-app-film-language data-src={`/media/${film.file}`} aria-pressed={index===0} lang={film.language==='zh'?'zh-CN':'en'}>{film.label}</button>)}
   </div>}
-  <video data-app-film controls playsinline preload="none" poster={`/media/${poster}`} aria-label={`${name} ${films[0].label}宣传片`}>
+  <video data-app-film controls playsinline preload="none" poster={`/media/${poster}`} aria-label={`${name} ${films[0].label} ${media?.promo_film??'宣传片'}`}>
     <source src={`/media/${films[0].file}`} type="video/mp4" />
   </video>
   <figcaption>{note}</figcaption>

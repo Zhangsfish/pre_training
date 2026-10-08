@@ -1,14 +1,16 @@
 ---
-interface Props { project:any; compact?:boolean }
-const {project:p,compact=false}=Astro.props;
+import {englishUi} from '../../scripts/english.mjs';
+interface Props { project:any; compact?:boolean; locale?:'zh'|'en' }
+const {project:p,compact=false,locale='zh'}=Astro.props;
+const media=locale==='en'?englishUi().media:null;
 const isHardware=p.id==='spps';
 ---
 <div class:list={['media-experience',p.id,{compact}]} data-experience={p.id}>
   <div class="stage">
-    {p.preview ? <div class="screen"><img class="cover" src={`/media/${p.cover}`} alt={`${p.name}：${p.scenes[0].label}`} width="1440" height="810" loading={p.id==='qq-lingxi'?'eager':'lazy'} /><video class="preview-video" data-preview={p.preview} muted loop playsinline preload="none" aria-label={`${p.name}无声预览`}></video></div> : <img class="machine-cover" src={`/media/${p.cover}`} alt="流动化学自动多肽合成平台整机：试剂瓶阵列、泵和连接流路" width="1600" height="900" loading="lazy" />}
-    {isHardware && <button class="operation-peek" data-film={`/media/${p.film}`} data-title="设备运行" aria-label="观看设备运行视频"><img src="/media/spps-operation.webp" alt="设备运行片段" width="512" height="910" loading="lazy" /><span>▶ 运行实拍</span></button>}
-    {p.preview && <button class="preview-toggle" aria-label={`暂停${p.name}预览`} aria-pressed="false">暂停预览 Ⅱ</button>}
-    {!isHardware && <button class="watch-float" data-film={`/media/${p.film}`} data-title={p.name}><span aria-hidden="true">▶</span> {p.id==='kin'?'观看概念短片':'观看完整演示'} <small>{p.duration}</small></button>}
+    {p.preview ? <div class="screen"><img class="cover" src={`/media/${p.cover}`} alt={`${p.name}${locale==='en'?': ':'：'}${p.scenes[0].label}`} width="1440" height="810" loading={p.id==='qq-lingxi'?'eager':'lazy'} /><video class="preview-video" data-preview={p.preview} muted loop playsinline preload="none" aria-label={`${p.name} ${media?.preview??'无声预览'}`}></video></div> : <img class="machine-cover" src={`/media/${p.cover}`} alt={locale==='en'?'Automated peptide synthesis machine: reagent bottles, pumps, and connected flow paths':'流动化学自动多肽合成平台整机：试剂瓶阵列、泵和连接流路'} width="1600" height="900" loading="lazy" />}
+    {isHardware && <button class="operation-peek" data-film={`/media/${p.film}`} data-title={locale==='en'?'Machine operation':'设备运行'} aria-label={media?.watch_operation??'观看设备运行视频'}><img src="/media/spps-operation.webp" alt={locale==='en'?'Machine operation clip':'设备运行片段'} width="512" height="910" loading="lazy" /><span>{media?.operation??'▶ 运行实拍'}</span></button>}
+    {p.preview && <button class="preview-toggle" aria-label={locale==='en'?`${media!.pause_preview} ${p.name}`:`暂停${p.name}预览`} aria-pressed="false">{media?.pause_preview??'暂停预览 Ⅱ'}</button>}
+    {!isHardware && <button class="watch-float" data-film={`/media/${p.film}`} data-title={p.name}><span aria-hidden="true">▶</span> {p.id==='kin'?(locale==='en'?englishUi().case.watch_concept:'观看概念短片'):(locale==='en'?englishUi().case.watch_demo:'观看完整演示')} <small>{p.duration}</small></button>}
   </div>
-  <div class="scene-bar" aria-label={`${p.name}画面切换`}>{p.scenes.map((s:any,i:number)=><button class="scene-button" data-scene={`/media/${s.image}`} aria-pressed={i===0?'true':'false'}><span class="scene-number">0{i+1}</span>{s.label}</button>)}<button class="zoom-button" data-zoom={`/media/${p.cover}`} data-title={p.name} aria-label={`放大${p.name}画面`}>放大 ↗</button></div>
+  <div class="scene-bar" aria-label={`${p.name} ${media?.scene_switch??'画面切换'}`}>{p.scenes.map((s:any,i:number)=><button class="scene-button" data-scene={`/media/${s.image}`} aria-pressed={i===0?'true':'false'}><span class="scene-number">0{i+1}</span>{s.label}</button>)}<button class="zoom-button" data-zoom={`/media/${p.cover}`} data-title={p.name} aria-label={locale==='en'?`${media!.zoom_scene}: ${p.name}`:`放大${p.name}画面`}>{media?.zoom??'放大 ↗'}</button></div>
 </div>

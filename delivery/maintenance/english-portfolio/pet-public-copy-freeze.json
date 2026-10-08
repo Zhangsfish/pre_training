@@ -1,0 +1,9 @@
+{
+  "reason": "On 2026-10-08 the user chose to keep the current public Chinese PET wording, including planned JMC submission, as the source for the English site. This is a reviewed historical public-copy snapshot, not a statement of the latest manuscript status.",
+  "source_path": "experience/pku-pap-pet-project.md",
+  "current_source_blob_sha": "0826b30bb7b9401fc695a459ff2a2f44e9051b7c",
+  "public_copy_source_blob_sha": "4a1238beee540bf8d28edfc58bb34ce780e736cf",
+  "claims_sha256": "70c990cc553962ebba712f6d638d7a3601ab85e869a389083de93c3ddddf72fa",
+  "pet_public_page_sha256": "0a3b50ff305bd92bbf12a4aa244c603d4114ec15684a37ecccccf4bd95f520ec",
+  "claim_ids": ["pet.status", "pet.setup", "pet.external", "pet.peers", "pet.ai", "pet.validation", "pet.window", "pet.patents", "pet.period"]
+}
