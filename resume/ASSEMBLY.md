@@ -6,13 +6,23 @@
 
 `resume/MASTER.md`仍是经历全集/内容壳，不等于一页成品。`publication/claims.json`提供可用事实；每份简历只能重组与表达，不能发明经历。
 
-用户于 2026-10-07 新确认的两款独立 App 简历短版分别见 [`Lecture Asset`](../skills/zhang-shuo-experience-writing/references/approved-lecture-asset-resume.md) 与 [`Everwhile`](../skills/zhang-shuo-experience-writing/references/approved-everwhile-resume.md)；可按岗位单独选用或合并。两款共用的[`进度与推广`](../skills/zhang-shuo-experience-writing/references/approved-independent-apps-progress-20261007.md)只是日期快照，不属于静态产品事实。这里是文案入口，不代表旧 R04 variant 或公开 PDF 已加入这两项；更改生成器选材须另行同步 claim 映射并验收。
+用户于 2026-10-07 新确认的两款独立 App 简历短版分别见 [`Lecture Asset`](../skills/zhang-shuo-experience-writing/references/approved-lecture-asset-resume.md) 与 [`Everwhile`](../skills/zhang-shuo-experience-writing/references/approved-everwhile-resume.md)；可按岗位单独选用或合并。两款共用的[进度与推广](../skills/zhang-shuo-experience-writing/references/approved-independent-apps-progress-20261007.md)只是日期快照，不属于静态产品事实。这里是文案入口，不代表旧 R04 variant 或公开 PDF 已加入这两项；更改生成器选材须另行同步 claim 映射并验收。
 
-要复现用户已审阅的一页合排版本（含 KIN + QQ 灵犀合并及 PAP 最新口径），使用[`2026-10-07 产品与商业化简历组装说明`](assembly-guides/general-product-apps-20261007/README.md)与同目录 `selected_projects.json`，不要将旧六段 references 或本页下述 baseline 自动拼接为该版本。
+要复现用户已审阅的一页合排版本（含 KIN + QQ 灵犀合并及 PAP 最新口径），使用 [2026-10-07 产品与商业化简历组装说明](assembly-guides/general-product-apps-20261007/README.md) 与同目录 `selected_projects.json`，不要将旧六段 references 或本页下述 baseline 自动拼接为该版本。
+
+### AI Native 公司专用版
+
+面向 Kimi 类 **AI Native 新公司 / 新组织形态** 的长期专用版，使用 [`assembly-guides/ainative-companies/README.md`](assembly-guides/ainative-companies/README.md) 与同目录 `current.json`。
+
+这里的 AI Native 指：AI / Agent 已成为默认生产力，人的主要价值更集中于问题定义、判断、审美、现实约束和结果责任；组织角色更流动，小团队依赖长期 context / harness 与 Agent 获得更宽的执行半径。它不是“大模型行业”的同义词，也不按公司名称机械分类。
+
+这版的最高层主题是 **持续理解世界**：长期研究人的行为、关系、组织和社会系统，AI 作为理解、行动和持续学习的新手段。针对 Kimi、MiniMax、DeepSeek 等具体公司，只在这一主线内调整强调顺序，不重新发明身份。
 
 ## 版本
 
 R04制作四份中文baseline：general-zh、product-commercial-zh、brand-insight-zh、ai-product-zh，取舍见PRESETS。后面每个真实JD生成application variant，不无限增加baseline。
+
+`ainative-companies` 属于长期公司类型专用 assembly guide，与 R04 四个公开 baseline 分开维护；在 claim 映射和生成器同步前，不把它冒充现有 `resume/variants` 自动产物。
 
 公开网站默认只提供general-zh。其他PDF保存在gitignored的resume/exports或generated_private供用户投递；不能仅靠noindex保护，不得自动暴露公司投递清单。需要公开某版本时，用户/审查者明确加入导出allowlist。
 
