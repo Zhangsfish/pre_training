@@ -1,0 +1,7 @@
+---
+import CasePage from '../../../components/CasePage.astro';
+import {siteContent} from '../../../lib/site';
+export async function getStaticPaths(){const view=await siteContent();return view.cases.map(p=>({params:{slug:p.id}}));}
+const {slug}=Astro.params;
+---
+<CasePage slug={slug!} locale="en" />

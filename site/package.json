@@ -19,7 +19,8 @@
     "resume:check": "node ../resume/scripts/check.mjs",
     "test:jd": "node --test ../resume/scripts/model.test.mjs",
     "dev": "vite --config preview.config.mjs",
-    "test:gallery": "node scripts/gallery-e2e.mjs"
+    "test:gallery": "node scripts/gallery-e2e.mjs",
+    "test:locale": "node scripts/locale-e2e.mjs"
   },
   "dependencies": {
     "astro": "7.3.3"

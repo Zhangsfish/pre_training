@@ -1,0 +1,42 @@
+
+> pre-training-site@0.1.0 build
+> node scripts/build.mjs production
+
+21:20:34 [content] Syncing content
+21:20:34 [content] Synced content
+21:20:34 [types] Generated 1.07s
+21:20:34 [build] output: "static"
+21:20:34 [build] mode: "static"
+21:20:34 [build] directory: E:\myself\pre_training-en\site\dist\
+21:20:34 [build] Collecting build info...
+21:20:34 [build] ✓ Completed in 1.26s.
+21:20:34 [build] Building static entrypoints...
+21:20:35 [vite] ✓ built in 760ms
+21:20:35 [vite] ✓ built in 127ms
+21:20:35 [build] Rearranging server assets...
+
+ generating static routes
+21:20:35   ├─ /404.html (+35ms)
+21:20:35   ├─ /en/404/index.html (+13ms)
+21:20:35   ├─ /en/resume/index.html (+18ms)
+21:20:35   ├─ /en/work/kin/index.html (+15ms)
+21:20:35   ├─ /en/work/spps/index.html (+9ms)
+21:20:35   ├─ /en/work/qq-lingxi/index.html (+9ms)
+21:20:35   ├─ /en/work/pet/index.html (+7ms)
+21:20:35   ├─ /en/work/teaching/index.html (+7ms)
+21:20:35   ├─ /en/work/natural-product/index.html (+9ms)
+21:20:35   ├─ /en/index.html (+20ms)
+21:20:35   ├─ /resume/index.html (+5ms)
+21:20:35   ├─ /work/kin/index.html (+5ms)
+21:20:35   ├─ /work/spps/index.html (+3ms)
+21:20:35   ├─ /work/qq-lingxi/index.html (+4ms)
+21:20:35   ├─ /work/pet/index.html (+3ms)
+21:20:35   ├─ /work/teaching/index.html (+3ms)
+21:20:35   ├─ /work/natural-product/index.html (+3ms)
+21:20:35   ├─ /index.html (+6ms)
+21:20:35 ✓ Completed in 251ms.
+
+21:20:35 [build] ✓ Completed in 1.24s.
+21:20:35 [build] 18 page(s) built in 2.52s
+21:20:35 [build] Complete!
+Public output audit: {"files":["404.html","favicon.svg","index.html","robots.txt","sitemap.xml","downloads/zhang-shuo-resume.pdf","en/index.html","media/everwhile-01.png","media/everwhile-02.png","media/everwhile-03.png","media/everwhile-04.png","media/everwhile-film-en.mp4","media/kin-call.webp","media/kin-cover.webp","media/kin-day.webp","media/kin-film.mp4","media/kin-preview.mp4","media/lecture-01.png","media/lecture-02.png","media/lecture-03.png","media/lecture-04.png","media/lecture-05.png","media/lecture-06.png","media/lecture-film-en.mp4","media/lecture-film-zh.mp4","media/qq-film.mp4","media/qq-match.webp","media/qq-negotiate.webp","media/qq-preview.mp4","media/qq-profile.webp","media/spps-front.webp","media/spps-hero.webp","media/spps-monitor.mp4","media/spps-operation.mp4","media/spps-operation.webp","media/spps-room.webp","media/spps-side.webp","resume/index.html","_astro/GalleryRuntime.astro_astro_type_script_index_0_lang.Bv0Kdi9r.js","_astro/site.DMoCQi9Y.css","en/404/index.html","en/resume/index.html","work/kin/index.html","work/natural-product/index.html","work/pet/index.html","work/qq-lingxi/index.html","work/spps/index.html","work/teaching/index.html","en/work/kin/index.html","en/work/natural-product/index.html","en/work/pet/index.html","en/work/qq-lingxi/index.html","en/work/spps/index.html","en/work/teaching/index.html"],"total_bytes":30342557,"client_js_bytes":4219,"approved_media":30,"result":"pass"}

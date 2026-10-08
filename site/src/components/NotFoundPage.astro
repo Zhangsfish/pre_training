@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {siteContent} from '../lib/site';
+import {englishUi} from '../../scripts/english.mjs';
+interface Props {locale:'zh'|'en'}
+const {locale}=Astro.props;
+const english=locale==='en';
+const ui=english?englishUi().not_found:null;
+const root=english?'/en/':'/';
+const view=await siteContent(locale);
+---
+<BaseLayout title={english?ui!.title:'页面未找到'} description={english?ui!.description:'这个地址暂时没有页面，请返回项目索引。'} view={view} locale={locale} noindex><section class="empty-page"><p class="eyebrow">404</p><h1>{english?ui!.heading:'这个地址没有页面。'}</h1><p>{english?ui!.body:'可以从项目索引继续阅读，或查看通用简历。'}</p><div class="actions"><a href={root}>{english?ui!.home:'返回首页 ↗'}</a><a href={`${root}#work`}>{english?ui!.work:'浏览项目 ↗'}</a><a href={`${root}resume/`}>{english?ui!.resume:'通用简历 ↗'}</a></div></section></BaseLayout>

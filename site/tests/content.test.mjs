@@ -49,6 +49,10 @@ test('source drift requests targeted review rather than silently updating it', (
   assert.equal(result.errors.length,0); assert.match(result.warnings[0],/profile.identity.*drift/);
   assert.equal(d.claims[0].source_blob_sha,'0'.repeat(40));
 });
+test('historical PET copy freeze does not bless changed claim text', () => {
+  const data=fresh();data.claims.find(c=>c.id==='pet.status').text+=' changed';
+  assert.match(validate(data).warnings.join('\n'),/pet.status: source_blob_sha drift/);
+});
 for (const id of ['qq-lingxi-repo','notion-organic-synthesis','notion-organic-chemistry']) {
   test(`required external link ${id} must exist`, () => rejects(d => d.links=d.links.filter(l=>l.id!==id), /Missing required link/));
 }

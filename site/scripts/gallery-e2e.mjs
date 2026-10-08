@@ -34,7 +34,9 @@ try{
   const lecture=page.locator('.app-lecture-asset');
   const lectureVideo=lecture.locator('[data-app-film]');
   assert.equal(await lectureVideo.getAttribute('preload'),'none');
-  assert.equal(await lecture.locator('[aria-pressed=true]').textContent(),'中文');
+  assert.equal(await lecture.locator('[data-app-film-language]').count(),0);
+  assert.equal(await lecture.locator('[data-slide]').first().getAttribute('src'),'/media/lecture-01.png');
+  assert.equal(await lectureVideo.locator('source').getAttribute('src'),'/media/lecture-film-zh.mp4');
   async function decode(video,selector,duration){
    await video.evaluate(v=>{v.muted=true;return v.play()});
    await page.waitForFunction(selector=>{const v=document.querySelector(selector);return v&&v.readyState>=2&&v.currentTime>.1&&v.videoWidth>0},selector);
@@ -42,18 +44,10 @@ try{
    await video.evaluate(v=>v.pause());
   }
   await decode(lectureVideo,'.app-lecture-asset [data-app-film]',20.4);
-  const english=lecture.getByRole('button',{name:'English',exact:true});
-  await english.focus();await page.keyboard.press('Enter');
-  assert.equal(await english.getAttribute('aria-pressed'),'true');
-  assert.ok(await lectureVideo.evaluate(v=>v.paused&&v.currentTime===0));
-  await decode(lectureVideo,'.app-lecture-asset [data-app-film]',20.4);
-  assert.ok((await lectureVideo.evaluate(v=>v.currentSrc)).endsWith('/lecture-film-en.mp4'));
-  if(output)await page.screenshot({path:path.join(output,`lecture-english-${width}.png`),fullPage:true});
-  await lecture.getByRole('button',{name:'中文',exact:true}).click();
-  await decode(lectureVideo,'.app-lecture-asset [data-app-film]',20.4);
   assert.ok((await lectureVideo.evaluate(v=>v.currentSrc)).endsWith('/lecture-film-zh.mp4'));
   const everwhile=page.locator('.app-everwhile');
   assert.equal(await everwhile.locator('[data-app-film-language]').count(),0);
+  assert.equal(await everwhile.locator('[data-slide]').first().getAttribute('src'),'/media/everwhile-01.png');
   await decode(everwhile.locator('[data-app-film]'),'.app-everwhile [data-app-film]',18);
   assert.ok((await everwhile.locator('[data-app-film]').evaluate(v=>v.currentSrc)).endsWith('/everwhile-film-en.mp4'));
   if(output)await page.screenshot({path:path.join(output,`everwhile-english-${width}.png`),fullPage:true});
@@ -68,5 +62,5 @@ try{
  }
  const ctx=await browser.newContext();const page=await ctx.newPage();const r=await page.goto(base+'/this-page-does-not-exist/');assert.equal(r.status(),404);
  const pdf=await ctx.request.get(base+'/downloads/zhang-shuo-resume.pdf');assert.equal(pdf.status(),200);const expected=JSON.parse(fs.readFileSync(new URL('../../publication/resume-manifest.json',import.meta.url))).sha256;assert.equal(createHash('sha256').update(await pdf.body()).digest('hex'),expected);await ctx.close();
- console.log(JSON.stringify({results,media:'decoded: Lecture zh/en, Everwhile en, QQ, SPPS, KIN',language_switch:'keyboard/pass; pauses and resets playback',modal:'pass',reduced_motion:'pass',pdf:'hash matched',not_found:404},null,2));
+ console.log(JSON.stringify({results,media:'decoded: Lecture zh, Everwhile en, QQ, SPPS, KIN',native_app_media:'Chinese screenshots and Lecture film; Everwhile film labeled English',modal:'pass',reduced_motion:'pass',pdf:'hash matched',not_found:404},null,2));
 }finally{await browser.close()}

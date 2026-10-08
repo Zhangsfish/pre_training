@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {siteContent} from '../lib/site';
+import {englishProfile,englishResume,englishUi} from '../../scripts/english.mjs';
+import {display} from '../../../resume/scripts/model.mjs';
+import manifest from '../../../publication/resume-manifest.json';
+import variant from '../../../resume/variants/general-zh.json';
+import profile from '../../../publication/profile.json';
+import claims from '../../../publication/claims.json';
+import registry from '../../LINKS.json';
+import {getCollection} from 'astro:content';
+interface Props {locale:'zh'|'en'}
+interface ResumeDisplay {
+  name:string;birth:string;phone:string;email:string;
+  education:{school:string;program:string;period:string;detail:string}[];
+  projects:{id:string;local_href:string;title:string;period:string|null;status:string;bullets:string[];links:{id:string;url:string;label:string}[]}[];
+}
+const {locale}=Astro.props;
+const english=locale==='en';
+const view=await siteContent(locale);
+const source=display(variant,{profile,claims:claims.claims,projects:(await getCollection('projects')).map(p=>p.data),links:registry.links}) as ResumeDisplay;
+const copy=english?englishResume():null;
+const ui=english?englishUi():null;
+const englishEducation=english?englishProfile().education:null;
+const byId=new Map(view.cases.map(p=>[p.id,p]));
+const resume=english?{...source,name:profile.fields.romanized_name,education:source.education.map((item,i)=>({...item,...englishEducation![i],detail:englishEducation![i].detail??''})),projects:source.projects.map(p=>({...p,title:copy!.project_titles[p.id],status:byId.get(p.id)?.status??p.status,period:byId.get(p.id)?.period??p.period,local_href:`/en/work/${p.id}/`,bullets:copy!.bullets[p.id],links:p.links.map(l=>({...l,label:ui!.links[l.id]??l.label}))}))}:source;
+---
+<BaseLayout title={english?ui!.resume.title:'通用简历'} description={english?ui!.resume.description:'张朔的教育与项目实践，可下载一页中文通用简历。'} view={view} locale={locale}>
+<div class="resume"><p class="eyebrow">{view.hero.eyebrow}</p><h1>{resume.name} / {english?ui!.resume.title:'通用简历'}</h1><p>{resume.birth} · {resume.phone} · <a href={`mailto:${resume.email}`}>{resume.email}</a></p><p class="note">{english?ui!.resume.note.replace('{date}',manifest.date):`更新于 ${manifest.date} · A4 一页 · 中文文字可选择`}</p>{english&&<p class="note">{ui!.resume.language_note}</p>}<p><a class="primary" href={manifest.href} download="zhang-shuo-resume.pdf">{english?ui!.resume.download:'下载通用简历 PDF ↗'}</a></p>
+<section class="resume-section"><h2>{english?ui!.resume.education:'教育背景'}</h2>{resume.education.map((e: {school:string;program:string;period:string;detail:string})=><article><h3>{e.school}</h3><p>{e.program} · {e.period}</p>{e.detail&&<p>{e.detail}</p>}</article>)}</section>
+<section class="resume-section"><h2>{english?ui!.resume.projects:'项目与实践'}</h2>{resume.projects.map((p: {id:string;local_href:string;title:string;period:string|null;status:string;bullets:string[];links:{id:string;url:string;label:string}[]})=><article class="resume-project" data-project={p.id}><h3><a href={p.local_href}>{p.title}</a>{p.period&&` · ${p.period}`}</h3><p class="status">{p.status}</p><ul>{p.bullets.map((b:string)=><li>{b}</li>)}</ul><div class="links">{p.links.map(l=><a href={l.url}>{l.label} ↗</a>)}</div></article>)}</section><div class="resume-section"><h2>{english?ui!.resume.courses:'课程资料'}</h2><div class="links">{registry.links.filter(l=>l.kind==='historical_course').map(l=><a href={l.url}>{english?ui!.links[l.id]??l.label:l.label} ↗</a>)}</div></div></div>
+</BaseLayout>

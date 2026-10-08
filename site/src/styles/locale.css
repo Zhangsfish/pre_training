@@ -1,0 +1,7 @@
+.language-switch{display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:13px;color:#737984}
+.language-switch a{padding:7px 4px}
+.language-switch a[aria-current="page"]{color:#17181b;font-weight:650;text-decoration:underline;text-underline-offset:5px}
+html[lang="en"] .work-heading h2,html[lang="en"] .visual-case-head h1{overflow-wrap:anywhere}
+html[lang="en"] .practice-period{white-space:normal;text-align:right}
+@media(max-width:950px){.identity{flex-wrap:wrap}.primary-nav{order:3;width:100%;display:flex;flex-wrap:wrap;gap:18px}.language-switch{margin-left:auto}}
+@media(max-width:600px){.identity{gap:8px 16px}.identity .name{font-size:21px}.primary-nav{gap:12px 20px;font-size:13px}.language-switch{font-size:12px}.language-switch a{padding:5px 3px}html[lang="en"] .practice-period{text-align:left}}
