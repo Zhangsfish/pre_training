@@ -14,13 +14,19 @@ const results=[];
 try{
  for(const width of [375,1366]){
   const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});const page=await ctx.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  for(const route of ['/','/work/qq-lingxi/','/work/spps/','/work/kin/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/']){
+  for(const route of ['/','/work/qq-lingxi/','/work/spps/','/work/kin/','/work/pet/','/work/teaching/','/work/natural-product/','/work/quickmap/','/resume/']){
    const r=await page.goto(base+route,{waitUntil:'load'});assert.equal(r.status(),200);assert.equal(await page.locator('h1').count(),1);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));results.push({width,route,status:200});
    if(output){const name=route==='/'?'home':route.split('/').filter(Boolean).join('-');await page.screenshot({path:path.join(output,`${name}-${width}.png`),fullPage:true});}
   }
   await page.goto(base+'/');
   for(const id of ['work','about','teaching','pet','natural-product','contact'])assert.equal(await page.locator('#'+id).count(),1);
-  assert.deepEqual(await page.locator('#work .work-section').evaluateAll(nodes=>nodes.map(n=>n.classList.contains('app-showcase')?n.classList.contains('app-lecture-asset')?'lecture-asset':'everwhile':n.className.split('work-')[2])),['lecture-asset','everwhile','qq-lingxi','spps','kin']);
+  assert.deepEqual(await page.locator('#work .work-section').evaluateAll(nodes=>nodes.map(n=>n.classList.contains('app-showcase')?n.classList.contains('app-lecture-asset')?'lecture-asset':n.classList.contains('app-quickmap')?'quickmap':'everwhile':n.className.split('work-')[2])),['lecture-asset','everwhile','quickmap','qq-lingxi','spps','kin']);
+  assert.equal(await page.locator('.app-quickmap img').getAttribute('src'),'/media/quickmap-dalian-arctic.png');
+  await page.getByRole('link',{name:'查看大连案例 ↗'}).click();
+  assert.equal(new URL(page.url()).pathname,'/work/quickmap/');
+  assert.match(await page.locator('.case-story').innerText(),/2013 年.*大连港/);
+  assert.match(await page.locator('.case-story').innerText(),/不是 AIS 轨迹/);
+  await page.goto(base+'/');
   for(const [name,total] of [['Lecture Asset',6],['Everwhile',4]]){
    const carousel=page.locator(`[data-carousel][aria-label="${name}宣传截图"]`);
    assert.equal(await carousel.locator('[data-slide]:visible').count(),1);

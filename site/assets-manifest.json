@@ -691,6 +691,21 @@
       "alt": "Everwhile English promotional image",
       "caption": "Existing English promotional image displayed on the English portfolio page",
       "permission_note": "Owner requested the native English promotional images on 2026-10-08. Source: Zhangsfish/Elapse ffe21d5efaec8c14e859c21ba1f63ca88432326f store-assets/en/04-today.png; copied byte-identically."
+    },
+    {
+      "id": "quickmap-dalian-arctic",
+      "project": "quickmap",
+      "type": "image",
+      "path": "media/quickmap-dalian-arctic.png",
+      "source_filename": "arctic-dalian-1280.png",
+      "source_sha256": "2b17738ef8a74e74ff3e622f7c270b3feb3e05cfc05bf0f33e9374809a38569f",
+      "derived_sha256": "2b17738ef8a74e74ff3e622f7c270b3feb3e05cfc05bf0f33e9374809a38569f",
+      "availability": "codex_ready",
+      "publication": "approved",
+      "integration": "verified",
+      "alt": "QuickMap 大连与北极航线地图图文回答原型截图",
+      "caption": "本机 QuickMap 原型的 1280 像素窗口截图；地图航线和点位均为示意。",
+      "permission_note": "Screenshot generated in the owner's QuickMap prototype on 2026-10-15; source: Zhangsfish/QuickMap PR #2 docs/screenshots/arctic-dalian-1280.png. Owner requested this case on their public portfolio."
     }
   ]
 }

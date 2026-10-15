@@ -77,6 +77,24 @@
       "verification": "anonymous_content_verified",
       "verification_checked_at": "2026-09-20",
       "verification_method": "Cloud browser: rendered Watch, Family App and commercial case inspected"
+    },
+    {
+      "id": "quickmap-repo", "label": "QuickMap 仓库", "url": "https://github.com/Zhangsfish/QuickMap", "kind": "repository", "required": false, "verification": "repository_checked_2026-10-16"
+    },
+    {
+      "id": "quickmap-pr", "label": "查看原型与代码", "url": "https://github.com/Zhangsfish/QuickMap/pull/2", "kind": "source", "required": false, "verification": "pr_checked_2026-10-16"
+    },
+    {
+      "id": "quickmap-liaoning-2018", "label": "辽宁交通厅：2013 航次", "url": "https://jtt.ln.gov.cn/jtt/fw/jtxw/414B399A24DF44BF89A4B15A17FC9AC8/index.shtml", "kind": "source", "required": false, "verification": "official_page_checked_2026-10-16"
+    },
+    {
+      "id": "quickmap-liaoning-2025", "label": "辽宁交通厅：2024 航线", "url": "https://jtt.ln.gov.cn/jtt/zfxxgk/fdzdgknr/jyta/srddbjy35/szxssjschy2025n/2025090914053263501/index.shtml", "kind": "source", "required": false, "verification": "official_page_checked_2026-10-16"
+    },
+    {
+      "id": "quickmap-nsidc", "label": "NSIDC 海冰观察", "url": "https://nsidc.org/sea-ice-today/analyses/stranger-things-2026-arctic", "kind": "source", "required": false, "verification": "official_page_checked_2026-10-16"
+    },
+    {
+      "id": "quickmap-imo", "label": "IMO 极地规则", "url": "https://www.imo.org/en/ourwork/safety/pages/polar-code.aspx", "kind": "source", "required": false, "verification": "official_page_checked_2026-10-16"
     }
   ],
   "optional_live_demos": {

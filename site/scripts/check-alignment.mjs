@@ -6,6 +6,7 @@ const home=html('index.html');
 assert.deepEqual([...home.matchAll(/class="work-section work-([^"]+)"/g)].map(m=>m[1]),['qq-lingxi','spps','kin']);
 for(const id of ['work','about','teaching','pet','natural-product','contact'])assert.ok(home.includes('id="'+id+'"'));
 for(const slug of ['teaching','pet','natural-product'])assert.ok(home.includes('href="/work/'+slug+'/"'));
+assert.ok(home.includes('href="/work/quickmap/"'),'QuickMap case must be linked from the App area');
 const checks={
   kin:['电话没接','Now、Today 和 Data','2.85亿','2850万','1.17亿MAU','999元','ChatGPT'],
   spps:['2名机械、1名加工和1名电控','27个','150万','88%','约10个氨基酸'],
@@ -21,7 +22,10 @@ for(const [slug,phrases] of Object.entries(checks)){
   assert.ok(!page.includes('研究经历与进展收录于简历'),slug+': obsolete placeholder');
 }
 const pet=html('work/pet/index.html');
+const quickmap=html('work/quickmap/index.html');
+for(const phrase of ['2013 年','2024 年','AIS','不是网页中的实时 AI 对话'])assert.ok(quickmap.includes(phrase),'quickmap: missing '+phrase);
+assert.ok(quickmap.includes('media/quickmap-dalian-arctic.png'),'quickmap: missing prototype image');
 assert.match(pet,/<sup>68<\/sup>Ga/,'pet: 68Ga must use semantic superscript');
 assert.ok(!pet.includes('⁶⁸Ga'),'pet: Unicode fake superscript must not appear');
 assert.ok(!pet.includes('^68Ga'),'pet: caret notation must not appear');
-console.log('PASS: three media works, six cases, personal section, supplementary anchors and final fact signals');
+console.log('PASS: three media works, seven cases, personal section, supplementary anchors and final fact signals');

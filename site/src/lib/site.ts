@@ -7,7 +7,7 @@ import registry from '../../LINKS.json';
 import claims from '../../../publication/claims.json';
 import { caseSections } from '../../scripts/sections.mjs';
 import {englishCases,englishHome,englishProfile,englishUi} from '../../scripts/english.mjs';
-export const names: Record<string,string> = {kin:'KIN',spps:'SPPS','qq-lingxi':'QQ 灵犀',pet:'PET',teaching:'教学与传承','natural-product':'天然产物全合成'};
+export const names: Record<string,string> = {kin:'KIN',spps:'SPPS','qq-lingxi':'QQ 灵犀',pet:'PET',teaching:'教学与传承','natural-product':'天然产物全合成',quickmap:'QuickMap'};
 export type CaseProject=DisplayProject & {sections:ReturnType<typeof caseSections>};
 export type SiteView=PublicView & {cases:CaseProject[];teaching:DisplayProject;educationDetail:string};
 export async function siteContent(locale:'zh'|'en'='zh'):Promise<SiteView> {
@@ -23,7 +23,8 @@ export async function siteContent(locale:'zh'|'en'='zh'):Promise<SiteView> {
   const ui=englishUi();
   if(englishHomeCopy.personal.length!==view.personal.length||englishEducation.length!==view.profile.education.length)throw new Error('English home/profile count mismatch');
   const byId=new Map(translated.map(p=>[p.id,p]));
-  const translateLink=(link:typeof view.links[number])=>({...link,label:(ui.links as Record<string,string>)[link.id]??link.label});
+  const quickmapLinkLabels:Record<string,string>={'quickmap-repo':'QuickMap repository','quickmap-pr':'Prototype and code','quickmap-liaoning-2018':'Liaoning transport: 2013 voyage','quickmap-liaoning-2025':'Liaoning transport: 2024 service','quickmap-nsidc':'NSIDC sea ice analysis','quickmap-imo':'IMO Polar Code'};
+  const translateLink=(link:typeof view.links[number])=>({...link,label:quickmapLinkLabels[link.id]??(ui.links as Record<string,string>)[link.id]??link.label});
   const englishView:PublicView={...view,
     profile:{...view.profile,education:view.profile.education.map((item,i)=>({...item,...englishEducation[i]}))},
     hero:{...view.hero,title:englishHomeCopy.hero.title,eyebrow:englishHomeCopy.hero.eyebrow,intro:englishHomeCopy.hero.intro},
