@@ -1,6 +1,10 @@
 # AGENTS — pre_training
 
-## Current maintenance authorization
+## 当前个人主页维护入口 — 2026-10-16
+
+主页已是中文 `/` 与英文 `/en/` 共用的公开站点。以后收到主页新增项目、状态更新、文案或媒体替换任务，先读 `delivery/maintenance/portfolio-update-handoff/README.md` 及模板，按当前用户请求实施并保存中英文对应关系。下方 R01–R07 的轮次锁与旧“未部署”说法只适用于其历史任务；不能据此否定新的明确授权。每次生产部署需该次任务明确授权，不从一次发布授权推断永久授权。
+
+## 历史主页内容对齐授权（已完成）
 
 本轮用户授权：核对最终经历与主页、审阅上传方案、合并方案并直接实施；权限受阻部分交给用户的Codex。执行范围以 `delivery/maintenance/home-alignment/03-IMPLEMENTATION.md` 为准，覆盖旧轮次冻结，但不改原始R07验收、不改DNS/费用/认证。保持三个主画廊顺序；增加辅助详情并修正通用简历既有选材。Vercel发布权限受阻时只交接，不绕过。
 
@@ -34,3 +38,4 @@ The user explicitly requested a media-first redesign and publication in the curr
 ## 2026-10-07 一页简历组装入口
 
 用户确认一版含 Lecture Asset + Everwhile、KIN + QQ 灵犀及四段旧项目的产品与商业化简历，并要求其他 AI 能从 GitHub 组装和按 JD 排列组合。入口为 [`resume/assembly-guides/general-product-apps-20261007/README.md`](resume/assembly-guides/general-product-apps-20261007/README.md)，整页逐字快照在同目录 `selected_projects.json`。这是新确认的特定简历版本；原 R04 baseline、旧六段 references 和网站公开 PDF 不会自动更新为它。两款 App 状态与 PAP 投稿/伦理进度须在新投递前复核。
+

@@ -1,10 +1,14 @@
 # START HERE — 唯一工作入口
 
+## 现行个人主页更新入口（2026-10-16）
+
+中英文个人主页已上线。若任务是增加/修改主页项目、文案、图片或视频，先读 [`delivery/maintenance/portfolio-update-handoff/README.md`](delivery/maintenance/portfolio-update-handoff/README.md)，使用其中的提交材料模板和当前文件地图。下面的 R01–R07 固定启动语、`delivery/STATE.json` 和“网站尚未构建”等文字是历史轮次流程，不是阻止新维护请求的当前状态。每次实际发布仍需该次任务的用户授权。
+
 架构版本：`architecture-v1`，建立日期：2026-09-20。
 
-## 当前维护交接
+## 历史维护交接（主页内容对齐轮次）
 
-此分支正在执行用户明确授权的主页内容对齐。优先读取 `delivery/maintenance/home-alignment/04-CODEX-HANDOFF.md` 与该目录 REPORT；旧R07仍为已验收历史，不代表本次改动已上线。仅对本维护任务，新的用户授权与交接范围优先于下方旧启动语。需要有原项目权限的Codex完成浏览器验收与原域名发布；不另建站点、不修改DNS或认证。
+以下是当时的任务交接，已由后续主页更新和 2026-10-08 中英文上线覆盖。历史范围见 `delivery/maintenance/home-alignment/04-CODEX-HANDOFF.md` 与该目录 REPORT；新任务使用上方现行入口。
 
 ## 给 Codex 的固定启动语
 
@@ -37,3 +41,4 @@
 - 原始经历：`PROFILE.md`、`experience/`
 
 本次只完成架构与分轮任务，不声称网站、PDF、测试、素材脱敏、发布已经完成。准确实施状态只看 STATE；READINESS 只是资料准备状态。
+
