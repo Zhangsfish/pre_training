@@ -12,7 +12,7 @@
 | 阶段 | 2026-10-16 时为 Windows 本地原型，相关功能在 [QuickMap PR #2](https://github.com/Zhangsfish/QuickMap/pull/2) 审阅中；本网站仅是静态展示 |
 | 分工 | 用户提出需求、选题和验收要求；Codex 协助调研、实现与验证。文案不声称用户独立编写全部代码 |
 | 媒体 | `site/public/media/quickmap-dalian-arctic.png`，用户 QuickMap 原型窗口截图，来自 PR #2 的 `docs/screenshots/arctic-dalian-1280.png`；当前只有中文原型画面，英文页明确标注 |
-| 发布 | 已制作、测试并拟交 PR；**正式站点未部署**。生产发布需本次任务的明确授权 |
+| 发布 | [PR #31](https://github.com/Zhangsfish/pre_training/pull/31) 已合并；2026-10-16 已部署到[正式站点](https://zhang-shuo-portfolio.vercel.app/work/quickmap/)，详见[发布记录](RELEASE_2026-10-16.md) |
 
 ## 访客看到什么
 
@@ -25,11 +25,11 @@
 - 事实层：`experience/quickmap.md`；已核对的站点 claim：`publication/claims.json` 中 `quickmap.*`。
 - 中文/英文公开稿：`publication/projects/quickmap.md`、`publication/en/projects/quickmap.md`。英文文件记录中文 SHA-256；两语页面共用既有 `CasePage`、`HomePage` 与 `BaseLayout`。
 - 外链唯一来源：`site/LINKS.json` 的 `quickmap-*`。媒体哈希与公开许可登记：`site/assets-manifest.json`。
-- 路由、内容门禁、sitemap、端到端检查均已接线；截图见 `evidence/`，测试结果见 [REPORT.md](REPORT.md)。
+- 路由、内容门禁、sitemap、端到端检查均已接线；本地截图见 `evidence/`，测试结果见 [REPORT.md](REPORT.md)，正式站点验收见[发布记录](RELEASE_2026-10-16.md)。
 - 项目功能证据：[QuickMap PR #2](https://github.com/Zhangsfish/QuickMap/pull/2)，地图回答样例在 `docs/examples/arctic-dalian-answer.json`。
 
 官方事实来源：[辽宁省交通运输厅 2018 航次](https://jtt.ln.gov.cn/jtt/fw/jtxw/414B399A24DF44BF89A4B15A17FC9AC8/index.shtml)、[辽宁省交通运输厅 2025 答复](https://jtt.ln.gov.cn/jtt/zfxxgk/fdzdgknr/jyta/srddbjy35/szxssjschy2025n/2025090914053263501/index.shtml)、[NSIDC 2026 年海冰观察](https://nsidc.org/sea-ice-today/analyses/stranger-things-2026-arctic)、[IMO 极地规则](https://www.imo.org/en/ourwork/safety/pages/polar-code.aspx)。核对的是各来源支持的特定航次和航行条件，不把一篇报道的航程/成本数字外推到所有航线。
 
 ## 交给下一个对话
 
-先审 [REPORT.md](REPORT.md) 与中英文截图，再看 PR diff。若 QuickMap PR #2 合并或交互方式变化，更新 `experience/quickmap.md`、claims、两语公开稿及状态；重新计算英文源哈希并跑门禁。若用户决定把这个案例纳入公开主页，按 [主页发布交接](../portfolio-update-handoff/README.md)取得本次生产发布授权，部署并复核匿名访问、两语路径、图片、外链和下载 PDF。页面当前不嵌入实时地图或开放式问答。
+先审 [REPORT.md](REPORT.md)、[发布记录](RELEASE_2026-10-16.md)与中英文截图，再看 [PR #31](https://github.com/Zhangsfish/pre_training/pull/31) diff。若 QuickMap PR #2 合并或交互方式变化，更新 `experience/quickmap.md`、claims、两语公开稿及状态；重新计算英文源哈希并跑门禁。后续生产改动仍按[主页发布交接](../portfolio-update-handoff/README.md)逐次验证与发布。页面当前不嵌入实时地图或开放式问答。
