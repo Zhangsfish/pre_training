@@ -23,8 +23,8 @@
 
 截图：`evidence/home-zh-{1366,375}.png`、`evidence/case-zh-{1366,375}.png`、`evidence/case-en-{1366,375}.png`。图片内容来自本地构建，不代表现有生产域名已更新。
 
-## 待验与发布状态
+## 发布与待验
 
 - QuickMap 的 Codex→地图功能仍位于 [QuickMap PR #2](https://github.com/Zhangsfish/QuickMap/pull/2)；本仓库只展示该原型。没有在本次任务中重新打包、运行或验收 QuickMap Windows 程序。
 - 英文案例文字已本地检查；截图是原型中的中文画面，英文页已明确标注，待 QuickMap 有英文原生画面后可替换。
-- 生产域名未部署或验收。仓库 `AGENTS.md` 与主页更新交接规定每次生产发布须本次任务明确授权；PR 审阅与合并不自动代表正式网站更新。
+- 用户在本次任务要求“更新一下吧，渲染我看看效果”后，已合并 [PR #31](https://github.com/Zhangsfish/pre_training/pull/31) 并发布正式站点。生产部署、匿名浏览器验收和回滚 ID 见 [RELEASE_2026-10-16.md](RELEASE_2026-10-16.md)。后续每次生产变更仍须遵守主页更新交接。
