@@ -9,7 +9,7 @@ const base=process.env.PORTFOLIO_URL||'http://127.0.0.1:4338';
 const evidence=process.env.LOCALE_EVIDENCE_DIR?path.resolve(process.env.LOCALE_EVIDENCE_DIR):null;
 if(evidence)fs.mkdirSync(evidence,{recursive:true});
 const browser=await chromium.launch({headless:true,...(process.env.CHROME_EXECUTABLE?{executablePath:process.env.CHROME_EXECUTABLE}:{})});
-const routes=['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/'];
+const routes=['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/work/quickmap/','/resume/'];
 const results=[];
 try{
   for(const width of [320,375,768,1024,1366,1440]){
@@ -41,6 +41,8 @@ try{
     if(evidence&&[375,1366].includes(width)){
       await page.goto(base+'/en/');
       await page.screenshot({path:path.join(evidence,`home-en-${width}.png`),fullPage:true});
+      await page.goto(base+'/en/work/quickmap/');
+      await page.screenshot({path:path.join(evidence,`quickmap-en-${width}.png`),fullPage:true});
     }
     await ctx.close();
   }

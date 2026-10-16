@@ -735,6 +735,30 @@
       ],
       "as_of": "2026-09-20",
       "source_blob_sha": "82f54820d180810b89175d0bdcae52c0844cbb71"
+    },
+    {
+      "id": "quickmap.prototype",
+      "text": "2026 年 10 月，QuickMap PR #2 中有本地 Codex 对话驱动地图图文回答的 Windows 原型；用户提出交互目标和验收要求，Codex 协助实现与验证，功能仍在 PR 中。",
+      "source_path": "experience/quickmap.md",
+      "source_heading": "已有原型与证据",
+      "source_blob_sha": "9cb0f8b19d85777ae0abc50408d6b8d0647c28b7",
+      "basis": "artifact_observed",
+      "certainty": "confirmed",
+      "publication": "approved",
+      "allowed_contexts": ["site"],
+      "as_of": "2026-10-16"
+    },
+    {
+      "id": "quickmap.dalian",
+      "text": "大连案例使用辽宁省交通运输厅的 2013、2024 年航次记录和 NSIDC、IMO 的限制信息，地图中的航线为示意。",
+      "source_path": "experience/quickmap.md",
+      "source_heading": "大连案例的事实边界",
+      "source_blob_sha": "9cb0f8b19d85777ae0abc50408d6b8d0647c28b7",
+      "basis": "artifact_observed",
+      "certainty": "confirmed",
+      "publication": "approved",
+      "allowed_contexts": ["site"],
+      "as_of": "2026-10-16"
     }
   ]
 }

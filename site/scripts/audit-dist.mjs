@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {loadContent,root} from './content.mjs';
 import {readJson,inputHash,loadVariant,publicPath} from '../../resume/scripts/model.mjs';
-export const routes=['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/resume/'];
+export const routes=['/','/work/kin/','/work/spps/','/work/qq-lingxi/','/work/pet/','/work/teaching/','/work/natural-product/','/work/quickmap/','/resume/'];
 export const pages=[...routes.map(route=>route.slice(1)+'index.html'),...routes.map(route=>'en/'+route.slice(1)+'index.html'),'404.html','en/404/index.html'];
 export const publicFiles=['robots.txt','sitemap.xml','favicon.svg'];
 const productionOrigin='https://zhang-shuo-portfolio.vercel.app';

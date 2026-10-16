@@ -7,7 +7,7 @@ export const root = fileURLToPath(new URL('../../', import.meta.url));
 export const projectOrder = ['kin', 'spps', 'qq-lingxi', 'pet'];
 export const siteFields = ['name', 'romanized_name', 'email', 'github', 'education'];
 const resumeFields = [...siteFields, 'birth_year_month', 'phone'];
-const supplementaryIds = ['teaching', 'natural-product'];
+const supplementaryIds = ['teaching', 'natural-product', 'quickmap'];
 const requiredLinks = ['email', 'github-profile', 'kin-repo', 'qq-lingxi-repo', 'notion-organic-synthesis', 'notion-organic-chemistry'];
 const json = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const sha256 = (file) => createHash('sha256').update(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')).digest('hex');
@@ -17,7 +17,7 @@ function reviewedHistoricalPet(c,currentHash,data) {
   return c.source_path===policy.source_path && policy.claim_ids.includes(c.id)
     && c.source_blob_sha===policy.public_copy_source_blob_sha
     && currentHash===policy.current_source_blob_sha
-    && sha256('publication/claims.json')===policy.claims_sha256
+    && createHash('sha256').update(JSON.stringify(data.claims.filter(claim=>policy.claim_ids.includes(claim.id)))).digest('hex')===policy.pet_claims_sha256
     && JSON.stringify(data.claims)===JSON.stringify(json('publication/claims.json').claims)
     && sha256('publication/projects/pet.md')===policy.pet_public_page_sha256;
 }
