@@ -36,6 +36,8 @@ export function loadContent() {
     claims: json('publication/claims.json').claims,
     links: json('site/LINKS.json').links,
     assets: json('site/assets-manifest.json').assets,
+    teachingWorks: json('publication/teaching-works.json'),
+    teachingWorksEn: json('publication/en/teaching-works.json'),
     projects: fs.readdirSync(path.join(root, 'publication/projects')).filter(f => f.endsWith('.md'))
       .map(f => readProject(path.join(root, 'publication/projects', f))),
   };
@@ -142,6 +144,51 @@ export function validate(data, { mode = 'review', sourceRoot = root } = {}) {
   for (const id of requiredLinks) require(links.has(id), `Missing required link ${id}`);
   require(projects.get('qq-lingxi')?.link_ids.includes('qq-lingxi-repo'), 'QQ repository must be visible');
   for (const id of ['notion-organic-synthesis', 'notion-organic-chemistry']) require(projects.get('teaching')?.link_ids.includes(id), 'Both teaching links must be visible');
+  publication(data.teachingWorks, 'teaching works');
+  require(data.teachingWorks?.schema_version === 1, 'teaching works: invalid schema');
+  require(typeof data.teachingWorks?.intro === 'string' && data.teachingWorks.intro.length > 0, 'teaching works: missing intro');
+  const teachingWorks = index(data.teachingWorks?.works ?? [], 'teaching work');
+  require(JSON.stringify([...teachingWorks.keys()]) === JSON.stringify([
+    'exam-organic-synthesis-i', 'exam-organic-synthesis-ii', 'lecture-mhat', 'lecture-kishi',
+  ]), 'teaching works: four reviewed items in fixed order required');
+  for (const work of teachingWorks.values()) {
+    refs(work.claim_ids, `teaching work ${work.id}`);
+    for (const key of ['kind','title','subtitle','contribution','summary','status'])
+      require(typeof work[key] === 'string' && work[key].length > 0, `${work.id}: missing ${key}`);
+    require(Array.isArray(work.preview_asset_ids), `${work.id}: preview list required`);
+    require(new Set(work.preview_asset_ids).size === work.preview_asset_ids.length, `${work.id}: duplicate preview page`);
+    const exam = work.id.startsWith('exam-');
+    if (exam) require(work.download_asset_id === null, `${work.id}: original exam download forbidden`);
+    else require(work.preview_asset_ids?.length === 0, `${work.id}: lecture preview not in current scope`);
+    for (const assetId of work.preview_asset_ids ?? []) {
+      const asset = assets.get(assetId);
+      require(exam && asset?.publication === 'approved' && asset?.availability === 'codex_ready'
+        && asset?.type === 'image' && asset?.public_review === 'irreversible_blur_verified'
+        && /^media\/teaching\/[\w-]+\.jpe?g$/.test(asset?.path ?? ''),
+      `${work.id}: preview must be approved blurred JPEG`);
+    }
+    if (work.download_asset_id !== null) {
+      const asset = assets.get(work.download_asset_id);
+      require(!exam && asset?.publication === 'approved' && asset?.availability === 'codex_ready'
+        && asset?.type === 'document' && asset?.public_review === 'identifiers_and_notes_removed'
+        && /^downloads\/teaching\/[\w-]+\.pdf$/.test(asset?.path ?? ''),
+      `${work.id}: lecture download must be an approved reviewed PDF`);
+    }
+  }
+  publication(data.teachingWorksEn, 'English teaching works');
+  require(data.teachingWorksEn?.schema_version === 1, 'English teaching works: invalid schema');
+  require(typeof data.teachingWorksEn?.intro === 'string' && data.teachingWorksEn.intro.length > 0, 'English teaching works: missing intro');
+  const teachingWorksEn = index(data.teachingWorksEn?.works ?? [], 'English teaching work');
+  require(JSON.stringify([...teachingWorksEn.keys()]) === JSON.stringify([...teachingWorks.keys()]), 'English teaching works: item order differs');
+  for (const work of teachingWorks.values()) {
+    const translated = teachingWorksEn.get(work.id);
+    if (!translated) continue;
+    for (const key of ['kind','title','subtitle','contribution','summary','status'])
+      require(typeof translated[key] === 'string' && translated[key].length > 0, `English ${work.id}: missing ${key}`);
+    require(JSON.stringify(translated.preview_asset_ids) === JSON.stringify(work.preview_asset_ids)
+      && translated.download_asset_id === work.download_asset_id
+      && JSON.stringify(translated.claim_ids) === JSON.stringify(work.claim_ids), `English ${work.id}: asset or claim mismatch`);
+  }
   for (const link of data.links) {
     try { require(['https:', 'mailto:'].includes(new URL(link.url).protocol), `${link.id}: unsafe URL`); }
     catch { fail(`${link.id}: invalid URL`); }
@@ -150,7 +197,7 @@ export function validate(data, { mode = 'review', sourceRoot = root } = {}) {
     require(/^[a-f0-9]{64}$/.test(a.source_sha256), `${a.id}: invalid original hash`);
     if (a.publication !== 'approved') require(a.path === null && a.derived_sha256 === null && a.integration === 'not_used', `${a.id}: pending media must not be integrated`);
     if (a.path !== null) {
-      require(/^media\/[\w./-]+$/.test(a.path) && !a.path.includes('..'), `${a.id}: invalid media path`);
+      require(/^(?:media\/[\w./-]+|downloads\/teaching\/[\w-]+\.pdf)$/.test(a.path) && !a.path.includes('..'), `${a.id}: invalid media or teaching PDF path`);
       const file = path.join(sourceRoot, 'site/public', a.path);
       require(fs.existsSync(file), `${a.id}: missing media file`);
       if (fs.existsSync(file)) require(createHash('sha256').update(fs.readFileSync(file)).digest('hex') === a.derived_sha256, `${a.id}: media hash mismatch`);

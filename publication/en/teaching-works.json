@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "publication": "approved",
+  "intro": "The two exams cover the first and second terms of the same honors organic laboratory sequence. Only blurred previews of question pages are shown; two reviewed organic chemistry lecture PDFs are available to download, with literature citations retained.",
+  "works": [
+    {
+      "id": "exam-organic-synthesis-i",
+      "kind": "Final exam",
+      "title": "Organic Synthesis Laboratory I (Honors)",
+      "subtitle": "First term",
+      "contribution": "Written by me",
+      "summary": "Turned recurring classroom mistakes in experimental practice and understanding into assessment questions.",
+      "status": "Blurred page previews available",
+      "preview_asset_ids": [
+        "teaching-exam-i-page-01",
+        "teaching-exam-i-page-02",
+        "teaching-exam-i-page-03",
+        "teaching-exam-i-page-04",
+        "teaching-exam-i-page-05",
+        "teaching-exam-i-page-06",
+        "teaching-exam-i-page-07",
+        "teaching-exam-i-page-08",
+        "teaching-exam-i-page-09",
+        "teaching-exam-i-page-10",
+        "teaching-exam-i-page-11",
+        "teaching-exam-i-page-12",
+        "teaching-exam-i-page-13",
+        "teaching-exam-i-page-14",
+        "teaching-exam-i-page-15",
+        "teaching-exam-i-page-16",
+        "teaching-exam-i-page-17",
+        "teaching-exam-i-page-18",
+        "teaching-exam-i-page-19",
+        "teaching-exam-i-page-20",
+        "teaching-exam-i-page-21"
+      ],
+      "download_asset_id": null,
+      "claim_ids": [
+        "teaching.portfolio.exams"
+      ]
+    },
+    {
+      "id": "exam-organic-synthesis-ii",
+      "kind": "Final exam",
+      "title": "Organic Synthesis Laboratory II (Honors)",
+      "subtitle": "Second term",
+      "contribution": "Written by me",
+      "summary": "Built a final assessment around the practical requirements of the organic synthesis laboratory course.",
+      "status": "Blurred page previews available",
+      "preview_asset_ids": [
+        "teaching-exam-ii-page-01",
+        "teaching-exam-ii-page-02",
+        "teaching-exam-ii-page-03",
+        "teaching-exam-ii-page-04",
+        "teaching-exam-ii-page-05",
+        "teaching-exam-ii-page-06",
+        "teaching-exam-ii-page-07",
+        "teaching-exam-ii-page-08",
+        "teaching-exam-ii-page-09",
+        "teaching-exam-ii-page-10",
+        "teaching-exam-ii-page-11",
+        "teaching-exam-ii-page-12",
+        "teaching-exam-ii-page-13",
+        "teaching-exam-ii-page-14",
+        "teaching-exam-ii-page-15",
+        "teaching-exam-ii-page-16",
+        "teaching-exam-ii-page-17",
+        "teaching-exam-ii-page-18"
+      ],
+      "download_asset_id": null,
+      "claim_ids": [
+        "teaching.portfolio.exams"
+      ]
+    },
+    {
+      "id": "lecture-mhat",
+      "kind": "Lecture deck",
+      "title": "MHAT: Metal Hydride Hydrogen Atom Transfer",
+      "subtitle": "Mechanism and synthetic applications",
+      "contribution": "Slides prepared by me",
+      "summary": "Uses selected reactions to discuss mechanistic reasoning and choices in synthesis.",
+      "status": "Reviewed PDF available for download",
+      "preview_asset_ids": [],
+      "download_asset_id": "teaching-lecture-mhat-reviewed",
+      "claim_ids": [
+        "teaching.portfolio.slides"
+      ]
+    },
+    {
+      "id": "lecture-kishi",
+      "kind": "Lecture deck",
+      "title": "Yoshito Kishi and Natural Product Total Synthesis",
+      "subtitle": "Route design for complex targets",
+      "contribution": "Slides prepared by me",
+      "summary": "Uses total synthesis case studies to explain route disconnection and key transformations.",
+      "status": "Reviewed PDF available for download",
+      "preview_asset_ids": [],
+      "download_asset_id": "teaching-lecture-kishi-reviewed",
+      "claim_ids": [
+        "teaching.portfolio.slides"
+      ]
+    }
+  ]
+}
