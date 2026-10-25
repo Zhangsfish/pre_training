@@ -18,4 +18,4 @@
 
 ## 发布状态
 
-本地实现和浏览器截图已由维护者复核。Vercel 上线及正式域名响应仍需本次发布过程完成后填写；Git 合并不会自动触发本站部署。
+PR [#34](https://github.com/Zhangsfish/pre_training/pull/34) 已 squash 合并为 `9694fa5`。从该提交的干净 checkout 重建，108/108 个静态文件与合并前已审查构建 SHA256 完全一致。Vercel 现有项目 `zhang-shuo-portfolio` 的部署 `dpl_FPoQQkDQBbwmWB9R9CFCxjoSKQZG` 已推广至正式域名。中英文教学页与两份课件匿名可访问，线上页面、两 PDF 与代表性缩略图 SHA256 均与构建一致；线上匿名 Chrome 端到端检查通过。完整发布证据见 `RELEASE_2026-10-25.md`。Git 合并本身不会自动触发本站部署。
