@@ -72,6 +72,15 @@ test('real resume fields exist but explicit site projection omits their names an
 });
 test('pending media cannot be referenced', () => rejects(d => d.projects[0].media_ids=['spps-original-1'], /unavailable or unapproved media/));
 test('pending original cannot be assigned public path', () => rejects(d => d.assets[0].path='media/does-not-exist.jpg', /pending media must not be integrated/));
+test('exam previews cannot turn into downloadable source papers', () => rejects(d => {
+  d.teachingWorks.works[0].download_asset_id='teaching-exam-i-page-01';
+}, /original exam download forbidden/));
+test('lecture downloads require an explicitly reviewed PDF', () => rejects(d => {
+  d.teachingWorks.works[2].download_asset_id='teaching-exam-i-page-01';
+}, /lecture download must be an approved reviewed PDF/));
+test('English teaching work points to exactly the same reviewed assets', () => rejects(d => {
+  d.teachingWorksEn.works[0].preview_asset_ids=[];
+}, /asset or claim mismatch/));
 test('excluded and resume-only claims cannot render', () => {
   rejects(d=>d.claims[0].publication='excluded',/excluded claim/);
   rejects(d=>d.claims[0].allowed_contexts=['resume'],/claim not allowed on site/);

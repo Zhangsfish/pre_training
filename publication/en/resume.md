@@ -1,7 +1,7 @@
 ---
 {
   "source_path": "resume/variants/general-zh.json",
-  "source_sha256": "2d67a3cb0e18a42718d173361405ed1ecc75ad7892c93de2a364d3f2898c5a8a",
+  "source_sha256": "634a41117ce74706222300e11a0bd1972ad24333f94f8ac50b95a1c9f1aab75f",
   "project_titles": {
     "kin": "KIN | Family connection product concept",
     "spps": "SPPS | Automated flow solid-phase peptide synthesis platform",

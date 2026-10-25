@@ -17,13 +17,19 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
  assert.equal(manifest.variant,'general-zh');assert.equal(manifest.href,'/'+publicPath);assert.equal(manifest.input_sha256,inputHash(loadVariant('general-zh')),'Stale public resume');
  const files=fs.readdirSync(directory,{recursive:true}).filter(f=>fs.statSync(path.join(directory,f)).isFile()).map(f=>f.replaceAll('\\','/'));
  const assets=data.assets.filter(a=>a.publication==='approved'&&a.availability==='codex_ready'&&a.path);
+ const teachingPdfs=new Set(data.teachingWorks.works.flatMap(work=>{
+   const asset=assets.find(item=>item.id===work.download_asset_id);
+   return asset?.path?['/'+asset.path]:[];
+ }));
  const forbidden=['source_path','source_blob_sha','claim_ids','permission_note','private_archive','birth_year_month','review-bar','review-note','direction-a','direction-b','direction-c','/review/','experience/','delivery/audits',...data.assets.map(a=>a.source_filename)];
  for(const page of pages) assert.ok(files.includes(page),`Missing page ${page}`);
  for(const file of publicFiles) assert.ok(files.includes(file),`Missing public file ${file}`);
  if(requireResume)assert.ok(files.includes(publicPath),'Missing public resume PDF');
  let total=0;
+ let teachingPdfBytes=0;
  for(const file of files) {
    const bytes=fs.readFileSync(path.join(directory,file));total+=bytes.length;
+   if(teachingPdfs.has('/'+file))teachingPdfBytes+=bytes.length;
    assert.ok(file===publicPath||pages.includes(file)||publicFiles.includes(file)||/^_astro\/[\w.-]+\.(css|js)$/.test(file)||assets.some(a=>a.path===file),`Unapproved output file: ${file}`);
    if(/\.(html|css|js)$/.test(file)) {
      const text=bytes.toString('utf8');
@@ -51,7 +57,7 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
              assert.ok(targetHtml.includes('id="'+fragment+'"'),`Broken local fragment ${value} in ${file}`);
            }
          }
-         if(/\.pdf(?:$|[?#])/i.test(value))assert.equal(value,manifest.href,'Only the registered general PDF is public');
+         if(/\.pdf(?:$|[?#])/i.test(value))assert.ok(value===manifest.href||teachingPdfs.has(value),'Only registered public PDFs are allowed');
        }
      }
    } else if(file==='robots.txt'){
@@ -65,13 +71,20 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
      assert.ok(bytes.subarray(0,5).toString()==='%PDF-');assert.equal(createHash('sha256').update(bytes).digest('hex'),manifest.sha256,'Public resume hash mismatch');
    } else {
      const a=assets.find(a=>a.path===file);
+     if(file.endsWith('.pdf'))assert.equal(bytes.subarray(0,5).toString(),'%PDF-','Teaching PDF signature');
+     if(file.startsWith('media/teaching/')) {
+       assert.equal(bytes.subarray(0,3).toString('hex'),'ffd8ff','Teaching preview JPEG signature');
+       assert.equal(a.public_review,'irreversible_blur_verified','Teaching preview review status');
+     }
      assert.equal(createHash('sha256').update(bytes).digest('hex'),a.derived_sha256,'Approved media hash');
    }
  }
- // Full films load only after an explicit user action; originals never ship.
- assert.ok(total<=36*1024*1024,'Published gallery exceeds 36MB total budget');
+ // Downloads are fetched only on user action. Keep the original gallery budget
+ // and reserve a separate, explicit 10 MiB allowance for the two reviewed decks.
+ assert.ok(total-teachingPdfBytes<=36*1024*1024,'Published gallery exceeds 36MB total budget');
+ assert.ok(teachingPdfBytes<=10*1024*1024,'Reviewed lecture downloads exceed 10MB budget');
  const jsBytes=files.filter(f=>f.endsWith('.js')).reduce((n,f)=>n+fs.statSync(path.join(directory,f)).size,0);
  assert.ok(jsBytes<20000,'Gallery runtime exceeds 20KB');
- return {files,total_bytes:total,client_js_bytes:jsBytes,approved_media:assets.length,result:'pass'};
+ return {files,total_bytes:total,teaching_pdf_bytes:teachingPdfBytes,client_js_bytes:jsBytes,approved_media:assets.length,result:'pass'};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) console.log(JSON.stringify(auditDist(path.join(root,'site/dist')),null,2));

@@ -6,6 +6,9 @@ import NuclideText from './NuclideText.astro';
 import {siteContent} from '../lib/site';
 import {englishUi,overlayGallery} from '../../scripts/english.mjs';
 import gallery from '../../../publication/gallery.json';
+import teachingWorksZh from '../../../publication/teaching-works.json';
+import teachingWorksEn from '../../../publication/en/teaching-works.json';
+import assetRegistry from '../../assets-manifest.json';
 interface Props {slug:string;locale:'zh'|'en'}
 const {slug,locale}=Astro.props;
 const english=locale==='en';
@@ -20,6 +23,8 @@ const i=p?galleryCopy.projects.indexOf(p):0;
 const next=p?galleryCopy.projects[(i+1)%galleryCopy.projects.length]:null;
 const lead=project.sections.slice(0,p?3:project.sections.length);
 const deeper=p?project.sections.slice(3):[];
+const teachingWorks=english?teachingWorksEn:teachingWorksZh;
+const teachingAssetPath=(id:string)=>assetRegistry.assets.find(asset=>asset.id===id)?.path;
 ---
 <BaseLayout title={p?.name??project.title} description={project.summary} view={view} locale={locale}>
 <div class="breadcrumb"><a href={`${root}#work`}>{english?ui!.case.all_work:'← 全部作品'}</a></div>
@@ -33,6 +38,30 @@ const deeper=p?project.sections.slice(3):[];
 <aside class="ownership-note"><p class="overline">{english?ui!.case.my_work:'我的工作'}</p><p>{project.ownership}</p><p>{project.result}</p></aside>
 <p class="case-footnote">{project.boundary}</p>
 </div>
+{project.id==='teaching'&&<section class="teaching-portfolio" aria-labelledby="teaching-portfolio-title">
+  <p class="overline">TEACHING MATERIALS</p>
+  <h2 id="teaching-portfolio-title">{english?'Teaching materials':'教学作品'}</h2>
+  <p class="teaching-portfolio-intro">{teachingWorks.intro}</p>
+  <div class="teaching-work-grid">
+    {teachingWorks.works.map(work=><section class="teaching-work" aria-labelledby={`teaching-${work.id}`}>
+      <p class="teaching-work-kind">{work.kind} · {work.subtitle}</p>
+      <h3 id={`teaching-${work.id}`}>{work.title}</h3>
+      <p class="teaching-work-contribution">{work.contribution}</p>
+      <p class="teaching-work-summary">{work.summary}</p>
+      {work.preview_asset_ids.length>0&&<p class="teaching-preview-count">{english?`${work.preview_asset_ids.length} question pages · scroll horizontally`:`共 ${work.preview_asset_ids.length} 页试题 · 横向逐页浏览`}</p>}
+      {work.preview_asset_ids.length>0&&<div class="teaching-preview-scroll" tabindex="0" role="group" aria-label={english?`${work.title}: blurred preview pages`:`${work.title}：逐页模糊预览`}>
+        {work.preview_asset_ids.map((id,index)=><figure class="teaching-preview-page">
+          <img src={`/${teachingAssetPath(id)}`} alt={english?`Blurred preview of question page ${index+1}; text cannot be read`:`试题第 ${index+1} 页模糊预览，题目不可辨`} loading="eager" width="315" height="445" />
+          <figcaption>{english?`Page ${index+1}`:`第 ${index+1} 页`}</figcaption>
+        </figure>)}
+      </div>}
+      {work.download_asset_id&&teachingAssetPath(work.download_asset_id)
+        ?<a class="pill teaching-download" href={`/${teachingAssetPath(work.download_asset_id)}`} download>{english?'Download reviewed PDF':'下载审校 PDF'} ↓</a>
+        :<p class="teaching-work-status">{work.status}</p>}
+      {work.preview_asset_ids.length>0&&<p class="teaching-page-note">{english?'These previews show the page layout only. The exam and answer sheet are not downloadable.':'预览仅展示试卷版式，题目不可辨；原卷与答题纸不提供下载。'}</p>}
+    </section>)}
+  </div>
+</section>}
 {p&&<><div class:list={['still-gallery',{'hardware-stills':p.id==='spps'}]}>{p.scenes.slice(1).map(s=><figure><button data-zoom={`/media/${s.image}`} data-title={s.label} aria-label={`${english?ui!.case.zoom:'放大：'}${s.label}`}><img src={`/media/${s.image}`} alt={`${p.name}${english?': ':'：'}${s.label}`} loading="lazy" width="1440" height="900" /></button><figcaption>{s.label}</figcaption></figure>)}</div>
 {p.id==='spps'&&<div class="hardware-video-row"><div><p class="overline">IN MOTION</p><h2>{english?ui!.case.motion_title:'流路、泵、控制。'}</h2><p>{english?ui!.case.motion_caption:'设备运行实拍'}</p></div><video controls playsinline preload="none" poster="/media/spps-operation.webp" src="/media/spps-operation.mp4" aria-label={english?'Machine operation video':'设备运行视频'}></video><div><button class="pill" data-film="/media/spps-monitor.mp4" data-title={english?'Machine and monitoring interface':'设备与监测界面'}>{english?ui!.case.motion_other:'▶ 另一段运行实拍'}</button></div></div>}</>}
 </article>

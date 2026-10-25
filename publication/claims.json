@@ -759,6 +759,30 @@
       "publication": "approved",
       "allowed_contexts": ["site"],
       "as_of": "2026-10-16"
+    },
+    {
+      "id": "teaching.portfolio.exams",
+      "text": "本人编写《有机合成实验 I（荣誉）》与《有机合成实验 II（荣誉）》两个上下学期课程的期末试题；个人主页仅展示试题页的模糊预览，不公开原卷与答题纸。",
+      "source_path": "experience/jlu-teaching-portfolio.md",
+      "source_heading": "期末试题",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": ["site", "resume"],
+      "as_of": "2026-10-25",
+      "source_blob_sha": "f0dd0311e0c732180d9aa01854379b1f3c0c3be6"
+    },
+    {
+      "id": "teaching.portfolio.slides",
+      "text": "本人制作 MHAT 与岸义人天然产物全合成两份专题课件；审校后的 PDF 可以公开下载，原始 PPT 不直接入站。",
+      "source_path": "experience/jlu-teaching-portfolio.md",
+      "source_heading": "有机化学专题课件",
+      "certainty": "confirmed",
+      "basis": "user_confirmed",
+      "publication": "approved",
+      "allowed_contexts": ["site", "resume"],
+      "as_of": "2026-10-25",
+      "source_blob_sha": "f0dd0311e0c732180d9aa01854379b1f3c0c3be6"
     }
   ]
 }

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "publication": "approved",
+  "intro": "两套试卷对应同一荣誉有机实验课程体系的上、下学期。试卷只提供试题页的逐页模糊预览；两份有机化学专题课件可下载审校 PDF，并保留文献引注。",
+  "works": [
+    {
+      "id": "exam-organic-synthesis-i",
+      "kind": "期末试题",
+      "title": "《有机合成实验 I（荣誉）》",
+      "subtitle": "上学期课程",
+      "contribution": "本人编写",
+      "summary": "把课堂中学生反复出现的操作与理解问题转为期末考核题。",
+      "status": "模糊试题页可预览",
+      "preview_asset_ids": [
+        "teaching-exam-i-page-01",
+        "teaching-exam-i-page-02",
+        "teaching-exam-i-page-03",
+        "teaching-exam-i-page-04",
+        "teaching-exam-i-page-05",
+        "teaching-exam-i-page-06",
+        "teaching-exam-i-page-07",
+        "teaching-exam-i-page-08",
+        "teaching-exam-i-page-09",
+        "teaching-exam-i-page-10",
+        "teaching-exam-i-page-11",
+        "teaching-exam-i-page-12",
+        "teaching-exam-i-page-13",
+        "teaching-exam-i-page-14",
+        "teaching-exam-i-page-15",
+        "teaching-exam-i-page-16",
+        "teaching-exam-i-page-17",
+        "teaching-exam-i-page-18",
+        "teaching-exam-i-page-19",
+        "teaching-exam-i-page-20",
+        "teaching-exam-i-page-21"
+      ],
+      "download_asset_id": null,
+      "claim_ids": [
+        "teaching.portfolio.exams"
+      ]
+    },
+    {
+      "id": "exam-organic-synthesis-ii",
+      "kind": "期末试题",
+      "title": "《有机合成实验 II（荣誉）》",
+      "subtitle": "下学期课程",
+      "contribution": "本人编写",
+      "summary": "将有机合成实验课程的实践要求落实为可批改、可讲评的期末考核。",
+      "status": "模糊试题页可预览",
+      "preview_asset_ids": [
+        "teaching-exam-ii-page-01",
+        "teaching-exam-ii-page-02",
+        "teaching-exam-ii-page-03",
+        "teaching-exam-ii-page-04",
+        "teaching-exam-ii-page-05",
+        "teaching-exam-ii-page-06",
+        "teaching-exam-ii-page-07",
+        "teaching-exam-ii-page-08",
+        "teaching-exam-ii-page-09",
+        "teaching-exam-ii-page-10",
+        "teaching-exam-ii-page-11",
+        "teaching-exam-ii-page-12",
+        "teaching-exam-ii-page-13",
+        "teaching-exam-ii-page-14",
+        "teaching-exam-ii-page-15",
+        "teaching-exam-ii-page-16",
+        "teaching-exam-ii-page-17",
+        "teaching-exam-ii-page-18"
+      ],
+      "download_asset_id": null,
+      "claim_ids": [
+        "teaching.portfolio.exams"
+      ]
+    },
+    {
+      "id": "lecture-mhat",
+      "kind": "专题课件",
+      "title": "MHAT：金属氢化物氢原子转移",
+      "subtitle": "有机反应机理与合成应用",
+      "contribution": "本人制作课件",
+      "summary": "以具体反应讨论机理判断和合成转化的选择。",
+      "status": "审校 PDF 可下载",
+      "preview_asset_ids": [],
+      "download_asset_id": "teaching-lecture-mhat-reviewed",
+      "claim_ids": [
+        "teaching.portfolio.slides"
+      ]
+    },
+    {
+      "id": "lecture-kishi",
+      "kind": "专题课件",
+      "title": "岸义人与天然产物全合成",
+      "subtitle": "复杂目标分子的路线设计",
+      "contribution": "本人制作课件",
+      "summary": "以全合成案例讲解路线拆分和关键转化。",
+      "status": "审校 PDF 可下载",
+      "preview_asset_ids": [],
+      "download_asset_id": "teaching-lecture-kishi-reviewed",
+      "claim_ids": [
+        "teaching.portfolio.slides"
+      ]
+    }
+  ]
+}
