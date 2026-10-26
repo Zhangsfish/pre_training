@@ -1,0 +1,53 @@
+WARNING: pet.status: source_blob_sha drift; planner must review affected claim
+WARNING: pet.setup: source_blob_sha drift; planner must review affected claim
+WARNING: pet.external: source_blob_sha drift; planner must review affected claim
+WARNING: pet.peers: source_blob_sha drift; planner must review affected claim
+WARNING: pet.ai: source_blob_sha drift; planner must review affected claim
+WARNING: pet.validation: source_blob_sha drift; planner must review affected claim
+WARNING: pet.window: source_blob_sha drift; planner must review affected claim
+WARNING: pet.patents: source_blob_sha drift; planner must review affected claim
+WARNING: pet.period: source_blob_sha drift; planner must review affected claim
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Source drift requires planner review
++ actual - expected
+
++ [
++   'pet.status: source_blob_sha drift; planner must review affected claim',
++   'pet.setup: source_blob_sha drift; planner must review affected claim',
++   'pet.external: source_blob_sha drift; planner must review affected claim',
++   'pet.peers: source_blob_sha drift; planner must review affected claim',
++   'pet.ai: source_blob_sha drift; planner must review affected claim',
++   'pet.validation: source_blob_sha drift; planner must review affected claim',
++   'pet.window: source_blob_sha drift; planner must review affected claim',
++   'pet.patents: source_blob_sha drift; planner must review affected claim',
++   'pet.period: source_blob_sha drift; planner must review affected claim'
++ ]
+- []
+
+    at validateVariant (file:///E:/myself/pre_training-english-handoff/resume/scripts/model.mjs:16:92)
+    at file:///E:/myself/pre_training-english-handoff/site/scripts/build.mjs:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'pet.status: source_blob_sha drift; planner must review affected claim',
+    'pet.setup: source_blob_sha drift; planner must review affected claim',
+    'pet.external: source_blob_sha drift; planner must review affected claim',
+    'pet.peers: source_blob_sha drift; planner must review affected claim',
+    'pet.ai: source_blob_sha drift; planner must review affected claim',
+    'pet.validation: source_blob_sha drift; planner must review affected claim',
+    'pet.window: source_blob_sha drift; planner must review affected claim',
+    'pet.patents: source_blob_sha drift; planner must review affected claim',
+    'pet.period: source_blob_sha drift; planner must review affected claim'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0
