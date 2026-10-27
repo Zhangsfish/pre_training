@@ -26,112 +26,112 @@
       "source_sha256": "3243ea688786f13347a3610cfd5fa8ead7cfa036f8a2e94c23b59cf3eed3b105",
       "included_question_pages": 21,
       "excluded_pages": "22–31 answer sheet",
-      "privacy": "each page downsampled to effective width 105px before blur; no exam PDF or DOCX is public",
+      "privacy": "PDF-native text removed and replaced with non-text gray line marks; original figures retained; rendered at 840px. No exam PDF, DOCX or answer sheets are public.",
       "files": [
         {
           "file": "previews/organic_synthesis_lab_i_page_01.jpg",
-          "bytes": 3059,
-          "sha256": "99b88f47a4e68ddc86af6637d8c052967697fc1fb2c398947e888d948a9c3296"
+          "bytes": 21636,
+          "sha256": "2dc769a7261fc38cb03493b1081e05ab03b927c900742488b7029f06eee2ce43"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_02.jpg",
-          "bytes": 2881,
-          "sha256": "d48c4e2228d814308afd29c53323e2fca1e623944a1c531ac92ce5545c68952c"
+          "bytes": 24519,
+          "sha256": "fcf8affd6e1911b971a10985933036d6111c14e9223d55253ce34930fb3bfe80"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_03.jpg",
-          "bytes": 4185,
-          "sha256": "fabb64885d39b208a5c95bae523ffeeb33a33a5bb34b4a7f242d6660c52461d9"
+          "bytes": 39165,
+          "sha256": "599e224b3d2361b7931f644c6732ff3daf3bbd454806ad98ad9c8a0cf3645d21"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_04.jpg",
-          "bytes": 4183,
-          "sha256": "9227a7cf2c3c46962ea496ed983c7991a74efb6d07bba79855f538d8132c377a"
+          "bytes": 50803,
+          "sha256": "5b3c01a34578dd724b985f577540db778867972cb95248849dee5a3dc457d32f"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_05.jpg",
-          "bytes": 2880,
-          "sha256": "11f474770472753e602f5271ed893292d9bd124e41551cda2c399ddfdeea447e"
+          "bytes": 35373,
+          "sha256": "803cbab706cad074c353e805bf3e801216774a1b3769e806237d29705e9cbff0"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_06.jpg",
-          "bytes": 2996,
-          "sha256": "ef1d005f07c97fbcca40b68eb1aec401be06072ce640b44bb0ecaee7996dd818"
+          "bytes": 31644,
+          "sha256": "6ae5e40b1a167adbbc63e993b05f418cca8f53d1f60dd1a7b42b9ff60c9e1b01"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_07.jpg",
-          "bytes": 2419,
-          "sha256": "b8aabafd507659c0ddc259b0abf1eb283a7739bd769b2aa3c3b9b65074c21a71"
+          "bytes": 21570,
+          "sha256": "19df4898b128563e0450184e19a20455c384904e8b09ae5cf229ce1e344fc719"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_08.jpg",
-          "bytes": 2963,
-          "sha256": "a2533adc6c102179e9c36abce7251e10960c88562d00046543021ce138bf9091"
+          "bytes": 28512,
+          "sha256": "8240359732f2bd6bb4e5b06b5c6ce71cad3e5df1eac1d3d332ea32f7ed8b703f"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_09.jpg",
-          "bytes": 3325,
-          "sha256": "b8aca854b012ad763741a56048f3ce9ea6250c8e4e924d161dcc9b0e44e2f1ae"
+          "bytes": 35072,
+          "sha256": "a8d897e89c6566f62136c6be6f3ea974e68459e48a0b0fdc188ca58e6f0c89df"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_10.jpg",
-          "bytes": 3140,
-          "sha256": "4d9b86ba2bed2e0694b0d14f73f771829aa9ae7191200e849700976d286a879f"
+          "bytes": 51240,
+          "sha256": "fef644f428e15981c726e10339f2e4a8cf39d68ba5ca80d61eff982b7c65cba8"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_11.jpg",
-          "bytes": 3306,
-          "sha256": "151a09510ebc573998635f1f252afb9076b91798ab03f74221a9395f344668a7"
+          "bytes": 43073,
+          "sha256": "6bf87e62ad7610517fa248435173a858a10d09f3905d50de48ae09a8686757d9"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_12.jpg",
-          "bytes": 2750,
-          "sha256": "ecde59db9b8e519bf026909d7f9957c66d25655c6def167985d0ece5c36ec07f"
+          "bytes": 39640,
+          "sha256": "e77067048ee3f2b49400460e65fe6eb55acaa5a4a2bb1e9bf6afaabeb50d3bc7"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_13.jpg",
-          "bytes": 3306,
-          "sha256": "a78d1156e373119c6d6e6f71b6c96271654a0ed9f5dbcedebf2d2a733f0f85fc"
+          "bytes": 54988,
+          "sha256": "9105313727d5f95a903df639efd29d80305e2a1f984e7f3a4e8c1d646466d02d"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_14.jpg",
-          "bytes": 2821,
-          "sha256": "1917232e90f974ce24f021d00dd7f69868a795bfdbbe639025759b5394fa7616"
+          "bytes": 33881,
+          "sha256": "6d5ab9148c02c080fb1715b908aed5481ed26e619d5cbcc777248079661c7f35"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_15.jpg",
-          "bytes": 3244,
-          "sha256": "b6f13599fb78a5559ba172a86afd3c9df2607765bb9cc58867d298138e6722e4"
+          "bytes": 41633,
+          "sha256": "90baba08a5c86030ae21d58d86b3b86741a752c6c7e12bdaea21207cfd2be5b8"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_16.jpg",
-          "bytes": 3058,
-          "sha256": "89932f7411f72c506bad11471a1532fb25cc44697a1d57caae846d24698cf825"
+          "bytes": 29354,
+          "sha256": "88b582ec0f9f828b8bedb4a8712974b8fdb7caaef95450312ac110e36b9dee04"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_17.jpg",
-          "bytes": 2894,
-          "sha256": "efbee932e09d382e7f5e568abc0b364697b495feeb15306469c1ae2045d1cf7e"
+          "bytes": 32246,
+          "sha256": "34b1b7db8e320d896072f10aa1d4706b2c798efa5357d7f5a2c0ca68d315e05c"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_18.jpg",
-          "bytes": 3671,
-          "sha256": "7aa3a21602354591d15dc078ae9b091dd7777616cefa76c004149f3c99a386e6"
+          "bytes": 46451,
+          "sha256": "72e3dc28530d3c2ff245c7d644eb0ae552ab8e7768d90b671eba7244d27dd006"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_19.jpg",
-          "bytes": 4101,
-          "sha256": "d8fde9df4d38eda6c5b066afcfcc3939b7b7cfae090eda2b58eac4d18dfbce42"
+          "bytes": 63507,
+          "sha256": "02b193589a961696518d30280e42e328ff490e91c132600c1a1f985000d6847a"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_20.jpg",
-          "bytes": 3077,
-          "sha256": "1084e0f2fa88719c5caa0974f17b2b5fd73301d35a0bc6c0e07ee5f894cb4217"
+          "bytes": 31946,
+          "sha256": "a6d79bdbe8d3c8ec785ce0aeffa2e7adb7ce8cde9c5097d9bf20ad701e9bf118"
         },
         {
           "file": "previews/organic_synthesis_lab_i_page_21.jpg",
-          "bytes": 3333,
-          "sha256": "5d29600abc24c063528f0f41dd3e1a31fb2f0522b2cc0c9b44cc978810c80530"
+          "bytes": 29539,
+          "sha256": "b85b7d880e5b5addd12d3f14bada6c33e9bb9bead16f39ad8d8ca3fa32ab52c5"
         }
       ]
     },
@@ -139,97 +139,97 @@
       "source_sha256": "bbef7b6969990671316ea695e3c6c5a18c7c1fcc4c34bedec76c871fc5a8cda7",
       "included_question_pages": 18,
       "excluded_pages": "19–20 blank export pages",
-      "privacy": "each page downsampled to effective width 105px before blur; no exam PDF or DOCX is public",
+      "privacy": "PDF-native text removed and replaced with non-text gray line marks; original figures retained; rendered at 840px. No exam PDF, DOCX or answer sheets are public.",
       "files": [
         {
           "file": "previews/organic_synthesis_lab_ii_page_01.jpg",
-          "bytes": 3187,
-          "sha256": "37f131dd428219a76cb72dd4d668574284b30284898459395233ce97f785b73a"
+          "bytes": 22410,
+          "sha256": "3c960b126e639edf310ccdc8952d7017cf904a97bb4fb09b68359fa261cfc378"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_02.jpg",
-          "bytes": 3200,
-          "sha256": "b7a147529734f1d211638e805746edb6af36d0102a5736d2ff772fee4be56b9d"
+          "bytes": 28486,
+          "sha256": "f03fdc1076fa47be5b1a5a65664a24bc0f71f06f71e216cb9b164d2220cec02a"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_03.jpg",
-          "bytes": 3208,
-          "sha256": "f99edc188c64d42bd755c347caa14da2916aa276a0091482f5b02dcaecc6e9a8"
+          "bytes": 25625,
+          "sha256": "0633c29a72f032704f456a8b10cc603a79567f18abd9bec94c0581f8e7fd53eb"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_04.jpg",
-          "bytes": 3868,
-          "sha256": "55561122950ea53e2cbfd0f693b89d9a542dc2f55747694ece6e4f9eeb9d6f7c"
+          "bytes": 33795,
+          "sha256": "a5691b7dfa00a5e34221c2a7b107feb118ebb68c31cb7cb600c7c0817d712d4c"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_05.jpg",
-          "bytes": 3598,
-          "sha256": "77a0622eda32bc39235e95f0f94ef63f32ac8aa4db840c51429135934efd8eae"
+          "bytes": 40083,
+          "sha256": "0a2e74b49fa43d509afa1492959ac7a7aba1964fefe288b5b26b46160e6c3d76"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_06.jpg",
-          "bytes": 4489,
-          "sha256": "af650defa325b7ca37b46261d31a71390ed3118261e9c3ea892880785b1448be"
+          "bytes": 46730,
+          "sha256": "43a8740eeb26d45ea00b0f62c52bc23b9d465849eab69cec19e99029880b6c81"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_07.jpg",
-          "bytes": 4118,
-          "sha256": "a9f109121c87c8af822291cedf0effc7305644d5c099a33ae7ac482dc7d4a59d"
+          "bytes": 49717,
+          "sha256": "2a401e15ede2ae8461409bda3d1f0480dfe0a28150cc8424ca80eb0902c1ab2c"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_08.jpg",
-          "bytes": 2893,
-          "sha256": "abdc156ebbb92a7fe6279e538739773239c2cb92b21a8f469374d61df6b8a25f"
+          "bytes": 28215,
+          "sha256": "0ce0999ef0d52b98b8cd9fd7a073f610161660c8b01260673b4e39a4d67a7b2f"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_09.jpg",
-          "bytes": 2763,
-          "sha256": "c36e3f0b08b39449e0b4c91099df118c7e26af4526a5ce6fd62e9b106f2eb753"
+          "bytes": 34244,
+          "sha256": "6a6b52c9ff1cdf16089e5163dff6b9a7ef694dad2970d54454188e41989c02b3"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_10.jpg",
-          "bytes": 2386,
-          "sha256": "b69dafb187b454fa66b7dc7b6f29239fe6bde21b030e274b62568f1ae1e5bff6"
+          "bytes": 23914,
+          "sha256": "9c8e013b0dd6a40abf71375494b9db789c88141a3d3eee27048636f9875565f0"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_11.jpg",
-          "bytes": 2370,
-          "sha256": "807db0dbec5e73acbda063bf479cde4fa2aafd362a3006d9553a270cae9f7464"
+          "bytes": 22786,
+          "sha256": "03bb20a44b715c611671d6b77a12404cb8e31c8492d9ce66c67860ad82c79084"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_12.jpg",
-          "bytes": 2268,
-          "sha256": "d13f9d7d1c060edde44d290cc7e3b8ff6c93483405e2b1bc19995814f48d1a89"
+          "bytes": 35432,
+          "sha256": "b44ddfeb53290f05df1efd4fa9ff8354e125e2bce47ab924e5efe9dac8c27261"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_13.jpg",
-          "bytes": 3048,
-          "sha256": "285ed65b456f97b0ee1decf414c01da7aa8b4cba55c79eaaba0e2a6aa2b5e33f"
+          "bytes": 54050,
+          "sha256": "9edd3911fa6c34abf11095830fb6ff1f16dc1484cbebdceb0f3c9c5762041e16"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_14.jpg",
-          "bytes": 1620,
-          "sha256": "776b415d8556ed9a4432a279b736de87b8e4c80ef87b4bb1e4e6ceda237bc37e"
+          "bytes": 15732,
+          "sha256": "f0f0081c68e3d57dce734486bbba174980db183e3ba9d236b650bb3b5a32cfa3"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_15.jpg",
-          "bytes": 3218,
-          "sha256": "72e6a5ab862c8762282cfdc5db0f0d252fc6298006b8b5f28f3d01477766332f"
+          "bytes": 35022,
+          "sha256": "d05a61f57c6d5a96d87199f847a9bbe611b5257fdcd815e42ba707e3d9b9cd0d"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_16.jpg",
-          "bytes": 2255,
-          "sha256": "d2946ee905d3cc32a49f511cb369dd413237c71f6cba3ea165196957540c6410"
+          "bytes": 22289,
+          "sha256": "e5798c4e1dbf498722cab08e546e2a5b440165abdf6f92573aa5ef16e13a252c"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_17.jpg",
-          "bytes": 1897,
-          "sha256": "23cc3c217202fc6d8404a6e92766bce2bd24b428775e5f51431a246a3b421496"
+          "bytes": 15461,
+          "sha256": "2faeff7eca1f975b13a01750ebbd5e7517af97ca5d60c8062bb40f11e7118a09"
         },
         {
           "file": "previews/organic_synthesis_lab_ii_page_18.jpg",
-          "bytes": 1670,
-          "sha256": "188c50fe0859ffbcce5529d2f9edf5370fcbe3c4eb1decbb5ec15791674074e4"
+          "bytes": 8202,
+          "sha256": "eefab1b59f4576397cf86338d5f76c40bb4a42d5b7d6bc9ec14b589af66ecf9f"
         }
       ]
     }

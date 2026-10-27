@@ -30,7 +30,14 @@ try {
       assert.equal(await page.locator('.teaching-work').nth(1).locator('.teaching-preview-page').count(), 18);
       assert.equal(await page.locator('.teaching-preview-page img').count(), 39);
       await page.waitForFunction(() => [...document.querySelectorAll('.teaching-preview-page img')]
-        .every(image => image.complete && image.naturalWidth > 0));
+        .every(image => image.complete && image.naturalWidth === 840));
+      const enlarge = page.locator('.teaching-preview-zoom').nth(4);
+      await enlarge.click();
+      await page.locator('#media-dialog[open] img').waitFor({ state: 'visible' });
+      assert.ok((await page.locator('#media-dialog img').getAttribute('src')).endsWith('organic_synthesis_lab_i_page_05.jpg'));
+      await page.keyboard.press('Escape');
+      assert.equal(await page.locator('#media-dialog[open]').count(), 0);
+      assert.ok(await enlarge.evaluate(element => element === document.activeElement));
       assert.equal(await page.locator('.teaching-download').count(), 2);
       assert.deepEqual(await page.locator('.teaching-download').evaluateAll(links => links.map(link => new URL(link.href).pathname).sort()), [
         '/downloads/teaching/kishi-reviewed.pdf', '/downloads/teaching/mhat-reviewed.pdf',

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "publication": "approved",
-  "intro": "The two exams cover the first and second terms of the same honors organic laboratory sequence. Only blurred previews of question pages are shown; two reviewed organic chemistry lecture PDFs are available to download, with literature citations retained.",
+  "intro": "The two exams cover the first and second terms of the same honors organic laboratory sequence. Browse the question pages and click to enlarge the figures; question text has been concealed. Two reviewed organic chemistry lecture PDFs are available to download, with literature citations retained.",
   "works": [
     {
       "id": "exam-organic-synthesis-i",
@@ -10,7 +10,7 @@
       "subtitle": "First term",
       "contribution": "Written by me",
       "summary": "Turned recurring classroom mistakes in experimental practice and understanding into assessment questions.",
-      "status": "Blurred page previews available",
+      "status": "Enlarge figures · question text concealed",
       "preview_asset_ids": [
         "teaching-exam-i-page-01",
         "teaching-exam-i-page-02",
@@ -46,7 +46,7 @@
       "subtitle": "Second term",
       "contribution": "Written by me",
       "summary": "Built a final assessment around the practical requirements of the organic synthesis laboratory course.",
-      "status": "Blurred page previews available",
+      "status": "Enlarge figures · question text concealed",
       "preview_asset_ids": [
         "teaching-exam-ii-page-01",
         "teaching-exam-ii-page-02",
