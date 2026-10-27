@@ -8,4 +8,6 @@
 
 初次并行 check/build 引发 Vite 缓存重命名冲突，顺序重建成功。受限环境预览端口不可达，改用仅绑定 127.0.0.1 的独立临时静态服务完成浏览器验收。没有安装依赖。
 
-发布结果待记录。
+已发布至 [中文教学作品](https://zhang-shuo-portfolio.vercel.app/work/teaching/) 与英文对应页。实现提交 `ab14ab151a0d1a37b6d7acf8b81a5793689a23b4`，PR #37。复用 Vercel CLI 59.23.2，核对既有团队 `zhangsfishs-projects`、项目 `prj_CfECSSKoBni34VGDTa89UhKu4n09` 后上传经审计的静态包，部署 `dpl_D27vwQwJnJTPNJQmprZomCAxQFBf` 为 READY。暂存部署的结构图示例 JPEG 与本地 SHA256 一致后推广正式域名。
+
+正式域名匿名 Chrome 重跑中英文、1366/375 px 的全部教学页浏览器检查，结果通过，39 张新尺寸图片加载成功、点击放大正常、两份课件下载及抽查 JPEG 哈希一致。线上截图保存在本机上游任务 `live-review/`。Vercel 连接器缺少该团队授权，发布使用本机已有的同团队 CLI 登录完成；没有更改权限、DNS、保护配置或 Git 自动部署。
