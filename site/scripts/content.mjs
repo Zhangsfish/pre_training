@@ -163,7 +163,7 @@ export function validate(data, { mode = 'review', sourceRoot = root } = {}) {
     for (const assetId of work.preview_asset_ids ?? []) {
       const asset = assets.get(assetId);
       require(exam && asset?.publication === 'approved' && asset?.availability === 'codex_ready'
-        && asset?.type === 'image' && asset?.public_review === 'irreversible_blur_verified'
+        && asset?.type === 'image' && asset?.public_review === 'text_removed_figures_reviewed'
         && /^media\/teaching\/[\w-]+\.jpe?g$/.test(asset?.path ?? ''),
       `${work.id}: preview must be approved blurred JPEG`);
     }

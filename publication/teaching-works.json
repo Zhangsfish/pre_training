@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "publication": "approved",
-  "intro": "两套试卷对应同一荣誉有机实验课程体系的上、下学期。试卷只提供试题页的逐页模糊预览；两份有机化学专题课件可下载审校 PDF，并保留文献引注。",
+  "intro": "两套试卷对应同一荣誉有机实验课程体系的上、下学期。试题页可逐页预览，点击可放大图示，题干文字已遮隐。两份有机化学专题课件可下载审校 PDF，并保留文献引注。",
   "works": [
     {
       "id": "exam-organic-synthesis-i",
@@ -10,7 +10,7 @@
       "subtitle": "上学期课程",
       "contribution": "本人编写",
       "summary": "把课堂中学生反复出现的操作与理解问题转为期末考核题。",
-      "status": "模糊试题页可预览",
+      "status": "图示可放大，题干已遮隐",
       "preview_asset_ids": [
         "teaching-exam-i-page-01",
         "teaching-exam-i-page-02",
@@ -46,7 +46,7 @@
       "subtitle": "下学期课程",
       "contribution": "本人编写",
       "summary": "将有机合成实验课程的实践要求落实为可批改、可讲评的期末考核。",
-      "status": "模糊试题页可预览",
+      "status": "图示可放大，题干已遮隐",
       "preview_asset_ids": [
         "teaching-exam-ii-page-01",
         "teaching-exam-ii-page-02",

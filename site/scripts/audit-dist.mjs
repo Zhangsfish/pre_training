@@ -74,7 +74,7 @@ export function auditDist(directory,data=loadContent(),{requireResume=true}={}) 
      if(file.endsWith('.pdf'))assert.equal(bytes.subarray(0,5).toString(),'%PDF-','Teaching PDF signature');
      if(file.startsWith('media/teaching/')) {
        assert.equal(bytes.subarray(0,3).toString('hex'),'ffd8ff','Teaching preview JPEG signature');
-       assert.equal(a.public_review,'irreversible_blur_verified','Teaching preview review status');
+       assert.equal(a.public_review,'text_removed_figures_reviewed','Teaching preview review status');
      }
      assert.equal(createHash('sha256').update(bytes).digest('hex'),a.derived_sha256,'Approved media hash');
    }

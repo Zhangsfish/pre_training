@@ -48,17 +48,19 @@ const teachingAssetPath=(id:string)=>assetRegistry.assets.find(asset=>asset.id==
       <h3 id={`teaching-${work.id}`}>{work.title}</h3>
       <p class="teaching-work-contribution">{work.contribution}</p>
       <p class="teaching-work-summary">{work.summary}</p>
-      {work.preview_asset_ids.length>0&&<p class="teaching-preview-count">{english?`${work.preview_asset_ids.length} question pages · scroll horizontally`:`共 ${work.preview_asset_ids.length} 页试题 · 横向逐页浏览`}</p>}
-      {work.preview_asset_ids.length>0&&<div class="teaching-preview-scroll" tabindex="0" role="group" aria-label={english?`${work.title}: blurred preview pages`:`${work.title}：逐页模糊预览`}>
+      {work.preview_asset_ids.length>0&&<p class="teaching-preview-count">{english?`${work.preview_asset_ids.length} question pages · scroll and click to enlarge`:`共 ${work.preview_asset_ids.length} 页试题 · 横向浏览，点击放大`}</p>}
+      {work.preview_asset_ids.length>0&&<div class="teaching-preview-scroll" tabindex="0" role="group" aria-label={english?`${work.title}: figures with question text concealed`:`${work.title}：图示预览，题干已遮隐`}>
         {work.preview_asset_ids.map((id,index)=><figure class="teaching-preview-page">
-          <img src={`/${teachingAssetPath(id)}`} alt={english?`Blurred preview of question page ${index+1}; text cannot be read`:`试题第 ${index+1} 页模糊预览，题目不可辨`} loading="eager" width="315" height="445" />
+          <button class="teaching-preview-zoom" data-zoom={`/${teachingAssetPath(id)}`} data-title={english?`${work.title} · Page ${index+1} · Question text concealed`:`${work.title} · 第 ${index+1} 页 · 题干已遮隐`} aria-label={english?`Enlarge page ${index+1} of ${work.title}`:`放大${work.title}第 ${index+1} 页`}>
+            <img src={`/${teachingAssetPath(id)}`} alt={english?`Question page ${index+1}: figures visible, question text concealed`:`试题第 ${index+1} 页：图示清晰，题干已遮隐`} loading="eager" width="840" height="1188" />
+          </button>
           <figcaption>{english?`Page ${index+1}`:`第 ${index+1} 页`}</figcaption>
         </figure>)}
       </div>}
       {work.download_asset_id&&teachingAssetPath(work.download_asset_id)
         ?<a class="pill teaching-download" href={`/${teachingAssetPath(work.download_asset_id)}`} download>{english?'Download reviewed PDF':'下载审校 PDF'} ↓</a>
         :<p class="teaching-work-status">{work.status}</p>}
-      {work.preview_asset_ids.length>0&&<p class="teaching-page-note">{english?'These previews show the page layout only. The exam and answer sheet are not downloadable.':'预览仅展示试卷版式，题目不可辨；原卷与答题纸不提供下载。'}</p>}
+      {work.preview_asset_ids.length>0&&<p class="teaching-page-note">{english?'Click a page to view its diagrams, spectra and experimental photos. Question text is concealed; the original exam and answer sheet are not downloadable.':'点击页面可查看结构图、谱图和实验照片；题干文字已遮隐，原卷与答题纸不提供下载。'}</p>}
     </section>)}
   </div>
 </section>}
