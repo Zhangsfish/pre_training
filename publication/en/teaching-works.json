@@ -75,7 +75,7 @@
     {
       "id": "lecture-mhat",
       "kind": "Lecture deck",
-      "title": "MHAT: Metal Hydride Hydrogen Atom Transfer",
+      "title": "Metal hydride hydrogen atom transfer reactions",
       "subtitle": "Mechanism and synthetic applications",
       "contribution": "Slides prepared by me",
       "summary": "Uses selected reactions to discuss mechanistic reasoning and choices in synthesis.",
@@ -89,7 +89,7 @@
     {
       "id": "lecture-kishi",
       "kind": "Lecture deck",
-      "title": "Yoshito Kishi and Natural Product Total Synthesis",
+      "title": "Review of Yoshito Kishi’s academic achievements",
       "subtitle": "Route design for complex targets",
       "contribution": "Slides prepared by me",
       "summary": "Uses total synthesis case studies to explain route disconnection and key transformations.",
